@@ -13,20 +13,20 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <form>
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
     <fieldset>
       <legend>Personal information</legend>
     <div>
-      <label>Surname:<input autocomplete="of" name="Surname" type="text" autofocus></label><br>
+      <label>Surname:<input autocomplete="of" name="Surname" type="text" autofocus></label>
     </div>
     <div>
-      <label>Name:<input autocomplete="of" name="Name" type="text" minlength="2"></label><br>
+      <label>Name:<input autocomplete="of" name="Name" type="text" minlength="2"></label>
     </div>
     <div>
-      <label>How old are You?<input name="age" type="number" value="12" data-qa="field-value" step="1"></label><br>
+      <label>How old are You?<input name="age" type="number" value="12" data-qa="field-value" step="1"></label>
     </div>
       <div>
-      <label>Full date of birthday:<input name="dateBirthday" type="date" max="25-04-2019"></label><br>
+      <label>Full date of birthday:<input name="dateBirthday" type="date" max="25-04-2019"></label>
     </div>
     <div>
       <label>I accept the term of the agreement<input name="accept" type="checkbox"></label>
@@ -35,7 +35,7 @@
     <fieldset>
       <legend>Registration</legend>
       <div>
-      <label>E-mail: <input name="E-mail" type="email" placeholder="email@example.com" data-qa="field-placeholder"></label><br>
+      <label>E-mail: <input name="E-mail" type="email" placeholder="email@example.com" data-qa="field-placeholder"></label>
       </div>
       <div>
       <label>Password: <input name="Password" type="password" minlength="4"></label>
@@ -46,13 +46,13 @@
       <div>
       Do you love cats?
       <label><input name="cat" type="radio"> Yes</label>
-      <label><input name="cat" type="radio"> No</label><br>
+      <label><input name="cat" type="radio"> No</label>
       </div>
       <div>
-      <label>What is your favorite color?<input type="color" name="color"></label><br>
+      <label>What is your favorite color?<input type="color" name="color"></label>
     </div>
     <div>
-      <label>What time do you go bed?<input name="timeGoBed" type="time"></label><br>
+      <label>What time do you go bed?<input name="timeGoBed" type="time"></label>
     </div>
     <div>
       <label>What your favorite brand of cars?
@@ -61,16 +61,16 @@
             <option>Audi</option>
             <option>Lada</option>
           </select>
-      </label><br>
+      </label>
     </div>
     <div>
-      <label>How do you rate our work?<input type="range" name="rate"></label>
+      <label>How do you rate our work?<input type="range" name="rate" min="0" max="10" step="0.5"></label>
     </div>
     </fieldset>
     <fieldset>
       <legend>Additional info:</legend>
       <div>
-      <label>Comments:<textarea name="Comments" required></textarea></label><br>
+      <label>Comments:<textarea name="Comments" required></textarea></label>
       </div>
       <div>
       <label>Would you recommend us?
