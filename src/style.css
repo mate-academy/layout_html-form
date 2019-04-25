@@ -1,0 +1,11 @@
+div {
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+.nmb { /*No margin bottom*/
+  margin-bottom: 0;
+}
