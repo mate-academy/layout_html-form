@@ -1,0 +1,11 @@
+.indent {
+  margin-bottom: 10px;
+}
+
+.indent:last-child {
+  margin: 0;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
