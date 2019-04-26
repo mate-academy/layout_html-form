@@ -1,0 +1,36 @@
+label {
+  display: block;
+}
+
+.animalPrefer {
+  display: block;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+fieldset label {
+  margin-bottom: 10px;
+}
+
+fieldset label:last-child {
+  margin-bottom: 0;
+}
+
+.labelAnsNo {
+  margin: 0;
+}
+
+.range {
+  margin-top: 10px;
+}
+
+p {
+  display: inline-block;
+  margin: 0;
+}
+
+.animalPrefer *:not(p) {
+  display: inline-block;
+}
