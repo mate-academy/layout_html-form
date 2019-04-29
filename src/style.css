@@ -1,0 +1,51 @@
+label:not(.radio) {
+  display: block;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 7px;
+}
+
+input[type="range"] {
+  margin-top: 12px;
+}
+
+input[type="color"] {
+  margin-top: 4px;
+}
+
+fieldset {
+  padding: 6px 0 4px 12px;
+  margin-bottom: 20px;
+}
+
+.reg {
+  padding: 5px 0 0 12px;
+}
+
+.bad {
+  width: 124px;
+  line-height: 90%;
+}
+
+.cars {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.day {
+  line-height: 90%;
+}
+
+select {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.comment {
+  padding: 5px 0 5px 12px;
+}
