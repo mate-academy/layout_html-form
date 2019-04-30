@@ -1,0 +1,11 @@
+[type="number"] {
+  width: 65px;
+}
+
+fieldset:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+div:not(:last-child) {
+  margin-bottom: 10px;
+}
