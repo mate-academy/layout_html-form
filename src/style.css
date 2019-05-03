@@ -1,0 +1,12 @@
+fieldset {
+  margin-bottom: 20px;
+}
+
+div {
+  margin-bottom: 10px;
+  padding-bottom: 0;
+}
+
+div:last-child {
+  margin-bottom: 0;
+}
