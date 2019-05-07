@@ -1,0 +1,11 @@
+fieldset {
+  margin-bottom: 20px;
+}
+
+.answerValue {
+  margin-bottom: 10px;
+}
+
+.answerValue:last-child {
+  margin: 0;
+}
