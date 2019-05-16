@@ -52,5 +52,5 @@ Add attribute `data-qa="field-placeholder"` to test it correctly.
 
 **Result**
 
-- [UPDATE DEMO LINK](https://jka4.github.io/layout_html-form/)
-- [UPDATE TEST REPORT LINK](https://jka4.github.io/layout_html-form/report/html_report/)
+- [DEMO LINK](https://jka4.github.io/layout_html-form/)
+- [TEST REPORT LINK](https://jka4.github.io/layout_html-form/report/html_report/)
