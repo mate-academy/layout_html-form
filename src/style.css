@@ -1,0 +1,15 @@
+fieldset {
+  margin-bottom: 20px;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+div:last-child {
+  margin: 0;
+}
+
+#solo {
+  width: 36px;
+}
