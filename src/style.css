@@ -1,0 +1,10 @@
+fieldset {
+  margin-bottom: 20px
+  /* margin-bottom: 19px;
+  padding-top: 0; */
+}
+
+label:not(:last-of-type) {
+  display: inline-block;
+  margin-bottom: 10px;
+}
