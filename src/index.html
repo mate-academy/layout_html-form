@@ -13,7 +13,62 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
+<form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+  <fieldset>
+    <legend>Personal information</legend>
+    <label for="surname">Surname:<input type="text" id="surname" required
+                                        autocomplete="on">
+    </label>
+    <label for="name">Name:<input type="text" id="name" required autocomplete="on">
+    </label>
+    <label for="old">How old are You? <input type="number" id="old" data-qa="field-value" value="12" min="1"
+                                             max="110">
+    </label>
+    <label for="bd">Full date of birth: <input type="date" id="bd">
+    </label>
+    <label for="accept">I accept the term of the agreement:<input type="checkbox" id="accept">
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>Registration</legend>
+    <label for="email">E-mail: <input type="email" id="email" placeholder="email@example.com"
+                                      data-qa="field-placeholder">
+    </label>
+    <label for="password">Password: <input type="password" id="password">
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>An interesting fact about you!</legend>
+    <label for="animal">Do you love cats?
+      <input name="animal" type="radio"> Yes
+      <input name="animal" type="radio" id="animal"> No
+    </label>
+    <label for="color">What is your favorite color? <input type="color" id="color">
+    </label>
+    <label for="time">What time do you go to bed? <input type="time" id="time">
+    </label>
+    <label for="cars">What are your favorite brand of cars? <select id="cars" size="4">
+      <option>BMW</option>
+      <option>Audi</option>
+      <option>Lada</option>
+    </select>
+    </label>
+    <label for="rate">How do you rate our work? <input type="range" id="rate">
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>Additional info</legend>
+    <label for="comments">Comments: <textarea type="text" id="comments" minlength="1" maxlength="100"
+                                              autocomplete="off"></textarea>
+    </label>
+    <label for="recommend"> Would you recommend us?<select id="recommend">
+      <option>yes</option>
+      <option>no</option>
+    </select>
+    </label>
+  </fieldset>
+  <input type="submit" value="Submit">
+</form>
 <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
