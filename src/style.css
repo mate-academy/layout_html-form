@@ -1,0 +1,41 @@
+input {
+  margin-bottom: 10px;
+}
+
+.form__input_name {
+  margin-left: 4px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  padding-bottom: 4px;
+}
+
+label {
+  display: block;
+}
+
+.form__input_password {
+  margin-bottom: -4px;
+}
+
+.form__input_radio {
+  margin-bottom: 14px;
+  margin-right: 7px;
+}
+
+.form__input_cars {
+  margin-bottom: 10px;
+}
+
+.form__input_color {
+  margin-bottom: 5px;
+}
+
+.form__input_coments {
+  margin-bottom: 10px;
+}
+
+.form__input_rec {
+  margin-bottom: 6px;
+}

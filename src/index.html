@@ -13,6 +13,72 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <main>
+    <form class="form" action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="get" autocomplete="off">
+      <fieldset>
+        <legend>Personal information</legend>
+        <label for="surname">Surname:<input class="form__input form__input_name" type="text" name="surname" id="surname"></label>
+
+        <label for="name">Name:<input class="form__input form__input_name" type="text" name="name" id="name">
+        </label>
+        <label for="age">How old are You?
+          <input class="form__input input__birthday" type="number" name="age" id="age" value="12"  min="1" max="120" step="1" data-qa="field-value">
+        </label>
+        <label for="birthday">Full date of birth:
+          <input class="form__input" type="date" name="birthday" id="birthday"  pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" size="16">
+        </label>
+        <label for="agree">I accept the term of the agreement
+          <input class="form__input" type="checkbox" name="agree" id="agree" >
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Registration</legend>
+        <label for="email">E-mail:
+          <input class="form__input" type="email" name="email" id="email" placeholder="email@example.com" data-qa="field-placeholder" required>
+        </label>
+        <label for="password" class="form__input_password">Password:
+          <input  type="password" name="password" id="password"  minlength="8" maxlength="16" required>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+        <label for="cats"> Do you love cats?
+          <input type="radio" name="cats" id="cats" class="form__input_radio">Yes
+          <input type="radio" name="cats" class="form__input_radio">No
+        </label>
+        <label for="color" >What is your favorite color?
+          <input  type="color" name="color" id="color">
+        </label>
+        <label for="sleep_time" class="form__input_bed">What time do you go to bed?
+          <input  type="time" name="sleep_time" id="sleep_time" step="2" >
+        </label>
+        <label for="cars" class="form__input_cars">What are your favorite brand of cars?
+            <select name="cars" id="cars" size="4">
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Lada">Lada</option>
+              </select>
+        </label>
+        <label for="range">How do you rate our work?
+          <input class="form__input" type="range" name="range" id="range" min="0" max="10" value="0" >
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Additional info:</legend>
+        <label for="comments" class="form__input_coments">Comments:
+          <textarea id="comments" name="comments" rows="2" cols="20" ></textarea>
+        </label>
+        <label for="rec" class="form__input_rec">Would you recommend us?
+          <select name="rec" id="rec" size="1">
+            <option>yes</option>
+            <option>no</option>
+
+          </select>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit">
+    </form>
+  </main>
 
 <script type="text/javascript" src="./main.js"></script>
 </body>
