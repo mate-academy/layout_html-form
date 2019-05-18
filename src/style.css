@@ -1,0 +1,8 @@
+.form__label:nth-child(n + 3) {
+  margin-top: 10px;
+  display: block;
+}
+
+.form__part:nth-child(n + 2) {
+  margin-top: 20px;
+}
