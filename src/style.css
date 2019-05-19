@@ -1,0 +1,27 @@
+body {
+  margin: 10;
+}
+
+.rec {
+  margin-bottom: 10px;
+}
+
+.person {
+  margin-bottom: -6px;
+}
+
+.registration {
+  margin-bottom: -10px;
+}
+
+.range {
+  margin-top: 10px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
