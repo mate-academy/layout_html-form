@@ -1,0 +1,19 @@
+fieldset {
+  margin-bottom: 20px;
+}
+
+fieldset:last-child {
+  margin-bottom: 0;
+}
+
+fieldset > div {
+  margin-bottom: 10px;
+}
+
+fieldset > div:last-child {
+  margin-bottom: 0;
+}
+
+input#age {
+  width: 63px;
+}
