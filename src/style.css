@@ -1,0 +1,18 @@
+fieldset {
+  margin: 10px;
+  padding: 0 10px;
+}
+
+p {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  box-sizing: content-box;
+}
+
+legend {
+  padding: 0;
+}
+
+#btn {
+  margin: 10px;
+}

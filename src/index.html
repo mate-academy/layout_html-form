@@ -13,7 +13,48 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
+  <form action="index.html" method="post" name="personal-info">
+    <fieldset>
+      <legend>Personal information</legend>
+      <p><label for="surname">Surname: <input type="text" id="surname" name="surname" maxlength="30" autocomplete="off"></label></p>
+      <p><label for="name">Name: <input type="text" id="name" name="name" minlength="2" autocomplete="off"></label></p>
+      <p><label for="age">How old are You? <input type="number" id="age" name="age" data-qa="field-value" value="12" maxlength="10"></label></p>
+      <p><label for="birth">Full date of birth: <input type="date" id="birth" name="birth" min="1979-12-31" max="1991-12-31"></label></p>
+      <p><label for="accept">I accept the term of the agreement <input type="checkbox" id="accept" name="accept"></label></p>
+    </fieldset>
+    <fieldset>
+      <legend>Registration</legend>
+      <p><label for="email">E-mail: <input type="email" id="email" name="email" data-qa="field-placeholder" placeholder="email@example.com"></label></p>
+      <p><label for="password">Password: <input type="password" id="password" name="password"></label></p>
+    </fieldset>
+    <fieldset>
+      <legend>An interesting fact about you!</legend>
+      <p>Do you love cats?
+        <input type="radio" name="yes" value="yes">Yes
+        <input type="radio" name="no" value="no">No
+      </p>
+      <p><label for="color">What is your favorite color? <input type="color" id="color" name="color" value="#000"></label></p>
+      <p><label for="time">What time do you go to bed?<input type="time" id="time" name="time"></label></p>
+      <p><label for="cars">What are your favorite brand of cars?</label>
+        <select id="cars" name="cars" size="4">
+          <option>BMW</option>
+          <option>Audi</option>
+          <option>Lada</option>
+        </select>
+      </p>
+      <p><label for="range">How do you rate your work? <input type="range" id="range" name="range"></label></p>
+    </fieldset>
+    <fieldset><legend>Additional info</legend>
+      <p><label for="area">Comments: <textarea id="area" name="area" autocomplete="off"></textarea></label></p>
+      <p><label for="recommendation">Would you recommend us?</label>
+        <select id="recommendation" name="recommendation">
+          <option selected>yes</option>
+          <option>no</option>
+        </select>
+      </p>
+    </fieldset>
+    <input id="btn" type="submit" name="button" value="Submit">
+  </form>
 <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
