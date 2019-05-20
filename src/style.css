@@ -1,0 +1,14 @@
+label {
+  margin-bottom: 10px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+input[name="age"] {
+  width: 65px;
+}
