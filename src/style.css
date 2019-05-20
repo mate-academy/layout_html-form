@@ -1,0 +1,12 @@
+fieldset {
+  margin-bottom: 20px;
+}
+
+label:not(:last-child) {
+  margin-bottom: 10px;
+  display: block;
+}
+
+#age {
+  width: 36px;
+}
