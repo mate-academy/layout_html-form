@@ -13,13 +13,13 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<script type="text/javascript" src="./main.js"></script>
-<form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post" autocomplete="off">
+
+<form action="https://mate-academy-form-lesson.herokuapp.com/create-application" autocomplete="off">
 <fieldset>
   <legend>Personal information</legend>
   <label>Surname: <input type="text" name="surname"></label>
   <label>Name: <input type="text" name="name"></label>
-  <label>How old are You? <input type="number" name="age" data-qa="field-value" min="1" max="99" value="12" step="1"></label>
+  <label>How old are You? <input class="age" data-qa="field-value" type="number" name="age" min="1" max="99" value="12"></label>
   <label>Full date of birth: <input type="date" name="birth"></label>
   <label>I accept the term of the agreement <input type="checkbox" name="agreement"></label>
 </fieldset>
@@ -49,12 +49,13 @@
       <label>Comments: <textarea name="comments" maxlength="1000"></textarea></label>
       <label>Would you recommend us?
         <select name="recommendation">
-          <option value="yes">yes</option>
-          <option value="no">no</option>
+          <option value="yes"><p>yes</p></option>
+          <option value="no"><p>no</p></option>
         </select>
       </label>
     </fieldset>
     <input type="submit" value="Submit">
 </form>
+<script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
