@@ -13,7 +13,48 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
 <script type="text/javascript" src="./main.js"></script>
+<form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post" autocomplete="off">
+<fieldset>
+  <legend>Personal information</legend>
+  <label>Surname: <input type="text" name="surname"></label>
+  <label>Name: <input type="text" name="name"></label>
+  <label>How old are You? <input type="number" name="age" data-qa="field-value" min="1" max="99" value="12" step="1"></label>
+  <label>Full date of birth: <input type="date" name="birth"></label>
+  <label>I accept the term of the agreement <input type="checkbox" name="agreement"></label>
+</fieldset>
+<fieldset>
+  <legend>Registration</legend>
+  <label>E-mail: <input type="email" name="email" data-qa="field-placeholder" placeholder="email@example.com"></label>
+  <label>Password: <input type="password" name="password" minlength="6"></label>
+</fieldset>
+<fieldset>
+    <legend>An interesting fact about you!</legend>
+    <label>Do you love cats?
+      <input type="radio" name="cats">Yes
+      <input type="radio" name="cats">No</label>
+    <label>What is your favorite color? <input type="color" name="color" value="black"></label>
+    <label>What time do you go to bed? <input type="time" name="time" step="1"></label>
+    <label>What are your favorite brand of cars?
+      <select multiple name="carBrand">
+        <option value="BMW">BMW</option>
+        <option value="Audi">Audi</option>
+        <option value="Lada">Lada</option>
+      </select>
+    </label>
+    <label>How do you rate our work? <input type="range" name="rate" value="0" step="1" min="0" max="10"></label>
+  </fieldset>
+  <fieldset>
+      <legend>Additional info:</legend>
+      <label>Comments: <textarea name="comments" maxlength="1000"></textarea></label>
+      <label>Would you recommend us?
+        <select name="recommendation">
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+      </label>
+    </fieldset>
+    <input type="submit" value="Submit">
+</form>
 </body>
 </html>
