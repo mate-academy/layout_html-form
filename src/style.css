@@ -1,0 +1,32 @@
+fieldset {
+  margin-top: 20px;
+}
+
+fieldset:first-child {
+  margin-top: 0;
+}
+
+fieldset > p {
+  margin: 0;
+}
+
+fieldset p + p {
+  margin-top: 10px;
+}
+
+#age-field {
+  width: 36px;
+}
+
+fieldset:nth-child(3) > p {
+  margin-top: 10px;
+}
+
+input[type="submit"] {
+  margin-top: 21px;
+  border-radius: 5px;
+}
+
+#time-field {
+  width: 87px;
+}
