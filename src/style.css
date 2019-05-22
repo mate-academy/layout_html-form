@@ -1,27 +1,12 @@
-body {
-  margin: 8px;
-}
-
-.rec {
-  margin-bottom: 10px;
-}
-
-.person {
-  margin-bottom: -6px;
-}
-
-.registration {
-  margin-bottom: -10px;
-}
-
-.range {
-  margin-top: 8px;
-}
-
-input {
+label {
+  display: block;
   margin-bottom: 10px;
 }
 
 fieldset {
   margin-bottom: 20px;
+}
+
+fieldset label:last-child {
+  margin-bottom: 0;
 }
