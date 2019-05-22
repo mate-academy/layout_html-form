@@ -1,0 +1,19 @@
+label {
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+[name="age"] {
+  width: 65px;
+  height: 15px;
+}
+
+p {
+  display: inline;
+}
