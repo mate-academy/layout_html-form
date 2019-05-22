@@ -14,67 +14,81 @@
 </head>
 <body>
 
-  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" autocomplete="off">
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" autocomplete="off" method="GET">
 
     <fieldset>
       <legend>Personal information</legend>
-      <label>Surname:
+      <label>
+        <span>Surname:</span>
         <input type="text" name="Surname">
       </label>
-      <label>Name:
+      <label>
+        <span>Name:</span>
         <input type="text" name="Name">
       </label>
-      <label>How old are You?
+      <label>
+        <span>How old are You?</span>
         <input type="number" name="number" value="12" step="1" min="0" max="200" data-qa="field-value">
       </label>
-      <label>Full date of birth:
+      <label>
+        <span>Full date of birth:</span>
         <input type="date" name="birth">
       </label>
-      <label>I accept the term of the agreement
+      <label>
+        <span>I accept the term of the agreement</span>
         <input type="checkbox" name="accepting" value="accept">
       </label>
     </fieldset>
 
     <fieldset>
       <legend>Registration</legend>
-      <label>E-mail:
+      <label>
+        <span>E-mail:</span>
         <input type="email" name="mail" placeholder="email@example.com" data-qa="field-placeholder">
       </label>
-      <label>Password:
+      <label>
+        <span>Password:</span>
         <input type="password" name="password">
       </label>
     </fieldset>
 
     <fieldset>
       <legend>An interesting fact about you!</legend>
-      <label>Do you love cats?
-        <input type="radio" name="cats" value="yes">Yes
-        <input type="radio" name="cats" value="no">No
+      <label>
+        <span>Do you love cats?</span>
+        <input type="radio" name="cats" value="yes"><span>Yes</span>
+        <input type="radio" name="cats" value="no"><span>No</span>
       </label>
-      <label>What is your favorite color?
+      <label>
+        <span>What is your favorite color?</span>
         <input type="color" name="favcolor" value="black">
       </label>
-      <label>What time do you go to bed?
+      <label>
+        <span>What time do you go to bed?</span>
         <input type="time" name="time" step="1">
       </label>
-      <label>What are your favorite brand of cars?
+      <label>
+        <span>What are your favorite brand of cars?</span>
         <select name="cars" multiple>
           <option value="bmw">BMW</option>
           <option value="audi">Audi</option>
           <option value="lada">Lada</option>
         </select>
       </label>
-      <label>How do you rate our work?
+      <label>
+        <span>How do you rate our work?</span>
         <input type="range" name="range" step="0" min="0" max="100" value="0">
       </label>
     </fieldset>
 
     <fieldset>
       <legend>Additional info:</legend>
-      <label>Comments:
+      <label>
+        <span>Comments:</span>
         <textarea name="comments" cols="20" rows="2"></textarea>
       </label>
-      <label>Would you recommend us?
+      <label>
+        <span>Would you recommend us?</span>
         <select name="select">
           <option value="yes">yes</option>
           <option value="no">no</option>
