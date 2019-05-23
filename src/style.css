@@ -1,0 +1,37 @@
+div {
+  width: 1024px;
+}
+
+#n12 {
+  width: 69px;
+}
+
+body {
+  margin: 10px;
+  padding: 0;
+  width: 1024px;
+  height: 768px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 10px;
+  padding: 0;
+}
+
+#n12 {
+  width: 70px;
+  height: 23px;
+}
+
+#em {
+  color: #757575;
+}
+
+html {
+  scrollbar-base-color: blue;
+  scrollbar-track-color: blue;
+}

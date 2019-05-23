@@ -13,6 +13,52 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <form>
+    <div>
+      <fieldset>
+        <legend>Personal information</legend>
+        <p>Surname:  <input name="Surname" id="otV"></p>
+        <p>How old are You?:  <input type="number" name="years" value="12" data-qa="field-value" id="n12"></p>
+        <p>Full date of birth:  <input type="date" name="bday" max="1979-12-31"></p>
+        <p>I accept the term of the agreement  <input type="checkbox" name="option1" value="a1" checked></p>
+      </fieldset>
+    </div>
+    <div>
+      <fieldset>
+        <legend>Registration</legend>
+        <p>E-mail:  <input type="email" name="email" value="email@example.com" data-qa="field-placeholder" class="colortext" placeholder="email@example.com"  id="em"></p>
+        <p>Password:  <input type="password" name="Password"></p>
+      </fieldset>
+    </div>
+    <div>
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+        <p>Do you love cats?  <input name="Yes" type="radio" value="Yes">Yes<input name="No" type="radio" value="No">No</p>
+        <p>What is your favorite color?  <input type="color" name="bg" value="#000000"></p>
+        <p>What time do you go to bed?  <input type="time" name="years" value="--:--:-- --"></p>
+        <p>What are your favorite brand of cars?
+        <select name="cars" size="3" scrolling="no">
+        <option value="BMW">BMW</option>
+        <option value="Audi">Audi</option>
+        <option value="Lada">Lada</option>
+        </select></p>
+        <p>How do you rate our work?  <input type="range" min="0" max="100" step="1" value="0"></p>
+      </fieldset>
+    </div>
+    <div>
+      <fieldset>
+        <legend>Additional info:  </legend>
+        <p>Comments:  <textarea>
+        </textarea></p>
+        <p>Would you recommend us?
+        <select class="expand">
+        <option>yes</option>
+        <option>No</option>
+        </select></p>
+      </fieldset>
+    </div>
+    <p><button type="submit" form="data">Submit  </button></p>
+  </form>
 
 <script type="text/javascript" src="./main.js"></script>
 </body>
