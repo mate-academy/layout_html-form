@@ -1,0 +1,30 @@
+input {
+  margin-bottom: 10px;
+}
+
+#agreement,
+#password,
+#work,
+#recommend {
+  margin-bottom: 0;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+#age {
+  width: 65px;
+}
+
+#clr {
+  margin-top: 4px;
+}
+
+#work {
+  margin-top: 12px;
+}
+
+#recommend {
+  margin-top: 10px;
+}
