@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Stylish');
+*,*::before,*::after {-webkit-box-sizing: border-box;box-sizing: border-box;}label {margin: 0;padding: 0;}ul,ol{margin: 0;padding: 0;list-style: none;}textarea {resize: vertical;}
+/* RESET END */
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  color: #333;
+  line-height: 1;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: 'Stylish', sans-serif;
+}
+
+form {
+  margin: 10vh auto;
+  max-width: 800px;
+  border-radius: 10px;
+  background-color: #eee;
+  padding: 40px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  padding-left: 1vw;
+  border-radius: 10px
+}
+
+legend {
+  font-size: calc(34px + .5vw);
+  font-weight: 70;
+  color: darkslategray;
+}
+
+label {
+  font-size: calc(26px + 0.5vw);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+input+label,
+label+label {
+  margin-left: 20px;
+}
+
+input {
+  height: 40px;
+  font-size: calc(20px + .5vw);
+  padding: 0 10px;
+  border: 1px solid grey;
+}
+
+input:focus {
+  border-color: blue;
+}
+
+input[type="submit"] {
+  border: 2px solid #000;
+  height: 50px;
+  width: 150px;
+  background-color: pink;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+input[type="submit"]:hover{
+  background-color: lightpink;
+}
+input[type="submit"]:focus{
+  background-color: orangered;
+  color: #fff;
+  border-color: gold;
+}
+
+textarea{
+  min-height: 60px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 1.5vw;
+}
+
+.comments{
+  align-items: flex-start;
+}
+
+.recommend:last-child{
+  margin-top: 10px;
+}
+
+.recommend span{
+  font-size: calc(18px + 0.5vw);
+}
+.recommend input{
+  display: none;
+}
+.recommend input+label{
+  position: relative;
+  width: 75px;
+  height: 35px;
+  border-radius: 24px;
+  border: 1px solid #333;
+  font-size: 22px;
+}
+.recommend input+label::before{
+  content: "No";
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  border-radius: 20px;
+  background-color: deeppink;
+  padding: 0 10px;
+  color: beige;
+  text-align: right;
+  line-height: 30px;
+  transition: all .3s ease;
+}
+.recommend input+label::after{
+  content: "";
+  position: absolute;
+  right: 40px;
+  bottom: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: darkslategray;
+  transition: all .3s ease;
+}
+.recommend input:checked+label::after{
+  transform: translateX(42px);
+}
+.recommend input:checked+label::before{
+  content: "Yes";
+  background-color: lightgreen;
+  color: #000;
+  text-align: left;
+}

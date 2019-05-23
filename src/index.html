@@ -13,7 +13,107 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  
+ <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+    <fieldset>
+      <legend>Personal information</legend>
 
-<script type="text/javascript" src="./main.js"></script>
+      <div class="form-group">
+        <label for="person-surname">Surname:</label>
+        <input type="text" name="person-surname" id="person-surname" maxlength="20" autocomplete="off" autofocus />
+      </div>
+
+      <div class="form-group">
+        <label for="person-name">Name:</label>
+        <input type="text" name="name" id="person-name" maxlength="20" autocomplete="off" />
+      </div>
+
+      <div class="form-group">
+        <label for="person-age">How old are You?</label>
+        <input type="number" name="person-age" id="person-age" max="120" min="0" value="12" data-qa="field-value">
+      </div>
+  
+      <div class="form-group">
+        <label for="person-birth">Date of birth:</label>
+        <input type="date" name="person-birth" id="person-birth" />
+      </div>
+
+      <div class="form-group">
+        <label for="agreement">I accept the term of the agreement</label>
+        <input type="checkbox" name="agreement" id="agreement" />
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Registration</legend>
+
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" maxlength="20" placeholder="email@example.com"
+          data-qa="field-placeholder" required autocomplete="off" />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" maxlength="20" required autocomplete="off" />
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Interesting facts about you</legend>
+
+      <div class="form-group">
+        <label>Do you love cats?</label>
+
+        <label for="do-love-cats">Yes</label>
+        <input type="radio" name="love-cats" id="do-love-cats" />
+
+        <label for="do-not-love-cats">No</label>
+        <input type="radio" name="love-cats" id="do-not-love-cats" />
+      </div>
+
+      <div class="form-group">
+        <label for="fav-color">What is your favorite color?</label>
+        <input type="color" name="fav-color" id="fav-color" />
+      </div>
+
+      <div class="form-group">
+        <label for="time-to-sleep">What time do you go to bed?</label>
+        <input type="time" name="time-to-sleep" id="time-to-sleep" />
+      </div>
+
+      <div class="form-group">
+        <label for="fav-car-brand">What is your favorite brand of car?</label>
+        <select name="fav-car-brand" id="fav-car-brand">
+          <option value="bmw">BMW</option>
+          <option value="audi">Audi</option>
+          <option value="lada">Lada</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="work-rate">How do you rate our work?</label>
+        <input type="range" name="work-rate" id="work-rate" min="0" max="100" value="100" step="5">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Additional info</legend>
+
+      <div class="form-group comments">
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments" cols="40" rows="3"></textarea>
+      </div>
+
+      <div class="form-group recommend">
+        <span>Would you recommend us?</span>
+        <input type="checkbox" name="recommend" id="recommend" checked />
+        <label for="recommend"></label>
+      </div>
+    </fieldset>
+
+    <input type="submit" value="Send">
+  </form>
+
 </body>
 </html>
