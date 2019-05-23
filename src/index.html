@@ -13,7 +13,104 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <form class="contact_form" action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
+    <fieldset>
+    <legend>Personal information</legend>
+      <ul>
+        <li>
+          <label for="Surname-field">Surname:</label>
+          <input type ="text" name="Surname" id="Surname-field" autocomplete="disabled" pattern="^[a-zA-Z]+$"> <!-- никак не получается заставить проверять это поле ...-->
+          <span class="form_hint">Proper format A-Z and/or a-z</span>
+        </li>
+        <li>
+        <label for="Name-field">Name:</label>
+        <input type ="text" name="Name" id="Name-field" autocomplete="disabled">
+        <span class="form_hint">Proper format A-Z and/or a-z</span>
+        </li>
+        <li>
+          <label for="Ages-field">How old are You?</label>
+          <input class="number" type ="number" name="Ages" id="Ages-field" data-qa="field-value" value="12">
+          <span class="form_hint">Proper format: number (using 0-9)</span>
+        </li>
+        <li>
+          <label for="dateofBirdth-field">Full date of birth:</label>
+          <input type="date" name="dateofBirdth" id="dateofBirdth-field">
+        </li>
+        <li>
+          <label for="checkbox-field">I accept the term of the agreement</label>
+          <input type ="checkbox" name="checkbox" id="checkbox-field">
+        </li>
+      </ul>
+    </fieldset>
 
+    <fieldset>
+    <legend>Registration</legend>
+      <ul>
+        <li>
+          <label for="Email-field">E-mail:</label>
+          <input type ="email" name="Email" id="Email-field" required placeholder="email@example.com" data-qa="field-placeholder">
+          <span class="form_hint">Proper format "name@something.com"</span>
+        </li>
+        <li>
+          <label for="Password-field">Password:</label>
+          <input type ="password" name="Password" id="Password-field" required pattern=".{6,}">
+          <span class="form_hint">Proper format: min. any 6 characters</span>
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>An interesting fact about you!</legend>
+      <ul>
+        <li>
+          <label for="catsLove-field-Yes">Do you love cats?</label>
+          <input type ="radio" name="catsLove" id="catsLove-field-Yes" value="yes">
+          <label for="catsLove-field-Yes">Yes</label>
+          <input type ="radio" name="catsLove" id="catsLove-field-No" value="no">
+          <label for="catsLove-field-No">No</label>
+        </li>
+        <li>
+          <label for="color-field">What is your favorite color?</label>
+          <input type ="color" name="color" id="color-field">
+        </li>
+        <li>
+          <label for="time-field">What time do you go to bed?</label>
+          <input type ="time" name="time" id="time-field" step="2">
+        </li>
+        <li>
+          <label for="carsBrend-field">What are your favorite brand of cars?</label>
+          <select name="carsBrend" id="carsBrend-field" multiple>
+              <option>BMW</option>
+              <option>Audi</option>
+              <option>Lada</option>
+          </select>
+        </li>
+        <li>
+          <label for="ratioOurWorks-field">How do you rate our work?</label>
+          <input type="range" name="ratioOurWorks"  min="0" max="12" value="0" id="ratioOurWorks-field" class="specialMargin2">
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>Additional info:</legend>
+      <ul>
+        <li>
+          <label for="comments-field">Comments:</label>
+          <textarea name="comments" id="comments-field"></textarea>
+        </li>
+        <li>
+          <label for="Recommendation-field">Would you recommend us?</label>
+          <select name="Recommendation" id="Recommendation-field">
+              <option>yes</option>
+              <option>no</option>
+            </select>
+        </li>
+      </ul>
+    </fieldset>
+
+  <button type="submit">Submit</button>
+  </form>
 <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
