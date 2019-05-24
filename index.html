@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post" autocomplete="off">
+    <!-- post потому что мы отправляем данные по нажатию на кнопку, а не получаем (get) -->
       <fieldset>
         <legend>Personal information</legend>
         <p>
@@ -59,8 +60,11 @@
         <legend>An interesting fact about you!</legend>
 
         <span>Do you love cats?</span>
-        <label><input type="radio" name="question" value="yes"> Yes</label>
-        <label><input type="radio" name="question" value="no"> No</label>
+        <input type="radio" name="question" value="yes" id="question-yes">
+        <label for="question-yes"> Yes</label>
+        
+        <input type="radio" name="question" value="no" id="question-no">
+        <label for="question-no"> No</label>
 
         <p>
           <label for="color-field">What is your favorite color?</label>
