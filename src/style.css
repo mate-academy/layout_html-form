@@ -1,0 +1,22 @@
+label {
+  margin: 0 0 10px;
+  display: block;
+}
+
+fieldset {
+  margin: 0 0 20px;
+  display: block;
+  padding-bottom: 0;
+}
+
+select {
+  overflow-y: auto;
+}
+
+input[type="number"] {
+  width: 65px;
+}
+
+form {
+  padding-left: 2px;
+}
