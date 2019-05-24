@@ -52,5 +52,5 @@ Add attribute `data-qa="field-placeholder"` to test it correctly.
 
 **Result**
 
-- [DEMO LINK](https:/bohdanmelvic.github.io/layout_html-form/)
+- [DEMO LINK](https://bohdanmelvic.github.io/layout_html-form/)
 - [TEST REPORT LINK](https://bohdanmelvic.github.io/layout_html-form/report/html_report/)
