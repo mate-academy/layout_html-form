@@ -1,0 +1,21 @@
+body {
+  margin: 0 about;
+}
+
+fieldset {
+  margin-top: 20px;
+  padding-bottom: 0;
+}
+
+fieldset:first-child {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.agreeButton {
+  margin-top: 20px;
+}

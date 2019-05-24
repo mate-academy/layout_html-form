@@ -14,6 +14,76 @@
 </head>
 <body>
 
-<script type="text/javascript" src="./main.js"></script>
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="GET" autocomplete="off">
+
+    <fieldset>
+      <legend>Personal information</legend>
+      <label>Surname:
+        <input type="text" name="surname" minlength="2" required>
+      </label>
+      <label>Name:
+        <input type="text" name="name" minlength="2" required>
+      </label>
+      <label>How old are You?
+        <input type="number" name="age" data-qa="field-value" min="3" max="120" value="12" step="1">
+      </label>
+      <label>Full date of birth:
+        <input type="date" name="birthDate">
+      </label>
+      <label>I accept the term of the agreement
+        <input type="checkbox" name="agreement">
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Registration</legend>
+      <label>E-mail:
+        <input type="email" name="email" placeholder="email@example.com" data-qa="field-placeholder" required>
+      </label>
+      <label>Password:
+        <input type="password" name="password" minlength="8" required>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>An interesting fact about you!</legend>
+      <label>Do you love cats?
+        <input type="radio" name="love" value="yes">Yes
+        <input type="radio" name="noLove" value="no">No
+      </label>
+      <label>What is your favorite color?
+        <input type="color" name="color">
+      </label>
+      <label>What time do you go to bed?
+        <input type="time" name="sleepTime" step="30">
+      </label>
+      <label>What are your favorite brand of cars?
+        <select multiple name="carBrands">
+          <option value="BMW">BMW</option>
+          <option value="Audi">Audi</option>
+          <option value="Lada">Lada</option>
+        </select>
+      </label>
+      <label>How do you rate our work?
+        <input type="range" name="workRate" value="10" min="0" max="10" step="1">
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Additional info:</legend>
+      <label>Comments:
+        <textarea name="comment" maxlength="1000"></textarea>
+      </label>
+      <label>Would you recommend us?
+        <select name="recommendation">
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+      </label>
+    </fieldset>
+    <input class="agreeButton" type="submit" value="Submit">
+  </form>
+
+  <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
