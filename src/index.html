@@ -13,7 +13,81 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
+<form action="">
+  <fieldset>
+    <legend>Personal information</legend>
+    <label for="surname">Surname:
+      <input type="text" id="surname" name="surname" autocomplete="disable">
+    </label>
+    <label for="name">Name:
+      <input type="text" id="name" name="name" autocomplete="disable">
+    </label>
+    <label for="age">How old are You?
+      <input type="number" id="age" name="age" value="12" data-qa="field-value">
+    </label>
+    <label for="dateOB">Full date of birth:
+      <input type="date" id="dateOB" name="dateOB">
+    </label>
+    <label for="accept">I accept the term of the agreement
+      <input type="checkbox" id="accept" name="accept">
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>Registration</legend>
+      <label for="email">E-mail:
+        <input type="email" id="email" placeholder="email@example.com" name="email" data-qa="field-placeholder">
+      </label>
+      <label for="pass">Password:
+        <input type="password" id="pass" name="pass">
+      </label>
+  </fieldset>
+  <fieldset>
+    <legend>An interesting fact about you!</legend>
+    <span>
+      Do you love cats?
+    </span>
+    <label class="radio">
+        <input type="radio" name="animal">Yes
+      </label>
+      <label class="radio">
+        <input type="radio" name="animal">No
+      </label>
+    <label>What is your favorite color?
+      <input type="color" name="color">
+    </label>
+    <label>What time do you go to bed?
+      <input type="time" name="time" step="1">
+    </label>
+    <label>What are your favorite brand of cars?
+      <select name="cars" id="cars" size="4">
+        <option value="BMW">BMW</option>
+        <option value="Audi">Audi</option>
+        <option value="Lada">Lada</option>
+      </select>
+    </label>
+    <label for="work">
+      How do you rate our work?<input type="range" name="work" id="work" value="0">
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>Additional info:</legend>
+    <label for="comments">
+      Comments
+      <textarea name="comments" id="comments" cols="20" rows="2">
+    </textarea>
+    </label>
+    <label for="recommend">
+      Would you recommend us?
+      <select name="recommend" id="recommend">
+        <option value="yes">yes</option>
+        <option value="no">no</option>
+      </select>
+    </label>
+  </fieldset>
+  <label for="submit">
+    <input type="submit" id="submit" name="submit" value="Submit">
+  </label>
+</form>
 <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
