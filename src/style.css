@@ -1,0 +1,29 @@
+
+input {
+  margin-bottom: 10px;
+}
+
+.favoriteCars,
+.comments {
+  margin-bottom: 10px;
+}
+
+.checkboxAccept {
+  margin-bottom: 1px;
+}
+
+.facts {
+  margin-bottom: 3px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+.rateWork {
+  margin-bottom: 10;
+}
+
+input:last-child {
+  margin-bottom: 0;
+}
