@@ -18,10 +18,10 @@
     <fieldset>
       <legend>Personal information</legend>
       <label for="surname">Surname:
-        <input type="text" name="surname" id="surname" autocomplete="off">
+        <input type="text" name="surname" id="surname" autocomplete="off" required>
       </label>
       <label for="name">Name:
-        <input type="text" name="name" id="name" autocomplete="off">
+        <input type="text" name="name" id="name" autocomplete="off" required>
       </label>
       <label for="years">How old are You?
         <input type="number" name="years" id="years" value="12" data-qa="field-value" min="18" max="100">
@@ -37,10 +37,10 @@
     <fieldset>
       <legend>Registration</legend>
       <label for="email">E-mail:
-        <input type="email" name="email" id="email" placeholder="email@example.com" data-qa="field-placeholder">
+        <input type="email" name="email" id="email" placeholder="email@example.com" data-qa="field-placeholder" required>
       </label>
       <label for="password" class="no-margin">Password:
-        <input type="password" name="password" id="password" minlength="5" maxlength="64">
+        <input type="password" name="password" id="password" minlength="5" maxlength="64" required>
       </label>
     </fieldset>
 
