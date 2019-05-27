@@ -1,0 +1,24 @@
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#age {
+  width: 65px;
+}
+
+label:last-child {
+  margin-bottom: 0;
+}
+
+label.radio {
+  display: inline-block;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
