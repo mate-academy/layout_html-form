@@ -1,0 +1,15 @@
+fieldset {
+  margin-bottom: 20px ;
+}
+
+label {
+  display: block ;
+}
+
+#cats_line label {
+  display: inline ;
+}
+
+label + label {
+  margin-top: 10px ;
+}
