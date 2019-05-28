@@ -13,7 +13,76 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <form action="#" onsubmit="https://mate-academy-form-lesson.herokuapp.com/create-application">
+    <fieldset>
+      <legend>Personal information</legend>
+      <label for="surname">
+        Surname: <input type="text" autocomplete="off" name="Surname" id="surname">
+      </label>
+      <label for="name">
+        Name: <input type="text" autocomplete="off" id="name" name="name">
+      </label>
+      <label for="age">
+        How old are You? <input type="number" id="age" name="age" value="12" data-qa="field-value">
+      </label>
+      <label for="birth-date">
+        Full date of birth: <input type="date" id="birth-date" name="birth-date">
+      </label>
+      <label for="agreement">
+        I accept the term of the agreement <input type="checkbox" id="agreement" name="agreement">
+      </label>
+    </fieldset>
 
+    <fieldset>
+      <legend>Registration</legend>
+      <label for="email" required>
+        E-mail: <input type="email" name="email" id="email" placeholder="email@example.com" data-qa="field-placeholder">
+      </label>
+      <label for="passw" required>
+        Password: <input type="password" name="passw" id="passw">
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>An interesting fact about you!</legend>
+      <label for="like-cats">
+        Do you love cats?
+        <input type="radio" id="like-cats" name="like-cats" value="yes"> Yes
+        <input type="radio" id="like-cats-no" name="like-cats" value="no"> No
+      </label>
+      <label for="fav-color">
+        What is your favorite color? <input type="color" name="fav-color" id="fav-color" value="black">
+      </label>
+      <label for="bed-time">
+        What time do you go to bed? <input type="time" name="bed-time" id="bed-time" step="1">
+      </label>
+      <label for="fav-cars">
+        What are your favorite brand of cars?
+        <select name="fav-cars" id="fav-cars" size="4" multiple>
+          <option value="BMW">BMW</option>
+          <option value="Audi">Audi</option>
+          <option value="Lada">Lada</option>
+        </select>
+      </label>
+      <label for="work-rate">
+        How do you rate our work? <input type="range" name="work-rate" id="work-rate" min="1" max="10" value="1">
+      </label>
+
+    </fieldset>
+    <fieldset>
+      <legend>Additional info:</legend>
+      <label for="comments-block">
+        Comments: <textarea name="comments-block" id="comments-block"></textarea>
+      </label>
+      <label for="recommend-us">
+        Would you recommend us?
+        <select name="recommend-us" id="recommend-us">
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+      </label>
+    </fieldset>
+    <input type="submit" value="Submit">
+  </form>
 <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>

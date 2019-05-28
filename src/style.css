@@ -1,0 +1,32 @@
+form {
+  max-width: 1008px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+label:last-child {
+  margin-bottom: 0;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+#age {
+  width: 65px;
+}
+
+#birth-date {
+  width: 148px;
+}
+
+#bed-time {
+  width: 124px;
+}
+
+#fav-cars {
+  overflow: hidden;
+}
