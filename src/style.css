@@ -1,0 +1,17 @@
+label {
+  margin-top: 10px;
+  display: block;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+.firstInput {
+  margin-top: 0;
+}
+
+.fact {
+  margin-top: 0;
+  display: inline-block;
+}
