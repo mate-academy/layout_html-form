@@ -9,10 +9,101 @@
           maximum-scale=1.0,
           minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Layout_Html_Form</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <form autocomplete="off" action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="">
+    <fieldset>
+      <legend>Personal information</legend>
+      <div class="wrapper">
+        <label for="surname_field">Surname:</label>
+        <input type="text" name="surname" id="surname_field" required>
+      </div>
+      <div class="wrapper">
+        <label for="name_field">Name:</label>
+        <input type="text" name="name" id="name_field" required>
+      </div>
+      <div class="wrapper">
+        <label for="age_field">How old are You?</label>
+        <input data-qa="field-value" type="number" name="age" id="age_field" value="12" min="0" max="150" required>
+      </div>
+      <div class="wrapper">
+        <label for="birthdate_field">Full date of birth:</label>
+        <input type="date" name="birthdate" id="birthdate_field">
+      </div>
+      <div class="wrapper">
+        <label for="useragreement_check">I accept the term of the agreement</label>
+        <input type="checkbox" name="useragreement" id="useragreement_check">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Registration</legend>
+      <div class="wrapper">
+        <label for="email_field">E-mail:</label>
+        <input data-qa="field-placeholder" type="email" name="user_email" id="email_field" placeholder="email@example.com" required>
+      </div>
+      <div class="wrapper">
+        <label for="password_field">Password:</label>
+        <input type="password" name="user_password" id="password_field" minlength="4" maxlength="40" required>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>An interesting fact about you!</legend>
+      <div class="wrapper">
+          <span>Do you love cats?</span>
+          <input type="radio" name="cat_question" id="cat_question_yes">
+          <label for="cat_question_yes">Yes</label>
+          <input type="radio" name="cat_question" id="cat_question_no">
+          <label for="cat_question_no">No</label>
+      </div>
+
+      <div class="wrapper">
+        <label for="color_field">What is your favorite color?</label>
+        <input type="color" name="favorite_color" id="color_field">
+      </div>
+
+      <div class="wrapper">
+        <label for="time_field">What time do you go to bed?</label>
+        <input type="time" name="bed_time" id="time_field">
+      </div>
+
+      <div class="wrapper">
+        <label for="favorite_car_field">What are your favorite brand of cars?</label>
+        <select name="favorite_car" id="favorite_car_field" multiple>
+          <option value="bmw">BMW</option>
+          <option value="audi">Audi</option>
+          <option value="lada">Lada</option>
+        </select>
+      </div>
+
+      <div class="wrapper">
+        <label for="work_rate_field">How do you rate our work?</label>
+        <input type="range" name="work_rate" id="work_rate_field" min="0" max="100" value="0" step="10">
+      </div>
+    </fieldset>
+
+
+    <fieldset>
+      <legend>Additional info:</legend>
+      <div class="wrapper">
+        <label for="comments_field">Comments:</label>
+        <textarea name="comments" id="comments_field" cols="23" rows="2"></textarea>
+      </div>
+
+      <div class="wrapper">
+        <label for="recommendation_question">Would you recommend us?</label>
+          <select name="recommendation" id="recommendation_question">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <button type="submit" name="submit-button">Submit</button>
+  </form>
 
 <script type="text/javascript" src="./main.js"></script>
 </body>
