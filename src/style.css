@@ -1,0 +1,12 @@
+fieldset {
+  margin-bottom: 20px;
+}
+
+.space {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#age {
+  width: 48px;
+}
