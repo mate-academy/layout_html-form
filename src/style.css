@@ -1,0 +1,13 @@
+label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+#fav-cars {
+  overflow: hidden;
+}
