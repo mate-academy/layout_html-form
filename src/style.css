@@ -1,0 +1,20 @@
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+label:last-child {
+  margin: 0;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+.radioCat {
+  display: inline-block;
+}
+
+#age {
+  width: 65px;
+}
