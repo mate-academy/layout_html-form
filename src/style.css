@@ -1,0 +1,13 @@
+fieldset {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+label {
+  padding-bottom: 10px;
+  display: block;
+}
+
+#age {
+  width: 65px;
+}
