@@ -1,0 +1,11 @@
+label + label {
+  margin-top: 10px;
+}
+
+label {
+  display: block;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
