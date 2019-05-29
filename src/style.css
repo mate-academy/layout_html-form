@@ -1,0 +1,13 @@
+.set {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+.form-elements {
+  margin-bottom: 10px;
+  padding-bottom: 0;
+}
+
+#age {
+  width: 65px;
+}
