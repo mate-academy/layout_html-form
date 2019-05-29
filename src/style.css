@@ -3,12 +3,9 @@ body {
   padding: 0;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 form {
-  margin-left: 10px;
+  margin: 1px 0 0 10px;
+  padding: 0;
 }
 
 div {
@@ -19,6 +16,6 @@ fieldset {
   margin: 10px 0 ;
 }
 
-label:focus {
-  cursor: pointer;
+label:active {
+  border: 1px solid #f00;
 }
