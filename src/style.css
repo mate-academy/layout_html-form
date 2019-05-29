@@ -1,0 +1,17 @@
+fieldset {
+  margin-bottom: 20px;
+}
+
+.block {
+  display: block;
+  margin-bottom: 10px;
+
+}
+
+.no-margin {
+  margin-bottom: 0;
+}
+
+.inline {
+  display: inline;
+}

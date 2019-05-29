@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width,
+  <meta name="viewport" content="width=device-width,
           user-scalable=no,
           initial-scale=1.0,
           maximum-scale=1.0,
@@ -12,8 +12,153 @@
   <title>Document</title>
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
 
-<script type="text/javascript" src="./main.js"></script>
+
+<body>
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+    <fieldset>
+      <legend>Personal information</legend>
+      <label for="surname" class="block">Surname:
+        <input autocomplete="off" type="text" name="surname" id="surname">
+      </label>
+
+      <label for="name" class="block">Name:
+        <input autocomplete="off" type="text" name="name" id="name">
+      </label>
+
+      <label for="age" class="block">How old are You?
+        <input
+          type="number"
+          min="1"
+          max="200"
+          name="age"
+          id="age"
+          data-qa="field-value"
+          value="12"
+        >
+      </label>
+
+      <label for="birthday" class="block">Full date of birth:
+        <input
+          type="date"
+          name="birthday"
+          id="birthday">
+      </label>
+
+      <label for="accept" class="block no-margin">I accept the term of the agreement
+        <input
+          type="checkbox"
+          name="accept"
+          id="accept"
+        >
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Registration</legend>
+      <label for="mail" class="block">E-mail:
+        <input
+          type="email"
+          name="mail"
+          id="mail"
+          placeholder="email@example.com"
+          data-qa="field-placeholder"
+        >
+      </label>
+
+      <label for="pass" class="block no-margin">Password:
+        <input
+          type="password"
+          name="pass"
+          id="pass"
+          required
+          minlength="8"
+        >
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>An interesting fact about you!</legend>
+      <div class="block">Do you love cats?
+        <label for="yes" class="inline">
+          <input
+            type="radio"
+            name="cats"
+            id="yes"
+            value="yes"
+          > Yes
+        </label>
+
+        <label for="no" class="inline">
+          <input
+            type="radio"
+            name="cats"
+            id="no"
+            value="no"
+          > No
+        </label>
+      </div>
+
+      <label for="color" class="block">What is your favorite color?
+        <input
+          type="color"
+          name="color"
+          id="color"
+        >
+      </label>
+
+      <label for="time" class="block">What time do you go to bed?
+        <input
+          type="time"
+          name="time"
+          id="time"
+          step="1"
+        >
+      </label>
+
+      <label for="cars" class="block">What are your favorite brand of cars?
+        <select
+          name="cars"
+          id="cars"
+          multiple
+        >
+          <option value="bmw">BMW</option>
+          <option value="audi">Audi</option>
+          <option value="lada">Lada</option>
+        </select>
+      </label>
+
+      <label for="rate" class="block no-margin">How do you rate our work?
+        <input
+          type="range"
+          name="rate"
+          id="rate"
+          value="0">
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Additional info:</legend>
+      <label for="comments" class="block">Comments:
+        <textarea
+          name="comments"
+          id="comments"
+          maxlength="100"
+        >
+        </textarea>
+      </label>
+
+      <label for="recommend" class="block no-margin">Would you recommend us?
+        <select name="recommend" id="recommend">
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <input type="submit" value="Submit">
+  </form>
+
 </body>
+
 </html>
