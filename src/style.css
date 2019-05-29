@@ -1,0 +1,15 @@
+fieldset {
+  margin-bottom: 20px ;
+}
+
+#likeCats label {
+  display: inline ;
+}
+
+label {
+  display: block ;
+}
+
+label + label {
+  margin-top: 10px ;
+}
