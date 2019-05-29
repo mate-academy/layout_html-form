@@ -14,6 +14,129 @@
 </head>
 <body>
 
-<script type="text/javascript" src="./main.js"></script>
+  <form class="first">
+    <fieldset>
+      <legend>Personal information</legend>
+
+      <label for="surname">Surname:
+        <input type="text" size="20" minlength="4" maxlength="15" id="surname" name="surname">
+      </label>
+
+      <label for="name">Name:
+        <input type="text" size="20" minlength="4" maxlength="15" id="name" name="name">
+      </label>
+
+      <label for="old">How old are You?
+        <input
+          type="text"
+          size="4" value="12"
+          min="12" max="99"
+          data-qa="field-value"
+          id="old"
+          name="old">
+        </label>
+
+      <label for="birth">Full date of birth:
+        <input type="text" size="20" placeholder="mm/dd/yyyy" id="birth" name="birth">
+      </label>
+
+      <label for="checkbox">I accept the term of the agreement
+        <input type="checkbox" id="checkbox" name="checkbox">
+      </label>
+    </fieldset>
+  </form>
+
+  <form>
+    <fieldset>
+      <legend>Registration</legend>
+
+      <label for="mail">E-mail:
+        <input
+          type="email"
+          placeholder="email@example.com"
+          minlength="7"
+          maxlength="40"
+          id="mail"
+          name="mail">
+      </label>
+
+      <label for="password">Password:
+        <input
+          type="password"
+          minlength="7"
+          maxlength="40"
+          id="password"
+          name="password">
+      </label>
+    </fieldset>
+  </form>
+
+  <form>
+    <fieldset>
+      <legend>An interesting fact about you! </legend>
+
+      <label for="cats" class="radio">Do you love cats?
+        <input
+          type="radio"
+          value="Yes"
+          name="cats">
+      </label>
+      Yes
+
+      <label for="cats" class="radio">
+        <input
+          type="radio"
+          value="No"
+          id="cats"
+          name="cats">
+      </label>
+      No
+      <label for="color">What is your favotite color?
+        <input type="color" id="color" name="color">
+      </label>
+      <label for="time">What time do you go to bad?
+        <input type="datetime" placeholder="--:--:-- --" size="10" id="time" name="time">
+      </label>
+
+      <label for="car">What are your favorite brand of car?
+        <select id="car" name="car" size="4">
+          <option value="BMW">BMW</option>
+          <option value="Audi">Audi</option>
+          <option value="Lada">Lada</option>
+        </select>
+      </label>
+
+      <label for="rate">How do you rate our work?
+        <input
+          type="range"
+          min="0"
+          max="100"
+          step="1"
+          value="0"
+          id="rate"
+          name="rate">
+      </label>
+    </fieldset>
+  </form>
+
+    <form>
+      <fieldset>
+        <legend>Additional infirmation: </legend>
+
+        <label for="comments">Comments:
+          <textarea id="comments" name="comments"></textarea>
+        </label>
+
+        <label for="recommend">Would you recommend us?
+          <select id="recommend" name="recommend">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+
+      </fieldset>
+    </form>
+
+    <input type="submit" value="submit">
 </body>
 </html>

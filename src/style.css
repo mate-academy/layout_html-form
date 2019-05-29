@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 10px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-width: 1px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  padding-left: 2px;
+}
+
+.radio {
+  display: inline;
+}
