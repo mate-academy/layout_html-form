@@ -1,0 +1,31 @@
+form {
+  max-width: 1008px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+.field:last-child {
+  margin-bottom: 0;
+}
+
+input[type="number"] {
+  width: 65px;
+}
+
+input[type="date"] {
+  width: 148px;
+}
+
+input[type="time"] {
+  width: 124px;
+}
+
+select[name="fav-cars"] {
+  overflow: hidden;
+}
