@@ -2,31 +2,30 @@ form {
   max-width: 1008px;
 }
 
-label {
-  margin-bottom: 10px;
-  display: block;
-}
-
-label:last-child {
-  margin-bottom: 0;
-}
-
 fieldset {
   margin-bottom: 20px;
 }
 
-#age {
+.field {
+  margin-bottom: 10px;
+}
+
+.field:last-child {
+  margin-bottom: 0;
+}
+
+input[type="number"] {
   width: 65px;
 }
 
-#birth-date {
+input[type="date"] {
   width: 148px;
 }
 
-#bed-time {
+input[type="time"] {
   width: 124px;
 }
 
-#fav-cars {
+select[name="fav-cars"] {
   overflow: hidden;
 }
