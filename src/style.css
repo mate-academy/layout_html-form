@@ -1,0 +1,19 @@
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+.radio {
+  display: inline;
+  margin-bottom: 0;
+}
+
+[block] {
+  display: block;
+  margin-bottom: 10px;
+}
