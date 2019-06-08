@@ -1,0 +1,18 @@
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.rating {
+  display: inline-block;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+input[type="email"] {
+  color: grey;
+}
