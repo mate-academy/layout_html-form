@@ -4,6 +4,10 @@ label {
   margin-bottom: 10px;
 }
 
+.rating {
+  display: inline-block;
+}
+
 fieldset {
   margin-bottom: 20px;
   padding-bottom: 0;
