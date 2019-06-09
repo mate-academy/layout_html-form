@@ -1,0 +1,20 @@
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+.bottom-label {
+  margin-bottom: 0;
+}
+
+#age {
+  width: 65px;
+}
