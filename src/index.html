@@ -3,17 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-        content="width=device-width,
-          user-scalable=no,
-          initial-scale=1.0,
-          maximum-scale=1.0,
-          minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
-<script type="text/javascript" src="./main.js"></script>
+<form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+  <fieldset>
+    <legend>
+      Personal information
+    </legend>
+    <label for="surname">Surname: <input type="text" id="surname" required autocomplete="on"></label>
+    <label for="name">Name: <input type="text" id="name" required autocomplete="on"></label>
+    <label for="old">How old are You? <input type="number" id="old" value="12" min="10" max="110" data-qa="field-value"></label>
+    <label for="date">Full date of birth: <input type="date" id="date"></label>
+    <label for="check">I accept the term of the agreement <input type="checkbox" id="check"></label>
+  </fieldset>
+  <fieldset>
+    <legend>
+      Registration
+    </legend>
+    <label for="email">E-mail: <input type="email" autocomplete="on" placeholder="email@example.com" id="email" data-qa="field-placeholder"></label>
+    <label for="password">Password: <input type="password" id="password"></label>
+  </fieldset>
+  <fieldset>
+    <legend>
+      An interesting fact about you!
+    </legend>
+    <label for="yes">Do you love cats? <input type="radio" id="yes" name="answer"> Yes <input type="radio" id="no" name="answer"> No</label>
+    <label for="color">What is your favorite color? <input type="color" id="color"></label>
+    <label for="time">What time do you go to bed? <input type="time" id="time"></label>
+    <label for="select">What are your favorite brand of cars? <select id="select" size="4">
+      <option>BMW</option>
+      <option>Audi</option>
+      <option>Lada</option>
+    </select></label>
+    <label for="rate">How do you rate our work? <input type="range" id="rate"></label>
+  </fieldset>
+  <fieldset>
+    <legend>
+      Additional info:
+    </legend>
+    <label for="comment">Comments: <textarea type="text" id="comment" minlength="1" maxlength="100" autocomplete="off"></textarea></label>
+    <label for="recommend">Would you recommend us? <select id="recommend">
+      <option>yes</option>
+      <option>no</option>
+    </select></label>
+  </fieldset>
+  <input type="submit" value="Submit">
+</form>
 </body>
 </html>
