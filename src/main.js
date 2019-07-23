@@ -3,7 +3,8 @@
 const INPUT_BUTTON_TYPES = ['button', 'submit', 'reset'];
 const BUTTON_TAG_NAME = 'button';
 
-function showFormValue(event) {
+// eslint-disable-next-line no-unused-vars
+function onSubmit(event) {
   event.preventDefault();
 
   const { target: form } = event;
@@ -18,7 +19,3 @@ function showFormValue(event) {
     `Form name: ${form.name}\nForm value: ${JSON.stringify(formValue, null, 4)}`
   );
 }
-
-window.addEventListener('load', () => {
-  document.querySelector('form').addEventListener('submit', showFormValue);
-});
