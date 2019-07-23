@@ -40,7 +40,7 @@ minlength, maxlength, etc
 - The email field should have placeholder value: 'email@example.com'.
 Add attribute `data-qa="field-placeholder"` to test it correctly.
 - The text fields should have disabled autocomplete.
-- Add a button which submits the form.
+- Add a button which submits the form. There are submit listener in JS which show you form value.
 - Vertical distance between inputs should be 10px
 - Vertical distance between blocks with inputs should be 20px
 - Any other styles should be browser's default
