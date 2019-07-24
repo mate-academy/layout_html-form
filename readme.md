@@ -1,3 +1,8 @@
+**Result**
+
+- [DEMO LINK](https://tolyaruban.github.io/layout_html-form/)
+- [TEST REPORT LINK](https://tolyaruban.github.io/layout_html-form/report/html_report/)
+
 # Frontend practice with html forms
 
 ## Main goal:
@@ -50,8 +55,3 @@ Add attribute `data-qa="field-placeholder"` to test it correctly.
 **Read the guideline before start**
 
 [Guideline](https://github.com/mate-academy/layout_task-guideline/blob/master/README.md)
-
-**Result**
-
-- [UPDATE DEMO LINK](https://<your_account>.github.io/<repo_name>/)
-- [UPDATE TEST REPORT LINK](https://<your_account>.github.io/<repo_name>/report/html_report/)
