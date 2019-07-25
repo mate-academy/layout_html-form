@@ -1,0 +1,15 @@
+.reg-form__label {
+  display: block;
+}
+
+.reg-form__label:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.reg-form__label-container {
+  margin-bottom: 10px;
+}
+
+.reg-form__fieldset {
+  margin-bottom: 20px;
+}
