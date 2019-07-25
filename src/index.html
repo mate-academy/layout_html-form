@@ -13,7 +13,87 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
+  <form name="task_form">
+    <fieldset  class="fieldset_box">
+      <legend>Personal information</legend>
+      <div class="input_container">
+        <label for="surname">Surname:</label>
+        <input type="text" name="surname" autocomplete="off" id="surname">
+      </div>
+      <div class="input_container">
+        <label for="name">Name:</label>
+          <input type="text" id="name" name="name" autocomplete="off">
+        </div>
+        <div class="input_container">
+          <label for="age">How old are You?</label>
+          <input type="number" id="age" name="age"  min="10" max="100" value="12" data-qa="field-value">
+        </div>
+        <div class="input_container">
+          <label for="birth_date">Full date of birth:</label>
+          <input type="date" id="birth_date" name="birth_date">
+        </div>
+        <div>
+          <label for="agreement">I accept the term of the agreement</label>
+          <input type="checkbox" name="agreement" id="agreement">
+        </div>
+    </fieldset>
+    <fieldset class="fieldset_box">
+      <legend>Registration</legend>
+      <div class="input_container">
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="email@example.com" required data-qa="field-placeholder">
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required minlength="8">
+      </div>
+    </fieldset>
+    <fieldset class="fieldset_box">
+      <legend>An interesting fact about you!</legend>
+      <div class="input_container">
+        <label for="love_cats">Do you love cats?</label>
+        <input type="radio" id="love_cats" name="cats" value="yes">
+        <label for="love_cats">Yes</label>
+        <input type="radio" name="cats" id="love_cats1" value="no">
+        <label for="love_cats1">No</label>
+      </div>
+      <div class="input_container">
+        <label for="favorite_color">What is your favorite color?</label>
+        <input type="color" name="favorite_color" id="favorite_color">
+      </div>
+      <div class="input_container">
+        <label for="bedtime">What time do you go to bed?</label>
+        <input type="time" id="bedtime" name="bedtime" step="1">
+        </div>
+        <div class="input_container">
+          <label for="car_brand">What are your favorite brand of cars?</label>
+          <select name="car_brand" id="car_brand" size="4">
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </div>
+        <div>
+          <label for="work_rate">How do you rate our work?</label>
+          <input type="range" id="work_rate" name="work_rate" value="0">
+        </div>
+    </fieldset>
+    <fieldset class="fieldset_box">
+      <legend>Additional info:</legend>
+      <div class="input_container">
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments" cols="20" rows="2"></textarea>
+      </div>
+      <div>
+        <label for="recommendation">Would you recommend us?</label>
+        <select name="recommendation" id="recommendation">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+    </fieldset>
+    <input type="submit" name="submit" onsubmit="onSubmit(event)">
+  </form>
 <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
