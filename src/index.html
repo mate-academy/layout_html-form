@@ -1,19 +1,118 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width,
-          user-scalable=no,
-          initial-scale=1.0,
-          maximum-scale=1.0,
-          minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width,
+                 user-scalable=no,
+                 initial-scale=1.0,
+                 maximum-scale=1.0,
+                 minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
 
-<script type="text/javascript" src="./main.js"></script>
+<body>
+  <form action="#" class="reg_form">
+    <fieldset class="fieldset_reg_form">
+      <legend>Personal information</legend>
+
+      <label for="surname">
+        Surname:
+        <input type="text" name="surname" id="surname" autocomplete="off">
+      </label>
+
+      <label for="name">
+        Name:
+        <input type="text" name="name" id="name" autocomplete="off">
+      </label>
+
+      <label for="age">
+        How old are You?
+        <input class="age" type="number" name="age" id="age" placeholder="12" data-qa="field-value">
+      </label>
+
+      <label for="date">
+        Full date of birth:
+        <input type="date" name="date" id="date" value="00-00-0000">
+      </label>
+
+      <label class="last" for="agree">
+        I accept the term of the agreement
+        <input type="checkbox" name="agree" id="agree">
+      </label>
+    </fieldset>
+
+    <fieldset class="fieldset_reg_form">
+      <legend>Registration</legend>
+
+      <label for="email">
+        E-mail:
+        <input type="email" name="email" id="email" placeholder="email@example.com" data-qa="field-placeholder">
+      </label>
+
+      <label class="last" for="password">
+        Password:
+        <input type="password" name="password" id="password" minlength="6" maxlength="26" required>
+      </label>
+    </fieldset>
+
+    <fieldset class="fieldset_reg_form">
+      <legend>An interesting fact about you!</legend>
+      <div class="choose">
+        Do you love cats?
+        <span class="cats_love">
+          <input type="radio" name="choose" id="radio-yes" value="Yes">
+          Yes
+        </span>
+        <span class="cats_love"><input type="radio" name="choose" id="radio-no" value="No">No</span>
+      </div>
+
+      <label for="color">
+        What is your favorite color?
+        <input type="color" name="color" id="color">
+      </label>
+
+      <label for="time-bed">
+        What time do you go to bed?
+        <input type="time" name="time-bed" id="time-bed">
+      </label>
+
+      <label for="name">
+        What are your favorite brand of car?
+        <select name="brand-car" id="brand-car" size="4">
+          <option value="BMW">BMW</option>
+          <option value="Audi">Audi</option>
+          <option value="Lada">Lada</option>
+        </select>
+      </label>
+
+      <label class="last" for="rate">
+        How do you rate our work?
+        <input type="range" name="rate" id="rate" min="1" max="10" step="1">
+      </label>
+    </fieldset>
+
+    <fieldset class="fieldset_reg_form">
+      <legend>Additional info</legend>
+
+      <label class="comment" for="comment">
+        Comments:
+        <textarea name="comment" id="comment" cols="25" rows="2" autocomplete="off"></textarea>
+      </label>
+
+      <label class="last" for="recommend">
+        Would you recommend us?
+        <select name="recommend" id="recommend">
+          <option value="yes" selected>yes</option>
+          <option value="no">no</option>
+        </select>
+      </label>
+    </fieldset>
+    <input type="submit" name="btn" id="btn" onsubmit="onSubmit(event)" value="Submit">
+  </form>
+  <script type="text/javascript" src="./main.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,33 @@
+.fieldset_reg_form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.last {
+  margin-bottom: 0;
+}
+
+.choose {
+  margin-bottom: 10px;
+}
+
+.comment {
+  margin-bottom: 10px;
+}
+
+.age {
+  width: 65px;
+}
+
+.age::placeholder {
+  color: black;
+}
+
+.cats_love {
+  display: inline-block;
+  margin-left: 5px;
+}
