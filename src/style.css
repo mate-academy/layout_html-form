@@ -1,0 +1,7 @@
+.form-section {
+  margin-bottom: 20px;
+}
+
+.input-group:not(:last-child) {
+  margin-bottom: 10px;
+}
