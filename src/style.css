@@ -4,22 +4,14 @@
 
 .form-group {
   border: 1px solid #6c6c6c;
-  padding: 15px 15px 0;
+  padding: 5px 15px 0;
   margin-bottom: 20px;
   position: relative;
 }
 
-.form-group-label {
-  position: absolute;
-  top: -0.8em;
-  left: 15px;
-  background-color: #fff;
-  padding: 3px;
-}
-
 .form-group-input-label {
   display: block;
-  margin-bottom: 10px;
+  margin: 0  2px 10px;
 }
 
 .form-group-input {

@@ -14,8 +14,8 @@
 </head>
 <body>
 <form onsubmit="onSubmit(event)">
-  <div class="form-group">
-    <div class="form-group-label">Personal information</div>
+  <fieldset class="form-group">
+    <legend>Personal information</legend>
     <label for="surname" class="form-group-input-label">
       Surname:
       <input id="surname" class="form-group-input" name="surname" type="text" autocomplete="off" required="required">
@@ -40,11 +40,11 @@
       I accept the term of the agreement
       <input id="accept" class="form-group-input" name="accept" type="checkbox">
     </label>
-  </div>
+  </fieldset>
 
 
-  <div class="form-group">
-    <div class="form-group-label">Registration</div>
+  <fieldset class="form-group">
+    <legend>Registration</legend>
     <label for="email" class="form-group-input-label">
       E-mail:
       <input id="email" class="form-group-input" name="email" type="email" placeholder="email@example.com"
@@ -57,10 +57,10 @@
              minlength="6"
              autocomplete="new-password" required>
     </label>
-  </div>
+  </fieldset>
 
-  <div class="form-group">
-    <div class="form-group-label">An interesting fact about you!</div>
+  <fieldset class="form-group">
+    <legend>An interesting fact about you!</legend>
     <label for="cat-lover" class="form-group-input-label">
       Do you love cats?
       <label for="cat-lover">
@@ -97,10 +97,10 @@
       How do you rate our work?
       <input id="rate" class="form-group-input" name="rate" type="range" min="0" max="10" value="0">
     </label>
-  </div>
+  </fieldset>
 
-  <div class="form-group">
-    <div class="form-group-label">Additional info:</div>
+  <fieldset class="form-group">
+    <legend>Additional info:</legend>
     <label for="comments" class="form-group-input-label">
       Comments:
       <textarea id="comments" class="form-group-input" name="comments" maxlength="100" rows="2"></textarea>
@@ -113,7 +113,7 @@
         <option value="no">no</option>
       </select>
     </label>
-  </div>
+  </fieldset>
 
   <button type="submit">Submit</button>
 </form>
