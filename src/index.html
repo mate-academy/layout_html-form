@@ -17,49 +17,53 @@
   <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post" autocomplete="off">
     <fieldset class="fieldset">
       <legend>Personal information</legend>
-      <label for="surname">
+      <label for="surname" class="label-block">
         Surname: <input type="text" name="surname" id="surname">
       </label>
-      <label for="name">
+      <label for="name" class="label-block">
         Name: <input type="text" name="name" id="name">
       </label>
-      <label for="age">
+      <label for="age" class="label-block">
         How old are You? <input type="number" name="age" value="12" data-qa="field-value" min="18" max="100" id="age">
       </label>
-      <label for="bday">
+      <label for="bday" class="label-block">
         Full date of birth: <input type="date" name="bday" id="bday">
       </label>
-      <label for="accept" class="last">
+      <label for="accept" class="label-block">
         I accept the term of the agreement <input type="checkbox" name="accept" id="accept">
       </label>
     </fieldset>
 
     <fieldset class="fieldset">
       <legend>Registration</legend>
-      <label for="email">
+      <label for="email" class="label-block">
         E-mail: <input type="email" name="email" placeholder="email@example.com" data-qa="field-placeholder" required id="email">
       </label>
-      <label for="pwd" class="last">
+      <label for="pwd" class="label-block">
         Password: <input type="password" name="pwd" minlength="8" maxlength="16" id="pwd">
       </label>
     </fieldset>
 
     <fieldset class="fieldset">
       <legend>An interesting fact about you!</legend>
-      <label for="cats">
+      <div class="label-block">
         Do you love cats?
-        <input type="radio" name="cats" value="yes" id="cats"> Yes
-        <input type="radio" name="cats" value="no"> No
-      </label>
-      <label for="color">
+        <label for="yes">
+          <input type="radio" name="cats" value="yes" id="yes"> Yes
+        </label>
+        <label for="no">
+          <input type="radio" name="cats" value="no" id="no"> No
+        </label>
+      </div>
+      <label for="color" class="label-block">
         What is your favorite color?
         <input type="color" name="color" value="black" id="color">
       </label>
-      <label for="bed">
+      <label for="bed" class="label-block">
         What time do you go to bed?
         <input type="time" name="bed" id="bed">
       </label>
-      <label for="cars">
+      <label for="cars" class="label-block">
         What are your favorite brand of cars?
         <select name="cars" size="4" multiple id="cars">
           <option>BMW</option>
@@ -67,7 +71,7 @@
           <option>Lada</option>
         </select>
       </label>
-      <label for="rate" class="last">
+      <label for="rate" class="label-block">
         How do you rate our work?
         <input type="range" name="rate" min="0" max="10" value="0" id="rate">
       </label>
@@ -75,11 +79,11 @@
 
     <fieldset class="fieldset">
       <legend>Additional info:</legend>
-      <label for="comments">
+      <label for="comments" class="label-block">
         Comments:
         <textarea name="comments" cols="20" rows="2" id="comments"></textarea>
       </label>
-      <label for="recommend" class="last">
+      <label for="recommend" class="label-block">
         Would you recommend us?
         <select name="recommend" id="recommend">
           <option value="yes">yes</option>
