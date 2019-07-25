@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+.form-group {
+  border: 1px solid #6c6c6c;
+  padding: 15px 15px 0;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form-group-label {
+  position: absolute;
+  top: -0.8em;
+  left: 15px;
+  background-color: #fff;
+  padding: 3px;
+}
+
+.form-group-input-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-group-input {
+  border: 1px solid #a9a9a9;
+  padding: 0 3px;
+}
+
+select.form-group-input {
+  overflow-y: auto;
+}
+
+.form-group-selector {
+  height: 19px;
+}
+
+.form-group-input[type="text"] {
+  width: 170px;
+}
+
+.form-group-input[type="number"] {
+  width: 50px;
+}
+
+.form-group-input[type="checkbox"] {
+  position: relative;
+  top: 0.2em;
+}
+
+.form-group-input[type="radio"] {
+  position: relative;
+  top: 0.1em;
+}
+
+.form-group-input[type="range"] {
+  position: relative;
+  top: 0.6em;
+}
