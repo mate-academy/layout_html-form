@@ -1,0 +1,7 @@
+.field + .field {
+  margin-top: 10px;
+}
+
+.block-of-input {
+  margin-bottom: 20px;
+}
