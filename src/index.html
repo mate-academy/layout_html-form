@@ -13,7 +13,111 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <form action="" onsubmit="onSubmit(event)">
+    <fieldset name="user-info" class="set-field">
+      <legend>Personal information</legend>
 
+        <label class="field">
+          Surname:
+          <input type="text" name="surname" autocomplete="disabled" minlength="2">
+        </label>
+
+        <label class="field">
+          Name:
+          <input type="text" name="name" autocomplete="disabled" maxlength="13">
+        </label>
+
+        <label class="field">
+          How old are You?
+          <input type="number" name="yers" min="18" max="111" value="12" data-qa="field-value">
+        </label>
+
+        <label class="field">
+          Full date of birth:
+          <input type="date" name="bday">
+        </label>
+
+        <label class="field">
+          I accept the item of the agreement
+          <input type="checkbox" name="agreement" value="accept">
+        </label>
+
+    </fieldset>
+
+
+    <fieldset name="regist"  class="set-field">
+      <legend>Registration</legend>
+
+        <label class="field">
+          E-mail:
+          <input type="email" name="email" placeholder="email@example.com" data-qa="field-placeholder">
+        </label>
+
+        <label class="field">
+          Password:
+          <input type="password" name="pasword">
+        </label>
+
+    </fieldset>
+
+
+    <fieldset name="facts"  class="set-field">
+      <legend>An interesting fact about you!</legend>
+
+        <label class="field">
+          Do you love cats?
+          <input type="radio" name="love-cats" value="yes"> Yes
+          <input type="radio" name="love-cats" value="no"> No
+        </label>
+
+        <label class="field">
+          What is your favorite color?
+          <input type="color" name="fav-color" value="#000000">
+        </label>
+
+        <label class="field">
+          What time do you go to bed?
+          <input type="time" name="time-to-bed">
+        </label>
+
+        <label class="field">
+          What are your favorite brands of car?
+          <select name="cars" size="4">
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </label class="field">
+
+        <label class="field">
+          How do you rate our work?
+          <input type="range" name="rate" min="0" max="100" value="0">
+        </label>
+
+    </fieldset>
+
+
+    <fieldset name="info"  class="set-field">
+      <legend>Additional info:</legend>
+
+        <label class="field">
+          Comments:
+          <textarea name="message"></textarea>
+        </label>
+
+        <label class="field">
+          Would you recommend us?
+          <select name="recomended" required>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+
+    </fieldset>
+
+      <button type="submit"> Submit</button>
+
+  </form>
 <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
