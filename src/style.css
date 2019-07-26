@@ -1,0 +1,7 @@
+.field + .field {
+  margin-top: 10px;
+}
+
+.block {
+  margin-bottom: 20px;
+}
