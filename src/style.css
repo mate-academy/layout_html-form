@@ -1,0 +1,24 @@
+fieldset {
+  width: 976px;
+}
+
+.padding {
+  padding: 10px 0;
+}
+
+.input-number {
+  width: 65px;
+}
+
+.input-date {
+  width: 148px;
+}
+
+.form-registration {
+  margin: 20px 0;
+}
+
+.marg {
+  margin: 20px 2px;
+  padding-bottom: 0;
+}
