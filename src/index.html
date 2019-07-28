@@ -1,19 +1,119 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width,
-          user-scalable=no,
-          initial-scale=1.0,
-          maximum-scale=1.0,
-          minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
 
-<script type="text/javascript" src="./main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+            user-scalable=no,
+            initial-scale=1.0,
+            maximum-scale=1.0,
+            minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-appdivcation" onsubmit="onSubmit(event)">
+
+      <fieldset>
+        <legend>
+          <p class="name_wrapp">Personal information</p>
+        </legend>
+          <div>
+            <label for="surname">Surname:</label>
+            <input type="text" required="required" autocomplete="off" id="surname" name="surname">
+          </div>
+
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" required="required" autocomplete="off" id="name" name="name">
+          </div>
+
+          <div>
+            <label for="old">How old are You?</label>
+            <input type="number" id="old" name="old" min="18" max="110" value="12" data-qa="field-value">
+          </div>
+
+          <div>
+            <label for="birth">Full date of birth:</label>
+            <input type="date" id="birth" name="birth">
+          </div>
+
+          <div>
+            <label for="accept">I accept the term of the agreement</label>
+            <input type="checkbox" id="accept" name="accept">
+          </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <p class="name_wrapp">Registration</p>
+        </legend>
+          <div>
+            <label for="e-mail">E-mail:</label>
+            <input type="email" id="e-mail" name="e-mail" placeholder="email@example.com" data-qa="field-placeholder">
+          </div>
+          <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="8"
+       maxlength="16">
+          </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <p class="name_wrapp">An interesting fact about you!</p>
+        </legend>
+          <div>
+            <label for="contactChoice1">Do you love cats?</label>
+            <input type="radio" id="contactChoice1" name="contact" value="email" checked="checked">
+            <label for="contactChoice1">Yes</label>
+            <input type="radio" id="contactChoice2" name="contact" value="phone">
+            <label for="contactChoice2">No</label>
+          </div>
+          <div>
+            <label for="color">What is your favorite color?</label>
+            <input type="color" id="color" name="color">
+          </div>
+          <div>
+            <label for="bed">What time do you go to bed?</label>
+            <input type="time" id="bed" name="bed">
+          </div>
+          <div>
+            <label for="cars">What are your favorite brand of cars?</label>
+            <select name="cars" size="4" id="cars">
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Lada">Lada</option>
+            </select>
+          </div>
+          <div>
+            <label for="rate">How do you rate our work?</label>
+            <input type="range" id="rate" name="rate">
+          </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <p class="name_wrapp">Additional info:</p>
+        </legend>
+          <div>
+            <label for="comments">Comments:</label>
+            <textarea name="comments" autocomplete="off" id="comments" cols="20" rows="2" minlength="10" maxlength="40git status"></textarea>
+          </div>
+          <div>
+            <label for="recommend_us">Would you recommend us?:</label>
+            <select name="recommend_us" id="recommend_us">
+              <option value="y">yes</option>
+              <option value="n">no</option>
+            </select>
+          </div>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
+
 </html>
