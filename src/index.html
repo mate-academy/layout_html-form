@@ -28,7 +28,7 @@
 
     <label for="age" class="form-group-input-label">
       How old are You?
-      <input id="age" class="form-group-input" name="age" type="number" data-qa="field-value" value="12">
+      <input id="age" class="form-group-input" name="age" type="number" data-qa="field-value" value="12" min="12" max="120">
     </label>
 
     <label for="birth" class="form-group-input-label">
@@ -47,7 +47,7 @@
     <legend>Registration</legend>
     <label for="email" class="form-group-input-label">
       E-mail:
-      <input id="email" class="form-group-input" name="email" type="email" placeholder="email@example.com"
+      <input id="email" class="form-group-input" name="email" type="email" placeholder="email@example.com" autocomplete="off"
              data-qa="field-placeholder" required="required">
     </label>
 
@@ -103,7 +103,7 @@
     <legend>Additional info:</legend>
     <label for="comments" class="form-group-input-label">
       Comments:
-      <textarea id="comments" class="form-group-input" name="comments" maxlength="100" rows="2"></textarea>
+      <textarea id="comments" class="form-group-input" name="comments" maxlength="100" rows="2"  autocomplete="off"></textarea>
     </label>
 
     <label for="recomend" class="form-group-input-label">

@@ -6,11 +6,3 @@
   display: block;
   margin-bottom: 10px;
 }
-
-select.form-group-input {
-  overflow-y: auto;
-}
-
-.form-group-input[type="number"] {
-  width: 48px;
-}
