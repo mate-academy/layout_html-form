@@ -9,11 +9,114 @@
           maximum-scale=1.0,
           minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Frontend forms</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+<form onsubmit="onSubmit(event)">
+  <fieldset class="form-group">
+    <legend>Personal information</legend>
+    <label for="surname" class="form-group-input-label">
+      Surname:
+      <input id="surname" class="form-group-input" name="surname" type="text" autocomplete="off" required="required">
+    </label>
 
+    <label for="name" class="form-group-input-label">
+      Name:
+      <input id="name" class="form-group-input" name="name" type="text" autocomplete="off">
+    </label>
+
+    <label for="age" class="form-group-input-label">
+      How old are You?
+      <input id="age" class="form-group-input" name="age" type="number" data-qa="field-value" value="12" min="12" max="120">
+    </label>
+
+    <label for="birth" class="form-group-input-label">
+      Full date of birth:
+      <input id="birth" class="form-group-input" name="birth" type="date">
+    </label>
+
+    <label for="accept" class="form-group-input-label">
+      I accept the term of the agreement
+      <input id="accept" class="form-group-input" name="accept" type="checkbox">
+    </label>
+  </fieldset>
+
+
+  <fieldset class="form-group">
+    <legend>Registration</legend>
+    <label for="email" class="form-group-input-label">
+      E-mail:
+      <input id="email" class="form-group-input" name="email" type="email" placeholder="email@example.com" autocomplete="off"
+             data-qa="field-placeholder" required="required">
+    </label>
+
+    <label for="password" class="form-group-input-label">
+      Password:
+      <input id="password" class="form-group-input" name="password" type="password"
+             minlength="6"
+             autocomplete="new-password" required>
+    </label>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <legend>An interesting fact about you!</legend>
+    <label for="cat-lover" class="form-group-input-label">
+      Do you love cats?
+      <label for="cat-lover">
+        <input id="cat-lover" class="form-group-input" name="cats" type="radio">
+        Yes
+      </label>
+      <label for="cat-hater">
+        <input id="cat-hater" class="form-group-input" name="cats" type="radio">
+        No
+      </label>
+    </label>
+
+    <label for="colors" class="form-group-input-label">
+      What is your favorite color?
+      <input id="colors" class="form-group-input" name="colors" type="color">
+    </label>
+
+    <label for="sleep" class="form-group-input-label">
+      What time do you go to bed?
+      <input id="sleep" class="form-group-input" name="sleep" type="time">
+    </label>
+
+    <label for="cars" class="form-group-input-label">
+      What are your favorite brand of cars?
+      <select id="cars" class="form-group-input" name="cars" size="4">
+        <option value="BMW">BMW</option>
+        <option value="Audi">Audi</option>
+        <option value="Lada">Lada</option>
+        <option value="" disabled="disabled"></option>
+      </select>
+    </label>
+
+    <label for="rate" class="form-group-input-label">
+      How do you rate our work?
+      <input id="rate" class="form-group-input" name="rate" type="range" min="0" max="10" value="0">
+    </label>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <legend>Additional info:</legend>
+    <label for="comments" class="form-group-input-label">
+      Comments:
+      <textarea id="comments" class="form-group-input" name="comments" maxlength="100" rows="2"  autocomplete="off"></textarea>
+    </label>
+
+    <label for="recomend" class="form-group-input-label">
+      Would you recomend us?
+      <select id="recomend" class="form-group-input form-group-selector" name="recomend">
+        <option value="yes" selected>yes</option>
+        <option value="no">no</option>
+      </select>
+    </label>
+  </fieldset>
+
+  <button type="submit">Submit</button>
+</form>
 <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
