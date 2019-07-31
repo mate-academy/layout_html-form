@@ -1,0 +1,7 @@
+.field-form {
+  margin-bottom: 20px;
+}
+
+.input-form:not(:last-child) {
+  margin-bottom: 10px;
+}
