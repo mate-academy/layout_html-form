@@ -9,11 +9,89 @@
           maximum-scale=1.0,
           minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Homework-6</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+<form action="https://mate-academy-form-lesson.herokuapp.com/create-application" onsubmit="onSubmit(event)">
 
+  <fieldset class="fieldset">
+    <legend>Personal Information</legend>
+    <label for="surname" class="label">
+      Surname: <input type="text" name="surname" id="surname" autocomplete="off" class="input">
+    </label>
+    <label for="name" class="label">
+      Name: <input type="text" name="name" id="name" required autocomplete="off" class="input">
+    </label>
+    <label for="age" class="label">
+      How old are You? <input type="number" name="age" id="age" value="12" min="0" data-qa="field-value" class="input">
+    </label>
+    <label for="birth-date" class="label">
+      Full date of birth: <input type="date" name="birth-date" id="birth-date" class="input">
+    </label>
+    <label for="terms-of-agreement" class="label">
+      I accept the term of the agreemnt <input type="checkbox" name="terms-of-agreement" id="terms-of-agreement" required class="input">
+    </label>
+  </fieldset>
+
+  <fieldset class="fieldset">
+    <legend>Registration</legend>
+    <label for="email" class="label">
+      E-mail: <input type="email" name="email" id="email" placeholder="email@example.com" data-qa="field-placeholder" class="input">
+    </label>
+    <label for="password" class="label">
+      Password: <input type="password" name="password" id="password" required minlength="4" maxlength="20" class="input">
+    </label>
+  </fieldset>
+
+  <fieldset class="fieldset">
+    <legend>An interesting fact about you!</legend>
+    <div class="wrapper">
+      Do you love cats?
+      <label for="yes-cats" class="label">
+        <input type="radio" name="yes-cats" class="input" id="yes-cats">
+        Yes
+      </label>
+      <label for="no-cats" class="label">
+      <input type="radio" name="no-cats" class="input" id="no-cats">
+      No
+    </label>
+    </div>
+    <label for="fav-color" class="label">
+      What is your favorite color? <input type="color" name="fav-color" id="fav-color" class="input">
+    </label>
+    <label for="time-goes-to-bed" class="label">
+      What time do you go to bed? <input type="time" name="time-goes-to-bed" id="time-goes-to-bed" class="input">
+    </label>
+    <label for="fav-cars" class="label">
+      What is your favorite brand of cars?
+      <select name="fav-cars" id="fav-cars" size="4" class="input">
+        <option value="BMW">BMW</option>
+        <option value="Audi">Audi</option>
+        <option value="Lada">Lada</option>
+      </select>
+    </label>
+    <label for="work-rate" class="label">
+      How do you rate our work? <input type="range" name="work-rate" id="work-rate" value="0" class="input">
+    </label>
+  </fieldset>
+
+  <fieldset class="fieldset">
+    <legend>Additional info:</legend>
+    <label for="comments-info" class="label">
+      Comments: <textarea name="comments-info" id="comments-info" cols="20" rows="2" minlength="5" class="input"></textarea>
+    </label>
+    <label for="recommend-us" class="label">
+      Would you recommend us?
+      <select name="recommend-us" id="recommend-us" class="input">
+        <option value="yes">yes</option>
+        <option value="no">no</option>
+      </select>
+    </label>
+  </fieldset>
+
+  <button type="submit">Submit</button>
+</form>
 <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>

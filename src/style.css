@@ -1,0 +1,15 @@
+.label {
+  display: block;
+}
+
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.wrapper .label {
+  display: inline-block;
+}
+
+.input {
+  margin-bottom: 10px;
+}
