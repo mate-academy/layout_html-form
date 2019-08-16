@@ -1,0 +1,21 @@
+
+fieldset {
+  padding-bottom: -5px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+}
+
+label:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+input[data-qa="field-value"] {
+  width: 65px;
+}
+
+input::placeholder {
+  color: gray;
+}

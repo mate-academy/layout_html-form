@@ -13,6 +13,77 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+  <fieldset>
+    <legend>Personal information</legend>
+    <label>
+      Surname: <input type="text" name="surname" value="">
+    </label>
+    <label>
+      Name:  <input type="text" name="name" value="">
+    </label>
+    <label>
+      How old are You? <input data-qa="field-value" type="number" name="age" value="12">
+    </label>
+    <label>
+      Full date of birth:  <input type="date" name="year" value="mm / dd / yyyy">
+    </label>
+    <label>
+      I accept the term of the agreement <input type="checkbox">
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Registration</legend>
+    <label>
+      E-mail:  <input type="email" name="email"  data-qa="field-placeholder" placeholder="email@example.com">
+    </label>
+    <label>
+      Password:  <input type="password" name="pass" value="">
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <legend>An interesting fact about you!</legend>
+    <label>
+      Do you love cats?  <input type="radio" name="yes">  Yes<input type="radio" name="no">  No
+    </label>
+    <label>
+      What is your favorite color?  <input type="color">
+    </label>
+    <label>
+      What time do you go to bed?  <input type="time">
+    </label>
+    <label>
+      What are your favorite brand of cars?  <select name="cars" size="4">
+                                              <option value="volvo">BMW</option>
+                                              <option value="audi">Audi</option>
+                                              <option value="lada">Lada</option>
+                                              <option value=""> </option>
+    </select>
+
+    </label>
+    <label>
+      How do you rate our work? <input type="range" value="0">
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Additional info:</legend>
+    <label>
+      Comments:  <textarea></textarea>
+    </label>
+    <label>
+      Would you recommend us?  <select size="1">
+                                <option value="yes">yes</option>
+                                <option value="no">no</option>
+      </select>
+    </label>
+  </fieldset>
+
+  <input type="submit" value="Submit">
+</form>
+
 
 <script type="text/javascript" src="./main.js"></script>
 </body>
