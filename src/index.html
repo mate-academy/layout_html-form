@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width,
+  <meta name="viewport" content="width=device-width,
           user-scalable=no,
           initial-scale=1.0,
           maximum-scale=1.0,
@@ -12,8 +12,96 @@
   <title>Document</title>
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
 
-<script type="text/javascript" src="./main.js"></script>
+<body>
+  <div>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST" name="form"
+      onsubmit="onSubmit(event)">
+      <fieldset class="field-block">
+        <legend>Personal information</legend>
+        <div class="input-block">
+          <label for="surname">Surname: </label>
+          <input type="text" id="surname" name="surname" autocomplete="off">
+        </div>
+        <div class="input-block">
+          <label for="name">Name: </label>
+          <input type="text" id="name" name="name" autocomplete="off">
+        </div>
+        <div class="input-block">
+          <label for="age">How old are You? </label>
+          <input type="number" id="age" value="12" name="age" min="12" max="100" data-qa="field-value">
+        </div>
+        <div class="input-block">
+          <label for="date-of-birth">Full date of birth: </label>
+          <input type="date" id="date-of-birth" name="birthday">
+        </div>
+        <div>
+          <label for="agreement">I accept the term of the agreement</label>
+          <input type="checkbox" id="agreement" name="agreement">
+        </div>
+      </fieldset>
+      <fieldset class="field-block">
+        <legend>Registration</legend>
+        <div class="input-block">
+          <label for="email">E-mail: </label>
+          <input type="email" id="email" required name="email" placeholder="email@example.com"
+            data-qa="field-placeholder">
+        </div>
+        <div>
+          <label for="password">Password: </label>
+          <input type="password" id="password" required minlength="5" name="password">
+        </div>
+      </fieldset>
+      <fieldset class="field-block">
+        <legend>An interesting fact about you!</legend>
+        <div class="input-block">
+          <label for="yes">Do you love cats? </label>
+          <input type="radio" value="yes" name="cats" id="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" value="no" name="cats" id="no">
+          <label for="no">No</label>
+        </div>
+        <div class="input-block">
+          <label for="color">What is your favorite color? </label>
+          <input type="color" id="color" name="color">
+        </div>
+        <div class="input-block">
+          <label for="bedtime">What time do you go to bed? </label>
+          <input type="time" id="bedtime" name="bedtime">
+        </div>
+        <div class="input-block">
+          <label for="cars">What are your favorite brand of cars? </label>
+          <select id="cars" name="cars" size="4">
+            <option>BMW</option>
+            <option>Audi</option>
+            <option>Lada</option>
+          </select>
+        </div>
+        <div>
+          <label for="rate">How do you rate our work? </label>
+          <input type="range" id="rate" name="rate" value="0">
+        </div>
+      </fieldset>
+      <fieldset class="field-block">
+        <legend>Additional info</legend>
+        <div class="input-block">
+          <label for="comments">Comments: </label>
+          <textarea type="text" id="comments" rows="2" name="comments" maxlength="50"></textarea>
+        </div>
+        <div>
+          <label for="recommend">Would you recommend us?</label>
+          <select id="recommend" name="recommends">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script type="text/javascript" src="./main.js">
+
+  </script>
 </body>
+
 </html>
