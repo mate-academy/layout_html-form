@@ -1,0 +1,15 @@
+.main-form__label {
+  display: block;
+}
+
+.main-form__label:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.main-form__fs {
+  margin-bottom: 20px;
+}
+
+.fav-color {
+  margin-top: 10px;
+}

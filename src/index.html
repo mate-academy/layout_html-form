@@ -10,10 +10,88 @@
           minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-
+<form class="main-form" action="https://mate-academy-form-lesson.herokuapp.com/create-application" onsubmit="onSubmit(event)">
+  <fieldset class="main-form__fs">
+    <legend>Personal information</legend>
+    <label class="main-form__label">
+      Surname:
+      <input type="text" name="surname" maxlength="20" autocomplete="off" required>
+    </label>
+    <label class="main-form__label">
+      Name:
+      <input type="text" name="name" maxlength="20" autocomplete="off" required>
+    </label>
+    <label class="main-form__label">
+      How old are You?
+      <input type="number" name="age" data-qa="field-value" value="12" min="18" max="200">
+    </label>
+    <label class="main-form__label">
+      Full date of birth:
+      <input type="date" name="dob">
+    </label>
+    <label class="main-form__label">
+      I accept the term of the agreement
+      <input type="checkbox" name="agreement" required>
+    </label>
+  </fieldset>
+  <fieldset class="main-form__fs">
+    <legend>Registration</legend>
+    <label class="main-form__label">
+      E-mail:
+      <input type="email" data-qa="field-placeholder" name="email" placeholder="email@example.com" >
+    </label>
+    <label class="main-form__label" minlength="8">
+      Password:
+      <input type="password">
+    </label>
+  </fieldset>
+  <fieldset class="main-form__fs">
+    <legend>An interesting fact about you!</legend>
+    Do you love cats?
+    <input type="radio" name="cats__choice1" id="cats__choice1">
+    <label for="cats__choice1">Yes</label>
+    <input type="radio" name="cats__choice2" id="cats__choice2">
+    <label for="cats__choice2">No</label>
+    <label class="main-form__label fav-color">
+        What is your favorite color?
+        <input type="color" name="color">
+      </label>
+      <label class="main-form__label">
+        What time do you go to bed?
+        <input type="time" name="time">
+      </label>
+      <label class="main-form__label">
+        What are your favorite brand of cars?
+        <select name="cars_brand" size="4" multiple>
+          <option value="bmw">BMW</option>
+          <option value="audi">Audi</option>
+          <option value="lada">Lada</option>
+        </select>
+      </label>
+      <label class="main-form__label">
+        How do you rate our work?
+        <input type="range" name="range" min="1" max="5" value="1">
+      </label>
+  </fieldset>
+  <fieldset class="main-form__fs">
+      <legend>Additional info</legend>
+      <label class="main-form__label">
+        Comments:
+        <textarea name="comments"></textarea>
+      </label>
+      <label class="main-form__label">
+        Would you recommend us?
+        <select name="recommend">
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+      </label>
+    </fieldset>
+    <button type="submit" name="submit">Submit</button>
+</form>
 <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
