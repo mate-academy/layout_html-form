@@ -13,7 +13,87 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" onsubmit="onSubmit(event)">
+    <fieldset class="form-block personal-info">
+      <legend>Personal information</legend>
+      <div class="form-group">
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" autocomplete="off">
+      </div>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name"  autocomplete="off">
+      </div>
+      <div class="form-group">
+        <label for="age">How old are You?</label>
+        <input type="number" id="age" min="1" max="120" value="12" data-qa="field-value">
+      </div>
+      <div class="form-group">
+        <label for="birthday">Full date of birth:</label>
+        <input type="date" id="birthday">
+      </div>
+      <div class="form-group">
+        <label for="accept">I accept the term of the agreement:</label>
+        <input type="checkbox" id="accept" required>
+      </div>
+    </fieldset>
+    <fieldset class="form-block registration">
+      <legend>Registration</legend>
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" placeholder="email@example.com" required data-qa="field-placeholder" autocomplete="off">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" minlength="5" autocomplete="off">
+      </div>
+    </fieldset>
+    <fieldset class="form-block common-info">
+      <legend>An interesting fact about you!</legend>
+      <div class="form-group">
+        <label>Do you love cats?
+          <input type="radio" name="cats" value="1"> Yes
+          <input type="radio" name="cats" value="0"> No
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="color">What is your favorite color?</label>
+        <input type="color" name="favoriteColor" id="color">
+      </div>
+      <div class="form-group">
+        <label for="sleep_time">What time do you go to bed?</label>
+        <input type="datetime-local" name="sleepTime" id="sleep_time">
+      </div>
+      <div class="form-group">
+        <label for="cars">What are your favorite brand of cars?</label>
+        <select id="cars" multiple name="cars[]">
+          <option value="volvo">BMV</option>
+          <option value="saab">Audi</option>
+          <option value="opel">Lada</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="rate">How do you rate our work?</label>
+        <input type="range" name="rate" id="rate" min="1" max="10">
+      </div>
+    </fieldset>
+    <fieldset class="form-block additional-info">
+      <legend>Additional info:</legend>
+      <div class="form-group">
+        <label for="comment">Comments:</label>
+        <textarea id="comment" name="comment" maxlength="300"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="recommend">Would you recommend us?</label>
+        <select id="recommend" name="isRecommend">
+          <option value="1" selected>yes</option>
+          <option value="0">no</option>
+        </select>
+      </div>
+    </fieldset>
+    <button type="submit">Submit</button>
+  </form>
 <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
+

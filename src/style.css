@@ -1,0 +1,7 @@
+.form-block {
+  margin-bottom: 20px;
+}
+
+.form-group:not(:last-child) {
+  margin-bottom: 10px;
+}
