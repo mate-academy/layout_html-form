@@ -1,0 +1,13 @@
+label {
+  display: block;
+  margin-bottom: 10px;
+  line-height: 0;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+fieldset > label:last-child {
+  margin-bottom: 0;
+}
