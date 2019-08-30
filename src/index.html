@@ -9,11 +9,128 @@
           maximum-scale=1.0,
           minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>HTML form</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" onsubmit="onSubmit(event)">
 
+
+    <fieldset class="form-section">
+      <legend>Personal information</legend>
+      <div class="form-input">
+        <label>
+          Surname:
+          <input type="text" name="usr--surname" autocomplete="off">
+        </label>
+      </div>
+      <div class="form-input">
+        <label>
+          Name:
+          <input type="text" name="usr--name" autocomplete="off">
+        </label>
+      </div>
+      <div class="form-input">
+        <label>
+          How old are You?
+          <input type="number" name="usr--age" data-qa="field-value" value="12" min="0" max="120">
+        </label>
+      </div>
+      <div class="form-input">
+        <label>
+          Full date of birth:
+          <input type="date" name="usr--bday">
+        </label>
+      </div>
+      <div>
+        <label>
+          I accept the term of the agreement
+          <input type="checkbox" name="usr--agreement" required>
+        </label>
+      </div>
+    </fieldset>
+
+
+    <fieldset class="form-section">
+      <legend>Registration</legend>
+      <div class="form-input">
+        <label>
+          E-mail:
+          <input type="email" name="usr--email" data-qa="field-placeholder" placeholder="email@example.com" required>
+        </label>
+      </div>
+      <div>
+        <label>
+          Password:
+          <input type="password" name="usr--password" mixlength="5" required>
+        </label>
+      </div>
+    </fieldset>
+
+
+    <fieldset class="form-section">
+      <legend>An interesting fact about you!</legend>
+      <div class="form-input">
+      <label>
+        Do you love cats?
+        <input type="radio" name="usr--answer--yes"> Yes
+        <input type="radio" name="usr--answer--no"> No
+      </label>
+      </div>
+      <div class="form-input">
+        <label>
+          What is your favorite color?
+          <input type="color" name="usr--favorite--color">
+        </label>
+      </div>
+      <div class="form-input">
+        <label>
+          What time do you go to bed?
+          <input type="time" name="usr--time" step="1">
+        </label>
+      </div>
+      <div class="form-input">
+        <label>
+          What are your favorite brand of cars?
+          <select name="cars--brand" multiple>
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </label>
+      </div>
+      <div>
+        <label>
+          How do you rate our work?
+          <input type="range" name="usr--rate" value="0">
+        </label>
+      </div>
+    </fieldset>
+
+
+    <fieldset class="form-section">
+      <legend>Additional info:</legend>
+      <div class="form-input">
+        <label>
+          Comments:
+          <textarea name="usr--comments" cols="17" rows="2" mixlength="50" maxlength="120" autocomplete="off"></textarea>
+        </label>
+      </div>
+      <div>
+        <label>
+          Would you recommend us?
+          <select name="usr--recommends">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+      </div>
+    </fieldset>
+
+    <div class="form-section">
+        <input type="submit" value="Submit" name="submit--form">
+    </div>
+  </form>
 <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
