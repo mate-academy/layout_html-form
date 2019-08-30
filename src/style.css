@@ -6,3 +6,7 @@ label {
 .fieldset-block {
   margin-bottom: 20px;
 }
+
+.fieldset-block > label:last-child {
+  margin-bottom: 0;
+}

@@ -17,25 +17,21 @@
   <fieldset class="fieldset-block">
     <legend>Personal information</legend>
     <label>
-      Surname: <br>
+      Surname:
       <input type="text" name="surname" required autocomplete="off">
     </label>
-    <br><br>
     <label>
-      Name: <br>
+      Name:
       <input type="text" name="name" required autocomplete="off">
     </label>
-    <br><br>
     <label>
-      How old are you? <br>
-      <input type="number" name="age" min="12" max="99" data-qa="field-value">
+      How old are You?
+      <input type="number" value="12" name="age" min="12" max="110" data-qa="field-value">
     </label>
-    <br><br>
     <label>
-      Full date of birth: <br>
+      Full date of birth:
       <input type="date" name="dob">
     </label>
-    <br><br>
     <label>
       I accept the term of the agreement
       <input type="checkbox" name="agreement" required> <br>
@@ -44,12 +40,11 @@
   <fieldset class="fieldset-block">
     <legend>Registration</legend>
     <label>
-      E-mail: <br>
+      E-mail:
       <input type="email" name="email" placeholder="email@example.com" data-qa="field-placeholder">
     </label>
-    <br><br>
     <label>
-      Password: <br>
+      Password:
       <input type="password" name="password" minlength="4" maxlength="12">
     </label>
   </fieldset>
@@ -60,29 +55,25 @@
       <input type="radio" name="yes">Yes
       <input type="radio" name="no">No
     </label>
-    <br><br>
     <label>
       What is your favorite color?
       <input type="color">
     </label>
-    <br><br>
     <label>
       What time do you go to bed?
-      <input type="time">
+      <input type="time" name="bed_time">
     </label>
-    <br><br>
     <label>
-      What are your favorite brandof cars?
+      What are your favorite brand of cars?
       <select name="Cars" multiple>
         <option value="BMW">BMW</option>
         <option value="Audi">Audi</option>
         <option value="Lada">Lada</option>
       </select>
     </label>
-    <br><br>
     <label>
       How do you rate our work?
-      <input type="range">
+      <input type="range" step="1" name="rate" value="1" min="1" max="5">
     </label>
   </fieldset>
   <fieldset class="fieldset-block">
@@ -91,7 +82,6 @@
       Comments:
       <textarea autocomplete="off" ></textarea>
     </label>
-    <br><br>
     <label>
       Would you recommend us?
       <select name="Recommend">
@@ -100,7 +90,7 @@
       </select>
     </label>
   </fieldset>
-  <button>Submit</button>
+  <button type="submit">Submit</button>
 </form>
 <script type="text/javascript" src="./main.js"></script>
 </body>
