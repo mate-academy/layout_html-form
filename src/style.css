@@ -1,0 +1,31 @@
+.fieldStyle {
+  margin-bottom: 20px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+.last_chield {
+  margin-bottom: 0;
+}
+
+.forAge {
+  width: 65px;
+}
+
+.forEmail {
+  color: grey;
+}
+
+.forColor {
+  margin-top: 4px;
+}
+
+.forRate {
+  margin-top: 12px;
+}
+
+.forRecommend {
+  margin-top: 10px;
+}
