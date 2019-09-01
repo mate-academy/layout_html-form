@@ -9,11 +9,88 @@
           maximum-scale=1.0,
           minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>HTML-form</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST" onsubmit="onSubmit(event)">
+    <fieldset class="input-blocks">
+      <legend>Personal information</legend>
+      <label>
+        Surname:
+        <input type="text" name="surname" autocomplete="off">
+      </label>
+      <label>
+        Name:
+        <input type="text" name="username" autocomplete="off">
+      </label>
+      <label>
+        How old are You?
+        <input type="number" name="age" value="12" min="5" max="100" data-qa="field-value">
+      </label>
+      <label>
+        Full date of birth:
+        <input type="date" name="birthday">
+      </label>
+      <label>
+        I accept the term of the agreement
+        <input type="checkbox" name="checkbox">
+      </label>
+    </fieldset>
+    <fieldset class="input-blocks">
+      <legend>Registration</legend>
+      <label>
+        E-mail:
+        <input type="email" name="email" placeholder="email@example.com" data-qa="field-placeholder" required>
+      </label>
+      <label>
+        Password:
+        <input type="password" name="password" minlength="8" maxlength="16" required>
+      </label>
+    </fieldset>
+    <fieldset class="input-blocks">
+      <legend>An interesting fact about you!</legend>
+        Do you love cats?
+        <label class="radio-label"><input type="radio" name="pet">Yes</label>
+        <label class="radio-label"><input type="radio" name="pet">No</label>
+      </label>
+      <label>
+        What is your favorite color?
+        <input type="color" name="favorite-color" value="#000">
+      </label>
+      <label>
+        What time do you go to bed?
+        <input type="time" name="bed-time" step="2">
+      </label>
+      <label>
+        What are your favorite brand of cars?
+        <select name="fav-car" size="4">
+          <option value="BMW">BMW</option>
+          <option value="Audi">Audi</option>
+          <option value="Lada">Lada</option>
+        </select>
+      </label>
+      <label>
+        How do you rate our work?
+        <input type="range" min="1" max="10" step="1" name="work's-rate" value="1">
+      </label>
+    </fieldset>
+    <fieldset class="input-blocks">
+      <legend>Additional info:</legend>
+      <label>
+        Comments:
+        <textarea name="feedback" required></textarea>
+      </label>
+      <label>
+        Would you recommend us?
+        <select>
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+      </label>
+    </fieldset>
+    <button type="submit">Submit</button>
+  </form>
 <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>

@@ -1,0 +1,15 @@
+.input-blocks {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+}
+
+label + label {
+  margin-top: 10px;
+}
+
+.radio-label {
+  display: inline;
+}
