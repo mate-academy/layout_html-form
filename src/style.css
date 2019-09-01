@@ -1,0 +1,16 @@
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.field-block {
+  margin-bottom: 20px;
+}
+
+.field-block > label:last-child {
+  margin-bottom: 0;
+}
+
+.radio-label {
+  display: inline;
+}
