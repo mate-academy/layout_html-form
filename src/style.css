@@ -1,0 +1,19 @@
+.menu {
+  margin-bottom: 20px;
+}
+
+.non {
+  overflow: hidden;
+}
+
+label {
+  display: block;
+}
+
+label + label {
+  margin-top: 10px;
+}
+
+.label-input {
+  display: inline;
+}

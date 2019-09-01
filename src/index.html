@@ -13,7 +13,88 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
-<script type="text/javascript" src="./main.js"></script>
+  <form method="POST" action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+    <fieldset class="menu">
+      <legend>Personal information</legend>
+      <label>
+        <span>Surname:</span>
+        <input type="text" name="surName" maxlength="20" minlength="2" autocomplete="off"><br>
+      </label>
+      <label>
+        <span>Name:</span>
+        <input type="text" name="namePersone" maxlength="12" minlength="2" autocomplete="off"><br>
+      </label>
+      <label>
+        <span>How old are You?</span>
+        <input type="number" size="200px" name="age" min="0" max="110" value="12" data-qa="field-value"><br>
+      </label>
+      <label>
+        <span>Full date of birth:</span>
+        <input type="date" name="fullDate" maxlength="10" width="10px"><br>
+      </label>
+      <label>
+        <span>I accept the term of the agreement</span>
+        <input class="last" type="checkbox" name="accept">
+      </label>
+    </fieldset>
+    <fieldset class="menu">
+      <legend>Registration</legend>
+      <label>
+        <span>E-mail:</span>
+        <input type="email" name="email" maxlength="40" placeholder="email@example.com" data-qa="field-placeholder" autocomplete="off"><br>
+      </label>
+      <label>
+        <span>Password:</span>
+        <input class="last" type="password" name="pass" maxlength="20" minlength="8" autocomplete="off"><br>
+      </label>
+    </fieldset>
+    <fieldset class="menu">
+      <legend>An interesting fact about you!</legend>
+        <span>Do you love cats?</span>
+      <label class="label-input">
+        <input type="radio" name="accept">
+        <span>yes</span>
+      </label>
+      <label class="label-input">
+        <input type="radio" name="accept">
+        <span>No</span>
+      </label>
+      <label>
+        <span>What is your favorite color?</span>
+        <input type="color" name="favoriteColor"><br>
+      </label>
+      <label>
+        <span>What time do you go to bed?</span>
+        <input type="time" step="2" name="fullDate"><br>
+      </label>
+      <label>
+        <span>What are your favorite brand of cars?</span>
+        <select multiple="multiple" class="non">
+          <option>BMV</option>
+          <option>Audi</option>
+          <option>Lada</option>
+        </select><br>
+      </label>
+      <label>
+        <span>How do you rate out work?</span>
+        <input class="last" type="range" name="rateWork" value="0" min="0" max="10"><br>
+      </label>
+    </fieldset>
+    <fieldset class="menu">
+      <legend>Additional info:</legend>
+      <label>
+        <span>Comments:</span>
+        <textarea autocomplete="off"></textarea><br>
+      </label>
+      <label>
+        <span>Would you recommend us?</span>
+        <select class="last">
+          <option>yes</option>
+          <option>No</option>
+        </select>
+      </label>
+    </fieldset>
+    <input type="submit" nsubmit="onSubmit(event)" value="Submit">
+  </form>
 </body>
 </html>
