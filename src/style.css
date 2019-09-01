@@ -14,10 +14,6 @@ input {
   width: 65px;
 }
 
-.forEmail {
-  color: grey;
-}
-
 .forColor {
   margin-top: 4px;
 }
@@ -28,4 +24,12 @@ input {
 
 .forRecommend {
   margin-top: 10px;
+}
+
+label {
+  display: block;
+}
+
+.noneBlock {
+  display: inline;
 }
