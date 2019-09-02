@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" onsubmit="onSubmit(event)">
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST" onsubmit="onSubmit(event)">
     <fieldset class="fieldset-block">
       <legend>Personal information</legend>
       <label class="label-block">
@@ -26,7 +26,7 @@
       </label>
       <label class="label-block">
         How old are You?
-        <input type = "number" name = "age" value = "12" min = "1" max = "100" data-qa="field-value" minlength = "2" maxlength = "3">
+        <input type = "number" name = "age" value = "12" min = "1" max = "100" data-qa="field-value" minlength = "1" maxlength = "3">
       </label>
       <label class="label-block">
         Full date of birth:
@@ -50,13 +50,17 @@
     </fieldset>
     <fieldset class="fieldset-block">
       <legend>An interesting fact about you!</legend>
-      <label class="label-block">
+      <div class="label-block">
         Do you love cats?
-        <input type="radio" name="lcats">
-        Yes
-        <input type="radio" name="lcats">
-        No
-      </label>
+        <label>
+          <input type="radio" name="lcats">
+          Yes
+        </label>
+        <label>
+          <input type="radio" name="lcats">
+          No
+        </label>
+      </div>
       <label class="label-block">
         What is your favorite color?
         <input class="input-interval" type="color" name="color">
@@ -87,7 +91,8 @@
       <label class="label-block">
         Would you recommend us?
         <select name="recomendation">
-          <option>yes</option>
+          <option value="yes">yes</option>
+          <option value="no">no</option>
         </select>
       </label>
     </fieldset>
