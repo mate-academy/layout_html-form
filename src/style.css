@@ -1,0 +1,16 @@
+.body {
+  margin: 0;
+}
+
+.lab-field:not(:last-child) {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.box-many-inputs:not(:last-child) {
+  margin-bottom: 10px;
+}

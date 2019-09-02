@@ -13,7 +13,74 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
+<form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+  <fieldset class="input-group">
+    <legend>Personal information</legend>
+    <label class="lab-field">Surname:
+      <input type="text" name="surname-val" id="sur-field" required minlength="4" autocomplete="off">
+    </label>
+    <label class="lab-field">Name:
+      <input type="text" name="name-val" id="name-field" required>
+    </label>
+    <label class="lab-field">How old are You?
+      <input type="number" min="10" max="130" required value="12" name="age-field" id="age-val" data-qa="field-value">
+    </label>
+    <label class="lab-field" >Full date of birth:
+      <input type="date" name="birth-field" id="birth-val" >
+    </label>
+    <label class="lab-field">I accept the term of the agreement
+      <input type="checkbox" name="accept-field" id="accept-val" required>
+    </label>
+  </fieldset>
+  <fieldset class="input-group">
+    <legend>Registration</legend>
+    <label class="lab-field">E-mail:
+      <input type="email" placeholder="email@example.com" required name="email-field" id="email-val" data-qa="field-placeholder">
+    </label>
+    <label class="lab-field">Password:
+      <input type="password" name="pass-field" id="pass-val" required minlength="8">
+    </label>
+  </fieldset>
+  <fieldset class="input-group">
+    <legend>An interesting fact about you!</legend>
+    <div class="box-many-inputs">
+      Do you love cats?
+      <input type="radio" name="cat-radio" value="yes-cat" id="cat-yes-val">
+      <label for="cat-yes-val">Yes</label>
+      <input type="radio" name="cat-radio" value="no-cat" id="cat-no-val">
+      <label for="cat-no-val">No</label>
+    </div>
+    <label class="lab-field">What is your favorite color?
+      <input type="color" name="color-field" id="color-val" value="#000" required>
+    </label>
+    <label class="lab-field">What time do you go to bed?
+      <input type="time" name="bed-time-field" id="bed-time-val" >
+    </label>
+    <label class="lab-field">What are your favorite brand of cars?
+      <select id="car-choise" size="4" multiple>
+        <option value="bmw" name="car">BMW</option>
+        <option value="audi" name="car">Audi</option>
+        <option value="lada" name="car">Lada</option>
+      </select>
+    </label>
+    <label class="lab-field">How do you rate our work?
+      <input type="range" name="range-work-field" id="range-work-val" min="0" max="100" step="2" value="0">
+    </label>
+  </fieldset>
+  <fieldset class="input-group">
+    <legend>Additional info:</legend>
+    <label class="lab-field">Comments:
+      <textarea name="comments" id="comm-val" cols="20" rows="2"></textarea>
+    </label>
+    <label class="lab-field">Would you recommend us?
+      <select name="recomed">
+        <option value="yes" selected>yes</option>
+        <option value="no">no</option>
+      </select>
+    </label>
+  </fieldset>
+  <input type="submit" value="Submit" onsubmit="onSubmit(event)">
+</form>
 <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
