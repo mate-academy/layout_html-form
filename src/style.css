@@ -1,0 +1,17 @@
+.input-row {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.inputs-block {
+  margin-bottom: 20px;
+}
+
+.inputs-block > label:last-child {
+  margin-bottom: 0;
+}
+
+.input-row__cats {
+  display: inline-block;
+  margin-bottom: 10px;
+}
