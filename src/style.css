@@ -1,0 +1,12 @@
+.label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.block {
+  margin-bottom: 20px;
+}
+
+.block > label:last-child {
+  margin: 0;
+}
