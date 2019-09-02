@@ -9,11 +9,99 @@
           maximum-scale=1.0,
           minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Form</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+<form action="https://mate-academy-form-lesson.herokuapp.com/create-application" onsubmit="onSubmit(event)">
+  <fieldset class="form_block">
+    <legend>Personal information</legend>
+    <label class="field_name">
+      Surname:
+      <input type="text" name="surname" autocomplete="off">
+    </label>
+    <label class="field_name">
+      Name:
+      <input type="text" name="name" autocomplete="off" required>
+    </label>
+    <label class="field_name">
+      How old are You?
+      <input type="number" name="age" value="12" data-qa="field-value" min="5" max="100">
+    </label>
+    <label class="field_name">
+      Full date of birth:
+      <input type="date" name="bday">
+    </label>
+    <label class="field_name">
+      I accept the term of the agreement
+      <input type="checkbox" name="checkbox">
+    </label>
+  </fieldset>
 
+  <fieldset class="form_block">
+    <legend>Registration</legend>
+    <label class="field_name">
+      E-mail:
+      <input type="email" name="email" placeholder="email@example.com" data-qa="field-placeholder" required>
+    </label>
+    <label class="field_name">
+      Password:
+      <input type="password" name="password" minlength="6">
+    </label>
+  </fieldset>
+
+  <fieldset class="form_block">
+    <legend>An interesting fact about you!</legend>
+      Do you love cats?
+      <label class="field_name inline_item">
+        <input type="radio" id="cats" name="radiobtn" value="Yes"> Yes
+      </label>
+      <label class="field_name inline_item">
+        <input type="radio" name="radiobtn" value="No"> No
+      </label>
+    <label class="field_name">
+      What is your favorite color?
+      <input type="color" name="color">
+    </label>
+    <label class="field_name">
+      What time do you go to bed?
+      <input type="time" name="time" step="2">
+    </label>
+    <label class="field_name">
+      What are your favorite brand of cars?
+      <select size="4" name="cars">
+        <option value="bmw">BMW</option>
+        <option value="audi">Audi</option>
+        <option value="lada">Lada</option>
+      </select>
+    </label>
+    <label class="field_name">
+      How do you rate our work?
+      <input type="range" name="range" value="0">
+    </label>
+  </fieldset>
+
+  <fieldset class="form_block">
+    <legend>Additional info:</legend>
+    <label class="field_name">
+      Comments:
+      <textarea
+        wrap="on"
+        name="comment"
+        maxlength="200"
+        autocomplete="off">
+      </textarea>
+    </label>
+    <label class="field_name">
+      Would you recommend us?
+      <select name="recommend">
+        <option value="yes">yes</option>
+        <option value="no">no</option>
+      </select>
+    </label>
+  </fieldset>
+  <button type="submit">Submit</button>
+</form>
 <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>

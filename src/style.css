@@ -1,0 +1,15 @@
+.form_block {
+  margin-bottom: 20px;
+}
+
+.field_name {
+  display: block;
+}
+
+.field_name + .field_name {
+  margin-top: 10px;
+}
+
+.inline_item {
+  display: inline;
+}
