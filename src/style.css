@@ -1,0 +1,12 @@
+.label-distance {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.field-distance {
+  margin-bottom: 20px;
+}
+
+.field-distance > .label-distance:last-child {
+  margin-bottom: 0;
+}
