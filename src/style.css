@@ -1,0 +1,21 @@
+.fieldStyle {
+  margin-bottom: 20px;
+}
+
+label,
+div {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.fieldStyle > *:last-child {
+  margin-bottom: 0;
+}
+
+.forAge {
+  width: 65px;
+}
+
+.noneBlock {
+  display: inline;
+}

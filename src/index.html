@@ -9,11 +9,91 @@
           maximum-scale=1.0,
           minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>HTML-Form</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
-<script type="text/javascript" src="./main.js"></script>
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST" onsubmit="onSubmit(event)">
+    <fieldset class="fieldStyle">
+      <legend>Personal information</legend>
+      <label>
+        Surname:
+        <input type="text" name="surname" autocomplete="off" required>
+      </label>
+      <label>
+        Name:
+        <input type="text" name="name" autocomplete="off" required>
+      </label>
+      <label>
+        How old are You?
+        <input class="forAge" type="number" name="age?" data-qa="field-value" value="12" min="14" max="60" width="1000" required>
+      </label>
+      <label>
+        Full date of birth:
+        <input type="date" name="date of birth" required>
+      </label>
+      <label>
+        I accept the term of the agreement
+        <input class="last_chield" type="checkbox" name="acception of the term" required>
+      </label>
+    </fieldset>
+    <fieldset class="fieldStyle">
+      <legend>Registration</legend>
+      <label>
+        E-mail:
+        <input class="forEmail" type="email" name="e-mail" data-qa="field-placeholder" placeholder="email@example.com">
+      </label>
+      <label>
+        Password:
+        <input class="last_chield" type="password" name="password" minlength="7" maxlength="20">
+      </label>
+    </fieldset>
+    <fieldset class="fieldStyle">
+      <legend>An interesting fact about you!</legend>
+      <div>Do you love cats?
+      <label class="noneBlock">
+        <input type="radio" name="cats yes"> Yes
+      </label>
+      <label class="noneBlock">
+        <input type="radio" name="cats no"> No
+      </label>
+      </div>
+      <label>
+        What is your favorite color?
+        <input type="color" name="color">
+      </label>
+      <label>
+        What time do you go to bed?
+        <input type="time" name="sleep">
+      </label>
+      <label>
+        What are your favorite brand of cars?
+        <select name="cars" multiple>
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+      </label>
+      <label>
+        How do you rate our work?
+        <input class="last_chield" type="range" name="rate" value="0">
+      </label>
+    </fieldset>
+    <fieldset class="fieldStyle">
+      <legend>Additional info:</legend>
+      <label>
+        Comments:
+        <textarea name="comments"></textarea>
+      </label>
+      <label>
+        Would you recommend us?
+        <select class="last_chield" name="recommend" required>
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+      </label>
+    </fieldset>
+    <button type="submit" name="submit">Submit</button>
+  </form>
 </body>
 </html>
