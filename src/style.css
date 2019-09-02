@@ -1,4 +1,4 @@
-label {
+fieldset > .label {
   display: block;
   margin-bottom: 10px;
 }
@@ -7,10 +7,6 @@ fieldset {
   margin-bottom: 20px;
 }
 
-fieldset > label:last-child {
+fieldset > .label:last-child {
   margin-bottom: 0;
-}
-
-.radio-inline {
-  display: inline;
 }
