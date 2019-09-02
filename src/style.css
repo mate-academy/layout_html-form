@@ -10,3 +10,7 @@ fieldset {
 fieldset > label:last-child {
   margin-bottom: 0;
 }
+
+.radio-inline {
+  display: inline;
+}

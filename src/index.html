@@ -13,76 +13,76 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+<form action="https://mate-academy-form-lesson.herokuapp.com/create-application" onsubmit="onSubmit(event)">
   <fieldset>
     <legend>Personal information</legend>
-    <label for="Surname">
+    <label>
       Surname:
-      <input type="text" name="Surname" id="Surname" autocomplete="off">
+      <input type="text" name="Surname" autocomplete="off">
     </label>
-    <label for="Name">
+    <label>
       Name:
-      <input type="text" name="Name" id="Name" autocomplete="off">
+      <input type="text" name="Name" autocomplete="off">
     </label>
-    <label for="Year">
+    <label>
       How old are You?
-      <input type="number" name="Year" id="Year" value="12" min="1" max="140" data-qa="field-value">
+      <input type="number" name="Year" value="12" min="1" max="140" data-qa="field-value">
     </label>
-    <label for="date-of-birth">
+    <label>
       Full date of birth:
-      <input type="date" name="date-of-birth" id="date-of-birth">
+      <input type="date" name="date-of-birth">
     </label>
-    <label for="accept-term">
+    <label>
       I accept the term of the agreement
-      <input type="checkbox" name="accept-term" id="accept-term">
+      <input type="checkbox" name="accept-term">
     </label>
   </fieldset>
   <fieldset>
     <legend>Registration</legend>
-    <label for="Email">
+    <label>
       E-mail:
-      <input type="email" name="Email" id="Email" value="email@example.com" data-qa="field-placeholder">
+      <input type="email" name="Email" placeholder="email@example.com" data-qa="field-placeholder">
     </label>
-    <label for="password">
+    <label>
       Password:
-      <input type="password" name="password" id="password">
+      <input type="password" name="password">
     </label>
   </fieldset>
   <fieldset>
     <legend>An interesting fact about you!</legend>
+    Do you love cats?
+    <label class="radio-inline"><input type="radio" name="cats-love">Yes</label>
+    <label class="radio-inline"><input type="radio" name="cats-love">No</label>
     <label>
-      Do you love cats?
-      <input type="radio" name="cats-love">
-      Yes
-      <input type="radio" name="cats-love">
-      No
-    </label>
-    <label for="favorite-color">
       What is your favorite color?
-      <input type="color" name="favorite-color" id="favorite-color">
+      <input type="color" name="favorite-color">
     </label>
-    <label for="sleep-time">
+    <label>
       What time do you go to bed?
-      <input type="time" name="sleep-time" id="sleep-time">
+      <input type="time" name="sleep-time" step="2">
     </label>
-    <label for="brand-of-cats">
+    <label>
       What are your favorite brand of cars?
-      <textarea name="brand-of-cats" id="brand-of-cats" cols="3" rows="4">BMW Audi Lada</textarea>
+      <select name="cars" size="4">
+        <option>BMW</option>
+        <option>Audi</option>
+        <option>Lada</option>
+      </select>
     </label>
-    <label for="rating">
+    <label>
       How do you rate our work?
-      <input type="range" name="rating" id="rating">
+      <input type="range" name="rating">
     </label>
   </fieldset>
   <fieldset>
     <legend>Additional info:</legend>
-    <label for="comments">
+    <label>
       Comments:
-      <textarea name="comments" id="comments" cols="20" rows="2"></textarea>
+      <textarea name="comments" cols="20" rows="2"></textarea>
     </label>
     <label>
       Would you recommend us?
-    <select>
+    <select name="recomend">
       <option value="recommend">yes</option>
       <option value="recommend">no</option>
     </select>
