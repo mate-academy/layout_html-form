@@ -1,0 +1,21 @@
+label {
+  display: block;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+label + label,
+.cars,
+.recommend {
+  margin-top: 10px;
+}
+
+.cars {
+  margin-bottom: 10px;
+}
+
+.fieldset > label {
+  display: inline;
+}
