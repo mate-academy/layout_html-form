@@ -1,0 +1,15 @@
+.form-fieldset {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+}
+
+.input-field {
+  margin-bottom: 10px;
+}
+
+.fieldset {
+  padding-bottom: 0;
+}
