@@ -2,32 +2,18 @@
   margin-bottom: 20px;
 }
 
-input {
+label,
+div {
   margin-bottom: 10px;
+  display: block;
 }
 
-.last_chield {
+.fieldStyle > *:last-child {
   margin-bottom: 0;
 }
 
 .forAge {
   width: 65px;
-}
-
-.forColor {
-  margin-top: 4px;
-}
-
-.forRate {
-  margin-top: 12px;
-}
-
-.forRecommend {
-  margin-top: 10px;
-}
-
-label {
-  display: block;
 }
 
 .noneBlock {
