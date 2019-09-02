@@ -1,0 +1,16 @@
+.part-of-form {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.label:last-child {
+  margin-bottom: 0;
+}
+
+.inline {
+  display: inline;
+}
