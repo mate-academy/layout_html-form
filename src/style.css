@@ -1,0 +1,12 @@
+.standart-input-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.standart-fieldset {
+  margin-bottom: 20px;
+}
+
+.standart-fieldset .standart-input-label:last-child {
+  margin-bottom: 0;
+}

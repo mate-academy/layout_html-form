@@ -53,5 +53,5 @@ Add attribute `data-qa="field-placeholder"` to test it correctly.
 
 **Result**
 
-- [UPDATE DEMO LINK](https://<your_account>.github.io/<repo_name>/)
-- [UPDATE TEST REPORT LINK](https://<your_account>.github.io/<repo_name>/report/html_report/)
+- [UPDATE DEMO LINK](https://ZelenskiyS.github.io/layout_html-form/)
+- [UPDATE TEST REPORT LINK](https://ZelenskiyS.github.io/layout_html-form/report/html_report/)
