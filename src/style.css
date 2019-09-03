@@ -1,0 +1,17 @@
+.about_you {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.about_cats {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.box-form {
+  margin-bottom: 20px;
+}
+
+.box-form > .about_you:last-child {
+  margin-bottom: 0;
+}
