@@ -1,0 +1,28 @@
+label,
+.love_hate_cat {
+  display: block;
+  margin-bottom: 10px;
+}
+
+fieldset > label:last-child {
+  margin-bottom: 0;
+}
+
+#Personal_information,
+#Registration,
+#Interesting_fact {
+  margin-bottom: 20px;
+}
+
+.button {
+  margin-top: 20px;
+}
+
+#email {
+  color: grey;
+}
+
+.love_cat,
+.hate_cat {
+  display: inline;
+}
