@@ -1,0 +1,29 @@
+fieldset {
+  margin-bottom: 20px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+.agreement,
+.pwrd,
+.work {
+  margin-bottom: 0;
+}
+
+.age {
+  width: 65px;
+}
+
+.color {
+  margin-top: 4px;
+}
+
+.work {
+  margin-top: 12px;
+}
+
+.recommend {
+  margin-top: 10px;
+}
