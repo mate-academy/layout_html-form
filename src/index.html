@@ -13,7 +13,54 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
+    <fieldset>
+      <legend>Personal information</legend>
+      <label>Surname: <input type="text" name="surname" minlength="3" maxlength="20" required></label>
+      <label>Name: <input type="text" name="name" minlength="3" maxlength="20" required></label>
+      <label>How old are You? <input type="number" name="age" min="9" max="100" value="12" step="1" data-qa="field-value" id="age" required></label>
+      <label>Full date of birth: <input type="date" name="birth_date"></label>
+      <label>I accept the term of the agreement <input type="checkbox" name="terms"></label>
+    </fieldset>
 
+    <fieldset>
+      <legend>Registration</legend>
+      <label>E-mail: <input type="email" name="email" placeholder="email@example.com" data-qa="field-placeholder" required></label>
+      <label>Password: <input type="password" name="password"></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>An interesting fact about you!</legend>
+      <label>Do you love cats?
+        <input type="radio" name="love_cats" value="yes"> Yes
+        <input type="radio" name="love_cats" value="no"> No
+      </label>
+      <label>What is your favorite color? <input type="color" name="favorite_color"></label>
+      <label>What time do you go to bed? <input type="time" name="sllep_time" step="1"></label>
+      <label>What are your favorite brand of cars?
+        <select name="cars" size="4" multiple>
+          <option value="bmv">BMW</option>
+          <option value="audi">Audi</option>
+          <option value="lada">Lada</option>
+          <option value="no"></option>
+        </select>
+      </label>
+      <label>How do you rate our work? <input type="range" value="0"></label>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Additional info:</legend>
+      <label>Comments: <textarea name="comments"></textarea></label>
+      <label>Would you recommend us? <select name="rate">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select></label>
+    </fieldset>
+
+    <input type="submit" value="Submit">
+
+  </form>
 <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
