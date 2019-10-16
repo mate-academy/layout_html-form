@@ -1,15 +1,118 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Form</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
-</body>
-</html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Form!</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+  <form method="post"
+        action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+    <fieldset class="form__item">
+      <legend>Personal information</legend>
+      <div class="input__box">
+        <label for="surname__inf">Surname:</label>
+        <input type="text" name="surname" id="surname__inf" autocomplete="on" minlength="3" required>
+      </div>
+
+      <div class="input__box">
+        <label for="name__inf">Name:</label>
+        <input type="text" name="name" id="name__inf" autocomplete="on" minlength="3" required>
+      </div>
+
+      <div class="input__box">
+        <label for="age__inf">How old are You?</label>
+        <input type="number" name="age" id="age__inf" min="1" max="100" value="12" >
+      </div>
+
+      <div class="input__box">
+        <label for="date__inf">Full date for birth:</label>
+        <input type="date" name="date" id="date__inf" >
+      </div>
+
+      <div class="input__box">
+        <label for="agreement__inf">I accept the term of the agreement</label>
+        <input type="checkbox" name="check" id="agreement__inf" required>
+      </div>
+    </fieldset>
+
+    <fieldset class="form__item">
+      <legend>Registration</legend>
+      <div class="input__box">
+        <label for="email__inf">E-mail:</label>
+        <input type="email" name="email" id="email__inf"
+               placeholder="email@example.com"
+               autocomplete="on"
+               required>
+      </div>
+
+      <div class="input__box">
+        <label for="pass__inf">Password:</label>
+        <input type="password" name="password" id="pass__inf"
+               autocomplete="on"
+               minlength="6"
+               maxlength="10"
+               required>
+      </div>
+    </fieldset>
+
+    <fieldset class="form__item">
+      <legend>An interesting fact about you!</legend>
+      <div class="input__box">
+        <span>Do you love cats?</span>
+        <input type="radio" name="love-cat" id="love__cat">
+        <label for="love__cat">Yes</label>
+        <input type="radio" name="love-cat" id="no__love-cat">
+        <label for="no__love-cat">No</label>
+      </div>
+
+      <div class="input__box">
+        <label for="color__inf">What is your favorite color?</label>
+        <input type="color" name="color" id="color__inf">
+      </div>
+
+      <div class="input__box">
+        <label for="time">What time do you go to bed?</label>
+        <input type="time" id="time" name="time">
+      </div>
+
+      <div class="input__box">
+        <label for="cars">What are your favorite brand of cars?</label>
+        <select id="cars" name="cars" multiple>
+          <option>BMW</option>
+          <option>Audi</option>
+          <option>Lada</option>
+        </select>
+      </div>
+
+      <div class="input__box">
+        <label for="size">How do you rate our work?</label>
+        <input type="range" min="1" max="10" id="size" value="0">
+      </div>
+    </fieldset>
+
+    <fieldset class="form__item">
+      <legend>Additional info</legend>
+      <div class="input__box">
+        <label for="comments__inf">Comments:</label>
+        <textarea name="text" id="comments__inf" rows="2" cols="23" required></textarea>
+      </div>
+
+      <div class="input__box">
+        <label for="recommend__inf">Would you recommend us?</label>
+        <select name="recommend" id="recommend__inf">
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+      </div>
+    </fieldset>
+    <input type="submit" value="Submit" class="form__button" name="sent__form" onsubmit="onSubmit()">
+  </form>
+
+
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
+  </html>
