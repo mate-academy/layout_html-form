@@ -1,0 +1,11 @@
+.fieldset--style {
+  margin-bottom: 20px;
+}
+
+.input--wrapper {
+  margin-top: 10px;
+}
+
+.input--wrapper:first-of-type {
+  margin-top: 0;
+}
