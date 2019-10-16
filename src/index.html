@@ -1,15 +1,147 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Form</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-  <h1>HTML Form</h1>
   <script type="text/javascript" src="./main.js"></script>
+  <form>
+    <fieldset class="block">
+      <legend>Personal information</legend>
+      <label for="surname">Surname:</label>
+      <input
+        type="text"
+        name="surname"
+        id="surname"
+        class="input"
+        autocomplete="off"
+        required
+      >
+      <br>
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="input"
+        autocomplete="off"
+        required
+      >
+      <br>
+      <label for="age">How old are You?</label>
+      <input
+        type="number"
+        name="age"
+        id="age"
+        class="input"
+        min="12"
+        max="100"
+        value="12"
+      >
+      <br>
+      <label for="date">Full date of birth:</label>
+      <input
+        type="date"
+        name="date"
+        id="date"
+        class="input"
+        placeholder="mm/ dd/ yyyy"
+      >
+      <br>
+      <label for="agreement">I accept the term of the agreement</label>
+      <input
+        type="checkbox"
+        name="agreement"
+        id="agreement"
+        class="last_input"
+        required
+      >
+      <br>
+    </fieldset>
+
+    <fieldset class="block">
+      <legend>Registration</legend>
+      <label for="email">E-mail:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="input"
+        placeholder="email@example.com"
+      >
+      <br>
+      <label for="pass">Password:</label>
+      <input type="password" name="pass" id="pass">
+      <br>
+    </fieldset>
+
+    <fieldset class="block">
+      <legend>An interesting fact about you!</legend>
+      <div class="div_style">
+        <label for="cats_love">Do you love cats?</label>
+        <input type="radio" name="cats_love" id="cats_love" value="yes">
+        <label for="cats_love">Yes</label>
+        <input type="radio" name="cats_love" id="cats_no_love" value="no">
+        <label for="cats_no_love">No</label>
+      </div>
+      <label for="color_select">What is your favorite color?</label>
+      <input type="color" name="color_select" id="color_select" class="input">
+      <br>
+      <label for="timetosleep">What time do you go to bed?</label>
+      <input
+        type="time"
+        name="timetosleep"
+        id="timetosleep"
+        class="input"
+        step="1"
+      >
+      <br>
+      <div class="div_style">
+        <label for="carbrend">What are your favorite brand of cars?</label>
+        <select id="carbrend" name="carbrend" multiple>
+          <option value="bmw">BMW</option>
+          <option value="audi">Audi</option>
+          <option value="lada">Lada</option>
+        </select>
+      </div>
+      <label for="rate_us">How do you rate our work?</label>
+      <input type="range"
+        min="0"
+        max="10"
+        value="0"
+        name="rate_us"
+        id="rate_us"
+      >
+      <br>
+    </fieldset>
+
+    <fieldset class="block">
+      <legend>Additional info:</legend>
+      <label for="comments">Comments:</label>
+      <textarea
+        id="comments"
+        minlength="1"
+        maxlength="999"
+        name="comment"
+        class="input"
+      >
+      </textarea>
+      <br>
+      <label for="recommend">Would you recommend us?</label>
+      <select id="recommend" class="last_input" name="recommend">
+        <option value="yes">yes</option>
+        <option value="no">no</option>
+      </select>
+    </fieldset>
+    <input type="submit" value="Submit" onsubmit="onSubmit()">
+  </form>
 </body>
+
 </html>
