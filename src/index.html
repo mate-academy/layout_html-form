@@ -1,15 +1,102 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Form</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-  <h1>HTML Form</h1>
+
   <script type="text/javascript" src="./main.js"></script>
+
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" onsubmit="onSubmit()"
+    autocomplete="on">
+    <fieldset class="block_distance">
+
+      <legend>Personal information</legend>
+
+      Surname:
+      <input class="input_distance" type="text" name="surname" autocomplete="off"><br>
+
+      Name:
+      <input class="input_distance" type="text" name="name" autocomplete="off"><br>
+
+      How old are You?
+      <input class="input_distance" type="number" name="age" value="12" min="10" max="100" autocomplete="off"><br>
+
+      Full date of birth:
+      <input class="input_distance" type="date" name="birth"><br>
+
+      I accept the term of the agreement
+      <input type="checkbox" name="accept" value="Yes" required>
+
+    </fieldset>
+
+    <fieldset class="block_distance">
+
+      <legend>Registration</legend>
+
+      E-mail:
+      <input class="input_distance" type="email" name="email" placeholder="email@example.com"><br>
+
+      Password:
+      <input type="password" name="password" minlength="5" maxlength="10">
+    </fieldset>
+
+    <fieldset class="block_distance">
+
+      <legend>An interesting fact about you!</legend>
+
+      <div class="input_distance">Do you love cats?
+        <input type="radio" name="love_cats" value="yes" id="yes"><label for="yes">Yes</label>
+        <input type="radio" name="love_cats" value="no" id="no"><label for="no">No</label>
+        <br></div>
+
+      What is your favorite color?
+      <input class="input_distance" type="color" name="color"><br>
+
+      What time do you go to bed?
+      <input class="input_distance" type="time" name="time_sleep"><br>
+
+      What are your favorite brand of cars?
+        <select name="cars" size="4" multiple>
+          <option value="bmw">BMW</option>
+          <option value="audi">Audi</option>
+          <option value="lada">Lada</option>
+        </select>
+      <br>
+
+      <div class="top">How do you rate our work?
+        <input type="range" name="range" min="0" max="100">
+      </div>
+    </fieldset>
+
+    <fieldset class="block_distance">
+
+      <legend>Additional info</legend>
+
+      <div class="input_distance">Comments:
+        <textarea name="comments"></textarea><br>
+      </div>
+      Would you recommend us?
+      <select name="recommend">
+        <option value="yes">yes</option>
+        <option value="no">no</option>
+      </select>
+
+    </fieldset>
+
+    <div class="input_distance">
+      <input type="submit" value="Submit">
+    </div>
+
+  </form>
+
 </body>
+
 </html>
