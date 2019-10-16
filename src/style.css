@@ -1,0 +1,11 @@
+.form__item {
+  margin-bottom: 20px;
+}
+
+.input__box {
+  margin-bottom: 10px;
+}
+
+.input__box:last-child {
+  margin-bottom: 0;
+}
