@@ -15,22 +15,41 @@
   <form action="#">
     <fieldset class="form__block">
       <legend>Personal information</legend>
+
       <div class="input-data">
         <label for="surname-info">Surname: </label>
-        <input type="text" name="surname" id="surname-info" autocomplete="off" required minlength="3">
+        <input type="text"
+               name="surname"
+               id="surname-info"
+               autocomplete="off"
+               required minlength="3"
+        >
       </div>
+
       <div class="input-data">
         <label for="name-info">Name: </label>
-        <input type="text" name="name" id="name-info" autocomplete="off" required minlength="3">
+        <input type="text"
+               name="name"
+               id="name-info"
+               autocomplete="off"
+               required minlength="3">
       </div>
+
       <div class="input-data">
         <label for="year-info">How old are You? </label>
-        <input type="number" name="age" id="year-info" min="1" max="100" value="12">
+        <input type="number"
+               name="age"
+               id="year-info"
+               min="1"
+               max="100"
+               value="12">
       </div>
+
       <div class="input-data">
         <label for="date-info">Full date of birth: </label>
         <input type="date" name="date" id="date-info">
       </div>
+
       <div class="input-data">
         <label for="accept-info">
           I accept the term of the agreement
@@ -38,19 +57,34 @@
         <input type="checkbox" name="accept" id="accept-info">
       </div>
     </fieldset>
+
     <fieldset class="form__block">
       <legend>Registration</legend>
+
       <div class="input-data">
         <label for="email">E-mail:</label>
-        <input type="email" name="email-address" id="email" autocomplete="off" placeholder="email@example.com" required>
+        <input type="email"
+               name="email-address"
+               id="email"
+               autocomplete="off"
+               placeholder="email@example.com"
+               required>
       </div>
+
       <div class="input-data">
         <label for="password">Password:</label>
-        <input type="password" name="password" id="password" required minlength="6" maxlength="30">
+        <input type="password"
+               name="password"
+               id="password"
+               required
+               minlength="6"
+               maxlength="30">
       </div>
     </fieldset>
+
     <fieldset class="form__block">
       <legend>An interesting fact about you!</legend>
+
       <div class="input-data">
         <span>Do you love cats?</span>
         <input type="radio" name="love-cat" id="love-cat__yes">
@@ -58,14 +92,17 @@
         <input type="radio" name="love-cat" id="love-cat__no">
         <label for="love-cat__no">No</label>
       </div>
+
       <div class="input-data">
         <label for="color-data">What is your favorite color?</label>
         <input type="color" name="color" id="color-data">
       </div>
+
       <div class="input-data">
         <label for="time-data">What time do you go to bed?</label>
         <input type="time" name="bed-time" id="time-data" step="1">
       </div>
+
       <div class="input-data">
         <span>What are you favorite brand of cars?</span>
         <select name="cars" id="cars-data" multiple>
@@ -74,17 +111,21 @@
           <option value="Lada">Lada</option>
         </select>
       </div>
+
       <div class="input-data">
         <span>How do you rate our work?</span>
         <input type="range" name="rate-size" min="1" max="10" value="0">
       </div>
+
     </fieldset>
     <fieldset class="form__block">
       <legend>Additional info:</legend>
+
       <div class="input-data">
         <label for="comment">Comments</label>
         <textarea name="comment-field" id="comment"></textarea>
       </div>
+
       <div class="input-data">
         <span>Would you recommend us?</span>
         <select name="recommend" id="recommend-data">
