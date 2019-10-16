@@ -1,0 +1,11 @@
+.input-wrap {
+  margin-top: 10px;
+}
+
+.block {
+  margin-bottom: 20px;
+}
+
+.input-wrap:first-of-type {
+  margin-top: 0;
+}
