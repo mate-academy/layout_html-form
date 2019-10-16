@@ -1,0 +1,7 @@
+.form_block {
+  margin-bottom: 20px;
+}
+
+.input_data:not(:last-of-type) {
+  margin-bottom: 10px;
+}
