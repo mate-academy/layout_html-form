@@ -1,0 +1,12 @@
+.input--distance {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.block--distance {
+  margin-bottom: 20px;
+}
+
+.last--line {
+  margin-bottom: 0;
+}
