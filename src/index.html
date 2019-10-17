@@ -2,14 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  >
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Form</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
+<script type="text/javascript" src="./main.js"></script>
+<form id="my-form" action="" method ="POST">
+  <fieldset>
+    <legend>Personal information</legend>
+    <label>Surname:
+      <input type="text" name="surname" required autocomplete="off">
+    </label>
+    <label>Name:
+      <input type="text" name="name" minlength="3">
+    </label>
+    <label>How old are you?:
+      <input type="number" name="age" value="12" min="18" max="100">
+    </label>
+    <label>Full date of birth:
+      <input type="date" name="birth-date">
+    </label>
+    <label>I accept the terms of the agreement:
+      <input type="checkbox" name="agree">
+    </label>
+    </fieldset>
+    <fieldset>
+      <legend>Registration</legend>
+    <label>E-mail:
+      <input type="email" name="email" placeholder="email@example.com" maxlength="20">
+    </label>
+    <label>Password:
+      <input type="password" name="pass">
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>An interesting information about you:</legend>
+    <label>Do you love cats:
+        <input type="radio" name="preferences" value="yes">Yes
+        <input type="radio" name="preferences" value="no">No
+    </label>
+    <label>What is you favorite color:
+      <input type="color" name="color">
+    </label>
+    <label>What time do you go to bed?:
+      <input type="time" name="bed-time">
+    </label>
+    <label>What your favorite brand of car:
+      <select multiple>
+        <option name="car" value="bmw">BMW</option>
+        <option name="car" value="audi">Audi</option>
+        <option name="car" value="lada">Lada</option>
+      </select>
+    </label>
+    <label>How do you rate our work?
+      <input type="range" name="rate-us" min="0" max="10">
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>Additional info:</legend>
+    <label for="comment">Сomments:</label>
+    <textarea id="comment" name="comment" placeholder="Comment"></textarea>
+    <label>Would you recommend us?
+      <select class="recom">
+        <option name="recommendations" value="yes">Yes</option>
+        <option name="recommendations" value="no">No</option>
+      </select>
+    </label>
+    </fieldset>
+    <input type="submit" value="Submit" onsubmit="onSubmit()" class="submit_button">
+  </form>
 </body>
 </html>
