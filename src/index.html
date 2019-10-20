@@ -9,7 +9,92 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
+  <form action="/src" method="post">
+    <fieldset class="fieldset">
+      <legend>Personal information</legend>
+      <div class="input">
+        <label for="surname">Surname:</label>
+        <input name="surname" type="text" id="surname" autocomplete="off"
+        >
+      </div>
+      <div class="input">
+        <label for="name">Name:</label>
+        <input name="name" type="text" id="name" autocomplete="off">
+      </div>
+      <div class="input">
+        <label for="age">How old are You?</label>
+        <input name="age" type="number" id="age" min="12" max="100" value="12">
+      </div>
+      <div class="input">
+        <label for="bday">Full date of birth:</label>
+        <input name="bday" type="date" id="bday">
+      </div>
+      <div class="input">
+        <label>I accept the term of the agreement
+          <input type="checkbox" id="agree"></label>
+      </div>
+    </fieldset>
+
+    <fieldset class="fieldset">
+      <legend>Registration</legend>
+      <div class="input">
+        <label for="email">E-mail:</label>
+        <input name="email" type="email" id="email" pattern=".@gmail.com" placeholder="email@example.com" required>
+      </div>
+      <div class="input"><label for="pass">Password:</label>
+        <input name="password" type="password" id="pass" minlength="8" maxlength="64"
+        ></div>
+    </fieldset>
+    <fieldset class="fieldset">
+      <legend>An interesting fact about you!</legend>
+      <div class="input">
+        <label for="cateslike">Do you love cats?</label>
+        <input type="radio" value="yes" name="cats" id="cateslike">
+        <label for="cateslike">Yes</label>
+        <input type="radio" value="yes" name="cats" id="catesdislike">
+        <label for="catesdislike">No</label>
+      </div>
+      <div class="input">
+        <label for="color">What is your favorite color?</label>
+        <input name="color" type="color" id="color"
+        >
+      </div>
+      <div class="input">
+        <label for="bedtime">What time do you go to bed?</label>
+        <input type="time" name="usrtime" id="bedtime" step="1">
+      </div>
+      <div class="input">
+        <label for="cars">What are your favorite brand of cars?</label>
+        <select name="cats" id="cars" multiple>
+          <option>BMW</option>
+          <option>Audi</option>
+          <option>Lada</option>
+        </select>
+      </div>
+      <div class="input">
+        <label for="nps">How do you rate our work?</label>
+        <input name="nps" type="range" value="0" id="nps" min="0" max="100" step="10">
+      </div>
+    </fieldset>
+
+    <fieldset class="fieldset">
+      <legend>Additional info:</legend>
+      <div class="input--wrapper">
+        <label for="comment">Comments:</label>
+        <textarea name="additional_comment" id="comment" size="300">
+      </textarea>
+      </div>
+      <div class="input">
+        <label for="recommend">Would you recommend us?</label>
+        <select name="recommendation" id="recommend">
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+      </div>
+    </fieldset>
+    <input type="submit" value="Submit" onsubmit="onSubmit()">
+  </form>
+
+
 </body>
 </html>
