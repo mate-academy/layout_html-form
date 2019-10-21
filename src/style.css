@@ -1,0 +1,15 @@
+body {
+  margin: 8px;
+}
+
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.input {
+  margin-top: 10px;
+}
+
+.input:first-of-type {
+  margin-top: 0;
+}
