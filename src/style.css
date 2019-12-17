@@ -1,0 +1,32 @@
+#cars option {
+  margin-top: 0;
+}
+
+p {
+  margin: 0;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+fieldset * {
+  margin-top: 10px;
+}
+
+p,
+legend + label * {
+  margin-top: 0;
+}
+
+p input[type="radio"] {
+  margin-top: 3px;
+}
+
+input[type="checkbox"] {
+  margin-top: 13px;
+}
+
+input[type="range"] {
+  margin-top: 12px;
+}
