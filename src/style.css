@@ -1,0 +1,21 @@
+.form-section {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-time__button {
+  width: 124px;
+}
+
+.user-age_input {
+  width: 65px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+.form-section label:last-child {
+  margin-bottom: 0;
+}
