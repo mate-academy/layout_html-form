@@ -1,15 +1,109 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Form</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-  <h1>HTML Form</h1>
   <script type="text/javascript" src="./main.js"></script>
+
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+    <fieldset class="form">
+      <legend>Personal information:</legend>
+      <div class="wrapper">
+        <label for="fname">Surname:</label>
+        <input type="text" name="surmame" id="fname">
+      </div>
+      <div class="wrapper">
+        <label for="sname">Name:</label>
+        <input type="text" name="name" id="sname">
+      </div>
+      <div class="wrapper">
+        <label for="how_old">How old are You?
+          <input type="number" value="12" size="2px" name="old" min="20" max="444" id="how_old">
+        </label>
+      </div>
+      <div class="wrapper">
+        <label for="birth_date">Full date of birth:</label>
+        <input type="date" min="2002-01-02" name="date" id="birth_date">
+      </div>
+      <div class="wrapper">
+        <label for="accept">I accept the term of the agreement</label>
+        <input type="checkbox" name="agree" id="accept">
+      </div>
+    </fieldset>
+
+    <fieldset class="form">
+      <legend>Registration</legend>
+      <div class="wrapper">
+        <label for="mail">E-mail:</label>
+        <input type="email" placeholder="email@example.com" name="e-mail" id="mail" required>
+      </div>
+      <div class="wrapper">
+        <label for="passw">Password:</label>
+        <input type="password" name="password" maxlength="10" id="passw" required>
+      </div>
+    </fieldset>
+    <fieldset class="form">
+      <legend>An interesting fact about you!</legend>
+      <div class="wrapper">
+        <span>Do you love cats?</span>
+        <input type="radio" name="yes" id="cat__yes">
+        <label for="cat__yes">Yes</label>
+        <input type="radio" name="no" id="cat__no">
+        <label for="cat__no">No</label>
+      </div>
+      <div class="wrapper">
+        <label for="fv_color">What is your favorite color?</label>
+        <input type="color" value="#000000" name="color" id="fv_color">
+      </div>
+      <div class="wrapper">
+        <label for="time_go">
+          What time do you go to bed? <input type="time"  name="time" id="time_go">
+        </label>
+      </div>
+      <div class="wrapper">
+        <label for="car">
+          What are your favorite brand of cars?
+          <select name="cars" size="4" id="car" multiple>
+            <option value="BMW">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </label>
+      </div>
+      <div class="wrapper">
+        <label for="work">
+          How do you rate our work? <input type="range" min="1" max="10" id="work">
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset class="form">
+      <legend>Additional info</legend>
+      <div class="wrapper">
+        <label for="comment">Comments:</label>
+        <textarea id="comment" minlength="30"></textarea>
+      </div>
+      <div class="wrapper">
+        <label for="recommend">Would you recommends us?</label>
+        <select name="recommends" id="recommend">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+    </fieldset>
+    <div class="wrapper">
+    <input type="submit" value="Submit" onsubmit="onSubmit()">
+    </div>
+  </form>
+
 </body>
+
 </html>

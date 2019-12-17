@@ -1,0 +1,11 @@
+.form {
+  margin-bottom: 20px;
+}
+
+.wrapper {
+  margin-top: 10px;
+}
+
+.wrapper:first-of-type {
+  margin-top: 0;
+}
