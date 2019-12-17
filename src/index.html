@@ -9,7 +9,74 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>HTML Form</h1>
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
+    <fieldset class="wrapper">
+      <legend>Personal information</legend>
+        <label class="label-wrap" for="surname">
+          Surname: <input type="text" name="surname" id="surname" autocomplete="off">
+        </label>
+        <label class="label-wrap" for="name">
+          Name: <input type="text" name="name" id="name" autocomplete="off">
+        </label>
+        <label class="label-wrap" for="old">
+          How old are You? <input type="number" name="old" id="old" value="12" min="12" max="150" autocomplete="off">
+        </label>
+        <label class="label-wrap" for="birth">
+          Full date of birth: <input type="date" name="birth" id="birth" autocomplete="off">
+        </label>
+        <label class="label-wrap" for="acceptCheck">
+          I accept the term of the agreement <input type="checkbox" name="acceptCheck" id="acceptCheck" autocomplete="off">
+        </label>
+    </fieldset>
+    <fieldset class="wrapper">
+      <legend>Registration</legend>
+        <label class="label-wrap" for="myEmail">
+          E-mail: <input type="email" placeholder="email@example.com" name="myEmail" id="myEmail" autocomplete="off">
+        </label>
+        <label class="label-wrap" for="myPass">
+          Password <input type="password" name="myPass" id="myPass" autocomplete="off">
+        </label>
+    </fieldset>
+    <fieldset class="wrapper">
+      <legend>An interesting fact about you!</legend>
+      <div class="label-wrap">
+        Do you love cats?
+        <label for="Yes"><input type="radio" name="yesOrNo" id="Yes"> Yes</label>
+        <label for="No"><input type="radio" name="yesOrNo" id="No"> No</label>
+      </div>
+      <label class="label-wrap" for="favColor">
+        What is your favorite color? <input type="color" name="favColor" id="favColor">
+      </label>
+      <label class="label-wrap" for="timeToSleep">
+        What time do you go to bed? <input class="input-time-to-go-bed" type="time" name="timeToSleep" id="timeToSleep">
+      </label>
+      <label class="label-wrap" for="oneOf-cars">
+        What are your favorite brand of cars?
+        <select name="oneOf-cars" id="oneOf-cars" size="4">
+          <option value="bmw">BMW</option>
+          <option value="audi">Audi</option>
+          <option value="lada-pomada">Lada</option>
+        </select>
+      </label>
+      <label class="label-wrap" for="rate-rage">
+        How do you rate our work? <input type="range" name="rate-rage" id="rate-rage" value="0">
+      </label>
+    </fieldset>
+    <fieldset class="wrapper">
+      <legend>Additional info</legend>
+      <label class="label-wrap" for="feedback">
+        Comments: <textarea name="feedback" id="feedback" cols="20" rows="2"></textarea>
+      </label>
+      <label class="label-wrap" for="recommends">
+        Would you recommend us?
+        <select name="recommends" id="recommends">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </label>
+    </fieldset>
+    <button type="submit" onsubmit="onSubmit()">Submit</button>
+  </form>
   <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
