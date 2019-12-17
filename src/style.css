@@ -3,7 +3,7 @@
   padding-bottom: 0;
 }
 
-.block-input {
+.block-of-inputs {
   display: block;
   margin-bottom: 10px;
 }
@@ -12,6 +12,6 @@
   padding-right: 7px;
 }
 
-.input-sleep {
+.input-sleep-time {
   width: 124px;
 }
