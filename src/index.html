@@ -1,15 +1,128 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Form</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-  <h1>HTML Form</h1>
+  <!-- Personal  information section start -->
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method>
+    <div class="section-area">
+      <fieldset>
+        <legend>Personal information</legend>
+        <div class="input-field">
+          <label> Surname:
+            <input type="text" name="surname" autocomplete="off">
+          </label>
+        </div>
+        <div class="input-field">
+          <label> Name:
+            <input type="text" name="name">
+          </label>
+        </div>
+        <div class="input-field">
+          <label> How old are You?
+            <input class="input-age" type="number" name="age" value="12" min="12" max="100">
+          </label>
+        </div>
+        <div class="input-field">
+          <label> Full date of birth:
+            <input type="date">
+          </label>
+        </div>
+        <div>
+          <label> I accept the term of the agreement
+            <input type="checkbox" name="agreement">
+          </label>
+        </div>
+      </fieldset>
+    </div>
+    <!-- Personal information section end -->
+    <!-- Registration section start -->
+    <div class="section-area">
+      <fieldset>
+        <legend>Registration</legend>
+        <div class="input-field">
+          <label> E-mail:
+            <input type="email" name="email" required placeholder="email@example.com">
+          </label>
+        </div>
+        <div>
+          <label> Password:
+            <input type="password" name="password" minlength="6" maxlength="20">
+          </label>
+        </div>
+      </fieldset>
+    </div>
+    <!-- Registration section end -->
+    <!-- Facts section start -->
+    <div class="section-area">
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+        <div class="input-field">
+          <span>Do you love cats?</span>
+          <input type="radio" name="radio-yes" id="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" name="radio-no" id="no">
+          <label for="no">No</label>
+        </div>
+        <div class="input-field">
+          <label>What is your favorite color?
+            <input type="color" name="fav-color" value="#000">
+          </label>
+        </div>
+        <div class="input-field">
+          <label>What time do you go to bed?
+            <input class="time-bed" type="time" name="time-to-bed">
+          </label>
+        </div>
+        <div class="input-field">
+          <label for="cars">What are your favorite brand of cars?</label>
+          <select name="cars" size="4" id="cars">
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </div>
+        <div>
+          <label for="rate-work">How do you rate our work?</label>
+          <input type="range" name="rate-work" id="rate-work">
+        </div>
+      </fieldset>
+    </div>
+    <!-- Facts section end -->
+    <!-- Additional info section start -->
+    <div class="section-area">
+      <fieldset>
+        <legend>Additional info:</legend>
+        <div class="input-field">
+          <label>
+            Commetns:
+            <textarea name="comments" autocomplete="off"></textarea>
+          </label>
+        </div>
+        <div>
+          <label for="recommendation">Would you recommend us?</label>
+          <select name="recommendation" id="recommendation">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </div>
+      </fieldset>
+    </div>
+    <!-- Additional info section end -->
+    <!-- Submit button -->
+    <div class="input-field"></div>
+    <button class="btn-subm" type="submit" onsubmit="onSubmit()">Submit</button>
+    </div>
+  </form>
   <script type="text/javascript" src="./main.js"></script>
 </body>
+
 </html>
