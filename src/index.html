@@ -1,15 +1,111 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Form</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-  <h1>HTML Form</h1>
+  <form action="" >
+    <fieldset class="fieldset_form">
+      <legend>Personal information</legend>
+      <div class="label_forme">
+        <label for="surname_id">Surname:</label>
+          <input type="text" id="surname_id" name="surname_form">
+      </div>
+
+      <div class="label_form">
+        <label for="name_id">Name:</label>
+          <input type="text" id="name_id" name="name_form">
+      </div>
+
+      <div class="label_form">
+        <label for="old_id">How old are You?</label>
+          <input type="text" id="old_id" name="old_form" value="12" size="3">
+      </div>
+
+      <div class="label_form">
+        <label for="date_id">Full date of birth:</label>
+          <input type="date" id="date_id" name="date_form">
+      </div>
+
+      <div class="label_form">
+        <label for="check_id">I accept the term of the agreement</label>
+          <input type="checkbox" id="check_id" name="check_form">
+      </div>
+    </fieldset>
+
+    <fieldset class="fieldset_form">
+      <legend>Registration</legend>
+      <div class="label_forme">
+        <label for="email_id">E-mail:</label>
+          <input type="email" id="email_id" name="email_form" placeholder="email@example.com" required multiple>
+      </div>
+
+      <div class="label_form">
+        <label for="password_id"> Password:</label>
+          <input type="password" id="password_id" name="password_form" minlength="6" required >
+      </div>
+    </fieldset>
+
+    <fieldset class="fieldset_form">
+      <legend>An interesting fact about you!</legend>
+      <div class="label_forme">
+        <label for="radio_id1">Do you love cats?</label>
+          <input type="radio" id="radio_id1" name="radio_form">
+          <label for="radio_id1">Yes</label>
+          <input type="radio" id="radio_id2" name="radio_form">
+          <label for="radio_id2">No</label>
+      </div>
+
+      <div class="label_form">
+        <label for="color_id">What is your favorite color?</label>
+          <input type="color" id="color_id" name="color_form">
+      </div>
+
+      <div class="label_form">
+        <label for="time_id">What time do you go to bed?</label>
+          <input type="time" id="time_id" name="time_form">
+      </div>
+
+      <div class="label_form">
+        <label for="car_id">What are your favorite brand of cars?</label>
+          <select name="car_form" id="car_id" size="4">
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+      </div>
+
+      <div class="label_form">
+        <label for="range_id">How do you rate our work?</label>
+          <input type="range" id="range_id" name="range_form" min="1" max="10" value="1">
+      </div>
+    </fieldset>
+
+    <fieldset class="fieldset_form">
+      <legend>Additional info:</legend>
+        <div class="label_forme">
+          <label for="text_id">Comments:</label>
+            <textarea id="text_id" name="text_form" minlength="1" maxlength="100"></textarea>
+        </div>
+
+        <div class="label_form">
+          <label for="yes_no_id">Would you recommend us?</label>
+            <select id="yes_no_id" name="yes_no_form">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+        </div>
+    </fieldset>
+    <input type="submit" value="Submit" onsubmit="onSubmit()">
+  </form>
   <script type="text/javascript" src="./main.js"></script>
 </body>
+
 </html>
