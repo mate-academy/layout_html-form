@@ -1,0 +1,13 @@
+.select-cars {
+  overflow: hidden;
+}
+
+.wrap {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+.block-input {
+  display: block;
+  margin-bottom: 10px;
+}
