@@ -1,15 +1,146 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Form</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-  <h1>HTML Form</h1>
+  <form action="#">
+    <fieldset class="form_block">
+      <legend>Personal information</legend>
+
+        <div class="input_data">
+          <label for="surname_info">Surname: </label>
+          <input type="text"
+                 name="surname"
+                 id="surname_info"
+                 autocomplete="off"
+                 required minlength="3"
+          >
+        </div>
+
+        <div class="input_data">
+          <label for="name_info">Name: </label>
+          <input type="text"
+                 name="name"
+                 id="name_info"
+                 autocomplete="off"
+                 required minlength="3"
+          >
+        </div>
+
+        <div class="input_data">
+          <label for="year_info">How old are You? </label>
+          <input type="number"
+                 name="age"
+                 id="year_info"
+                 min="1"
+                 max="100"
+                 value="12"
+          >
+        </div>
+
+        <div class="input_data">
+          <label for="date_info">Full date of birth: </label>
+          <input type="date" name="date" id="date_info">
+        </div>
+
+        <div class="input_data">
+          <label for="accept_info">
+            I accept the term of the agreement
+          </label>
+          <input type="checkbox" name="accept" id="accept_info">
+        </div>
+    </fieldset>
+
+    <fieldset class="form_block">
+      <legend>Registration</legend>
+
+      <div class="input_data">
+        <label for="email">E-mail:</label>
+        <input type="email"
+               name="email_address"
+               id="email"
+               autocomplete="off"
+               placeholder="email@example.com"
+               required
+        >
+      </div>
+
+      <div class="input_data">
+        <label for="password">Password:</label>
+        <input type="password"
+               name="password"
+               id="password"
+               required
+               minlength="6"
+               maxlength="30"
+        >
+      </div>
+    </fieldset>
+
+    <fieldset class="form_block">
+      <legend>An interesting fact about you!</legend>
+
+      <div class="input_data">
+        <span>Do you love cats?</span>
+        <input type="radio" name="love_cat" id="love_cat_yes">
+        <label for="love_cat_yes">Yes</label>
+        <input type="radio" name="love_cat" id="love_cat_no">
+        <label for="love_cat_no">No</label>
+      </div>
+
+      <div class="input_data">
+        <label for="color_data">What is your favorite color?</label>
+        <input type="color" name="color" id="color_data">
+      </div>
+
+      <div class="input_data">
+        <label for="time_data">What time do you go to bed?</label>
+        <input type="time" name="bed_time" id="time_data" step="1">
+      </div>
+
+      <div class="input_data">
+        <span>What are you favorite brand of cars?</span>
+        <select name="cars" id="cars_data" multiple>
+          <option value="BMW">BMW</option>
+          <option value="Audi">Audi</option>
+          <option value="Lada">Lada</option>
+        </select>
+      </div>
+
+      <div class="input_data">
+        <span>How do you rate our work?</span>
+        <input type="range" name="rate_size" min="1" max="10" value="0">
+      </div>
+    </fieldset>
+
+    <fieldset class="form_block">
+      <legend>Additional info:</legend>
+
+      <div class="input_data">
+        <label for="comment">Comments</label>
+        <textarea name="comment_field" id="comment"></textarea>
+      </div>
+
+      <div class="input_data">
+        <span>Would you recommend us?</span>
+        <select name="recommend" id="recommend_data">
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <input type="submit" name="sent_data" onsubmit="onSubmit()">
+  </form>
   <script type="text/javascript" src="./main.js"></script>
 </body>
+
 </html>
