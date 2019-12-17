@@ -13,10 +13,10 @@
   <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
     <fieldset class="block"><legend>Personal information</legend>
       <label class="block-input"> Surname:
-        <input type ="text" name="surname">
+        <input type ="text" name="surname" required autocomplete="off">
       </label>
       <label class="block-input">Name:
-        <input type="text" name="name">
+        <input type="text" name="name" autocomplete="off" required>
       </label>
       <label class="block-input">How old are You?
         <input type="number" value="12" name="age" id="age" min="1" max="102">
@@ -25,7 +25,7 @@
         <input type="date" name="birthdate">
       </label>
       <label for="agreement" class="block-input">I accept the term of the agreement
-        <input type="checkbox" name="agreement" id="agreement">
+        <input type="checkbox" name="agreement" id="agreement" required>
       </label>
     </fieldset>
     <fieldset class="block">
@@ -34,7 +34,7 @@
         <input type="email" name="email" placeholder="email@example.com" minlength="6" maxlength="64">
       </label>
       <label class="block-input">Password:
-        <input type="password" name="password" autocomplete="off">
+        <input type="password" name="password" minlength="4" maxlength="10">
       </label>
     </fieldset>
     <fieldset class="block">
