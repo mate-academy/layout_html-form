@@ -8,18 +8,19 @@
   <title>HTML Form</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-  <script type="text/javascript" src="./main.js"></script>
   <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
-    <fieldset class="block"><legend>Personal information</legend>
-      <label class="block-input"> Surname:
-        <input type ="text" name="surname" required autocomplete="off">
+    <fieldset class="block">
+      <legend>Personal information</legend>
+      <label class="block-input">Surname:
+        <input type ="text" name="surname" autocomplete="off" required>
       </label>
       <label class="block-input">Name:
         <input type="text" name="name" autocomplete="off" required>
       </label>
       <label class="block-input">How old are You?
-        <input type="number" value="12" name="age" id="age" min="1" max="102">
+        <input type="number" value="12" name="age" id="age" min="6" max="102">
       </label>
       <label class="block-input">Full date of birth:
         <input type="date" name="birthdate">
@@ -34,17 +35,17 @@
         <input type="email" name="email" placeholder="email@example.com" minlength="6" maxlength="64">
       </label>
       <label class="block-input">Password:
-        <input type="password" name="password" minlength="4" maxlength="10">
+        <input type="password" name="password" minlength="4" maxlength="15">
       </label>
     </fieldset>
     <fieldset class="block">
       <legend>An interesting fact about you!</legend>
       <div class="block-input">Do you love cats?
-        <label for="yes">
-          <input type="radio" name="catlover" value="yes" id="yes"><span> Yes</span>
+        <label>
+          <input type="radio" name="catlover"><span> Yes</span>
         </label>
-        <label for="no">
-          <input type="radio" name="catlover" value="no" id="no"><span> No</span>
+        <label>
+          <input type="radio" name="catlover"><span> No</span>
         </label>
       </div>
       <label class="block-input">What is your favorite color?
@@ -78,5 +79,6 @@
     </fieldset class="block">
     <button type="submit" onsubmit="onSubmit()">Submit</button>
   </form>
+  <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
