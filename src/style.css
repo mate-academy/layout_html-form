@@ -1,7 +1,7 @@
-.fieldset {
+.form-element-group {
   margin-bottom: 20px;
 }
 
-.fieldset > div:not(:last-child) {
+.input-wrapper:not(:last-child) {
   margin-bottom: 10px;
 }
