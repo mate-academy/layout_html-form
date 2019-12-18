@@ -9,7 +9,73 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
+    <fieldset class="form-block">
+      <legend>Personal information</legend>
+      <label class="block-input">Surname:
+        <input type="text" name="surname" id="surname" required>
+      </label>
+      <label class="block-input">Name:
+        <input type="text" name="name" id="name">
+      </label>
+      <label for="age" class="block-input">How old are You?
+        <input type="number" name="age" id="age" value="12" min="0" max="100" step="1">
+      </label>
+      <label for="birth-date" class="block-input">Full date of birth:
+        <input type="date" name="birth-date" id="birth-date">
+      </label>
+      <label for="agreement" class="block-input">I accept the term of the agreement
+        <input type="checkbox" name="agreement" id="agreement">
+      </label>
+    </fieldset>
+    <fieldset class="form-block">
+      <legend>Registration</legend>
+      <label for="email" class="block-input">E-mail:
+        <input type="email" placeholder="email@example.com" name="email" id="email" autocomplete="off">
+      </label>
+      <label class="block-input" for="pass">Password:
+      <input type="password" name="pass" id="pass" autocomplete="off">
+      </label>
+    </fieldset>
+    <fieldset class="form-block ">
+      <legend>An interesting fact about you!</legend>
+      <div class="block-input">Do you love cats?
+      <input type="radio" name="cats" id="yes" value="yes">
+      <label for="yes" name="cats">Yes</label>
+      <input type="radio" name="cats" id="no" value="no">
+        <label for="no" name="yes-no">No</label>
+      </div>
+      <label for="color" class="block-input">What is your favorite color?
+        <input type="color" name="color" id="color">
+      </label>
+      <label for="time" class="block-input">What time do you go to bed?
+        <input type="time" name="time" id="time" step="1">
+      </label>
+      <label for="cars" class="block-input">What are your favorite brand of cars?
+      <select class="cars" name="cars" id="cars" multiple>
+        <option value="BMW">BMW</option>
+        <option value="audi">Audi</option>
+        <option value="lada">Lada</option>
+      </select>
+      </label>
+      <label for="rate" class="block-input">How do you rate our work?
+        <input type="range" name="rate" id="rate" min="1" max="10" value="1">
+      </label>
+    </fieldset>
+    <fieldset class="form-block">
+      <legend>Additional info:</legend>
+      <label for="comments" class="block-input">Comments:
+        <textarea name="comments" id="comments" cols="20" rows="2" maxlength="200"></textarea>
+      </label>
+      <label for="recomendation" class="block-input">Wouid you recommend us?
+        <select name="recomendation" id="recomendation">
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+      </label>
+    </fieldset>
+    <input type="submit" name="submit" id="submit" value="Submit" onsubmit="onSubmit()" >
+  </form>
+<script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
