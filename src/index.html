@@ -23,16 +23,16 @@
 
           <label for="number" class="form-box__item">
             How old are You?
-            <input id="number" min="1" max="12" class="num" type="number" name="number" value="12">
+            <input id="number" min="1" max="100" class="num" type="number" name="age" value="12">
           </label>
 
           <label for="date" class="form-box__item">
             Full date of birth:
-            <input id="date" type="date" name="date">
+            <input id="date" type="date" name="birth-date">
           </label>
           <label for="check" class="form-box__item">
             I accept the tem of the agreement
-            <input id="check" type="checkbox" name="check">
+            <input id="check" type="checkbox" name="accept">
           </label>
         </fieldset>
 
@@ -40,7 +40,10 @@
           <legend>Registration</legend>
           <label for="email" class="form-box__item" >
             E-mail:
-            <input id="email" type="email" autocomplete="on" placeholder="email@example.com" name="email" required>
+            <input id="email" type="email"
+                   autocomplete="on"
+                   placeholder="email@example.com"
+                   name="email" required>
           </label>
           <label for="password" class="form-box__item">
             Password:
@@ -52,8 +55,12 @@
           <legend>An interesting fact about you!</legend>
           <div class="form-box__item">
             Do you love cats?
-            <label for="yes"><input id="yes" type="radio" name="answer"> Yes</label>
-            <label for="no"><input id="no" type="radio" name="answer"> No</label>
+            <label for="yes">
+              <input id="yes" type="radio" name="answer"> Yes
+            </label>
+            <label for="no">
+              <input id="no" type="radio" name="answer"> No
+            </label>
           </div>
 
           <label for="color" class="form-box__item">
@@ -69,9 +76,9 @@
           <label for="cars" class="form-box__item">
             What are your favorite brand of cars?
             <select id="cars" name="cars" multiple>
-              <option>BMW</option>
-              <option>Audi</option>
-              <option>Lada</option>
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Lada">Lada</option>
             </select>
           </label>
 
@@ -85,7 +92,7 @@
           <legend>Additional info</legend>
           <label for="text" class="form-box__item">
            Comments:
-            <textarea id="text" name="text" rows="2" cols="23" required></textarea>
+            <textarea id="text" name="comments" rows="2" cols="23" required></textarea>
           </label>
           <label for="recommend" class="form-box__item">
             Would you recommend us?
