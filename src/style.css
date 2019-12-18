@@ -1,0 +1,12 @@
+.box-item {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.box {
+  margin-bottom: 20px;
+}
+
+.last {
+  margin-bottom: 0;
+}
