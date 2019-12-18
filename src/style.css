@@ -1,4 +1,4 @@
-.block {
+.block-form {
   margin-bottom: 20px;
   padding-bottom: 0;
 }
@@ -8,10 +8,10 @@
   display: block;
 }
 
-#age {
+.age {
   width: 65px;
 }
 
-#timetobed {
+.timetobed {
   width: 125px;
 }
