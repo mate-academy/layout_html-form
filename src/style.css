@@ -9,3 +9,7 @@ label {
 fieldset {
   margin-bottom: 20px;
 }
+
+.radio-inline {
+  display: inline-block;
+}
