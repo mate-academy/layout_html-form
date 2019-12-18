@@ -1,0 +1,14 @@
+.wrapper {
+  margin-bottom: 20px;
+  padding-top: 6px;
+  padding-bottom: 0;
+}
+
+.wrapper__inner {
+  display: block;
+  margin: 0 0 10px;
+}
+
+.wrapper.wrap {
+  padding-top: 5px;
+}
