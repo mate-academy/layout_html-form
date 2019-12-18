@@ -9,7 +9,79 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>HTML Form</h1>
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST" onsubmit="onSubmit()">
+    <fieldset class="field-set-offset">
+      <legend>Personal information</legend>
+      <label  for="surname" class="label-offset">Surname:
+        <input type="text" name="surname" id="surname" required>
+      </label>
+      <label  for="name" class="label-offset">Name:
+        <input type="text" name="name" id="name" required autocomplete="off">
+      </label>
+      <label  for="age" class="label-offset">How old are You?
+        <input type="number" name="age" id="age" value="12" min="3" max="100">
+      </label>
+      <label  for="date-of-birth" class="label-offset">Full date of birth:
+        <input type="date" name="date-of-birth" id="date-of-birth">
+      </label>
+      <label  for="accept-agreement" class="label-offset">I accept the term of the agreement
+        <input type="checkbox" name="accept-agreement" id="accept-agreement" required>
+      </label>
+    </fieldset>
+    <fieldset class="field-set-offset">
+      <legend>Registration</legend>
+      <label  for="email" class="label-offset">E-mail:
+        <input type="email" name="email" id="email" placeholder="email@example.com">
+      </label>
+      <label  for="password" class="label-offset">Password:
+        <input type="password" name="password" id="password" maxlength="20" minlength="8" required autocomplete="off">
+      </label>
+    </fieldset>
+    <fieldset class="field-set-offset">
+      <legend>An interesting fact about you!</legend>
+      <div class="box-for-chekbox">
+        Do you love cats?
+        <label for="radio-yes"></label>
+          <input type="radio" name="radio" id="radio-yes">
+          Yes
+        </label>
+        <label for="radio-no">
+          <input type="radio" name="radio" id="radio-no">
+          No
+        </label>
+      </div>
+      <label for="color" class="label-offset">What is your favorite color?
+        <input type="color" name="color" id="color">
+      </label>
+      <label for="time-to-bed" class="label-offset">What time do you go to bed?
+        <input type="time" name="time-to-bed" id="time-to-bed" step="2">
+      </label>
+      <label for="favorite-car" class="label-offset">What are your favorite brand of cars?
+        <select multiple size="4" name="favorite-car" id="favorite-car">
+          <option value="BMW">BMW</option>
+          <option value="Audi">Audi</option>
+          <option value="Lada">Lada</option>
+        </select>
+      </label>
+      <label for="rate" class="label-offset">How do you rate our work?
+        <input type="range" name="rate" value="0" id="rate">
+      </label>
+    </fieldset>
+    <fieldset class="field-set-offset">
+      <legend>Additional info:</legend>
+      <label for="comments" class="label-offset">Comments:
+        <textarea name="comments" id="comments" cols="20" rows="2"></textarea>
+      </label>
+      <label for="recommend" class="label-offset">Would you recommend us?
+        <select name="recommend" id="recommend" >
+          <option selected value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+      </label>
+    </fieldset>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
   <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
