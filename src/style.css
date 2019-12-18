@@ -1,0 +1,15 @@
+fieldset {
+  margin-bottom: 20px;
+}
+
+fieldset > div:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+input.age {
+  width: 65px;
+}
+
+input.bedtime {
+  width: 125px;
+}
