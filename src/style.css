@@ -1,0 +1,16 @@
+.wrapper {
+  margin-bottom: 20px;
+}
+
+.label-wrap {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.label-wrap:last-child {
+  margin-bottom: 0;
+}
