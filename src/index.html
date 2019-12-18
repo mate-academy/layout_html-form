@@ -9,7 +9,89 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>HTML Form</h1>
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
+    <fieldset class="wrapper">
+      <legend>Personal information</legend>
+      <label for="surname" class="block-of-inputs">
+        <span>Surname:</span>
+        <input type="text" id="surname" name="surname" autocomplete="false" required>
+      </label>
+      <label for="name" class="block-of-inputs">
+        <span>Name:</span>
+        <input type="text" id="name" name="name" autocomplete="false" required>
+      </label>
+      <label for="age" class="block-of-inputs">
+        <span>How old are You?</span>
+        <input type="number" id="age" value="12" name="age" min="25" max="100">
+      </label>
+      <label for="date" class="block-of-inputs">
+        <span>Full date of birth:</span>
+        <input type="date" id="date" name="date">
+      </label>
+      <label for="checkbox" class="block-of-inputs">
+        <span>I accept the term of the agreement</span>
+        <input type="checkbox" id="checkbox" name="checkbox">
+      </label>
+    </fieldset>
+    <fieldset class="wrapper">
+      <legend>Registration</legend>
+      <label for="email" class="block-of-inputs">
+        <span>E-mail:</span>
+        <input type="email" placeholder="email@example.com" id="email" name="email" autocomplete="false" required>
+      </label>
+      <label for="pass" class="block-of-inputs">
+        <span>Password:</span>
+        <input type="password" minlength="6" maxlength="12" id="pass" name="pass" autocomplete="false" required>
+      </label>
+    </fieldset>
+    <fieldset class="wrapper">
+      <legend>An interesting fact about you!</legend>
+      <div class="block-of-inputs">
+        <span>Do you love cats?</span>
+          <label for="catY">
+            <input type="radio" name="radio-cat" id="catY"> Yes
+          </label>
+          <label for="catN">
+            <input type="radio" name="radio-cat" id="catN"> No
+          </label>
+      </div>
+      <label for="color" class="block-of-inputs">
+        <span>What is your favorite color?</span>
+        <input type="color" id="color" name="color">
+      </label>
+      <label for="time" class="block-of-inputs">
+        <span>What time do you go to bed?</span>
+        <input type="time" id="time" name="time">
+      </label>
+      <label class="block-of-inputs">
+        <span>What are your favorite brand of cars?</span>
+        <select name="cars" multiple>
+          <option value="bmw">BMW</option>
+          <option value="audi">Audi</option>
+          <option value="lada">Lada</option>
+        </select>
+      </label>
+      <label class="block-of-inputs">
+        <span>How do you rate our work?</span>
+        <input type="range" min="0" max="5" value="0" name="rate-work">
+      </label>
+    </fieldset>
+    <fieldset class="wrapper">
+      <legend>Additional info:</legend>
+      <label for="comments" class="block-of-inputs">
+        <span>Comments:</span>
+        <textarea cols="20" rows="2" id="comments" name="comments" autocomplete="false"></textarea>
+      </label>
+      <label class="block-of-inputs">
+        <span>Would you recommend us?</span>
+        <select name="choices">
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+      </label>
+    </fieldset>
+    <input type="submit" value="Submit" name="submit">
+  </form>
   <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
