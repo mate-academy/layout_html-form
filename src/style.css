@@ -7,10 +7,10 @@
   margin-bottom: 10px;
 }
 
-form .wrapper:last-child {
+.wrapper:last-child {
   margin-bottom: 0;
 }
 
-.wrapper .label-wrap:last-child {
+.label-wrap:last-child {
   margin-bottom: 0;
 }
