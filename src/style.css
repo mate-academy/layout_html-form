@@ -1,0 +1,17 @@
+.block-form {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+.block-of-inputs {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.input-age {
+  padding-right: 7px;
+}
+
+.input-sleep-time {
+  width: 124px;
+}
