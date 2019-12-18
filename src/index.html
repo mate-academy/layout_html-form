@@ -12,41 +12,41 @@
   <form onsubmit="onSubmit()">
     <fieldset class="wrapper">
       <legend>Personal information</legend>
-      <label for="surname" class="block-input">
+      <label for="surname" class="label-block-of-inputs">
         <span>Surname:</span>
         <input type="text" id="surname" name="surname" autocomplete="false" required>
       </label>
-      <label for="name" class="block-input">
+      <label for="name" class="label-block-of-inputs">
         <span>Name:</span>
         <input type="text" id="name" name="name" autocomplete="false" required>
       </label>
-      <label for="age" class="block-input">
+      <label for="age" class="label-block-of-inputs">
         <span>How old are You?</span>
         <input type="number" id="age" value="12" name="age" min="25" max="100">
       </label>
-      <label for="date" class="block-input">
+      <label for="date" class="label-block-of-inputs">
         <span>Full date of birth:</span>
         <input type="date" id="date" name="date">
       </label>
-      <label for="checkbox" class="block-input">
+      <label for="checkbox" class="label-block-of-inputs">
         <span>I accept the term of the agreement</span>
         <input type="checkbox" id="checkbox" name="checkbox">
       </label>
     </fieldset>
     <fieldset class="wrapper">
       <legend>Registration</legend>
-      <label for="email" class="block-input">
+      <label for="email" class="label-block-of-inputs">
         <span>E-mail:</span>
         <input type="email" placeholder="email@example.com" id="email" name="email" autocomplete="false" required>
       </label>
-      <label for="pass" class="block-input">
+      <label for="pass" class="label-block-of-inputs">
         <span>Password:</span>
         <input type="password" minlength="6" maxlength="12" id="pass" name="pass" autocomplete="false" required>
       </label>
     </fieldset>
     <fieldset class="wrapper">
       <legend>An interesting fact about you!</legend>
-      <div class="block-input">
+      <div class="label-block-of-inputs">
         <span>Do you love cats?</span>
           <label for="catY">
             <input type="radio" name="radio-cat" id="catY"> Yes
@@ -55,36 +55,36 @@
             <input type="radio" name="radio-cat" id="catN"> No
           </label>
       </div>
-      <label for="color" class="block-input">
+      <label for="color" class="label-block-of-inputs">
         <span>What is your favorite color?</span>
         <input type="color" id="color" name="color">
       </label>
-      <label for="time" class="block-input">
+      <label for="time" class="label-block-of-inputs">
         <span>What time do you go to bed?</span>
         <input type="time" id="time" name="time">
       </label>
-      <label class="block-input">
+      <label class="label-block-of-inputs">
         <span>What are your favorite brand of cars?</span>
-        <select multiple>
+        <select name="cars" multiple>
           <option value="bmw">BMW</option>
           <option value="audi">Audi</option>
           <option value="lada">Lada</option>
         </select>
       </label>
-      <label class="block-input">
+      <label class="label-block-of-inputs">
         <span>How do you rate our work?</span>
         <input type="range" min="0" max="5" value="0" name="rate-work">
       </label>
     </fieldset>
     <fieldset class="wrapper">
       <legend>Additional info:</legend>
-      <label for="comments" class="block-input">
+      <label for="comments" class="label-block-of-inputs">
         <span>Comments:</span>
         <textarea cols="20" rows="2" id="comments" name="comments" autocomplete="false"></textarea>
       </label>
-      <label class="block-input">
+      <label class="label-block-of-inputs">
         <span>Would you recommend us?</span>
-        <select>
+        <select name="choices">
           <option value="yes">yes</option>
           <option value="no">no</option>
         </select>
