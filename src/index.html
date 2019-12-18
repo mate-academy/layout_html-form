@@ -9,7 +9,85 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>HTML Form</h1>
   <script type="text/javascript" src="./main.js"></script>
-</body>
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
+    <fieldset>
+      <legend>Personal information</legend>
+        <label class="labels">
+          Surname:
+          <input type="text" name="surname" autocomplete="off">
+        </label>
+        <label class="labels">
+          Name:
+          <input type="text" name="name" autocomplete="off">
+        </label>
+        <label class="labels">
+          How old are You?
+          <input type="number" name="age" value="12" min="10" max="100" autocomplete="off">
+        </label>
+        <label class="labels">
+          Full date of birth:
+          <input type="date" name="birthdate">
+        </label>
+        <label class="labels">
+          I accept the term of the agreement:
+          <input type="checkbox" name="agreement">
+        </label>
+    </fieldset>
+    <fieldset>
+      <legend>Registration</legend>
+        <label class="labels">
+          E-mail:
+          <input type="email" name="email" placeholder="email@example.com" required multiple>
+        </label>
+        <label class="labels">
+          Password:
+          <input type="password" name="Password" minlength="8" maxlength="16" required>
+        </label>
+    </fieldset>
+    <fieldset>
+      <legend>An interesting fact about you!</legend>
+      <label class="labels">
+        Do you love cats?
+        <input type="radio" name="cats">Yes
+        <label><input type="radio" name="cats">No</label>
+      </label>
+        <label class="labels">
+          What is your favorite color?
+          <input type="color" name="favcolor" value="#00ff00">
+        </label>
+        <label class="labels">
+          What time do you go to bed?
+          <input type="time" name="time">
+        </label>
+        <label class="labels">
+          What are your favorite brand of cars?
+          <select name="cars" size="4">
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </label>
+        <label class="labels">
+          How do you rate our work?
+          <input type="range" name="ratework" min="0" max="20">
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Additional info</legend>
+          <label class="labels">
+            Comments:
+            <textarea name="comments" cols="15" rows="2"></textarea>
+          </label>
+          <label class="labels">
+            Would you recommend us?
+            <select name="recommendation">
+                <option value="yes">yes</option>
+                <option value="no">no</option>
+              </select>
+          </label>
+      </fieldset>
+      <button type="submit" onsubmit="onSubmit()">Submit</button>
+    </form>
+  </body>
 </html>
