@@ -24,7 +24,7 @@
         </label>
         <label class="block-item">
           How old are You?
-          <input type="number" class="age-field" name="age" value="12" min="12" max="90">
+          <input type="number" class="age-field" name="age" value="12" min="12" max="100">
         </label>
         <label class="block-item">
           Full date of birth:
@@ -50,11 +50,16 @@
       <!-- Fact -->
       <fieldset class="block">
         <legend>An interesting fact about you!</legend>
-        <label class="block-item">
-          Do you love cats?
-          <input type="radio" name="cats"> Yes
-          <input type="radio" name="cats"> No
+        <!-- <label class="block-item"> -->
+          <div class="block-item">Do you love cats?
+          <label for="yes">
+          <input type="radio" name="cats" id="yes"> Yes
+          </label>
+          <label for="no">
+          <input type="radio" name="cats" id="no"> No
         </label>
+      </div>
+        <!-- </label> -->
         <label class="block-item">
           What is your favorite color?
           <input type="color" name="color">
