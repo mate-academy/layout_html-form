@@ -1,0 +1,12 @@
+.form-box {
+  margin-bottom: 20px;
+}
+
+.form-box__item {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-box__item:last-child {
+  margin-bottom: 0;
+}

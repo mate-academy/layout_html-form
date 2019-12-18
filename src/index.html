@@ -1,15 +1,110 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Form</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
-</body>
-</html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>HTML Form</title>
+      <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+      <form class="form">
+        <fieldset class="form-box">
+          <legend>Personal information</legend>
+          <label for="surname" class="form-box__item">
+            Surname:
+            <input id="surname" type="text" autocomplete="on" name="surname" required>
+          </label>
+
+          <label for="name" class="form-box__item">
+            Name: <input id="name" type="text" autocomplete="on" name="name" required>
+          </label>
+
+          <label for="number" class="form-box__item">
+            How old are You?
+            <input id="number" min="1" max="100" type="number" name="age" value="12" autocomplete="on">
+          </label>
+
+          <label for="date" class="form-box__item">
+            Full date of birth:
+            <input id="date" type="date" name="birth-date">
+          </label>
+          <label for="check" class="form-box__item">
+            I accept the tem of the agreement
+            <input id="check" type="checkbox" name="accept">
+          </label>
+        </fieldset>
+
+        <fieldset class="form-box">
+          <legend>Registration</legend>
+          <label for="email" class="form-box__item">
+            E-mail:
+            <input id="email" type="email"
+                   autocomplete="on"
+                   placeholder="email@example.com"
+                   name="email" required>
+          </label>
+          <label for="password" class="form-box__item">
+            Password:
+            <input id="password" type="password" autocomplete="on" name="password" required>
+          </label>
+        </fieldset>
+
+        <fieldset class="form-box">
+          <legend>An interesting fact about you!</legend>
+          <div class="form-box__item">
+            Do you love cats?
+            <label for="yes">
+              <input id="yes" type="radio" name="love-cat" value="answer-Yes"> Yes
+            </label>
+            <label for="no">
+              <input id="no" type="radio" name="love-cat" value="answer-No"> No
+            </label>
+          </div>
+
+          <label for="color" class="form-box__item">
+            What is your favorite color?
+            <input id="color" type="color" name="color">
+          </label>
+
+          <label for="time" class="form-box__item">
+            What time do you go to bed?
+            <input id="time" type="time" name="time">
+          </label>
+
+          <label for="cars" class="form-box__item">
+            What are your favorite brand of cars?
+            <select id="cars" name="cars" multiple>
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Lada">Lada</option>
+            </select>
+          </label>
+
+          <label for="range" class="form-box__item">
+            How do you rate our work?
+            <input id="range" name="rate" type="range" min="1" max="10" value="0">
+          </label>
+        </fieldset>
+
+        <fieldset class="form-box">
+          <legend>Additional info</legend>
+          <label for="text" class="form-box__item">
+           Comments:
+            <textarea id="text" name="comments" rows="2" cols="23" autocomplete="on" required></textarea>
+          </label>
+          <label for="recommend" class="form-box__item">
+            Would you recommend us?
+            <select id="recommend" name="recommend">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <input type="submit" value="Submit" class="form__button" name="sent__form" onsubmit="onSubmit()">
+      </form>
+      <script type="text/javascript" src="./main.js"></script>
+    </body>
+  </html>
