@@ -1,9 +1,6 @@
-#cars option {
-  margin-top: 0;
-}
 
-p {
-  margin: 0;
+label {
+  display: block;
 }
 
 fieldset {
@@ -11,22 +8,33 @@ fieldset {
 }
 
 fieldset * {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
+p,
+legend + label,
 p,
 legend + label * {
   margin-top: 0;
 }
 
+p {
+  margin-bottom: 0;
+  margin-top: 2px;
+}
+
 p input[type="radio"] {
-  margin-top: 3px;
+  margin-top: 0;
 }
 
 input[type="checkbox"] {
-  margin-top: 13px;
+  margin-top: 8px;
 }
 
 input[type="range"] {
-  margin-top: 12px;
+  margin-top: 7px;
+}
+
+.without-margin-top {
+  margin-top: 0;
 }
