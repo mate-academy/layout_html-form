@@ -1,8 +1,4 @@
-.select-cars {
-  overflow: hidden;
-}
-
-.wrap {
+.wrapper {
   margin-bottom: 20px;
   padding-bottom: 0;
 }

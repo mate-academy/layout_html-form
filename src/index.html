@@ -10,7 +10,7 @@
 </head>
 <body>
   <form onsubmit="onSubmit()">
-    <fieldset class="wrap">
+    <fieldset class="wrapper">
       <legend>Personal information</legend>
       <label for="surname" class="block-input">
         <span>Surname:</span>
@@ -30,10 +30,10 @@
       </label>
       <label for="checkbox" class="block-input">
         <span>I accept the term of the agreement</span>
-        <input type="checkbox" id="checkbox">
+        <input type="checkbox" id="checkbox" name="checkbox">
       </label>
     </fieldset>
-    <fieldset class="wrap">
+    <fieldset class="wrapper">
       <legend>Registration</legend>
       <label for="email" class="block-input">
         <span>E-mail:</span>
@@ -44,15 +44,15 @@
         <input type="password" minlength="6" maxlength="12" id="pass" name="pass" autocomplete="false" required>
       </label>
     </fieldset>
-    <fieldset class="wrap">
+    <fieldset class="wrapper">
       <legend>An interesting fact about you!</legend>
       <div class="block-input">
         <span>Do you love cats?</span>
           <label for="catY">
-            <input type="radio" name="cat" id="catY"> Yes
+            <input type="radio" name="radio-cat" id="catY"> Yes
           </label>
           <label for="catN">
-            <input type="radio" name="cat" id="catN"> No
+            <input type="radio" name="radio-cat" id="catN"> No
           </label>
       </div>
       <label for="color" class="block-input">
@@ -65,32 +65,32 @@
       </label>
       <label class="block-input">
         <span>What are your favorite brand of cars?</span>
-        <select class="select-cars" multiple>
+        <select multiple>
           <option value="bmw">BMW</option>
           <option value="audi">Audi</option>
           <option value="lada">Lada</option>
         </select>
       </label>
       <label class="block-input">
-        How do you rate our work?
-        <input type="range" min="0" max="5" value="0">
+        <span>How do you rate our work?</span>
+        <input type="range" min="0" max="5" value="0" name="rate-work">
       </label>
     </fieldset>
-    <fieldset class="wrap">
+    <fieldset class="wrapper">
       <legend>Additional info:</legend>
       <label for="comments" class="block-input">
         <span>Comments:</span>
         <textarea cols="20" rows="2" id="comments" name="comments" autocomplete="false"></textarea>
       </label>
       <label class="block-input">
-        Would you recommend us?
+        <span>Would you recommend us?</span>
         <select>
           <option value="yes">yes</option>
           <option value="no">no</option>
         </select>
       </label>
     </fieldset>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" name="submit">
   </form>
   <script type="text/javascript" src="./main.js"></script>
 </body>
