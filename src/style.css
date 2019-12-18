@@ -1,0 +1,11 @@
+label:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
