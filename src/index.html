@@ -14,11 +14,11 @@
           <legend>Personal information</legend>
           <label for="surname" class="form-box__item">
             Surname:
-            <input id="surname" type="text" autocomplete="on" name="surname">
+            <input id="surname" type="text" autocomplete="on" name="surname" required>
           </label>
 
           <label for="name" class="form-box__item">
-            Name: <input id="name" type="text" autocomplete="on" name="name">
+            Name: <input id="name" type="text" autocomplete="on" name="name" required>
           </label>
 
           <label for="number" class="form-box__item">
@@ -38,13 +38,13 @@
 
         <fieldset class="form-box">
           <legend>Registration</legend>
-          <label for="email" class="form-box__item">
+          <label for="email" class="form-box__item" >
             E-mail:
-            <input id="email" type="email" autocomplete="on" placeholder="email@example.com" name="email">
+            <input id="email" type="email" autocomplete="on" placeholder="email@example.com" name="email" required>
           </label>
           <label for="password" class="form-box__item">
             Password:
-            <input id="password" type="password" autocomplete="on" name="password">
+            <input id="password" type="password" autocomplete="on" name="password" required>
           </label>
         </fieldset>
 
@@ -52,8 +52,8 @@
           <legend>An interesting fact about you!</legend>
           <div class="form-box__item">
             Do you love cats?
-            <label for="yes"><input id="yes" type="checkbox" name="check-yes"> Yes</label>
-            <label for="no"><input id="no" type="checkbox" name="check-no"> No</label>
+            <label for="yes"><input id="yes" type="radio" name="answer"> Yes</label>
+            <label for="no"><input id="no" type="radio" name="answer"> No</label>
           </div>
 
           <label for="color" class="form-box__item">
