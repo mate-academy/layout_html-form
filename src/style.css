@@ -1,0 +1,17 @@
+.block-form {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+.block-input {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.age {
+  width: 65px;
+}
+
+.time-to-bed {
+  width: 125px;
+}
