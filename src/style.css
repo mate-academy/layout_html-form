@@ -1,12 +1,12 @@
-.form-sections {
+.block {
   margin-bottom: 20px;
 }
 
-.inputs {
+.block-item {
   display: block;
   margin-bottom: 10px;
 }
 
-.age-input {
+.age-field {
   width: 65px;
 }
