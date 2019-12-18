@@ -1,0 +1,16 @@
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+.age {
+  width: 65px;
+}
