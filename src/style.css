@@ -1,0 +1,7 @@
+.form-element-group {
+  margin-bottom: 20px;
+}
+
+.input-wrapper:not(:last-child) {
+  margin-bottom: 10px;
+}
