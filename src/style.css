@@ -1,12 +1,12 @@
-label:not(:last-of-type) {
+.label-margin-display:not(:last-of-type) {
   margin-bottom: 10px;
 }
 
-label {
+.label-margin-display {
   display: block;
 }
 
-fieldset {
+.fieldset-margin {
   margin-bottom: 20px;
 }
 

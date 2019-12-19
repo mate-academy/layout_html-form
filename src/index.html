@@ -10,51 +10,51 @@
 </head>
 <body>
   <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
-    <fieldset>
+    <fieldset class="fieldset-margin">
       <legend>Personal information</legend>
-      <label>Surname:
+      <label class="label-margin-display">Surname:
         <input type="text" name="surname" minlength="2" maxlength="22" required autocomplete="off">
       </label>
-      <label>Name:
+      <label class="label-margin-display">Name:
         <input type="text" name="name" required autocomplete="off">
       </label>
-      <label>How old are You?
+      <label class="label-margin-display">How old are You?
         <input type="number" name="old" value="12" min="5" max="120">
       </label>
-      <label>Full date of birth:
+      <label class="label-margin-display">Full date of birth:
         <input type="date" name="date">
       </label>
-      <label>I accept the term of the agreement
+      <label class="label-margin-display">I accept the term of the agreement
         <input type="checkbox" name="accept">
       </label>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="fieldset-margin">
       <legend>Registration</legend>
-      <label>E-mail:
+      <label class="label-margin-display">E-mail:
         <input type="email" name="email" placeholder="email@example.com">
       </label>
-      <label>Password:
+      <label class="label-margin-display">Password:
         <input type="password" name="password">
       </label>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="fieldset-margin">
       <legend>An interesting fact about you!</legend>
-        <label class="radio-inline">
+        <label class="label-margin-display radio-inline">
           Do you love cats?
           <input type="radio" name="cat" value="yes" id="love">Yes
         </label>
-        <label class="radio-inline">
+        <label class="label-margin-display radio-inline">
           <input type="radio" name="cat" value="no">No
         </label>
-      <label>What is your favorite color?
+      <label class="label-margin-display">What is your favorite color?
         <input type="color" name="color">
       </label>
-      <label>What time do you go to bed?
+      <label class="label-margin-display">What time do you go to bed?
         <input type="time" name="time">
       </label>
-      <label>
+      <label class="label-margin-display">
         What are your favorite brand o cars?
         <select name="cars" size="4" multiple>
           <option value="bmw">BMW</option>
@@ -62,17 +62,17 @@
           <option value="lada">Lada</option>
         </select>
       </label>
-      <label>How do you rate our work?
+      <label class="label-margin-display">How do you rate our work?
         <input type="range" name="rate" value="0" min="0" max="100">
       </label>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="fieldset-margin">
       <legend>Additional info:</legend>
-      <label>Coments:
+      <label class="label-margin-display">Coments:
         <textarea name="coments" cols="30" rows="2"></textarea>
       </label>
-      <label>Would you recommend us?
+      <label class="label-margin-display">Would you recommend us?
         <select name="recommend">
           <option value="yes">yes</option>
           <option value="no">no</option>
