@@ -1,0 +1,15 @@
+.form-label {
+  display: block;
+}
+
+.fieldset-offset {
+  margin-bottom: 20px;
+}
+
+.little-offset {
+  margin-top: 10px;
+}
+
+.first-elem {
+  margin: 0;
+}
