@@ -1,0 +1,15 @@
+.label-margin-display:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.label-margin-display {
+  display: block;
+}
+
+.fieldset-margin {
+  margin-bottom: 20px;
+}
+
+.radio-inline {
+  display: inline-block;
+}
