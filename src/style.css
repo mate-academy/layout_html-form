@@ -1,0 +1,19 @@
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+}
+
+.label:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+input[type="number"] {
+  max-width: 65px;
+}
