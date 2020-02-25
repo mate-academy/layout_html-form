@@ -9,7 +9,88 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>HTML Form</h1>
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+  method="POST">
+    <fieldset class="persona form">
+      <legend>Personal information</legend>
+    <label class="forms">
+      Surname: <input type="text" name="surname" minlegth="1" maxlength="15" autocomplete="off" ><br>
+    </label>
+    <label class="forms">
+      Name:
+      <input type="text" name="name" autocomplete="off"><br>
+    </label>
+    <label class="forms">
+      How old are you?
+      <input type="number" name="old" size="5" value="12" min="1" max="200"><br>
+    </label>
+    <label class="forms">
+      Full date of birth
+      <input type="date" name="date"><br>
+    </label>
+  <label class="forms"> I accept the term of the agreement
+    <input type="checkbox" name="accept"><br>
+  </label>
+    </fieldset>
+  <fieldset class="regist form">
+    <legend>Registration</legend>
+    <label class="forms" >
+      E-mail:
+      <input type="email" name="mail" value="email@example.com"><br>
+    </label>
+    <label >
+      Password:
+      <input type="password" name="pass"><br>
+    </label>
+  </fieldset>
+    <fieldset class="fact form">
+      <legend>An interesting fact about you!</legend>
+      <label class="forms">
+        Do you love cats?
+  <input type="radio" name="cat" id="yes">
+  <label for="yes">Yes</label>
+  <input type="radio" name="cat" id="no">
+  <label for="no">No</label>
+  </label>
+            <label class="forms">
+        What is your favorite color?
+        <input type="color" name="color"><br>
+      </label>
+      <label class="forms">
+        What time do you go to bed?
+        <input type="time" name="time">
+      </label>
+      <label class="forms" >
+        What are you favorite brand of cars?
+        <select name="cars" id="car" multiple>
+          <option value="Tesla">Tesla</option>
+          <option value ="Samokat">Samokat</option>
+          <option value="VAZ">VAZ</option>
+          <option value=""></option>
+        </select>
+      </label> <br>
+      <label class="forms last">
+      How do you rate our work?
+      <input type="range" name="rate"  value="1"><br>
+    </label>
+    </fieldset>
+      <fieldset class="info form">
+        <legend>Additional info:</legend>
+  <label class="forms" >
+         Comments:
+          <textarea name="comment"></textarea>
+  </label>
+  <label class="forms last">
+        Would you recommend us?
+        <select id="select">
+          <option value="">please choose</option>
+          <option selected value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+      </label>
+      </fieldset>
+      <button type="submit" onsubmit="onSubmit()">Submit</button>
+    </form>
   <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
