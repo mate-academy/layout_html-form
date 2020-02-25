@@ -1,0 +1,18 @@
+.information,
+.registration,
+.facts {
+  margin-bottom: 20px;
+}
+
+.input-name,
+.input-age,
+.input-bith,
+.input-terms,
+.input-password,
+.input-color,
+.input-time,
+.input-cars,
+.input-range,
+.input-recommend {
+  margin-top: 10px;
+}
