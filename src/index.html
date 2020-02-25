@@ -1,15 +1,102 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Form</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-  <h1>HTML Form</h1>
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
+    <fieldset class="sections">
+      <legend>Personal information</legend>
+      <label class="form_elements">
+        Surname:
+        <input type="text" name="surname" required>
+      </label>
+      <label class="form_elements">
+        Name:
+        <input type="text" name="name" required>
+      </label>
+      <label class="form_elements">
+        How old are you?
+        <input type="number" name="age" value="12" min="12" max="100" required>
+      </label>
+      <label class="form_elements">
+        Full date of birth:
+        <input type="date" name="birth" id="" required>
+      </label>
+      <label class="form_elements">
+        I accept the term of the agreement
+        <input type="checkbox" name="agreement" required>
+      </label>
+    </fieldset>
+    <fieldset class="sections">
+      <legend>Registration</legend>
+      <label class="form_elements" required>
+        E-mail:
+        <input type="email" name="email" placeholder="email@example.com">
+      </label>
+      <label class="form_elements">
+        Password:
+        <input type="password" name="password" required>
+      </label>
+    </fieldset>
+    <fieldset class="sections">
+      <legend>An interesting fact about you!</legend>
+      <div class="form_elements">
+        Do you love cats?
+        <label for="love-cats-yes">
+          <input type="radio" name="love-cats" id="love-cats-yes">
+          Yes
+        </label>
+        <label for="love-cats-no">
+          <input type="radio" name="love-cats" id="love-cats-no">
+          No
+        </label>
+      </div>
+      <label class="form_elements">
+        What is your favorite color?
+        <input type="color" name="color">
+      </label>
+      <label class="form_elements">
+        What time do you go to bad?
+        <input type="time" name="time to sleep" step="1">
+      </label>
+      <label class="form_elements">
+        What are your favourite brand of cars?
+        <select name="favourite car" multiple>
+          <option value="BMW">BME</option>
+          <option value="Audi">Audi</option>
+          <option value="Lada">Lada</option>
+        </select>
+      </label>
+      <label class="form_elements">
+        How do you rate our work?
+        <input type="range" name="rate work" min="0" max="10" value="0">
+      </label>
+    </fieldset>
+    <fieldset class="sections">
+      <legend>Additional info:</legend>
+      <label class="form_elements">
+        Comments:
+        <textarea name="comments" cols="20" rows="2" minlength="10" maxlength="200"></textarea>
+      </label>
+      <label class="form_elements">
+        Would you recommend us?
+        <select name="recommend">
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+      </label>
+    </fieldset>
+    <button type="submit" name="submit" onsubmit="onSubmit()">Submit</button>
+  </form>
   <script type="text/javascript" src="./main.js"></script>
 </body>
+
 </html>
