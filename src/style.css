@@ -1,0 +1,30 @@
+
+.user-information,
+.user-registration,
+.user-facts,
+.user-another {
+  margin-bottom: 20px;
+}
+
+.user-surname,
+.user-name,
+.user-age,
+.user-birth,
+.user-agreement,
+.user-email,
+.user-password,
+.prefer-animals,
+.prefer-color,
+.user-time,
+.prefer-car,
+.user-rate,
+.user-comments,
+.user-recommend {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.user-last-item {
+  margin-bottom: 0;
+}
