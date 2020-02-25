@@ -1,0 +1,16 @@
+.block {
+  margin-bottom: 20px;
+}
+
+.block .label-field:last-child {
+  margin-bottom: 0;
+}
+
+.color-field {
+  margin-top: 10px;
+}
+
+.label-field {
+  margin-bottom: 10px;
+  display: block;
+}
