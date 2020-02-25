@@ -1,0 +1,16 @@
+.pers-info,
+.registration,
+.user-info,
+.additional-info {
+  margin-bottom: 20px;
+}
+
+.input-data {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.input-end {
+  margin-bottom: 0;
+  display: block;
+}
