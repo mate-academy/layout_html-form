@@ -1,0 +1,12 @@
+.block-form {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.block-form-space {
+  margin-bottom: 20px;
+}
+
+.block-form-end {
+  margin-bottom: 0;
+}
