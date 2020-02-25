@@ -9,7 +9,72 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
+<form class="form" action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
+  <fieldset class="box">
+    <legend>Personal information</legend>
+    <label class="field field-mgn-btm" for="surname">Surname:
+      <input type="text" id="surname" minlength="1" maxlength="40" name="surname" autocomplete="off"></label>
+    <label class="field field-mgn-btm" for="name">Name:
+      <input type="text" id="name" minlength="1" maxlength="40" name="name" autocomplete="off"></label>
+    <label class="field field-mgn-btm" for="number">How old are You?
+      <input type="number" id="number" name="number" value="12" min="1" max="100"></label>
+    <label class="field field-mgn-btm" for="birthday">Full date of birth:
+      <input type="date" id="birthday" name="birthday"></label>
+    <label for="agree">I accept the term of the agreement
+      <input type="checkbox" id="agree" name="agree"></label>
+  </fieldset>
+  <fieldset class="box">
+    <legend>Registration</legend>
+    <label class="field field-mgn-btm" for="email">E-mail:
+      <input type="email" name="email" id="email" placeholder="email@example.com" required></label>
+    <label for="password">Password:
+      <input type="password" name="password" id="password" required>
+    </label>
+  </fieldset>
+  <fieldset class="box">
+    <legend>An interesting fact about you!</legend>
+    <label for="yes" class="field field-mgn-btm">
+      <span>Do you love cats?</span>
+      <label>
+        <input type="radio" name="cats" id="yes" value="Yes"> Yes
+      </label>
+      <label>
+        <input type="radio" name="no_cats" id="no" value="No"> No
+      </label>
+    </label>
+    <label class="field field-mgn-btm">What is your favorite color?
+      <input type="color" name="color">
+    </label>
+    <label class="field field-mgn-btm">What time do you go to bed?
+      <input type="time" name="bad_time" step="10">
+    </label>
+
+    <label for="cars"> What are your favorite brand of cars? </label>
+    <select id="cars" multiple>
+      <option value="BMW">BMW</option>
+      <option value="Audi">Audi</option>
+      <option value="Lada">Lada</option>
+      <option value="" disabled></option>
+    </select>
+
+    <label class="field-mgn-top field">How do you rate our work?
+      <input type="range" name="rating" min="1" max="10" step="1" value="1">
+    </label>
+  </fieldset>
+  <fieldset class="box">
+    <legend>Additional info:</legend>
+    <label for="comment" class="field field-mgn-btm">Comments:
+      <textarea id="comment">
+</textarea></label>
+
+    <label>Would you recommend us?
+      <select name="Recommendations">
+        <option value="yes" selected>yes</option>
+        <option value="no">no</option>
+      </select>
+    </label></fieldset>
+  <button type="submit">Submit</button>
+</form>
+<script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
