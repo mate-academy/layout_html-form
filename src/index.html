@@ -9,7 +9,72 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
+    <fieldset class="input-info">
+      <legend>Personal information</legend>
+      <label class="row-elements" for="surname">Surname:
+        <input type="text" name="surname" id="surname" required autocomplete="off">
+      </label>
+      <label class="row-elements" for="name"> Name:
+        <input type="text" name="name" id="name" required autocomplete="off">
+      </label>
+      <label class="row-elements" for="age"> How old are You?
+        <input type="number" name="age" id="age" value="12" min="12" max="124">
+      </label>
+      <label class="row-elements" for="birth-date"> Full date of birth:
+        <input type="date" name="birth-date" id="birth-date">
+      </label>
+      <label>I accept the term of the agreement
+        <input type="checkbox">
+      </label>
+    </fieldset>
+    <fieldset class="input-info">
+      <legend>Registration</legend>
+      <label class="row-elements" for="e-mail"> E-mail:
+        <input type="email" placeholder="email@example.com" name="e-mail" id="e-mail" required>
+      </label>
+      <label for="password"> Password:
+        <input type="password" name="password" id="password" minlength="8" maxlength="16">
+      </label>
+    </fieldset>
+    <fieldset class="input-info">
+      <legend>An interesting fact about you!</legend>
+      <label class="row-elements" > Do you love cats?
+        <input type="radio" name="cats" id="yes" value="yes">
+        <label for="yes"> Yes</label>
+        <input type="radio" name="cats" id="no" value="no">
+        <label for="no">No</label>
+      </label>
+      <label class="row-elements" for="color"> What is your favorite color?
+        <input type="color" name="color" id="color">
+      </label>
+      <label class="row-elements" for="bedtime"> What time do you go to bed?
+        <input type="time" step="1" name="bedtime" id="bedtime">
+      </label>
+      <label class="row-elements"> What are your favorite brand of cars?
+        <select name="cars" id="cars" multiple>
+          <option value="BMV">BMW</option>
+          <option value="Audi">Audi</option>
+          <option value="Lada">Lada</option>
+        </select>
+      </label>
+      <label for="rate"> How do you rate our work?
+        <input type="range" name="rate" id="rate">
+      </label>
+    </fieldset>
+    <fieldset class="input-info">
+      <legend>Additional info:</legend>
+      <label class="row-elements" for="comments"> Comments:
+        <textarea name="comments" id="comments" rows="2" cols="20"></textarea>
+      </label>
+      <label for="recomend"> Would you recommend us?
+        <select name="recommend" id="recomend">
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+      </label>
+    </fieldset>
+    <button type="submit" onsubmit="onSubmit()" name="submit" id="submit">Submit</button>
+  </form>
 </body>
 </html>
