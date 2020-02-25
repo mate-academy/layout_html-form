@@ -1,0 +1,12 @@
+.form__inner-block {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form__inner--end {
+  margin-bottom: 0;
+}
+
+.form__block {
+  margin-bottom: 20px;
+}
