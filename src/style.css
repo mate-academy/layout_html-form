@@ -1,0 +1,12 @@
+.box {
+  margin-bottom: 20px;
+}
+
+.box .form-input:last-of-type {
+  margin-bottom: 0;
+}
+
+.form-input {
+  margin-bottom: 10px;
+  display: block;
+}
