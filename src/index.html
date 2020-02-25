@@ -9,7 +9,88 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>HTML Form</h1>
+  <form class="form" action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
+    <fieldset class="form-filset">
+      <legend>Personal information</legend>
+      <div class="form-item">
+        <label for="surname">Surname:</label>
+        <input name="surname" id="surname"  type="text">
+      </div>
+      <div class="form-item">
+        <label for="name">Name:</label>
+        <input name="name" id="name"  type="text">
+      </div>
+      <div class="form-item">
+        <label for="age">How old are You?</label>
+        <input name="age"  id="age"  type="number" value="12" min="0" max="120">
+      </div>
+      <div class="form-item">
+        <label for="birth">Full date of birth:</label>
+        <input name="birth"  id="birth"  type="date">
+      </div>
+      <div class="form-item">
+        <label for="agree">I accept the term of the agreement</label>
+        <input name="agree"  id="agree"  type="checkbox">
+      </div>
+    </fieldset>
+    <fieldset class="form-filset">
+      <legend>Registration</legend>
+      <div class="form-item">
+        <label for="email">E-mail:</label>
+        <input placeholder="email@example.com" name="email" id="email"  type="email">
+      </div>
+      <div class="form-item">
+        <label for="password">Password:</label>
+        <input name="password" id="password"  type="password" required>
+      </div>
+    </fieldset>
+    <fieldset class="form-filset">
+      <legend>An interesting fact about you!</legend>
+      <div class="form-item">
+        <span>Do you love cats? </span>
+        <input name="cat" id="yes-cat"  type="radio">
+        <label for="yes-cat">Yes</label>
+        <input name="cat" id="no-cat"  type="radio">
+        <label for="no-cat">No</label>
+      </div>
+      <div class="form-item">
+        <label for="color">What is your favorite color?</label>
+        <input type="color" name="color" id="color">
+      </div>
+      <div class="form-item">
+        <label for="sleep">What time do you go to bed?</label>
+        <input type="time" name="sleep" id="sleep"  step="1">
+      </div>
+      <div class="form-item">
+        <span>What are your favorite brand of cars? </span>
+        <select name="car" id="car" multiple>
+          <option value="bmv">BMW</option>
+          <option value="audi">Audi</option>
+          <option value="lada">Lada</option>
+          <option value=""></option>
+        </select>
+      </div>
+      <div class="form-item">
+        <label for="rate">How do you rate our work?</label>
+        <input  min="1" max="100" step="1" value="1" id="rate" type="range">
+      </div>
+    </fieldset>
+    <fieldset class="form-filset">
+      <legend>Additional info:</legend>
+      <div class="form-item">
+        <label for="comments">Comments: </label>
+        <textarea name="comments" id="comments"></textarea>
+      </div>
+      <div class="form-item">
+        <label for="comments">Would you recommend us? </label>
+        <select name="recommend" id="recommend">
+          <option value="yes" selected>Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+    </fieldset>
+    <button class="form-submit" type="submit" onsubmit="onSubmit()">Submit</button>
+  </form>
   <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
