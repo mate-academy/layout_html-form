@@ -1,0 +1,13 @@
+
+.block-input {
+  margin-bottom: 20px;
+}
+
+.min_margin {
+  margin-bottom: 0;
+}
+
+.input_margin {
+  margin-bottom: 10px;
+  display: block;
+}
