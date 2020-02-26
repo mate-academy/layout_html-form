@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+  <fieldset class="form-input">
+    <legend>Personal information</legend>
+    <label for="surname">Surname:  <input id="surname" type="text" name="personal-information"></label>
+    <div class="form-input--data"><label for="name">Name:  <input id="name" type="text" name="personal-information"></label></div>
+    <div class="form-input--data"><label for="age">How old are You?  <input id="age" type="number" name="personal-information" value="12" min="12" max="120"></label></div>
+    <div class="form-input--data"><label for="birthday">Full date of birth:  <input id="birthday" type="date" name="personal-information"></label></div>
+    <div class="form-input--data"><label for="accept">I accept the term of the agreement  <input id="accept" name="personal-information" type="checkbox" value="accept" required></label></div>
+  </fieldset>
+  <fieldset class="form-input">
+    <legend>Registration</legend>
+    <label for="email">E-mail:  <input id="email" type="email" name="registration" placeholder="email@example.com" required></label>
+    <div class="form-input--data"><label for="password">Password:  <input id="password" type="password" name="registration" required></label></div>
+  </fieldset>
+  <fieldset class="form-input">
+    <legend>An interesting fact about you!</legend>
+    <span>Do you love cats?</span>  <label for="cat-yes"><input id="cat-yes" type="radio" name="interesting-facts" value="yes">  Yes</label>
+    <label for="cat-no"><input id="cat-no" type="radio" name="interesting-facts" value="no">  No</label>
+    <div class="form-input--data"><label for="color">What is your favorite color?  <input id="color" type="color" name="interesting-facts" value="color"></label></div>
+    <div class="form-input--data"><label for="time-sleep">What time do you go to bed?  <input id="time-sleep" type="time" name="interesting-facts" value="time"></label></div>
+    <div class="form-input--data"><label for="favorite-car">What are your favorite brand of cars?
+      <select id="favorite-car" multiple>
+        <option value="BMW">BMW</option>
+        <option value="Audi">Audi</option>
+        <option value="Lada">Lada</option>
+      </select>
+    </label></div>
+    <div class="form-input--data"><label for="Tips">How do you rate our work?  <input id="Tips" type="range" name="interesting-facts" minlength="1" maxlength="10" value="1"></label></div>
+  </fieldset>
+  <fieldset class="form-input">
+    <legend>Additional info:</legend>
+    Comments:  <textarea type="text" ></textarea>
+    <div class="form-input--data"><label for="recommendation">Would you recommend us?
+      <select id="recommendation">
+        <option value="yes">yes</option>
+        <option value="no">no</option>
+      </select>
+    </label></div>
+  </fieldset>
+  <div class="form-input--data"><label for="bottom"><input id="bottom" type="submit" value="Submit" onsubmit="onSubmit()"></label></div>
+</form>
+<script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
