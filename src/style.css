@@ -1,0 +1,26 @@
+.registration,
+.info,
+.fact {
+  margin-bottom: 20px;
+}
+
+.surname,
+.name,
+.years,
+.birth,
+.email,
+.cats,
+.color,
+.bed-time,
+.car,
+.comments {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.accept,
+.password,
+.rate-work,
+.recommend {
+  margin-bottom: 0;
+}
