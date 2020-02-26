@@ -1,0 +1,14 @@
+
+.form-question {
+  margin-bottom: 10px;
+}
+
+.form-section {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-info {
+  margin-bottom: 0;
+}
