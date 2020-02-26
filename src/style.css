@@ -1,0 +1,12 @@
+.info-box {
+  margin-bottom: 20px;
+}
+
+.box-input-begin {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.box-input-end {
+  margin-bottom: 0;
+}
