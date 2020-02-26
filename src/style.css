@@ -1,0 +1,12 @@
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.input--field--up {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.input--field--bpttom {
+  margin-bottom: 0;
+}
