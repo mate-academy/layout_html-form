@@ -1,15 +1,89 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Form</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-  <h1>HTML Form</h1>
+
+
+  <form onsubmit="onSubmit()" action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
+    <fieldset class="blockOfForm">
+      <legend>Personal information</legend>
+      <label>
+        Surname:&nbsp;<input class="formLine" id="Surname" type="text" name="Surname" autocomplete="off">
+      </label>
+      <label>
+        Name:&nbsp;<input class="formLine" id="Name" type="text" name="Name" autocomplete="off">
+      </label>
+      <label>
+        How old are You?&nbsp;<input class="formLine" min="1" max="120" id="age" type="number" value="12" name="age">
+      </label>
+      <label>
+        Full date of birth:&nbsp;<input class="formLine" id="dateOfBirth" type="date" name="dateOfBirth">
+      </label>
+      <label>
+        I accept the term of the agreement&nbsp;<input id="termsAccept" type="checkbox" name="termsAccept">
+      </label>
+    </fieldset>
+    <fieldset class="blockOfForm">
+      <legend>Registration</legend>
+      <label>
+        E-mail:&nbsp;<input class="formLine" required type="email" id="users-email" value="email@example.com"
+          name="users-email">
+      </label>
+      <label>
+        Password:&nbsp;<input minlength="8" maxlength="30" type="password" id="users-password" name="users-password">
+      </label>
+    </fieldset>
+    <fieldset class="blockOfForm">
+      <legend>An interesting fact about you!</legend>
+      <div class="formLine">
+        Do you love cats?&nbsp;
+        <label class="inLine"><input type="radio" id="yes" name="loveCats">Yes</label>
+        <label class="inLine"><input type="radio" id="no" name="loveCats">No</label>
+      </div>
+      <label>
+        What is your favorite color?&nbsp;<input class="formLine" type="color" id="favColor" name="favColor">
+      </label>
+      <label>
+        What time do you go to bed?&nbsp;<input class="formLine" type="time" id="timeToBed" step="1" name="timeToBed">
+      </label>
+      <label>
+        What are your favorite brand of cars?
+        <select class="formLine" name="cars" id="cars" multiple="multiple">
+          <option value="Lada">BMW</option>
+          <option value="BMW">Audi</option>
+          <option value="Audi">Lada</option>
+          <option value=" "></option>
+        </select>
+      </label>
+      How do you rate our work?&nbsp;<input value="50%" type="range" id="workRate" name="workRate">
+    </fieldset>
+    <fieldset class="blockOfForm">
+      <legend>Additional info:</legend>
+      <div class="formLine">
+        <label>
+          Comments:&nbsp;<textarea name="comment" id="comment"></textarea>
+        </label>
+      </div>
+      <label>
+        Would you recommend us?&nbsp;
+        <select id="recommend" multiple="multiple" size="1">
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+      </label>
+    </fieldset>
+    <input type="submit" value="Submit">
+  </form>
   <script type="text/javascript" src="./main.js"></script>
 </body>
+
 </html>

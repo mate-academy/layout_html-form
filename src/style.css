@@ -1,0 +1,17 @@
+
+.blockOfForm {
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.formLine {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+}
+
+.inLine {
+  display: inline;
+}
