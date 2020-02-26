@@ -1,15 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Form</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-  <h1>HTML Form</h1>
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
+    <fieldset class="fielsdet_area">
+      <legend>
+        Personal information
+      </legend>
+      <label class="fielset_label">Surname:
+        <input type="text" name="Surname" minlength="2" maxlength="20" autocomplete="off">
+      </label>
+      <label class="fielset_label">Name:
+        <input type="text" name="Name" minlength="2" maxlength="20" autocomplete="off">
+      </label>
+      <label class="fielset_label">How old are You?
+        <input type="number" name="Age" min="1" max="100" value="12">
+      </label>
+      <label class="fielset_label">Full date of birth:
+        <input type="date" name="Birth_date">
+      </label>
+      <label class="fielset_label">I accept the term of the agreement
+        <input type="checkbox" name="Agreement">
+      </label>
+    </fieldset>
+
+    <fieldset class="fielsdet_area">
+      <legend>
+        Registration
+      </legend>
+      <label class="fielset_label">E-mail:
+        <input type="email" name="Email" placeholder="email@example.com" required>
+      </label>
+      <label class="fielset_label">Password:
+        <input type="password" name="Password" required minlength="6">
+      </label>
+    </fieldset>
+
+    <fieldset class="fielsdet_area">
+      <legend>
+        An interesting fact about you!
+      </legend>
+      <label class="fielset_label" for="yes">
+        <span>Do you love cats?</span>
+        <label> <input type="radio" name="Agree" id="yes">Yes </label>
+        <label> <input type="radio" name="Disagree">No </label>
+      </label>
+      <label class="fielset_label">What is your favorite color?
+        <input type="color" name="Color">
+      </label>
+      <label class="fielset_label">What time do you go to bed?
+        <input type="time" name="Time">
+      </label>
+      <label class="fielset_label">
+        <span>What are your favorite barnd of cars?</span>
+        <select name="Cars" multiple>
+          <option value="BMW">BMW</option>
+          <option value="Audi">Audi</option>
+          <option value="Lada">Lada</option>
+          <option value=""></option>
+        </select>
+      </label>
+      <label class="fielset_label">How do you rate our work?
+        <input type="range" name="Range" min="0" max="10" value="0">
+      </label>
+    </fieldset>
+
+    <fieldset class="fielsdet_area">
+      <legend>
+        Additional info:
+      </legend>
+      <label class="fielset_label">Comments:
+        <textarea name="Comments"></textarea>
+      </label>
+      <label class="fielset_label">Would you recommend us?
+        <select name="Recomendations">
+          <option value="Yes">yes</option>
+          <option value="No">no</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <button class="btn" type="submit" onsubmit="onSubmit()">Submit</button>
+  </form>
+
   <script type="text/javascript" src="./main.js"></script>
 </body>
+
 </html>

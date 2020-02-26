@@ -1,0 +1,12 @@
+.fielsdet_area {
+  margin-bottom: 20px;
+}
+
+.fielset_label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.fielset_label:last-child {
+  margin-bottom: 0;
+}
