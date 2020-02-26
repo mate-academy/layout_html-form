@@ -2,6 +2,10 @@ fieldset {
   margin-bottom: 20px;
 }
 
+label {
+  display: inline-block;
+}
+
 .indentation {
   padding-bottom: 4px;
 }
@@ -10,11 +14,17 @@ fieldset {
   margin-bottom: 10px;
 }
 
-.identTop {
-  margin-top: 10px;
+.identForBlock8 {
+  margin-bottom: 4px;
 }
 
+.identTop {
+  margin-top: 12px;
+}
+/*.onePxFix{*/
+/*  margin-top: 10px;*/
+/*}*/
 #someInfo {
-  width: 170px;
+  width: 177px;
   height: 30px;
 }
