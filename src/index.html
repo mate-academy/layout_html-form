@@ -1,15 +1,88 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Form</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-  <h1>HTML Form</h1>
+  <form method="post" action="https://mate.academy/ru">
+    <fieldset class="form-wrapper">
+      <legend>Personal information</legend>
+      <label class="label">Surname:
+        <input id="surname" type="text" name="surname" required>
+      </label>
+      <label class="label">Name:
+        <input id="name" type="text" name="name" required>
+      </label>
+      <label class="label">How old are You?
+        <input id="age" min="0" max="100" type="number" name="age" value="12 " placeholder="12" step="1"
+          data-qa="field-value">
+      </label>
+      <label class="label">Full date of birth:
+        <input id="date" type="date" name="date">
+      </label>
+      <label class="label">I accept the term of the agreement
+        <input id="agree" type="checkbox" name="agree">
+      </label>
+    </fieldset>
+    <fieldset class="form-wrapper">
+      <legend>Registration</legend>
+      <label class="label">E-mail:
+        <input id="e-mail" type="email" name="e-mail" placeholder="email@example.com" data-qa="field-placeholder">
+      </label>
+      <label class="label">Password:
+        <input id="password" type="password" name="password" required>
+      </label>
+    </fieldset>
+    <fieldset class="form-wrapper">
+      <legend>An interesting fact about you!</legend>
+      <label class="label">Do you love cats?
+        <input id="yes" type="radio" name="loveCats" value="yes">
+        Yes
+      </label>
+      <label>
+        <input id="no" type="radio" name="loveCats" value="no">
+        No
+      </label>
+      <label class="label">What is your favorite color?
+        <input id="color" type="color" name="color">
+      </label>
+      <label class="label">What time do you go to bed?
+        <input id="time" type="time" name="time">
+      </label>
+      <label class="label">What are your favorite brends of cars?
+        <select id="breds" size="4" name="breds">
+          <option value="bmw">BMW</option>
+          <option value="audi">Audi</option>
+          <option value="lada">Lada</option>
+          <option value="no">no</option>
+        </select>
+      </label>
+      <label class="label">How do you rate your work?
+        <input id="workRate" type="range" name="workRate" value="0">
+      </label>
+    </fieldset>
+    <fieldset class="form-wrapper">
+      <legend>Additional info:</legend>
+      <label class="label">Comments:
+        <textarea id="comments" name="comments" minlength="10" maxlength="80"></textarea>
+      </label>
+      <label class="label">Would you recommend us?
+        <select id="recomendation" name="recomendation">
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+      </label>
+    </fieldset>
+    <input type="submit">
+  </form>
   <script type="text/javascript" src="./main.js"></script>
 </body>
+
 </html>
