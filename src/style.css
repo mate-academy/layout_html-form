@@ -1,0 +1,20 @@
+fieldset {
+  margin-bottom: 20px;
+}
+
+.indentation {
+  padding-bottom: 4px;
+}
+
+.identForBlock {
+  margin-bottom: 10px;
+}
+
+.identTop {
+  margin-top: 10px;
+}
+
+#someInfo {
+  width: 170px;
+  height: 30px;
+}
