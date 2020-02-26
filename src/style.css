@@ -1,0 +1,15 @@
+.information,
+.registration,
+.personal-info,
+.addition {
+  margin-bottom: 20px;
+}
+
+.block:first-of-type {
+  margin-top: 0;
+}
+
+.block {
+  display: block;
+  margin-top: 10px;
+}
