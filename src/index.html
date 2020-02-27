@@ -9,7 +9,92 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>HTML Form</h1>
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+    <fieldset class="fieldset-margin">
+      <legend>Personal information</legend>
+      <label class="form-label label-margin">
+        Surname:
+        <input type="text">
+      </label>
+      <label class="form-label label-margin">
+        Name:
+        <input type="text">
+      </label>
+      <label class="form-label label-margin">
+        How old are You?
+        <input type="number" placeholder="12">
+      </label>
+      <label class="form-label label-margin">
+        Full date of birth:
+        <input type="date">
+      </label>
+      <label class="form-label">
+        I accept the term of the agreement
+        <input type="checkbox">
+      </label>
+    </fieldset>
+    <fieldset class="fieldset-margin">
+      <legend>Registration</legend>
+      <label class="form-label label-margin">
+        E-mail:
+        <input type="email" placeholder="email@example.com">
+      </label>
+      <label  class="form-label">
+        Password:
+        <input type="password">
+      </label>
+    </fieldset>
+    <fieldset class="fieldset-margin">
+      <legend>An interesting fact about you!</legend>
+      <label for="no" class="form-label label-margin">
+        Do you love cats?
+        <label for="yes">
+          <input id="yes" type="radio" name="cats">
+          Yes
+        </label>
+        <label for="no">
+          <input id="no" type="radio" name="cats">
+          No
+        </label>
+      </label>
+      <label class="form-label label-margin">
+        What is your favorite color?
+        <input type="color">
+      </label>
+      <label  class="form-label label-margin">
+        What time do you go to bad?
+        <input type="time" name="appt-time" step="2">
+      </label>
+      <label  class="form-label label-margin">
+        What are your favorite brand of cars?
+        <select multiple>
+          <option value="BMW">BMW</option>
+          <option value="Audi">Audi</option>
+          <option value="Lada">Lada</option>
+        </select>
+      </label>
+      <label for="volume" class="form-label">
+        How do you rate our work?
+        <input id="volume" type="range" value="0">
+      </label>
+    </fieldset>
+    <fieldset class="fieldset-margin">
+      <legend>Additional info:</legend>
+      <label for="comments" class="form-label label-margin">
+        Comments:
+        <textarea id="comments" rows="2" cols="20" name="text"></textarea>
+      </label>
+      <label for="recomeded" class="form-label ">
+        Would you recommeded us?
+        <select id="recomeded" name="recommend" >
+          <option name="yes">yes</option>
+          <option name="no">no</option>
+        </select>
+      </label>
+    </fieldset>
+    <button>Submit</button>
+  </form>
   <script type="text/javascript" src="./main.js"></script>
+
 </body>
 </html>
