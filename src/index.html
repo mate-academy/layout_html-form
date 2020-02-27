@@ -1,15 +1,124 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Form</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form autocomplete="off">
+      <fieldset class="form__block">
+        <legend>
+          Personal information
+        </legend>
+        <div class="form__group">
+          <label for="surname">Surname: </label>
+          <input type="text" id="surname" name="surname" />
+        </div>
+        <div class="form__group">
+          <label for="name">Name: </label>
+          <input type="text" name="name" id="name" required />
+        </div>
+        <div class="form__group">
+          <label for="formAge">How old are You? </label>
+          <input
+            type="number"
+            name="age"
+            id="formAge"
+            value="12"
+            class="input__age"
+          />
+        </div>
+        <div class="form__group">
+          <label for="birth">Full date of birth: </label>
+          <input type="date" name="birth" id="birth" />
+        </div>
+        <div class="form__group">
+          <label for="terms">I accept the term of the agreement</label>
+          <input type="checkbox" name="isTerms" id="terms" />
+        </div>
+      </fieldset>
+      <fieldset class="form__block">
+        <legend>Registration</legend>
+        <div class="form__group">
+          <label for="email" required>E-mail:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@example.com"
+          />
+        </div>
+        <div class="form__group">
+          <label for="password" required>Password:</label>
+          <input type="password" name="password" id="password" />
+        </div>
+      </fieldset>
+      <fieldset class="form__block">
+        <legend>An interesting fact about you!</legend>
+        <div class="form__group">
+          Do you love cats?
+          <input type="radio" name="loveCats" value="Yes" id="loveCats" />
+          <label for="loveCats">Yes</label>
+          <input type="radio" name="loveCats" value="No" id="dislikeCats" />
+          <label for="dislikeCats">No</label>
+        </div>
+        <div class="form__group">
+          <label for="color">What is your favorite color?</label>
+          <input type="color" name="color" id="color" />
+        </div>
+        <div class="form__group">
+          <label for="bed">What time do you go to bed?</label>
+          <input type="time" name="bed" id="bed" />
+        </div>
+        <div class="form__group">
+          What are your favorite brand of cars?
+          <select multiple name="favoriteCar">
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label for="workRate">How do you rate your work?</label>
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="50"
+            name="workRate"
+            id="workRate"
+          />
+        </div>
+      </fieldset>
+      <fieldset class="form__block">
+        <legend>Additional information</legend>
+        <div class="form__group">
+          <label for="comment">Comments:</label>
+          <textarea
+            name="comments"
+            minlength="10"
+            maxlength="3000"
+            id="comment"
+          ></textarea>
+        </div>
+        <div class="form__group">
+          Would you recommend us?
+          <select name="isRecommend">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </div>
+      </fieldset>
+      <button type="submit" onsubmit="onSubmit()" class="form__button">
+        Submit
+      </button>
+    </form>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
 </html>
