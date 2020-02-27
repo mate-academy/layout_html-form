@@ -1,0 +1,17 @@
+.frame {
+  margin-bottom: 20px;
+}
+
+.question {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.question-bottom {
+  display: block;
+}
+
+.put {
+  display: block;
+  margin: 10 px;
+}
