@@ -1,8 +1,8 @@
-fieldset {
+.fieldset {
   margin-bottom: 20px;
 }
 
-label {
+.label {
   display: inline-block;
 }
 
@@ -21,9 +21,13 @@ label {
 .identTop {
   margin-top: 12px;
 }
-/*.onePxFix{*/
-/*  margin-top: 10px;*/
-/*}*/
+
+.cats {
+  display: inline-block;
+  margin-top: 3px;
+  margin-bottom: 9px;
+}
+
 #someInfo {
   width: 177px;
   height: 30px;

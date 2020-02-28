@@ -11,7 +11,7 @@
 <body>
 <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       onsubmit="onSubmit()" method="post" autocomplete="off">
-  <fieldset>
+  <fieldset class="fieldset">
     <legend>Personal information</legend>
     <label for="sname" class="label">Surname:</label>
     <input type="text" id="sname" class="identForBlock" name="surname">
@@ -29,7 +29,7 @@
     <input type="checkbox" id="accept" class="indentation" name="accept">
   </fieldset>
 
-  <fieldset>
+  <fieldset class="fieldset">
     <legend>Registration</legend>
     <label for="mail" class="label">E-mail:</label>
     <input type="email" id="mail" class="identForBlock" name="mail" placeholder="email@example.com">
@@ -38,38 +38,38 @@
     <input type="password" id="pass" name="password" minlength="5" maxlength="10">
   </fieldset>
 
-  <fieldset>
+  <fieldset class="fieldset">
     <legend>An interesting fact about you!</legend>
-    <label class="identForBlock8">Do you love cats?
-      <input type="radio" name="aboutCats"> Yes
-      <input class="identForBlock" type="radio" name="aboutCats"> No
-    </label>
+    <p class="cats">Do you love cats?</p>
+      <label class="label"><input type="radio" name="aboutCats"> Yes</label>
+      <label class="label"><input class="identForBlock" type="radio" name="aboutCats"> No</label>
+
     <br>
-    <label for="color" class="identForBlock">What is your favorite color?</label>
+    <label for="color" class="identForBlock label">What is your favorite color?</label>
     <input class="identForBlock" type="color" id="color" name="color">
     <br>
-    <label for="bedTime" class="identForBlock">What time do you go to bed?</label>
+    <label for="bedTime" class="identForBlock label">What time do you go to bed?</label>
     <input type="time" id="bedTime" class="identForBlock" name="bedTime">
     <br>
-    <label for="carSelect">What are your favorite brand of cars?
-    <select id="carSelect" multiple>
-      <option>BMW</option>
-      <option>Audi</option>
-      <option >Lada</option>
-    </select>
+    <label for="carSelect" class="label">What are your favorite brand of cars?
+      <select id="carSelect" multiple>
+        <option>BMW</option>
+        <option>Audi</option>
+        <option>Lada</option>
+      </select>
     </label>
     <br>
-    <label>How do you rate our work?
+    <label class="label">How do you rate our work?
       <input type="range" class="identTop" name="rate">
     </label>
   </fieldset>
 
-  <fieldset>
+  <fieldset class="fieldset">
     <legend>Additional info:</legend>
-    <label for="someInfo" class="label" >Comments:</label>
+    <label for="someInfo" class="label">Comments:</label>
     <textarea class="identForBlock" id="someInfo" cols="30" rows="3"></textarea>
     <br>
-    <label>Would you recommend us?
+    <label class="label">Would you recommend us?
       <select>
         <option>yes</option>
         <option>no</option>
