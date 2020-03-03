@@ -18,8 +18,8 @@
   margin-bottom: 4px;
 }
 
-.identTop {
-  margin-top: 12px;
+.carSelect {
+  margin-bottom: 10px;
 }
 
 .cats {
@@ -28,7 +28,7 @@
   margin-bottom: 9px;
 }
 
-#someInfo {
+.commentArea {
   width: 177px;
   height: 30px;
 }
