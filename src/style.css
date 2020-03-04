@@ -1,0 +1,12 @@
+.block {
+  margin-bottom: 20px;
+}
+  
+.custom-lable {
+  display: block;
+  margin-bottom: 10px;
+}
+  
+.custom-lable--off {
+  margin-bottom: 0;
+}
