@@ -2,14 +2,18 @@
   margin-top: 20px;
 }
 
-.form__group:not(:first-of-type) {
-  margin-top: 10px;
-}
-
 .form__button {
   margin-top: 20px;
 }
 
 .input__age {
   width: 65px;
+}
+
+label {
+  display: block;
+}
+
+.form__label:not(:first-of-type) {
+  margin-top: 10px;
 }

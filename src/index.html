@@ -16,104 +16,89 @@
         <legend>
           Personal information
         </legend>
-        <div class="form__group">
-          <label for="surname">Surname: </label>
-          <input type="text" id="surname" name="surname" />
-        </div>
-        <div class="form__group">
-          <label for="name">Name: </label>
-          <input type="text" name="name" id="name" required />
-        </div>
-        <div class="form__group">
-          <label for="formAge">How old are You? </label>
-          <input
-            type="number"
-            name="age"
-            id="formAge"
-            value="12"
-            class="input__age"
-          />
-        </div>
-        <div class="form__group">
-          <label for="birth">Full date of birth: </label>
-          <input type="date" name="birth" id="birth" />
-        </div>
-        <div class="form__group">
-          <label for="terms">I accept the term of the agreement</label>
-          <input type="checkbox" name="isTerms" id="terms" />
-        </div>
+        <label class="form__label"
+          >Surname:
+          <input type="text" name="surname" />
+        </label>
+        <label class="form__label"
+          >Name:
+          <input type="text" name="name" required />
+        </label>
+        <label class="form__label">
+          How old are You?
+          <input type="number" name="age" value="12" class="input__age" />
+        </label>
+        <label class="form__label"
+          >Full date of birth:
+          <input type="date" name="birth" />
+        </label>
+        <label class="form__label"
+          >I accept the term of the agreement
+          <input type="checkbox" name="isTerms" />
+        </label>
       </fieldset>
       <fieldset class="form__block">
         <legend>Registration</legend>
-        <div class="form__group">
-          <label for="email" required>E-mail:</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="email@example.com"
-          />
-        </div>
-        <div class="form__group">
-          <label for="password" required>Password:</label>
-          <input type="password" name="password" id="password" />
-        </div>
+        <label required class="form__label">
+          E-mail:
+          <input type="email" name="email" placeholder="email@example.com" />
+        </label>
+        <label required class="form__label">
+          Password:
+          <input type="password" name="password" />
+        </label>
       </fieldset>
       <fieldset class="form__block">
         <legend>An interesting fact about you!</legend>
-        <div class="form__group">
+        <label class="form__label">
           Do you love cats?
-          <input type="radio" name="loveCats" value="Yes" id="loveCats" />
-          <label for="loveCats">Yes</label>
-          <input type="radio" name="loveCats" value="No" id="dislikeCats" />
-          <label for="dislikeCats">No</label>
-        </div>
-        <div class="form__group">
-          <label for="color">What is your favorite color?</label>
-          <input type="color" name="color" id="color" />
-        </div>
-        <div class="form__group">
-          <label for="bed">What time do you go to bed?</label>
-          <input type="time" name="bed" id="bed" />
-        </div>
-        <div class="form__group">
+          <input type="radio" name="loveCats" value="Yes" id="loveCats" /> Yes
+          <input type="radio" name="loveCats" value="No" id="dislikeCats" /> No
+        </label>
+        <label class="form__label"
+          >What is your favorite color?
+          <input type="color" name="color" />
+        </label>
+        <label class="form__label">
+          What time do you go to bed?
+          <input type="time" name="bed" />
+        </label>
+        <label class="form__label">
           What are your favorite brand of cars?
           <select multiple name="favoriteCar">
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
           </select>
-        </div>
-        <div class="form__group">
-          <label for="workRate">How do you rate your work?</label>
+        </label>
+        <label class="form__label">
+          How do you rate your work?
           <input
             type="range"
             min="1"
             max="100"
             value="50"
             name="workRate"
-            id="workRate"
           />
-        </div>
+        </label>
       </fieldset>
       <fieldset class="form__block">
         <legend>Additional information</legend>
-        <div class="form__group">
-          <label for="comment">Comments:</label>
+        <label class="form__label">
+          Comments:
           <textarea
             name="comments"
             minlength="10"
             maxlength="3000"
-            id="comment"
           ></textarea>
-        </div>
-        <div class="form__group">
+        </label>
+        <label class="form__label">
           Would you recommend us?
           <select name="isRecommend">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
-        </div>
+        </label>
       </fieldset>
       <button type="submit" onsubmit="onSubmit()" class="form__button">
         Submit
