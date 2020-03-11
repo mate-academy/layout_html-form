@@ -50,9 +50,11 @@
       </fieldset>
       <fieldset class="form__block">
         <legend>An interesting fact about you!</legend>
-        <label class="form__label">
-          Do you love cats?
+        Do you love cats?
+        <label class="form__label-radio">
           <input type="radio" name="loveCats" value="Yes" id="loveCats" /> Yes
+        </label>
+        <label class="form__label-radio">
           <input type="radio" name="loveCats" value="No" id="dislikeCats" /> No
         </label>
         <label class="form__label">
@@ -73,24 +75,14 @@
         </label>
         <label class="form__label">
           How do you rate your work?
-          <input
-            type="range"
-            min="1"
-            max="100"
-            value="50"
-            name="workRate"
-          />
+          <input type="range" min="1" max="100" value="50" name="workRate" />
         </label>
       </fieldset>
       <fieldset class="form__block">
         <legend>Additional information</legend>
         <label class="form__label">
           Comments:
-          <textarea
-            name="comments"
-            minlength="10"
-            maxlength="3000"
-          ></textarea>
+          <textarea name="comments" minlength="10" maxlength="3000"></textarea>
         </label>
         <label class="form__label">
           Would you recommend us?

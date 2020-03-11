@@ -17,3 +17,7 @@ label {
 .form__label:not(:first-of-type) {
   margin-top: 10px;
 }
+
+.form__label-radio {
+  display: inline-block;
+}
