@@ -1,15 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Form</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form autocomplete="off">
+      <fieldset class="form__block">
+        <legend>
+          Personal information
+        </legend>
+        <label class="form__label">
+          Surname:
+          <input type="text" name="surname" />
+        </label>
+        <label class="form__label">
+          Name:
+          <input type="text" name="name" required />
+        </label>
+        <label class="form__label">
+          How old are You?
+          <input type="number" name="age" value="12" class="input__age" />
+        </label>
+        <label class="form__label">
+          Full date of birth:
+          <input type="date" name="birth" />
+        </label>
+        <label class="form__label">
+          I accept the term of the agreement
+          <input type="checkbox" name="isTerms" />
+        </label>
+      </fieldset>
+      <fieldset class="form__block">
+        <legend>Registration</legend>
+        <label required class="form__label">
+          E-mail:
+          <input type="email" name="email" placeholder="email@example.com" />
+        </label>
+        <label required class="form__label">
+          Password:
+          <input type="password" name="password" />
+        </label>
+      </fieldset>
+      <fieldset class="form__block">
+        <legend>An interesting fact about you!</legend>
+        Do you love cats?
+        <label class="form__label-radio">
+          <input type="radio" name="loveCats" value="Yes" id="loveCats" /> Yes
+        </label>
+        <label class="form__label-radio">
+          <input type="radio" name="loveCats" value="No" id="dislikeCats" /> No
+        </label>
+        <label class="form__label">
+          What is your favorite color?
+          <input type="color" name="color" />
+        </label>
+        <label class="form__label">
+          What time do you go to bed?
+          <input type="time" name="bed" />
+        </label>
+        <label class="form__label">
+          What are your favorite brand of cars?
+          <select multiple name="favoriteCar">
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </label>
+        <label class="form__label">
+          How do you rate your work?
+          <input type="range" min="1" max="100" value="50" name="workRate" />
+        </label>
+      </fieldset>
+      <fieldset class="form__block">
+        <legend>Additional information</legend>
+        <label class="form__label">
+          Comments:
+          <textarea name="comments" minlength="10" maxlength="3000"></textarea>
+        </label>
+        <label class="form__label">
+          Would you recommend us?
+          <select name="isRecommend">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+      </fieldset>
+      <button type="submit" onsubmit="onSubmit()" class="form__button">
+        Submit
+      </button>
+    </form>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
 </html>
