@@ -1,0 +1,12 @@
+
+.form-blocks {
+  margin-bottom: 20px;
+}
+
+.form-blocks .input-field:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.input-field {
+  display: block;
+}
