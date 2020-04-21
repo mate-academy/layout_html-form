@@ -1,0 +1,13 @@
+p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.last-indent {
+  margin-bottom: 0;
+}
+
+.indents {
+  margin-bottom: 20px;
+}
