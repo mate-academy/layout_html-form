@@ -9,7 +9,141 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>HTML Form</h1>
   <script type="text/javascript" src="./main.js"></script>
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST" autocomplete="off" onsubmit="onSubmit()">
+    <fieldset class="fiel">
+      <legend>Personal information</legend>
+      <p>
+        <label for="surname">Surname:</label>
+        <input
+        type="text"
+        id="surname"
+        name="surname">
+      </p>
+      <p>
+        <label for="name">Name:</label>
+        <input
+        type="text"
+        id="name"
+        name="name"
+        required>
+      </p>
+      <p>
+        <label for="age">How old are You?</label>
+        <input
+        type="number"
+        id="age"
+        name="age"
+        min="1"
+        max="100"
+        value="12">
+      </p>
+      <p>
+        <label for="birth">Full date of birth:</label>
+        <input
+        type="date"
+        id="birth"
+        name="birth">
+      </p>
+      <p class="last-paragraph">
+        <label for="accept">I accept the term of the agreement</label>
+        <input
+        type="checkbox"
+        id="accept"
+        name="accept"
+        required>
+      </p>
+    </fieldset>
+
+    <fieldset class="fiel">
+      <legend>Registration</legend>
+      <p>
+        <label for="poshta">E-mail:</label>
+        <input
+        type="email"
+        id="poshta"
+        name="poshta"
+        placeholder="email@example.com"
+        required>
+      </p>
+      <p class="last-paragraph">
+        <label for="parol">Password:</label>
+        <input
+        type="password"
+        id="parol"
+        name="parol"
+        required>
+      </p>
+    </fieldset>
+
+    <fieldset class="fiel">
+      <legend>An interesting fact about you!</legend>
+      <p>
+        <label for="cats">Do you love cats? </label>
+        <input
+        type="radio"
+        id="cats"
+        name="yescats"> Yes
+        <input
+        type="radio"
+        id="nocats"
+        name="nocats"> No
+      </p>
+      <p>
+        <label for="favcolor">What is your favorite color?</label>
+        <input
+        type="color"
+        id="favcolor"
+        name="favcolor">
+      </p>
+      <p>
+        <label for="bedtime">What time do you go to bed?</label>
+        <input
+        type="time"
+        id="bedtime"
+        name="bedtime"
+        step="2">
+      </p>
+      <label for="cars">What are your favorite brand of cars?</label>
+      <select
+      name="cars"
+      id="cars"
+      multiple>
+        <option value="bmw">BMW</option>
+        <option value="audi">Audi</option>
+        <option value="lada">Lada</option>
+      </select>
+      <p class="last-paragraph">
+        <label for="work">How do you rate our work?</label>
+        <input
+        type="range"
+        id="work"
+        name="cars"
+        min="0" max="10"
+        value="0">
+      </p>
+    </fieldset>
+
+    <fieldset class="fiel">
+      <legend>Additional info:</legend>
+      <p>
+      <label for="comm">Comments:</label>
+      <textarea
+      name="comm"
+      id="comm"
+      minlength="2"
+      maxlength="30">
+    </textarea>
+      </p>
+      <p class="last-paragraph">
+        <label for="recom">Would you recommend us?</label>
+        <select name="recom" id="recom">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </p>
+    </fieldset>
+    <button type="submit">Submit</button>
+  </form>
 </body>
 </html>
