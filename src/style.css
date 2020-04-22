@@ -3,10 +3,11 @@
   margin-bottom: 20px;
 }
 
-.form-blocks .input-field:not(:last-child) {
+.input-field {
+  display: block;
   margin-bottom: 10px;
 }
 
-.input-field {
-  display: block;
+.input-field-last {
+  margin-bottom: 0;
 }
