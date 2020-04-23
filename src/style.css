@@ -1,0 +1,12 @@
+p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+.no-pad {
+  margin-bottom: 0;
+}
