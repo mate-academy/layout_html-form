@@ -1,0 +1,7 @@
+.input + .input {
+  margin-top: 10px;
+}
+
+fieldset + fieldset {
+  margin-top: 20px;
+}
