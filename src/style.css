@@ -1,0 +1,13 @@
+p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.no-margin {
+  margin-bottom: 0;
+}
+
+.form-block,
+.button-form {
+  margin-top: 20px;
+}

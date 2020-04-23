@@ -1,15 +1,198 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta
+    name="viewport"
+    content="
+      width=device-width,
+      user-scalable=no,
+      initial-scale=1.0,
+      maximum-scale=1.0,
+      minimum-scale=1.0
+    "
+  >
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="ie=edge">
   <title>HTML Form</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-  <h1>HTML Form</h1>
+  <form
+    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="get"
+    id="form1"
+    onsubmit="onSubmit()"
+  >
+    <fieldset>
+      <legend>Personal information</legend>
+      <p>
+        <label for="person-surname">Surname:</label>
+        <input
+          id="person-surname"
+          name="surname"
+          type="text"
+          autocomplete="off"
+          required
+        >
+      </p>
+      <p>
+        <label for="person-name">Name:</label>
+        <input
+          id="person-name"
+          name="name"
+          type="text"
+          autocomplete="off"
+          required
+        >
+      </p>
+      <p>
+        <label for="person-age">How old are You?</label>
+        <input
+          id="person-age"
+          name="age"
+          type="number"
+          value="12"
+          min="0"
+          max="160"
+        >
+      </p>
+      <p>
+        <label for="person-fullage">Full date of birth:</label>
+        <input
+          id="person-fullage"
+          name="data-of-birth"
+          type="date"
+        >
+      </p>
+      <p class="no-margin">
+        <label for="person-agreement">I accept the term of the agreement</label>
+        <input
+          id="person-agreement"
+          name="term-of-agreement"
+          type="checkbox"
+        >
+      </p>
+    </fieldset>
+    <fieldset class="form-block">
+      <legend>Registration</legend>
+      <p>
+        <label for="person-email">E-mail:</label>
+        <input
+          id="person-email"
+          name="email"
+          type="email"
+          placeholder="email@example.com"
+          required
+          multiple
+        >
+      </p>
+      <p class="no-margin">
+        <label for="person-password">Password:</label>
+        <input
+          id="person-password"
+          name="password"
+          type="password"
+          required
+          minlength="5"
+        >
+      </p>
+    </fieldset>
+    <fieldset class="form-block">
+      <legend>An interesting fact about you!</legend>
+      <p>
+        <label>Do you love cats?
+          <input
+            id="love-cat-yes"
+            name="question-about-cat"
+            type="radio"
+          >
+          <label for="love-cat-yes">Yes</label>
+          <input
+            id="love-cat-no"
+            name="question-about-cat"
+            type="radio"
+          >
+          <label for="love-cat-no">No</label>
+        </label>
+      </p>
+      <p>
+        <label for="person-color">What is your favorite color?</label>
+        <input
+          id="person-color"
+          name="color"
+          type="color"
+        >
+      </p>
+      <p>
+        <label for="person-time-to-bed">What time do you go to bed?</label>
+        <input
+          id="person-time-to-bed"
+          name="time-to-bed"
+          type="time"
+        >
+      </p>
+      <p>
+        <label for="person-car-brend">What are your favorite brand of cars?</label>
+        <select
+          id="person-car-brend"
+          name="car-brend"
+          size="4"
+          multiple
+        >
+          <option value="BMW">BMW</option>
+          <option value="Audi">Audi</option>
+          <option value="Lada">Lada</option>
+        </select>
+      </p>
+      <p class="no-margin">
+        <label for="work-rate">How do you rate our work?</label>
+        <input
+          id="work-rate"
+          name="question-work-rate"
+          type="range"
+          min="0"
+          max="10"
+          value="0"
+          step="1"
+        >
+      </p>
+    </fieldset>
+    <fieldset class="form-block">
+      <legend>Additional info</legend>
+      <p>
+        <label for="person-comments">Comments:</label>
+        <textarea
+        id="person-comments"
+        name="comments"
+        maxlength="300"
+        >
+        </textarea>
+      </p>
+      <p class="no-margin">
+        <label for="person-recommendation">Would you recommend us?</label>
+        <select
+          id="person-recommendation"
+          name="recommendation"
+        >
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </p>
+    </fieldset>
+  </form>
+  <button
+    class="button-form"
+    type="submit"
+    form="form1"
+    value="Submit"
+  >
+    Submit
+  </button>
   <script type="text/javascript" src="./main.js"></script>
 </body>
+
 </html>
