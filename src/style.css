@@ -1,0 +1,19 @@
+.form-item {
+  margin-top: 20px;
+}
+
+.form-item:first-child {
+  margin-top: 0;
+}
+
+.fieldset-item {
+  margin-top: 10px;
+}
+
+.fieldset-item:first-of-type {
+  margin-top: 0;
+}
+
+.submit-btn {
+  margin-top: 20px;
+}
