@@ -15,8 +15,8 @@
     method="POST"
     autocomplete="off"
     onsubmit="onSubmit()"
-    >
-    <fieldset class="fiel">
+  >
+    <fieldset>
       <legend>Personal information</legend>
       <p>
         <label for="surname">Surname:</label>
@@ -24,7 +24,7 @@
           type="text"
           id="surname"
           name="surname"
-          >
+        >
       </p>
       <p>
         <label for="name">Name:</label>
@@ -33,7 +33,7 @@
           id="name"
           name="name"
           required
-          >
+        >
       </p>
       <p>
         <label for="age">How old are You?</label>
@@ -44,7 +44,7 @@
           min="1"
           max="100"
           value="12"
-          >
+        >
       </p>
       <p>
         <label for="birth">Full date of birth:</label>
@@ -52,7 +52,7 @@
           type="date"
           id="birth"
           name="birth"
-          >
+        >
       </p>
       <p class="last-paragraph">
         <label for="term">I accept the term of the agreement</label>
@@ -61,11 +61,11 @@
           id="term"
           name="term"
           required
-          >
+        >
       </p>
     </fieldset>
 
-    <fieldset class="fiel">
+    <fieldset>
       <legend>Registration</legend>
       <p>
         <label for="poshta">E-mail:</label>
@@ -75,7 +75,7 @@
           name="poshta"
           placeholder="email@example.com"
           required
-          >
+        >
       </p>
       <p class="last-paragraph">
         <label for="parol">Password:</label>
@@ -84,11 +84,11 @@
           id="parol"
           name="parol"
           required
-          >
+        >
       </p>
     </fieldset>
 
-    <fieldset class="fiel">
+    <fieldset>
       <legend>An interesting fact about you!</legend>
       <p>
         <label for="cats">Do you love cats? </label>
@@ -107,7 +107,7 @@
           type="color"
           id="favcolor"
           name="favcolor"
-          >
+        >
       </p>
       <p>
         <label for="bedtime">What time do you go to bed?</label>
@@ -116,14 +116,14 @@
           id="bedtime"
           name="bedtime"
           step="2"
-          >
+        >
       </p>
         <label for="cars">What are your favorite brand of cars?</label>
         <select
           name="cars"
           id="cars"
           multiple
-          >
+        >
         <option value="bmw">BMW</option>
         <option value="audi">Audi</option>
         <option value="lada">Lada</option>
@@ -138,25 +138,25 @@
           min="0"
           max="10"
           value="0"
-          >
+        >
       </p>
     </fieldset>
 
-    <fieldset class="fiel">
+    <fieldset>
       <legend>Additional info:</legend>
       <p>
-      <label for="comm">Comments:</label>
+      <label for="comment">Comments:</label>
       <textarea
-        name="comm"
-        id="comm"
+        name="comment"
+        id="comment"
         minlength="2"
         maxlength="30"
-        >
-    </textarea>
+      >
+      </textarea>
       </p>
       <p class="last-paragraph">
-        <label for="recom">Would you recommend us?</label>
-        <select name="recom" id="recom">
+        <label for="recommendation">Would you recommend us?</label>
+        <select name="recommendation" id="recommendation">
           <option>Yes</option>
           <option>No</option>
         </select>
