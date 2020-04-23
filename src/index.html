@@ -2,14 +2,134 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta
+    name="viewport"
+    content="
+      width=device-width,
+      user-scalable=no,
+      initial-scale=1.0,
+      maximum-scale=1.0,
+      minimum-scale=1.0
+    "
+  >
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Form</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>HTML Form</h1>
   <script type="text/javascript" src="./main.js"></script>
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" autocomplete="off" method="POST">
+    <fieldset>
+      <legend>Personal information</legend>
+      <div>
+        <label for="input-surname">Surname:</label>
+        <input id="input-surname" name="input-surname" autocomplete="off">
+      </div>
+      <div>
+        <label for="input-name">Name:</label>
+        <input id="input-name" name="input-name" autocomplete="off">
+      </div>
+      <div>
+        <label for="input-old">How old are You?</label>
+        <input
+          id="input-old"
+          type="number"
+          ame="input-old"
+          value="12"
+          min="10"
+          max="100"
+        >
+      </div>
+      <div>
+        <label for="date-birth">Full date of birth:</label>
+        <input
+          min="1900-01-01"
+          max="2020-01-01"
+          id="date-birth"
+          type="date"
+          name="date-birth"
+          autocomplete="off"
+        >
+      </div>
+      <div>
+        <label for="how-old">I accept the term of the agreement</label>
+        <input type="checkbox" name="how-old" id="how-old">
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Registration</legend>
+      <div>
+        <label for="input-email">E-mail:</label>
+        <input
+          id="input-email"
+          name="input-email"
+          type="email"
+          placeholder="email@example.com"
+          autocomplete="off"
+        >
+      </div>
+      <div>
+        <label for="input-password">Password:</label>
+        <input
+          minlength="6"
+          maxlength="12"
+          id="input-password"
+          name="input-password"
+          type="password"
+          autocomplete="off"
+        >
+      </div>
+    </fieldset>
+    <fieldset >
+      <legend>An interesting fact about you!</legend>
+      <div>
+        <label for="radio-yes">Do you love cats?</label>
+        <input id="radio-yes" name="radio-yes" type="radio">Yes</input>
+        <input id="radio-no" name="radio-no" type="radio">No</input>
+      </div>
+      <div>
+        <label for="set-color">What is your favorite color?</label>
+        <input id="set-color" name="set-color" type="color" autocomplete="off">
+      </div>
+      <div>
+        <label for="input-bedTime">What time do you go to bed?</label>
+        <input id="input-bedTime" name="input-bedTime" type="time" autocomplete="off">
+      </div>
+      <div>
+        <label for="input-car">What are your favorite brand of cars?</label>
+        <select id="input-car" name="input-car" multiple>
+          <option value="bmw">BMW</option>
+          <option value="audi">Audi</option>
+          <option value="lada">Lada</option>
+        </select>
+      </div>
+      <div>
+        <label for="input-rate">How do you rate our work?</label>
+        <input id="input-rate" name="input-rate" type="range" autocomplete="off">
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Aditional info:</legend>
+      <div>
+        <label for="input-comment">Comments:</label>
+        <textarea id="input-comment" name="input-comment" rows="2" cols="20"></textarea>
+      </div>
+      <div>
+        <label for="input-recommend">Would you recommend us?</label>
+        <select name="input-recommend" id="input-recommend" autocomplete="off">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+    </fieldset>
+    <button
+      onsubmit="onSubmit()"
+      type="submit"
+      id="submit-button"
+      name="submit-button"
+    >
+      Submit
+    </button>
+  </form>
 </body>
 </html>
