@@ -1,0 +1,12 @@
+p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.last-element {
+  margin-bottom: 0;
+}
+
+.field-block {
+  margin-bottom: 20px;
+}
