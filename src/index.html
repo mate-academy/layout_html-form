@@ -9,7 +9,151 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>HTML Form</h1>
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post" onsubmit = "onSubmit()">
+
+    <fieldset name="personal-info">
+      <legend>Personal information</legend>
+      <div class="container">
+        <label for="sname">Surname:</label>
+        <input
+          type="text"
+          id="sname"
+          name="sname"
+          autocomplete="off"
+          required
+        >
+      </div>
+
+      <div class="container">
+        <label for="fname">Name:</label>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          autocomplete="off"
+          required
+        >
+      </div>
+
+      <div class="container">
+        <label for="age">How old are You?</label>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          min="1"
+          max="120"
+          value="12"
+        >
+      </div>
+
+      <div class="container">
+        <label for="date-birth">Full date of birth:</label>
+        <input type="date" id="date-birth" name="date-birth">
+      </div>
+
+      <div class="container">
+        <label for="terms">I accept the term of the agreement</label>
+        <input type="checkbox" id="terms" name="terms">
+      </div>
+    </fieldset>
+
+    <fieldset name="registration">
+      <legend>Registration</legend>
+      <div class="container">
+        <label for="email">E-mail:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="email@example.com"
+        >
+      </div>
+
+      <div class="container">
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          minlength="8"
+        >
+      </div>
+    </fieldset>
+
+    <fieldset name="interesting-fact">
+      <legend>An interesting fact about you!</legend>
+      <div class="container">
+        Do you love cats?
+        <input
+          type="radio"
+          id="cats-yes"
+          name="loves-cats"
+          value="Yes"
+        >
+        <label for="cats-yes">Yes</label>
+        <input
+          type="radio"
+          id="cats-no"
+          name="loves-cats"
+          value="No"
+        >
+        <label for="cats-no">No</label>
+      </div>
+
+      <div class="container">
+        <label for="color">What is your favorite color?</label>
+        <input type="color" id="color" name="color">
+      </div>
+
+      <div class="container">
+        <label for="bedtime">What time do you go to bed?</label>
+        <input type="time" id="bedtime" name="bedtime">
+      </div>
+
+      <div class="container">
+        <label for="favcars">What are your favorite brands of cars?</label>
+        <select id="favcars" multiple>
+          <option value="bmw">BMW</option>
+          <option value="audi">Audi</option>
+          <option value="lada">Lada</option>
+        </select>
+      </div>
+
+      <div class="container">
+        <label for="rate-work">How do you rate our work?</label>
+        <input type="range" id="rate-work" name="rate-work">
+      </div>
+    </fieldset>
+
+    <fieldset name="additional-info">
+      <legend>Additional info</legend>
+      <div class="container">
+        <label for="comments">Comments:</label>
+        <textarea
+          name="comments"
+          id="comments"
+          cols="20"
+          rows="2"
+          maxlength="300"
+          autocomplete="off">
+        </textarea>
+      </div>
+
+      <div class="container">
+        <label for="recommend">Would you recommend us?</label>
+        <select id="recommend">
+          <option id="recommend-yes" value="yes">yes</option>
+          <option id="recommend-no" value="no">no</option>
+        </select>
+      </div>
+
+    </fieldset>
+
+    <button type="submit" onsubmit="onSubmit()">Submit</button>
+
+  </form>
   <script type="text/javascript" src="./main.js"></script>
+
 </body>
 </html>
