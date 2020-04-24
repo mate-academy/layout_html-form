@@ -1,0 +1,11 @@
+.form__section {
+  margin-bottom: 20px;
+}
+
+.form__wrapper {
+  margin-bottom: 10px;
+}
+
+.form__wrapper:last-child {
+  margin-bottom: 0;
+}
