@@ -9,7 +9,152 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>HTML Form</h1>
+  <form method="POST" action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+    <fieldset class="box-spacing">
+      <legend>Personal information</legend>
+      <label for="surname">Surname:</label>
+      <input
+        class="input-spacing"
+        type="text"
+        id="surname"
+        name="surname"
+      >
+      <br>
+      <label for="name">Name:</label>
+      <input
+        class="input-spacing"
+        type="text"
+        id="name"
+        name="name"
+      >
+      <br>
+      <label for="age">How old are You?</label>
+      <input
+        class="input-spacing"
+        type="number"
+        id="age"
+        name="age"
+        min="12"
+        max="100"
+        value="12"
+      >
+      <br>
+      <label for="birthday">Full date of birth:</label>
+      <input
+        class="input-spacing"
+        type="date"
+        id="birthday"
+        name="birthday"
+      >
+      <br>
+      <label for="accept-terms">I accept the term of the agreement</label>
+      <input
+        type="checkbox"
+        id="accept-terms"
+        name="accept-terms"
+        required
+      >
+    </fieldset>
+    <fieldset class="box-spacing">
+      <legend>Registration</legend>
+      <label for="email">E-mail:</label>
+      <input
+        placeholder="email@example.com"
+        class="input-spacing"
+        type="email"
+        id="email"
+        name="email"
+      >
+      <br>
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        minlength="8"
+        maxlength="32"
+      ><br>
+    </fieldset>
+    <fieldset class="box-spacing">
+      <legend>An interesting fact about you!</legend>
+      Do you love cats?
+      <input
+        class="input-spacing"
+        type="radio"
+        id="radio-yes"
+        name="radio-cats"
+      >
+      <label for="radio-yes">Yes</label>
+      <input
+        class="input-bigger-spacing"
+        type="radio"
+        id="radio-no"
+        name="radio-cats"
+      >
+      <label for="radio-no">No</label>
+      <br>
+      <label for="favourite-color">What is your favorite color?</label>
+      <input
+        class="input-spacing"
+        type="color"
+        id="favourite-color"
+        name="favourite-color"
+      >
+      <br>
+      <label for="bed-time">What time do you go to bed?</label>
+      <input
+        class="input-spacing"
+        type="time"
+        id="bed-time"
+        name="bed-time"
+        step="2"
+      >
+      <br>
+      <div class="input-spacing">
+        <label for="cars-brand">What are your favorite brand of cars?</label>
+        <select
+          id="cars-brand"
+          name="cars-brand"
+          size="4"
+        >
+          <option value="bmw">BMW</option>
+          <option value="audi">Audi</option>
+          <option value="lada">Lada</option>
+        </select>
+      </div>
+      <label for="work-rating">How do you rate our work?</label>
+      <input
+        type="range"
+        value="0"
+        id="work-rating"
+        name="work rating"
+      >
+    </fieldset>
+    <fieldset class="box-spacing">
+      <legend>Additional info:</legend>
+      <div class="input-spacing">
+        <label for="comment">Comments:</label>
+        <textarea
+          name="comment"
+          id="comment"
+        ></textarea>
+      </div>
+      <label for="would-recommend">Would you recommend us?</label>
+      <select
+        name="would-recommend"
+        id="would-recommend"
+      >
+        <option value="yes">yes</option>
+        <option value="no">no</option>
+      </select>
+    </fieldset>
+    <button
+      type="submit"
+      value="Submit"
+    >
+      Submit
+    </button>
+  </form>
   <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
