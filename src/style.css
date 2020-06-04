@@ -1,0 +1,17 @@
+.blocks {
+  margin-bottom: 20px;
+}
+
+.inputs-fields {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.label-fields {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.radio-inputs {
+  display: inline-block;
+}
