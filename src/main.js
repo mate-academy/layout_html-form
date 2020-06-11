@@ -1,8 +1,9 @@
-'use strict';
+// 'use strict';
 
-const INPUT_BUTTON_TYPES = ['button', 'submit', 'reset'];
+// const INPUT_BUTTON_TYPES = ['button', 'submit', 'reset'];
 
 // eslint-disable-next-line no-unused-vars
+/*
 function onSubmit(event) {
   event.preventDefault();
 
@@ -18,3 +19,4 @@ function onSubmit(event) {
     `Form name: ${form.name}\nForm value: ${JSON.stringify(formValue, null, 4)}`
   );
 }
+*/

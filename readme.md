@@ -1,7 +1,7 @@
 # Frontend practice with html forms
 1. Replace `<your_account>` with your Github username in the links
-    - [DEMO LINK](https://<your_account>.github.io/layout_html-form/) <br>
-    - [TEST REPORT LINK](https://<your_account>.github.io/layout_html-form/report/html_report/)
+    - [DEMO LINK](https://SeiAlek.github.io/layout_html-form/) <br>
+    - [TEST REPORT LINK](https://SeiAlek.github.io/layout_html-form/report/html_report/)
 2. Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/)
 ___
 
@@ -24,7 +24,7 @@ Create HTML page with form. On form submit send form data to `https://mate-acade
   - [ ] time
   - [ ] color
   - [ ] date
-- Form should have textarea and select elements.  
+- Form should have textarea and select elements.
 - You should use every of this attribute at least one time
   - [ ] required
   - [ ] min
