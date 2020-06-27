@@ -1,0 +1,32 @@
+fieldset {
+  margin-bottom: 20px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+#check {
+  margin-bottom: 4px;
+}
+
+#password {
+  margin-bottom: 0;
+}
+
+#range {
+  margin-bottom: 4px;
+  margin-top: 12px;
+}
+
+#reco {
+  margin-top: 10px;
+}
+
+#radio {
+  margin-bottom: 14px;
+}
+
+#age {
+  padding-right: 7px;
+}
