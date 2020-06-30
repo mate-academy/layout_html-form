@@ -3,8 +3,8 @@
 
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
+       minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
@@ -12,82 +12,97 @@
 
   <body>
 
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST"
-    id="this-form">
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+          method="POST" id="this-form">
       <fieldset>
         <legend>Personal information</legend>
-        <label for="surname" class="field">Surname:
+        <label for="surname"
+               class="field">
+          Surname:
           <input type="text" id="surname"
-          autocomplete="off">
+                 autocomplete="off">
         </label>
-        <label for="name" class="field">Name:
+        <label for="name" class="field">
+          Name:
           <input type="text" id="name"
-          autocomplete="off">
+                 autocomplete="off">
         </label>
-        <label for="age" class="field">How old are You?
+        <label for="age" class="field">
+          How old are You?
           <input type="number" id="age"
-          value="12" min="1"
-          max="130">
+                 value="12" min="1"
+                 max="130">
         </label>
-        <label for="birthdate" class="field">Full date of birth:
+        <label for="birthdate" class="field">
+          Full date of birth:
           <input type="date" id="birthdate">
         </label>
-        <label for="agreement-accept" class="last">I accept the term of the agreement
+        <label for="agreement-accept" class="last">
+          I accept the term of the agreement
           <input type="checkbox" id="agreement-accept"
-          required>
+                 required>
         </label>
 
       </fieldset>
       <fieldset>
         <legend>Registration</legend>
-        <label for="email" class="field">E-mail:
+        <label for="email" class="field">
+          E-mail:
           <input type="email" id="email"
-          placeholder="email@example.com">
+                 placeholder="email@example.com">
         </label>
-        <label for="password" class="last">Password:
+        <label for="password" class="last">
+          Password:
           <input type="password" id="password"
-          minlength="5" maxlength="20">
+                 minlength="5" maxlength="20">
         </label>
       </fieldset>
 
       <fieldset>
         <legend>An interesting fact about you!</legend>
-        <label for="cats-yes" class="field">Do you love cats?
+        <label for="cats-yes" class="field">
+          Do you love cats?
           <input type="radio" name="cats"
-          id="cats-yes" value="yes">
+                 id="cats-yes" value="yes">
           Yes
           <label for="cats-no">
             <input type="radio" name="cats"
-            id="cats-no" value="no">
+                   id="cats-no" value="no">
             No
           </label>
         </label>
-        <label for="favorite-color" class="field">What is your favorite color?
+        <label for="favorite-color" class="field">
+          What is your favorite color?
           <input type="color" id="favorite-color">
         </label>
-        <label for="bed-time" class="field">What time do you go to bed?
+        <label for="bed-time" class="field">
+          What time do you go to bed?
           <input type="time" id="bed-time"
-          step="2">
+                 step="2">
         </label>
-        <label for="favorite-car" class="field">What are your favorite brand of cars?
+        <label for="favorite-car" class="field">
+          What are your favorite brand of cars?
           <select size="4" id="favorite-car"
-          multiple>
+                  multiple>
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
             <option value="lada">Lada</option>
           </select>
         </label>
-        <label for="assess-work" class="last">How do you rate our work?
+        <label for="assess-work" class="last">
+          How do you rate our work?
           <input type="range" id="assess-work">
         </label>
       </fieldset>
 
       <fieldset>
         <legend>Additional info:</legend>
-        <label for="comment" class="field">Comments:
+        <label for="comment" class="field">
+          Comments:
           <textarea name="comment" id="comment"></textarea>
         </label>
-        <label for="recommendation" class="last">Would you recommend us?
+        <label for="recommendation" class="last">
+          Would you recommend us?
           <select name="recommendation" id="recommendation">
             <option value="yes">Yes</option>
             <option value="no">No</option>
@@ -98,9 +113,11 @@
     </form>
 
     <button type="submit" form="this-form"
-    onsubmit="onSubmit()" value="submit">Submit
+            onsubmit="onSubmit()" value="submit">
+      Submit
     </button>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 
 </html>
+
