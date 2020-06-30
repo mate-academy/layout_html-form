@@ -1,0 +1,11 @@
+fieldset {
+  margin-bottom: 20px;
+}
+
+.box-between {
+  margin-bottom: 10px;
+}
+
+.box-between:last-child {
+  margin-bottom: 0;
+}
