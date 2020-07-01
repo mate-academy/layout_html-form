@@ -1,15 +1,177 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Form</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      onsubmit="onSubmit()"
+    >
+      <fieldset class="interview_bolck">
+        <legend>Personal information</legend>
+        <div class="entry-field">
+          <label for="surname">Surname:</label>
+          <input
+            type="text"
+            name="Surname"
+            id="surname"
+            autocomplete="off"
+          >
+        </div>
+        <div class="entry-field">
+          <label for="Name">Name:</label>
+          <input
+            type="text"
+            name="Name"
+            id="Name"
+            required autocomplete="off"
+          >
+        </div>
+        <div class="entry-field">
+          <label for="adge">How old are You?</label>
+          <input
+            min="0"
+            max="100"
+            type="number"
+            name="Adge"
+            id="adge"
+            value="12"
+          >
+        </div>
+        <div class="entry-field">
+          <label for="birth">Full date of birth:</label>
+          <input
+            type="date"
+            name="Birthday"
+            id="birth"
+          >
+        </div>
+        <div class="entry-field">
+          <label for="agraccept">I accept the term of the agreement</label>
+          <input
+            type="checkbox"
+            name="Accept agreement"
+            id="agraccept"
+          >
+        </div>
+      </fieldset>
+
+      <fieldset class="interview_bolck">
+        <legend>Registration</legend>
+        <div class="entry-field">
+          <label for="mail">E-mail:</label>
+          <input
+            type="email"
+            name="E-mail"
+            id="mail"
+            placeholder="email@example.com"
+            required
+            autocomplete="off"
+          >
+        </div>
+        <div class="entry-field">
+          <label for="pass">Password:</label>
+          <input
+            type="password"
+            name="Password"
+            id="pass"
+          >
+        </div>
+      </fieldset>
+
+      <fieldset class="interview_bolck">
+        <legend>An interesting fact about you!</legend>
+        <div class="entry-field">
+          <span>Do you love cats?</span>
+          <input
+            type="radio"
+            name="Love cats"
+            id="yradio"
+          >
+          <label for="yradio">Yes</label>
+          <input
+            type="radio"
+            name="Love cats"
+            id="nradio"
+          >
+          <label for="nradio">No</label>
+        </div>
+        <div class="entry-field">
+          <label for="color">What is your favorite color?</label>
+          <input
+            type="color"
+            name="Favorite color"
+            id="color"
+          >
+        </div>
+        <div class="entry-field">
+          <label for="sleeptime">What time do you go to bed?</label>
+          <input
+            type="time"
+            name="Sleep time"
+            id="sleeptime"
+          >
+        </div>
+        <div class="entry-field">
+          <label for="cars">What are your favorite brand of cars?</label>
+          <select
+            id="cars"
+            name="Favorite brand of cars"
+            multiple
+            size="4"
+          >
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </div>
+        <div class="entry-field">
+          <label for="rate">How do you rate our work?</label>
+          <input
+            type="range"
+            name="Rate our work"
+            id="rate"
+            value="0"
+            min="1"
+            max="10"
+          >
+        </div>
+      </fieldset>
+
+      <fieldset class="interview_bolck">
+        <legend>Additional info:</legend>
+        <div class="entry-field">
+          <label for="comment">Coments:</label>
+          <textarea
+            name="Coments"
+            id="comment"
+            minlength="10"
+            maxlength="100"
+            autocomplete="off"
+          >
+          </textarea>
+        </div>
+        <div class="entry-field">
+          <label for="recom">Would you recommend us?</label>
+          <select name="Recommend" id="recom">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </div>
+      </fieldset>
+      <input
+        type="submit"
+        id="submit"
+        value="Submit"
+      >
+    </form>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
 </html>
