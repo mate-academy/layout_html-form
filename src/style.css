@@ -1,0 +1,16 @@
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+.inline {
+  display: inline;
+}
+
+.reset-indent {
+  margin: 0;
+}
