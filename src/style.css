@@ -1,0 +1,12 @@
+div {
+  margin-bottom: 20px;
+}
+
+fieldset > p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+fieldset > p:last-child {
+  margin-bottom: 0;
+}
