@@ -1,0 +1,11 @@
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field__element {
+  margin-bottom: 10px;
+}
+
+.form-field .form-field__element:last-child {
+  margin-bottom: 0;
+}
