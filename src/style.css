@@ -1,0 +1,13 @@
+.box {
+  margin-bottom: 20px;
+}
+
+.form-line {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.last-line-in-box {
+  margin-top: 0;
+  margin-bottom: 0;
+}
