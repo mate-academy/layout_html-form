@@ -15,25 +15,27 @@
 
       <fieldset class="box">
         <legend>Personal information</legend>
-        <p  class="input">
+        <p class="form-line">
           <label for="surname">Surname:&nbsp;
             <input
-            type="text"
-            id="surname"
-            name="surname"
+              type="text"
+              id="surname"
+              name="surname"
+              required
             >
           </label>
         </p>
-        <p class="input">
+        <p class="form-line">
           <label for="name" >Name:&nbsp;
             <input
               type="text"
               id="name"
               name="name"
+              required
             >
           </label>
         </p>
-        <p class="input">
+        <p class="form-line">
           <label for="how-old">How old are You?&nbsp;
           </label>
           <input
@@ -45,7 +47,7 @@
             value="12"
           >
         </p>
-        <p class="input">
+        <p class="form-line">
           <label for="date">Full date of birth:&nbsp;
           </label>
           <input
@@ -59,19 +61,21 @@
           <input
             type="checkbox"
             id="accept"
-            name="accept">
+            name="accept"
+          >
         </p>
       </fieldset>
 
       <fieldset class="box">
         <legend>Registration</legend>
-        <p class="input">
+        <p class="form-line">
           <label for="mail">E-mail:
             <input
               type="email"
               id="mail"
               name="mail"
               placeholder="email@example.com"
+              required
             >
           </label>
         </p>
@@ -81,6 +85,9 @@
               type="password"
               id="pass"
               name="password"
+              minlength="6"
+              maxlength="10"
+              required
             >
           </label>
         </p>
@@ -88,7 +95,7 @@
 
       <fieldset class="box">
         <legend>An interesting fact about you!</legend>
-        <p class="input">
+        <p class="form-line">
           <label for="y">Do you love cats?&nbsp;
           </label>
           <input
@@ -108,7 +115,7 @@
           <label for="n">&nbsp;No
           </label>
         </p>
-        <p class="input">
+        <p class="form-line">
           <label for="color">What is your favorite color?&nbsp;
           </label>
           <input
@@ -117,7 +124,7 @@
             name="color"
           >
         </p>
-        <p class="input">
+        <p class="form-line">
           <label for="time">What time do you go to bed?&nbsp;
           </label>
           <input
@@ -127,7 +134,7 @@
             step="1"
           >
         </p>
-        <p class="input">
+        <p class="form-line">
           <label for="cars">What are your favorite brand of cars?&nbsp;
           </label>
           <select
@@ -158,7 +165,7 @@
 
       <fieldset class="box">
         <legend>Additional info:</legend>
-        <p class="input">
+        <p class="form-line">
           <label for="message">Comments:&nbsp;
           </label>
           <textarea name="message" id="message">
