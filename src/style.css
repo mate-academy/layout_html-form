@@ -1,0 +1,23 @@
+.form-fildset {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.input-with-margin {
+  margin-bottom: 10px;
+}
+
+.input-with-mg-top {
+  margin-top: 10px;
+}
+
+.textarea {
+  height: 30px;
+  width: 180px;
+  margin: 0;
+}
+
+.range {
+  margin-bottom: 0;
+  margin-top: 12px;
+}
