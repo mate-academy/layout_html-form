@@ -1,0 +1,11 @@
+.fs-block {
+  margin-bottom: 20px;
+}
+
+.block {
+  margin-bottom: 10px;
+}
+
+.fs-block .block:last-child {
+  margin-bottom: 0;
+}
