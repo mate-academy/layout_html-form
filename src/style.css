@@ -1,0 +1,11 @@
+.field {
+  margin-bottom: 20px;
+}
+
+.contforinput {
+  margin-bottom: 10px;
+}
+
+.contforinput:last-child {
+  margin-bottom: 0;
+}
