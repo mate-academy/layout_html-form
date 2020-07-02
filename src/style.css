@@ -1,0 +1,15 @@
+input {
+  margin-bottom: 10px;
+}
+
+.box {
+  margin-bottom: 20px;
+}
+
+.margined {
+  margin-bottom: 10px;
+}
+
+.without-margin {
+  margin-bottom: 0;
+}
