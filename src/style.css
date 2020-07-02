@@ -1,0 +1,16 @@
+.block {
+  margin-bottom: 20px;
+}
+
+.form-input,
+.field-container {
+  margin-bottom: 10px;
+}
+
+.last {
+  margin-bottom: 0;
+}
+
+.pixel-perfect {
+  margin-top: 4px;
+}
