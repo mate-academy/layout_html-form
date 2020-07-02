@@ -1,0 +1,11 @@
+.block {
+  margin-bottom: 10px;
+}
+
+.box {
+  margin-bottom: 20px;
+}
+
+.block:last-child {
+  margin-bottom: 0;
+}
