@@ -1,0 +1,22 @@
+.personal-information-block {
+  margin-bottom: 20px;
+  padding-bottom: 4px;
+}
+
+.blocks {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+.color-element {
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.range-element {
+  margin-bottom: 14px;
+}
+
+.field-element {
+  margin-bottom: 10px;
+}
