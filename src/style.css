@@ -1,0 +1,16 @@
+.personal_info {
+  margin-bottom: 20px;
+}
+
+.info_form {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.info_form:last-child {
+  margin-bottom: 0;
+}
+
+.radio {
+  display: inline-block;
+}
