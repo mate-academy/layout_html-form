@@ -10,9 +10,9 @@
   </head>
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <fieldset class="first box">
+      <fieldset class="first-fieldset">
         <legend>Personal information</legend>
-        <div class="first highest">
+        <div class="highest input">
           <label for="surname">
             Surname:
             <input type="text" name="surname"
@@ -21,7 +21,7 @@
           </label>
         </div>
         </div>
-        <div class="first high">
+        <div class="high input">
           <label for="name">
             Name:
             <input type="text" name="name"
@@ -29,7 +29,7 @@
             maxlength="20" required>
           </label>
         </div>
-        <div class="first middle">
+        <div class="middle input">
           <label for="old">
             How old are you?
             <input type="number" name="old"
@@ -37,14 +37,14 @@
             min="1" max="200">
           </label>
         </div>
-        <div class="forth low">
+        <div class="low input">
           <label for="date">
             Full date of birth:
             <input type="date" name="date"
             id="date">
           </label>
         </div>
-        <div class="fifth lowest">
+        <div class="lowest input">
           <label for="agree">
             I accept the term of the agreement
             <input type="checkbox" name="agree"
@@ -54,7 +54,7 @@
       </fieldset>
       <fieldset class="second fieldset">
         <legend>Registration</legend>
-        <div class="second highest">
+        <div class="highest input">
           <label for="mail">
             E-mail:
             <input type="email" name="mail"
@@ -62,7 +62,7 @@
             required>
           </label>
         </div>
-        <div class="second lowest">
+        <div class="lowest input">
           <label for="password">
             Password
             <input type="password" name="password"
@@ -72,7 +72,7 @@
       </fieldset>
       <fieldset class="third fieldset">
         <legend>An interesting fact about you!</legend>
-        <div class="third highest">
+        <div class="highest input">
           Do you love cats?
           <input type="radio" name="cats"
           id="yes" value="yes"
@@ -82,21 +82,21 @@
           id="no" value="no">
           <label for="no">No</label>
         </div>
-        <div class="third high">
+        <div class="high input">
           <label for="color">
             What is your favorite color?
             <input type="color" name="color"
             id="color">
           </label>
         </div>
-        <div class="third middle">
+        <div class="middle input">
           <label for="time">
             What time do you go to bed?
             <input type="time" name="time"
             id="time" step="3">
           </label>
         </div>
-        <div class="third low">
+        <div class="low input">
           <label for="cars">
             What are your favorite brand of cars?
             <select name="cars" id="cars"
@@ -108,7 +108,7 @@
             </select>
           </label>
         </div>
-        <div class="fifth lowest">
+        <div class="lowest input">
           <label for="rate">
             How do you rate our work?
             <input type="range" name="rate"
@@ -118,15 +118,15 @@
           </label>
         </div>
       </fieldset>
-      <fieldset class="second fieldset">
+      <fieldset class="four fieldset">
         <legend>Additional info</legend>
-        <div class="four highest">
+        <div class="highest input">
           <label for="comment">
             Comments:
             <textarea name="comment" id="comment"></textarea>
           </label>
         </div>
-        <div class="four lowest">
+        <div class="lowest input">
           <label for="recommend">
             Would you recommend us?
             <select name="recommend" id="recommend">
