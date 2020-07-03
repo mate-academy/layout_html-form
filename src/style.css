@@ -1,0 +1,15 @@
+div {
+  margin-bottom: 10px;
+}
+
+.box {
+  margin-bottom: 20px;
+}
+
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.lowest {
+  margin-bottom: 0;
+}
