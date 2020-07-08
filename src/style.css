@@ -1,0 +1,12 @@
+fieldset {
+  margin-bottom: 20px;
+}
+
+.field {
+  margin-bottom: 10px;
+
+}
+
+.last {
+  margin-bottom: 0;
+}
