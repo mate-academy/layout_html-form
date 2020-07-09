@@ -1,0 +1,17 @@
+.input-field,
+.radiobutton {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.radiobutton .input-field {
+  display: inline;
+}
+
+.input {
+  margin-bottom: 20px;
+}
+
+.input :last-child {
+  margin-bottom: 0;
+}
