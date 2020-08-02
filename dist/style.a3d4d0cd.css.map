@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA,IACE,eACF,CAEA,kBACE,QACF,CAEA,YACE,kBACF","file":"style.a3d4d0cd.css","sourceRoot":"../src","sourcesContent":["div {\n  margin: 10px 0 0;\n}\n\ndiv:first-of-type {\n  margin: 0;\n}\n\n.info-block {\n  margin-bottom: 20px;\n}\n"]}
