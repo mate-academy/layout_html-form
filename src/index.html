@@ -2,14 +2,97 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta  name="viewport"
+        content="width=device-width, user-scalabel=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Form</title>
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-  <h1>HTML Form</h1>
+<body class="body">
+<!--git test commit -->
   <script type="text/javascript" src="./main.js"></script>
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST" target="blank" onsubmit="onSubmit()">
+    <fieldset class="field">
+      <legend>Personal information</legend>
+      <label class="item-field" for="surname">
+        <span>Surname:</span>
+        <input id="surname"  name="surname" type="text" required autocomplete="off">
+      </label>
+      <label class="item-field" for="name">
+        <span>Name:</span>
+        <input id="name" name="name" type="text" required autocomplete="off">
+      </label>
+      <label class="item-field" for="age">
+        <span>How old are You?</span>
+        <input id="age" name="age" type="number" max="100" min="12"  value="12" required>
+      </label>
+      <label class="item-field" for="birthday">
+        <span>Full date of birth:</span>
+        <input id="birthday" name="birthday" type="date">
+      </label>
+      <label class="item-field" for="agreement">
+        <span>I accept the term of agreement:</span>
+        <input id="agreement" name="agreement" type="checkbox" required>
+      </label>
+    </fieldset>
+    <fieldset class="field">
+      <legend>Registration</legend>
+      <label class="item-field" for="email">
+        <span>E-mail:</span>
+        <input id="email" name="email" type="email" placeholder="email@example.com">
+      </label>
+      <label class="item-field" for="password">
+        <span>Password:</span>
+        <input id="password" name="password" type="password" minlength="6" step="2" maxlength="16">
+      </label>
+    </fieldset>
+    <fieldset class="field">
+      <legend>An interesting fact about you!</legend>
+      <span>Do you love cats?</span>
+      <label class="item-field cat" for="catYes">
+        <input id="catYes" name="cat" type="radio">
+        <span>Yes</span>
+      </label>
+      <label class="item-field cat" for="catNo">
+        <input id="catNo" name="cat" type="radio">
+        <span>No</span>
+      </label>
+      <label class="item-field" for="color">
+        <span>What is your favorite color?</span>
+        <input id="color" name="color" type="color">
+      </label>
+      <label class="item-field" for="time">
+        <span>What time do you go to bed?</span>
+        <input id="time" name="time" type="time" step="1">
+      </label>
+      <label class="item-field" for="cars">
+        <span>What is your favorite brand of cars?</span>
+        <select id="cars" name="cars" multiple>
+          <option value="BMV">BMV</option>
+          <option value="Audy">Audy</option>
+          <option value="Lada">Lada</option>
+        </select>
+      </label>
+      <label class="item-field" for="rate">
+        <span>How do you rate our work?</span>
+        <input id="rate" name="rate" type="range" min="1" max="10" value="0">
+      </label>
+    </fieldset>
+    <fieldset class="field">
+      <legend>Additional info:</legend>
+      <label class="item-field" for="comments">
+        <span>Comments:</span>
+        <textarea rows="2" cols="20" id="comments" name="comments"></textarea>
+      </label>
+      <label class="item-field" for="recommend">
+        <span>Would you recommend us?</span>
+        <select name="recommend" id="recommend">
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </label>
+    </fieldset>
+    <button type="submit" >Submit</button>
+  </form>
 </body>
 </html>

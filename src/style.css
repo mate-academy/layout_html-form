@@ -1,0 +1,16 @@
+.field {
+  margin-bottom: 20px;
+}
+
+.item-field {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.item-field:last-child {
+  margin-bottom: 0;
+}
+
+.cat {
+  display: inline-block;
+}
