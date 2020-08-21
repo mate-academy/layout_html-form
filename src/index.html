@@ -2,14 +2,134 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta
+    name="viewport"
+    content="
+      width=device-width,
+      user-scalable=no,
+      initial-scale=1.0,
+      maximum-scale=1.0,
+      minimum-scale=1.0
+    "
+  >
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Form</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>HTML Form</h1>
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post" autocomplete="off">
+    <fieldset class="indents">
+      <legend>Personal information</legend>
+      <p>
+        <label for="surname">Surname:</label>
+        <input type="text" name="surname" id="surname">
+      </p>
+      <p>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+      </p>
+      <p>
+        <label for="age">How old are You?</label>
+        <input
+          type="number"
+          name="age"
+          id="age"
+          min="1"
+          max="200"
+          value="12"
+        >
+      </p>
+      <p>
+        <label for="date">Full date of birth:</label>
+        <input type="date" name="date" id="date">
+      </p>
+      <p class="last-indent">
+        <label for="accept">I accept the term of the agreement</label>
+        <input type="checkbox" name="accept" id="accept">
+      </p>
+    </fieldset>
+    <fieldset class="indents">
+      <legend>Registration</legend>
+      <p>
+        <label for="email">E-mail:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="email@example.com"
+          minlength="10"
+          maxlength="20"
+        >
+      </p>
+      <p class="last-indent">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+      </p>
+    </fieldset>
+    <fieldset class="indents">
+      <legend>An interesting fact about you!</legend>
+      <p>
+        <label>
+          Do you love cats?
+          <input type="radio" name="cats" value="yes">Yes
+        </label>
+        <label>
+          <input type="radio" name="cats" value="no">No
+        </label>
+      </p>
+      <p>
+        <label for="fav-color">What is your favorite color?</label>
+        <input type="color" name="fav-color" id="fav-color">
+      </p>
+      <p>
+        <label for="bed">What time do you go to bed?</label>
+        <input type="time" name="bed" id="bed">
+      </p>
+      <p>
+        <label for="cars">What are your favorite brand of cars?</label>
+        <select multiple id="cars" name="cars">
+          <option>BMW</option>
+          <option>Audi</option>
+          <option>Lada</option>
+        </select>
+      </p>
+      <p class="last-indent">
+        <label for="range">How do you rate our work?</label>
+        <input
+          type="range"
+          id="range"
+          name="range"
+          min="1"
+          max="10"
+          value="1"
+          step="1"
+        >
+      </p>
+    </fieldset>
+    <fieldset class="indents">
+      <legend>Additional info:</legend>
+      <p>
+        <label for="comments">Comments:</label>
+        <textarea type="text" name="comments" id="comments"></textarea>
+      </p>
+      <p class="last-indent">
+        <label for="recommend">Would you recommend us?</label>
+        <select id="recommend" name="recommend">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </p>
+    </fieldset>
+  </form>
+  <p>
+    <input
+      type="submit"
+      name="but"
+      value="Submit"
+      onsubmit="onSubmit()"
+    >
+  </p>
   <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
