@@ -1,15 +1,203 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Form</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <script type="text/javascript" src="./main.js"></script>
+    <form action="https://" onsubmit="onSubmit()">
+      <fieldset class="elevation_block">
+        <legend>Personal information</legend>
+        <div class="elevation_form">
+          <label for="Surname" class="labelblock">
+            Surname:
+            <input
+              autocomplete="off"
+              type="text"
+              id="Surname"
+              name="Surname"
+            >
+          </label>
+        </div>
+        <div class="elevation_form">
+          <label for="Name" class="labelblock">
+            Name:
+            <input
+              autocomplete="off"
+              type="text"
+              id="Name"
+              name="Name"
+            >
+          </label>
+        </div>
+        <div class="elevation_form">
+          <label for="Age" class="labelblock">
+            How old are You?
+            <input
+              min="1"
+              max="999"
+              type="number"
+              name="Age"
+              value="12"
+              id="Age"
+            >
+          </label>
+        </div>
+        <div class="elevation_form">
+          <label for="date" class="labelblock">
+            Full date of birth:
+            <input
+              type="date"
+              id="date"
+              name="date"
+            >
+          </label>
+        </div>
+        <div class="floor">
+          <label for="terms" class="labelblock">
+            I accept the term of the agreement
+            <input
+              type="checkbox"
+              id="terms"
+              name="terms">
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="elevation_block">
+        <legend>Registration</legend>
+        <div class="elevation_form">
+          <label for="email" class="labelblock">
+            E-mail:
+            <input
+              autocomplete="off"
+              required
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@example.com"
+            >
+          </label>
+        </div>
+        <div class="floor">
+          <label for="password" class="labelblock">
+            Password:
+            <input
+              autocomplete="off"
+              required
+              minlength="6"
+              maxlength="16"
+              type="password"
+              id="password"
+              name="password"
+            >
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="elevation_block">
+        <legend>An interesting fact about you!</legend>
+        <div class="elevation_form">
+          <label for="cats" class="labelblock">
+            Do you love cats?
+            <input
+              type="radio"
+              id="cats"
+              name="cats"
+              value="Yes"
+            >
+            Yes
+            <input
+              type="radio"
+              name="cats"
+              value="No"
+            >
+            No
+          </label>
+        </div>
+        <div class="elevation_form">
+          <label for="color" class="labelblock">
+            What is your favorite color?
+            <input
+              type="color"
+              id="color"
+              name="color"
+            >
+          </label>
+        </div>
+        <div class="elevation_form">
+          <label for="time" class="labelblock">
+            What time do you go to bed?
+            <input
+              type="time"
+              id="time"
+              name="time"
+            >
+          </label>
+        </div>
+        <div class="elevation_form">
+          <label for="cars" class="labelblock">
+            What are your favorite brand of cars?
+            <select
+              multiple
+              id="cars"
+              name="cars"
+              size="4">
+              <option value="bmw">BMW</option>
+              <option value="audi">Audi</option>
+              <option value="lada">Lada</option>
+              <option value="lada"></option>
+            </select>
+          </label>
+        </div>
+        <div class="floor">
+          <label for="rate" class="labelblock">
+            How do you rate our work?
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="1"
+              id="rate"
+              name="rate"
+            >
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="elevation_block">
+        <legend>Additional info:</legend>
+        <div class="elevation_form">
+          <label for="comments" class="labelblock">
+            Comments:
+            <textarea
+              autocomplete="off"
+              name="comments"
+              id="comments"
+            >
+            </textarea>
+          </label>
+        </div>
+        <div class="floor">
+          <label for="recommend" class="labelblock">
+            Would you recommend us?
+            <select id="recommend" name="recommend">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+          </label>
+        </div>
+      </fieldset>
+      <label for="submit" class="labelblock">
+        <input
+          type="submit"
+          value="Submit"
+          name="submit"
+          id="submit"
+        >
+      </label>
+    </form>
+  </body>
 </html>
