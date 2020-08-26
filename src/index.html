@@ -10,7 +10,10 @@
     <link rel="icon" href="images\good-job.svg">
   </head>
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="POST"
+    >
       <fieldset class="fieldset">
         <legend>Personal inormation:</legend>
         <label for="surname">
@@ -21,7 +24,8 @@
             id="surname"
             name="surname"
             maxlength="20"
-            autocomplete="off">
+            autocomplete="off"
+          >
         </label>
         <br>
         <label for="name">
@@ -32,7 +36,8 @@
             id="name"
             name="name"
             required
-            autocomplete="off">
+            autocomplete="off"
+          >
         </label>
         <br>
         <label for="age">
@@ -43,8 +48,9 @@
             type="number"
             name="age"
             value="12"
-             min="10"
-             max="150">
+            min="10"
+            max="150"
+          >
         </label>
         <br>
         <label for="date">
@@ -53,7 +59,8 @@
             class="input"
             id="date"
             type="date"
-            name="birthdate">
+            name="birthdate"
+          >
         </label>
         <br>
         <label for="accept">
@@ -61,10 +68,11 @@
           <input
             id="accept"
             type="checkbox"
-            name="accept">
+            name="accept"
+          >
         </label>
       </fieldset>
-      <fieldset  class="fieldset">
+      <fieldset class="fieldset">
         <legend>Registration:</legend>
         <label for="mail">
           E-mail:
@@ -73,7 +81,8 @@
             id="mail"
             type="email"
             name="mail"
-            placeholder="email@example.com">
+            placeholder="email@example.com"
+          >
         </label>
         <br>
         <label for="password">
@@ -82,7 +91,8 @@
             type="password"
             name="password"
             id="password"
-            minlength="8">
+            minlength="8"
+          >
         </label>
       </fieldset>
       <fieldset class="fieldset">
@@ -93,13 +103,15 @@
             type="radio"
             id="yes"
             name="lovecats"
-            value="yes">
+            value="yes"
+          >
           <label for="yes">Yes</label>
           <input
             type="radio"
             id="no"
             name="lovecats"
-            value="no">
+            value="no"
+          >
           <label for="no">No</label>
         </div>
         <label for="color">
@@ -109,7 +121,8 @@
             class="input"
             type="color"
             name="color"
-            value="black">
+            value="black"
+          >
         </label>
         <br>
         <label for="timegotobed">
@@ -119,7 +132,8 @@
             type="time"
             name="time-go-to-bed"
             id="timegotobed"
-            step="3">
+            step="3"
+          >
         </label>
         <div class="input">
           <label for="cars">
@@ -128,7 +142,8 @@
               id="cars"
               name="cars"
               size="4"
-              multiple>
+              multiple
+            >
               <option value="bmw">BMW</option>
               <option value="audi">Audi</option>
               <option value="lada">Lada</option>
@@ -141,7 +156,8 @@
             id="rate"
             type="range"
             name="workrate"
-            value="0">
+            value="0"
+          >
         </label>
       </fieldset>
       <fieldset  class="fieldset">
@@ -152,7 +168,8 @@
             class="input"
             id="comments"
             name="comments"
-            autocomplete="off">
+            autocomplete="off"
+          >
           </textarea>
         </label>
         <br>
@@ -160,7 +177,8 @@
           Would you recommend us?
           <select
             name="recommend"
-            id="recommend">
+            id="recommend"
+          >
             <option value="yes">yes</option>
             <option value="audi">no</option>
           </select>
@@ -169,7 +187,8 @@
       <input
         type="submit"
         value="Submit"
-        onsubmit="onSubmit()">
+        onsubmit="onSubmit()"
+      >
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
