@@ -1,0 +1,11 @@
+.questions {
+  margin-bottom: 10px;
+}
+
+.blocks {
+  margin-bottom: 20px;
+}
+
+.blocks .questions:last-child {
+  margin: 0;
+}
