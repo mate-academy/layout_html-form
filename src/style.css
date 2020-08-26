@@ -1,0 +1,16 @@
+.field {
+  margin-bottom: 20px;
+}
+
+.input {
+  margin-bottom: 10px;
+}
+
+.field .input:last-child {
+  margin: 0;
+}
+
+#age {
+  height: 15px;
+  width: 65px;
+}
