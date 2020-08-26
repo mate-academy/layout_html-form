@@ -1,0 +1,15 @@
+.margin10 {
+  margin-bottom: 10px;
+}
+
+.margin20 {
+  margin-bottom: 20px;
+}
+
+.margin10:last-child {
+  margin-bottom: 0;
+}
+
+.margin20:last-child {
+  margin-bottom: 0;
+}
