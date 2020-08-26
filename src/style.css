@@ -1,0 +1,11 @@
+.Fields_block {
+  margin-bottom: 20px;
+}
+
+.Field_block {
+  margin-bottom: 10px;
+}
+
+fieldset div:last-child {
+  margin-bottom: 0;
+}
