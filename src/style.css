@@ -1,0 +1,15 @@
+.wrapper {
+  margin-bottom: 10px;
+}
+
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.fieldset .wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.input-for-resize {
+  width: 65px;
+}
