@@ -1,0 +1,11 @@
+.forms {
+  margin-bottom: 20px;
+}
+
+.myBlocks {
+  margin-bottom: 10px;
+}
+
+fieldset .myBlocks:last-child {
+  margin-bottom: 0;
+}
