@@ -1,0 +1,19 @@
+fieldset {
+  margin-bottom: 20px;
+}
+
+.main_form fieldset {
+  display: flex;
+}
+
+fieldset :last-child {
+  margin-bottom: auto;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+#radio_box {
+  margin-bottom: 10px;
+}
