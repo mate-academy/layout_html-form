@@ -1,0 +1,15 @@
+fieldset div:last-child {
+  margin-bottom: 0;
+}
+
+.main {
+  border: black solid 1px;
+}
+
+.fieldset-block {
+  margin-bottom: 20px;
+}
+  
+.block {
+  margin-bottom: 10px;
+}
