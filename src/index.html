@@ -1,15 +1,132 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Form</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <form>
+      <fieldset class="field">
+        <legend>Personal information</legend>
+
+        <div class="input">
+          <label for="surname">Surname:
+            <input id="surname" type="text">
+          </label>
+        </div>
+
+        <div class="input">
+          <label for="name">Name:
+            <input id="name" type="text"
+            maxlength="30">
+          </label>
+        </div>
+
+        <div class="input">
+          <label for="age" class="input">How old are You?
+            <input id="age" type="number"
+            value="12" min="12"
+            max="100">
+          </label>
+        </div>
+
+        <div class="input">
+          <label for="birthday" class="input">Full date of birth:
+            <input id="birthday" type="date">
+          </label>
+        </div>
+
+        <div>
+          <label for="accepting" class="input">
+              I accept the term of the agreement <input id="accepting" type="checkbox">
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>Registration</legend>
+
+        <div class="input">
+          <label for="email" class="input">E-mail:
+            <input id="email" type="email"
+            placeholder="email@example.com">
+          </label>
+        </div>
+
+        <div>
+          <label for="password" class="input">Password:
+            <input id="password" type="password"
+            minlength="10">
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>An interesting fact about you!</legend>
+
+        <div class="input">
+          <span>Do you lave cats?</span>
+          <input type="radio" id="yes"
+          name="love_cats" value="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" id="no"
+          name="love_cats" value="no">
+          <label for="no">No</label>
+        </div>
+
+        <div class="input">
+          <label for="color" class="input">What is your favorite color?
+            <input id="color" type="color">
+          </label>
+        </div>
+
+        <div class="input">
+          <label for="time" class="input">What time do you go to bed?
+            <input id="time" type="time">
+          </label>
+        </div>
+
+        <div class="input">
+          <label for="cars">What are your favorite brand of cars?</label>
+          <select
+            id="cars"
+            name="cars"
+            multiple>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="rate">How do you rate our work?</label>
+          <input type="range" id="rate"
+          name="rate">
+        </div>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>Additional info:</legend>
+
+        <div class="input">
+          <label for="comment">Comments:</label>
+          <textarea id="comment" name="comment"></textarea>
+        </div>
+
+        <div>
+          <label for="recommend">Would you recommend us?</label>
+          <select id="recommend" name="recommend">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <button type="submit" onsubmit="onSubmit()">Submit</button>
+    </form>
+  </body>
 </html>
