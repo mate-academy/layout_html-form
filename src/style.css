@@ -1,0 +1,16 @@
+.input-block {
+  display: block;
+  margin: 10px 0 0;
+}
+
+.input-block:first-of-type {
+  margin: 0;
+}
+
+.context-block {
+  margin-top: 20px;
+}
+
+.context-block:first-child {
+  margin-top: 0;
+}
