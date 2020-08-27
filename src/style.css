@@ -1,0 +1,18 @@
+
+.formfield {
+  margin-bottom: 10px;
+
+}
+
+.formTable {
+  margin-bottom: 20px;
+ 
+}
+
+.formTable > .formfield:last-child {
+  margin: 0;
+}
+
+.text {
+  margin: 0;
+}
