@@ -1,0 +1,19 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  margin-bottom: 10px;
+}
+
+.field .container:last-child {
+  margin-bottom: 0;
+}
+
+#age {
+  width: 65px;
+}
+
+.field {
+  margin-bottom: 20px;
+}
