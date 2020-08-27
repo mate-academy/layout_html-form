@@ -1,0 +1,12 @@
+.information {
+  margin-bottom: 20px;
+}
+
+.record {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.record:last-child {
+  margin-bottom: 0;
+}

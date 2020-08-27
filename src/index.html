@@ -1,15 +1,131 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Form</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <script type="text/javascript" src="./main.js"></script>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST"
+    autocomplete="off" onsubmit="onSubmit()">
+      <fieldset  class="information">
+        <legend>Personal information</legend>
+        <p class="record">
+          <label for="surname">Surname:</label>
+          <input
+            type="text"
+            id="surname"
+            minlength="2"
+            maxlength="30"
+          >
+        </p>
+        <p class="record">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            required
+          >
+        </p>
+        <p class="record">
+          <label for="age">How old are You?</label>
+          <input
+            type="number"
+            id="age"
+            min="12"
+            max="120"
+            value="12"
+          >
+        </p>
+        <p class="record">
+          <label for="birth">Full date of birth:</label>
+          <input type="date" id="birth">
+        </p>
+        <p class="record">
+          <label for="accept">I accept the term of the argeement</label>
+          <input type="checkbox" id="accept">
+        </p>
+      </fieldset>
+      <fieldset class="information">
+        <legend>Registration</legend>
+        <p class="record">
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="email@example.com"
+          >
+        </p>
+        <p class="record">
+          <label for="password">Password:</label>
+          <input type="password" id="password">
+        </p>
+      </fieldset>
+      <fieldset class="information">
+        <legend>An interesting fact about you!</legend>
+        <p class="record">
+          Do you love cats?
+          <input
+            type="radio"
+            id="yes"
+            name="pets"
+          >
+          <label for="yes">Yes</label>
+          <input
+            type="radio"
+            id="no"
+            name="pets"
+          >
+          <label for="no">No</label>
+        </p>
+        <p class="record">
+          <label for="color">What is your favolite color?</label>
+          <input type="color" id="color">
+        </p>
+        <p class="record">
+          <label for="bed-time">What time do you go to bed?</label>
+          <input type="time" id="bed-time">
+        </p>
+        <p class="record">
+          <label for="cars">What are your favorite brand of cars?</label>
+          <select name="cars" id="cars"
+          multiple>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </p>
+        <p class="record">
+          <label for="rate-work">How do you rate our work?</label>
+          <input
+            type="range"
+            id="rate-work"
+            value="0"
+          >
+        </p>
+      </fieldset>
+      <fieldset class="information">
+        <legend>Additional info:</legend>
+        <p class="record">
+          <label for="comments">Comments:</label>
+          <textarea name="comments" id="comments"></textarea>
+        </p>
+        <p class="record">
+          <label for="recommend">Would you recommend us?</label>
+          <select name="recommend" id="recommend">
+            <option value="true">yes</option>
+            <option value="false">no</option>
+          </select>
+        </p>
+      </fieldset>
+      <p class="recor">
+        <input type="submit" value="Submit">
+      </p>
+    </form>
+  </body>
 </html>
+
