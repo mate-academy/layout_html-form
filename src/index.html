@@ -12,17 +12,17 @@
     <form>
       <fieldset autocomplete="off" class="fieldset">
         <legend>Personal information</legend>
-        <div class="div_style">
+        <div class="input">
           <label for="surname">Surname:</label>
           <input type="text" id="surname">
         </div>
 
-        <div class="div_style">
+        <div class="input">
           <label for="name">Name:</label>
           <input type="text" id="name">
         </div>
 
-        <div class="div_style">
+        <div class="input">
           <label for="number">How old are You?</label>
           <input type="number"
            id="number"
@@ -31,12 +31,12 @@
            max="100">
         </div>
 
-        <div class="div_style">
+        <div class="input">
           <label for="date">Full date of birth:</label>
           <input type="date" id="date">
         </div>
 
-        <div class="list div_style">
+        <div class="list input">
           <label for="agree">I accept the term of the agreement</label>
           <input type="checkbox" id="agree">
         </div>
@@ -44,7 +44,7 @@
 
       <fieldset autocomplete="off" class="fieldset">
         <legend>Registration</legend>
-        <div class="div_style">
+        <div class="input">
           <label for="email">E-mail:</label>
           <input type ="email"
            id="email"
@@ -52,7 +52,7 @@
            mixlength="8">
         </div>
 
-        <div class="list div_style">
+        <div class="list input">
           <label for="password">Password:</label>
           <input
            type="text"
@@ -64,7 +64,7 @@
       <fieldset autocomplete="off" class="fieldset">
         <legend>An interesting fact about you!</legend>
 
-        <div class="div_style">
+        <div class="input">
           <div>Do you love cats?
             <input
              type="radio"
@@ -79,7 +79,7 @@
           </div>
         </div>
 
-        <div class="div_style">
+        <div class="input">
           <label for="favcolor">What is your favorite color?</label>
           <input
            type="color"
@@ -87,7 +87,7 @@
            name="favcolor" >
         </div>
 
-        <div class="div_style">
+        <div class="input">
           <label for="appt">What time do you go to bed?</label>
           <input type="time"
            id="appt"
@@ -95,7 +95,7 @@
            required>
         </div>
 
-        <div class="div_style">
+        <div class="input">
           <label for="cars-select">What are your favorite brand of cars?</label>
           <select id="cars-select"
            name="cars"
@@ -107,7 +107,7 @@
           </select>
         </div>
 
-        <div class="list div_style">How do you rate our work?
+        <div class="list input">How do you rate our work?
           <input type="range"
            id="start"
            value="10"
@@ -120,12 +120,12 @@
       <fieldset autocomplete="off" class="fieldset">
         <legend>Additional info:</legend>
 
-        <div class="div_style">
+        <div class="input">
           <label for="story">Comments:</label>
           <textarea id="story" name="story"></textarea>
         </div>
 
-        <div class="list div_style">
+        <div class="list input">
           <label for="recommend-select">Would you recommend us?</label>
           <select id="recommend-select">
             <option value="yes">yes</option>
@@ -135,13 +135,12 @@
       </fieldset>
 
       <script type="text/javascript" src="./main.js"></script>
-      <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
-        <input
+
+      <input
+         action="https://mate-academy-form-lesson.herokuapp.com/create-application"
          type="submit"
          id="onsubmit='onSubmit()'"
          value="Submit">
-      </form>
     </form>
-
   </body>
 </html>
