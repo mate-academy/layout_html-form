@@ -48,10 +48,12 @@
         <legend>Registration</legend>
         <div class="input">
           <label for="email">E-mail:</label>
-          <input type ="email"
-           id="email"
-           placeholder="email@example.com"
-           mixlength="8">
+          <input
+            type ="email"
+            id="email"
+            placeholder="email@example.com"
+            mixlength="8"
+          >
         </div>
 
         <div class="list input">
@@ -59,7 +61,8 @@
           <input
            type="text"
            maxlength="50"
-           id="password">
+           id="password"
+          >
         </div>
       </fieldset>
 
@@ -71,12 +74,14 @@
             <input
              type="radio"
              id="yes"
-             name="cats">
+             name="cats"
+            >
             <label for="yes">Yes</label>
             <input
-             type="radio"
-             id="no"
-             name="cats">
+              type="radio"
+              id="no"
+              name="cats"
+            >
             <label for="no">No</label>
           </div>
         </div>
@@ -84,25 +89,30 @@
         <div class="input">
           <label for="favcolor">What is your favorite color?</label>
           <input
-           type="color"
-           id="favcolor"
-           name="favcolor" >
+            type="color"
+            id="favcolor"
+            name="favcolor"
+          >
         </div>
 
         <div class="input">
           <label for="appt">What time do you go to bed?</label>
-          <input type="time"
-           id="appt"
-           name="appt"
-           required>
+          <input
+            type="time"
+            id="appt"
+            name="appt"
+            required
+          >
         </div>
 
         <div class="input">
           <label for="cars-select">What are your favorite brand of cars?</label>
-          <select id="cars-select"
-           name="cars"
-           multiple
-           size="4">
+          <select
+            id="cars-select"
+            name="cars"
+            multiple
+            size="4"
+          >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
@@ -110,12 +120,14 @@
         </div>
 
         <div class="list input">How do you rate our work?
-          <input type="range"
-           id="start"
-           value="10"
-          name="rate"
-          min="1"
-          max="10">
+          <input
+            type="range"
+            id="start"
+            value="10"
+            name="rate"
+            min="1"
+            max="10"
+          >
         </div>
       </fieldset>
 
@@ -139,10 +151,11 @@
       <script type="text/javascript" src="./main.js"></script>
 
       <input
-         action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-         type="submit"
-         id="onsubmit='onSubmit()'"
-         value="Submit">
+        action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+        type="submit"
+        id="onsubmit='onSubmit()'"
+        value="Submit"
+      >
     </form>
   </body>
 </html>
