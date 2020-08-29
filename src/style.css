@@ -1,0 +1,36 @@
+
+.small-form {
+  margin-bottom: 20px;
+}
+
+.p-margin {
+  
+  margin-bottom: 10px;
+  
+}
+
+.small-form :last-child {
+  margin-bottom: 0;
+}
+
+/* .small-form :nth-child(2) {
+  margin-top: 0;
+  
+} */
+
+/* .button {
+  margin-top: 20px;
+} */
+
+/* .info_area {
+  margin-bottom: 20px;
+}
+
+.info {
+  margin-bottom: 10px;
+}
+
+.info:last-child {
+  margin-bottom: 0;
+}
+ */
