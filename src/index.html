@@ -9,7 +9,171 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>HTML Form</h1>
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
+    <fieldset>
+      <legend>Personal information</legend>
+      <div class="wrap">
+        <label>
+          Surname:
+          <input
+            type="text"
+            id="user-surname"
+            name="user-name"
+            required
+            autocomplete="off"
+          >
+        </label>
+      </div>
+      <div class="wrap">
+        <label for="user-name">
+          Name:
+          <input
+            type="text"
+            id="user-name"
+            name="user-name"
+            autocomplete="off"
+          >
+        </label>
+      </div>
+      <div class="wrap">
+        <label for="user-age">
+          How old are You?
+          <input
+            type="number"
+            id="user-age"
+            name="user-age"
+            value="12"
+            min="0"
+            max="100"
+          >
+        </label>
+      </div>
+      <div class="wrap">
+        <label>
+          Full date of birth:
+          <input
+            type="date"
+            id="user-birth"
+            name="user-birth"
+          >
+        </label>
+      </div>
+      <div class="wrap">
+        <label>
+          I accept the term of the agreement
+          <input
+            type="checkbox"
+            id="user-agreement"
+            name="user-agreement"
+          >
+        </label></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Registration</legend>
+        <div class="wrap">
+          <label>
+            E-mail:
+            <input
+              type="email"
+              placeholder="email@example.com"
+              name="user-email"
+              id="user-email"
+            >
+          </label>
+        </div>
+      <div class="wrap">
+        <label>
+          Password:
+          <input type="password" id="user-password" name="user-password">
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>An interesting fact about you!</legend>
+        <div class="wrap">
+          <label>
+            Do you love cats?
+            <input
+              type="radio"
+              name="user-interests"
+              value="yes"
+              id="user-interests-yes"
+            >
+            Yes
+            <input
+              type="radio"
+              name="user-interests"
+              value="no"
+              id="user-interests-no"
+            >
+            No
+          </label>
+        </div>
+        <div class="wrap">
+          <label>
+            What is your favorite color?
+            <input type="color" id="user-color">
+          </label>
+        </div>
+        <div class="wrap">
+          <label>
+            What time do you go to bed?
+            <input type="time" id="user-time">
+          </label>
+        </div>
+        <div class="wrap">
+          <label>
+            What are your favorite brand of cars?
+            <select name="user-car" id="user-car" multiple>
+              <option value="bmw">BMW</option>
+              <option value="audi">Audi</option>
+              <option value="ladaelada">Lada</option>
+            </select>
+          </label>
+        </div>
+        <div class="wrap">
+          <label>
+            How do you rate our work?
+            <input type="range" id="user-rate" value="0">
+          </label>
+        </div>
+    </fieldset>
+    <fieldset>
+      <legend> Additional info:</legend>
+        <div class="wrap">
+          <label>
+            Comments:
+            <textarea
+              id="user-comments"
+              name="user-comments"
+              minlength="20"
+              maxlength="200"
+              rows="2"
+            >
+              </textarea>
+          </label>
+        </div>
+        <div class="wrap">
+          <label>
+            Would you recommend us?
+            <select name="user-recommends" id="user-recommends">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+          </label>
+        </div>
+    </fieldset>
+    <button
+      type="submit"
+      name="Button"
+      onsubmit="onSubmite()"
+    >
+      Submit
+    </button>
+  </form>
+
   <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
