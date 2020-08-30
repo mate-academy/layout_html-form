@@ -1,0 +1,15 @@
+.elements {
+  margin-bottom: 10px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.elements:last-child {
+  margin-bottom: 0;
+}
+
+.submit-button {
+  margin-top: 20px;
+}
