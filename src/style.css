@@ -1,0 +1,19 @@
+.outside {
+  margin-bottom: 20px;
+}
+
+.block {
+  margin-bottom: 10px;
+}
+
+.outside .block:last-child {
+  margin-bottom: 0;
+}
+
+.input-user-age {
+  width: 65px;
+}
+
+p {
+  margin: 0;
+}
