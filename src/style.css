@@ -1,4 +1,4 @@
-.outside {
+.block-border {
   margin-bottom: 20px;
 }
 
@@ -6,7 +6,7 @@
   margin-bottom: 10px;
 }
 
-.outside .block:last-child {
+.block-border .block:last-child {
   margin-bottom: 0;
 }
 
