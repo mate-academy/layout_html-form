@@ -1,0 +1,15 @@
+.main-item {
+  margin-bottom: 20px;
+}
+
+.item {
+  margin-bottom: 10px;
+}
+
+.main-item .item:last-child {
+  margin-bottom: 0;
+}
+
+.paragraph {
+  display: inline;
+}
