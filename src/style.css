@@ -1,0 +1,12 @@
+.area {
+  margin-bottom: 20px;
+}
+
+.input-line {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.input-line:last-of-type {
+  margin-bottom: 0;
+}
