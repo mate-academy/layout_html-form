@@ -1,0 +1,7 @@
+fieldset {
+  margin-bottom: 20px;
+}
+
+.form-field:not(:last-child) {
+  margin-bottom: 10px;
+}
