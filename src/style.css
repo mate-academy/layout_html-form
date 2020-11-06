@@ -1,0 +1,19 @@
+.block-border {
+  margin-bottom: 20px;
+}
+
+.block {
+  margin-bottom: 10px;
+}
+
+.block-border .block:last-child {
+  margin-bottom: 0;
+}
+
+.input-user-age {
+  width: 65px;
+}
+
+p {
+  margin: 0;
+}
