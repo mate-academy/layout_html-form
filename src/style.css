@@ -1,0 +1,11 @@
+.block {
+  margin-bottom: 20px;
+}
+
+.wrapper {
+  margin-bottom: 10px;
+}
+
+.block div.wrapper:last-child {
+  margin-bottom: 0;
+}
