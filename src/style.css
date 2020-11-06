@@ -1,0 +1,15 @@
+.block-info {
+  margin-bottom: 20px;
+}
+
+.block-info .block-inputs {
+  margin-bottom: 10px;
+}
+
+.block-info .block-inputs:last-child {
+  margin: 0;
+}
+
+.block-info .block-inputs input[type="number"] {
+  width: 65px;
+}
