@@ -1,15 +1,145 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Form</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
-</body>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" onsubmit="onSubmit()"
+      method="post"
+    >
+      <fieldset class="outside">
+        <legend>Personal information</legend>
+        <div class="block">
+          <label for="surname">Surname:</label>
+          <input type="text" name="surname"
+            autocomplete="off" required
+            id="surname"
+          >
+        </div>
+        <div class="block">
+          <label for="name">Name:</label>
+          <input type="text" name="name"
+            autocomplete="off" required
+            id="name"
+          >
+        </div>
+        <div class="block">
+          <label for="old">How old are You?</label>
+          <input type="number" name="old"
+            value="12" min="12"
+            max="33" autocomplete="off"
+            id="old" required
+            class="input-user-age"
+          >
+        </div>
+        <div class="block">
+          <label for="data">Full date of birth:</label>
+          <input type="date" name="data"
+            autocomplete="off" required
+            id="data"
+          >
+        </div>
+        <p>
+          I accept the term of the agreement
+          <input type="checkbox" name="accet">
+        </p>
+      </fieldset>
+
+      <fieldset class="outside">
+        <legend>Registration</legend>
+        <div class="block">
+          <label for="emale">E-mail:</label>
+          <input type="email" name="email"
+            placeholder="email@example.com" autocomplete="off"
+            id="emale" required
+          >
+        </div>
+        <div class="block">
+          <label for="password">Password:</label>
+          <input type="password" name="password"
+            id="password" required
+          >
+        </div>
+      </fieldset>
+
+      <fieldset class="outside">
+        <legend>An interesting fact about you!</legend>
+        <div class="block">
+          Do you love cats?
+          <label for="yes">
+            <input type="radio" name="cat"
+              value="Yes" id="yes"
+            >
+            Yes
+          </label>
+          <label for="no">
+            <input type="radio" name="cat"
+              value="No" id="no"
+            >
+            No
+          </label>
+        </div>
+        <div class="block">
+          <label for="color">What is your favorite color?</label>
+          <input type="color" name="color"
+            id="color" required
+          >
+        </div>
+        <div class="block">
+          <label for="time_bed">What time do you go to bed?</label>
+          <input type="time" name="time_bed"
+            id="time_bed" required
+            step="10000000"
+          >
+        </div>
+        <div class="block">
+          <label for="favorite_car">What are your favorite brand of cars?</label>
+          <select name="car" id="favorite_car"
+            multiple
+          >
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </div>
+        <div class="block">
+          <label for="rate_work">How do you rate our work?</label>
+          <input type="range" name="rate_work"
+            id="rate_work" required
+            min="0" value="0"
+          >
+        </div>
+      </fieldset>
+      <fieldset class="outside">
+        <legend>Additional info:</legend>
+        <div class="block">
+          <label for="commit">Comments:</label>
+          <textarea name="commit" id="commit"
+                    minlength="2" maxlength="182"
+          >
+          </textarea>
+        </div>
+        <div class="block">
+          <label for="recomend">Would you redommend us?</label>
+          <select name="recomend" id="recomend">
+            <option value="no">no</option>
+            <option value="yes">yes</option>
+          </select>
+        </div>
+      </fieldset>
+      <div class="block">
+        <button type="submit">Submit</button>
+      </div>
+      <script type="text/javascript" src="./main.js">
+      </script>
+    </form>
+  </body>
+
 </html>
