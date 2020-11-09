@@ -1,0 +1,15 @@
+fieldset {
+  margin-bottom: 20px;
+}
+
+.block {
+  margin: 10px 0;
+}
+
+.top-block {
+  margin-top: 0;
+}
+
+.bottom-block {
+  margin-bottom: 0;
+}
