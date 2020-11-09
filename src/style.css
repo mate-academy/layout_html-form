@@ -1,0 +1,11 @@
+.field {
+  margin-bottom: 20px;
+}
+
+.block {
+  margin-bottom: 10px;
+}
+
+.field .block:last-of-type {
+  margin-bottom: 0;
+}
