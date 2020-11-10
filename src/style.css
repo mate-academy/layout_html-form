@@ -1,0 +1,35 @@
+.box-indent {
+  margin-bottom: 20px;
+}
+
+.inlet {
+  margin-bottom: 10px;
+}
+
+.inlet:last-child {
+  margin-bottom: 0;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.inlet:focus {
+  background: #ffe;
+}
+
+.comments {
+  margin-bottom: 10px;
+}
+
+.age {
+  width: 63px;
+}
+
+.colour {
+  margin-top: 4px;
+}
+
+.rate {
+  margin-top: 12px;
+}
