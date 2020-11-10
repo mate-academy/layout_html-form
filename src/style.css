@@ -1,0 +1,11 @@
+.info_area {
+  margin-bottom: 20px;
+}
+
+.info {
+  margin-bottom: 10px;
+}
+
+.info:last-child {
+  margin-bottom: 0;
+}
