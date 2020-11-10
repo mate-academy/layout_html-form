@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  display: block;
+}
+
+.cat,
+.question {
+  display: inline-block;
+}
+
+.part {
+  margin-bottom: 20px;
+}
+
+.area,
+.question {
+  margin-bottom: 10px;
+}
+
+.part .title:last-child * {
+  margin-bottom: 0;
+}
+
+.question {
+  margin-top: 0;
+}
+
+.area .auto {
+  height: 70px;
+}
+
+.area.palette {
+  box-sizing: content-box;
+}
