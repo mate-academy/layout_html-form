@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+.input_area {
+  margin-bottom: 20px;
+}
+
+.input_field {
+  margin-bottom: 10px;
+}
+
+.input_area .input_field:last-child {
+  margin: 0;
+}
+
+.input_field input[type="number"] {
+  width: 69px;
+}
+
+.input_field input[type="color"] {
+  height: 27px;
+  width: 50px;
+}
+
+.input_field input[type="time"] {
+  width: 103px;
+}
+
+.cars {
+  padding-bottom: 2px;
+}
