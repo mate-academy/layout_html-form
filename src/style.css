@@ -2,15 +2,11 @@
   margin: 0;
 }
 
-/* * {
-  box-sizing: border-box;
-} */
-
-.inpu {
+.input {
   margin-bottom: 10px;
 }
 
-.inpu:last-child {
+.input:last-child {
   margin-bottom: 0;
 }
 
