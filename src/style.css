@@ -1,0 +1,16 @@
+.group {
+  margin-bottom: 20px;
+}
+
+.ageline {
+  width: 65px;
+}
+
+.data {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.data:last-child {
+  margin-bottom: 0;
+}
