@@ -1,0 +1,15 @@
+.information {
+  margin-bottom: 20px;
+}
+
+.box {
+  margin-bottom: 10px;
+}
+
+.information .box:last-child {
+  margin-bottom: 0;
+}
+
+.number {
+  width: 65px;
+}
