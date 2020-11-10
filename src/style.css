@@ -1,0 +1,19 @@
+.body {
+  margin: 0;
+}
+
+/* * {
+  box-sizing: border-box;
+} */
+
+.inpu {
+  margin-bottom: 10px;
+}
+
+.inpu:last-child {
+  margin-bottom: 0;
+}
+
+.container {
+  margin-bottom: 20px;
+}
