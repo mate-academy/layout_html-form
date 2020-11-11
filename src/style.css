@@ -1,0 +1,12 @@
+.field {
+  margin-bottom: 20px;
+}
+
+.input-text {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.input-text:last-of-type {
+  margin-bottom: 0;
+}
