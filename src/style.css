@@ -1,0 +1,17 @@
+.info:not(:last-child),
+#comments {
+  margin-bottom: 10px;
+}
+
+#yes,
+#no {
+  margin-bottom: 14px;
+}
+
+#rate {
+  margin-top: 12px;
+}
+
+.infogroup {
+  margin-bottom: 20px;
+}
