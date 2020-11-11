@@ -1,15 +1,240 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Form</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
-</body>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <form
+    action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+      <fieldset class="retreat">
+        <legend>
+          Personal information
+        </legend>
+        <div>
+          <label for="surname">
+            Surname:
+          </label>
+          <input
+          type="text"
+          id="surname"
+          name="surname"
+          autocomplete="off"
+          >
+
+        </div>
+        <div class="box">
+          <label for="name">
+            Name:
+          </label>
+          <input
+          type="text"
+          id="name"
+          name="name"
+          autocomplete="off"
+          >
+        </div>
+
+        <div class="box">
+          <label for="years">
+            How old are You?
+          </label>
+          <input
+          class="inp"
+          type="number"
+          name="years"
+          id="years"
+          value="12"
+          >
+        </div>
+        <div class="box">
+          <label for="date">
+            Full date of birth:
+          </label>
+          <input
+          type="date"
+          name="date"
+          id="date"
+          >
+        </div>
+
+        <div class="lastbox">
+          <label for="checkbox">
+            I accept the term of the agreement
+          </label>
+          <input type="checkbox"
+          name="checkbox"
+          id="checkbox"
+          required
+          >
+        </div>
+
+      </fieldset>
+
+      <fieldset class="retreat">
+
+        <legend>
+          Registration
+        </legend>
+
+        <div>
+          <label for="e-mail">
+            E-mail:
+          </label>
+          <input
+          type="email"
+          name="e-mail"
+          id="e-mail"
+          placeholder="email@example.com"
+          >
+        </div>
+
+        <div class="lastbox">
+          <label for="password">
+            Password:
+          </label>
+          <input
+          type="password"
+          name="pasword"
+          id="password"
+          >
+        </div>
+      </fieldset>
+
+      <fieldset class="retreat">
+
+        <legend>
+          An interesting fact about you!
+        </legend>
+
+        <div>
+          <span>
+            Do you love cats?
+          </span>
+          <input
+          type="radio"
+          name="cats"
+          id="yes"
+          value="yes"
+          >
+          <label for="yes">
+            Yes
+          </label>
+          <input
+          type="radio"
+          name="cats"
+          id="no"
+          value="no"
+          >
+          <label for="no">
+            No
+          </label>
+        </div>
+
+        <div class="box">
+          <label for="color">
+            What is your favorite color?
+          </label>
+
+          <input
+          type="color"
+          name="color"
+          id="color"
+          >
+        </div>
+
+        <div class="box">
+          <label for="get-to-bed">
+            What time do you go to bed?
+          </label>
+
+          <input
+          type="time"
+          name="get-to-bed"
+          id="get-to-bed"
+          >
+        </div>
+
+        <div class="box">
+          <label for="cars-brand">
+            What are your favorite brand of cars?
+          </label>
+
+          <select
+          name="cars"
+          id="cars-brand"
+          multiple
+          >
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </div>
+
+        <div class="lastbox">
+          <label for="rate-work">
+            How do you rate our work?
+          </label>
+
+          <input
+          type="range"
+          name="rate-work"
+          id="rate-work"
+          min="0"
+          max="10"
+          value="0"
+          >
+        </div>
+      </fieldset>
+
+      <fieldset class="retreat">
+
+        <legend>
+          Additional info:
+        </legend>
+
+        <div>
+          <label for="textar">
+            Comments:
+          </label>
+          <textarea
+          class="textar"
+          name="textar"
+          id="textar"
+          minlength="30"
+          maxlength="300"
+          rows="10"
+          autocomplete="off"
+          >
+          </textarea>
+        </div>
+
+        <div class="lastbox">
+          <label for="recommend">
+            Would you recommend us?
+          </label>
+
+          <select
+          name="yes-no"
+          id="recommend"
+          >
+            <option value="Yes">yes</option>
+            <option value="No">no</option>
+          </select>
+        </div>
+
+      </fieldset>
+
+      <input
+      type="submit"
+      value="Submit"
+      onsubmit="onSubmit()"
+      >
+    </form>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
 </html>
