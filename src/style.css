@@ -1,0 +1,7 @@
+.input-row:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.form-sector {
+  margin-bottom: 20px;
+}
