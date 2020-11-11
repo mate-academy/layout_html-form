@@ -1,15 +1,175 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Form</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <form action="" method="POST">
+      <fieldset>
+        <legend>Personal information</legend>
+        <p class="inputs">
+          <label for="surname"> Surname:</label>
+          <input
+            type="text"
+            name="surname"
+            id="surname">
+        </p>
+
+        <p class="inputs">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="Name"
+            id="name">
+        </p>
+
+        <p class="inputs">
+          <label for="age">How old are You?</label>
+          <input
+            class="inputage"
+            type="number"
+            name="Age"
+            value="12"
+            id="age">
+        </p>
+
+        <p class="inputs">
+          <label for="birth">Full date of birth:</label>
+          <input
+            type="date"
+            name="birth"
+            id="birth">
+        </p>
+
+        <p>
+          <label for="accept">I accept the term of the agreement</label>
+          <input
+          type="checkbox"
+          name="accept"
+          id="accept">
+        </p>
+
+      </fieldset>
+      <fieldset>
+        <legend>Registration</legend>
+
+        <p class="inputs">
+          <label for="email">E-mail:</label>
+          <input
+            required
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@example.com">
+        </p>
+
+        <p>
+          <label for="pass">Password:</label>
+          <input
+            required
+            type="password"
+            name="pass"
+            id="pass"
+            minlength="8">
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+
+        <p class="inputs">
+          <label for="yes">Do you love cats?</label>
+          <input
+            type="radio"
+            id="yes"
+            name="likecats"
+            value="yes">
+          <label for="yes">Yes</label>
+
+          <input
+            type="radio"
+            id="no"
+            name="likecats"
+            value="no">
+          <label for="no">No</label>
+        </p>
+
+        <p class="inputs">
+          <label for="favcolor">What is your favorite color?</label>
+          <input
+            type="color"
+            name="favcolor"
+            id="favcolor">
+        </p>
+
+        <p class="inputs">
+          <label for="sleeptime">What time do you go to bed?</label>
+          <input
+            type="time"
+            step="1"
+            name="sleepTime"
+            id="sleeptime">
+        </p>
+
+        <p class="inputs">
+          <label for="car">What are your favorite brand of cars?</label>
+          <select
+            multiple
+            name="car"
+            size="4"
+            id="car">
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="rate">How do you rate our work?</label>
+          <input
+          type="range"
+          name="rate"
+          min="0"
+          max="10"
+          value="0"
+          id="rate">
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional info:</legend>
+
+        <p class="inputs">
+          <label for="comments">
+            Comments:
+          </label>
+          <textarea
+            rows="2"
+            cols="20"
+            name="comments"
+            id="comments">
+          </textarea>
+        </p>
+
+        <p>
+          <label for="likeus">
+            Would you recomend us?
+          </label>
+          <select
+            name="likeus"
+            id="likeus">
+            <option selected>yes</option>
+            <option>no</option>
+          </select>
+        </p>
+      </fieldset>
+      <button onsubmit="onSubmit()" type="submit">Submit</button>
+    </form>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
 </html>

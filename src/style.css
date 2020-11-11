@@ -1,0 +1,19 @@
+p {
+  margin-top: 0;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+input[type="number"] {
+  width: 65px;
+}
+
+.inputs {
+  margin-bottom: 10px;
+}
+
+fieldset p:last-child {
+  margin-bottom: 0;
+}
