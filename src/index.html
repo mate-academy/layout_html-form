@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
       onsubmit="onSubmit()">
       <fieldset class="group">
@@ -87,17 +88,19 @@
 
       <fieldset class="group">
         <legend>An interesting fact about you!</legend>
-        <div class="data">
-          <label for="animals">Do you love cats?</label>
+        <div class="data"> Do you love cats?
+          <label for="yes">Yes</label>
           <input
             type="radio"
-            id="animals"
+            id="yes"
             name="affirmative"
-            value="yes">Yes
+            value="yes">
+          <label for="no">No</label>
           <input
             type="radio"
             name="negative"
-            value="no">No
+            id="no"
+            value="no">
         </div>
 
         <div class="data">
