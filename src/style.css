@@ -1,0 +1,12 @@
+.info {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.field .info:last-child {
+  margin: 0;
+}
