@@ -1,0 +1,11 @@
+.info-area {
+  margin-bottom: 10px;
+}
+
+.info-box :last-child {
+  margin-bottom: 0;
+}
+
+.info-box {
+  margin-bottom: 20px;
+}
