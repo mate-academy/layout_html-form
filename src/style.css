@@ -1,0 +1,15 @@
+.main-block {
+  margin-bottom: 20px;
+}
+
+.input-block {
+  margin-bottom: 10px;
+}
+
+.main-block .input-block:last-child {
+  margin: 0;
+}
+
+.size {
+  width: 65px;
+}
