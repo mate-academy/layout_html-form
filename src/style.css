@@ -1,0 +1,11 @@
+.outer {
+  margin-bottom: 10px;
+}
+
+.info {
+  margin-bottom: 20px;
+}
+
+.info .outer:last-of-type {
+  margin: 0;
+}
