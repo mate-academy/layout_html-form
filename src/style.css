@@ -1,0 +1,11 @@
+.info-in-form {
+  margin-bottom: 10px;
+}
+
+.info {
+  margin-bottom: 20px;
+}
+
+.info :last-child {
+  margin-bottom: 0;
+}
