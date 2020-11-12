@@ -1,0 +1,7 @@
+.input:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.box {
+  margin-bottom: 20px;
+}
