@@ -1,0 +1,12 @@
+label:not(:last-child) {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+input[type="number"] {
+  width: 63px;
+}
