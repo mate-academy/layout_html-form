@@ -1,0 +1,18 @@
+div {
+  margin-bottom: 10px;
+}
+
+.first-fieldset {
+  margin-bottom: 20px;
+}
+
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.personal-information,
+.password,
+.rate-input,
+.recommend-input {
+  margin-bottom: 0;
+}
