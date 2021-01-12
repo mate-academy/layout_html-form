@@ -1,0 +1,14 @@
+.info_block {
+  margin-bottom: 20px;
+}
+
+.info_block > *,
+.field {
+  margin-bottom: 10px;
+}
+
+.without_margin,
+.field:last-child,
+.info_block:last-child {
+  margin-bottom: 0;
+}
