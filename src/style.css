@@ -1,0 +1,11 @@
+.form__fieldset {
+  margin-bottom: 20px;
+}
+
+.form__field {
+  margin-bottom: 10px;
+}
+
+.form__field--margin-null {
+  margin-bottom: 0;
+}
