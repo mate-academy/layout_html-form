@@ -1,15 +1,177 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Form</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
-</body>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <form
+      class="fieldset"
+      method="POST"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      onsubmit="onSubmit()"
+      autocomplete="off"
+    >
+      <fieldset class="fieldset">
+        <legend>Personal information</legend>
+        <div class="form_input">
+          <label for="surname">Surname:</label>
+          <input
+            type="text"
+            id="surname"
+            name="surname"
+            required
+          >
+        </div>
+        <div class="form_input">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+          >
+        </div>
+        <div class="form_input">
+          <label for="age">How old are You?</label>
+          <input
+            type="number"
+            id="age"
+            name="age"
+            value="12"
+            min="12"
+            max="100"
+          >
+        </div>
+        <div class="form_input">
+          <label for="birthday">Full date of birth:</label>
+          <input
+            type="date"
+            id="birthday"
+            name="date_of_birth"
+          >
+        </div>
+        <div class="form_input">
+          <label for="checkbox">I accept the term of the agreement</label>
+          <input
+            type="checkbox"
+            id="checkbox"
+            name="checkbox"
+          >
+        </div>
+      </fieldset>
+      <fieldset class="fieldset">
+        <legend>Registration</legend>
+        <div class="form_input">
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@example.com"
+            required
+          >
+        </div>
+        <div class="form_input">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            minlength="7"
+            maxlength="15"
+            required
+          >
+        </div>
+      </fieldset>
+      <fieldset class="fieldset">
+        <legend>An interesting fact about you!</legend>
+        <div class="form_input">
+          <span>Do you love cats?</span>
+          <input
+            type="radio"
+            id="catyes"
+            name="catyes"
+          >
+          <label for="catyes">Yes</label>
+          <input
+            type="radio"
+            id="catno"
+            name="catno"
+          >
+          <label for="catno">No</label>
+        </div>
+        <div class="form_input">
+          <label for="color">What is your favorite color?</label>
+          <input
+            type="color"
+            name="color"
+            id="color"
+          >
+        </div>
+        <div class="form_input">
+          <label for="gobed">What time do you go to bed?</label>
+          <input
+            type="time"
+            name="gobed"
+            id="gobed"
+            step="1"
+          >
+        </div>
+        <div class="form_input">
+          <label for="car">What are your favorit brand of cars?</label>
+          <select
+            name="car"
+            id="car"
+            multiple
+          >
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </div>
+        <div class="form_input">
+          <label for="ratework">How do you rate your work?</label>
+          <input
+            type="range"
+            id="ratework"
+            name="ratework"
+            min="0"
+            max="10"
+            value="0"
+          >
+        </div>
+      </fieldset>
+      <fieldset class="fieldset">
+        <legend>Additional info:</legend>
+        <div class="form_input">
+          <label for="comments">Comments:</label>
+          <textarea
+            name=""
+            id="comments"
+            cols="15"
+            rows="2"
+          >
+          </textarea>
+        </div>
+        <div>
+          <label for="recommend">Would you recommend us?</label>
+          <select
+            name="recommend"
+            id="recommend"
+          >
+            <option value="yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
 </html>
+

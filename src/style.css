@@ -1,0 +1,11 @@
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.form_input {
+  margin-bottom: 10px;
+}
+
+.form_input:last-of-type {
+  margin-bottom: 0;
+}
