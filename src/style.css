@@ -1,0 +1,15 @@
+.form__inputs {
+  margin: 10px 0;
+}
+
+.form__inputs:last-of-type {
+  margin-bottom: 0;
+}
+
+.form__fieldset {
+  margin-bottom: 20px;
+}
+
+.form__inputs:first-of-type {
+  margin-top: 0;
+}
