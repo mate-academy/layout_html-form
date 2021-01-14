@@ -1,0 +1,12 @@
+.field {
+  margin-bottom: 20px;
+}
+
+.container {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.last {
+  margin-bottom: 0;
+}
