@@ -1,0 +1,13 @@
+fieldset {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.question {
+  margin-bottom: 10px;
+}
+
+.last-question {
+  margin-bottom: 0;
+}
