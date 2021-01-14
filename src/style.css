@@ -1,0 +1,15 @@
+.section {
+  margin: 10px 0;
+}
+
+.section:last-of-type {
+  margin-bottom: 0;
+}
+
+.section:first-of-type {
+  margin-top: 0;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
