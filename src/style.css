@@ -1,0 +1,16 @@
+.container {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.container__old {
+  width: 65px;
+}
+
+.blank {
+  margin-bottom: 20px;
+}
+
+.blank *:last-child {
+  margin-bottom: 0;
+}
