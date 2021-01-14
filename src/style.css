@@ -1,0 +1,14 @@
+.group {
+  margin-bottom: 20px;
+
+}
+
+.input {
+  margin-bottom: 10px;
+
+}
+
+.input:last-child {
+  margin-bottom: 0;
+
+}
