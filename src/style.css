@@ -1,0 +1,11 @@
+.body {
+  margin: 0;
+}
+
+.input:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.information {
+  margin-bottom: 20px;
+}
