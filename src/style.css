@@ -1,0 +1,17 @@
+.form {
+  margin: 20px 2px;
+}
+
+.form:first-child {
+  margin: 0;
+}
+
+.form_label {
+  display: block;
+  padding: 0;
+  margin: 0 0 10px;
+}
+
+.form_label:last-child {
+  margin: 0;
+}
