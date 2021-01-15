@@ -1,0 +1,11 @@
+.row {
+  margin-bottom: 10px;
+}
+
+.row:last-child {
+  margin: 0;
+}
+
+.block {
+  margin-bottom: 20px;
+}
