@@ -1,0 +1,13 @@
+.border-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+.field-end {
+  margin-bottom: 0;
+}
