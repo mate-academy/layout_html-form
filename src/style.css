@@ -1,0 +1,12 @@
+.block {
+  margin-bottom: 20px;
+}
+
+.input {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.last-input {
+  margin-bottom: 0;
+}

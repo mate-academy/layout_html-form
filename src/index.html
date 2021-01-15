@@ -1,15 +1,187 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Form</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <form
+      action=""
+      name="registration-form"
+      autocomplete="off"
+      onsubmit="onSubmit()"
+    >
+      <fieldset class="block">
+        <legend>Personal information</legend>
+
+        <div class="input">
+          <label for="surname">Surname:</label>
+          <input
+            type="text"
+            maxlength="15"
+            id="surname"
+            name="surname"
+          >
+        </div>
+
+        <div class="input">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            maxlength="0"
+            id="name"
+            name="name"
+          >
+        </div>
+
+        <div class="input">
+          <label for="age">How old are You?</label>
+          <input
+            type="number"
+            value="12"
+            min="12"
+            max="100"
+            id="age"
+            name="age"
+          >
+        </div>
+
+        <div class="input">
+          <label for="birth">Full date of birth:</label>
+          <input
+            type="date"
+            id="birth"
+            name="birth"
+          >
+        </div>
+
+        <div class="last-input">
+          <label for="accept">I accept the term of the agreement</label>
+          <input
+            type="checkbox"
+            id="accept"
+            name="accept"
+            required
+          >
+        </div>
+      </fieldset>
+
+      <fieldset class="block">
+        <legend>Registration</legend>
+
+        <div class="input">
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            placeholder="email@example.com"
+            maxlength="30"
+            id="email"
+            name="email"
+          >
+        </div>
+
+        <div class="last-input">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+          >
+        </div>
+      </fieldset>
+
+      <fieldset class="block">
+        <legend>An interesting fact about you!</legend>
+
+        <div class="input">
+          <label for="cats">Do you love cats?</label>
+          <input
+            type="radio"
+            name="yes/no"
+            id="cats"
+          > Yes
+          <input type="radio" name="yes/no"> No
+        </div>
+
+        <div class="input">
+          <label for="color">What is your favorite color?</label>
+          <input
+            type="color"
+            id="color"
+            name="color"
+          >
+        </div>
+
+        <div class="input">
+          <label for="sleep-time">What time do you go to bed?</label>
+          <input
+            type="time"
+            id="sleep-time"
+            name="sleep-time"
+            step="1"
+          >
+        </div>
+
+        <div class="input">
+          <label for="cars">What are your favorite brand of cars?</label>
+          <select
+            id="cars"
+            size="4"
+            name="cars"
+            multiple
+          >
+            <option value="">BMW</option>
+            <option value="">Audi</option>
+            <option value="">Lada</option>
+            <option value=""></option>
+          </select>
+        </div>
+
+        <div class="last-input">
+          <label for="rate-range">How do you rate our work?</label>
+          <input
+            type="range"
+            id="rate-range"
+            value="0"
+          >
+        </div>
+      </fieldset>
+
+      <fieldset class="block">
+        <legend>Additional info:</legend>
+
+        <div class="input">
+          <label for="comments">Comments:</label>
+          <textarea
+            name="feedback"
+            cols="20"
+            rows="2"
+            id="comments"
+          >
+          </textarea>
+        </div>
+
+        <div class="last-input">
+          <label for="recommend-select">Would you recommend us?</label>
+          <select
+            name="select"
+            id="recommend-select"
+            size="1"
+          >
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <div>
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
 </html>
