@@ -1,0 +1,13 @@
+.input {
+  display: block;
+  margin-bottom: 10px;
+}
+ 
+.blank {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+.inline-space {
+  display: inline-block;
+}
