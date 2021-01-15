@@ -1,0 +1,13 @@
+.inputs {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.box {
+  margin-bottom: 20px;
+
+}
+
+.inputs:last-child {
+  margin-bottom: 0;
+}
