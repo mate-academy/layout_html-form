@@ -1,15 +1,239 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Form</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      name="general-info"
+      method="POST"
+    >
+      <fieldset>
+
+        <legend>
+          Personal information
+        </legend>
+
+        <label for="surname">
+          <div>
+            Surname:
+            <input
+              type="text"
+              name="surname"
+              id="surname"
+              required
+            >
+          </div>
+        </label>
+        <label for="name">
+          <div class="wrap">
+            Name:
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+            >
+          </div>
+        </label>
+        <label for="number">
+          <div class="wrap">
+            How old are You?
+            <input
+              type="number"
+              name ="age"
+              value="12"
+              id="number"
+              required
+            >
+          </div>
+        </label>
+        <label for="date">
+          <div class="wrap">
+            Full date of birth:
+            <input
+              type="date"
+              name="birth"
+              id="date"
+              required
+            >
+          </div>
+        </label>
+        <label for="accept">
+          <div class="wrap">
+            I accept the term of the agreement
+            <input
+              type="checkbox"
+              name="accept"
+              id="accept"
+              required
+            >
+          </div>
+        </label>
+
+      </fieldset>
+      <fieldset class="block">
+        <legend>
+        Registration
+        </legend>
+
+        <label for="email">
+          <div>
+          E-mail:
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@example.com"
+              required
+            >
+          </div>
+        </label>
+        <label for="password">
+          <div class="wrap">
+          Password:
+            <input
+              type="password"
+              name="passwrod"
+              id="password"
+              minlength="6"
+              maxlength="20"
+              required
+            >
+          </div>
+        </label>
+
+      </fieldset>
+
+      <fieldset class="block">
+
+        <legend>
+        An interesting fact about you!
+        </legend>
+
+        <div>
+          Do you love cats?
+          <label for="yes">
+            <input
+              type="radio"
+              name="cats"
+              value="yes"
+              id="yes"
+              required
+            >
+          Yes
+          </label>
+
+          <label for="no">
+            <input
+              type="radio"
+              name="cats"
+              id="no"
+              value="no"
+           >
+           No
+          </label>
+        </div>
+        <label for="color">
+          <div class="wrap">
+            What is your favorite color?
+            <input
+              type="color"
+              name="color"
+              id="color"
+              value="#000"
+            >
+          </div>
+        </label>
+        <label for="time">
+          <div class="wrap">
+            What time do you go to bed?
+            <input
+              type="time"
+              name="time-to-bed"
+              id="time"
+              required
+              step="3"
+            >
+          </div>
+        </label>
+        <label for="cars">
+          <div class="wrap">
+            What are your favorite brand of cars?
+            <select
+              name="cars"
+              id="cars"
+              size="4"
+              multiple
+            >
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Lada">Lada</option>
+              <option value=""></option>
+            </select>
+          </div>
+        </label>
+        <label for="range">
+          <div class="wrap">
+            How do you rate our work?
+            <input
+              type="range"
+              name="work-rate"
+              min="1"
+              max="10"
+              id="range"
+              value="1"
+            >
+          </div>
+        </label>
+      </fieldset>
+      <fieldset class="block">
+        <legend>
+          Additional info:
+        </legend>
+
+        <label for="comments">
+          <div>
+            Comments:
+            <textarea
+              id="comments"
+              name="Text1"
+              cols="20"
+              rows="2"
+            >
+            </textarea>
+          </div>
+        </label>
+        <label for="is-recomend">
+          <div class="wrap">
+           Would you recomend us?
+            <select
+              name ="is-recomend"
+              id="is-recomend"
+            >
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+          </div>
+        </label>
+
+      </fieldset>
+
+      <input
+        type="submit"
+        name="submit"
+        onsubmit="onSubmit()"
+        value="Submit"
+      >
+
+    </form>
+
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
 </html>
