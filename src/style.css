@@ -1,0 +1,11 @@
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.fieldset__input-block {
+  margin-bottom: 10px;
+}
+
+.fieldset__input-block:last-child {
+  margin-bottom: 0;
+}
