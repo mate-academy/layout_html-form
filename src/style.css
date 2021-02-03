@@ -1,0 +1,11 @@
+.person_info {
+  margin: 0 0 10px;
+}
+
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.person_info:last-child {
+  margin: 0;
+}
