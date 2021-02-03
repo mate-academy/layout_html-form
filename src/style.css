@@ -1,0 +1,15 @@
+.form1 {
+  padding: 0 2px;
+}
+
+.line:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.fieldset {
+  margin: 0 0 20px;
+}
+
+.favcar {
+  overflow-y: hidden;
+}
