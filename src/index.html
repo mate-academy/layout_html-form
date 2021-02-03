@@ -1,15 +1,201 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Form</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <form>
+      <fieldset class="blocks__distance">
+        <legend>Personal information</legend>
+        <div class="input__distance">
+          <label for="surname">
+            Surname:
+            <input
+              type="text"
+              name="surname"
+              id="surname"
+              required
+              minlength="2"
+              maxlength="20"
+              autocomplete="off"
+            >
+          </label>
+        </div>
+        <div class="input__distance">
+          <label for="name">
+            Name:
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              autocomplete="off"
+            >
+          </label>
+        </div>
+        <div class="input__distance">
+          <label for="age">
+            How old are You?
+            <input
+              type="number"
+              name="age"
+              id="age"
+              min="10"
+              max="100"
+              value="12"
+            >
+          </label>
+        </div>
+        <div class="input__distance">
+          <label for="date">
+            Full date of birth:
+            <input
+              type="date"
+              name="date"
+              id="date"
+            >
+          </label>
+        </div>
+        <div>
+          <label for="check__agreement">
+            I accept the term of the agreement
+            <input
+              type="checkbox"
+              name="check__agreement"
+              id="check__agreement"
+            >
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="blocks__distance">
+        <legend>Registration</legend>
+        <div class="input__distance">
+          <label for="email">
+            E-mail:
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@example.com"
+            >
+          </label>
+        </div>
+        <div>
+          <label for="pass">
+            Password:
+            <input
+              type="password"
+              name="pass"
+              id="pass"
+            >
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="blocks__distance">
+        <legend>An interesting fact about you!</legend>
+        <div class="input__distance">
+          Do you love cats?
+          <label for="cats1">
+            <input
+              type="radio"
+              name="cats"
+              id="cats1"
+            >
+            Yes
+          </label>
+          <label for="cats2">
+            <input
+              type="radio"
+              name="cats"
+              id="cats2"
+            >
+            No
+          </label>
+        </div>
+        <div class="input__distance">
+          <label for="color">
+            What is your favorite color?
+            <input
+              type="color"
+              name="color"
+              id="color"
+            >
+          </label>
+        </div>
+        <div class="input__distance">
+          <label for="time">
+            What time do you go to bed?
+            <input
+              type="time"
+              name="time"
+              id="time"
+            >
+          </label>
+        </div>
+        <div class="input__distance">
+          <label for="car">
+            What are your favorite brand of cars?
+            <select
+              name="car"
+              id="car"
+              multiple size="4"
+            >
+              <option value="">BMW</option>
+              <option value="">Audi</option>
+              <option value="">Lada</option>
+            </select>
+          </label>
+        </div>
+        <div>
+          <label for="range__work">
+            How do you rate our work?
+            <input
+              type="range"
+              name="range__work"
+              id="range__work"
+            >
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="blocks__distance">
+        <legend>Additional info:</legend>
+        <div class="input__distance">
+          <label for="comments">
+            Comments:
+            <textarea
+              name="comments"
+              id="comments"
+              cols="30"
+              autocomplete="off"
+              rows="2"
+            >
+            </textarea>
+          </label>
+        </div>
+        <div>
+          <label for="recommend">
+            Would you recommend us?
+            <select name="recommend" id="recommend">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+          </label>
+        </div>
+      </fieldset>
+      <label for="submit">
+        <input
+          type="submit"
+          value="Submit"
+          onsubmit="onSubmit()"
+          id="submit"
+        >
+      </label>
+    </form>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
 </html>
