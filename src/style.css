@@ -1,0 +1,11 @@
+.input {
+  margin-bottom: 10px;
+}
+
+.blocks {
+  margin-bottom: 20px;
+}
+
+.blocks .input:last-child {
+  margin: 0;
+}
