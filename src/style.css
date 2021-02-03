@@ -1,0 +1,32 @@
+input {
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+#accept {
+  margin-bottom: 0;
+}
+
+#password {
+  margin-bottom: 0;
+}
+
+#rate {
+  margin-bottom: 0;
+  margin-top: 12px;
+}
+
+#reccomend {
+  margin-bottom: 0;
+}
+
+#love1 {
+  margin-bottom: 14px;
+}
+
+textarea {
+  margin-bottom: 10px;
+}
