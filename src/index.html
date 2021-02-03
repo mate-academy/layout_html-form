@@ -10,9 +10,9 @@
   </head>
   <body>
     <form
-    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-    method="POST"
-    onsubmit="onSubmit()"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="POST"
+      onsubmit="onSubmit()"
     >
       <fieldset class="container information">
         <legend>Personal information</legend>
@@ -81,11 +81,11 @@
           >
         </div>
         <div class="regestration-block block">
-          <label for="pass">Password:</label>
+          <label for="password">Password:</label>
           <input
             type="password"
-            name="pass"
-            id="pass"
+            name="password"
+            id="password"
             minlength="8"
             required
           >
@@ -159,18 +159,18 @@
       <fieldset class="container info">
         <legend>Additional info:</legend>
         <div class="info-block block">
-          <label for="comm">Comments:</label>
+          <label for="comments">Comments:</label>
           <textarea
-            name="comm"
-            id="comm"
+            name="comments"
+            id="comments"
             maxlength="50"
             autocomplete="off"
           >
           </textarea>
         </div>
         <div class="info-block block">
-          <label for="rec">Would you recommend us?</label>
-          <select name="rec" id="rec">
+          <label for="recommend">Would you recommend us?</label>
+          <select name="recommend" id="recommend">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
