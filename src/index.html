@@ -1,15 +1,182 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Form</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <form
+    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="POST"
+    onsubmit="onSubmit()"
+    >
+      <fieldset class="container information">
+        <legend>Personal information</legend>
+        <div class="information-block block">
+          <label for="surname">Surname:</label>
+          <input
+            type="text"
+            name="surname"
+            id="surname"
+            autocomplete="off"
+            required
+          >
+        </div>
+        <div class="information-block block">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            autocomplete="off"
+            required
+          >
+        </div>
+        <div class="information-block block">
+          <label for="age">How old are You?</label>
+          <input
+            type="number"
+            id="age"
+            name="age"
+            min="1"
+            value="12"
+            max="100"
+          >
+        </div>
+        <div class="information-block block">
+          <label for="birthday">Full date of birth:</label>
+          <input
+            type="date"
+            name="birthday"
+            id="birthday"
+            required
+          >
+        </div>
+        <div class="information-block block">
+          <label for="agree">I accept the term of the agreement</label>
+          <input
+            type="checkbox"
+            name="agree"
+            id="agree"
+            required
+          >
+        </div>
+      </fieldset>
+
+      <fieldset class="container regestration">
+        <legend>Registration</legend>
+        <div class="regestration-block block">
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@example.com"
+            autocomplete="off"
+            required
+          >
+        </div>
+        <div class="regestration-block block">
+          <label for="pass">Password:</label>
+          <input
+            type="password"
+            name="pass"
+            id="pass"
+            minlength="8"
+            required
+          >
+        </div>
+      </fieldset>
+
+      <fieldset class="container fact">
+        <legend>An interesting fact about you!</legend>
+        <div class="fact-block block">
+          Do you love cats?
+          <input
+            type="radio"
+            name="cat"
+            id="yes"
+            value="yes"
+          >
+          <label for="yes">Yes</label>
+          <input
+            type="radio"
+            name="cat"
+            id="no"
+            value="no"
+          >
+          <label for="no">No</label>
+        </div>
+        <div class="fact-block block">
+          <label for="color">What is your favorite color?</label>
+          <input
+            type="color"
+            name="color"
+            id="color"
+            value="#000"
+            required
+          >
+        </div>
+        <div class="fact-block block">
+          <label for="time">What time do you go to bed?</label>
+          <input
+            type="time"
+            name="time"
+            id="time"
+            required
+          >
+        </div>
+        <div class="fact-block block">
+          <label for="car">What are you favorite brand of cars?</label>
+          <select
+            type="text"
+            name="car"
+            id="car"
+            multiple
+          >
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </div>
+        <div class="fact-block block">
+          <label for="range">How do you rate our work?</label>
+          <input
+            type="range"
+            name="range"
+            id="range"
+            min="1"
+            max="12"
+            value="0"
+          >
+        </div>
+      </fieldset>
+
+      <fieldset class="container info">
+        <legend>Additional info:</legend>
+        <div class="info-block block">
+          <label for="comm">Comments:</label>
+          <textarea
+            name="comm"
+            id="comm"
+            maxlength="50"
+            autocomplete="off"
+          >
+          </textarea>
+        </div>
+        <div class="info-block block">
+          <label for="rec">Would you recommend us?</label>
+          <select name="rec" id="rec">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </div>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
 </html>
