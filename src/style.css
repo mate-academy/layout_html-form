@@ -1,0 +1,11 @@
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.label {
+  margin: 0 0 10px;
+}
+
+.label:last-child {
+  margin: 0;
+}
