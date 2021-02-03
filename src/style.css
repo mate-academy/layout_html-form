@@ -1,0 +1,12 @@
+
+.user_data {
+  margin-bottom: 20px;
+}
+
+.block {
+  margin-bottom: 10px;
+}
+
+.block:last-child {
+  margin: 0;
+}
