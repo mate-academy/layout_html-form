@@ -1,0 +1,12 @@
+.fieldset {
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
+
+.fieldset__item {
+  margin-bottom: 10px;
+}
+
+.age__input {
+  width: 65px;
+}

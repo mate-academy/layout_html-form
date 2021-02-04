@@ -1,15 +1,213 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Form</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
-</body>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="
+        width=device-width,
+        user-scalable=no,
+        initial-scale=1.0,
+        maximum-scale=1.0,
+        minimum-scale=1.0"
+      >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <script type="text/javascript" src="./main.js"></script>
+    <!-- ============================================================== -->
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+      <!-- PERSONAL INFORMATION FIELDSET ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <fieldset class="fieldset">
+        <legend>Personal information</legend>
+        <!-- surname -------------------------- -->
+        <div class="fieldset__item">
+          <label for="surname">Surname:</label>
+          <input
+            type="text"
+            id="surname"
+            name="surname"
+            required
+            autocomplete="off"
+          >
+          <br>
+        </div>
+        <!-- name -------------------------- -->
+        <div class="fieldset__item">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            autocomplete="off"
+          >
+          <br>
+        </div>
+        <!-- age -------------------------- -->
+        <div class="fieldset__item">
+          <label for="age">How old are You?</label>
+          <input
+            class="age__input"
+            type="number"
+            id="age"
+            name="age"
+            value="12"
+          >
+          <br>
+        </div>
+        <!-- date of birth -------------------------- -->
+        <div class="fieldset__item">
+          <label for="date">Full date of birth:</label>
+          <input
+            type="date"
+            id="date"
+            name="date"
+          >
+          <br>
+        </div>
+        <!-- accept checker -------------------------- -->
+        <div class="fieldset__item">
+          <label for="checkbox">I accept the term of the agreement</label>
+          <input
+            type="checkbox"
+            id="checkbox"
+            name="checkbox"
+            required
+          >
+        </div>
+      </fieldset>
+      <!-- PERSONAL INFORMATION FIELDSET ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <fieldset class="fieldset">
+        <legend>Registration</legend>
+        <!-- email -------------------------- -->
+        <div class="fieldset__item">
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@example.com"
+            required
+          >
+        </div>
+        <!-- password -------------------------- -->
+        <div class="fieldset__item">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            minlength="8"
+            required
+            autocomplete="new-password"
+          >
+        </div>
+      </fieldset>
+      <!-- INTERESTING FACTS FIELDSET ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <fieldset class="fieldset">
+        <legend>An interesting fact about you!</legend>
+        <!-- love cats? -------------------------- -->
+        <div class="fieldset__item">
+          <label for="cats">Do you love cats?</label>
+          <input
+            type="radio"
+            id="cats"
+            name="cats"
+          >
+            Yes
+          <input
+            type="radio"
+            id="cats2"
+            name="cats"
+          >
+            No
+        </div>
+        <!-- favorite color? -------------------------- -->
+        <div class="fieldset__item">
+          <label for="color">What is your favorite color?</label>
+          <input
+            type="color"
+            id="color"
+            name="color"
+            value="#fff"
+          >
+        </div>
+        <!-- time to bad? -------------------------- -->
+        <div class="fieldset__item">
+          <label for="time">What time do you go to bad?</label>
+          <input
+            type="time"
+            id="time"
+            name="time"
+          >
+        </div>
+        <!-- brand of cars? -------------------------- -->
+        <div class="fieldset__item">
+          <label for="cars">What are you favorite brand of cars?</label>
+          <select
+            id="cars"
+            name="select"
+            size="4"
+            multiple
+          >
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </div>
+        <!-- rate our work? -------------------------- -->
+        <div class="fieldset__item">
+          <label for="work-rate">How do you rate our work?</label>
+          <input
+            type="range"
+            id="work-rate"
+            name="range"
+            min="0"
+            max="10"
+            required
+          >
+        </div>
+      </fieldset>
+      <!-- ADDITIONAL INFO FIELDSET ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <fieldset class="fieldset">
+        <legend>Additional info:</legend>
+        <!-- comments -------------------------- -->
+        <div class="fieldset__item">
+          <label for="comments">Comments:</label>
+          <textarea
+            name="textarea"
+            id="comments"
+            cols="20"
+            rows="2"
+          >
+          </textarea>
+        </div>
+        <!-- recommendation -------------------------- -->
+        <div class="fieldset__item">
+          <label for="recommendation">Would you recommend us?</label>
+          <select
+            id="recommendation"
+            name="recommendation"
+            size="1"
+          >
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </div>
+      </fieldset>
+      <input
+        type="submit"
+        class="submit__button"
+        id="submit__button"
+        name="submit__button"
+        onsubmit="onsubmit()"
+      >
+    </form>
+    <!-- ============================================================== -->
+  </body>
+
 </html>
