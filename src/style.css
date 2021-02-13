@@ -1,0 +1,13 @@
+
+.margin-blok {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.change-margin {
+  margin-bottom: 20px;
+}
+
+.margin-low {
+  margin-bottom: 0;
+}
