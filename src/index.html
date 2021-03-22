@@ -9,7 +9,56 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
+
+<form>
+  <fieldset class="fieldset_margin">
+    <legend>Personal information</legend>
+    <label class="input_margin">Surname: <input required type="text" minlength="3" maxlength="30"></label>
+    <label class="input_margin">Name: <input required type="text" minlength="2" maxlength="30"></label>
+    <label class="input_margin">How old are You? <input required type="number" value="12" min="10" max="110"></label>
+    <label class="input_margin">Full date of birth: <input required type="date"></label>
+    <label class="min_margin">I accept the term of the agreement <input required type="checkbox"></label>
+  </fieldset>
+
+  <fieldset class="fieldset_margin">
+    <legend>Registration</legend>
+    <label class="input_margin">E-mail: <input required type="email" placeholder="email@example.com"></label>
+    <label class="min_margin">Password: <input required type="password"></label>
+  </fieldset>
+
+  <fieldset class="fieldset_margin">
+    <legend>An interesting fact about you!</legend>
+    <label class="input_margin">Do you love cats?
+      <input required type="radio" name="cats" id="Yes" value="Yes">
+      <label for="Yes">Yes</label>
+      <input required type="radio" name="cats" id="No" value="No">
+      <label for="No">No</label>
+    </label>
+    <label class="input_margin">What is your favorite color? <input required type="color"></label>
+    <label class="input_margin">What time do you go to bed? <input required type="time" step="1"></label>
+    <label class="input_margin">What are your favorite brand of cars?
+      <select for="car" multiple>
+        <option value="BMW">BMW</option>
+        <option value="Audi">Audi</option>
+        <option value="Lada">Lada</option>
+      </select>
+    </label>
+    <label class="min_margin">How do you rate our work? <input type="range" min="1" max="100" step="1" value="1"
+    ></label>
+  </fieldset>
+
+  <fieldset class="fieldset_margin">
+    <legend>Additional info:</legend>
+    <label class="input_margin">Comments: <textarea type="text"></textarea></label>
+    <label class="min_margin" for="recommend">Would you recommend us?
+      <select name="Recommendations" id="recommend">
+        <option value="yes" selected>yes</option>
+        <option value="no">no</option>
+      </select>
+    </label>
+  </fieldset>
+  <button type="submit" onsubmit="onSubmit()">Submit</button>
+</form>
+<script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
