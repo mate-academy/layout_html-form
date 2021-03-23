@@ -1,0 +1,9 @@
+.form-field {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.set {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
