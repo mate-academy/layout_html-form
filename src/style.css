@@ -1,0 +1,12 @@
+fieldset {
+  padding-bottom: 0;
+}
+
+.box {
+  margin-bottom: 20px;
+}
+
+.inside_text {
+  display: block;
+  padding-bottom: 10px;
+}
