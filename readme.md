@@ -1,7 +1,7 @@
 # HTML form
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://<your_account>.github.io/layout_html-form/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_html-form/report/html_report/)
+- [DEMO LINK](https://SkyPKWolf.github.io/layout_html-form/)
+- [TEST REPORT LINK](https://SkyPKWolf.github.io/layout_html-form/report/html_report/)
 
 > Follow [this instructions](https://github.com/mate-academy/layout_task-guideline#how-to-solve-the-layout-tasks-on-github)
 ___
@@ -25,7 +25,7 @@ Create HTML page with form. On form submit send form data to `https://mate-acade
   - [ ] time
   - [ ] color
   - [ ] date
-- Form should have textarea and select elements.  
+- Form should have textarea and select elements.
 - You should use every of this attribute at least one time
   - [ ] required
   - [ ] min
@@ -43,4 +43,4 @@ Create HTML page with form. On form submit send form data to `https://mate-acade
 - Any other styles should be browser default
 
 ## Tips
-- You can group different input sections with [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) tag 
+- You can group different input sections with [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) tag
