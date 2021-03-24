@@ -1,6 +1,6 @@
 # HTML form
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://senkiv-oleh.github.io/layout_html-form/)
+- [DEMO LINK](https://senkiv-oleh.github.io/layout_html-form/)<br>
 - [TEST REPORT LINK](https://senkiv-oleh.github.io/layout_html-form/report/html_report/)
 
 > Follow [this instructions](https://github.com/mate-academy/layout_task-guideline#how-to-solve-the-layout-tasks-on-github)
