@@ -9,19 +9,24 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST"
-    class="dataForm">
-      <fieldset class="inputGroup">
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="POST"
+      class="dataForm"
+      onsubmit="onSubmit()"
+    >
+      <fieldset class="input-group">
         <legend>Personal information</legend>
-        <div class="inputBlock">
+        <div class="input-block">
           <label for="form_surname">Surname:</label>
           <input
-          type="text"
-          id="form_surname"
-          name="surname"
-          autocomplete="off">
+            type="text"
+            id="form_surname"
+            name="surname"
+            autocomplete="off"
+          >
         </div>
-        <div class="inputBlock">
+        <div class="input-block">
           <label for="form_name">Name:</label>
           <input
             type="text"
@@ -30,7 +35,7 @@
             autocomplete="off"
           >
         </div>
-        <div class="inputBlock">
+        <div class="input-block">
           <label for="form_age">How old are You?</label>
           <input
             type="number"
@@ -41,7 +46,7 @@
             max="999"
           >
         </div>
-        <div class="inputBlock">
+        <div class="input-block">
           <label for="form_birth">Full date of birth:</label>
           <input
             type="date"
@@ -49,15 +54,18 @@
             name="birth"
           >
         </div>
-        <div class="inputBlock">
+        <div class="input-block">
           <label for="form_agreement">I accept the term of the agreement</label>
-          <input type="checkbox" id="form_agreement"
-          name="agreement">
+          <input
+            type="checkbox"
+            id="form_agreement"
+            name="agreement"
+          >
         </div>
       </fieldset>
-      <fieldset class="inputGroup">
+      <fieldset class="input-group">
         <legend>Registration</legend>
-        <div class="inputBlock">
+        <div class="input-block">
           <label for="form_email">E-mail:</label>
           <input
             type="email"
@@ -70,7 +78,7 @@
             maxlength="20"
           >
         </div>
-        <div class="inputBlock">
+        <div class="input-block">
           <label for="form_password">Password:</label>
           <input
             type="text"
@@ -82,9 +90,9 @@
           >
         </div>
       </fieldset>
-      <fieldset class="inputGroup">
+      <fieldset class="input-group">
         <legend>An interesting fact about you!</legend>
-        <div class="inputBlock">
+        <div class="input-block">
           <span>
             Do you love cats?
           </span>
@@ -103,7 +111,7 @@
           >
           <label for="catNo">No:</label>
         </div>
-        <div class="inputBlock">
+        <div class="input-block">
           <label for="colorPicker">What is your favorite color?</label>
           <input
             type="color"
@@ -111,7 +119,7 @@
             name="favColor"
           >
         </div>
-        <div class="inputBlock">
+        <div class="input-block">
           <label for="timePicker">What time do you go to bed?</label>
           <input
             type="time"
@@ -119,7 +127,7 @@
             name="bedTime"
           >
         </div>
-        <div class="inputBlock">
+        <div class="input-block">
           <label for="favCarBrand">What are your favorite brand of cars?</label>
           <select
             id="favCarBrand"
@@ -131,7 +139,7 @@
             <option value="Lada">Lada</option>
           </select>
         </div>
-        <div class="inputBlock">
+        <div class="input-block">
           <label for="workRateRange">How do you rate our work?</label>
           <input
             type="range"
@@ -141,9 +149,9 @@
           >
         </div>
       </fieldset>
-      <fieldset class="inputGroup">
+      <fieldset class="input-group">
         <legend>Additional info:</legend>
-        <div class="inputBlock">
+        <div class="input-block">
           <label for="comments">Comments:</label>
           <textarea
             id="comments"
@@ -152,7 +160,7 @@
           >
           </textarea>
         </div>
-        <div class="inputBlock">
+        <div class="input-block">
           <label for="recomendation">Would you recommend us?</label>
           <select id="recomendation" name="giveRecomendation">
             <option value="yes">yes</option>
@@ -160,8 +168,7 @@
           </select>
         </div>
       </fieldset>
-      <input type="submit" onsubmit="onSubmit()"
-      value="Submit">
+      <button type="submit">Submit</button>
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
