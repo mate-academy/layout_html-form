@@ -13,19 +13,19 @@
   </head>
   <body>
     <form
-    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-    method="post"
-    autocomplete="off"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      autocomplete="off"
     >
       <fieldset>
         <legend>Personal information</legend>
 
-        <label class="form-field" for="surnmae">
+        <label class="form-field" for="surname">
           Surname:
           <input
             type="text"
-            id="surnmae"
-            name="surnmae"
+            id="surname"
+            name="surname"
             required
           >
         </label>
@@ -95,6 +95,8 @@
             type="password"
             name="password"
             id="password"
+            minlength="8"
+            maxlength="32"
             required
           >
         </label>
@@ -110,7 +112,7 @@
             <input
               type="radio"
               id="love-cats"
-              name="yes"
+              name="love-cats"
               value="yes"
             >Yes
           </label>
@@ -119,7 +121,7 @@
             <input
               type="radio"
               id="hate-cats"
-              name="no"
+              name="love-cats"
               value="no"
             >No
           </label>
@@ -164,6 +166,8 @@
             name="rate-work"
             value="0"
             id="rate-work"
+            min="0"
+            max="100"
           >
         </label>
 
@@ -188,11 +192,7 @@
         </label>
       </fieldset>
 
-      <button
-        type="submit"
-        value="Submit"
-        onsubmit="onSubmit()"
-      >
+      <button onsubmit="onSubmit()">
         Submit
       </button>
     </form>
