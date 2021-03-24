@@ -71,6 +71,7 @@
             type="checkbox"
             name="agreement"
             id="agreement"
+            required
           >
         </label>
       </fieldset>
@@ -175,6 +176,8 @@
             name="work_rate"
             id="work_rate"
             value="0"
+            min="0"
+            max="100"
           >
         </label>
       </fieldset>
@@ -198,11 +201,7 @@
         </label>
       </fieldset>
 
-      <button
-        class="form_button"
-        type="submit"
-        onsubmit="onSubmit()"
-      >
+      <button type="submit" onsubmit="onSubmit()">
         Submit
       </button>
     </form>
