@@ -3,10 +3,15 @@ fieldset > label {
   margin-bottom: 10px;
 }
 
+fieldset {
+  margin-bottom: 20px;
+}
+
 fieldset :last-child {
   margin-bottom: 0;
 }
 
-fieldset {
-  margin-bottom: 20px;
+p {
+  display: inline-block;
+  margin: 0 0 10px;
 }

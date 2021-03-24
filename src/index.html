@@ -10,7 +10,11 @@
   </head>
   <body>
     <script type="text/javascript" src="./main.js"></script>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" onsubmit="onSubmit()">
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      onsubmit="onSubmit()"
+      method="POST"
+    >
       <fieldset>
         <legend>Personal information</legend>
         <label for="user-surname">
@@ -19,7 +23,8 @@
             type="text"
             name="surname"
             autocomplete="off"
-            id="user-surname">
+            id="user-surname"
+          >
         </label>
         <label for="user-name">
           Name:
@@ -27,7 +32,8 @@
             type="text"
             name="name"
             autocomplete="off"
-            id="user-name">
+            id="user-name"
+          >
         </label>
         <label for="user-age">
           How old are You?
@@ -37,18 +43,24 @@
             value="12"
             max="110"
             min="12"
-            id="user-age">
+            id="user-age"
+          >
         </label>
         <label for="user-birthday">
           Full date of birth:
-          <input type="date" id="user-birthday">
+          <input
+            type="date"
+            name="birthday"
+            id="user-birthday"
+          >
         </label>
         <label for="agreement">
           I accept the term of the agreement
           <input
             type="checkbox"
             name="agreement"
-            id="agreement">
+            id="agreement"
+          >
         </label>
       </fieldset>
       <fieldset>
@@ -60,7 +72,9 @@
             name="e-mail"
             placeholder="email@example.com"
             id="user-email"
-            required multiple>
+            required
+            multiple
+          >
         </label>
         <label for="user-password">
           Password:
@@ -69,55 +83,65 @@
             name="password"
             minlength="6"
             maxlength="20"
-            id="user-password">
+            id="user-password"
+          >
         </label>
       </fieldset>
       <fieldset>
         <legend>An interesting fact about you!</legend>
-        <label for="yes">
-          Do you love cats?
+        <div>
+          <p>
+            Do you love cats?
+          </p>
           <input
             type="radio"
             name="loving-cats"
-            id="yes">
+            id="yes"
+          >
           <label for="yes">Yes</label>
           <input
             type="radio"
             name="loving-cats"
-            id="no">
+            id="no"
+          >
           <label for="no">No</label>
-        </label>
-        <label for="user-favorite-color">
+        </div>
+        <label for="favorite-color">
           What is your favorite color?
           <input
             type="color"
             name="color"
-            id="user-favorite-color">
+            id="favorite-color"
+          >
         </label>
-        <label for="user-go-to-bed-time">
+        <label for="user-time">
           What time do you go to bed?
           <input
             type="time"
             name="go-to-bed-time"
-            id="user-go-to-bed-time">
+            id="user-time"
+          >
         </label>
-        <label for="user-favorite-brand-car">
+        <label for="user-car">
           What are your favorite brand of car?
           <select
             name="brand-of-car"
-            id="user-favorite-brand-car"
+            id="user-car"
             multiple>
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
             <option value="lada">Lada</option>
           </select>
         </label>
-        <label for="estimate-our-work">
+        <label for="estimate-work">
           How do you rate our work?
           <input
             type="range"
             value="0"
-            id="estimate-our-work">
+            min="0"
+            max="10"
+            id="estimate-work"
+          >
         </label>
       </fieldset>
       <fieldset>
@@ -139,7 +163,7 @@
           </select>
         </label>
       </fieldset>
-      <button name="submit" type="submit">Submit</button>
+      <button type="submit">Submit</button>
     </form>
   </body>
 </html>
