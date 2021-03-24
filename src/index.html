@@ -13,7 +13,7 @@
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
       autocomplete="off"
-    > <!-- ----------Personal info---------- -->
+    >
       <fieldset class="fieldset">
         <legend>Personal information</legend>
         <label class="fieldset__label" for="surname">
@@ -65,7 +65,6 @@
           >
         </label>
       </fieldset>
-      <!------------Registration------------>
       <fieldset class="fieldset">
         <legend>Registration</legend>
         <label class="fieldset__label" for="email">
@@ -91,23 +90,26 @@
           >
         </label>
       </fieldset>
-      <!------------Facts------------>
       <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
-        <label class="fieldset__label" for="yes-cats">
+        <label class="fieldset__label" for="yes-radio-cats">
           Do you love cats?
-          <input
-            type="radio"
-            id="yes-cats"
-            name="cats"
-            value="yes"
-          >Yes
-          <input
-            type="radio"
-            id="no-cats"
-            name="cats"
-            value="no"
-          >No
+          <label class="fieldset__label-cats-yes" for="yes-radio-cats">
+            <input
+              type="radio"
+              id="yes-radio-cats"
+              name="cats"
+              value="yes"
+            >Yes
+          </label>
+          <label class="fieldset__label-cats-no" for="no-radio-cats">
+            <input
+              type="radio"
+              id="no-radio-cats"
+              name="cats"
+              value="no"
+            >No
+          </label>
         </label>
         <label class="fieldset__label" for="color">
           What is your favorite color?
@@ -148,7 +150,6 @@
           >
         </label>
       </fieldset>
-      <!------------Additional info:------------>
       <fieldset class="fieldset">
         <legend>Additional info:</legend>
         <label class="fieldset__label" for="comments">
@@ -165,9 +166,6 @@
       </fieldset>
       <button
         type="submit"
-        id="submit-btn"
-        name="submit-btn"
-        value="submit"
         onsubmit="onSubmit()"
         >
           Submit
