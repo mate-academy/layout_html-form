@@ -1,9 +1,6 @@
-fieldset {
-  padding-bottom: 0;
-}
-
 .box {
   margin-bottom: 20px;
+  padding-bottom: 0;
 }
 
 .inside_text {
