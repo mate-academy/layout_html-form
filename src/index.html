@@ -1,15 +1,201 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Form</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <form
+      class="form-blocks"
+      autocomplete="off"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+    >
+      <fieldset class="fieldset fieldset-1">
+        <legend>Personal information</legend>
+
+        <label for="fieldset-1__lname">
+          Surname:
+          <input
+            id="fieldset-1__lname"
+            type="lname"
+            name="lname"
+            required
+            minlength="2"
+            maxlength="30"
+          >
+        </label>
+
+        <label for="fieldset-1__fname">
+          Name:
+          <input
+            id="fieldset-1__fname"
+            type="fname"
+            name="fname"
+            required
+            minlength="2"
+            maxlength="20"
+          >
+        </label>
+
+        <label for="fieldset-1__age">
+          How old are You?
+          <input
+            id="fieldset-1__age"
+            type="number"
+            name="age"
+            value="12"
+            required
+            min="12"
+          >
+        </label>
+
+        <label for="fieldset-1__birth-date">
+          Full date of birth:
+          <input
+            id="fieldset-1__birth-date"
+            type="date"
+            name="birth-date"
+            min="2009-03-24"
+            max="2021-03-24"
+          >
+        </label>
+
+        <label for="fieldset-1__rights-check">
+          I accept the term of the agreement
+          <input
+            id="fieldset-1__rights-check"
+            type="checkbox"
+            name="rights-check"
+            required
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="fieldset fieldset-2">
+        <legend>Registration</legend>
+        <label for="fieldset-2__email">
+          E-mail:
+          <input
+            id="fieldset-2__email"
+            placeholder="email@example.com"
+            type="email"
+            name="email"
+            required
+          >
+        </label>
+
+        <label for="fieldset-2__password">
+          Password:
+          <input
+            id="fieldset-2__password"
+            type="password"
+            name="password"
+            required
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="fieldset fieldset-3">
+        <legend>An interesting fact about you!</legend>
+
+        <div class="fieldset-3__radio-wrapper">
+          <label for="fieldset-3__radio-wrapper__cats">
+            Do you love cats?
+            <input
+              id="fieldset-3__radio-wrapper__cats"
+              name="cats"
+              value="yes"
+              type="radio"
+              required
+            >
+            Yes
+            <input
+              name="cats"
+              value="no"
+              type="radio"
+              required
+            >
+            No
+          </label>
+        </div>
+
+        <label for="fieldset-3__color">
+          What is your favorite color?
+          <input
+            id="fieldset-3__color"
+            name="color"
+            type="color"
+          >
+        </label>
+
+        <label for="fieldset-3__time">
+          What time do you go to bed?
+          <input
+            id="fieldset-3__time"
+            name="time"
+            type="time"
+            step="1"
+          >
+        </label>
+
+        <label for="fieldset-3__favorite-car">
+          What are your favorite brand of cars?
+          <select
+            name="favorite-car"
+            id="fieldset-3__favorite-car"
+            multiple
+            size="4"
+          >
+            <option value="">BMW</option>
+            <option value="">Audi</option>
+            <option value="">Lada</option>
+          </select>
+        </label>
+
+        <label for="fieldset-3__work-rate">
+          How do you rate our work?
+          <input
+            id="fieldset-3__work-rate"
+            name="work-rate"
+            type="range"
+            min="0"
+            max="10"
+            value="0"
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="fieldset fieldset-4">
+        <legend>Additional info:</legend>
+        <label for="fieldset-4__comments">
+          Comments:
+          <textarea
+            id="fieldset-4__comments"
+            name="comments"
+          >
+          </textarea>
+        </label>
+
+        <label for="fieldset-2__recommend">
+          Would you recommend us?
+          <select
+            id="fieldset-2__recommend"
+            name="recommend"
+          >
+            <option value="no">yes</option>
+            <option value="yes">no</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <button type="submit">
+        Submit
+      </button>
+    </form>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
 </html>

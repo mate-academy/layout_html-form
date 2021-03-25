@@ -1,0 +1,21 @@
+
+.form-blocks > .fieldset > label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.fieldset-3__radio-wrapper {
+  margin-bottom: 10px;
+}
+
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.form-blocks > .fieldset > :last-child {
+  margin-bottom: 0;
+}
+
+#fieldset-1__age {
+  width: 60px;
+}
