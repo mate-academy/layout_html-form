@@ -1,0 +1,19 @@
+.fieldset {
+  margin-bottom: 20px;
+}
+
+input:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.comments {
+  margin-bottom: 10px;
+}
+
+.cars {
+  margin-bottom: 10px;
+}
+
+.love-cats {
+  margin-bottom: 10px;
+}
