@@ -1,15 +1,224 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Form</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <script type="text/javascript" src="./main.js"></script>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post">
+      <fieldset class="fieldset">
+        <legend>Personal information</legend>
+        <div>
+          <label for="surname">
+            Surname:
+            <input
+              type="text"
+              name="surname"
+              id="surname"
+              maxlength="20"
+              autocomplete="off"
+              class="input"
+              required
+            >
+          </label>
+        </div>
+
+        <div>
+          <label for="name">
+            Name:
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              minlength="4"
+              autocomplete="off"
+              class="input"
+            >
+          </label>
+        </div>
+
+        <div>
+          <label for="age">
+            How old are You?
+            <input
+              type="number"
+              value="12"
+              name="age"
+              id="age"
+              min="5"
+              max="100"
+              autocomplete="off"
+              class="input"
+            >
+          </label>
+        </div>
+
+        <div>
+          <label for="date_of_birth">
+            Full date of birth:
+            <input
+              type="date"
+              name="date_of_birth"
+              id="date_of_birth"
+              autocomplete="off"
+              class="input"
+            >
+          </label>
+        </div>
+
+        <div>
+          <label for="agreeWithTerms">
+            I accept the term of the agreement
+            <input
+              type="checkbox"
+              name="agreeWithTerms"
+              id="agreeWithTerms"
+              required
+            >
+          </label>
+        </div>
+
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>Registration</legend>
+        <div>
+          <label for="email">
+            E-mail:
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="email@example.com"
+              autocomplete="off"
+              class="input"
+            >
+          </label>
+        </div>
+
+        <div>
+          <label for="password">
+            Password:
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+              autocomplete="off"
+            >
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>An interesting fact about you!</legend>
+        <div class="input">
+          Do you love cats?
+          <label for="answerYes">
+            <input
+              type="radio"
+              name="cats_answer"
+              id="answerYes"
+            >
+            Yes
+          </label>
+
+          <label for="answerNo">
+            <input
+              type="radio"
+              name="cats_answer"
+              id="answerNo"
+            >
+            No
+          </label>
+        </div>
+        <div>
+          <label for="favorite_color">
+            What is your favorite color?
+            <input
+              type="color"
+              name="favorite_color"
+              id="favorite_color"
+              class="input"
+            >
+          </label>
+        </div>
+
+        <div>
+          <label for="timeToBed">
+            What time do you go to bed?
+            <input
+              type="time"
+              name="timeToBed"
+              id="timeToBed"
+              autocomplete="off"
+              class="input"
+            >
+          </label>
+        </div>
+
+        <div class="input">
+          <label for="brand_of_car">
+            What are your favorite brand of car?
+            <select
+              name="brand_of_car"
+              id="brand_of_car"
+              multiple
+            >
+              <option value="bmw">BMW</option>
+              <option value="audi">Audi</option>
+              <option value="lada">Lada</option>
+            </select>
+          </label>
+        </div>
+
+        <div>
+          <label for="rateOfWork">
+            How do you rate our work?
+            <input
+              type="range"
+              name="rateOfWork"
+              id="rateOfWork"
+              autocomplete="off"
+              value="0"
+            >
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>Additional info:</legend>
+        <div class="input">
+          <label for="textarea">
+            Comments:
+            <textarea
+              name="textarea"
+              id="textarea"
+            >
+            </textarea>
+          </label>
+        </div>
+
+        <div>
+          <label for="recommend">
+            Would you recommend us?
+            <select name="recommend" id="recommend">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </label>
+        </div>
+      </fieldset>
+      <button type="submit" onsubmit="onSubmit()">Submit</button>
+    </form>
+  </body>
 </html>
