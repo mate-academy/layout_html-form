@@ -1,0 +1,13 @@
+.form {
+  padding-left: 4px;
+}
+
+.form-field {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.blocks {
+  margin: 0 0 20px;
+  padding-bottom: 0;
+}
