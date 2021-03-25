@@ -1,0 +1,11 @@
+.form-field {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+}
+
+.label:not(:last-child) {
+  margin-bottom: 10px;
+}
