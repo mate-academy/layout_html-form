@@ -1,0 +1,17 @@
+fieldset > label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+fieldset :last-child {
+  margin-bottom: 0;
+}
+
+p {
+  display: inline-block;
+  margin: 0 0 10px;
+}
