@@ -1,0 +1,16 @@
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.fieldset :last-child {
+  margin-bottom: 0;
+}
+
+.form_field {
+  margin-bottom: 10px;
+}
+
+label.form_field {
+  display: block;
+  margin-bottom: 10px;
+}
