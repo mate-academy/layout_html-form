@@ -1,0 +1,8 @@
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.fieldset_label:not(:last-child) {
+  margin-bottom: 10px;
+  display: block;
+}
