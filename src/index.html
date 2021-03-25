@@ -10,7 +10,10 @@
   </head>
   <body>
     <form
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      autocomplete="on"
+      onsubmit="onSubmit()"
+    >
 
       <!--                                                    Personal information-->
 
@@ -19,8 +22,6 @@
         <label class="label" for="surname">
           Surname:
           <input
-            autocomplete="off"
-            class="input"
             id="surname"
             type="text"
             name="surname"
@@ -31,8 +32,6 @@
         <label for="name" class="label">
           Name:
           <input
-            autocomplete="off"
-            class="input"
             type="text"
             name="name"
             id="name"
@@ -43,8 +42,6 @@
         <label for="old" class="label">
           How old are You?
           <input
-            autocomplete="off"
-            class="input"
             type="number"
             name="old"
             id="old"
@@ -57,8 +54,6 @@
         <label for="birth" class="label">
           Full date of birth:
           <input
-            autocomplete="off"
-            class="input"
             type="date"
             name="birth"
             id="birth"
@@ -68,8 +63,6 @@
         <label for="term" class="label">
           I accept the term of the agreement
           <input
-            autocomplete="off"
-            class="input"
             type="checkbox"
             name="term"
             id="term"
@@ -85,9 +78,7 @@
         <label for="email" class="label">
           E-mail:
           <input
-            autocomplete="off"
             type="email"
-            class="input"
             name="email"
             id="email"
             placeholder="email@example.com"
@@ -98,9 +89,7 @@
         <label for="password" class="label">
           Password:
           <input
-            autocomplete="off"
             type="password"
-            class="input"
             name="password"
             id="password"
             minlength="6"
@@ -118,18 +107,14 @@
         <label for="cat1" class="label">
           Do you love cats?
           <input
-            autocomplete="off"
             type="radio"
-            class="input"
             id="cat1"
             name="cat"
             value="yes"
           >
           Yes
           <input
-            autocomplete="off"
             type="radio"
-            class="input"
             name="cat"
             value="no"
           >
@@ -139,9 +124,7 @@
         <label for="color" class="label">
           What is your favorite color?
           <input
-            autocomplete="off"
             type="color"
-            class="input"
             id="color"
             name="color"
           >
@@ -150,9 +133,7 @@
         <label for="go_bed" class="label">
           What time do you go to bed?
           <input
-            autocomplete="off"
             type="time"
-            class="input"
             id="go_bed"
             name="go_bed"
           >
@@ -162,7 +143,6 @@
           What are your favorite brand of cars?
           <select
             id="car"
-            class="input"
             multiple
           >
             <option name="BMW">BMW</option>
@@ -174,9 +154,7 @@
         <label for="rate" class="label">
           How do you rate our work?
           <input
-            autocomplete="off"
             type="range"
-            class="input"
             id="rate"
             name="rate"
             min="0"
@@ -198,7 +176,6 @@
           <textarea
             name="comment"
             id="comment"
-            class="input"
             maxlength="50"
          ></textarea>
         </label>
@@ -208,7 +185,6 @@
           <select
             name="recomend"
             id="recomend"
-            class="input"
           >
             <option value="yes">yes</option>
             <option value="no">no</option>
@@ -217,7 +193,7 @@
 
       </fieldset>
 
-      <button onsubmit="onSubmit()" type="submit">
+      <button type="submit">
         Submit
       </button>
 
