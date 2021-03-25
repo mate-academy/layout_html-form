@@ -1,0 +1,13 @@
+.form-field {
+  display: block;
+  padding-bottom: 10px;
+  width: fit-content; /*I need to use width, because I like it!*/
+}
+
+.fieldset-section {
+  margin-bottom: 20px;
+}
+
+.fieldset-section .form-field:last-child {
+  padding-bottom: 0;
+}
