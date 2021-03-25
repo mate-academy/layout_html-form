@@ -1,0 +1,12 @@
+.section {
+  margin-bottom: 20px;
+}
+
+.input {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.input:last-child {
+  margin-bottom: 0;
+}
