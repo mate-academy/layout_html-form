@@ -1,0 +1,9 @@
+.box {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+.inside_text {
+  display: block;
+  padding-bottom: 10px;
+}
