@@ -1,0 +1,12 @@
+.fieldset {
+  box-sizing: content-box;
+  margin-bottom: 20px;
+}
+
+.input__row {
+  margin-bottom: 10px;
+}
+
+.input__row:last-child {
+  margin-bottom: 0;
+}
