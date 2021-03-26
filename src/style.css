@@ -1,0 +1,21 @@
+.form {
+  font-weight: 400;
+}
+
+.input {
+  margin-bottom: 10px;
+
+}
+
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.last {
+  margin-top: 10px;
+}
