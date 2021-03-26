@@ -1,15 +1,156 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Form</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <form autocomplete="off">
+      <fieldset class="info__section">
+        <legend>Personal information</legend>
+        <p class="field">
+          <label for="surname">Surname:</label>
+          <input
+            type="text"
+            id="surname"
+            name="surname">
+        </p>
+        <p class="field">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name">
+        </p>
+        <p class="field">
+          <label for="age">How old are You?</label>
+          <input
+            type="numer"
+            id="age"
+            name="age"
+            min="12"
+            max="100"
+            value="12">
+        </p>
+        <p class="field">
+          <label for="birth">Full date of birth:</label>
+          <input
+            type="date"
+            id="birth"
+            name="birth">
+        </p>
+        <p class="field">
+          <label for="rule">I accept the term of the agreement</label>
+          <input
+            type="checkbox"
+            id="rule"
+            name="rule"
+            required>
+        </p>
+      </fieldset>
+      <fieldset class="info__section">
+        <legend>Registraion</legend>
+        <p class="field">
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@example.com"
+            required>
+        </p>
+        <p class="field">
+          <label for="pasw">Password:</label>
+          <input
+            type="password"
+            id="pasw"
+            name="pasw"
+            minlength="5"
+            required>
+        </p>
+      </fieldset>
+      <fieldset class="info__section">
+        <legend>An interesting fact about you!</legend>
+        <p class="field">
+          <span>Do you love cats?</span>
+          <input
+            type="radio"
+            id="yes"
+            name="animal__taste"
+            value="Yes">
+          <label for="yes">Yes</label>
+          <input
+            type="radio"
+            id="no"
+            name="animal__taste"
+            value="No">
+          <label for="no">No</label>
+        </p>
+        <p class="field">
+          <label for="color">What is your favorite color?</label>
+          <input
+            type="color"
+            id="color"
+            name="color">
+        </p>
+        <p class="field">
+          <label for="bedtime">What time do you go to bed?</label>
+          <input
+            type="time"
+            id="bedtime"
+            name="time">
+        </p>
+        <p class="field">
+          <label for="cars">What are your favorite brand of cars?</label>
+          <select
+            id="cars"
+            name="cars"
+            multiple>
+            <option value="bmv">BMV</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </p>
+        <p class="field">
+          <label for="mark">How do you rate our work?</label>
+          <input
+            type="range"
+            id="mark"
+            name="mark"
+            min="0"
+            max="10">
+        </p>
+      </fieldset>
+      <fieldset class="info__section">
+        <legend>Additional info:</legend>
+        <p class="field">
+          <label for="comments">Comments:</label>
+          <textarea
+            id="comments"
+            name="comments"
+            maxlength="250">
+          </textarea>
+        </p>
+        <p class="field">
+          <label for="recommendation">Would you recommend us?</label>
+          <select
+            id="recommendation"
+            name="recommendation">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </p>
+      </fieldset>
+      <input
+        type="submit"
+        class="submit__btn"
+        id="submit__btn"
+        onsubmit="onSubmit()">
+    </form>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
 </html>
