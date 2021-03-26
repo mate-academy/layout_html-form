@@ -1,0 +1,12 @@
+.form__field {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.form__field:last-child {
+  margin-bottom: 0;
+}
