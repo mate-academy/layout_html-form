@@ -1,15 +1,174 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Form</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="POST"
+      class="dataForm"
+      onsubmit="onSubmit()"
+    >
+      <fieldset class="input-group">
+        <legend>Personal information</legend>
+        <div class="input-block">
+          <label for="form_surname">Surname:</label>
+          <input
+            type="text"
+            id="form_surname"
+            name="surname"
+            autocomplete="off"
+          >
+        </div>
+        <div class="input-block">
+          <label for="form_name">Name:</label>
+          <input
+            type="text"
+            id="form_name"
+            name="name"
+            autocomplete="off"
+          >
+        </div>
+        <div class="input-block">
+          <label for="form_age">How old are You?</label>
+          <input
+            type="number"
+            id="form_age"
+            name="age"
+            value="12"
+            min="0"
+            max="999"
+          >
+        </div>
+        <div class="input-block">
+          <label for="form_birth">Full date of birth:</label>
+          <input
+            type="date"
+            id="form_birth"
+            name="birth"
+          >
+        </div>
+        <div class="input-block">
+          <label for="form_agreement">I accept the term of the agreement</label>
+          <input
+            type="checkbox"
+            id="form_agreement"
+            name="agreement"
+          >
+        </div>
+      </fieldset>
+      <fieldset class="input-group">
+        <legend>Registration</legend>
+        <div class="input-block">
+          <label for="form_email">E-mail:</label>
+          <input
+            type="email"
+            id="form_email"
+            name="email"
+            autocomplete="off"
+            required
+            placeholder="email@example.com"
+            minlength="8"
+            maxlength="20"
+          >
+        </div>
+        <div class="input-block">
+          <label for="form_password">Password:</label>
+          <input
+            type="text"
+            id="form_password"
+            name="password"
+            autocomplete="off"
+            required minlength="8"
+            maxlength="12"
+          >
+        </div>
+      </fieldset>
+      <fieldset class="input-group">
+        <legend>An interesting fact about you!</legend>
+        <div class="input-block">
+          <span>
+            Do you love cats?
+          </span>
+          <input
+            type="radio"
+            id="catYes"
+            name="loveCats"
+            value="Yes"
+          >
+          <label for="catYes">Yes:</label>
+          <input
+            type="radio"
+            id="catNo"
+            name="loveCats"
+            value="No"
+          >
+          <label for="catNo">No:</label>
+        </div>
+        <div class="input-block">
+          <label for="colorPicker">What is your favorite color?</label>
+          <input
+            type="color"
+            id="colorPicker"
+            name="favColor"
+          >
+        </div>
+        <div class="input-block">
+          <label for="timePicker">What time do you go to bed?</label>
+          <input
+            type="time"
+            id="timePicker"
+            name="bedTime"
+          >
+        </div>
+        <div class="input-block">
+          <label for="favCarBrand">What are your favorite brand of cars?</label>
+          <select
+            id="favCarBrand"
+            name="favCar"
+            multiple
+          >
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </div>
+        <div class="input-block">
+          <label for="workRateRange">How do you rate our work?</label>
+          <input
+            type="range"
+            id="workRateRange"
+            name="workRate"
+            value="0"
+          >
+        </div>
+      </fieldset>
+      <fieldset class="input-group">
+        <legend>Additional info:</legend>
+        <div class="input-block">
+          <label for="comments">Comments:</label>
+          <textarea
+            id="comments"
+            name="comments"
+            autocomplete="off"
+          >
+          </textarea>
+        </div>
+        <div class="input-block">
+          <label for="recomendation">Would you recommend us?</label>
+          <select id="recomendation" name="giveRecomendation">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </div>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
 </html>
