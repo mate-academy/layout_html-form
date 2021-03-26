@@ -11,7 +11,9 @@
   <body>
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="POST">
+      method="POST"
+      onsubmit="onSubmit()"
+    >
 
       <fieldset class="fieldset">
 
@@ -20,12 +22,12 @@
         <div class="input__row">
           <label for="surname">Surname:</label>
           <input
-              id="surname"
-              name="surname"
-              type="text"
-              required
-              autocomplete="off"
-            >
+            id="surname"
+            name="surname"
+            type="text"
+            required
+            autocomplete="off"
+          >
         </div>
 
         <div class="input__row">
@@ -68,6 +70,7 @@
             id="term"
             name="term"
             type="checkbox"
+            required
           >
         </div>
 
@@ -109,18 +112,27 @@
         <legend>An interesting fact about you!</legend>
 
         <div class="input__row">
-          <label for="yes">Do you love cats?</label>
-          <input
+          Do you love cats?
+          <label for="yes">
+            <input
             id="yes"
             name="cats"
             type="radio"
-            value="Yes"> Yes
+            value="Yes"
+            >
+            Yes
+          </label>
 
-          <input
-            id="no"
-            name="cats"
-            type="radio"
-            value="No"> No
+          <label for="no">
+            <input
+              id="no"
+              name="cats"
+              type="radio"
+              value="No"
+            >
+            No
+          </label>
+
         </div>
 
         <div class="input__row">
@@ -147,7 +159,8 @@
           <select
             id="cars"
             name="cars"
-            multiple>
+            multiple
+          >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
@@ -186,7 +199,7 @@
 
       </fieldset>
 
-      <button type="submit" onsubmit="onSubmit()">Submit</button>
+      <button type="submit">Submit</button>
 
     </form>
     <script type="text/javascript" src="./main.js"></script>
