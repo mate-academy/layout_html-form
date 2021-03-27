@@ -1,0 +1,12 @@
+.form_fieldset {
+  margin-bottom: 20px;
+}
+
+.form_item {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form_item:last-child {
+  margin: 0;
+}
