@@ -1,0 +1,16 @@
+.field-block {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.field-block > :last-child {
+  margin-bottom: 0;
+}
+
+#age {
+  width: 3em;
+}
