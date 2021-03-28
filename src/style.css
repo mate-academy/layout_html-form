@@ -1,0 +1,7 @@
+.input-group {
+  margin-bottom: 20px;
+}
+
+.form-field:not(:first-of-type) {
+  margin-top: 10px;
+}
