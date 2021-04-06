@@ -1,1 +1,13 @@
 /* styles go here */
+
+.formInput {
+  display: block;
+}
+
+.Form__field {
+  padding-bottom: 10px;
+}
+
+.Form__block {
+  margin-bottom: 20px;
+}
