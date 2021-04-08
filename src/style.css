@@ -1,1 +1,17 @@
 /* styles go here */
+.inputs-fields {
+  margin-bottom: 10px;
+  display: block;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+.submitButton {
+  margin-top: 10px;
+}
+
+#age {
+  width: 65px;
+}

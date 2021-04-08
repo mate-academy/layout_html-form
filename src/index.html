@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta
@@ -11,7 +12,152 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <!-- <h1>HTML Form</h1> -->
+    <form onsubmit="onSubmit()">
+      <fieldset>
+        <legend>Personal information</legend>
+
+        <div class="inputs-fields">
+          <label for="Surname">Surname:</label>
+          <input
+        type="text"
+        name="Surname"
+        id="Surname"
+        autocomplete="off">
+        </div>
+
+        <div class="inputs-fields">
+          <label for="Name">Name:</label>
+          <input
+        type="text"
+        name="Name"
+        id="Name"
+        minlength="4"
+        maxlength="12"
+        autocomplete="off">
+        </div>
+
+        <div class="inputs-fields">
+          <label for="age">How old are You?</label>
+          <input
+        type="number"
+        name="age"
+        id="age"
+        value="12"
+        max="100">
+        </div>
+        <div class="inputs-fields">
+          <label for="dateOfBirth">Full date of birth:</label>
+          <input
+        type="date"
+        name="dateOfBirth"
+        id="dateOfBirth">
+        </div>
+        <div>
+          <label for="terms">I accept the term of the agreement</label>
+          <input
+        type="checkbox"
+        name="terms"
+        id="terms"
+        required>
+        </div>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>Registration</legend>
+        <div class = "inputs-fields">
+          <label for="email">E-mail:</label>
+          <input
+        type="email"
+        placeholder="email@example.com"
+        name="email"
+        id="email">
+        </div>
+        <div >
+          <label for="password">Password:</label>
+          <input
+        type="password"
+        id="password"
+        name="password">
+        </div>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>An interesting fact about you! </legend>
+        <div class="inputs-fields">
+      Do you love cats?
+          <input
+      id="catLover"
+      type="radio"
+      name="cats"
+      value="yes">
+          <label for="catLover">Yes</label>
+          <input
+      id="NotCatLover"
+      type="radio"
+      name="cats"
+      value="no">
+          <label for="NotCatLover">No</label>
+        </div>
+
+        <div class="inputs-fields">
+          <label for="color">What is your favorite color?</label>
+          <input
+      type="color"
+      id="color"
+      name="favoriteColor">
+        </div>
+
+        <div class="inputs-fields">
+          <label for="time">What time do you go to bed?</label>
+          <input
+       type="time"
+       id="time"
+       name="timeToSleep">
+        </div>
+
+        <div class="inputs-fields">
+          <label for="favoriteCar">What are your favorite brand of car?</label>
+          <select
+      id="favoriteCar"
+      name="favoriteCar"
+      multiple>
+            <option>BMW</option>
+            <option>Audi</option>
+            <option>Lada</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="rate">What is your favorite color?</label>
+          <input
+      type="range"
+      id="rate" step="5"
+      name="rate"
+      value="0">
+        </div>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>Additional info</legend>
+        <div class="inputs-fields">
+          <label for="textarea">Comments:</label>
+          <textarea name="comments" id="textarea"></textarea>
+        </div>
+
+        <div>
+          <label for="recommend">Would you recommend us?</label>
+          <select
+      type="checkbox"
+      name="recommend"
+      id="recommend">
+            <option>yes</option>
+            <option>no</option>
+          </select>
+        </div>
+      </fieldset>
+      <button type="submit" class="submitButton">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
