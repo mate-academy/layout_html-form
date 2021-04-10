@@ -1,1 +1,14 @@
-/* styles go here */
+
+form > :nth-child(n) {
+  margin-bottom: 20px;
+}
+
+fieldset > :nth-child(n+2) {
+  display: block;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+form > :nth-child(n) > :last-child {
+  margin-bottom: 0;
+}
