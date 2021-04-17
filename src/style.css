@@ -1,1 +1,14 @@
 /* styles go here */
+fieldset {
+  margin-bottom: 20px;
+}
+
+label:not(:last-child) {
+  display: block;
+  margin-bottom: 10px;
+}
+
+label.two-elements {
+  display: inline-block;
+  margin-bottom: 10px;
+}
