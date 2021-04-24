@@ -1,1 +1,15 @@
 /* styles go here */
+
+.form__field:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+fieldset {
+  padding-top: 6px;
+  margin-bottom: 20px;
+}
+
+.registration,
+.additional {
+  padding-top: 5px;
+}
