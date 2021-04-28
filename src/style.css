@@ -1,8 +1,11 @@
 /* styles go here */
 .form_container {
-    display: block;
-    margin-bottom: 10px;
+  display: block;
+  margin-bottom: 10px;
+
 }
+
 fieldset {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+
 }
