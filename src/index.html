@@ -12,13 +12,13 @@
   </head>
   <body>
     <script type="text/javascript" src="./main.js"></script>
-    <fieldset>
-      <legend>Personal information</legend>
-      <form
-      onsubmit="onSubmit()"
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="post"
-      >
+    <form
+    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="post"
+    onsubmit="onSubmit()"
+    >
+      <fieldset>
+        <legend>Personal information</legend>
         <div class="container">
           <label for="surname">Surname:</label>
           <input
@@ -44,6 +44,7 @@
           name="Yourage"
           min="12" max="100"
           placeholder="12"
+          value="12"
           required
           >
         </div>
@@ -61,28 +62,22 @@
         <div class="container">
           <label for="terms">I accept the term of the agreement</label>
           <input
-          type="checkbox"
-          id="terms"
-          name="scales">
+        type="checkbox"
+        id="terms"
+        name="scales">
         </div>
-      </form>
-    </fieldset>
-    <fieldset>
-      <legend>Registration</legend>
-      <form
-      onsubmit="onSubmit()"
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="post"
-      >
+      </fieldset>
+      <fieldset>
+        <legend>Registration</legend>
         <div class="container">
           <label for="email">E-mail:</label>
           <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="email@example.com"
-          autocomplete="off"
-          >
+        type="email"
+        id="email"
+        name="email"
+        placeholder="email@example.com"
+        autocomplete="off"
+        >
         </div>
         <div class="container">
           <label for="password">Password:</label>
@@ -96,15 +91,9 @@
           required
           >
         </div>
-      </form>
-    </fieldset>
-    <fieldset>
-      <legend>An interesting fact about you!</legend>
-      <form
-      onsubmit="onSubmit()"
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="post"
-      >
+      </fieldset>
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
         <div class="container">
         Do you love cats?
           <input
@@ -115,11 +104,11 @@
           >
           <label for="yes">Yes</label>
           <input
-        type="radio"
-        name="answer"
-        id="no"
-        value="n"
-        >
+          type="radio"
+          name="answer"
+          id="no"
+          value="n"
+          >
           <label for="no">No</label>
         </div>
         <div class="container">
@@ -160,15 +149,9 @@
           value="0"
           >
         </div>
-      </form>
-    </fieldset>
-    <fieldset>
-      <legend>Additional info</legend>
-      <form
-      onsubmit="onSubmit()"
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="post"
-      >
+      </fieldset>
+      <fieldset>
+        <legend>Additional info</legend>
         <div class="container">
           <label for="comments">Comments:</label>
           <textarea name="comments" id="comments"></textarea>
@@ -180,8 +163,8 @@
             <option value="No">No</option>
           </select>
         </div>
-      </form>
-    </fieldset>
-    <button type="submit">Submit</button>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>

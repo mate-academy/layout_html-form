@@ -1,7 +1,7 @@
 /* styles go here */
 fieldset {
-  padding-bottom: 0;
   margin-bottom: 20px;
+
 }
 
 label {
@@ -11,4 +11,9 @@ label {
 
 .container {
   margin-bottom: 10px;
+}
+
+.container:last-child {
+  margin-bottom: 0;
+
 }
