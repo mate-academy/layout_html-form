@@ -11,7 +11,161 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" onsubmit="onSubmit()">
+      <fieldset class="container">
+        <legend>Personal information</legend>
+        <label for="surname">Surname:</label>
+        <input
+          class="mg-b"
+          type="text"
+          id="surname"
+          name="family-name"
+          autocomplete="off"
+          required
+          autofocus
+          >
+        <br>
+        <label for="name">Name:</label>
+        <input
+          class="mg-b"
+          type="text"
+          id="name"
+          name="appellation"
+          autocomplete="off"
+          required
+          autofocus
+          >
+        <br>
+        <label for="age">How old are You?</label>
+        <input
+          class="mg-b"
+          type="number"
+          id="age"
+          name="years"
+          min="12"
+          max="100"
+          value="12"
+          >
+        <br>
+        <label for="date">Full date of birth:</label>
+        <input
+          class="mg-b"
+          type="date"
+          id="date"
+          name="when"
+          >
+        <br>
+        <label for="check">I accept the term of the agreement</label>
+        <input
+          type="checkbox"
+          id="check"
+          name="consent"
+          >
+      </fieldset>
+      <fieldset class="container">
+        <legend>Registration</legend>
+        <label for="email">E-mail:</label>
+        <input
+          class="mg-b"
+          type="email"
+          id="email"
+          name="post"
+          placeholder="email@example.com"
+          required
+          autofocus
+          >
+        <br>
+        <label for="psw">Password:</label>
+        <input
+          type="password"
+          id="psw"
+          name="sign"
+          min="4"
+          autofocus
+          >
+      </fieldset>
+      <fieldset class="container">
+        <legend>An interesting fact about you!</legend>
+        <label for="pet">Do you love cats?</label>
+        <input
+          type="radio"
+          id="pet"
+          name="pet1"
+          >
+          Yes
+        <input
+          type="radio"
+          name="pet2"
+          >
+          No<br>
+        <label for="head">What is your favorite color?</label>
+        <input
+          class="mg-b mg-t"
+          type="color"
+          id="head"
+          name="bloom"
+          >
+        <br>
+        <label for="sleep">What time do you go to bed?</label>
+        <input
+          class="mg-b"
+          type="time"
+          step="2"
+          value="--:--:--"
+          id="sleep"
+          name="hour"
+        >
+        <br>
+        <label for="brand">What are your favorite brand of cars?</label>
+        <select
+          id="brand"
+          name="machine"
+          multiple
+        >
+          <option value="BMW">BMW</option>
+          <option value="Audi">Audi</option>
+          <option value="Lada">Lada</option>
+        </select>
+        <br>
+        <label for="pace">How do you rate our work?</label>
+        <input
+          class="mg-t-range"
+          type="range"
+          id="pace"
+          name="norm"
+          value="0"
+          minlength="10"
+          maxlength="100"
+          step="10"
+        >
+      </fieldset>
+      <fieldset class="container">
+        <legend>Additional info:</legend>
+        <p class="mg-b">
+          <label for="note">Comments:</label>
+          <textarea
+            name="remark"
+            id="note"
+            max="20"
+            autofocus
+          >
+          </textarea>
+          <br>
+        </p>
+        <label for="consult">Would you recommend us?</label>
+        <select name="advise" id="consult">
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+      </fieldset>
+      <button
+        type="submit"
+        value="Submit"
+        name="submit"
+      >
+      Submit
+      </button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
