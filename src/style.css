@@ -1,11 +1,14 @@
 /* styles go here */
-.form_container {
-  display: block;
-  margin-bottom: 10px;
+fieldset {
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
+
+label {
+  display: inline;
 
 }
 
-fieldset {
-  margin-bottom: 20px;
-
+.container {
+  margin-bottom: 10px;
 }
