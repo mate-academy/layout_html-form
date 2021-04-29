@@ -1,1 +1,19 @@
 /* styles go here */
+fieldset {
+  margin-bottom: 20px;
+
+}
+
+label {
+  display: inline;
+
+}
+
+.container {
+  margin-bottom: 10px;
+}
+
+.container:last-child {
+  margin-bottom: 0;
+
+}
