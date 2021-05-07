@@ -1,1 +1,8 @@
-/* styles go here */
+.block {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+.input {
+  margin-bottom: 10px;
+}
