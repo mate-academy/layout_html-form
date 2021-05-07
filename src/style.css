@@ -1,1 +1,24 @@
-/* styles go here */
+fieldset {
+  margin-bottom: 20px;
+}
+
+.field {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.field:last-of-type {
+  margin-bottom: 0;
+}
+
+#age {
+  width: 64px;
+}
+
+#birth {
+  padding: 0;
+}
+
+#bed-time {
+  width: 120px;
+}
