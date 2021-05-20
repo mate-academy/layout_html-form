@@ -1,1 +1,15 @@
 /* styles go here */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.form-field:not(:last-child) {
+  display: inline-block;
+  margin-bottom: 10px;
+}
