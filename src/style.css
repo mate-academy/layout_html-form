@@ -1,1 +1,28 @@
-/* styles go here */
+fieldset {
+  margin-bottom: 20px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+[name="answer"] {
+  margin-bottom: 14px;
+}
+
+[name="agreement"] {
+  margin-bottom: 1px;
+}
+
+[name="password"] {
+  margin: 0;
+}
+
+[type="range"] {
+  margin-top: 11px;
+  margin-bottom: 5px;
+}
+
+[name="recommendation"] {
+  margin-top: 10px;
+}
