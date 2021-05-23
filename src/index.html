@@ -2,16 +2,93 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <h1>HTML Form</h1>
+    <form action="">
+      <fieldset>
+        <legend>Personal inf</legend>
+        <div class="person__information">
+          <div class="form-field">
+            <label for="surname">Surname: </label>
+            <input type="text" name="surname" id="surname" required>
+          </div>
+          <div class="form-field">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" required>
+          </div>
+          <div class="form-field">
+            <label for="age">How old are You: </label>
+            <input placeholder="12" type="number" value="12" required>
+          </div>
+          <div class="form-field">
+            <label for="date">Full date of birth: </label>
+            <input placeholder="mm/dd/yyyy" type="date" required></div>
+          <div class="form-field">
+            <p>I accept the term of the agreement</p> <input type="checkbox" name="checkbox"></p>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+    <form action="">
+      <fieldset>
+        <legend>Registration</legend>
+        <div class="form-field">
+          <label for="email">E-mail: <input placeholder="email@example.com" type="email" id="email"
+              name="login"></label>
+        </div>
+        <div class="form-field">
+          <label for="password">Password: <input type="password" name="pass" id="password" maxlength="20"></label>
+        </div>
+      </fieldset>
+    </form>
+    <form action="">
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+        <div class="form-field">
+          <label for="love-cats">Do you love cats?<input type="radio" id="radio" name="radio">Yes</label>
+          <label for="love-cats"><input type="radio" name="radio">No</label>
+        </div>
+        <div class="form-field">
+          <label for="color">
+            <p>What is your favorite color?</p><input type="color" id="color" name="bg" value="#000">
+          </label>
+        </div>
+        <div class="form-field">
+          <label for="time">What time do you go to bed? <input type="time" id="time" name="time"></label>
+        </div>
+        <div class="form-field">
+          <p>What are you favorite brand of cars?</p> <select name="select" size="3" id="select">
+            <option selected value="s1">BMW</option>
+            <option value="s2">Audi</option>
+            <option value="s3">Lada</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <p>How do you rate our work?</p> <input type="range" value="0"></p>
+        </div>
+      </fieldset>
+    </form>
+    <form action="Add-info">
+      <fieldset>
+        <legend>Additional info: </legend>
+        <div class="comments">
+          <p>Comments: <textarea cols="20" rows="2"></textarea></p>
+        </div>
+        <div class="form-field">
+          <p>Whoud you recommend us?</p>
+          <select size="1" multiple>
+            <option value="">yes</option>
+            <option value="">no</option>
+          </select>
+        </div>
+      </fieldset>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
