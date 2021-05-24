@@ -11,7 +11,110 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form action="" class="first_form">
+      <fieldset>
+        <legend>Personal information</legend>
+        <div class="personal-info">
+          Surname:
+          <input
+            type="text"
+            name="personal-fields"
+            autocomplete="disabled">
+        </div>
+        <div class="personal-info">
+          Name:
+          <input
+            type="text"
+            name="personal-fields"
+            autocomplete="disabled">
+        </div>
+        <div class="personal-info">
+          How old are You?
+          <input
+            type="number"
+            value="12"
+            name="personal-fields"
+            min="3"
+            max="100">
+        </div>
+        <div class="personal-info">
+          Full date of birth:
+          <input type="date" name="personal-fields">
+        </div>
+        <div class="personal-info">
+          I accept the term of the agreement
+          <input type="checkbox" name="personal-fields">
+        </div>
+      </fieldset>
+    </form>
+    <form action="" class="second_form">
+      <fieldset>
+        <legend>Registration</legend>
+        <div class="personal-info">
+          E-mail:
+          <input
+            type="email"
+            placeholder="email@example.com"
+            name="credentials"
+            required>
+        </div>
+        <div class="personal-info">
+          Password:
+          <input
+            type="password"
+            name="credentials"
+            minlength="5"
+            maxlength="30">
+        </div>
+      </fieldset>
+    </form>
+    <form action="" class="third_form">
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+        <div class="personal-info">
+          Do you love cats?
+          <input type="radio" name="cat"> Yes
+          <input type="radio" name="cat"> No
+        </div>
+        <div class="personal-info">
+          What is your favorite color?
+          <input type="color" name="add-information">
+        </div>
+        <div class="personal-info">
+          What time do you go to bad?
+          <input
+            type="time"
+            name="add-information"
+            step="1">
+        </div>
+        <div class="personal-info">
+          What are your favorite brands of car?
+          <select name="car" multiple>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </div>
+        <div class="personal-info">
+          How do you rate your work?
+          <input type="range" name="add-information">
+        </div>
+      </fieldset>
+    </form>
+    <form action="" class="fourth_form">
+      <fieldset>
+        <legend>Additional info</legend>
+        <div class="personal-info">Comments: <textarea name="comments"></textarea></div>
+        <div class="personal-info">
+          Would you recommend us?
+          <select name="recommend">
+            <option value="yes" selected>yes</option>
+            <option value="no">no</option>
+          </select>
+        </div>
+      </fieldset>
+    </form>
+    <button type="submit" onsubmit="onSubmit(form)">Submit</button>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>

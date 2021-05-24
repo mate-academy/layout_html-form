@@ -1,1 +1,12 @@
 /* styles go here */
+.personal-info {
+  display: block;
+}
+
+form:not(:last-of-type) {
+  margin-bottom: 20px ;
+}
+
+fieldset .personal-info:not(:last-of-type) {
+  margin-bottom: 10px;
+}
