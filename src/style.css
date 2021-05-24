@@ -1,1 +1,8 @@
-/* styles go here */
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.element-form:not(:last-child) {
+  padding-bottom: 10px;
+}
