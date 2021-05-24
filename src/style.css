@@ -1,1 +1,20 @@
 /* styles go here */
+.indentation {
+  margin: 10px 0;
+}
+
+.age {
+  width: 65px;
+}
+
+.indentation:first-of-type {
+  margin-top: 0;
+}
+
+.indentation:last-of-type {
+  margin-bottom: 0;
+}
+
+.fieldset-indentation {
+  margin-bottom: 20px;
+}
