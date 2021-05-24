@@ -1,1 +1,12 @@
-/* styles go here */
+
+.fblock {
+  margin-bottom: 20px;
+}
+
+.irow {
+  margin-bottom: 10px;
+}
+
+.irow:last-child {
+  margin-bottom: 0;
+}
