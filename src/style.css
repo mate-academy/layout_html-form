@@ -1,1 +1,40 @@
 /* styles go here */
+.box {
+  margin-bottom: 20px;
+}
+
+.personal_info_label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.personal_info_label:last-child {
+  margin: 0;
+}
+
+.registration_label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.registration_label:last-child {
+  margin: 0;
+}
+
+.facts_label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.facts_label:last-child {
+  margin: 0;
+}
+
+.additional_label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.additional_label:last-child {
+  margin: 0;
+}
