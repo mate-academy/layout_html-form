@@ -1,1 +1,15 @@
-/* styles go here */
+.fieldset-border {
+  margin-top: 20px;
+}
+
+.fieldset {
+  padding-top: 5.5px;
+}
+
+.fieldset > .form-field:not(:first-of-type) {
+  margin-top: 10px;
+}
+
+.submit {
+  margin: 20px 0;
+}
