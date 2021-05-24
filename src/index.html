@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="" class="first_form">
-      <fieldset>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      onsubmit="onSubmit()">
+      <fieldset class="container">
         <legend>Personal information</legend>
         <div class="personal-info">
           Surname:
@@ -46,9 +48,7 @@
           <input type="checkbox" name="personal-fields">
         </div>
       </fieldset>
-    </form>
-    <form action="" class="second_form">
-      <fieldset>
+      <fieldset class="container">
         <legend>Registration</legend>
         <div class="personal-info">
           E-mail:
@@ -67,9 +67,7 @@
             maxlength="30">
         </div>
       </fieldset>
-    </form>
-    <form action="" class="third_form">
-      <fieldset>
+      <fieldset class="container">
         <legend>An interesting fact about you!</legend>
         <div class="personal-info">
           Do you love cats?
@@ -100,9 +98,7 @@
           <input type="range" name="add-information">
         </div>
       </fieldset>
-    </form>
-    <form action="" class="fourth_form">
-      <fieldset>
+      <fieldset class="container">
         <legend>Additional info</legend>
         <div class="personal-info">Comments: <textarea name="comments"></textarea></div>
         <div class="personal-info">
@@ -113,8 +109,8 @@
           </select>
         </div>
       </fieldset>
+      <button type="submit">Submit</button>
     </form>
-    <button type="submit" onsubmit="onSubmit(form)">Submit</button>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
