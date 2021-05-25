@@ -1,1 +1,21 @@
 /* styles go here */
+.label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.label:last-child {
+  margin-bottom: 0;
+}
+
+.age {
+  max-width: 99px;
+}
+
+.form_block {
+  margin-bottom: 20px;
+}
+
+.facts {
+  margin-bottom: 10px;
+}
