@@ -1,1 +1,22 @@
-/* styles go here */
+.form-block {
+  
+  display: block;
+  margin-bottom: 20px;
+}
+
+.form-block:last-child {
+  margin-bottom: 0;
+}
+
+.form-element {
+  display: block;
+  padding-bottom: 10px;
+}
+
+.form-element:last-child {
+  padding-bottom: 0;
+}
+
+.annoying {
+  display: inline;
+}
