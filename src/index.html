@@ -2,8 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
@@ -15,9 +17,9 @@
       method="POST"
       onsubmit="onsubmit()"
     >
-      <fieldset class="fblock">
+      <fieldset class="block">
         <legend>Personal information</legend>
-        <div class="irow">
+        <div class="input_row">
           <label for="surname">Surname:</label>
           <input
             type="text"
@@ -26,7 +28,7 @@
             autocomplete="off"
           >
         </div>
-        <div class="irow">
+        <div class="input_row">
           <label for="name">Name:</label>
           <input
             type="text"
@@ -35,7 +37,7 @@
             autocomplete="off"
           >
         </div>
-        <div class="irow">
+        <div class="input_row">
           <label for="age">How old are You?</label>
           <input
             type="number"
@@ -46,7 +48,7 @@
             max="100"
           >
         </div>
-        <div class="irow">
+        <div class="input_row">
           <label for="date">Full date of birth:</label>
           <input
             type="date"
@@ -54,7 +56,7 @@
             id="date"
           >
         </div>
-        <div class="irow">
+        <div class="input_row">
           <label for="term">I accept the term of the agreement</label>
           <input
             type="checkbox"
@@ -64,9 +66,9 @@
         </div>
       </fieldset>
 
-      <fieldset class="fblock">
+      <fieldset class="block">
         <legend>Registration</legend>
-        <div class="irow">
+        <div class="input_row">
           <label for="email">E-mail:</label>
           <input
             type="email"
@@ -76,7 +78,7 @@
             required
           >
         </div>
-        <div class="irow">
+        <div class="input_row">
           <label for="password">Password:</label>
           <input
             type="password"
@@ -89,9 +91,9 @@
         </div>
       </fieldset>
 
-      <fieldset class="fblock">
+      <fieldset class="block">
         <legend>An interesting fact about you?</legend>
-        <div class="irow">
+        <div class="input_row">
           <label for="cats_yes">
             Do you love cats?
             <input
@@ -112,7 +114,7 @@
             No
           </label>
         </div>
-        <div class="irow">
+        <div class="input_row">
           <label for="color">What is your favorite color?</label>
           <input
             type="color"
@@ -120,7 +122,7 @@
             id="color"
           >
         </div>
-        <div class="irow">
+        <div class="input_row">
           <label for="time">What time do you go to bed?</label>
           <input
             type="time"
@@ -129,7 +131,7 @@
             step="1"
           >
         </div>
-        <div class="irow">
+        <div class="input_row">
           <label for="cars">What are your favorite brand of cars?</label>
           <select
             name="cars"
@@ -141,7 +143,7 @@
             <option value="Lada">Lada</option>
           </select>
         </div>
-        <div class="irow">
+        <div class="input_row">
           <label for="rate">How do you rate our work?</label>
           <input
             type="range"
@@ -151,12 +153,12 @@
             max="10"
             step="1"
             value="0"
-            >
+          >
         </div>
       </fieldset>
-      <fieldset class="fblock">
+      <fieldset class="block">
         <legend>Additional info:</legend>
-        <div class="irow">
+        <div class="input_row">
           <label for="comments">Comments:</label>
           <textarea
             name="comments"
@@ -166,7 +168,7 @@
           >
           </textarea>
         </div>
-        <div class="irow">
+        <div class="input_row">
           <label for="recommend">Would you recommend us?</label>
           <select name="recommend" id="recommend">
             <option value="yes" selected>yes</option>
