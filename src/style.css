@@ -1,1 +1,8 @@
-/* styles go here */
+.form-field:not(.first) {
+  display: block;
+  margin-top: 10px;
+}
+
+.fieldset {
+  margin-bottom: 20px;
+}
