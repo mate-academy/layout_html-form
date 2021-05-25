@@ -1,1 +1,16 @@
-/* styles go here */
+.form-field {
+  display: block;
+  margin-top: 10px;
+}
+
+.fieldset {
+  margin-top: 20px;
+}
+
+.form_age {
+  max-width: 65px;
+}
+
+.form_inline {
+  display: inline;
+}
