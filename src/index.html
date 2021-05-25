@@ -4,14 +4,169 @@
     <meta charset="UTF-8">
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML Form</title>
+    <title>HTML</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
-    <script type="text/javascript" src="./main.js"></script>
+
+    <form class="form" onsubmit="onSubmit()">
+
+      <script type="text/javascript" src="./main.js">
+      </script>
+
+      <fieldset class="first-block" aria-autocomplete="none">
+        <legend class="opo">Personal information</legend>
+
+        <div class="x">
+          <label for="box-s">
+            Surname:
+          </label>
+          <input type="text" id="box-s">
+        </div>
+
+        <div class="x">
+          <label for="box-n">
+              Name:
+          </label>
+          <input type="text" id="box-n">
+        </div>
+
+        <div class="x">
+          <label for="box-h">
+            How old are You?
+          </label>
+          <input
+            type="number"
+            value="12"
+            id="box-h"
+            min="12"
+            max="100">
+        </div>
+
+        <div class="x">
+          <label for="box-f">
+    Full date of birth:
+          </label>
+          <input
+            type="date"
+            value="дд.мм.рррр"
+            id="box-f">
+        </div>
+
+        <div class="y">
+          <label for="box-i">
+            I accept the term of the agreement
+          </label>
+          <input type="checkbox" id="box-i">
+        </div>
+      </fieldset>
+
+
+      <fieldset class="second-block" aria-autocomplete="none">
+        <legend>Registration</legend>
+        <div class="x">
+          <label for="box-e">
+    E-mail:
+          </label>
+          <input type="email"
+    id="box-e"
+    placeholder="email@example.com"
+    multiple>
+        </div>
+
+        <div class="y">
+          <label for="box-p">
+    Password:
+          </label>
+          <input type="password"
+   id="box-p"
+   minlength="6"
+   maxlength="12"
+   required>
+        </div>
+      </fieldset>
+
+      <fieldset class="third-block">
+        <legend>An interesting fact about you!</legend>
+
+        <div class="x">
+          <label for="box-cats">
+    Do you love cats?
+          </label>
+          <input type="radio"
+  name="cats"
+  id="box-cats">
+  Yes
+          <input type="radio"
+  name="cats"
+  id="box-cat">
+  No
+        </div>
+
+        <div class="x">
+          <label for="box-color">
+    What is your favorite color?
+          </label>
+          <input type="color" id="box-color">
+        </div>
+
+        <div class="x">
+          <label for="box-time">
+What time do you go to bed?
+          </label>
+          <input type="time" id="box-time">
+        </div>
+
+        <div class="x">
+          <label for="box-brand">
+What are your favorite brand of cars?
+          </label>
+          <select name=""
+    id="box-brand"
+      multiple>
+            <option value="">BMW</option>
+            <option value="">Audi</option>
+            <option value="">Lada</option>
+          </select>
+        </div>
+
+        <div class="y">
+          <label for="box-range">
+How do you rate our work?
+          </label>
+          <input type="range"
+         id="box-range" value="0">
+        </div>
+</div>
+      </fieldset>
+
+      <fieldset class="fourth-block" aria-autocomplete="none">
+        <legend>Additional info:</legend>
+
+        <div class="x">
+          <label for="u">
+Comments:
+            <textarea rows="2" id="u">
+            </textarea>
+          </label>
+        </div>
+
+        <div class="y">
+          <label for="box-rec">
+   Would you recommend us?
+          </label>
+          <select id="box-rec">
+            <option value="">yes</option>
+            <option value="">no</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <button type="submit">
+Submit
+      </button>
+    </form>
   </body>
 </html>
