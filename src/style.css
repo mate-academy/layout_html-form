@@ -1,1 +1,30 @@
 /* styles go here */
+div {
+  display: block ;
+  margin: 0 0 20px ;
+}
+
+.PersonalInformation {
+  display: block ;
+  margin: 10px 0 0 ;
+}
+
+.Registration {
+  display: block ;
+  margin: 10px 0 0 ;
+}
+
+.AnInFaABYou {
+  display: block ;
+  margin: 10px 0 0 ;
+}
+
+.AddInfo {
+  display: block ;
+  margin: 10px 0 0 ;
+}
+
+.push {
+  display: block ;
+  margin: 10px 0 0 ;
+}
