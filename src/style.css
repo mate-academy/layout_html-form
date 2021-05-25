@@ -1,1 +1,12 @@
 /* styles go here */
+.set {
+  margin-bottom: 20px;
+}
+
+.item {
+  margin-bottom: 10px;
+}
+
+.item:last-child {
+  margin: 0;
+}
