@@ -1,1 +1,31 @@
-/* styles go here */
+.form {
+  margin: 0;
+}
+
+.field {
+  margin: 20px 2px;
+}
+
+.field:first-of-type {
+  margin-top: 0;
+}
+
+.field:last-of-type {
+  margin-bottom: 10px;
+}
+
+.form-field {
+  margin-top: 10px;
+}
+
+.form-field:first-of-type {
+  margin-top: 0;
+}
+
+.form-field:last-of-type {
+  margin-bottom: 0;
+}
+
+.btn {
+  margin: 10px 0;
+}
