@@ -1,1 +1,8 @@
 /* styles go here */
+.section {
+  margin-bottom: 20px;
+}
+
+.section .block:not(:last-child) {
+  margin-bottom: 10px;
+}
