@@ -1,1 +1,15 @@
-/* styles go here */
+/* body {
+  margin: 0;
+} */
+
+.styleBlok {
+  margin-bottom: 20px;
+}
+
+.styleBlok_div {
+  margin-bottom: 10px;
+}
+
+.firstBlok {
+  margin-top: auto;
+}

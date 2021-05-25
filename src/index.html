@@ -11,7 +11,191 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form
+    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    onsubmit="onSubmit()"
+    autocomplete="off"
+    >
+      <!-- Personal information -->
+      <fieldset class="styleBlok firstBlok">
+        <legend>Personal information</legend>
+        <!-- <h2 class="styleHeader">Personal information</h2> -->
+        <div class="styleBlok_div">
+          <label for="sname">Surname:</label>
+          <input
+          type="text"
+          id="sname"
+          name="surname"
+          class="color"
+          >
+        </div>
+
+        <div class="styleBlok_div">
+          <label for="lname">Name:</label>
+          <input
+          type="text"
+          id="lname"
+          name="name"
+          >
+        </div>
+
+        <div class="styleBlok_div">
+          <label for="quantity">How old are You?</label>
+          <input
+          type="number"
+          id="quantity"
+          min="12"
+          value="12"
+          max="100"
+          >
+        </div>
+
+        <div class="styleBlok_div">
+          <label for="birthday">Full date of birth:</label>
+          <input
+          type="date"
+          id="birthday"
+          class="color"
+          >
+        </div>
+
+        <div>
+          <label for="vehicle1">I accept the term of the agreemant</label>
+          <input
+          type="checkbox"
+          id="vehicle1"
+          class="color"
+          >
+        </div>
+      </fieldset>
+
+      <!-- Registration -->
+      <fieldset class="styleBlok">
+        <!-- <h2 class="styleHeader">Registration</h2> -->
+        <legend>Registration</legend>
+        <div class="styleBlok_div">
+          <label for="email">E-mail:</label>
+          <input
+          type="email"
+          id="email"
+          name="email"
+          class="color"
+          placeholder="email@example.com"
+          required
+          >
+        </div>
+
+        <div>
+          <label for="pwd">Password:</label>
+          <input
+          type="password"
+          id="pwd"
+          name="pwd"
+          class="color"
+          minlength="5"
+          maxlength="32"
+          >
+        </div>
+      </fieldset>
+
+      <!-- An interesting fact about you -->
+      <fieldset class="styleBlok">
+        <!-- <h2 class="styleHeader">An interesting fact about you</h2> -->
+        <legend>An interesting fact about you</legend>
+        <div class="styleBlok_div">
+          <label for="yes">Do you love cats?</label>
+          <input
+          type="radio"
+          id="yes"
+          name="answer"
+          >yes
+
+          <input
+          type="radio"
+          id="no"
+          name="answer"
+          >no
+        </div>
+
+        <div class="styleBlok_div">
+          <label for="favcolor">What is your favorite color?</label>
+          <input
+          type="color"
+          id="favcolor"
+          name="favcolor"
+          >
+        </div>
+
+        <div class="styleBlok_div">
+          <label for="appt">What time do you go to bed?</label>
+          <input
+          type="time"
+          id="appt"
+          name="appt"
+          >
+        </div>
+
+        <div class="styleBlok_div">
+          <label for="brandOfcar">What are your favorite brand of cars?</label>
+          <select
+          name="brandOfcar"
+          id="brandOfcar"
+          multiple
+          >
+            <option
+            value="BMW"
+            selected
+            >
+              BMW
+            </option>
+            <option
+            value="Audi"
+            >
+              Audi
+            </option>
+            <option
+            value="Lada"
+            >
+              Lada
+            </option>
+          </select>
+        </div>
+
+        <div>
+          <label for="mark">How do you rate our work?</label>
+          <input
+          type="range"
+          id="mark"
+          name="mark"
+          min="0" max="100"
+          >
+        </div>
+      </fieldset>
+
+      <!-- Additional info -->
+      <fieldset class="styleBlok styleBlok2">
+        <!-- <h2 class="styleHeader">Additional info</h2> -->
+        <legend>Additional info</legend>
+        <div class="styleBlok_div">
+          <label for="comments">Comments:</label>
+          <textarea
+          name="comments"
+          id="comments"
+          >
+          </textarea>
+        </div>
+
+        <div>
+          <label for="yesOrNo">Would you reccommend us?</label>
+          <select name="yesOrNo" id="yesOrNo">
+            <option value="yes" selected>yes</option>
+            <option value="no">no</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
