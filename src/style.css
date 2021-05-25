@@ -1,1 +1,12 @@
-/* styles go here */
+
+.container {
+  margin-top: 10px;
+}
+  
+.block {
+  margin-top: 20px;
+}
+  
+.button {
+  margin-top: 20px;
+}

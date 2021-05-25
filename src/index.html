@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -11,7 +11,160 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form
+		  onsubmit="onSubmit()"
+			autocomplete="off"
+			action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+			method="post"
+		>
+      <fieldset>
+        <legend>Personal information</legend>
+        <div>
+          <label for="Surname">Surname:</label>
+          <input
+					  type="text"
+					  name="Surname"
+					  id="Surname"
+					>
+        </div>
+        <div class="container">
+          <label for="name">Name:</label>
+          <input
+					  type="text"
+						name="Name"
+				    id="name"
+					>
+        </div>
+        <div class="container">
+          <label for="number">How old are You?</label>
+          <input
+					  type="number"
+						name="old"
+            value="12"
+						id="number"
+            min="12"
+						max="100"
+					>
+        </div>
+        <div class="container">
+          <label for="date">Full date of birth:</label>
+          <input
+					  name="date"
+					  type="date"
+						id="date"
+					>
+        </div>
+        <div class="container">
+          <label for="accept">I accept the term of the agreement</label>
+          <input
+					  type="checkbox"
+						name="accept"
+				    id="accept"
+					>
+        </div>
+      </fieldset>
+      <fieldset class="block">
+        <legend>Registration</legend>
+        <div>
+          <label for="email">E-mail:</label>
+          <input
+					  type="email"
+						name="email"
+            placeholder="email@example.com"
+						id="email"
+            required
+					>
+        </div>
+        <div class="container">
+          <label for="password">Password:</label>
+          <input
+					  type="password"
+						name="Password"
+            id="password"
+						required
+            minlength="8"
+						maxlength="32"
+					>
+        </div>
+      </fieldset>
+      <fieldset class="block">
+        <legend>An interesting fact about you!</legend>
+        <div>
+          Do you love cats?
+          <input
+					  type="radio"
+					  name="cat"
+					>Yes
+          <input
+					  type="radio"
+						name="cat"
+					>No
+        </div>
+        <div class="container">
+          <label for="color">What is your favorite color?</label>
+          <input
+					  type="color"
+					  name="color"
+				    id="color"
+				  >
+        </div>
+        <div class="container">
+          <label for="time">What time do you go to bed?</label>
+          <input
+					  type="time"
+						name="time"
+				    id="time"
+					>
+        </div>
+        <div class="container">
+          <label for="car">What are your favorite brand of cars?</label>
+          <select
+					  name="cars"
+						id="car"
+						multiple
+					>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </div>
+        <div class="container">
+          <label for="rate">
+          How do you rate our work?
+          </label>
+          <input
+					  type="range"
+						name="work"
+				    min="0"
+						max="10"
+				    value="0"
+						id="rate"
+					>
+        </div>
+      </fieldset>
+      <fieldset class="block">
+        <legend>Additional info:</legend>
+        <div>
+          <label for="comments">Comments:
+          </label>
+          <textarea
+					  name="comments"
+						rows="2"
+				    cols="20"
+						id="comments"
+					>
+          </textarea>
+        </div>
+        <div class="container">
+          <label for="recommend">Would you recommend us?</label>
+          <select name="recommend" id="recommend">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+      </fieldset>
+      <button class="button" type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
