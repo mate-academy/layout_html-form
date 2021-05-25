@@ -1,1 +1,17 @@
 /* styles go here */
+
+.form-field {
+  display: inline;
+}
+
+.container {
+  margin-bottom: 10px;
+}
+
+.block {
+  margin-bottom: 20px;
+}
+
+.container-last {
+  margin: 0;
+}
