@@ -3,7 +3,7 @@
   display: block;
 }
 
-fieldset .personal-info:not(:last-of-type) {
+.personal-info:not(:last-of-type) {
   margin-bottom: 10px;
 }
 
