@@ -1,1 +1,18 @@
 /* styles go here */
+.fieldset__box {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.fieldset__box:last-child {
+  margin-bottom: 0;
+}
+
+.box {
+  display: block;
+  padding-bottom: 10px;
+}
+
+.box:last-child {
+  padding-bottom: 0;
+}
