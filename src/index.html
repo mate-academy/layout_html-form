@@ -11,7 +11,165 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+    <form onsubmit="onSubmit()" method="GET">
+      <fieldset class="inputBlock">
+        <legend>Persolnal information</legend>
+        <div class="inputElement">
+          <label for="surname">Surname:</label>
+          <input
+            type="text"
+            name="surname"
+            id="surname"
+            autocomplete="off"
+          >
+        </div>
+        <div class="inputElement">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="Name"
+            autocomplete="off"
+            id="name">
+        </div>
+        <div class="inputElement">
+          <label for="age">Haw old are You?:</label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            min="12"
+            max="100"
+            value="12"
+            required
+          >
+        </div>
+        <div class="inputElement">
+          <label for="birthday">Full date of birth:</label>
+          <input
+            type="date"
+            name="birthday"
+            id="birthday">
+        </div>
+        <div class="inputElement">
+          <label for="rulesAcception">I accept the term of the agreement:</label>
+          <input
+            type="checkbox"
+            name="rulesAcception"
+            id="rulesAcception"
+          >
+        </div>
+      </fieldset>
+      <fieldset class="inputBlock">
+        <legend>Registration</legend>
+        <div class="inputElement">
+          <label for="email">E-mail:</label>
+          <input
+            autocomplete="off"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@example.com"
+            required
+          >
+        </div>
+        <div class="inputElement" autocomplete="off">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            required
+          >
+        </div>
+      </fieldset>
+      <fieldset class="inputBlock">
+        <legend>An interestiong fact about you!</legend>
+        <div class="inputElement">
+          Do you love cats?:
+          <label for="isCatLover">
+            <input
+              type="radio"
+              name="isCatLover"
+              id="isCatLover"
+              value="yes"
+            >
+            Yes
+          </label>
+          <label for="isNotCatLover">
+            <input
+              type="radio"
+              name="isCatLover"
+              id="isNotCatLover"
+              value="no"
+            >
+            No
+          </label>
+        </div>
+        <div class="inputElement">
+          <label for="favColor">What is your favorite color?</label>
+          <input
+            type="color"
+            name="favColor"
+            id="favColor">
+        </div>
+        <div class="inputElement">
+          <label for="bedTime">What time do you go to bed?</label>
+          <input
+            type="time"
+            name="bedTime"
+            id="bedTime">
+        </div>
+        <div class="inputElement">
+          <label for="favCar">What are your favorite brand of cars?</label>
+          <select
+            id="favCar"
+            name="favCar"
+            multiple
+          >
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+            <option
+              value=""
+              selected
+              disabled
+            >
+            </option>
+          </select>
+        </div>
+        <div class="inputElement">
+          <label for="rate">How do you rate our work?</label>
+          <input
+            name="rate"
+            type="range"
+            min="1"
+            max="5"
+            id="rate"
+          ></input>
+        </div>
+      </fieldset>
+      <fieldset class="inputBlock">
+        <legend>Additional info:</legend>
+        <div class="inputElement">
+          <label for="comments">Comments:</label>
+          <textarea
+            name="comments"
+            id="comments"
+            autocomplete="off"
+          >
+          </textarea>
+        </div>
+        <div class="inputElement">
+          <label for="recomendation">Would you recomend us?:</label>
+          <select name="recomendation" id="recomendation">
+            <option value="Yes">yes</option>
+            <option value="No">no</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
