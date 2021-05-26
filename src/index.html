@@ -1,17 +1,180 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+
   <body>
-    <h1>HTML Form</h1>
+    <form
+      action="#"
+      method="POST"
+      onsubmit="onSubmit()"
+    >
+      <fieldset class="split-section">
+        <legend>Personal information</legend>
+        <label class="form-field" for="surname">
+          Surname:
+          <input
+            type="text"
+            id="surname"
+            name="surname"
+            autocomplete="off"
+          >
+        </label>
+        <label class="form-field" for="name">
+          Name:
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="off"
+          >
+        </label>
+        <label class="form-field" for="age">
+          How old are You?
+          <input
+            class="age"
+            type="number"
+            id="age"
+            name="age"
+            value="12"
+            max="100"
+          >
+        </label>
+        <label class="form-field" for="birthDate">
+          Full date of birth:
+          <input
+            type="date"
+            id="birthDate"
+            name="birthDate"
+          >
+        </label>
+        <label class="form-field" for="agreement">
+          I accept the term of the agreement
+          <input
+            type="checkbox"
+            id="agreement"
+            name="agreement"
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="split-section">
+        <legend>Registration</legend>
+        <label class="form-field" for="email">
+          E-mail:
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@example.com"
+            required
+          >
+        </label>
+        <label class="form-field" for="password">
+          Password:
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            minlength="5"
+            maxlength="15"
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="split-section facts">
+        <legend>An interesting fact about You</legend>
+        <label class="form-field select" for="yes">
+          Do you love cats?
+          <input
+            type="radio"
+            name="cat-radio"
+            value="yes"
+            id="yes"
+          >
+          <label class="select" for="yes">Yes</label>
+          <input
+            type="radio"
+            id="no"
+            name="cat-radio"
+            value="now"
+          >
+          <label class="select" for="no">No</label>
+        </label>
+        <label class="form-field" for="color">
+          What is your favorite color?
+          <input
+            type="color"
+            id="color"
+            name="color"
+          >
+        </label>
+        <label class="form-field" for="time">
+          What time do you go to bed?
+          <input
+            type="time"
+            id="time"
+            name="time"
+          >
+        </label>
+        <label class="form-field" for="car-brend">
+          What are your favorite brand of cars?
+          <select
+            name="car-brend"
+            id="car-brend"
+            multiple
+          >
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </label>
+        <label class="form-field" for="myRange">
+          How do You rate our work?
+          <input
+            type="range"
+            id="myRange"
+            value="1"
+            min="1"
+            max="100"
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="split-section">
+        <legend>Additional info</legend>
+        <label class="form-field" for="comments">
+          Comments:
+          <textarea
+            name="comments"
+            id="comments"
+            cols="20"
+            rows="2"
+          >
+          </textarea>
+        </label>
+        <label class="form-field" for="recommend">
+          Would you recommend us?
+          <select name="recommend" id="recommend">
+            <option value="Yes">Yes</option>
+            <option value="Now">Now</option>
+          </select>
+        </label>
+      </fieldset>
+      <button
+        class="submit"
+        type="submit"
+      >Submit
+      </button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
