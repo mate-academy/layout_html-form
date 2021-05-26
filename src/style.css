@@ -1,1 +1,17 @@
-/* styles go here */
+.form-field {
+  margin: 10px 0;
+  display: block;
+}
+  
+.field {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.form-field:last-of-type {
+  margin-bottom: 0;
+}
+
+.form-field:first-of-type {
+  margin-top: 0;
+}
