@@ -1,1 +1,24 @@
-/* styles go here */
+.form-style {
+  margin: auto;
+}
+
+.form-field {
+  margin-top: 20px;
+}
+  
+.fieldset-field {
+  display: block;
+  margin-top: 10px;
+}
+  
+.initial-fieldset {
+  margin-top: 0;
+}
+
+.initial-label {
+  margin-top: 0;
+}
+
+.button-style {
+  margin-top: 20px;
+}
