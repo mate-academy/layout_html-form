@@ -16,65 +16,72 @@
     <form method="POST"
     onsubmit="onSubmit()"
     >
-      <fieldset name="Personal_info"
-      class="field"
+      <fieldset
+        name="Personal_info"
+        class="field"
       >
         <legend>Personal information</legend>
         <div class="input">
           <label for="surname">
             Surname:
           </label>
-          <input type="text"
-          name="surname"
-          id="surname"
-          autocomplete="off"
+          <input
+            type="text"
+            name="surname"
+            id="surname"
+            autocomplete="off"
           >
         </div>
         <div class="input">
           <label for="name">
             Name:
           </label>
-          <input type="text"
-          name="name"
-          id="name"
-          autocomplete="off"
+          <input
+            type="text"
+            name="name"
+            id="name"
+            autocomplete="off"
           >
         </div>
         <div class="input">
           <label for="age">
             How old are You?
           </label>
-          <input type="number"
-          name="age"
-          min="1"
-          max="100"
-          value="12"
-          id="age"
+          <input
+            type="number"
+            name="age"
+            min="1"
+            max="100"
+            value="12"
+            id="age"
           >
         </div>
         <div class="input">
           <label for="date">
             Full date of birth:
           </label>
-          <input type="date"
-          name="date"
-          id="date"
+          <input
+            type="date"
+            name="date"
+            id="date"
           >
         </div>
         <div class="input">
           <label for="terms">
             I accept the term of the agreement
           </label>
-          <input type="checkbox"
-          id="terms"
-          required
+          <input
+            type="checkbox"
+            id="terms"
+            required
           >
         </div>
       </fieldset>
     </form>
 
-    <form method="POST"
-    onsubmit="onSubmit()"
+    <form
+      method="POST"
+      onsubmit="onSubmit()"
     >
       <fieldset class="field">
         <legend>Registration</legend>
@@ -82,22 +89,24 @@
           <label for="email">
             E-mail:
           </label>
-          <input type="email"
-          id="email"
-          placeholder="email@example.com"
-          autocomplete="off"
-          required
+          <input
+            type="email"
+            id="email"
+            placeholder="email@example.com"
+            autocomplete="off"
+            required
           >
         </div>
         <div class="input">
           <label for="pass">
             Password:
           </label>
-          <input type="password"
-          minlength="5"
-          maxlength="30"
-          id="pass"
-          required
+          <input
+            type="password"
+            minlength="5"
+            maxlength="30"
+            id="pass"
+            required
           >
         </div>
       </fieldset>
@@ -109,14 +118,16 @@
         <div class="input">
           Do you love cats?
 
-          <input type="radio"
+          <input
+            type="radio"
             name="cat"
             value="yes"
             id="cat_yes"
             >
           <label for="cat_yes">Yes</label>
 
-          <input type="radio"
+          <input
+            type="radio"
             name="cat"
             value="no"
             id="cat_no"
@@ -128,8 +139,9 @@
           <label for="color">
             What is your favorite color?
           </label>
-          <input type="color"
-          id="color"
+          <input
+            type="color"
+            id="color"
           >
         </div>
 
@@ -137,8 +149,9 @@
           <label for="bed">
             What time do you go to bed?
           </label>
-          <input type="time"
-          id="bed"
+          <input
+            type="time"
+            id="bed"
           >
         </div>
 
@@ -146,8 +159,9 @@
           <label for="cars">
             What are your favorite brand of cars?
           </label>
-          <select id="cars"
-          multiple
+          <select
+            id="cars"
+            multiple
           >
             <option>BMW</option>
             <option>Audi</option>
@@ -159,15 +173,17 @@
           <label for="rate">
             How do you rate our work?
           </label>
-          <input type="range"
-          id="rate"
+          <input
+            type="range"
+            id="rate"
           >
         </div>
       </fieldset>
     </form>
 
-    <form  method="POST"
-    onsubmit="onSubmit()"
+    <form
+      method="POST"
+      onsubmit="onSubmit()"
     >
       <fieldset class="field">
         <legend>Additional info:</legend>
@@ -175,20 +191,23 @@
           <label for="com">
             Comments:
           </label>
-          <textarea name="comments"
-          id="com"
-          cols="20"
-          rows="2"
-          placeholder="input something please">
+          <textarea
+            name="comments"
+            id="com"
+            cols="20"
+            rows="2"
+            placeholder="input something please"
+          >
           </textarea>
         </div>
         <div class="input">
           <label for="fin">
             Would you recommend us?
           </label>
-          <select name="final"
-          id="fin"
-          required
+          <select
+            name="final"
+            id="fin"
+            required
           >
             <option value="final">yes</option>
             <option value="final">no</option>
@@ -197,6 +216,11 @@
       </fieldset>
     </form>
 
-    <button type="submit" class="button">Submit</button>
+    <button
+      type="submit"
+      class="button"
+    >
+      Submit
+    </button>
   </body>
 </html>
