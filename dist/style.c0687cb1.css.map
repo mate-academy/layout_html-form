@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AACA,KACE,eACF,CACA,aACE,eACF","file":"style.c0687cb1.css","sourceRoot":"../src","sourcesContent":["/* styles go here */\n.box{\n  margin-top: 20px;\n}\n.form-fieled{\n  margin-top: 10px;\n}"]}
