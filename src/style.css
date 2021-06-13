@@ -1,1 +1,13 @@
 /* styles go here */
+
+label {
+    margin-top: 10px;
+    display: block;
+}
+fieldset:not(:nth-child(1)) {
+    margin-top: 20px;
+}
+button {
+    display: block;
+    margin-top: 15px;
+}
