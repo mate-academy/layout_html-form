@@ -4,10 +4,16 @@ label {
     margin-top: 10px;
     display: block;
 }
+
 fieldset:not(:nth-child(1)) {
     margin-top: 20px;
 }
+
 button {
     display: block;
     margin-top: 15px;
+}
+
+label[for="factCats1"], label[for="factCats2"] {
+    display: inline-block;
 }
