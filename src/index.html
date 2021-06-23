@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -11,7 +11,155 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <h1>Krasnoshchok's</h1>
+    <form
+      onsubmit="onSubmit()"
+      autocomplete="off"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    >
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="personalSurname">
+          Surname :
+          <input type="text"
+          name="surname"
+          id="personalSurname" >
+        </label>
+        <label for="personalName">
+          Name :
+          <input type="text"
+          name="name"
+          id="personalName" >
+        </label>
+        <label for="personalAge">
+          How old are you?
+          <input
+            type="number"
+            name="age"
+            value="12"
+            max="100"
+            id="personalAge"
+          >
+        </label>
+        <label for="personalDate">
+          Full date of birth :
+          <input type="date"
+          name="dateOfBirth"
+          id="personalDate" >
+        </label>
+        <label for="personalAccept">
+          I agree the term of the agreement
+          <input
+            type="checkbox"
+            name="termAccept"
+            id="personalAccept"
+            required
+          >
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Registration</legend>
+        <label for="registrationEmail">
+          Email :
+          <input
+            type="email"
+            placeholder="email@example.com"
+            name="email"
+            id="registrationEmail"
+          >
+        </label>
+        <label for="registrationPass">
+          Password :
+          <input
+            type="password"
+            minlength="5"
+            maxlength="32"
+            placeholder="6 didits"
+            pattern="\d+"
+            name="password"
+            id="registrationPass"
+          >
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+        <div>
+          Do you love cats?
+          <label for="factCats1">
+            <input type="radio"
+            value="yes"
+            name="loveCats"
+            id="factCats1">
+            Yes
+          </label>
+          <label for="factCats2"
+            ><input type="radio"
+            value="no"
+            name="loveCats"
+            id="factCats2">
+            No
+          </label>
+        </div>
+        <label for="factColor">
+          What is your favorite color ?
+          <input type="color"
+          name="favColor"
+          id="factColor">
+        </label>
+        <label for="factBedTime">
+          What time do you go to bed?
+          <input type="time"
+          name="bedTime"
+          id="factBedTime">
+        </label>
+        <label for="factCarBrand">
+          What are your favorite brand of cars?
+          <select name="carBrands"
+          id="factCarBrand"
+          multiple>
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="mercedes">Mercedes-Benz</option>
+          </select>
+        </label>
+        <label for="factLike">
+          How do you rate our work ?
+          <input
+            type="range"
+            name="likeOfWork"
+            min="10"
+            max="100"
+            step="1"
+            id="factLike"
+            required
+          >
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Additional Info</legend>
+        <label for="additionalComments">
+          Comments :
+          <textarea
+            name="comment"
+            id="additionalComments"
+            cols="25"
+            rows="5"
+          ></textarea>
+        </label>
+        <label for="additionalRecommend">
+          Would you recommend us ?
+          <select name="reccomend" id="additionalRecommend">
+            <option value=""
+            selected
+            disabled>choose :</option>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+            <option value="notSure">not sure yet</option>
+          </select>
+        </label>
+      </fieldset>
+      <button>submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
