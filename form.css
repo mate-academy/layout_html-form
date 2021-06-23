@@ -1,0 +1,44 @@
+button {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.coleq {
+    display: block;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.form1 {
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.form2 {
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.form3 {
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding: 20px;  
+}
+
+.form4 {
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.form-fieal {
+    margin-top: 10px;   
+}
+
+.box {
+    margin-top: 20px;
+}
