@@ -1,0 +1,28 @@
+button {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.coleq {
+  display: block;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.form {
+  border: 1px solid black;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+
+.form-field {
+  margin-top: 10px;   
+}
+
+.box {
+  margin-top: 20px;
+}

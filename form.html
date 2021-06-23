@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Forms</title>
+</head>
+<body>
+  <div class="container">
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+        <div class="form">
+                <h2>Personal information</h2>
+                <div class="form-field">
+                    <label for="surname">
+                    Surname:
+                    </label>
+                    <input type="text" name="usersurname" placeholder="Enter your surname" id="surname" required>
+                </div>
+                <div class="form-fie">
+                    <label for="name">
+                    Name:
+                    </label>
+                    <input type="text" name="username" placeholder="Enter your name" id="name" required>
+                </div>
+                <div class="form-field">
+                    <label for="age">
+                How old are You?:
+                    </label>
+                    <input type="number" min="12" max="100" name="userage" placeholder="age" id="age">
+                </div>
+                <div class="form-field">
+                    <label for="bdate">
+                Full date of Birth:
+                    </label>
+                    <input type="date" name="userbdate" placeholder="mm/dd/yyyy" id="bdate">
+                </div>
+                <div class="form-field box">
+                    <label for="accept">I accept the term of agreement</label>
+                    <input type="checkbox" id="aceept" required>
+                </div>
+        </div>
+
+        <div class="form">
+                <h2>Registration</h2>
+                <div class="form-field">
+                    <label for="iml">
+                        E-mail:
+                        <input type="email" name="email" id="iml" placeholder="email@example.com" required>
+                    </label>
+                </div>
+                <div class="form-field">
+                    <label for="pass">
+                        Password:
+                        <input type="password" name="userpassword" id="pass" minlength="6" maxlength="20" required>
+                    </label>
+                </div>
+        </div>
+
+        <div class="form" >
+                    <h2>An interesting fact about you</h2>
+                <div class="form-field">
+                    Do you like cats?
+                    <label for="yes">
+                        <input type="radio" name="cats" value="yes" id="yes"> Yes
+                    </label>
+                    <label for="no">
+                        <input type="radio" name="cats" value="no" id="no"> No
+                    </label>
+                </div>
+                <div class="form-field">
+                    What is your favorite color?
+                    <select name="color">
+                        <option  value="" selected disabled>Choose a color</option>
+                        <option type="color" value="#00FF00">Green</option>
+                        <option type="color" value="#0000FF">Blue</option>
+                        <option type="color" value="#FFFF00">Yellow</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label>
+                        What time do you go to bed?
+                        <input type="time" placeholder="--:--:-- --" required>
+                    </label>
+                </div>
+                <div class="form-field">
+                    <label>
+                        What are your favorite brand of car?
+                        <select name="carmodel" id="carmodel">
+                            <option value="BMW">BMW</option>
+                            <option value="Audi">Audi</option>
+                            <option value="Lada">Lada</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="form-field">
+                    <label>
+                        How do you rate our work?
+                        <input type="range" name="mark" min="0" max="10">
+                    </label>
+                    
+                </div>
+        </div>
+
+        <div  class="form">
+                <h2>Additional info</h2>
+            <div class="form-field">
+              <label>
+                Commetns:
+                <textarea name="info"  cols="30" rows="2" placeholder="Type"></textarea>
+            </label>
+            </div>
+            <div class="form-field">
+              <label>
+                Would you recommend us?
+                <select name="recom" id="recom">
+                  <option value="true">yes</option>
+                  <option value="false">no</option>
+                </select>
+              </label>
+            </div>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
