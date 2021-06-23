@@ -1,1 +1,17 @@
-/* styles go here */
+.block {
+  margin-bottom: 20px;
+}
+  
+.form__field {
+  display: block;
+  padding: 5px 0;
+}
+
+.block .form__field:first-of-type {
+  padding: 0 0 5px;
+}
+
+.block .form__field:last-of-type {
+  padding: 5px 0 0;
+}
+ 
