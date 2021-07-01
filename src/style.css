@@ -1,1 +1,11 @@
 /* styles go here */
+.block-information {
+    margin: 20px 50px;
+}
+
+
+
+.form-field {
+    display: block;
+    margin: 10px;
+}

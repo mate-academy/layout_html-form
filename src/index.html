@@ -1,17 +1,123 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML Form</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML Form-01</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <form action="" method="POST" autocomplete="off" onsubmit="onsubmit()">
     <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
-  </body>
+
+    <fieldset class="block-information">
+      <legend>Personal information</legend>
+      <label for="" class="form-field" id="surname">
+        Surname:
+        <input type="text" name="surname" required>
+      </label>
+
+      <label for="" class="form-field" id="name">
+        Name:
+        <input type="text" name="name" required>
+      </label>
+
+      <label for="" class="form-field" id="age">
+        How old are you?
+        <input type="number" name="age" value="12" min="12" max="100" required>
+      </label>
+
+      <label for="" class="form-field" id="date-of-birth">
+        Full date of birth:
+        <input type="date" name="date-of-birth">
+      </label>
+
+      <label for="" class="form-field" id="terms">
+        I accept the term of the agreement
+        <input type="checkbox" name="terms">
+      </label>
+    </fieldset>
+
+    <fieldset class="block-information">
+      <legend>Registration</legend>
+      <label for="" class="form-field" id="email">
+        E-mail:
+        <input type="email" name="email" placeholder="email@example.com">
+      </label>
+      <label for="" class="form-field" id="password">
+        Password:
+        <input type="password" name="password" minlength="5" maxlength="15">
+      </label>
+    </fieldset>
+
+    <fieldset class="block-information">
+      <legend>An interesting fact about you!</legend>
+
+      <div class="form-field">
+        Do you have a cats?
+        <label for="" id="do-you-have-a-cats-yes">
+          <input type="radio" name="do-you-have-a-cats" value="yes">
+          Yes
+        </label>
+
+        <label for="" id="do-you-have-a-cats-no">
+          <input type="radio" name="do-you-have-a-cats" value="no">
+          No
+        </label>
+      </div>
+
+      <label for="" class="form-field" id="color">
+        What is your favorite color?
+        <input type="color" name="color">
+      </label>
+
+      <label for="" class="form-field" id="time-to-bed">
+        What time do you go to bed?
+        <input type="time" name="time">
+      </label>
+
+      <label for="" class="form-field" id="favorite-car">
+        What are your favorite brand of cars?
+        <select name="favorite-car" multiple>
+          <option value="bmw">BMW</option>
+          <option value="audi">Audi</option>
+          <option value="lada">Lada</option>
+        </select>
+      </label>
+
+      <label for="" class="form-field" id="range">
+        How do you rate our work?
+        <input type="range" name="range" value="0">
+      </label>
+    </fieldset>
+
+    <fieldset for="" class="block-information">
+      <legend>Additional info:</legend>
+      <label class="form-field" id="comments">
+        Comments:
+        <textarea name="comments" cols="15" rows="2"></textarea>
+      </label>
+
+      <label for="" class="form-field" id="recommend">
+        Would you recommend us?
+        <select name="recommend">
+          <option value="yes" selected>yes</option>
+          <option value="no">no</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <button type="submit" class="button"
+      formaction="https://mate-academy-form-lesson.herokuapp.com/create-application">Submit</button>
+  </form>
+
+
+
+</body>
+
 </html>
