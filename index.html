@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <h1>HTML Form</h1>
+    <script type="text/javascript" src="./main.js"></script>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
+      <fieldset class="personInform">
+        <Legend class="dateBox">Personal information</Legend>
+        
+        <label for="surname" class="field">Surname:
+          <input type="text" 
+                 id="surname"  
+                 name="surname" 
+                 class="inputField"
+                 required>
+        </label>
+
+        <label for="name" class="field">Name:
+          <input type="text" 
+                 id="name" 
+                 name="name"
+                 class="inputField"
+                 required>
+        </label>
+
+        <label for="age" class="field">How old are you?
+          <input type="number" 
+                 id="age" 
+                 name="age"
+                 class="inputField"
+                 value="12"
+                 max="100"
+                 required>
+        </label>
+
+        <label for="birthDate" class="field">Full date of birth:
+          <input type="date" 
+                 id="birthDate" 
+                 name="birthDate"
+                 class="inputField"
+                 placeholder="dd/mm/yyyy"
+                 required>
+        </label>
+
+        <label for="term" class="field">I accept the term of the agreement
+          <input type="checkbox" 
+                 id="term" 
+                 name="term"
+                 class="inputField"
+                 required>
+        </label>
+      </fieldset>
+
+      <fieldset class="registration">
+        <Legend class="dateBox">Registration</Legend>
+        
+        <label for="email" class="field">E-mail:
+          <input type="email" 
+                 id="email"  
+                 name="email" 
+                 class="inputField"
+                 placeholder="email@exemple.com"
+                 required>
+        </label>
+
+        <label for="password" class="field">Password:
+          <input type="password" 
+                 id="password" 
+                 name="password"
+                 class="inputField"
+                 required>
+        </label>
+      </fieldset>
+
+      <fieldset class="aboutYou">
+        <Legend class="dateBox">An interesting fact about you!</Legend>
+        <div class="cat">
+          <label for="cat">Do you love cats?
+            <input type="radio" 
+                   id="cat"  
+                   name="cat" 
+                   value="y"
+                   class="inputField">Yes 
+          </label>        
+          
+          <label for="cat">
+            <input type="radio" 
+                   id="cat"  
+                   name="cat" 
+                   value="n"
+                   class="inputField">No 
+          </label>            
+        </div>
+
+        <label for="color" class="field">What is your favorit color?
+          <input type="color" 
+                 id="color"  
+                 name="color" 
+                 class="inputField">
+        </label>
+
+        <label for="timeToBed" class="field">What time do you go to bed?
+          <input type="time" 
+                 id="time" 
+                 name="time"
+                 class="inputField">
+        </label>
+
+        <label for="favoritCars" class="field">What are you favorite brand of cars
+          <select type="favoritCars" 
+                 id="favoritCars" 
+                 name="favoritCars"
+                 class="inputField"
+                 multiple>
+            <option value="BMW">BMV</option>
+            <option value="Audi">Audi</option> 
+            <option value="Lada">Lada</option> 
+          </select>       
+        </label>
+
+        <label for="rate" class="field">How do you rate our work
+          <input type="range" 
+                 id="rate" 
+                 name="rate"
+                 class="inputField"
+                 min="0"
+                 max="10">
+        </label>        
+      </fieldset>
+
+      <fieldset class="additional">
+        <Legend class="dateBox">Additional info</Legend>
+        
+        <label for="comments" class="field">Comments:
+          <textarea type="comments" 
+                 id="comments"  
+                 name="comments" 
+                 class="inputField"
+                 rows="2"
+                 cols="20"></textarea>
+        </label>
+
+        <label for="recommend" class="field">Would you recommend us
+          <select type="recommend" 
+                 id="recommend" 
+                 name="recommend"
+                 class="inputField"
+                 required>
+            <option value="yes">Yes</option> 
+            <option value="no">No</option>    
+          </select>
+        </label>
+      </fieldset>      
+      <button class="inputField">Sumit</button>      
+    </form>
+  </body>
+</html>
