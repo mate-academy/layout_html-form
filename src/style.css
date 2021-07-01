@@ -1,1 +1,7 @@
-/* styles go here */
+.field {
+  margin: 20px 0;
+}
+
+.field__item {
+  margin: 10px 0;
+}
