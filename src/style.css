@@ -1,1 +1,15 @@
-/* styles go here */
+.form-field {
+  padding-bottom: 10px;
+}
+
+.form-field:last-child {
+  padding-bottom: 0;
+}
+
+.form-fieldset {
+  margin-bottom: 20px;
+}
+
+.age-field {
+  width: 65px;
+}
