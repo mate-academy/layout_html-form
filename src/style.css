@@ -1,1 +1,19 @@
-/* styles go here */
+.form_field {
+  margin-bottom: 10px;
+}
+
+.last {
+  margin-bottom: 0;
+}
+
+.section {
+  margin-top: 20px;
+}
+
+.one {
+  margin-top: 0;
+}
+
+.submit_button {
+  margin-top: 20px;
+}

@@ -4,14 +4,186 @@
     <meta charset="UTF-8">
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <main>
+      <form
+      onsubmit="onSubmit(mate-academy-form-lesson.herokuapp.com/create-application)"
+      method="POST"
+      autocomplete="off"
+      >
+        <section class="section one">
+          <fieldset>
+            <legend class="title">Personal information</legend>
+            <div class="form_field">
+              <label for="surnameit">Surname:</label>
+              <input
+              type="text"
+              name="surname"
+              id="surnameit"
+              autocomplete="off"
+              >
+            </div>
+            <div class="form_field">
+              <label for="nameit">Name:</label>
+              <input
+              type="text"
+              name="name"
+              id="nameit"
+              autocomplete="off"
+              >
+            </div>
+            <div class="form_field">
+              <label for="ageit">How old are You?</label>
+              <input
+              type="number"
+              name="age"
+              value="12"
+              max="100"
+              minlength="2"
+              min="12"
+              maxlength="3"
+              id="ageit"
+              >
+            </div>
+            <div class="form_field">
+              <label for="birthit">Full date of birth:</label>
+              <input
+              type="date"
+              name="date"
+              id="birthit"
+              >
+            </div>
+            <div class="form_field last">
+              <label for="termit">I accept the term of the agreement</label>
+              <input
+              type="checkbox"
+              name="term"
+              id="termit"
+              required
+              >
+            </div>
+          </fieldset>
+        </section>      <!---------Section1---------->
+        <section class="section">
+          <fieldset>
+            <legend class="title">Registration</legend>
+            <div class="form_field">
+              <label for="emailit">E-mail:</label>
+              <input
+            type="email"
+            name="surname"
+            placeholder="email@example.com"
+            id="emailit"
+            required
+            >
+            </div>
+            <div class="form_field last">
+              <label for="passwordit">Password:</label>
+              <input
+            type="password"
+            name="password"
+            id="passwordit"
+            min="5"
+            max="8"
+            autocomplete="off"
+            required
+            >
+            </div>
+          </fieldset>
+        </section>      <!---------Section2---------->
+        <section class="section">
+          <fieldset>
+            <legend class="title">An interesting fact about you!</legend>
+            <div class="form_field">
+    Do you love cats?
+              <input type="radio"
+              name="cats"
+              id="catsit1"
+              value="y"
+              >
+              <label for="catsit1">Yes</label>
+              <input
+              type="radio"
+              name="cats"
+              id="catsit2"
+              value="n"
+              >
+              <label for="catsit2">No</label>
+            </div>
+            <div class="form_field">
+              <label for="colorit">What is your favorite color?</label>
+              <input
+              type="color"
+              name="color"
+              id="colorit"
+              >
+            </div>
+            <div class="form_field">
+              <label for="bedit">What time do you go to bed?</label>
+              <input
+              type="time"
+              name="time"
+              step="2"
+              minlength="12"
+              maxlength="100"
+              id="bedit"
+              >
+            </div>
+            <div class="form_field">
+              <label for="carsit">What are your favorite brand of cars?</label>
+              <select
+              name="cars"
+              required
+              multiple
+              id="carsit"
+              >
+                <option value="1">BMW</option>
+                <option value="2">Audi</option>
+                <option value="3">Lada</option>
+              </select>
+            </div>
+            <div class="form_field last">
+              <label for="rangeit">How do you rate our work?</label>
+              <input
+              type="range"
+              name="range"
+              id="rangeit"
+              required
+              value="0"
+              >
+            </div>
+          </fieldset>
+        </section>      <!---------Section3---------->
+        <section class="section">
+          <fieldset>
+            <legend class="title">Additional info:</legend>
+            <div class="form_field">
+              <label for="comments">Comments:</label>
+              <textarea name="comments" id="comments"></textarea>
+            </div>
+            <div class="form_field last">
+              <label for="reccomend">Would you recommend us?</label>
+              <select
+              name="option"
+              id="reccomend"
+              required
+              >
+                <option>yes</option>
+                <option>no</option>
+              </select>
+            </div>
+          </fieldset>
+        </section>      <!---------Section4---------->
+        <div>
+          <button class="submit_button" type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
