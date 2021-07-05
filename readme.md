@@ -22,7 +22,7 @@ Create HTML page with form. On form submit send form data to `https://mate-acade
   - [+] number
   - [+] email
   - [+] checkbox
-  - [ ] radio
+  - [+] radio
   - [+] password
   - [+] range
   - [+] time
