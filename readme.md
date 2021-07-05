@@ -1,7 +1,7 @@
 # HTML form
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://<your_account>.github.io/layout_html-form/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_html-form/report/html_report/)
+- [DEMO LINK](https://ihor-jpeg.github.io/layout_html-form/)
+- [TEST REPORT LINK](https://ihor-jpeg.github.io/layout_html-form/report/html_report/)
 
 > Follow [this instructions](https://github.com/mate-academy/layout_task-guideline#how-to-solve-the-layout-tasks-on-github)
 ___
@@ -18,24 +18,24 @@ Create HTML page with form. On form submit send form data to `https://mate-acade
 - Do not use tabs. Use 2 spaces for indentation
 - Most of the time you want each tag in new line
 - Form should have different inputs with such types:
-  - [ ] text
-  - [ ] number
-  - [ ] email
-  - [ ] checkbox
+  - [+] text
+  - [+] number
+  - [+] email
+  - [+] checkbox
   - [ ] radio
-  - [ ] password
-  - [ ] range
-  - [ ] time
-  - [ ] color
-  - [ ] date
+  - [+] password
+  - [+] range
+  - [+] time
+  - [+] color
+  - [+] date
 - Form should have textarea and select elements.
 - You should use every of this attribute at least one time
-  - [ ] required
-  - [ ] min
-  - [ ] max
-  - [ ] minlength
-  - [ ] maxlength
-  - [ ] multiple
+  - [+] required
+  - [+] min
+  - [+] max
+  - [+] minlength
+  - [+] maxlength
+  - [+] multiple
 - The number field should have default value: `12` and maximum value 100.
 - The email field should have placeholder value: `email@example.com`.
 - The text fields should have disabled autocomplete.

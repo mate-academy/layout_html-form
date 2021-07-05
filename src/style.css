@@ -1,1 +1,19 @@
 /* styles go here */
+.form-field {
+    display: block;
+}
+
+fieldset {
+    margin-bottom: 20px;
+}
+
+fieldset > label {
+    padding: 5px 0;
+}
+
+legend {
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
