@@ -1,1 +1,10 @@
-/* styles go here */
+.fact-about-you,
+.registration,
+.additional-box,
+.button {
+  margin-top: 20px;
+}
+
+.form-field {
+  margin-top: 10px;
+}
