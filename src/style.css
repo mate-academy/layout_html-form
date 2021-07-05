@@ -1,1 +1,13 @@
 /* styles go here */
+.form_element {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form_block {
+  margin-bottom: 20px;
+}
+
+.no_margin {
+  margin: 0;
+}
