@@ -1,5 +1,4 @@
-.form-field {
-  display: block;
+.container {
   padding-bottom: 10px;
 }
 
@@ -7,6 +6,6 @@ fieldset {
   margin-bottom: 20px;
 }
 
-fieldset > .form-field:last-child {
+fieldset > .container:last-child {
   padding-bottom: 0;
 }
