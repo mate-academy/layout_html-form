@@ -1,1 +1,16 @@
 /* styles go here */
+.form__field {
+  border: solid 1px black;
+  margin: 0 10px 20px 10px;
+}
+
+.list__item {
+  margin: 10px;
+}
+
+.field__list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+

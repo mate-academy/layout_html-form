@@ -1,17 +1,209 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML Form</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
-    <h1>HTML Form</h1>
-    <script type="text/javascript" src="./main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML Form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <h1>HTML Form</h1>
+  <script type="text/javascript" src="./main.js"></script>
+  <main>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
+      <fieldset class="form__field">
+        <legend>Personal information</legend>
+        <ul class="field__list">
+          <li class="list__item">
+            <label for="surname">
+              Surname:
+              <input type="text" 
+                name="surname" 
+                id="surname"
+                minlength="3"
+                maxlength="20"
+                autocomplete="off"
+              >
+            </label>
+          </li>
+          <li class="list__item">
+            <label for="name">
+              Name:
+              <input 
+                type="text" 
+                name="name" 
+                id="name"
+                autocomplete="off"
+              >
+            </label>
+          </li>
+          <li class="list__item">
+            <label for="age">
+              How old are You?
+              <input 
+                type="number" 
+                name="age" 
+                id="age" 
+                value="12"
+                min="1" 
+                max="100"
+              >
+            </label>
+          </li>
+          <li class="list__item">
+            <label for="birth_date">
+              Full date of birth:
+              <input 
+                type="date" 
+                name="birth_date" 
+                id="birth_date"
+                >
+            </label>
+          </li>
+          <li class="list__item">
+            <label for="terms">
+              I accept the term of the agreement
+              <input 
+                type="checkbox" 
+                name="terms" 
+                id="terms"
+                required
+              >
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="form__field">
+        <legend>Registration</legend>
+        <ul class="field__list">
+          <li class="list__item">
+            <label for="email">
+              E-mail:
+              <input type="email" 
+                placeholder="email@example.com" 
+                name="email" 
+                id="email"
+              >
+            </label>
+          </li>
+          <li class="list__item">
+            <label for="password">
+              Password:
+              <input 
+                type="password" 
+                name="password" 
+                id="password"
+              >
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="form__field">
+        <legend>An interesting fact about you!</legend>
+        <ul class="field__list">
+          <li class="list__item">
+            <label for="cars_yes">
+              Do you love cars?
+              <input 
+                type="radio" 
+                name="love_cars" 
+                id="cars_yes"
+              >
+              Yes
+            </label>
+            <label for="cars_no">
+              <input type="radio" 
+                name="love_cars" 
+                id="cars_no"
+              >
+              No
+            </label>
+          </li>
+          <li class="list__item">
+            <label for="color">
+              What is your favorite color?
+              <input type="color" 
+                name="color" 
+                id="color"
+              >
+            </label>
+          </li>
+          <li class="list__item">
+            <label for="time">
+              What time do you go to bed?
+              <input 
+                type="time" 
+                name="time" 
+                id="time"
+              >
+            </label>
+          </li>
+          <li class="list__item">
+            <label for="car">
+              What are your favorite brand of cars?
+              <select 
+                type="text" 
+                name="car" 
+                id="car"
+                multiple
+              >
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Lada">Lada</option>
+              </select>
+            </label>
+            
+          </li>
+          <li class="list__item">
+            <label for="rate">
+              How do you rate our work?
+              <input 
+                type="range" 
+                min="0" 
+                max="10" 
+                name="rate" 
+                id="rate"
+              >
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="form__field">
+        <legend>Addictional info:</legend>
+        <ul class="field__list">
+          <li class="list__item">
+            <label for="comments">
+              Comments:
+              <textarea 
+                name="comments" 
+                id="comments" 
+                cols="20" 
+                rows="5"
+              >
+            </textarea>
+            </label>
+          </li>
+          <li class="list__item">
+            <label for="recommend">
+              Would you recommend us?
+              <select name="recommend" id="recommend">
+                <option value="no">no</option>
+                <option value="yes">yes</option>
+              </select>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+    <button type="submit">Submit</button>
+  </main>
+</body>
+
 </html>
