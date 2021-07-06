@@ -1,1 +1,10 @@
 /* styles go here */
+
+.block:not(:last-child) {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.information {
+  margin-bottom: 20px;
+}
