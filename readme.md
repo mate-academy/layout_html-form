@@ -1,7 +1,7 @@
 # HTML form
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://<your_account>.github.io/layout_html-form/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_html-form/report/html_report/)
+- [DEMO LINK](https://Illia-Boiko.github.io/layout_html-form/)
+- [TEST REPORT LINK](https://Illia-Boiko.github.io/layout_html-form/report/html_report/)
 
 > Follow [this instructions](https://github.com/mate-academy/layout_task-guideline#how-to-solve-the-layout-tasks-on-github)
 ___
@@ -14,7 +14,7 @@ Create HTML page with form. On form submit send form data to `https://mate-acade
 ## Notes
 - Every field should have name attribute
 - Every field should have label, which focuses input on label click
-  - Please add `for` attribute for each <label> and `id` to the field (it is important for tests)
+  - Please add `for` attribute for each <label for=""> and `id` to the field (it is important for tests)
 - Do not use tabs. Use 2 spaces for indentation
 - Most of the time you want each tag in new line
 - Form should have different inputs with such types:
