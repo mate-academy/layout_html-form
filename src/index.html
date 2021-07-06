@@ -11,51 +11,60 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" onsubmit="onSubmit()">
-
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      onsubmit="onSubmit()"
+      method="post"
+    >
       <section class="section">
         <fieldset>
           <legend>Personal information</legend>
 
           <label for="surname" class="field-form">
             Surname:
-            <input type="text"
-            name="surname"
-            id="surname"
-            autocomplete="off"
+            <input
+              type="text"
+              name="surname"
+              id="surname"
+              autocomplete="off"
             >
           </label>
           <label for="name" class="field-form">
             Name:
-            <input type="text"
-            name="name"
-            id="name"
-            autocomplete="off"
+            <input
+              type="text"
+              name="name"
+              id="name"
+              autocomplete="off"
             >
           </label>
           <label for="age" class="field-form">
             How old are You?
-            <input type="number"
-            name="age"
-            value="12"
-            max="100"
-            min="0"
-            id="age"
+            <input
+              type="number"
+              name="age"
+              value="12"
+              max="100"
+              min="0"
+              id="age"
             >
           </label>
           <label for="date_id" class="field-form">
             Full date of birth:
-            <input type="date"
-            name="date"
-            id="date_id"
+            <input
+              type="date"
+              name="date"
+              id="date_id"
             >
           </label>
           <label for="terms_id" class="field-form margin-zero">
             I accept the term of the agreement
-            <input type="checkbox"
-            name="terms"
-            id="terms_id"
-            required>
+            <input
+              type="checkbox"
+              name="terms"
+              id="terms_id"
+              required
+            >
           </label>
         </fieldset>
       </section>
@@ -64,22 +73,24 @@
           <legend>Registration</legend>
           <label for="email" class="field-form">
             E-mail:
-            <input type="email"
-            name="email"
-            id="email"
-            placeholder="email@example.com"
-            required
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@example.com"
+              required
             >
           </label>
           <label for="password" class="field-form margin-zero">
             Password:
-            <input type="password"
-            name="password"
-            id="password"
-            autocomplete="off"
-            minlength="5"
-            maxlength="30"
-            required
+            <input
+              type="password"
+              name="password"
+              id="password"
+              autocomplete="off"
+              minlength="5"
+              maxlength="30"
+              required
             >
           </label>
         </fieldset>
@@ -90,40 +101,47 @@
           <div class="field-form">
             Do you love cats?
             <label for="choice1">
-              <input type="radio"
-              name="cats"
-              id="choice1"
-              value="yes"
+              <input
+                type="radio"
+                name="cats"
+                id="choice1"
+                value="yes"
               >
               Yes
             </label>
             <label for="choice2">
-              <input type="radio"
-              name="cats"
-              id="choice2"
-              value="no"
+              <input
+                type="radio"
+                name="cats"
+                id="choice2"
+                value="no"
               >
               No
             </label>
           </div>
           <label for="choose_color" class="field-form">
             What is your favorite color?
-            <input type="color"
-            name="color"
-            id="choose_color">
+            <input
+              type="color"
+              name="color"
+              id="choose_color"
+            >
           </label>
           <label for="bed_time" class="field-form">
             What time do you go to bed?
-            <input type="time"
-            name="time"
-            id="bed_time">
+            <input
+              type="time"
+              name="time"
+              id="bed_time"
+            >
           </label>
           <label for="choose_car" class="field-form">
             What are your favorite brand of cars?
-            <select name="cars"
-            id="choose_car"
-            multiple
-            required
+            <select
+              name="cars"
+              id="choose_car"
+              multiple
+              required
             >
               <option value="1">BMW</option>
               <option value="2">Audi</option>
@@ -132,11 +150,12 @@
           </label>
           <label for="range_id" class="field-form margin-zero">
             How do you rate our work?
-            <input type="range"
-            name="range"
-            id="range_id"
-            value="0"
-            required
+            <input
+              type="range"
+              name="range"
+              id="range_id"
+              value="0"
+              required
             >
           </label>
         </fieldset>
