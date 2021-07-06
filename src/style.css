@@ -1,1 +1,13 @@
 /* styles go here */
+.form-field {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.field-form_without-margin {
+  display: block;
+}
+
+.block {
+  margin-bottom: 20px;
+}
