@@ -1,1 +1,11 @@
-/* styles go here */
+.container {
+  padding-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+fieldset > .container:last-child {
+  padding-bottom: 0;
+}
