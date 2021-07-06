@@ -3,13 +3,9 @@ label {
 }
 
 fieldset {
-  margin: 20px;
+  margin: 20px 0;
 }
 
 input {
   margin: 10px 0;
-}
-
-.inline > * {
-  display: inline;
 }
