@@ -26,8 +26,9 @@
           Surname:
           <input
             type="text"
-            id="surname"
             name="surname"
+            id="surname"
+            autocomplete="off"
             required
           >
         </label>
@@ -36,8 +37,9 @@
           Name:
           <input
             type="text"
-            id="name"
             name="name"
+            id="name"
+            autocomplete="off"
             required
           >
         </label>
@@ -46,8 +48,8 @@
           How old are You?
           <input
             type="number"
-            id="age"
             name="age"
+            id="age"
             value="12"
             min="12"
             max="100"
@@ -59,8 +61,8 @@
           Full date of birth:
           <input
             type="date"
-            id="dob"
             name="date-of-birth"
+            id="dob"
             required
           >
         </label>
@@ -69,8 +71,8 @@
           I accept the term of the agreement
           <input
             type="checkbox"
-            id="terms"
             name="terms-and-conditions"
+            id="terms"
             required
           >
         </label>
@@ -83,9 +85,10 @@
           E-mail:
           <input
             type="email"
-            id="email"
             name="email"
+            id="email"
             placeholder="email@example.com"
+            autocomplete="off"
             required
           >
         </label>
@@ -94,10 +97,11 @@
           Password:
           <input
             type="password"
-            id="password"
             name="password"
+            id="password"
             minlength="8"
             maxlength="32"
+            autocomplete="off"
             required
           >
         </label>
@@ -134,8 +138,8 @@
           What is your favorite color?
           <input
             type="color"
-            id="fav-color"
             name="favorite-color"
+            id="fav-color"
           >
         </label>
 
@@ -143,8 +147,8 @@
           What time do you go to bed?
           <input
             type="time"
-            id="bed-time"
             name="bed-time"
+            id="bed-time"
           >
         </label>
 
@@ -165,8 +169,9 @@
         <label class="form-field" for="rate-us">
           How do you rate our work?
           <input
-            id="rate-us"
             type="range"
+            name="rate-us"
+            id="rate-us"
             min="0"
             max="100"
             step="5"
