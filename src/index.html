@@ -44,9 +44,9 @@
             type="number"
             name="age"
             id="age"
+            value="12"
             min="12"
             max="100"
-            value="12"
           >
         </div>
         <div class="form-field">
@@ -101,25 +101,27 @@
         <div class="form-field">
           Do you love cats?
           <input
-            value="yes"
             type="radio"
             name="love-cats"
             id="love-cats-yes"
+            value="yes"
           >
           <label
             value="love-cats-yes"
-            for="love-cats-yes">
+            for="love-cats-yes"
+          >
             Yes
           </label>
           <input
-            value="no"
             type="radio"
             name="love-cats"
             id="love-cats-no"
+            value="no"
           >
           <label
             value="love-cats-no"
-            for="love-cats-no">
+            for="love-cats-no"
+          >
             No
           </label>
         </div>
@@ -142,8 +144,11 @@
         </div>
         <div class="form-field">
           <label for="car">What are your favorite brand of cars?</label>
-          <select name="car" id="car"
-        multiple>
+          <select
+            name="car"
+            id="car"
+            multiple
+          >
             <option value="BMW">BMW</option>
             <option value="AUDI">Audi</option>
             <option value="LADA">Lada</option>
@@ -153,9 +158,9 @@
           <label for="range-work">How do you rate our work?</label>
           <input
             type="range"
-             id="range-work"
-             name="range-work"
-             min="0"
+            name="range-work"
+            id="range-work"
+            min="0"
             max="100"
           >
         </div>
@@ -168,8 +173,8 @@
         <div class="form-field">
           <label for="comments">Comments:</label>
           <textarea
-            id="comments"
             name="comments"
+            id="comments"
             row="30"
             calc="3"
           >
@@ -178,8 +183,9 @@
         <div class="form-field">
           <label for="recomend-us">Would you recommend us?</label>
           <select
+            name="recomend-us"
             id="recomend-us"
-            name="recomend-us">
+          >
             <option value="Yes">Yes</option>
             <option value="No">No</option>
           </select>
@@ -187,7 +193,7 @@
       </fieldset>
       <button
         type="submit"
-        id="submit">
+      >
         Submit
       </button>
     </form>
