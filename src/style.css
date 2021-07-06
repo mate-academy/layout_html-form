@@ -1,1 +1,17 @@
 /* styles go here */
+.field {
+  display: block;
+  cursor: pointer;
+}
+
+.field:not(:last-child) {
+  padding-bottom: 10px;
+}
+
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.btn-submit {
+  margin-bottom: 30px;
+}
