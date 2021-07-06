@@ -1,1 +1,13 @@
 /* styles go here */
+.fieldset {
+  margin-top: 20px;
+}
+
+.form-field {
+  display: block;
+  margin: 10px 0 0;
+}
+
+.form-field-top {
+  margin-top: 0;
+}
