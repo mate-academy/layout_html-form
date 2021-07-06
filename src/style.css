@@ -1,1 +1,50 @@
 /* styles go here */
+
+.personal_information {
+  border: 1px solid grey;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.text_border {
+  display: table;
+  margin-top: -21px;
+  margin-bottom: 10px;
+  background-color: white;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.registration {
+  border: 1px solid grey;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.interesting_fact {
+  border: 1px solid grey;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.additional_info {
+  border: 1px solid grey;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.love_cats {
+  display: flex;
+}
+
+.question {
+  margin: 0;
+}
+
+.question_work {
+  display: flex;
+}
+
+#number {
+  width: 50px;
+}
