@@ -1,1 +1,30 @@
 /* styles go here */
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+.first {
+  margin: 0 0 10px;
+}
+
+.last {
+  margin: 0;
+}
+
+.radio {
+  display: inline;
+}
+
+.first_block {
+  margin: 0 0 20px;
+}
+
+.middle_block {
+  margin: 20px 0;
+}
+
+.button {
+  margin: 0;
+}
