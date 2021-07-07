@@ -1,1 +1,24 @@
-/* styles go here */
+.form-field {
+  margin: 10px 0;
+}
+
+.first-field > .form-field:first-of-type,
+.second-field > .form-field:first-of-type,
+.third-field > .form-field:first-of-type,
+.forth-field > .form-field:first-of-type {
+  margin-top: 0;
+}
+
+.first-field > .form-field:last-child,
+.second-field > .form-field:last-child,
+.third-field > .form-field:last-child,
+.forth-field > .form-field:last-child {
+  margin-bottom: 0;
+}
+
+.first-field,
+.second-field,
+.third-field,
+.forth-field {
+  margin-bottom: 20px;
+}
