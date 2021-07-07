@@ -1,1 +1,15 @@
-/* styles go here */
+.field-set {
+  margin-bottom: 20px;
+}
+
+.legend {
+  display: inline;
+}
+
+div[class^="field"] {
+  margin-bottom: 10px;
+}
+
+div[class^="field"]:last-child {
+  margin-bottom: 0;
+}
