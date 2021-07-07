@@ -1,0 +1,5 @@
+- check your work using basic recommendations [here](https://github.com/mate-academy/layout_colored-blocks/blob/master/checklist.md)
+- make sure you have `method` and `action` attributes for form
+- if you have 3 or more attributes, move each of the on the new line (including the first one)
+- No need to provide empty `value=''` attribute for inputs
+- You need to use label tag for each input. So that every input could be activated by clicking on the corresponding label.
