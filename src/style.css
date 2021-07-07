@@ -1,1 +1,21 @@
-/* styles go here */
+body {
+  margin: 20px;
+}
+
+.field {
+  display: block;
+}
+
+.label,
+.input {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.text {
+  display: inline-block;
+}
+
+.button {
+  margin-top: 20px;
+}
