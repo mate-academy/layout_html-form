@@ -13,12 +13,12 @@
   <body>
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="POST"
+      method="GET"
+      onsubmit="onSubmit()"
     >
       <fieldset>
         <legend>Personal information</legend>
-
-        <label class="form-field" for="surname">
+        <label for="surname" class="form-field">
           Surname:
           <input
             id="surname"
@@ -28,22 +28,21 @@
           >
         </label>
 
-        <label class="form-field" for="name">
+        <label for="name" class="form-field">
           Name:
           <input
             id="name"
             type="text"
-            name="surname"
+            name="name"
             required
           >
         </label>
 
-
-
-        <label class="form-field" for="age">
-          How old are you?
-          <input type="number"
+        <label for="age" class="form-field">
+          How old are you:
+          <input
             id="age"
+            type="number"
             name="age"
             value="12"
             min="12"
@@ -52,25 +51,22 @@
           >
         </label>
 
-        <label
-          class="form-field"
-          for="date"
-          required
-        >
+        <label for="date" class="form-field">
           Full date of birth:
           <input
             id="date"
             type="date"
             name="date"
+            required
           >
         </label>
 
-        <label class="form-field last-in-block" for="agreement">
-          I accept the term of the agreement
+        <label for="remember" class="form-field">
+          I accept the term of the agreement:
           <input
-            id="agreement"
+            id="remember"
             type="checkbox"
-            name="agreement"
+            name="remember"
             required
           >
         </label>
@@ -78,25 +74,25 @@
 
       <fieldset>
         <legend>Registration</legend>
-        <label class="form-field" for="email">
+        <label for="email" class="form-field">
           E-mail:
           <input
             id="email"
-            type="email"
+            type="text"
             name="email"
             placeholder="email@example.com"
             required
           >
         </label>
 
-        <label class="form-field last-in-block" for="password">
+        <label for="password" class="form-field">
           Password:
           <input
             id="password"
-            type="password"
+            type="text"
             name="password"
-            minlength="5"
-            maxlength="32"
+            minlength="8"
+            maxlength="18"
             required
           >
         </label>
@@ -105,14 +101,15 @@
       <fieldset>
         <legend>An interesting fact about you!</legend>
         <div class="form-field">
-          Do you love cats?
           <label for="cats_yes">
+            Do you love cats?
             <input
               id="cats_yes"
               type="radio"
               name="cats"
+              value="yes"
             >
-            Yes
+              Yes
           </label>
 
           <label for="cats_no">
@@ -120,13 +117,14 @@
               id="cats_no"
               type="radio"
               name="cats"
+              value="not"
             >
-            No
+              No
           </label>
         </div>
 
-        <label class="form-field" for="color">
-          What is ypir favorite color?
+        <label for="color" class="form-field">
+          What is your favorite color?
           <input
             id="color"
             type="color"
@@ -134,8 +132,8 @@
           >
         </label>
 
-        <label class="form-field" for="time">
-          What time do you go to bed?
+        <label for="time" class="form-field">
+          What is your favorite color?
           <input
             id="time"
             type="time"
@@ -143,11 +141,11 @@
           >
         </label>
 
-        <label class="form-field" for="car">
-          What are your favorite brand cars?
+        <label for="favorite-car" class="form-field">
+          What are your favorite cars?
           <select
-            id="car"
-            name="car"
+            id="favorite-car"
+            name="favorite-car"
             multiple
           >
             <option value="BMW">BMW</option>
@@ -156,7 +154,7 @@
           </select>
         </label>
 
-        <label class="form-field last-in-block" for="rate">
+        <label for="rate" class="form-field">
           How do you rate our work?
           <input
             id="rate"
@@ -168,13 +166,17 @@
 
       <fieldset>
         <legend>Additional info:</legend>
-        <label class="form-field" for="comments">
+        <label for="comments" class="form-field">
           Comments:
-          <textarea name="comments" id="comments"></textarea>
+          <textarea
+            id="comments"
+            name="comments"
+          >
+          </textarea>
         </label>
 
-        <label class="form-field last-in-block" for="recommend">
-          Would you recommend us?
+        <label for="recommend" class="form-field">
+          Would you recommends us?
           <select name="recommend" id="recommend">
             <option value="yes">yes</option>
             <option value="no">no</option>
@@ -182,7 +184,8 @@
         </label>
       </fieldset>
 
-      <button type="submit">Submit</button>
+      <button type="submit" class="">Submit</button>
+
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
