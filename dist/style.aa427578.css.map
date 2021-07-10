@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AACA,oBACE,aAAc,CACd,kBACF,CACA,oBACE,kBACF","file":"style.aa427578.css","sourceRoot":"../src","sourcesContent":["\n.section-item-block {\n  display: block;\n  margin-bottom: 10px;\n}\n.form-section-block {\n  margin-bottom: 10px;\n}\n"]}

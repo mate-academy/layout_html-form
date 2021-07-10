@@ -2,16 +2,241 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form
+      onsubmit="onSubmit()"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post">
+      <fieldset class="section-personalInfo form-section-block">
+        <legend class="section-personalInfo-name">Personal information</legend>
+        <label
+          for="input-surname"
+          class="section-personalInfo-surname section-item-block"
+        >
+          Surname:
+          <input
+            type="text"
+            name="surname"
+            class="input-surname"
+            id="input-surname"
+            autocomplete="off"
+            required
+          >
+        </label>
+        <label
+          for="input-name"
+          class="section-personalInfo-name section-item-block"
+        >
+          Name:
+          <input
+            type="text"
+            name="name"
+            class="input-name"
+            id="input-name"
+            autocomplete="off"
+            required
+          >
+        </label>
+        <label
+          for="input-age"
+          class="section-personalInfo-age section-item-block"
+        >
+          How old are You?
+          <input
+            type="number"
+            class="input-age"
+            placeholder="12"
+            min="12"
+            max="100"
+            name="age"
+            id="input-age"
+            required
+          >
+        </label>
+        <label
+          for="input-birth"
+          class="section-personalInfo-birth section-item-block">
+          Full date of birth:
+          <input
+            type="date"
+            class="input-birth"
+            id="input-birth"
+            name="birthDate"
+            required
+          >
+        </label>
+        <label
+          for="input-terms"
+          class="section-personalInfo-terms section-item-block"
+        >
+          I accept the term of the agreement
+          <input
+            type="checkbox"
+            class="input-terms"
+            name="termsOfUse"
+            id="input-terms"
+            required
+          >
+        </label>
+      </fieldset>
+      <fieldset class="section-registration form-section-block">
+        <legend class="section-registration-name">Registration</legend>
+        <label
+          for="input-email"
+          class="section-registration-email section-item-block"
+        >
+          E-mail:
+          <input
+            type="email"
+            class="input-email"
+            id="input-email"
+            name="email"
+            placeholder="email@example.com"
+            required
+          >
+        </label>
+        <label
+          for="input-password"
+          class="section-registration-password section-item-block"
+        >
+          Password:
+          <input
+            type="password"
+            class="input-password"
+            id="input-password"
+            name="password"
+            autocomplete="off"
+            minlength="5"
+            maxlength="12"
+            required
+          >
+        </label>
+      </fieldset>
+      <fieldset class="section-interview form-section-block">
+        <legend class="section-interview-name">An interesting fact about you!</legend>
+        <div class="section-interview-cat section-item-block">
+          Do you love cats?
+          <label for="love-cat">
+            <input
+              id="love-cat"
+              type="radio"
+              class="cat-yes-option"
+              name="catLove"
+              value="loveCat"
+            >
+            Yes
+          </label>
+          <label for="dont-love-cat">
+            <input
+              id="dont-love-cat"
+              type="radio"
+              class="cat-no-option"
+              name="catLove"
+              value="dontLoveCat"
+            >
+            No
+          </label>
+        </div>
+        <label
+          for="input-favorite-color"
+          class="section-interview-color section-item-block"
+        >
+          What is your favorite color?
+          <input
+            type="color"
+            class="input-color"
+            id="input-favorite-color"
+            name="favoriteColor"
+            value="#000000"
+          >
+        </label>
+        <label
+          for="input-sleep"
+          class="section-interview-sleep section-item-block"
+        >
+          What time do you go to bed?
+          <input
+            type="time"
+            class="input-sleep"
+            name="sleepTime"
+            id="input-sleep"
+            step="1"
+          >
+        </label>
+        <label
+          for="input-car"
+          class="section-interview-car section-item-block"
+        >
+          What are your favorite brand of cars?
+          <select
+            id="input-car"
+            class="input-car"
+            name="favoriteCar"
+            size="4"
+          >
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </label>
+        <label
+          for="input-work-rate"
+          class="section-interview-workRate"
+        >
+          How do you rate our work?
+          <input
+            class="input-work-rate"
+            id="input-work-rate"
+            name="workRate"
+            type="range"
+            value="0"
+
+          >
+        </label>
+      </fieldset>
+      <fieldset class="section-additionalInfo form-section-block">
+        <legend class="section-additionalInfo-name">Additional info:</legend>
+        <label
+          for="input-comments"
+          class="section-additionalInfo-comments section-item-block"
+        >
+          Comments:
+          <textarea
+            class="input-comments"
+            id="input-comments"
+            name="comments"
+            autocomplete="off"
+            rows="2"
+          >
+          </textarea>
+        </label>
+        <label
+          for="input-recommend"
+          class="section-additionalInfo-recommend section-item-block"
+        >
+          Would you recommend us?
+          <select
+            id="input-recommend"
+            class="input-recommend"
+            name="recomendation"
+          >
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+      </fieldset>
+      <input
+        class="form-submit-button"
+        type="submit"
+        value="Submit"
+      >
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
+
