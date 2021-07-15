@@ -1,9 +1,10 @@
 /* styles go here */
+
 .block {
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .field {
-  margin-top: 10px;
+  margin-bottom: 10px;
   display: block;
 }
