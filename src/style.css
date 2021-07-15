@@ -1,1 +1,9 @@
-/* styles go here */
+.enter_field {
+  display: block;
+  margin-bottom: 10px;
+}
+  
+.fieldset {
+  margin-bottom: 20px;
+  display: block;
+}
