@@ -1,1 +1,17 @@
 /* styles go here */
+label {
+	display: block;
+}
+label:not(:last-child) {
+	margin-bottom: 10px;
+}
+fieldset:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.fields {
+}
+
+.fields--radio label {
+	display: inline-block;
+}
