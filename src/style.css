@@ -1,1 +1,16 @@
-/* styles go here */
+fieldset {
+  margin-bottom: 20px;
+}
+
+input {
+  margin-left: 2px;
+  display: inline-block;
+}
+
+.selection {
+  margin-bottom: 10px;
+}
+
+.end {
+  margin-bottom: 10px;
+}
