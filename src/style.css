@@ -1,1 +1,9 @@
 /* styles go here */
+.inputs-block {
+  margin-bottom: 20px;
+}
+
+.form-field:not(:last-child) {
+  display: block;
+  margin-bottom: 10px;
+}
