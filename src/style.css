@@ -1,1 +1,23 @@
-/* styles go here */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-field1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.label {
+  margin: 10px 0;
+}
+
+.label:first-of-type {
+  margin-top: 0;
+}
+
+.label:last-of-type {
+  margin-bottom: 0;
+}
