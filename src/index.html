@@ -59,17 +59,25 @@
       </fieldset>
       <fieldset class="form-field">
         <legend>An interesting fact about you!</legend>
-        <label
+        <label class="label">
+          <label
           for="Cats"
           class="label"
           > Do you love cats?
-          <input
-           id="Cats"
-           type="radio"
-           name="Cats"
-          > Yes
-          <input type="radio" name="Cats">
-          No
+            <input
+              id="Cats"
+              type="radio"
+              name="Cats"
+            > Yes
+          </label>
+          <label class="label labelcats" for="Cats-2">
+            <input
+            id="Cats-2"
+            type="radio"
+            name="Cats"
+            >
+            No
+          </label>
         </label>
         <label class="label" for="color">
           What is your favorite color? <input id="color" type="color">
@@ -103,12 +111,11 @@
          Comments
           <textarea id="textarea" name="Comments"
           cols="20" rows="2"
-          >
-          </textarea>
+         ></textarea>
         </label>
         <label class="label" for="recommend" > Would you recommend us?
           <select id="recommend">
-            <option value="Yes">yes</option>
+            <option  value="Yes">Yes</option>
             <option value="No">No</option>
           </select>
         </label>
