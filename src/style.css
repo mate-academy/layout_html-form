@@ -4,12 +4,6 @@
   margin-bottom: 20px;
 }
 
-.form-field1 {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
 .label {
   margin: 10px 0;
 }
@@ -20,4 +14,8 @@
 
 .label:last-of-type {
   margin-bottom: 0;
+}
+
+.label:not(:last-child) {
+  margin-bottom: 10px;
 }
