@@ -11,7 +11,146 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form>
+      <fieldset name="Personal information" class="block-group">
+        <legend>Personal information</legend>
+        <label class="form-field">
+          Surname:
+          <input
+            type="text"
+            name="surname"
+            minlength="3"
+            autocomplete="off"
+            required
+          >
+        </label>
+        <label class="form-field">
+          Name:
+          <input
+            type="text"
+            name="name"
+            minlength="3"
+            autocomplete="off"
+            required
+          >
+        </label>
+        <label class="form-field">
+          How old are You?
+          <input
+            type="number"
+            name="age"
+            value="12"
+            min="1"
+            max="100"
+            required
+          >
+        </label>
+        <label class="form-field">
+          Full date of birth:
+          <input
+            type="date"
+            name="date"
+            required
+          >
+        </label>
+        <label>
+          I accept the term of the agreement
+          <input
+            type="checkbox"
+            name="terms"
+            required
+          >
+        </label>
+      </fieldset>
+      <fieldset name="registration" class="block-group">
+        <legend>Registration</legend>
+        <label class="form-field">
+          E-mail:
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="email@example.com"
+          >
+        </label>
+        <label>
+          Password:
+          <input
+            type="password"
+            name="password"
+            minlength="5"
+            maxlength="15"
+            required
+          >
+        </label>
+      </fieldset>
+      <fieldset name="about you" class="block-group">
+        <legend>An interestings fact about you!</legend>
+        <div class="form-field">
+          Do you love cats?
+          <label>
+            <input
+              type="radio"
+              name="ansver"
+              value="yes"
+            >
+            Yes
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="ansver"
+              value="no"
+            >
+            No
+          </label>
+        </div>
+        <label class="form-field">
+          What is your favorite color?
+          <input
+            type="color"
+            name="favorit color"
+            value="#000000"
+          >
+        </label>
+        <label class="form-field">
+          What time do you go to bed?
+          <input type="time" name="time-sleep">
+        </label>
+        <label class="form-field">
+          What are your favorite brand of cars?
+          <select name="favorite brand of cars" multiple>
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </label>
+        <label>
+          How do you rate our work?
+          <input
+            type="range"
+            name="mark"
+            min="0"
+            max="10"
+          >
+        </label>
+      </fieldset>
+      <fieldset name="additional info" class="block-group">
+        <legend>Additional info</legend>
+        <label class="form-field">
+          Comments
+          <textarea name="comments" minlength="5"></textarea>
+        </label>
+        <label>
+          Would you recommend us?
+          <select name="recommend">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
