@@ -1,1 +1,8 @@
-/* styles go here */
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.label {
+  margin-bottom: 10px ;
+  display: block;
+}
