@@ -1,1 +1,13 @@
-/* styles go here */
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form__fieldset > .form__lable:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.radio .form__input {
+  margin-left: 10px;
+}
