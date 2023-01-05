@@ -1,1 +1,11 @@
-/* styles go here */
+body {
+  padding: 0 20px;
+}
+
+.group {
+  margin: 20px 0;
+}
+
+.data {
+  margin: 10px;
+}
