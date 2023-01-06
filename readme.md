@@ -2,8 +2,8 @@
 
 Replace `Constantin-Haranskiy` with your Github username and copy the links to Pull Request description:
 
-* [DEMO LINK](https://Constantin-Haranskiy.github.io/)
-* [TEST REPORT LINK](https://Constantin-Haranskiy.github.io/report/html_report/)
+* [DEMO LINK](https://constantin-haranskiy.github.io/layout_html-form/)
+* [TEST REPORT LINK](https://constantin-haranskiy.github.io/layout_html-form/report/html_report/)
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 
