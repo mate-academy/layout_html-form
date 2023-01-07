@@ -1,1 +1,8 @@
-/* styles go here */
+.personalinfo,
+.registration {
+  margin-bottom: 20px;
+}
+
+.formfield {
+  margin-top: 10px;
+}
