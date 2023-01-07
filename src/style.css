@@ -1,1 +1,9 @@
-/* styles go here */
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form__fieldset > .form__label:not(:last-child) {
+  margin-bottom: 10px;
+}
