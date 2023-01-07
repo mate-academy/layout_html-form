@@ -1,1 +1,8 @@
 /* styles go here */
+.form__field {
+  margin-bottom: 20px;
+}
+
+.form__field__item {
+  margin-bottom: 10px ;
+}
