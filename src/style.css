@@ -1,1 +1,7 @@
-/* styles go here */
+.data {
+  margin-top: 10px;
+}
+
+.form__group {
+  margin-top: 20px;
+}
