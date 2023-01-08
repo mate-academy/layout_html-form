@@ -1,1 +1,16 @@
 /* styles go here */
+.group {
+  margin: 20px auto;
+}
+
+input {
+  margin: 10px;
+}
+
+textarea {
+  margin: 10px;
+}
+
+select {
+  margin: 10px;
+}
