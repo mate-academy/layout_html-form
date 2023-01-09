@@ -22,53 +22,53 @@
         <div class="form-field">
           <label for="surname">Surname:</label>
           <input
-          type="text"
-          name="surname"
-          id="surname"
-          required
+            type="text"
+            name="surname"
+            id="surname"
+            required
           >
         </div>
 
         <div class="form-field">
           <label for="name">Name:</label>
           <input
-          type="text"
-          name="Name"
-          id="name"
-          required
+            type="text"
+            name="Name"
+            id="name"
+            required
           >
         </div>
 
         <div class="form-field">
           <label for="age">How old are You?</label>
           <input
-          type="number"
-          name="Age"
-          id="age"
-          value="12"
-          min="1"
-          max="100"
-          required
+            type="number"
+            name="Age"
+            id="age"
+            value="12"
+            min="1"
+            max="100"
+            required
           >
         </div>
 
         <div class="form-field">
           <label for="date-of-birth">Full date of birth:</label>
           <input
-          type="date"
-          name="date-of-birth"
-          id="date-of-birth"
-          required
+            type="date"
+            name="date-of-birth"
+            id="date-of-birth"
+            required
           >
         </div>
 
         <div class="form-field">
           <label for="terms-and-conditions">I accept the term of agreement</label>
           <input
-          type="checkbox"
-          name="terms-and-conditions"
-          id="terms-and-conditions"
-          required
+            type="checkbox"
+            name="terms-and-conditions"
+            id="terms-and-conditions"
+            required
           >
         </div>
       </fieldset>
@@ -78,23 +78,23 @@
         <div class="form-field">
           <label for="email">E-mail:</label>
           <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="email@example.com"
-          required
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@example.com"
+            required
           >
         </div>
 
         <div class="form-field">
           <label for="password">Password:</label>
           <input
-          type="password"
-          name="password"
-          id="password"
-          minlength="5"
-          maxlength="32"
-          required
+            type="password"
+            name="password"
+            id="password"
+            minlength="5"
+            maxlength="32"
+            required
           >
         </div>
       </fieldset>
@@ -103,48 +103,48 @@
         <div class="form-field">
           Do you love cats?
           <input
-          type="radio"
-          name="cats"
-          id="yes"
-          value="yes"
-          required
+            type="radio"
+            name="cats"
+            id="yes"
+            value="yes"
+            required
           >
 
           <label for="yes">Yes</label>
           <input
-          type="radio"
-          name="cats"
-          id="no"
-          value="no"
-          required
+            type="radio"
+            name="cats"
+            id="no"
+            value="no"
+            required
           >
           <label for="no">No</label>
         </div>
         <div class="form-field">
           <label for="color">What is your favourite color?</label>
           <input
-          type="color"
-          name="color"
-          id="color"
-          required
+            type="color"
+            name="color"
+            id="color"
+            required
           >
         </div>
         <div class="form-field">
           <label for="time">What time do you go to bed?</label>
           <input
-          type="time"
-          name="time"
-          id="time"
-          required
+            type="time"
+            name="time"
+            id="time"
+            required
           >
         </div>
         <div class="form-field">
           <label for="car-brand">What are you favourite brand of cars?</label>
           <select
-          name="brand"
-          id="car-brand"
-          multiple
-          required
+            name="brand"
+            id="car-brand"
+            multiple
+            required
           >
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
@@ -154,14 +154,38 @@
         <div class="form-field">
           <label for="rate">How do you rate our work?</label>
           <input
-          type="range"
-          name="rate"
-          id="rate"
-          min="0"
-          max="100"
-          step="10"
-          value="0"
+            type="range"
+            name="rate"
+            id="rate"
+            min="0"
+            max="100"
+            step="10"
+            value="0"
           >
+        </div>
+      </fieldset>
+      <fieldset class="fieldset">
+        <legend>Additional info:</legend>
+
+        <div class="form-field">
+          <label for="textarea">Comments:</label>
+          <textarea
+            name="comments"
+            id="textarea"
+            required
+         ></textarea>
+        </div>
+
+        <div class="form-field">
+          <label for="reccomendation">Would you recommend us?</label>
+          <select
+            name="reccomendation"
+            id="reccomendation"
+            required
+          >
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
         </div>
       </fieldset>
       <button type="submit">Submit</button>
