@@ -17,7 +17,6 @@
     >
   </head>
   <body>
-
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
@@ -70,7 +69,6 @@
             name="check"
           >
         </label>
-
       </fieldset>
 
       <fieldset class="container">
@@ -96,13 +94,12 @@
             required
           >
         </label>
-
       </fieldset>
 
       <fieldset class="container">
         <legend>An interesting fact about you!</legend>
 
-        <label class="stylized margin-fix">
+        <div class="stylized">
           Do you love cats?
 
           <input
@@ -119,7 +116,7 @@
           >
           <label for="no-radio">No</label>
 
-        </label>
+        </div>
 
         <label class="stylized">
           What is your favorite color?
@@ -137,7 +134,7 @@
           >
         </label>
 
-        <label class="stylized margin-fix">
+        <label class="stylized">
           What are your favorite brand of cars?
           <select
             name="cars"
@@ -146,7 +143,6 @@
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
             <option value="lada">Lada</option>
-            <option value="empty"></option>
           </select>
         </label>
 
@@ -157,7 +153,6 @@
             value="0"
           >
         </label>
-
       </fieldset>
 
       <fieldset class="container">
@@ -178,17 +173,10 @@
             <option value="no">no</option>
           </select>
         </label>
-
       </fieldset>
 
       <button type="submit">Submit</button>
 
     </form>
-
-    <script
-      type="text/javascript"
-      src="./main.js"
-    >
-    </script>
   </body>
 </html>
