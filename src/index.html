@@ -14,6 +14,7 @@
     <form
     action="https://mate-academy-form-lesson.herokuapp.com/create-application"
     method="post"
+    autocomplete="off"
     >
       <fieldset class="fieldset">
         <legend>Personal information</legend>
@@ -25,7 +26,6 @@
           name="surname"
           id="surname"
           required
-          autocomplete="off"
           >
         </div>
 
@@ -36,7 +36,6 @@
           name="Name"
           id="name"
           required
-          autocomplete="off"
           >
         </div>
 
@@ -50,7 +49,6 @@
           min="1"
           max="100"
           required
-          autocomplete="off"
           >
         </div>
 
@@ -61,7 +59,6 @@
           name="date-of-birth"
           id="date-of-birth"
           required
-          autocomplete="off"
           >
         </div>
 
@@ -72,7 +69,6 @@
           name="terms-and-conditions"
           id="terms-and-conditions"
           required
-          autocomplete="off"
           >
         </div>
       </fieldset>
@@ -87,7 +83,6 @@
           id="email"
           placeholder="email@example.com"
           required
-          autocomplete="off"
           >
         </div>
 
@@ -100,7 +95,72 @@
           minlength="5"
           maxlength="32"
           required
-          autocomplete="off"
+          >
+        </div>
+      </fieldset>
+      <fieldset class="fieldset">
+        <legend>An interesting fact about you!</legend>
+        <div class="form-field">
+          Do you love cats?
+          <input
+          type="radio"
+          name="cats"
+          id="yes"
+          value="yes"
+          required
+          >
+
+          <label for="yes">Yes</label>
+          <input
+          type="radio"
+          name="cats"
+          id="no"
+          value="no"
+          required
+          >
+          <label for="no">No</label>
+        </div>
+        <div class="form-field">
+          <label for="color">What is your favourite color?</label>
+          <input
+          type="color"
+          name="color"
+          id="color"
+          required
+          >
+        </div>
+        <div class="form-field">
+          <label for="time">What time do you go to bed?</label>
+          <input
+          type="time"
+          name="time"
+          id="time"
+          required
+          >
+        </div>
+        <div class="form-field">
+          <label for="car-brand">What are you favourite brand of cars?</label>
+          <select
+          name="brand"
+          id="car-brand"
+          multiple
+          required
+          >
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="rate">How do you rate our work?</label>
+          <input
+          type="range"
+          name="rate"
+          id="rate"
+          min="0"
+          max="100"
+          step="10"
+          value="0"
           >
         </div>
       </fieldset>
