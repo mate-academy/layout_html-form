@@ -134,6 +134,7 @@
 
         <label class="form-field">
           What type of music do you listen to?
+
           <select name="musicType" multiple>
             <option value="pop">Pop</option>
             <option value="rock">Rock</option>
@@ -141,6 +142,7 @@
             <option value="jazz">Jazz</option>
             <option value="classical">Classical</option>
           </select>
+
         </label>
 
         <label class="form-field">
@@ -153,7 +155,31 @@
             value="5"
           >
         </label>
+      </fieldset>
 
+      <fieldset class="fieldset">
+        <legend>Additional info</legend>
+
+        <label class="form-field">
+          Comments:
+
+          <textarea
+            name="comments"
+            placeholder="Add some comment here if you like"
+            maxlength="80"
+          ></textarea>
+
+        </label>
+
+        <label class="form-field">
+          Would you recommend us?
+
+          <select name="recommendation">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+
+        </label>
       </fieldset>
     </form>
   </body>
