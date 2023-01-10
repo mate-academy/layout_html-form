@@ -3,8 +3,12 @@
   margin: 10px 0;
 }
 
-.form-field:last-child {
-  margin: 0;
+.fieldset .form-field:first-of-type {
+  margin-top: 0;
+}
+
+.fieldset .form-field:last-of-type {
+  margin-bottom: 0;
 }
 
 .fieldset {
