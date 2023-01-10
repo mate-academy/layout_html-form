@@ -3,14 +3,6 @@
   margin: 20px auto;
 }
 
-input {
-  margin: 10px;
-}
-
-textarea {
-  margin: 10px;
-}
-
-select {
+.field {
   margin: 10px;
 }

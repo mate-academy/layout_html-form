@@ -10,6 +10,7 @@
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+  
   <body>
 
     <h1>HTML Form</h1>
@@ -22,40 +23,49 @@
     
         <label for="surname">Surname:</label>
         <input 
-        type="text" 
-        id="surname" 
-        name="pers_info" 
-        autocomplete="off"
+          class="field"
+          type="text" 
+          id="surname" 
+          name="pers_info" 
+          autocomplete="off"
         ><br>
     
         <label for="name">Name:</label>
         <input 
-        type="text" 
-        id="name" 
-        name="pers_info" 
-        autocomplete="off"
+          class="field"
+          type="text" 
+          id="name" 
+          name="pers_info" 
+          autocomplete="off"
         ><br>
     
         <label for="old">How old are You?</label>
         <input 
-        type="number" 
-        id="old" 
-        name="pers_info" 
-        min="1" max="100" 
-        value="12"
+          class="field"
+          type="number" 
+          id="old" 
+          name="pers_info" 
+          min="1" max="100" 
+          value="12"
         ><br>
     
         <label for="birth">Full date of birth:</label>
         <input 
-        type="date" 
-        id="birth" 
-        name="pers_info" 
-        min="1900-01-01" 
-        max="2022-12-31"
+          class="field" 
+          type="date" 
+          id="birth" 
+          name="pers_info" 
+          min="1900-01-01" 
+          max="2022-12-31"
         ><br>
     
         <label for="term">I accept the term of the agreement:</label>
-        <input type="checkbox" id="term" name="pers_info"><br>
+        <input  
+          class="field"
+          type="checkbox" 
+          id="term" 
+          name="pers_info"
+        ><br>
     
       </fieldset>
     
@@ -63,22 +73,24 @@
         <legend>Registration</legend>
     
         <label for="email">E-mail:</label>
-        <input 
-        type="email" 
-        name="reg" 
-        id="email" 
-        placeholder="email@example.com" 
-        required
+        <input  
+          class="field"
+          type="email" 
+          name="reg" 
+          id="email" 
+          placeholder="email@example.com" 
+          required
         ><br>
     
         <label for="pass">Password:</label>
         <input 
-        type="password" 
-        name="reg" 
-        id="pass" 
-        minlength="6" 
-        maxlength="10" 
-        required
+          class="field"
+          type="password" 
+          name="reg" 
+          id="pass" 
+          minlength="6" 
+          maxlength="10" 
+          required
         ><br>
     
       </fieldset>
@@ -91,13 +103,28 @@
         <label for="no"><input type="radio" name="fact" id="no">No</label><br>
     
         <label for="fav_color">What is your favorite color?</label>
-        <input type="color" name="fact" id="fav_color"><br>
+        <input 
+          class="field"
+          type="color" 
+          name="fact" 
+          id="fav_color"
+         ><br>
     
         <label for="bed_time">What time do you go to bed?</label>
-        <input type="time" name="fact" id="bed_time"><br>
+        <input 
+          class="field"
+          type="time" 
+          name="fact" 
+          id="bed_time"
+         ><br>
     
         <label for="car">What are your favorite brand of cars?</label>
-        <select name="fact" id="car" multiple>
+        <select 
+          class="field"
+          name="fact" 
+          id="car" 
+          multiple
+        >
           <option value="BMW">BMW</option>
           <option value="Audi">Audi</option>
           <option value="Lada">Lada</option>
@@ -105,10 +132,11 @@
     
         <label for="rate">How do you rate our work?</label>
         <input 
-        type="range" 
-        name="fact" 
-        id="rate" 
-        value="0"
+          class="field"
+          type="range" 
+          name="fact" 
+          id="rate" 
+          value="0"
         >
     
       </fieldset>
@@ -118,14 +146,15 @@
     
         <label for="comments">Comments:</label>
         <textarea 
-        name="add_info" 
-        id="comments" 
-        cols="15" 
-        rows="2">
+          class="field"
+          name="add_info" 
+          id="comments" 
+          cols="15" 
+          rows="2">
         </textarea><br>
     
         <label for="y_n">Would you recommend us?</label>
-        <select name="add_info" id="y_n">
+        <select class="field" name="add_info" id="y_n">
           <option value="y">Yes</option>
           <option value="n">No</option>
         </select>
