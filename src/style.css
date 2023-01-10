@@ -1,1 +1,16 @@
 /* styles go here */
+label {
+  display: block;
+}
+
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.label {
+  margin-bottom: 10px;
+}
+
+.select {
+  margin-top: 11px;
+}
