@@ -6,3 +6,7 @@
 .form-field:last-child {
   margin: 0;
 }
+
+.fieldset {
+  margin: 20px 0;
+}

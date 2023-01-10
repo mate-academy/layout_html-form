@@ -19,11 +19,11 @@
       method="post"
     >
 
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Personal information</legend>
 
         <label class="form-field">
-          First Name
+          First Name:
           <input
             type="text"
             name="firstName"
@@ -32,7 +32,7 @@
         </label>
 
         <label class="form-field">
-          Last Name
+          Last Name:
           <input
             type="text"
             name="lastName"
@@ -41,7 +41,7 @@
         </label>
 
         <label class="form-field">
-          Age
+          Age:
           <input
             type="number"
             name="age"
@@ -52,10 +52,42 @@
         </label>
 
         <label class="form-field">
-          DOB
+          Date of birth:
           <input type="date" name="dateOfBirth">
         </label>
 
+      </fieldset>
+      <fieldset>
+        <legend>Registration</legend>
+
+        <label class="form-field">
+          E-mail:
+          <input
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+            required
+          >
+        </label>
+
+        <label class="form-field">
+          Password:
+          <input
+            type="password"
+            name="password"
+            minlength="3"
+            required
+          >
+        </label>
+
+        <label class="form-field">
+          I accept the terms and and conditions
+          <input
+            type="checkbox"
+            name="terms"
+            required
+          >
+        </label>
       </fieldset>
     </form>
   </body>
