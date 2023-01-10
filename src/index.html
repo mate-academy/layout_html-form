@@ -57,6 +57,7 @@
         </label>
 
       </fieldset>
+
       <fieldset>
         <legend>Registration</legend>
 
@@ -88,6 +89,71 @@
             required
           >
         </label>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>Some facts about you</legend>
+
+        <div class="form-field">
+          Do you love cats?
+
+          <label>
+            <input
+              type="radio"
+              name="catLover"
+              value="yes"
+            >
+            Yes
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="catLover"
+              value="no"
+            >
+            No
+          </label>
+        </div>
+
+        <label class="form-field">
+          Choose your favorite color:
+          <input
+            type="color"
+            name="color"
+          >
+        </label>
+
+        <label class="form-field">
+          When does your lunch break start?
+          <input
+            type="time"
+            name="lunchBreak"
+          >
+        </label>
+
+        <label class="form-field">
+          What type of music do you listen to?
+          <select name="musicType" multiple>
+            <option value="pop">Pop</option>
+            <option value="rock">Rock</option>
+            <option value="hipHop">Hip Hop</option>
+            <option value="jazz">Jazz</option>
+            <option value="classical">Classical</option>
+          </select>
+        </label>
+
+        <label class="form-field">
+          How do you rate our effectivness?
+          <input
+            type="range"
+            name="effectivness"
+            min="0"
+            max="10"
+            value="5"
+          >
+        </label>
+
       </fieldset>
     </form>
   </body>
