@@ -1,1 +1,13 @@
 /* styles go here */
+html {
+  margin: 0 auto;
+}
+
+.gr_form {
+  margin-bottom: 20px;
+}
+
+.form {
+  display: block;
+  padding-bottom: 10px;
+}
