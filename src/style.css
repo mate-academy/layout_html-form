@@ -1,1 +1,9 @@
 /* styles go here */
+.aria {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.content:not(:last-child) {
+  margin-bottom: 10px;
+}
