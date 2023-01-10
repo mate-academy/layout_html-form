@@ -1,8 +1,8 @@
-.fset {
+.group {
   margin-bottom: 20px;
 }
 
-.label:not(:last-child) {
+.item:not(:last-child) {
   display: block;
   margin-bottom: 10px;
 }
