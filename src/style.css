@@ -1,1 +1,11 @@
-/* styles go here */
+.distanceGroups {
+  margin-top: 20px;
+}
+
+.distanceboth {
+  margin: 10px 0;
+}
+
+.distance {
+  margin-top: 10px;
+}
