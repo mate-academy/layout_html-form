@@ -13,11 +13,21 @@
         <legend>Personal information</legend>
         <label for="surname">
           Surname:
-          <input type="text" name="surname">
+          <input 
+            type="text" 
+            name="surname"
+            required
+            minlength="2"
+            maxlength="20"
+          >
         </label>
         <label for="name">
           Name:
-          <input type="text" name="name">
+          <input 
+            type="text" 
+            name="name"
+            required
+          >
         </label>
         <label for="age">
           How old are You?
