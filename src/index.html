@@ -42,7 +42,7 @@
         </label>
         <label class="form__field">
           I accept the term of the agreement
-          <input type="checkbox" name="Terms" required>
+          <input type="checkbox" name="terms" required>
         </label>
       </fieldset>
       <fieldset class="tabel">
@@ -80,7 +80,7 @@
         </label>
         <label class="form__field">
           What time do you go to bed?
-          <input type="time" name="Time">
+          <input type="time" name="timeGoToBed">
         </label>
         <label class="form__field">
           What are your favorite brand of cars?
@@ -92,7 +92,13 @@
         </label>
         <label class="form__field">
           How do you rate our work?
-          <input type="range" name="Rating">
+          <input 
+            type="range" 
+            name="rating"
+            min="0"
+            max="100"
+            value="0"
+          >
         </label>
       </fieldset>
       <fieldset class="tabel">
@@ -103,7 +109,7 @@
         </label>
         <label class="form__field">
           Would you recommend us?
-          <select name="Recommendation">
+          <select name="recommendation">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
