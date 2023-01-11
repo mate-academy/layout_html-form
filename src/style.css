@@ -1,16 +1,12 @@
+.fieldset {
+  margin: 0 2px 20px;
+}
+
 .form-field {
   display: block;
-  margin: 10px 0;
+  margin: 0 0 10px;
 }
 
-.fieldset .form-field:first-of-type {
-  margin-top: 0;
-}
-
-.fieldset .form-field:last-of-type {
-  margin-bottom: 0;
-}
-
-.fieldset {
-  margin: 20px 0;
+.fieldset .form-field:last-child {
+  margin: 0;
 }
