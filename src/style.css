@@ -1,1 +1,21 @@
 /* styles go here */
+
+.last-field {
+
+  margin-bottom: 20px;
+}
+
+.last-field > *:not(:last-child, :first-child) {
+
+  margin-bottom: 10px;
+}
+
+.label {
+        
+  display: block;
+}
+
+.select {
+
+  overflow-y: visible;
+}
