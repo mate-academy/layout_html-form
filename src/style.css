@@ -1,1 +1,7 @@
-/* styles go here */
+.container {
+  margin-bottom: 10px;
+}
+
+.group-container {
+  margin-bottom: 20px;
+}
