@@ -1,2 +1,122 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>HTML Form</title><link rel="stylesheet" href="style.f8a34af5.css"></head><body> <h1>HTML Form</h1> <script type="text/javascript" src="main.e97352c4.js"></script> <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="get"> <fieldset class="group"> <legend>Personal information</legend> <label for="surname">Surname:</label> <input class="field" type="text" id="surname" name="pers_info" autocomplete="off"> <br> <label for="name">Name:</label> <input class="field" type="text" id="name" name="pers_info" autocomplete="off"> <br> <label for="old">How old are You?</label> <input class="field" type="number" id="old" name="pers_info" min="1" max="100" value="12"> <br> <label for="birth">Full date of birth:</label> <input class="field" type="date" id="birth" name="pers_info" min="1900-01-01" max="2022-12-31"> <br> <label for="term">I accept the term of the agreement:</label> <input class="field" type="checkbox" id="term" name="pers_info"> <br> </fieldset> <fieldset class="group"> <legend>Registration</legend> <label for="email">E-mail:</label> <input class="field" type="email" name="reg" id="email" placeholder="email@example.com" required> <br> <label for="pass">Password:</label> <input class="field" type="password" name="reg" id="pass" minlength="6" maxlength="10" required> <br> </fieldset> <fieldset class="group"> <legend>An interesting fact about you!</legend> Do you love cats? <label for="yes"><input type="radio" name="fact" id="yes">Yes</label> <label for="no"><input type="radio" name="fact" id="no">No</label><br> <label for="fav_color">What is your favorite color?</label> <input class="field" type="color" name="fact" id="fav_color"> <br> <label for="bed_time">What time do you go to bed?</label> <input class="field" type="time" name="fact" id="bed_time"> <br> <label for="car">What are your favorite brand of cars?</label> <select class="field" name="fact" id="car" multiple> <option value="BMW">BMW</option> <option value="Audi">Audi</option> <option value="Lada">Lada</option> </select> <br> <label for="rate">How do you rate our work?</label> <input class="field" type="range" name="fact" id="rate" value="0"> </fieldset> <fieldset class="group"> <legend>Additional info:</legend> <label for="comments">Comments:</label> <textarea class="field" name="add_info" id="comments" cols="15" rows="2">
-        </textarea> <br> <label for="y_n">Would you recommend us?</label> <select class="field" name="add_info" id="y_n"> <option value="y">Yes</option> <option value="n">No</option> </select> </fieldset> <button type="submit">Submit</button> </form> </body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="/style.e308ff8e.css">
+  <script src="/style.e308ff8e.js"></script></head>
+  
+  <body>
+ 
+    
+    <script type="text/javascript" src="/main.1f19ae8e.js"></script>
+
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="get">
+      
+      <fieldset class="group">
+        <legend>Personal information</legend>
+    
+        <label for="surname" class="field">
+          Surname:
+          <input type="text" id="surname" name="pers_info" autocomplete="off">
+        </label>
+   
+        <label for="name" class="field">
+          Name:
+          <input type="text" id="name" name="pers_info" autocomplete="off">
+        </label>
+
+        <label for="old" class="field">
+          How old are You?
+          <input type="number" id="old" name="pers_info" min="1" max="100" value="12">
+        </label>
+
+    
+        <label for="birth" class="field">
+          Full date of birth:
+          <input type="date" id="birth" name="pers_info" min="1900-01-01" max="2022-12-31">
+        </label>
+    
+        <label for="term" class="field">
+          I accept the term of the agreement
+          <input type="checkbox" id="term" name="pers_info">
+        </label>
+
+      </fieldset>
+    
+      <fieldset class="group">
+        <legend>Registration</legend>
+    
+        <label for="email" class="field">
+          E-mail:
+          <input type="email" name="reg" id="email" placeholder="email@example.com" required="">
+        </label>
+   
+        <label for="pass" class="field">
+          Password:
+          <input type="password" name="reg" id="pass" minlength="6" maxlength="10" required="">
+        </label>
+    
+      </fieldset>
+    
+      <fieldset class="group">
+        <legend>An interesting fact about you!</legend>
+    
+        <label class="field">
+          Do you love cats?
+          <input type="radio" name="fact">Yes
+          <input type="radio" name="fact">No
+        </label>
+    
+        <label for="fav_color" class="field">
+          What is your favorite color?
+          <input type="color" name="fact" id="fav_color">
+        </label>
+    
+        <label for="bed_time" class="field">
+          What time do you go to bed?
+          <input type="time" name="fact" id="bed_time">
+        </label>
+   
+        <label for="car" class="field">
+          What are your favorite brand of cars?
+          <select name="fact" id="car" multiple="">
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </label>
+    
+        <label for="rate" class="field">
+          How do you rate our work?
+          <input type="range" name="fact" id="rate" value="0">
+        </label>
+    
+      </fieldset>
+    
+      <fieldset class="group">
+        <legend>Additional info:</legend>
+    
+        <label for="comments" class="field">
+          Comments:
+          <textarea name="add_info" id="comments" cols="20" rows="2">
+          </textarea>
+        </label>
+    
+        <label for="y_n" class="field">
+          Would you recommend us?
+          <select name="add_info" id="y_n">
+            <option value="y">Yes</option>
+            <option value="n">No</option>
+          </select>
+        </label>
+    
+      </fieldset>
+    
+      <button type="submit">Submit</button>
+    
+    </form>
+  </body>
+</html>

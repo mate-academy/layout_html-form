@@ -1,8 +1,13 @@
 /* styles go here */
 .group {
-  margin: 20px auto;
+  margin-bottom: 20px;
 }
 
 .field {
-  margin: 10px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.field:last-child {
+  margin-bottom: 0;
 }
