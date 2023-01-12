@@ -1,22 +1,25 @@
 /* styles go here */
-.form-field {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
 .groups-field {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.groups-field_first {
-  margin-bottom: 20px;
-}
-
-.form-field_last {
+.form-field {
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.form-field_first {
+.groups-field:first-child {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.groups-field div:first-of-type {
   margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.groups-field div:last-child {
+  margin-top: 10px;
+  margin-bottom: 0;
 }

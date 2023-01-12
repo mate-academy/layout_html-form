@@ -14,11 +14,13 @@
     <!-- <h1>HTML Form</h1> -->
     <script type="text/javascript" src="./main.js"></script>
     <form 
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <fieldset class="groups-field_first">
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
+      method="post"
+    >
+      <fieldset class="groups-field">
         <legend>Personal information</legend>
 
-        <div class="form-field_first">
+        <div class="form-field">
           <label for="surname">Surname:</label>
           <input 
             type="text" 
@@ -57,7 +59,7 @@
           >
         </div>
 
-        <div class="form-field_last">
+        <div class="form-field">
           <label for="chbx">I accept the term of the agreement</label>
           <input 
             type="checkbox" 
@@ -66,16 +68,13 @@
             value="Yes!" 
           >
         </div>
-
       </fieldset>
-
-
 
       <fieldset class="groups-field">
 
         <legend>Registration</legend>
-        
-        <div class="form-field_first">
+
+        <div class="form-field">
           <label for="email">E-mail:</label>
           <input 
             type="email" 
@@ -85,7 +84,7 @@
           >
         </div>
 
-        <div class="form-field_last">
+        <div class="form-field">
           <label for="password">Password:</label>
           <input 
             type="password" 
@@ -95,14 +94,13 @@
             required
           >
         </div>
-
       </fieldset>
 
       <fieldset class="groups-field">
 
         <legend>An interesting fact about you!</legend>
         
-        <div class="form-field_first">
+        <div class="form-field">
           Do you love cats?
           <label>
             <input 
@@ -156,7 +154,7 @@
 
         </div>
 
-        <div class="form-field_last">
+        <div class="form-field">
           <label>
             How do you rate our work?
             <input 
@@ -170,13 +168,12 @@
             >
           </label>
         </div>
-
       </fieldset>
 
       <fieldset class="groups-field">
         <legend> Additional info:</legend>
 
-        <div class="form-field_first">
+        <div class="form-field">
           <label for="comments">Comments:</label>
 
           <textarea 
@@ -187,7 +184,7 @@
          ></textarea>
         </div>
 
-        <div class="form-field_last">
+        <div class="form-field">
           <label>
             Would you recommend us?
 
@@ -197,7 +194,6 @@
             </select>
           </label>
         </div>
-
       </fieldset>
 
       <button type="submit">Submit</button>
