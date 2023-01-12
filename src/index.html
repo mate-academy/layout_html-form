@@ -14,127 +14,123 @@
     <form class="form" method="post">
       <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <div>
-          <label>
-            Surname: 
-            <input name="surname" type="text" 
-              autocomplete="off" required
-            >
-          </label>
-        </div>
-        <div>
-          <label>
-            Name: 
-            <input name="nam" type="text" 
-              autocomplete="off"
-            >
-          </label>
-        </div>
-        <div>
-          <label>
-            How old are You? 
-            <input name="age" type="number" 
-              min="1" max="100" 
-              value="12"
-            >
-          </label>
-        </div>
-        <div>
-          <label>
-            Fill date of birth: 
-            <input name="birth" type="date">
-          </label>
-        </div>
-        <div>
-          <label>
-            I accept the term of agreement 
-            <input name="agree" type="checkbox">
-          </label>
-        </div>
+        <label>
+          Surname: 
+          <input 
+            name="surname" 
+            type="text" 
+            autocomplete="off" 
+            required
+          >
+        </label>
+        <label>
+          Name: 
+          <input 
+            name="nam" 
+            type="text" 
+            autocomplete="off"
+          >
+        </label>
+        <label>
+          How old are You? 
+          <input 
+            name="age" 
+            type="number" 
+            min="1" 
+            max="100" 
+            value="12"
+          >
+        </label>
+        <label>
+          Fill date of birth: 
+          <input name="birth" type="date">
+        </label>
+        <label>
+          I accept the term of agreement 
+          <input name="agree" type="checkbox">
+        </label>
       </fieldset>
       <fieldset class="fieldset">
         <legend>Registration</legend>
-        <div>
-          <label>
-            E-mail: 
-            <input name="email" type="email" 
-              placeholder="email@example.com"
-            >
-          </label>
-        </div>
-        <div>
-          <label>
-            Password: 
-            <input name="password" type="password" 
-              maxlength="10"
-            >
-          </label>
-        </div>
+        <label>
+          E-mail: 
+          <input 
+            name="email" 
+            type="email" 
+            placeholder="email@example.com"
+          >
+        </label>
+        <label>
+          Password: 
+          <input 
+            name="password" 
+            type="password" 
+            maxlength="10"
+          >
+        </label>
       </fieldset>
       <fieldset class="fieldset">
         <legend>An interesting fast about you!</legend>
         <div>
           Do you love cats?
-          <input id="likeCat" name="cats" 
+          <input 
+            id="likeCat" 
+            name="cats" 
             type="radio"
           >
           <label for="likeCat">Yes</label>
-          <input id="disLikeCat" name="cats" 
+          <input 
+            id="disLikeCat" 
+            name="cats" 
             type="radio"
           >
           <label for="disLikeCat">No</label>
         </div>
-        <div>
-          <label>
-            What is your favorite color? 
-            <input name="favoritColor" type="color">
-          </label>
-        </div>
-        <div>
-          <label>
-            What time do you go to bed? 
-            <input name="timeToSleep" type="time">
-          </label>
-        </div>
-        <div>
-          <label>
-            What are your favorite brand of cars? 
-            <select name="favoriteCars" multiple="">
-              <option name="BMW" value="BMW">BMW</option>
-              <option name="AUDI" value="AUDI">Audi</option>
-              <option name="Lada" value="Lada">Lada</option>
-              <option selected disabled></option>
-            </select>
-          </label>
-        </div>
-        <div>
-          <label>
-            How do you rate our work? 
-            <input name="rateWork" type="range">
-          </label>
-        </div>
+        <label>
+          What is your favorite color? 
+          <input 
+            name="favoritColor" 
+            type="color"
+          >
+        </label>
+        <label>
+          What time do you go to bed? 
+          <input name="timeToSleep" type="time">
+        </label>
+        <label>
+          What are your favorite brand of cars? 
+          <select name="favoriteCars" multiple="">
+            <option name="BMW" value="BMW">BMW</option>
+            <option name="AUDI" value="AUDI">Audi</option>
+            <option name="Lada" value="Lada">Lada</option>
+            <option selected disabled></option>
+          </select>
+        </label>
+        <label>
+          How do you rate our work? 
+          <input name="rateWork" type="range">
+        </label>
       </fieldset>
       <fieldset class="fieldset">
         <legend>Additional info:</legend>
-        <div>
-          <label>
-            Comments: 
-            <textarea name="comments" cols="20" 
-              rows="2" maxlength="100" 
-              autocomplete="off"
-            >
-            </textarea>
-          </label>
-        </div>
-        <div>
-          <label>
-            Would you recommend us? 
-            <select name="recommend">
-              <option selected="">yes</option>
-              <option>no</option>
-            </select>
-          </label>
-        </div>
+        <label>
+          Comments: 
+          <textarea 
+            name="comments" 
+            cols="20" 
+            rows="2" 
+            maxlength="100" 
+            autocomplete="off"
+          >
+          </textarea>
+        </label>
+        <label>
+          Would you recommend us? 
+          <select name="recommend">
+            <option selected="">yes</option>
+            <option>no</option>
+          </select>
+        </label>
       </fieldset>
       <button type="submit">Submit</button>
     </form>

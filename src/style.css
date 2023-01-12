@@ -2,6 +2,7 @@
   margin-bottom: 20px;
 }
 
-.fieldset div:not(:last-child) {
+.fieldset > :not(:last-child):not(:first-child) {
+  display: block;
   margin-bottom: 10px;
 }
