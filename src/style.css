@@ -1,1 +1,22 @@
 /* styles go here */
+.form-field {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.groups-field {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.groups-field_first {
+  margin-bottom: 20px;
+}
+
+.form-field_last {
+  margin-top: 10px;
+}
+
+.form-field_first {
+  margin-bottom: 10px;
+}
