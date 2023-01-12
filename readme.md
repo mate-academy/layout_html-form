@@ -51,3 +51,4 @@ Create HTML page with form. On form submit send form data to `https://mate-acade
 1. You can group fields with [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) tag
 2. The form should have correct `method` and `action`
 3. Follow the [code style guide](https://mate-academy.github.io/style-guides/htmlcss.html)
+
