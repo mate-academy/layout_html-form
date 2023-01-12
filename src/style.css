@@ -1,1 +1,13 @@
 /* styles go here */
+.group {
+  margin-bottom: 20px;
+}
+
+.field {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.field:last-child {
+  margin-bottom: 0;
+}
