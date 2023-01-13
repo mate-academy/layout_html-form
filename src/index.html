@@ -19,7 +19,8 @@
       <legend>Personal information</legend>
       <label
         for="surname"
-        class="label">
+        class="label"
+      >
       Surname:
         <input
           class="input"
@@ -116,7 +117,7 @@
       <legend>An interesting fact about you!</legend>
       <label
         for="cat"
-        class="label"
+        class="labelInline"
       >
         Do you love cats?
         <input
@@ -127,18 +128,24 @@
           class="input"
         >
         Yes
+      </label>
+      <label
+        for="catNo"
+        class="labelInline"
+      >
         <input
           type="radio"
           name="question"
           value="No"
-          class="input"
+          class="input margin"
+          id="catNo"
         >
         No
       </label>
       <label
         for="color"
         class="label"
-        >
+      >
         What is your favorite color?
         <input
           type="color"

@@ -15,3 +15,7 @@
 .no_margin {
   margin-bottom: 0;
 }
+
+.margin {
+  margin-bottom: 13px;
+}
