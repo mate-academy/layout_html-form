@@ -1,5 +1,5 @@
 'use strict';
-
+// test
 const INPUT_BUTTON_TYPES = ['button', 'submit', 'reset'];
 
 // eslint-disable-next-line no-unused-vars
