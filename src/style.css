@@ -1,1 +1,8 @@
 /* styles go here */
+.vertDistBeetweenInputs {
+  margin-bottom: 10px;
+}
+
+.vertDistBeetweenGroups {
+  margin-bottom: 20px;
+}
