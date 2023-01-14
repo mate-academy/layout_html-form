@@ -1,8 +1,7 @@
-/* styles go here */
 .fieldset {
   margin-bottom: 20px;
 }
 
-.form-field + .form-field {
+.form-field {
   margin-top: 10px;
 }
