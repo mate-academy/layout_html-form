@@ -11,7 +11,109 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+      <fieldset class="chapter">
+        <legend>Personal information</legend>
+        <label class="chapter__item">
+          Surname:
+          <input type="text" name="Surname" autocomplete="off">
+        </label>
+        <label class="chapter__item">
+          Name:
+          <input type="text" name="Name" autocomplete="off">
+        </label>
+        <label class="chapter__item">
+          How old are You?
+          <input
+            type="number"
+            name="age"
+            min="1"
+            max="100"
+            value="12"
+          >
+        </label>
+        <label class="chapter__item">
+          Full date of birth:
+          <input type="date" name="births-day">
+        </label>
+        <label class="chapter__item">
+          I accept the term of the agreement
+          <input type="checkbox" name="agreement" required>
+        </label>
+      </fieldset>
+      <fieldset class="chapter">
+        <legend>Registration</legend>
+        <label class="chapter__item">
+          E-mail:
+          <input
+            type="email"
+            name="E-mail"
+            placeholder="email@example.com"
+            required
+            autocomplete="off"
+          >
+        </label>
+        <label class="chapter__item">
+          Password:
+          <input
+            type="password"
+            name="Password"
+            minlength="6"
+            maxlength="36"
+            required
+          >
+        </label>
+      </fieldset>
+  
+      <fieldset class="chapter">
+        <legend>An interesting fact about you!</legend>
+        <div class="chapter__item">
+          Do you love cats?
+          <label>
+            <input type="radio" name="cats" value="true">Yes
+          </label>
+          <label>
+            <input type="radio" name="cats" value="folse">No
+          </label>
+        </div>
+        
+        <label class="chapter__item">
+          What is your favorite color?
+          <input type="color" name="color">
+        </label>
+        <label class="chapter__item">
+          Whot time do ypu go to bad?
+          <input type="time" name="go_bad">
+        </label>
+        <label class="chapter__item">
+          What are your favorite brend of cars?
+          <select name="car" multiple>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </label>
+        <label class="chapter__item">
+          How do you rate uor work?
+          <input type="range" name="work">
+        </label>
+      </fieldset>
+      <fieldset class="chapter">
+        <legend>Additional info</legend>
+        <label class="chapter__item">
+          Comments:
+          <textarea name="comments" cols="30" rows="2"></textarea>
+        </label>
+        <label class="chapter__item">
+          Would you recomend us?
+          <select name="recommend">
+            <option value="yes" selected>yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
