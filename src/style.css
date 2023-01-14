@@ -1,1 +1,13 @@
 /* styles go here */
+.chapter {
+  margin-bottom: 20px;
+}
+
+.chapter__item {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.chapter__item:last-child {
+  margin-bottom: 0;
+}
