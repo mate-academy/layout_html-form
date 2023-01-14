@@ -10,3 +10,7 @@
 .fieldset {
   margin-bottom: 20px;
 }
+
+.radio {
+  display: inline;
+}
