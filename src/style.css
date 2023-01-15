@@ -3,6 +3,10 @@
   margin-bottom: 20px;
 }
 
-.fieldset > div:not(:last-child) {
+.label {
+  display: block;
+}
+
+.fieldset > .label:not(:last-child) {
   margin-bottom: 10px;
 }
