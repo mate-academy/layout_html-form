@@ -1,8 +1,31 @@
+body {
+  margin: 0 8px;
+}
+
 div {
   margin: 20px 0;
+}
+
+fieldset {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.first-block {
+  margin-top: 8px;
 }
 
 .form-field {
   display: block;
   margin: 10px 0;
+}
+
+.email,
+.comments {
+  margin-top: 5px;
+}
+
+.surname,
+.cats {
+  margin-top: 6px;
 }

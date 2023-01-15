@@ -11,37 +11,39 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" ethod="post">
       <div class="first-block">
         <fieldset class="personal-information">
           <legend>Personal information</legend>
 
-          <label class="form-field">
+          <label class="form-field surname">
             Surname:
             <input type="text"
-            name="surname"
-            autocomplete="off"
-            required>
+              name="surname"
+              autocomplete="off"
+              required
+            >
           </label>
 
           <label class="form-field">
             Name:
             <input
-            type="text"
-            name="name"
-            autocomplete="off"
-            required>
+              type="text"
+              name="name"
+              autocomplete="off"
+              required
+            >
           </label>
 
           <label class="form-field" >
             How old are You?
             <input
-            type="number"
-            name="age"
-            value="12"
-            min="1"
-            max="100">
+              type="number"
+              name="age"
+              value="12"
+              min="1"
+              max="100"
+            >
           </label>
 
           <label class="form-field">
@@ -52,9 +54,10 @@
           <label class="form-field">
             I accept the term of the agreement
             <input
-            type="checkbox"
-            name="agreement"
-            required>
+              type="checkbox"
+              name="agreement"
+              required
+            >
           </label>
         </fieldset>
       </div>
@@ -63,22 +66,25 @@
         <fieldset class="registration">
           <legend>Registration</legend>
 
-          <label class="form-field" placeholder="email@example.com">
+          <label class="form-field email">
             E-mail:
             <input
-            type="email"
-            name="email"
-            required>
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+              required
+            >
           </label>
 
           <label class="form-field">
             Password:
             <input
-            type="password"
-            name="password"
-            minlength="5"
-            maxlength="20"
-            required>
+              type="password"
+              name="password"
+              minlength="5"
+              maxlength="20"
+              required
+            >
           </label>
         </fieldset>
       </div>
@@ -87,21 +93,23 @@
         <fieldset class="facts">
           <legend>An interesting fact about you!</legend>
 
-          <div class="form-field">
+          <div class="form-field cats">
             Do you love cats?
             <label>
               <input
-              type="radio"
-              name="love-cats"
-              value="yes">
+                type="radio"
+                name="love-cats"
+                value="yes"
+              >
               Yes
             </label>
 
             <label>
               <input
-              type="radio"
-              name="love-cats"
-              value="no">
+                type="radio"
+                name="love-cats"
+                value="no"
+              >
               No
             </label>
           </div>
@@ -114,9 +122,10 @@
           <label class="form-field">
             What time do you go to bed?
             <input
-            type="time"
-            step="0.01"
-            name="time">
+              type="time"
+              step="2"
+              name="time"
+            >
           </label>
 
           <label class="form-field">
@@ -131,9 +140,10 @@
           <label class="form-field">
             How do you rate our work?
             <input
-            type="range"
-            name="range"
-            value="0">
+              type="range"
+              name="range"
+              value="0"
+            >
           </label>
         </fieldset>
       </div>
@@ -142,7 +152,7 @@
         <fieldset class="add-information">
           <legend>Additional info:</legend>
 
-          <label class="form-field">
+          <label class="form-field comments">
             Comments:
             <textarea name="comments"></textarea>
           </label>
