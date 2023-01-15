@@ -1,1 +1,17 @@
 /* styles go here */
+.formField {
+  display: block;
+  padding: 5px 0;
+}
+
+.fieldSet {
+  margin-bottom: 20px;
+}
+
+.lastTitle {
+  padding-bottom: 0;
+}
+
+.firstTitle {
+  padding-top: 0;
+}
