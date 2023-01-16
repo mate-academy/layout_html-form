@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form 
+    <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
     >
@@ -21,14 +21,14 @@
           Surname:
           <input
             type="text"
-            name="surname" 
+            name="surname"
             autocomplete="off"
           >
         </label>
         <label class="form_field">
           Name:
           <input
-            type="text" 
+            type="text"
             name="name"
             autocomplete="off"
           >
@@ -52,7 +52,7 @@
           <input
             type="checkbox"
             name="terms"
-            required 
+            required
           >
         </label>
       </fieldset>
@@ -69,8 +69,8 @@
         <label class="form_field">
           Password:
           <input
-            type="password" 
-            name="password" 
+            type="password"
+            name="password"
             minlength="5"
             maxlength="20"
           >
@@ -89,25 +89,25 @@
             Yes
           </label>
           <label>
-            <input 
+            <input
               type="radio"
-              name="cats" 
+              name="cats"
               value="No"
             >
             No
-          </label> 
+          </label>
         </label>
         <label class="form_field">
           What is your favorite color?
-          <input type="color"  name="fav_color">
+          <input type="color" name="fav_color">
         </label>
         <label class="form_field">
           What time do you go to bed?
-          <input type="time"  name="time">
+          <input type="time" name="time">
         </label>
         <label class="form_field">
           What is your favorite brands of cars?
-          <select  name="cars" multiple>
+          <select name="cars" multiple>
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
             <option value="lada">Lada</option>
@@ -116,9 +116,9 @@
         </label>
         <label class="form_field">
           How do you rate our work?
-          <input 
+          <input
             type="range"
-            name="rate" 
+            name="rate"
             value="0"
           >
         </label>
@@ -127,7 +127,7 @@
         <legend>Additional info:</legend>
         <label class="form_field">
           Comments
-          <textarea 
+          <textarea
             name="comments"
             rows="2"
             cols="20"
@@ -138,7 +138,7 @@
           <select name="rec">
             <option value="yes">yes</option>
             <option value="no">no</option>
-          </select>       
+          </select>
         </label>
       </fieldset>
       <button type="submit">Submit</button>
