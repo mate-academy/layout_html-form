@@ -1,21 +1,29 @@
 body {
   display: block;
   text-align: justify;
+  
 }
 
 input {
-  margin: 10px;
+  margin: 5px;
+}
+
+input:first-child {
+  margin-top: 0;
+}
+
+select {
+  margin-top: 5px;
 }
 
 .fieldSet {
-    
-  margin: 20px;
-}
-
-#age {
-  width: 35px;
+  margin-bottom: 20px;
 }
 
 .button_Submit {
   margin: 20px;
+}
+
+.recommend_select {
+  margin-top: 10px;
 }

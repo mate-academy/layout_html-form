@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    
     <script type="text/javascript" src="./main.js"></script>
 
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
       method="post" 
       id="form"> 
       <fieldset class="fieldSet">
+        <legend>Personal Information</legend>
      
       
         <div>
@@ -29,7 +30,6 @@
           > <br>
         </div>
         
-
         <div>
           <label for="name">Name:</label>
           <input 
@@ -183,20 +183,18 @@
           <label for="comments">Comments</label>
           <textarea 
           name="comments" 
-          id="comments" 
-          cols="20" 
-          rows="5"
+          id="comments"          
           autocomplete="off">
           </textarea> <br>
         </div>
         
-        <div>
+        <div class="recommend_select">
           <label for="recommend">Would you recommend us?</label>
           <select 
           name="recommend" 
           id="recommend">
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
           </select>
         </div>
           
