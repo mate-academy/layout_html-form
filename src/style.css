@@ -1,1 +1,25 @@
-/* styles go here */
+body {
+  display: block;
+  text-align: justify;
+  
+}
+
+input {
+  margin: 5px;
+}
+
+input:first-child {
+  margin-top: 0;
+}
+
+select {
+  margin-top: 5px;
+}
+
+.fieldSet {
+  margin-bottom: 20px;
+}
+
+.recommend_select {
+  margin-top: 10px;
+}
