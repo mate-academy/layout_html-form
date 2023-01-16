@@ -1,1 +1,21 @@
-/* styles go here */
+body {
+  display: block;
+  text-align: justify;
+}
+
+input {
+  margin: 10px;
+}
+
+.fieldSet {
+    
+  margin: 20px;
+}
+
+#age {
+  width: 35px;
+}
+
+.button_Submit {
+  margin: 20px;
+}
