@@ -1,1 +1,14 @@
 /* styles go here */
+.form-field {
+  display: block;
+  margin: auto auto 10px;
+}
+
+.formFieldset {
+  margin: auto auto 20px;
+}
+
+.radioCatLovers {
+  display: inline-block;
+  margin: auto auto 10px;
+}
