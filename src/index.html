@@ -50,30 +50,32 @@
         <label class="label" for="email">
            E-mail:
           <input
+           name="email"
            id="email"
            type="email"
            placeholder="email@example.com"
           >
         </label>
         <label class="label" for="password">
-          Password: <input id="password" type="password">
+          Password:
+          <input id="password" type="password">
         </label>
       </fieldset>
       <fieldset class="form-field">
         <legend>An interesting fact about you!</legend>
         <label class="label">
           <label
-            for="Cats"
+            for="cats"
             class="label"
           >
            Do you love cats?
             <input
-              id="Cats"
+              id="cats"
               type="radio"
-              name="Cats"
+              name="cats"
             > Yes
           </label>
-          <label class="label labelcats" for="Cats-2">
+          <label class="label" for="Cats-2">
             <input
               id="Cats-2"
               type="radio"
@@ -85,6 +87,7 @@
         <label class="label" for="color">
           What is your favorite color?
           <input
+            name="color"
             id="color"
             type="color"
           >
@@ -110,7 +113,9 @@
         </label>
         <label class="label" for="form-work">
           How do you rate our work?
-          <input id="form-work" type="range"
+          <input
+           id="form-work"
+           type="range"
            min="1"
            max="100"
            value="1"
@@ -138,7 +143,7 @@
       </fieldset>
       <button
        class="btn"
-       type="Submit"
+       type="submit"
       >
         Submit
       </button>
