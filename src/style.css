@@ -1,1 +1,11 @@
-/* styles go here */
+.container {
+  display: block;
+}
+
+.group {
+  margin-bottom: 20px;
+}
+
+.container:not(:last-child) {
+  margin-bottom: 10px;
+}
