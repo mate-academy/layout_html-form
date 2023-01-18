@@ -1,1 +1,14 @@
 /* styles go here */
+div {
+  height: 100vh;
+}
+
+.formfild {
+  display: block;
+  margin: 10px 0;
+  margin-top: 5px;
+}
+
+fieldset {
+  margin-bottom: 20px ;
+}
