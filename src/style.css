@@ -1,1 +1,30 @@
-/* styles go here */
+body {
+  font-size: 16px;
+}
+
+form {
+  margin: 20 auto;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  display: block;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+label:last-child {
+  margin-bottom: 0;
+}
+
+.radiobutton {
+  display: inline;
+}
+
+.radiobutton-container {
+  display: block;
+  margin-bottom: 10px;
+}
