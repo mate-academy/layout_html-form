@@ -11,12 +11,11 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
     >
-      <fieldset>
+      <fieldset class="feild-pad">
         <legend>Personal information</legend>
         <label class="form-field">
           Surname:
@@ -35,9 +34,9 @@
           >
         </label>
         <label class="form-field">
-          How old are You?:
+          How old are You?
           <input 
-            type="number" 
+            type="number"
             name="age"
             min="1"
             max="100"
@@ -48,7 +47,7 @@
           Full date of birth:
           <input type="date" name="birth">
         </label>
-        <label class="form-field">
+        <label class="form-bot">
             I accept the terms
           <input 
             type="checkbox" 
@@ -57,7 +56,7 @@
           >
         </label>        
       </fieldset>
-      <fieldset> 
+      <fieldset class="feild-pad"> 
         <legend>Registration</legend>
         <label class="form-field">
           E-mail:
@@ -67,7 +66,7 @@
             placeholder="email@example.com"
           >
         </label>
-        <label class="form-field">
+        <label class="form-bot">
           Passworld:
           <input 
             type="password" 
@@ -76,10 +75,10 @@
           >
         </label>
       </fieldset>
-      <fieldset>
-        <legend>An interesting fact's about you!</legend>
+      <fieldset class="feild-pad">
+        <legend>An interesting fact about you!</legend>
         <div class="form-field">
-          Do you love cats:
+          Do you love cats?
           <label>
             <input 
               type="radio" 
@@ -98,54 +97,57 @@
           </label>
         </div>
         <label class="form-field">
-          What is your favorite color?:
+          What is your favorite color?
           <input 
             type="color" 
             name="color"
           >
         </label>
         <label class="form-field">
-          What time your Go to bed?:
+          What time do you go to bed?
           <input 
             type="time" 
             name="time"
+            step="1"
           >
         </label>
         <label class="form-field">
-          What your favorite brand of cars?:
+          What are your favorite brand of cars?
           <select name="cars" multiple>
-            <option value="Audi">Audi</option>
-            <option value="BMW">BMW</option>
-            <option value="VW">VW</option>
+            <option value="Audi">BMW</option>
+            <option value="BMW">Audi</option>
+            <option value="VW">lada</option>
           </select>
         </label>
-        <div class="form-field">
+        <div class="form-bot">
           How do you rate our work?
           <input 
             type="range" 
             name="rate" 
             id ="rate"
-            min ="2"
-            max= "12"
+            min ="0"
+            max= "5"
+            step="1"
+            value="0"
           >
           <label for="rate"></label>
         </div>
       </fieldset>
-      <fieldset> 
-        <legend>Adittion inform</legend>
+      <fieldset class="feild-pad"> 
+        <legend>Adittion info</legend>
         <label class="form-field">
           comments:
           <textarea name="comments"></textarea>
         </label>
-        <label class="form-field">
-          Would you recommend us?:
+        <label class="form-bot">
+          Would you recommend us?
           <select name="like">
-            <option value="like">Yes</option>
-            <option value="Dislike">No</option>            
+            <option value="like">yes</option>
+            <option value="Dislike">no</option>            
           </select>
         </label>
       </fieldset>
-      <button type="submit">Submin</button>
+      <button type="submit">Submit</button>
     </form>
   </body>
 </html>
