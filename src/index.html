@@ -11,16 +11,14 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <!-- <h1>HTML Form</h1> -->
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="POST"
     >
-
       <fieldset>
         <legend>Personal information</legend>
-
-        <label for="name">Surname:
+        <label for="name">
+          Surname:
           <input
             type="text"
             id="name"
@@ -30,7 +28,8 @@
           >
         </label>
 
-        <label for="surname">Name:
+        <label for="surname">
+          Name:
           <input
             type="text"
             id="surname"
@@ -40,7 +39,8 @@
           >
         </label>
 
-        <label for="age">How old are You?
+        <label for="age">
+          How old are You?
           <input
             type="number"
             id="age"
@@ -52,7 +52,8 @@
           >
         </label>
 
-        <label for="birth">Full date of birth:
+        <label for="birth">
+          Full date of birth:
           <input
             type="date"
             id="birth"
@@ -61,7 +62,8 @@
           >
         </label>
 
-        <label for="accept">I accept the term of the agreement
+        <label for="accept">
+          I accept the term of the agreement
           <input
             type="checkbox"
             id="accept"
@@ -74,15 +76,18 @@
       <fieldset>
         <legend>Registration</legend>
 
-        <label for="email">E-mail:
+        <label for="email">
+          E-mail:
           <input
             type="email"
             id="email"
             placeholder="email@example.com"
+            autocomplete="off"
           >
         </label>
 
-        <label for="password">Password:
+        <label for="password">
+          Password:
           <input
             type="password"
             id="password"
@@ -97,7 +102,8 @@
       <fieldset>
         <legend>An interesting fact about you!</legend>
 
-        <div class="radiobutton-container">Do you love cats?
+        <div class="radiobutton-container">
+          Do you love cats?
           <input
             type="radio"
             id="yes"
@@ -114,7 +120,8 @@
           <label for="no" class="radiobutton">No</label>
         </div>
 
-        <label for="color">What is your favorite color?
+        <label for="color">
+          What is your favorite color?
           <input
             type="color"
             id="color"
@@ -122,7 +129,8 @@
           >
         </label>
 
-        <label for="time">What time do you go to bed?
+        <label for="time">
+          What time do you go to bed?
           <input
             type="time"
             id="time"
@@ -131,7 +139,8 @@
           >
         </label>
 
-        <label for="car">What are your favorite brand of cars?
+        <label for="car">
+          What are your favorite brand of cars?
           <select
             name="car"
             id="car"
@@ -143,7 +152,8 @@
           </select>
         </label>
 
-        <label for="rate">How do you rate our work?
+        <label for="rate">
+          How do you rate our work?
           <input
             type="range"
             name="rate"
@@ -157,7 +167,8 @@
       <fieldset>
         <legend>Additional info:</legend>
 
-        <label for="comments">Comments:
+        <label for="comments">
+          Comments:
           <textarea
             name="comments"
             id="comments"
@@ -167,19 +178,15 @@
           </textarea>
         </label>
 
-
-        <label for="recommend">Would you recommend us?
+        <label for="recommend">
+          Would you recommend us?
           <select name="recommend" id="recommend">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
         </label>
-
-
       </fieldset>
-
       <button type="submit">Submit</button>
-
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
