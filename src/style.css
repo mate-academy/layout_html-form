@@ -1,1 +1,14 @@
-/* styles go here */
+input {
+  border: auto;
+  margin: 10px auto;
+}
+
+select {
+  border: auto;
+  margin: 10px auto;
+}
+
+fieldset {
+  border: auto;
+  margin: 20px auto;
+}
