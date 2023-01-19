@@ -1,14 +1,9 @@
-input {
-  border: auto;
-  margin: 10px auto;
+.form-field {
+  display: block;
+  margin-bottom: 10px;
 }
 
-select {
-  border: auto;
-  margin: 10px auto;
-}
-
-fieldset {
-  border: auto;
-  margin: 20px auto;
+.fieldset {
+  margin-bottom: 20px;
+  padding-bottom: 0;
 }
