@@ -14,7 +14,7 @@
     <form
   action="https://mate-academy-form-lesson.herokuapp.com/create-application"
   method="post"
->
+    >
       <fieldset>
         <legend>Personal information</legend>
 
@@ -47,6 +47,7 @@
             name="age"
             min="1"
             max="100"
+            value="12"
             required
           >
         </label>
@@ -54,16 +55,16 @@
         <label for="birth">
           Full date of birth:
           <input
-            type="text"
+            type="date"
             id="birth"
             name="birth"
             required
-            placeholder="mm/dd/yyyy"
+
           >
         </label>
 
         <label for="term of the agreement">
-        I accepts the term of the agreement
+        I accept the term of the agreement
           <input
           type="checkbox"
           id="term of the agreement"
@@ -101,18 +102,29 @@
       </fieldset>
 
       <fieldset>
-        <legend>An interesting fact about you!</legend>
+        <legend>An interesting nfact about you!</legend>
 
-        <label
-        for="yes" class="radiobutton">Yes
+        <div class="radiobutton-container">
+          Do you love cats?
+          <input
+            type="radio"
+            id="yes"
+            name="cats"
+            value="yes"
+          >
+          <label for="yes" class="radiobutton">
+            Yes
+          </label>
+
           <input
             type="radio"
             id="no"
             name="cats"
             value="no"
           >
-        </label>
-        <label for="no" class="radiobutton">No</label>
+          <label for="no" class="radiobutton">
+            No
+          </label>
         </div>
 
         <label for="color">
@@ -142,6 +154,7 @@
           <select
           id="cars"
           name="cars"
+          multiple
           >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
