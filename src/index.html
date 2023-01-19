@@ -13,9 +13,9 @@
   <body>
     <script type="text/javascript" src="./main.js"></script>
     <form>
-      <fieldset>
-        <legend>Personal information</legend>
-        <label class="top">
+      <fieldset class="fieldset">
+        <legend class="legend">Personal information</legend>
+        <label class="label-top">
           Surname: 
           <input 
             type="text"
@@ -26,7 +26,7 @@
             required
           >
         </label>
-        <label> 
+        <label class="label"> 
           Name: 
           <input
             type="text" 
@@ -37,7 +37,7 @@
             required
           >
         </label>
-        <label>
+        <label class="label">
             How old are You? 
           <input
             type="number" 
@@ -49,7 +49,7 @@
             required
           >
         </label>
-        <label>
+        <label class="label">
             Full date of birth: 
           <input
             type="date" 
@@ -58,7 +58,7 @@
             required
           >
         </label>
-        <label>  
+        <label class="label">  
             I accept the term of the agreement
           <input 
             type="checkbox" 
@@ -69,9 +69,9 @@
           >
         </label>
       </fieldset>
-      <fieldset>
-        <legend >Registration</legend>        
-        <label class="top">
+      <fieldset class="fieldset">
+        <legend class="legend">Registration</legend>        
+        <label class="label-top">
             E-mail: 
           <input 
             type="email" 
@@ -81,7 +81,7 @@
             required
           >   
         </label>
-        <label >
+        <label class="label">
             Password:
           <input 
             type="password" 
@@ -91,9 +91,9 @@
           >
         </label> 
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
-        <label class="top">
+        <label class="label-top">
             Do you love cats?
           <input 
             type="radio" 
@@ -110,7 +110,7 @@
           >
             No 
         </label>
-        <label>
+        <label class="label">
             What is your favorite color? 
           <input 
             type="color" 
@@ -118,7 +118,7 @@
             id="favoriteColor"
           >
         </label>     
-        <label>
+        <label class="label">
             What time do you go to bed?
           <input 
             type="time"
@@ -127,7 +127,7 @@
             id="timeToSleep"
           >
         </label>     
-        <label>
+        <label class="label">
              What are yours favorite brand of cars?
           <select name="cars" multiple>
             <option value="BMW">BMW</option>
@@ -135,7 +135,7 @@
             <option value="Lada">Lada</option>
           </select>
         </label>          
-        <label>
+        <label class="label">
             How do you rate our work?
           <input 
             type="range" 
@@ -147,9 +147,9 @@
           >
         </label>
       </fieldset>
-      <fieldset>
-        <legend>Additional info:</legend>
-        <label class="top">
+      <fieldset class="fieldset">
+        <legend class="legend">Additional info:</legend>
+        <label class="label-top">
             Comments:
           <textarea 
             name="Comments"
@@ -157,7 +157,7 @@
           >
           </textarea>
         </label>
-        <label>
+        <label class="label">
             Would you recommed us?
           <select name="recommed">
             <option value="yes">yes</option>
@@ -165,7 +165,7 @@
           </select>
         </label>
       </fieldset>
-      <button type="submit">Submit</button>
+      <button type="submit" class="button">Submit</button>
     </form>
   </body>
 </html>
