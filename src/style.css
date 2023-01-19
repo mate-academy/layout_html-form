@@ -1,1 +1,14 @@
 /* styles go here */
+.about {
+  display: block;
+  margin-top: 10px;
+}
+
+.field {
+  margin-top: 20px;
+}
+
+.password {
+  display: block;
+  margin-top: 10px;
+}
