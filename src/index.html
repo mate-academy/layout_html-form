@@ -12,104 +12,102 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <script type="text/javascript" src="./main.js"></script>
     <form 
-    action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
-    method="post"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
+      method="post"
     >
-      <fieldset class="formFieldset">
+      <fieldset class="form-fieldset">
         <legend>Personal information</legend>
         <label class="form-field">
           Surname:
           <input
-          type="text" 
-          name="surname" 
-          pattern="^[a-zA-Z]+$" 
-          autocomplete="off" 
-          minlength="2" 
-          required
+            type="text" 
+            name="surname" 
+            pattern="^[a-zA-Z]+$" 
+            autocomplete="off" 
+            minlength="2" 
+            required
           >
         </label>
         <label class="form-field">
           Name:
           <input 
-          type="text" 
-          name="name" 
-          pattern="^[a-zA-Z]+$" 
-          autocomplete="off" 
-          minlength="2" 
-          required
+            type="text" 
+            name="name" 
+            pattern="^[a-zA-Z]+$" 
+            autocomplete="off" 
+            minlength="2" 
+            required
           >
         </label>
         <label class="form-field">
           How old are You?
           <input
-          type="number" 
-          name="age" 
-          value="12" 
-          min="1" 
-          max="100" 
-          required
+            type="number" 
+            name="age" 
+            value="12" 
+            min="1" 
+            max="100" 
+            required
           >
         </label>
         <label class="form-field">
           Full date of birth:
           <input 
-          type="date" 
-          name="dateOfBirth" 
-          min="1922-01-18" 
-          max="2022-01-17"
+            type="date" 
+            name="dateOfBirth" 
+            min="1922-01-18" 
+            max="2022-01-17"
           >
         </label>
         <label>
           I accept the term of the agreement
           <input 
-          type="checkbox" 
-          name="terms" 
-          required
+            type="checkbox" 
+            name="terms" 
+            required
           >
         </label>
       </fieldset>
-      <fieldset class="formFieldset">
+      <fieldset class="form-fieldset">
         <legend>Registration</legend>
         <label class="form-field">
           E-mail:
           <input 
-          type="email" 
-          name="email" 
-          autocomplete="off" 
-          placeholder="email@example.com" 
-          required
+            type="email" 
+            name="email" 
+            autocomplete="off" 
+            placeholder="email@example.com" 
+            required
           >
         </label>
         <label>
           Password:
           <input 
-          type="password" 
-          name="password" 
-          minlength="4" 
-          autocomplete="off" 
-          required
+            type="password" 
+            name="password" 
+            minlength="4" 
+            autocomplete="off" 
+            required
           >
         </label>
       </fieldset>
-      <fieldset class="formFieldset">
+      <fieldset class="form-fieldset">
         <legend>An interesting fact about you!</legend>
-        <label class="radioCatLovers">
+        <label class="radio-catlovers">
           Do you love cats?
           <input 
-          type="radio" 
-          name="catLover" 
-          value="yes" 
-          required
+            type="radio" 
+            name="catLover" 
+            value="yes"
           >
           Yes
         </label>
-        <label class="radioCatLovers">
+        <label class="radio-catlovers">
           <input 
-          type="radio" 
-          name="catLover" 
-          value="no"
+            type="radio" 
+            name="catLover" 
+            value="no"
           >
           No
         </label>
@@ -120,18 +118,19 @@
         <label class="form-field">
           What time do you go to bed?
           <input 
-          type="time" 
-          name="time" 
-          min="0:00" 
-          max="23:59" 
-          required
+            type="time" 
+            name="time" 
+            min="0:00" 
+            max="23:59" 
+            required
           >
         </label>
         <label class="form-field">
           What are your favorite brand of cars?
           <select name="cars" 
-          required 
-          multiple>
+            required 
+            multiple
+          >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
@@ -139,26 +138,27 @@
         </label>
         <label>
           How do you rate our work?
-          <input type="range" 
-          name="ratio" 
-          min="1" 
-          max="10" 
-          step="3" 
-          value="1" 
-          required
+          <input 
+            type="range" 
+            name="ratio" 
+            min="1" 
+            max="10" 
+            step="3" 
+            value="1" 
+            required
           >
         </label>
       </fieldset>
-      <fieldset class="formFieldset">
+      <fieldset class="form-fieldset">
         <legend>Additional info:</legend>
         <label class="form-field">
           Comments:
           <textarea 
-          name="comments" 
-          minlength="10" 
-          maxlength="100" 
-          autocomplete="off" 
-          required
+            name="comments" 
+            minlength="10" 
+            maxlength="100" 
+            autocomplete="off" 
+            required
          ></textarea>
         </label>
         <label>
@@ -171,5 +171,6 @@
       </fieldset>
       <button type="submit">Submit</button>
     </form>
+    <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
