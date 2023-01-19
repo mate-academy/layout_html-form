@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AACA,sCACE,kBACF,CAEA,sBACE,kBACF","file":"style.bff44e28.css","sourceRoot":"..\\src","sourcesContent":["/* styles go here */\n.contacts__form-item:not(:last-child) {\n  margin-bottom: 10px;\n}\n\n.contacts__form-field {\n  margin-bottom: 20px;\n}\n"]}
