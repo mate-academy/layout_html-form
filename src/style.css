@@ -1,1 +1,10 @@
-/* styles go here */
+.field {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+}
+
+.form_field {
+    display: block;
+    margin: 5px;
+}
