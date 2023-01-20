@@ -1,1 +1,8 @@
 /* styles go here */
+.contacts__form-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.contacts__form-field {
+  margin-bottom: 20px;
+}
