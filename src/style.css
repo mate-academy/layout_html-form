@@ -1,21 +1,16 @@
 .form-field {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 20px;
 }
 
 .label {
-  margin: 10px 0;
+  display: block;
+  margin-bottom: 10px;
 }
 
-.label:first-of-type {
-  margin-top: 0;
-}
-
-.label:last-of-type {
+.label:last-child {
   margin-bottom: 0;
 }
 
-.label:not(:last-child) {
-  margin-bottom: 10px;
+button {
+  margin-top: 20px;
 }
