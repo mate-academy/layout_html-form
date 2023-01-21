@@ -3,14 +3,18 @@
   margin: 10px 0;
 }
 
-.firstField {
+label:first-child {
   display: block;
   margin-bottom: 10px;
 }
 
-.lastField {
+label:last-child {
   display: block;
   margin-top: 10px;
+}
+
+label.radio {
+  display: inline;
 }
 
 .fieldset {
