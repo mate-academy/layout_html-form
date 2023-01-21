@@ -3,7 +3,7 @@
   padding-bottom: 10px;
 }
 
-.last {
+.last:last-child {
   display: block;
 }
 
