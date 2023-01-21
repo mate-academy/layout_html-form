@@ -27,6 +27,7 @@
           <input type="text"
             name="surname"
             required
+            autocomplete="off"
           >
         </label>
         <label class="form_field">
@@ -34,14 +35,16 @@
           <input type="text"
             name="name"
             required
+            autocomplete="off"
           >
         </label>
         <label class="form_field">
           How old are you?
           <input type="number"
             name="age"
-            min="12"
+            min="1"
             max="100"
+            default value="12"
           >
         </label>
         <label class="form_field">
@@ -83,6 +86,8 @@
             name="password"
             required
             minlength="8"
+            maxlength="16"
+            autocomplete="off"
           >
         </label>
       </fieldset>
@@ -127,7 +132,11 @@
         <div class="form_field">
           What are your favourite brand of cars?
           <label>
-            <select name="car" required>
+            <select 
+              name="car" 
+              multiple 
+              required
+            >
               <option value="brand"
               disabled
               selected>
@@ -166,6 +175,7 @@
               name="comment"
               rows="5"
               cols="20"
+              autocomplete="off"
             >
           </textarea>
         </label>
@@ -180,6 +190,12 @@
           </label>
         </div>
       </fieldset>
+      <button
+        type="submit"
+        class="field"
+      >
+        Submit
+      </button>
     </form>
   </body>
 </html>
