@@ -1,1 +1,16 @@
 /* styles go here */
+/* body {
+  margin: 0;
+} */
+
+/* label {
+  margin-top: 10px;
+} */
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+.div-class {
+  margin-bottom: 10px;
+}
