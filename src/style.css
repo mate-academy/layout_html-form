@@ -1,13 +1,13 @@
 
-.form-input {
+.form__input {
   display: block;
   margin-bottom: 10px;
 }
 
-.form-fieldset {
+.form__fieldset {
   margin-bottom: 20px;
 }
 
-.form-input:last-child {
+.form__input:last-child {
   margin-bottom: 0;
 }
