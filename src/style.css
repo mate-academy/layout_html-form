@@ -1,8 +1,10 @@
-/* styles go here */
+
 .form-fild {
-  padding-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
   
 .form-group {
-  padding-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
