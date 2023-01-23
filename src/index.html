@@ -13,20 +13,39 @@
   <body>
     <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post" name="test-form">
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      name="test-form"
+    >
       <fieldset name="presonalInfo" class="form-fieldset">
         <legend>Personal information</legend>
         <label class="form-field">
           Surname:
-          <input type="text" name="surname" minlength="2" maxlength="10" autocomplete="off">
+          <input
+            type="text"
+            name="surname"
+            minlength="2"
+            maxlength="10"
+            autocomplete="off"
+          >
         </label>
         <label class="form-field">
           Name:
-          <input type="text" name="name" autocomplete="off">
+          <input
+            type="text"
+            name="name"
+            autocomplete="off"
+          >
         </label>
         <label class="form-field">
           How old are you?
-          <input type="number" name="age" min="1" max="100" value="12">
+          <input
+            type="number"
+            name="age"
+            min="1"
+            max="100"
+            value="12"
+          >
         </label>
         <label class="form-field">
           Full date of birth:
@@ -36,18 +55,29 @@
           I accept the term of agreement
           <input type="checkbox" name="agreement">
         </label>
-    </fieldset>
+      </fieldset>
 
 
       <fieldset name="registrationInfo" class="form-fieldset">
         <legend>Registration</legend>
         <label class="form-field">
           E-mail:
-          <input type="email" name="email" placeholder="email@example.com" autocomplete="off" required>
+          <input
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+            autocomplete="off"
+            required
+          >
         </label>
         <label class="form-field">
           Password:
-          <input type="password" name="password" autocomplete="off" required>
+          <input
+            type="password"
+            name="password"
+            autocomplete="off"
+            required
+          >
         </label>
       </fieldset>
 
@@ -83,7 +113,11 @@
         </label>
         <label class="form-field">
           How do you rate your work?
-          <input type="range" name="workRate" value="0">
+          <input
+            type="range"
+            name="workRate"
+            value="0"
+          >
         </label>
       </fieldset>
 
@@ -95,7 +129,11 @@
         </label>
         <label class="form-field">
           Would you recommend us?
-          <input type="checkbox" name="recommend" checked>
+          <input
+            type="checkbox"
+            name="recommend"
+            checked
+          >
         </label>
       </fieldset>
 
