@@ -1,1 +1,16 @@
-/* styles go here */
+.form__set {
+  margin-bottom: 20px;
+}
+
+.form__field {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form__field:last-child {
+  margin-bottom: 0;
+}
+
+.form__field-radio {
+  margin-bottom: 10px;
+}

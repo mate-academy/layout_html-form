@@ -11,7 +11,162 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+    >
+      <fieldset class="form__set">
+        <legend>Personal information</legend>
+        <label class="form__field">
+          Surname:
+          <input
+            type="text"
+            name="surname"
+            autocomplete="off"
+            required
+          >
+        </label>
+
+        <label class="form__field">
+          Name:
+          <input
+            type="text"
+            name="name"
+            autocomplete="off"
+            required
+          >
+        </label>
+
+        <label class="form__field">
+          How old are You?
+          <input
+            type="number"
+            name="age"
+            min="1"
+            max="100"
+            value="12"
+            required
+          >
+        </label>
+
+        <label class="form__field">
+          Full date of birth:
+          <input type="date" name="birthDayDate">
+        </label>
+
+        <label class="form__field">
+          I accept the term of the agreement
+          <input type="checkbox" required>
+        </label>
+      </fieldset>
+
+      <fieldset class="form__set">
+        <legend>Registration</legend>
+        <label class="form__field">
+          E-mail:
+          <input
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+            autocomplete="off"
+            required
+          >
+        </label>
+
+        <label class="form__field">
+          Password:
+          <input
+            type="password"
+            name="password"
+            minlength="5"
+            maxlength="10"
+            required
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="form__set">
+        <legend>An interesting fact about you!</legend>
+        <div class="form__field-radio">
+          Do you love cats?
+          <label for="loveCatsY">
+            <input
+              type="radio"
+              name="cat"
+              value="Y"
+              id="loveCatsY"
+            >
+            Yes
+          </label>
+
+          <label for="loveCatsN">
+            <input
+              type="radio"
+              name="cat"
+              value="N"
+              id="loveCatsN"
+            >
+            No
+          </label>
+        </div>
+
+        <label class="form__field">
+          What is your favorive color?
+          <input type="color" name="favoritColor">
+        </label>
+
+        <label class="form__field">
+          What time do you go to bed?
+          <input
+            type="time"
+            name="timeGoToBed"
+            step="2"
+          >
+        </label>
+
+        <label class="form__field">
+          What are your favorite brend of cars?
+          <select name="favoriteBrandOfCars" multiple>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+            <option selected></option>
+          </select>
+        </label>
+
+        <label class="form__field">
+          How do you rate our work?
+          <input
+            type="range"
+            name="rateWork"
+            value="0"
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="form__set">
+        <legend>Additional info:</legend>
+        <label class="form__field">
+          Comments:
+          <textarea
+            name="comments"
+            autocomplete="off"
+            required
+         ></textarea>
+        </label>
+
+        <label class="form__field">
+          Would you recommend us?
+          <select name="recommend">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
