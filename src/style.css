@@ -1,21 +1,13 @@
-/* stylelint-disable selector-type-no-unknown */
-/* stylelint-disable block-no-empty */
-/* stylelint-disable no-duplicate-selectors */
-/* stylelint-disable block-opening-brace-space-before */
-/* stylelint-disable rule-empty-line-before */
-/* stylelint-disable indentation */
-.form-filde
-{
-display: block;
-margin-bottom: 10px;
+.form-filde {
+  display: block;
+  margin-bottom: 10px;
 }
-legend
-{
+
+legend {
   background-color: #fff;
   color: #000;
-
 }
-fieldset
-{
-margin-bottom: 20px;
+
+fieldset {
+  margin-bottom: 20px;
 }
