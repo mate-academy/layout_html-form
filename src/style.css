@@ -1,1 +1,17 @@
 /* styles go here */
+.field_form {
+  display: block;
+  padding-top: 10px;
+}
+
+.fieldset_style {
+  margin-bottom: 20px;
+}
+
+.select {
+  display: inline;
+}
+
+.first {
+  padding: 0;
+}
