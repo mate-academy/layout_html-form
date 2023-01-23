@@ -16,7 +16,7 @@
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <label class="form-field">
+        <label class="form-field first">
           Surname:
           <input type="text"
             name="surname"
@@ -44,10 +44,10 @@
           Full date of birth:
           <input
             type="date"
-            name="date-of-birth"
+            name="dateOfBirth"
           >
         </label>
-        <label class="form-field">
+        <label class="form-field last">
           I accept the term of the agreement
           <input
             type="checkbox"
@@ -58,7 +58,7 @@
       </fieldset>
       <fieldset class="fieldset">
         <legend>Registration</legend>
-        <label class="form-field">
+        <label class="form-field first">
           E-mail:
           <input
             type="email"
@@ -66,7 +66,7 @@
             placeholder="email@example.com"
           >
         </label>
-        <label class="form-field">
+        <label class="form-field last">
           Password:
           <input
             type="password"
@@ -78,7 +78,7 @@
       </fieldset>
       <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
-        <div class="form-field">
+        <div class="form-field first">
           Do you love cats?
           <label>
             <input
@@ -115,28 +115,29 @@
           What are your favorite brand of cars?
           <select name="cars" multiple>
             <option value="BMW" selected>BMW</option>
-            <option value="Mercedes-Benz">Mercedes-Benz</option>
             <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
           </select>
         </label>
-        <label class="form-field">
+        <label class="form-field last">
           How do you rate our work?
           <input
             type="range"
             name="rateWork"
+            value="0"
           >
         </label>
       </fieldset>
       <fieldset class="fieldset">
         <legend>Additional info:</legend>
-        <label class="form-field">
+        <label class="form-field first">
           Comments:
           <textarea
             name="comments"
             autocomplete="off"
          ></textarea>
         </label>
-        <label class="form-field">
+        <label class="form-field last">
           Would you reccomend us?
           <select name="recommendUs">
             <option value="yes">yes</option>
