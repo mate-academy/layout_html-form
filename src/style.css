@@ -6,11 +6,12 @@
 
 .fields {
   margin-bottom: 20px;
-  padding-left: 5;
-  padding-bottom: 0;
 }
 
-.inline {
+.form-field:last-child {
+  margin-bottom: 0;
+}
+
+.inlineBlock {
   display: inline-block;
-  margin-bottom: 10px;
 }
