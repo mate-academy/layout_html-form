@@ -107,6 +107,26 @@
             step="1">
         </div>
       </fieldset>
+      <fieldset class="form-block">
+        <legend>Additional info</legend>
+        <div class="form-field">
+          Comments:
+          <textarea
+            name="comments"
+            placeholder="Write here"
+            rows="2"
+            cols="10"
+            maxlength="400">
+          </textarea>
+        </div>
+        <label class="form-field">
+          Would you recommend us?
+          <select name="recommend" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </label>
+      </fieldset>
       <button type="submit" class="submit-btn">Submit</button>
     </form>
     <script type="text/javascript" src="./main.js"></script>
