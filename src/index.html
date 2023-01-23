@@ -20,6 +20,7 @@
             type="text"
             name="surname"
             required
+            autocomplete="off"
           >
         </label>
         <label class="input">
@@ -28,6 +29,7 @@
             type="text"
             name="name"
             required
+            autocomplete="off"
           >
         </label>
         <label class="input">
@@ -67,6 +69,8 @@
         <label class="input">
           Password:
           <input
+            minlength="8"
+            maxlength="16"
             type="password"
             name="password"
             required
@@ -111,13 +115,10 @@
         </label>
       </fieldset>
       <fieldset class="group">
-        <legend>Additional info:</legend>
+        <legend>Additional info</legend>
         <label class="input">
           Comments:
-          <textarea
-          name="comments"
-          >
-          </textarea>
+          <textarea name="comments"></textarea>
         </label>
         <label class="input">
           Would you recommend us?
