@@ -1,5 +1,5 @@
 /* styles go here */
-.form-field {
+.formField {
   display: block;
   margin-bottom: 10px;
 }
@@ -8,6 +8,6 @@
   margin-bottom: 20px;
 }
 
-.fieldset .form-field:last-child {
+.fieldset .formField:last-child {
   margin-bottom: 0;
 }
