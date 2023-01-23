@@ -1,15 +1,12 @@
 .field {
   display: block;
-}
-
-fieldset {
-  margin-bottom: 20px;
-}
-
-label {
   margin-bottom: 10px;
 }
 
-fieldset label:last-child {
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.fieldset .field:last-child {
   margin-bottom: 0;
 }
