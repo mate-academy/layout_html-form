@@ -1,1 +1,17 @@
 /* styles go here */
+.input {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.group {
+  margin-bottom: 20px;
+}
+
+.group:last-child {
+  margin: 0;
+}
+
+.input:last-child {
+  margin: 0;
+}
