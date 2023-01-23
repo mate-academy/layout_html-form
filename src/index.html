@@ -11,7 +11,163 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form
+      class="form"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+    >
+      <fieldset class="block">
+        <legend class="block__title">
+          Personal information
+        </legend>
+
+        <label class="block__input">
+          Surname:
+          <input
+            type="text"
+            name="surname"
+            autocomplete="off"
+            required
+          >
+        </label>
+
+        <label class="block__input">
+          Name:
+          <input
+            type="text"
+            name="name"
+            autocomplete="off"
+            required
+          >
+        </label>
+
+        <label class="block__input">
+          How old are You?
+          <input
+            type="number"
+            value="12"
+            min="1"
+            max="100"
+            name="age"
+            required
+          >
+        </label>
+
+        <label class="block__input">
+          Full date of birth:
+          <input type="date" name="birthDate">
+        </label>
+
+        <label class="block__input">
+          I accept the term of the agreement
+          <input type="checkbox" name="terms">
+        </label>
+      </fieldset>
+
+      <fieldset class="block">
+        <legend class="block__title">
+          Registration
+        </legend>
+
+        <label class="block__input">
+          E-mail:
+          <input
+            type="email"
+            placeholder="email@example.com"
+            name="email"
+          >
+        </label>
+
+        <label class="block__input">
+          Password:
+          <input
+            type="password"
+            name="pass"
+            minlength="8"
+            maxlength="12"
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="block">
+        <legend class="block__title">
+          An interesting fact about you!
+        </legend>
+
+        <label class="block__input radio-input">
+          Do you love cats?
+          <div class="radio-input__item">
+            <input type="radio" name="cats">
+            Yes
+          </div>
+          <div class="radio-input__item">
+            <input type="radio" name="cats">
+            No
+          </div>
+        </label>
+
+        <label class="block__input">
+          What is your favorite color?
+          <input
+            type="color"
+            value="#000"
+            name="favColor"
+          >
+        </label>
+
+        <label class="block__input">
+          What time do you go to bed?
+          <input type="time" name="bedTime">
+        </label>
+
+        <label class="block__input">
+          What are your favourite brand of cars?
+          <select name="favCar" multiple>
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </label>
+
+        <label class="block__input">
+          How do you rate our work?
+          <input
+            type="range"
+            min="0"
+            max="10"
+            step="1"
+            value="0"
+            name="workRate"
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="block">
+        <legend class="block__title">
+          Additional info:
+        </legend>
+
+        <label class="block__input">
+          Comments:
+          <textarea
+            name="comments"
+            cols="20"
+            rows="2"
+          >
+          </textarea>
+        </label>
+
+        <label class="block__input">
+          Would you recommend us?
+          <select name="recommend">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <button class="form__btn" type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
