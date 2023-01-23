@@ -3,10 +3,10 @@
   margin-bottom: 20px;
 }
 
-.formLabel {
+.form_label {
   margin-bottom: 10px;
 }
 
-.formLabel:last-child {
+.form_label:last-child {
   margin-bottom: 0;
 }
