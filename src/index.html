@@ -12,10 +12,10 @@
   </head>
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Personal information</legend>
 
-        <label>
+        <label class="formField">
           Surname:
           <input 
             type="text" 
@@ -54,7 +54,7 @@
           >
         </label>
 
-        <label>
+        <label class="formField">
           I accept the term of the agreement
           <input 
             type="checkbox" 
@@ -67,7 +67,7 @@
       <fieldset class="fieldset">
         <legend>Registration</legend>
 
-        <label>
+        <label class="formField">
           E-mail:
           <input 
             type="email" 
@@ -77,7 +77,7 @@
           >
         </label>
 
-        <label>
+        <label class="formField">
           Password:
           <input 
             type="password" 
@@ -92,7 +92,7 @@
       <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
 
-        <div>
+        <div class="formField">
           Do you love cats?
           <label class="radio">
             <input 
@@ -134,7 +134,7 @@
           </select>
         </label>
 
-        <label>
+        <label class="formField">
           How do you rate our work?
           <input 
             type="range" 
@@ -149,12 +149,12 @@
       <fieldset class="fieldset">
         <legend>Additional info:</legend>
 
-        <label>
+        <label class="formField">
           Comments:
           <textarea name="comments"></textarea>
         </label>
 
-        <label>
+        <label class="formField">
           Would you recommend us?
           <select name="recommend">
             <option value="yes">yes</option>

@@ -1,23 +1,17 @@
-.formField {
-  display: block;
-  margin: 10px 0;
-}
-
-label:first-child {
+.formField:not(:last-child) {
   display: block;
   margin-bottom: 10px;
 }
 
-label:last-child {
+.formField:last-child {
   display: block;
   margin-top: 10px;
 }
 
-label.radio {
+.radio {
   display: inline;
 }
 
 .fieldset {
-  margin-top: 20px;
   margin-bottom: 20px;
 }
