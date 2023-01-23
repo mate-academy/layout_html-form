@@ -1,1 +1,19 @@
-/* styles go here */
+.info:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.registr:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.interests:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.additional:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.form:not(:last-child) {
+  margin-bottom: 20px;
+}
