@@ -1,1 +1,13 @@
 /* styles go here */
+
+.form-label {
+  display: block;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label:not(:last-child) {
+  margin-bottom: 10px;
+}
