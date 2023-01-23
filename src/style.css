@@ -1,1 +1,9 @@
 /* styles go here */
+.field {
+  display: block;
+  padding: 5px;
+}
+
+.group {
+  margin: 20px;
+}
