@@ -6,14 +6,9 @@
 }
 
 .fieldset {
-  margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* .first {
-  margin-top: 0;
-} */
-
-.last {
+.form-field:last-child {
   margin-bottom: 0;
 }
