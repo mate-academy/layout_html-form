@@ -14,11 +14,13 @@
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
-      class="form">
+      class="form"
+    >
       <fieldset class="form_info form">
         <legend>Personal information</legend>
-        <div class="info_surname info">
-          <label for="surname">Surname:
+        <div class="info_surname form-block">
+          <label>
+            Surname:
             <input
               type="text"
               name="surname"
@@ -27,8 +29,9 @@
             >
           </label>
         </div>
-        <div class="info_name info">
-          <label for="name">Name:
+        <div class="info_name form-block">
+          <label>
+            Name:
             <input
               type="text"
               name="name"
@@ -37,8 +40,9 @@
             >
           </label>
         </div>
-        <div class="info_age info">
-          <label for="age">How old are You?
+        <div class="info_age form-block">
+          <label>
+            How old are You?
             <input
               type="number"
               name="age"
@@ -49,8 +53,9 @@
             >
           </label>
         </div>
-        <div class="info_birth info">
-          <label for="birth">Full date of birth:
+        <div class="info_birth form-block">
+          <label>
+            Full date of birth:
             <input
               type="date"
               name="dateOfBirth"
@@ -58,8 +63,9 @@
             >
           </label>
         </div>
-        <div class="info_accept info">
-          <label for="accept">I accept the term of the agreement
+        <div class="info_accept form-block">
+          <label>
+            I accept the term of the agreement
             <input
               type="checkbox"
               name="acceptingTerms"
@@ -70,8 +76,9 @@
       </fieldset>
       <fieldset class="form_registr form">
         <legend>Registration</legend>
-        <div class="registr_email registr">
-          <label for="email">E-mail:
+        <div class="registr_email form-block">
+          <label>
+            E-mail:
             <input
               type="email"
               name="email"
@@ -80,8 +87,9 @@
             >
           </label>
         </div>
-        <div class="registr_pass registr">
-          <label for="pass">Password:
+        <div class="registr_pass form-block">
+          <label>
+            Password:
             <input
               type="password"
               name="password"
@@ -93,26 +101,31 @@
         </div>
       </fieldset>
       <fieldset class="form_interests form">
-        <legend>An ineresting facts about you!</legend>
-        <div class="interests_cats interests">
+        <legend>An ineresting fact about you!</legend>
+        <div class="interests_cats form-block">
           Do you love cats?
-          <label for="cats_yes">Yes
+          <label>
             <input
               type="radio"
               name="cats"
               id="cats_yes"
+              value="yes"
             >
+            Yes
           </label>
-          <label for="cats_no">No
+          <label>
             <input
               type="radio"
               name="cats"
               id="cats_no"
+              value="no"
             >
+            No
           </label>
         </div>
-        <div class="interests_color interests">
-          <label for="color">What is your favorite color?
+        <div class="interests_color form-block">
+          <label>
+            What is your favorite color?
             <input
               type="color"
               name="color"
@@ -120,8 +133,9 @@
             >
           </label>
         </div>
-        <div class="intersts_goBed interests">
-          <label for="bed">What time do you go to bed?
+        <div class="intersts_goBed form-block">
+          <label>
+            What time do you go to bed?
             <input
               type="time"
               name="bed"
@@ -129,8 +143,8 @@
             >
           </label>
         </div>
-        <div class="interests_cars interests">
-          <label for="cars">
+        <div class="interests_cars form-block">
+          <label>
             What are your favorite brand of cars?
             <select
               name="cars"
@@ -144,10 +158,9 @@
             </select>
           </label>
         </div>
-        <div class="interests_rate interests">
-          <label for="rate">
+        <div class="interests_rate form-block">
+          <label>
             How do you rate our work?
-
             <input
               type="range"
               name="rate"
@@ -159,20 +172,22 @@
       </fieldset>
       <fieldset class="form_additional form">
         <legend>Additional info:</legend>
-        <div class="additional_comments additional">
-          <label for="comments">Comments:
+        <div class="additional_comments form-block">
+          <label>
+            Comments:
             <textarea
-            name="comments"
-            id="comments"
-            cols="15"
-            rows="2"
+              name="comments"
+              id="comments"
+              cols="15"
+              rows="2"
             >
 
             </textarea>
           </label>
         </div>
-        <div class="additional_recomend additional">
-          <label for="recomend">Would you recomend us?
+        <div class="additional_recomend form-block">
+          <label>
+            Would you recomend us?
             <select
               name="recomend"
               id="recomend"

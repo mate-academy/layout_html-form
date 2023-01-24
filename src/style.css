@@ -1,16 +1,4 @@
-.info:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.registr:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.interests:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.additional:not(:last-child) {
+.form-block:not(:last-child) {
   margin-bottom: 10px;
 }
 
