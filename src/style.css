@@ -1,1 +1,21 @@
 /* styles go here */
+
+.block {
+  margin-bottom: 20px;
+}
+
+.fieldset {
+  padding-top: 10px;
+}
+
+button {
+  margin-left: 2px;
+}
+
+#number {
+  width: 3.3em;
+}
+
+select {
+  overflow: hidden;
+}
