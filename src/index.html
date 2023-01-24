@@ -15,36 +15,33 @@
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <fieldset class="fieldSet">
         <legend>Personal information</legend>
-        <label for="LastName" class="field">
+        <label class="field">
           Surname:
           <input
             type="text"
             name="lastName"
-            id="lastName"
             minlength="3"
             maxlength="30"
             autocomplete="off"
             required
           >
         </label>
-        <label for="firstName" class="field">
+        <label class="field">
           Name:
           <input
             type="text"
             autocomplete="off"
             name="firstName"
-            id="firstName"
             minlength="3"
             maxlength="30"
             required
           >
         </label>
-        <label for="age" class="field">
+        <label class="field">
           How old are You?
           <input
             type="number"
             name="age"
-            id="age"
             value="12"
             min="1"
             max="100"
@@ -56,39 +53,35 @@
           <input
             type="date"
             name="birthDate"
-            id="birthDate"
             value="mm/dd/yyyy"
             required
           >
         </label>
-        <label for="agreement" class="field">
+        <label class="field">
           I accept the term of the agreement
           <input
             type="checkbox"
             name="agreement"
-            id="agreement"
             required
           >
         </label>
       </fieldset>
       <fieldset class="fieldSet">
         <legend>Registration</legend>
-        <label for="email" class="field">
+        <label class="field">
           E-mail:
           <input
             type="email"
             name="email"
-            id="email"
             placeholder="email@example.com"
             required
           >
         </label>
-        <label for="password" class="field">
+        <label class="field">
           Password:
           <input
             type="password"
             name="password"
-            id="password"
             required
           >
         </label>
@@ -97,44 +90,41 @@
         <legend>An interesting fact about you!</legend>
         <div for="cats">
           Do you love cats?
-          <label for="catLover">
+          <label>
             <input
               type="radio"
               name="catLover"
-              id="catLover"
               value="Yes"
             >
             Yes
           </label>
-          <label for="catHater">
+          <label>
             <input
               type="radio"
               name="catHater"
-              id="catHater"
               value="No"
             >
             No
           </label>
         </div>
         <div class="field">
-          <label for="favColor">
+          <label>
             What is your favorite color?
+            <input
+              type="color"
+              name="favColor"
+              id="favColor"
+            >
           </label>
-          <input
-            type="color"
-            name="favColor"
-            id="favColor"
-          >
         </div>
         <div class="field">
-          <label for="DND">
+          <label>
             What time do you go to bed?
+            <input
+              type="time"
+              name="DND"
+            >
           </label>
-          <input
-            type="time"
-            name="DND"
-            id="DND"
-          >
         </div>
         <div class="field">
           <label for="favCar">
@@ -158,7 +148,6 @@
           <input
             type="range"
             name="workRate"
-            id="workRate"
             min="1"
             max="5"
             value="1"
