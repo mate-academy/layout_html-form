@@ -16,12 +16,12 @@
     method="post">
       <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <label for="surname"  class="formField">
+        <label for="surname" class="formField">
           Surname:
           <input
             type="text" 
             id="surname"
-            name ="surname" 
+            name="surname" 
             autocomplete="off"
             required
           >  
@@ -31,34 +31,28 @@
           <input
             type="text" 
             id="name" 
-            name = "name" 
+            name="name" 
             autocomplete="off"
             required
           >
         </label>
-        <label 
-          for="years" 
-          class="formField"
-        >
+        <label for="years" class="formField">
           How old are You?
           <input 
             type="number" 
             id="years" 
-            name = "age" 
+            name="age" 
             min="1" 
             max="100"    
             value="12" 
           >
         </label>
-        <label 
-          for="date" 
-          class="formField"
-        >
+        <label for="date" class="formField">
           Full date of birth:
           <input 
             type="date" 
             id="date" 
-            name = "date"
+            name="date"
             required
           >
         </label>
@@ -67,35 +61,29 @@
           <input 
             type="checkbox" 
             id="term" 
-            name = "checkbox"
+            name="checkbox"
             required
           >
         </label>
       </fieldset>
       <fieldset class="fieldset">
         <legend>Registration</legend>
-        <label 
-          for="email" 
-          class="formField"
-        >
+        <label for="email" class="formField">
           E-mail:
           <input 
             type="email" 
             id="email" 
             placeholder="email@example.com" 
-            name = "email"
+            name="email"
             required
           >
         </label>
-        <label 
-          for="Password" 
-          class="formField"
-        >
+        <label for="Password" class="formField">
           Password:
           <input 
             type="password" 
             id="Password" 
-            name = "password"
+            name="password"
             required
           >
         </label>
@@ -128,36 +116,36 @@
           <input 
             type="color" 
             id="color" 
-            name = "color"
+            name="color"
           >
         </label>
-        <label 
-          for="time" 
-          class="formField"
-        >
+        <label for="time" class="formField">
           What time do you go to bed?
           <input 
             type="time" 
             id="time" 
-            name = "time"
+            name="time"
             step="1"
           >
         </label>
-        <label 
-          for="cars" 
-          class="formField"
-        >
+        <label for="cars" class="formField">
           What are your favorite brand of cars?
           <select 
             name="cars" 
             id="cars"
-            multiple>
-            <option value="BMW">BMW</option>
-            <option value="Audi">Audi</option>
-            <option value="lada">Lada</option>
+            multiple
+          >
+            <option value="BMW">
+              BMW
+            </option>
+            <option value="Audi">
+              Audi
+            </option>
+            <option value="Lada">
+              Lada
+            </option>
           </select>
         </label>
-
         <label for="range" class="formField">
           How do you rate our work?
           <input 
@@ -175,20 +163,24 @@
           <textarea 
             name="comments" 
             id="comments" 
-            autocomplete="off">
-          </textarea>
+            autocomplete="off"
+         ></textarea>
         </label>
         <label for="select" class="formField">
           Would you recommend us?
-          <select 
-            name="recommend" 
-            id="select">
-            <option value="yes" >yes</option>
-            <option value="no">no</option>
+          <select name="recommend" id="select">
+            <option value="yes">
+              yes
+            </option>
+            <option value="no">
+              no
+            </option>
           </select>
         </label>
       </fieldset>
-      <button type="submit">Submit</button>
+      <button type="submit">
+        Submit
+      </button>
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
