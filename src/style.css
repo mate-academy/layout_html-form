@@ -4,6 +4,10 @@
   margin-bottom: 20px;
 }
 
-.input:not(:last-child) {
+.input_block {
+  display: block;
+}
+
+.input_block:not(:last-child) {
   margin-bottom: 10px;
 }
