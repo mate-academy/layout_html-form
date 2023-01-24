@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, 
+      maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form method="post" action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+    <form method="post" 
+    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    >
       <fieldset class="personal-information-form fieldset">
         <legend>
           Personal information
@@ -91,7 +94,7 @@
           An interesting fact about you!
         </legend>
         <div class="text-form">
-            Do you love cats?
+          Do you love cats?
           <label class="text-form radio-form" for="radioButtonYes">
             <input 
             type="radio" 
@@ -99,7 +102,7 @@
             name="radioButtonYes"
             value="yes"
             >
-            Yes
+              Yes
           </label>
           <label class="text-form radio-form" for="radioButtonNo">
             <input 
@@ -108,7 +111,7 @@
             name="radioButtonNo"
             value="no"
             >
-            No
+              No
           </label>
         </div>
         <label class="text-form" for="colorForm">
@@ -165,12 +168,8 @@
             <textarea 
             name="commentsForm" 
             id="commentsForm" 
-            cols="16" 
-            rows="2"
-            minlength="0"
-            maxlength="100"
             autocomplete="off"
-            >
+            required>
             </textarea>
           </label>
         </div>
