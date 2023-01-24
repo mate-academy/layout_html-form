@@ -8,7 +8,10 @@
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
-    <link rel="stylesheet" href="./style.css">
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    >
   </head>
   <body>
     <form
@@ -20,15 +23,19 @@
         <legend>Personal information</legend>
         <label class="form-field">
           Surname:
-          <input type="text"
+          <input
+            type="text"
             name="surname"
             autocomplete="off"
             required
           >
         </label>
-        <label class="form-field">
+        <label
+          class="form-field"
+        >
           Name:
-          <input type="text"
+          <input
+            type="text"
             name="name"
             autocomplete="off"
             required
@@ -36,7 +43,8 @@
         </label>
         <label class="form-field">
           How old are You?
-          <input type="number"
+          <input
+            type="number"
             name="age"
             min="1"
             max="100"
@@ -46,14 +54,16 @@
         </label>
         <label class="form-field">
           Full date of birth:
-          <input type="date"
+          <input
+            type="date"
             name="birthday"
             required
           >
         </label>
         <label class="form-field">
           I accept the term of the agreement
-          <input type="checkbox"
+          <input
+            type="checkbox"
             name="terms"
             required
           >
@@ -63,7 +73,8 @@
         <legend>Registration</legend>
         <label class="form-field">
           E-mail:
-          <input type="email"
+          <input
+            type="email"
             name="email"
             placeholder="email@example.com"
             required
@@ -71,7 +82,8 @@
         </label>
         <label class="form-field">
           Password:
-          <input type="password"
+          <input
+            type="password"
             name="password"
             minlength="6"
             maxlength="15"
@@ -83,14 +95,16 @@
         <legend>An interesting fact about you!</legend>
         <label class="form-field inlineBlock">
           Do you love cats?
-          <input type="radio"
+          <input
+            type="radio"
             name="loveCats"
             value="yes"
             required
           >Yes
         </label>
         <label class="form-field inlineBlock">
-          <input type="radio"
+          <input
+            type="radio"
             name="loveCats"
             value="no"
             required
@@ -98,14 +112,16 @@
         </label>
         <label class="form-field">
           What is your favorite color?
-          <input type="color"
+          <input
+            type="color"
             name="color"
             required
           >
         </label>
         <label class="form-field">
           What time do you go to bed?
-          <input type="time"
+          <input
+            type="time"
             name="bedTime"
             step="1"
             required
@@ -121,7 +137,8 @@
         </label>
         <label class="form-field">
           How do you rate our work?
-          <input type="range"
+          <input
+            type="range"
             name="rate"
             required
             value="1"
@@ -141,7 +158,10 @@
         </label>
         <label class="form-field">
           Would you recommend us?
-          <select name="recommendation" required>
+          <select
+            name="recommendation"
+            required
+          >
             <option value="yes">Yes</option>
             <option value="no">No</option>
           </select>
@@ -149,6 +169,10 @@
       </fieldset>
       <button type="submit">Submit</button>
     </form>
-    <script type="text/javascript" src="./main.js"></script>
+    <script
+      type="text/javascript"
+      src="./main.js"
+    >
+    </script>
   </body>
 </html>
