@@ -1,19 +1,13 @@
 .input-label {
   display: block;
-}
 
-.radio-label {
-  display: inline;
+  margin-bottom: 10px;
 }
 
 .form-field {
   margin-bottom: 20px;
 }
 
-.form-field .input-label:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.radio-container {
-  margin-bottom: 10px;
+.form {
+  display: inline;
 }
