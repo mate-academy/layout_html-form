@@ -1,1 +1,17 @@
-/* styles go here */
+.form_field {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.form_label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form_label:last-child {
+  margin-bottom: 0;
+}
+
+.cats_form_label {
+  display: inline-block;
+}
