@@ -11,7 +11,93 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form
+      action="http://localhost:8080/api"
+      method="post"
+    >
+      <fieldset class="form__group">
+        <legend>Personal information</legend>
+        <label class="form__field fix__display">
+          Surname:
+          <input
+            type="text"
+            name="Surname"
+          >
+        </label>
+        <label class="form__field fix__display">
+          Name:
+          <input
+            type="text"
+            name="name"
+          >
+        </label>
+        <label class="form__field fix__display">
+          How old are you?
+          <input
+            type="text"
+            name="age"
+            value="12"
+          >
+        </label>
+        <label class="form__field fix__display">
+          Full date of birth:
+          <input
+            type="text"
+            name="dateOfBirth"
+            placeholder="mm/dd/yyyy"
+          >
+        </label>
+        <label class="fix__display">
+          I accept the term of the agreement
+          <input
+            type="checkbox"
+            name="terms"
+            required
+          >
+        </label>
+      </fieldset>
+      <fieldset class="form__group">
+        <legend>Registration</legend>
+        <label class="form__field fix__display">
+          E-mail:
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="email@example.com"
+          >
+        </label>
+        <label class="fix__display">
+          Password:
+          <input
+            type="password"
+            name="password"
+            required
+          >
+        </label>
+      </fieldset>
+      <fieldset class="form__group">
+        <legend>An interesting fact about you!</legend>
+        <div class="form__field fix__display">
+          Do you love cats?
+          <label class="Inline__display">
+            <input
+            type="radio"
+            name="loveCats"
+            >
+            Yes
+          </label>
+          <label class="Inline__display">
+            <input
+            type="radio"
+            name="loveCats"
+            >
+            No
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="form__group"></fieldset>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
