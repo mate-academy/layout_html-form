@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <script type="text/javascript" src="./main.js"></script>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <fieldset class="form-group">
         <legend>Personal information</legend>
@@ -56,6 +55,7 @@
         <input type="checkbox" 
                name="I accept the lerm of the agreement" 
                id="I accept the lerm of the agreement"
+               required 
         >
       </fieldset>   
       <fieldset class="form-group">
@@ -69,7 +69,7 @@
               id="E-mail:"
           >
         </div>
-        <div class="form-fildn">
+        <div class="form-fild">
           <label for="Password:">Password: </label>
           <input type="password" 
               name="password" 
@@ -131,10 +131,7 @@
           <label for="Comments:">Comments:</label>
           <textarea 
                id="Comments:"
-               cols="20" 
-               rows="2" 
-               name="Comments" 
-               required 
+               name="Comments"
                minlength="10" 
                maxlength="15">
           </textarea>
@@ -142,13 +139,14 @@
         <div class="form-fild">
           <label for="Would you recommend us?">Would you recommend us?</label>
           <select name="Would you recommend us?" id="Would you recommend us?">
+            <option value="Yes">Yes</option>
             <option value="No">No</option>
-            <option value="Yes"selected>Yes</option>
           </select>
         </div>
       </fieldset>
       <button type="submit">Submit</button>
-    </form> 
+    </form>
+    <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
 

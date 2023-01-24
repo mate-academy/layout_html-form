@@ -1,10 +1,12 @@
 
 .form-fild {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
   
+.form-fild:last-child {
+  margin-bottom: 0;
+}
+
 .form-group {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
