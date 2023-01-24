@@ -1,1 +1,20 @@
-/* styles go here */
+body {
+  display: block;
+  text-align: justify;
+}
+
+.form_element {
+  margin-bottom: 10px;
+}
+
+.select_element {
+  margin-bottom: 0;
+}
+
+.fieldSet {
+  margin-bottom: 20px;
+}
+
+.recommend_select {
+  margin-top: 10px;
+}
