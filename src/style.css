@@ -1,1 +1,38 @@
 /* styles go here */
+
+.infoAbout1Form {
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  top: 2px;
+}
+
+.infoAboutRegistr {
+  padding-top: 10px;
+}
+
+.interestFact {
+  margin-bottom: 10px;
+}
+
+.additionalInfo {
+  margin-bottom: 10px;
+}
+
+select {
+  overflow: hidden;
+}
+
+.infoAboutForm {
+  margin-bottom: 20px;
+}
+
+.infoAbout2Form {
+  margin-bottom: 10px;
+}
+
+#number {
+  width: 4.9em;
+}
