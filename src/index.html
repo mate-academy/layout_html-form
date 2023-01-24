@@ -17,50 +17,63 @@
       <fieldset>
         <legend>Personal information</legend>
         <label>
-          Surname: <input type="text"
-                          name="surname"
-                          required
-                          autocomplete="off"
-                   >
+          Surname:
+          <input
+            type="text"
+            name="surname"
+            required
+            autocomplete="off"
+          >
         </label>
         <label>
-          Name: <input type="text"
-                      name="name"
-                      required
-                      autocomplete="off"
-                >
+          Name:
+          <input
+            type="text"
+            name="name"
+            required
+            autocomplete="off"
+          >
         </label>
         <label>
-          How old are You? <input type="number"
-                                  name="age"
-                                  min="1"
-                                  max="100"
-                                  value="12"
-                           >
+          How old are You?
+          <input
+            type="number"
+            name="age"
+            min="1"
+            max="100"
+            value="12"
+          >
         </label>
         <label>
-          Full date of birth: <input type="date"
-                                     name="date-of-birth"
-                                     required
-                              >
+          Full date of birth:
+          <input
+            type="date"
+            name="date-of-birth"
+            required
+          >
         </label>
         <label>
-          I accept the term of the agreement <input type="checkbox"
-                                                    name="terms"
-                                                    required
-                                             >
+          I accept the term of the agreement
+          <input
+            type="checkbox"
+            name="terms"
+            required
+          >
         </label>
       </fieldset>
+
       <fieldset>
         <legend>Registration</legend>
         <label>
-          E-mail: <input type="email"
-                        name="mail"
-                        required
-                        minlength="5"
-                        maxlength="40"
-                        placeholder="email@example.com"
-                  >
+          E-mail:
+          <input
+            type="email"
+            name="mail"
+            required
+            minlength="5"
+            maxlength="40"
+            placeholder="email@example.com"
+          >
         </label>
         <label>
           Password: <input type="password"
@@ -69,6 +82,7 @@
                     >
         </label>
       </fieldset>
+
       <fieldset>
         <legend>An interesting fact about you! </legend>
         Do you love cats?
@@ -87,14 +101,16 @@
           No
         </label>
         <label>
-          What is your favorite color? <input type="color"
-                                              name="color"
-                                       >
+          What is your favorite color?
+          <input type="color"
+                 name="color"
+          >
         </label>
         <label>
-          What time do you go to bed? <input type="time"
-                                             name="time-to-bed"
-                                      >
+          What time do you go to bed?
+          <input type="time"
+                 name="time-to-bed"
+          >
         </label>
         <label>
           What are your favorite brand of cars?
@@ -105,22 +121,26 @@
           </select>
         </label>
         <label>
-          How do you rate our work? <input type="range"
-                                           name="work-rate"
-                                    >
+          How do you rate our work?
+          <input type="range"
+                 name="work-rate"
+          >
         </label>
       </fieldset>
+
       <fieldset>
         <legend>Additional info: </legend>
         <label>
-          Coments: <textarea name="coments"></textarea>
+          Coments:
+          <textarea name="coments">
+          </textarea>
         </label>
         <label>
           Would you recommend us?
           <select name="recommend-us">
             <option value="yes">yes</option>
             <option value="no">no</option>
-          </select>  
+          </select>
         </label>
       </fieldset>
       <button type="submit">Submit</button>
