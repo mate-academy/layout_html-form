@@ -12,8 +12,8 @@
   </head>
   <body>
     <form
-    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-     method="post"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
     >
       <fieldset class="fieldset">
         <legend>Personal information</legend>
@@ -46,7 +46,7 @@
 
         <div class="label">
           <label for="age">
-          How old are You?
+            How old are You?
             <input
               type="number"
               name="age"
@@ -61,7 +61,7 @@
 
         <div class="label">
           <label for="date">
-          Full date of birth:
+            Full date of birth:
             <input
               type="date"
               name="date"
@@ -72,11 +72,11 @@
 
         <div class="label">
           <label for="accept">
-          I accept the term of the agreement
+            I accept the term of the agreement
             <input
-             type="checkbox"
-             name="accept"
-             class="input"
+              type="checkbox"
+              name="accept"
+              class="input"
             >
           </label>
         </div>
@@ -87,28 +87,28 @@
 
         <div class="label">
           <label for="e-mail">
-          E-mail:
+            E-mail:
             <input
-             type="email"
-             name="e-mail"
-             id="e-mail"
-             placeholder="email@example.com"
-             class="input"
-             required
+              type="email"
+              name="e-mail"
+              id="e-mail"
+              placeholder="email@example.com"
+              class="input"
+              required
             >
           </label>
         </div>
 
         <div class="label">
           <label for="password">
-          Password:
+            Password:
             <input
-             type="password"
-             name="password"
-             id="password"
-             class="input"
-             min="3"
-             max="16"
+              type="password"
+              name="password"
+              id="password"
+              class="input"
+              min="3"
+              max="16"
             >
           </label>
         </div>
@@ -125,14 +125,19 @@
               name="cats"
               id="cats"
               class="input"
+              value="yes"
             >
             Yes
+          </label>
+
+          <label for="label">
             <input
               type="radio"
               name="cats"
               class="input"
+              value="no"
             >
-             No
+            No
           </label>
         </div>
 
@@ -209,12 +214,9 @@
         <div class="label">
           <label for="recommend">
             Would you recommend us?
-            <select
-              name="recommend"
-              id="recommend"
-            >
-              <option>yes</option>
-              <option>no</option>
+            <select name="recommend" required>
+              <option value="yes">yes</option>
+              <option value="no">no</option>
             </select>
           </label>
         </div>
