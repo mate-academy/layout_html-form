@@ -14,13 +14,15 @@
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
+      class="form"
     >
       <fieldset class="fieldset">
         <legend>Personal information</legend>
 
         <label class="form-field">
-        Surname:
-          <input type="text"
+          Surname:
+          <input
+            type="text"
             name="surname"
             autocomplete="off"
             required
@@ -29,7 +31,8 @@
 
         <label class="form-field">
           Name:
-          <input type="text"
+          <input
+            type="text"
             name="name"
             autocomplete="off"
             required
@@ -38,10 +41,11 @@
 
         <label class="form-field">
           How old are You?
-          <input type="number"
+          <input
+           type="number"
            name="age"
            value="12"
-            min="1"
+           min="1"
            max="100"
            required
           >
@@ -49,42 +53,42 @@
 
         <label class="form-field">
           Full date of birth:
-          <input type="date" name="dateOfBith">
+          <input type="date" name="dateOfBirth">
         </label>
 
-        <label class="form-field last">
+        <label class="form-field">
           I accept the term of the agreement
-          <input type="checkbox"
+          <input
+           type="checkbox"
            name="agreement"
            required
           >
         </label>
-
       </fieldset>
 
       <fieldset class="fieldset">
-
         <legend>Registration</legend>
 
         <label class="form-field">
           E-mail:
-          <input type="email"
+          <input
+           type="email"
            name="email"
            placeholder="email@example.com"
            required
           >
         </label>
 
-        <label class="form-field last">
+        <label class="form-field">
           Password:
-          <input type="password"
-             name="password"
-             minlength="8"
-             maxlength="25"
-             required
+          <input
+            type="password"
+            name="password"
+            minlength="8"
+            maxlength="25"
+            required
           >
         </label>
-
       </fieldset>
 
       <fieldset class="fieldset">
@@ -92,9 +96,9 @@
 
         <div class="form-field">
           Do you love cats?
-
           <label>
-            <input type="radio"
+            <input
+             type="radio"
              name="cats"
              value="yes"
             >
@@ -102,9 +106,10 @@
           </label>
 
           <label>
-            <input type="radio"
+            <input
+              type="radio"
               name="cats"
-             value="no"
+              value="no"
             >
             No
           </label>
@@ -112,14 +117,16 @@
 
         <label class="form-field">
           What is your favorite color?
-          <input type="color"
+          <input
+            type="color"
             name="color"
           >
         </label>
 
         <label class="form-field">
           What time do you go to bed?
-          <input type="time"
+          <input
+           type="time"
            name="time"
           >
         </label>
@@ -127,7 +134,8 @@
         <label class="form-field">
           What are your favorite brand of cars?
 
-          <select name="car"
+          <select
+            name="car"
             multiple
             required
            >
@@ -137,7 +145,7 @@
           </select>
         </label>
 
-        <label class="form-field last">
+        <label class="form-field">
           How do you rate our work?
           <input type="range" value="0">
         </label>
@@ -148,20 +156,19 @@
 
         <label class="form-field">
           Comments:
-          <textarea name="coments"></textarea>
+          <textarea name="comments"></textarea>
         </label>
 
-        <label class="form-field last">
+        <label class="form-field">
           Would you recommend us?
-
-          <select name="recommend"
-           required
-           >
+          <select
+            name="recommend"
+            required
+          >
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
         </label>
-
       </fieldset>
 
       <button type="submit">Submit</button>
