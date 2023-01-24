@@ -3,11 +3,6 @@
   margin-bottom: 10px;
 }
 
-.formField:last-child {
-  display: block;
-  margin-top: 10px;
-}
-
 .radio {
   display: inline;
 }
