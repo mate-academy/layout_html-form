@@ -1,14 +1,13 @@
-/* styles go here */
 label {
   display: block;
 }
 
-input {
-  margin-bottom: 10px;
-}
-
 fieldset {
   margin-bottom: 20px;
+}
+
+label:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 button {
@@ -17,4 +16,9 @@ button {
 
 .inline {
   display: inline;
+}
+
+.radio {
+  margin-bottom: 14px;
+  margin-right: 7px;
 }

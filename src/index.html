@@ -16,19 +16,22 @@
       <fieldset>
         <legend>Personal information</legend>
         <label>Surname:
-          <input type="text" name="surname" 
+          <input type="text" 
+          name="surname" 
           required autocomplete="off"
           >
         </label>
 
         <label>Name:
-          <input type="text" name="name" 
+          <input type="text" 
+          name="name" 
           required autocomplete="off"
           >
         </label>
 
         <label>How old are You?
-          <input type="number" name="age" 
+          <input type="number" 
+          name="age" 
           maxlength="3" minlength="2" 
           value="12" 
           min="1" max="100"
@@ -36,20 +39,24 @@
         </label>
 
         <label>Full date of birth:
-          <input type="date" name="birthdate" 
+          <input type="date" 
+          name="birthdate" 
           placeholder="mm/dd/yyyy"
           >
         </label>
 
-        <label>I accetp the term of the agreement
-          <input type="checkbox" name="terms">
+        <label>I accept the term of the agreement
+          <input type="checkbox" 
+          name="terms"
+          >
         </label>
       </fieldset>
 
       <fieldset>
         <legend>Registration</legend>
         <label>E-mail:
-          <input type="email" name="email" 
+          <input type="email" 
+          name="email" 
           placeholder="email@example.com"
           >
         </label>
@@ -62,24 +69,34 @@
       <fieldset>
         <legend>An interesting fact about you!</legend>
         <label class="inline">Do you love cats?
-          <input type="radio" name="lovecats">Yes
+          <input class="radio" type="radio" 
+          name="lovecats"
+          >Yes
         </label>
         <label class="inline">
-          <input type="radio" name="lovecats">No
+          <input class="radio" type="radio" 
+          name="lovecats"
+          >No
         </label>
 
         <label>What is your favorite color?
-          <input type="color" name="choosecolor" 
+          <input type="color" 
+          name="choosecolor" 
           value="black"
           >
         </label>
 
         <label>What time do you go to bed?
-          <input type="time" name="bedtime">
+          <input type="time" 
+          name="bedtime" 
+          placeholder="--:--:--"
+          >
         </label>
 
         <label>What are your favorite brand of cars?
-          <select name="carbrand" multiple>
+          <select name="carbrand" 
+          multiple
+          >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
@@ -97,7 +114,7 @@
         <legend>Additional info:</legend>
         <label>Comments:
           <textarea name="comment" 
-          cols="30" rows="2"
+          cols="20" rows="2"
           >
           </textarea>
         </label>
