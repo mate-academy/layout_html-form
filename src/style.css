@@ -1,1 +1,13 @@
 /* styles go here */
+.form-field {
+  display: block;
+  margin-top: 10px;
+}
+
+.fieldset {
+  margin-bottom: 20px;
+}
+
+label:first-of-type {
+  margin-top: 0;
+}
