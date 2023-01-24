@@ -1,1 +1,13 @@
-/* styles go here */
+.input-label {
+  display: block;
+
+  margin-bottom: 10px;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form {
+  display: inline;
+}
