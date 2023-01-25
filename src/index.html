@@ -4,142 +4,134 @@
     <meta charset="UTF-8">
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, 
-      maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width,
+      user-scalable=no,
+      initial-scale=1.0,
+      maximum-scale=1.0,
+      minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form method="post" 
-    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    <form 
+      method="post"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
     >
-      <fieldset class="personal-information-form fieldset">
+      <fieldset class="fieldset">
         <legend>
           Personal information
         </legend>
-        <label class="text-form" for="surname">
+        <label class="text-form">
           Surname:
           <input 
-          type="text" 
-          id="surname" 
-          name="surname"
-          autocomplete="off"
+            type="text"
+            name="surname"
+            autocomplete="off"
           >
         </label>
-        <label class="text-form" for="firstname">
+        <label class="text-form">
           Name:
-          <input 
-          type="text" 
-          id="firstname" 
-          name="firstname"
-          autocomplete="off"
+          <input
+            type="text"
+            name="firstname"
+            autocomplete="off"
           >
         </label>
-        <label class="text-form" for="age">
+        <label class="text-form">
           How old are You? 
           <input 
-          type="number" 
-          id="age" 
-          name="age" 
-          value="12" 
-          min="1" 
-          max="100"
+            type="number"
+            name="age"
+            value="12"
+            min="1"
+            max="100"
           >
         </label>
-        <label class="text-form" for="birthday">
+        <label class="text-form">
           Full date of birth:
           <input 
-          type="date"
-          id="birthday"
-          class="birthday-form"
-          name="birthday"
+            type="date"
+            class="birthday-form"
+            name="birthday"
           >
         </label>
-        <label class="text-form" for="terms">
+        <label class="text-form">
           I accept the term of the agreement
           <input 
-          type="checkbox"
-          id="terms"
-          name="terms"
+            type="checkbox"
+            name="terms"
           >
         </label>
       </fieldset>
-      <fieldset class="registration-form fieldset">
+      <fieldset class="fieldset">
         <legend>
           Registration
         </legend>
-        <label class="text-form" for="email">
+        <label class="text-form">
           E-mail:
           <input 
-          type="email" 
-          id="email" 
-          name="email"
-          placeholder="email@example.com"
+            type="email" 
+            name="email"
+            placeholder="email@example.com"
           >
         </label>
-        <label class="text-form" for="password">
+        <label class="text-form">
           Password:
           <input 
-          type="password" 
-          id="password" 
-          name="password"
-          required
+            type="password" 
+            name="password"
+            required
           >
         </label>
       </fieldset>
-      <fieldset class="interesting-fact-form fieldset">
+      <fieldset class="fieldset">
         <legend>
           An interesting fact about you!
         </legend>
         <div class="text-form">
           Do you love cats?
-          <label class="text-form radio-form" for="radioButtonYes">
+          <label class="text-form radio-form">
             <input 
-            type="radio" 
-            id="radioButtonYes" 
-            name="radioButtonYes"
-            value="yes"
+              type="radio"
+              name="radioButtonYes"
+              value="yes"
             >
-              Yes
+            Yes
           </label>
-          <label class="text-form radio-form" for="radioButtonNo">
+          <label class="text-form radio-form">
             <input 
-            type="radio" 
-            id="radioButtonNo" 
-            name="radioButtonNo"
-            value="no"
+              type="radio" 
+              name="radioButtonNo"
+              value="no"
             >
-              No
+            No
           </label>
         </div>
-        <label class="text-form" for="colorForm">
+        <label class="text-form">
           What is your favorite color?
           <input 
-          type="color" 
-          id="colorForm" 
-          name="colorForm"
+            type="color" 
+            name="colorForm"
           >
         </label>
-        <label class="text-form" for="timeForm">
+        <label class="text-form">
           What time do you go to bed?
           <input
-          class="timeForm" 
-          type="time" 
-          id="timeForm" 
-          name="timeForm"
-          step="1"
+            class="timeForm" 
+            type="time" 
+            name="timeForm"
+            step="1"
           >
         </label>
         <div class="text-form">
           <label for="carForm">
             What are your favorite brand of cars?
             <select
-            class="choose"
-            name="carForm"
-            id="carForm"
-            multiple
+              class="choose"
+              name="carForm"
+              multiple
             >
               <option value="bmw">BMW</option>
               <option value="audi">Audi</option>
@@ -147,38 +139,29 @@
             </select>
           </label>
         </div>
-        <label for="rateForm">
+        <label>
           How do you rate our work?
           <input 
-          type="range"
-          name="rateForm"
-          id="rateForm"
-          value="0"
-          class="range-input"
+            type="range"
+            name="rateForm"
+            value="0"
+            class="range-input"
           >
         </label>
       </fieldset>
-      <fieldset class="additional-info-form fieldset">
+      <fieldset class="fieldset">
         <legend>
           Additional info:
         </legend>
         <div class="text-form">
-          <label for="commentsForm">
+          <label>
             Comments:
-            <textarea 
-            name="commentsForm" 
-            id="commentsForm" 
-            autocomplete="off"
-            required>
-            </textarea>
+            <textarea name="commentsForm" autocomplete="off"></textarea>
           </label>
         </div>
         <label for="recommendForm">
           Would you recommend us?
-          <select 
-            name="recommendForm" 
-            id="recommendForm"
-            >
+          <select name="recommendForm">
             <option value="yes">Yes</option>
             <option value="no">No</option>
           </select>
