@@ -1,1 +1,14 @@
 /* styles go here */
+
+.form__group .form__field:not(:last-child) {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.form__group {
+  margin-bottom: 20px;
+}
+
+.inline__display {
+  display: inline-block;
+}
