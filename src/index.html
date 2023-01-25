@@ -83,27 +83,32 @@
             maxlength="30"
           >
         </label>
-
       </fieldset>
 
       <fieldset>
         <legend>An interesting fact about you!</legend>
-
-        <label class="field">
+        <div class="field">
           Do you love cats?
-          <input
+          <label>
+            <input
             type="radio"
-            name="Yes"
-          >
-          Yes
-          <input
-            type="radio"
-            name="No"
-          >
-          No
-        </label>
+            name="love_cats"
+            value="yes"
+            >
+              Yes
+          </label>
 
-        <label class="field">
+          <label>
+            <input
+              type="radio"
+              name="love_cats"
+              value="no"
+            >
+              No
+          </label>
+        </div>
+
+        <label class="field" >
           What is your favorite color?
           <input
             type="color"
