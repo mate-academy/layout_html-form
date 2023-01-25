@@ -15,11 +15,12 @@
       action="http://localhost:8080/"
       method="get"
     >
+
       <fieldset class="block">
         <legend> Personal information</legend>
         <div>
           <label for="surname">
-          Surname:
+            Surname:
             <input
               type="text"
               required
@@ -49,7 +50,7 @@
               value="12"
               maxlength="100"
               minlength="1"
-              id="number"
+              class="number"
             >
           </label>
         </div>
@@ -109,7 +110,7 @@
               type="radio"
               name="No"
             >
-              No
+            No
           </label>
         </div>
 
@@ -168,16 +169,20 @@
           Would you recommend us?
           <select
             class="selector"
-             name="Cars" >
+             name="Cars"
+          >
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
         </div>
       </fieldset>
 
-      <div >
-        <button type="submit">Submit</button>
-      </div>
+      <label for="submit">
+        <input
+          type="submit"
+          value="Submit"
+        >
+      </label>
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
