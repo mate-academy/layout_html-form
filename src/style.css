@@ -1,1 +1,22 @@
-/* styles go here */
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+}
+
+.label:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.form__radio-title,
+.form__radio-btn {
+  margin-top: 0;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.cars {
+  overflow: hidden;
+}
