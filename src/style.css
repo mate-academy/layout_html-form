@@ -4,11 +4,6 @@
   margin-bottom: 10px;
 }
 
-input[type="checkbox"] {
-  position: relative;
-  top: 2px;
-}
-
 .infoAboutRegistr {
   padding-top: 10px;
 }
@@ -17,20 +12,12 @@ input[type="checkbox"] {
   margin-bottom: 10px;
 }
 
-.additionalInfo {
-  margin-bottom: 10px;
-}
-
-select {
+.selector {
   overflow: hidden;
 }
 
 .infoAboutForm {
   margin-bottom: 20px;
-}
-
-.infoAbout2Form {
-  margin-bottom: 10px;
 }
 
 #number {
