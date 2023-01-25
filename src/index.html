@@ -82,6 +82,8 @@
               name="password" 
               autocomplete="off" 
               id="Password:"
+              minlength="6"
+              maxlength="15"
           >
         </div>
       </fieldset>
@@ -142,12 +144,12 @@
       <fieldset class="form-group">
         <legend>Additional info:</legend>
         <div class="Additional-info">
-          <label for="Comments:">Comments:</label>
+          <label class="comm" for="Comments:">
+            Comments:
+          </label>
           <textarea 
                id="Comments:"
                name="Comments"
-               minlength="10" 
-               maxlength="15"
           >
           </textarea>
         </div>
@@ -155,9 +157,10 @@
           <label for="Would you recommend us?">
             Would you recommend us?
           </label>
-          <select name="Would you recommend us?" id="Would you recommend us?">
-            <option value="Yes">yes</option>
-            <option value="No">no</option>
+          <select name="Would you recommend us?"
+            id="Would you recommend us?">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
           </select>
         </div>
       </fieldset>
