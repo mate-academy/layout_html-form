@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form class="form" action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    <form
+     class="form"
+     action="https://mate-academy-form-lesson.herokuapp.com/create-application"
      onsubmit="onSubmit(Submit)"
-     method="post">
+     method="post"
+    >
       <fieldset class="form-field">
         <legend>Personal information</legend>
         <label class="label" for="surname">
@@ -33,7 +36,7 @@
           >
         </label>
         <label class="label"  for="formdate">
-        Full date of birth:
+          Full date of birth:
           <input
             id="formdate"
             type="date"
@@ -41,7 +44,7 @@
           >
         </label>
         <label class="label" for="accept">
-        I accept the term of the agreement
+          I accept the term of the agreement
           <input id="accept" type="checkbox">
         </label>
       </fieldset>
@@ -65,21 +68,25 @@
         <legend>An interesting fact about you!</legend>
         <label class="label" for="cats">
           Do you love cats?
-          <input
-            id="cats-yes"
-            type="radio"
-            name="cats"
-          >
-          Yes
-          <input
-              id="cats-no"
+          <label for="cats-yes">
+            <input
+              id="cats-yes"
               type="radio"
               name="cats"
-          >
-          No
+            >
+            Yes
+          </label>
+          <label for="cats-no">
+            <input
+            id="cats-no"
+            type="radio"
+            name="cats"
+            >
+            No
+          </label>
         </label>
         <label class="label" for="color">
-        What is your favorite color?
+         What is your favorite color?
           <input
             name="color"
             id="color"
@@ -87,14 +94,14 @@
           >
         </label>
         <label class="label" for="datelocal">
-        What time do you go to bed?
+          What time do you go to bed?
           <input
             id="datelocal"
             type="datetime-local"
           >
         </label>
         <label class="label" for="Cars">
-        What are your favorite brand of cars?
+          What are your favorite brand of cars?
           <select
             name="Car"
             required multiple
@@ -106,7 +113,7 @@
           </select>
         </label>
         <label class="label" for="form-work">
-        How do you rate our work?
+          How do you rate our work?
           <input
             id="form-work"
             type="range"
