@@ -30,7 +30,7 @@ Create HTML page with form. On form submit send form data to `https://mate-acade
   - [ ] color
   - [ ] date
 - Form should have textarea and select elements.
-- You should use each of this attribute at least once
+- You should use each of this attribute at least once/
   - [ ] required
   - [ ] min
   - [ ] max
