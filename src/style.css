@@ -1,10 +1,8 @@
 /* styles go here */
-.fix__display {
-  display: block;
-}
 
-.form__field {
+.form__group .form__field:not(:last-child) {
   margin-bottom: 10px;
+  display: block;
 }
 
 .form__group {
