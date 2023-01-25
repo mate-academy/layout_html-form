@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <fieldset>
@@ -34,7 +33,7 @@
           >
         </label>
         <label for="how-old">
-          How old are you?
+          How old are You?
           <input
             type="number"
             name="how-old"
@@ -71,7 +70,7 @@
       </fieldset>
 
       <fieldset>
-        <legend>An interesting fact aboout you!</legend>
+        <legend>An interesting fact about you!</legend>
         <label for="love-cats">
           Do you love cats?
           <input
@@ -91,19 +90,16 @@
         </label>
         <label for="time-bed">
           What time do you go to bed?
-          <input type="time">
+          <input type="time" step="2">
         </label>
         <label for="brand-cars">
-          What are you favorite brand of cars?
+          What are your favorite brand of cars?
           <select name="brand-cars" multiple>
-            <option
-              value="null"
-              selected
-              disabled>
-            </option>
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
             <option value="lada">Lada</option>
+            <option value="null" disabled>
+            </option>
           </select>
         </label>
         <label for="rate-work">
@@ -123,13 +119,13 @@
           <textarea
             name="comments"
             id="comments"
-            cols="15"
+            cols="20"
             rows="2">
           </textarea>
         </label>
-        <label for="recommedend">
-          Would you recommedend us?
-          <select name="recommedend">
+        <label for="recommend">
+          Would you recommend us?
+          <select name="recommend">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>

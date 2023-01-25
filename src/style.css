@@ -2,9 +2,13 @@
 
 label {
   display: block;
-  padding: 5px;
+  padding-bottom: 10px;
 }
 
 fieldset {
-  margin: 10px;
+  margin-bottom: 20px;
+}
+
+fieldset label:last-child {
+  padding-bottom: 0;
 }
