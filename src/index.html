@@ -12,7 +12,7 @@
   </head>
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <fieldset class="fild" id="first-container">
+      <fieldset class="fild first-container">
         <legend>Personal information</legend>
 
         <label class="users-info">
@@ -49,16 +49,18 @@
 
         <label class="users-info">
           Full date of birth:
-          <input type="date"
-          name="birthDate"
+          <input
+            type="date"
+            name="birthDate"
           >
         </label>
 
-        <label class="users-info last">
+        <label class="users-info">
           I accept the term of the agreement
-          <input type="checkbox"
-          name="agreement"
-          required
+          <input
+            type="checkbox"
+            name="agreement"
+            required
           >
         </label>
       </fieldset>
@@ -68,18 +70,20 @@
 
         <label class="users-info">
           E-mail:
-          <input type="email"
-          placeholder="email@example.com"
-          name="email"
-          required
+          <input
+            type="email"
+            placeholder="email@example.com"
+            name="email"
+            required
           >
         </label>
 
-        <label class="users-info last">
+        <label class="users-info">
           Password:
-          <input type="password"
-          name="password"
-          required
+          <input
+            type="password"
+            name="password"
+            required
           >
         </label>
       </fieldset>
@@ -99,24 +103,28 @@
           </label>
           <label>
             <input
-            type="radio"
-            name="loveCats"
-            value="0"
+              type="radio"
+              name="loveCats"
+              value="0"
             >
-                No
+            No
           </label>
         </div>
 
         <label class="users-info">
           What is your favorite color?
-          <input type="color" name="color">
+          <input
+            type="color"
+            name="color"
+          >
         </label>
 
         <label class="users-info">
           What time do you go to bed?
-          <input type="time"
-          name="time"
-          step="2"
+          <input
+            type="time"
+            name="time"
+            step="2"
           >
         </label>
 
@@ -129,7 +137,7 @@
           </select>
         </label>
 
-        <label class="users-info last">
+        <label class="users-info">
           How do you rate our work?
           <input type="range">
         </label>
@@ -142,7 +150,7 @@
           Comments:
           <textarea name="comments"></textarea>
         </label>
-        <label class="users-info last">
+        <label class="users-info">
           Would you recommend us?
           <select name="memory">
             <option value="1">yes</option>

@@ -9,14 +9,10 @@
   margin-bottom: 20px;
 }
 
-#first-container {
+.first-container {
   margin-top: 8px;
 }
 
-.last {
+.users-info:last-child {
   margin-bottom: 0;
-}
-
-.catAns {
-  display: ;
 }
