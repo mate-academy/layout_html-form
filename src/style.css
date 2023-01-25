@@ -7,6 +7,6 @@
   margin-bottom: 20px;
 }
 
-.fieldset .formField:last-child {
+.formField:last-child {
   margin-bottom: 0;
 }
