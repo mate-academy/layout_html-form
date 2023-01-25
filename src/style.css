@@ -1,1 +1,13 @@
 /* styles go here */
+.labels {
+  display: block;
+  margin-bottom: 10px;
+}
+  
+.formFieldsets {
+  margin-bottom: 20px;
+}
+  
+.labels:last-child {
+  margin-bottom: 0;
+}
