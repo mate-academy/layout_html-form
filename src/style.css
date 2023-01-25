@@ -1,12 +1,7 @@
-.modal-field {
-  display: block;
+.container {
   margin-bottom: 10px;
 }
 
-.fieldset .modal-field:last-child {
-  margin-bottom: 0;
-}
-
-.fieldset {
+.group {
   margin-bottom: 20px;
 }

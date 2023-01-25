@@ -4,103 +4,100 @@
     <meta charset="UTF-8">
     <meta
       name="viewport"
-      content="width=device-width,
-        user-scalable=no,
-        initial-scale=1.0,
-        maximum-scale=1.0,
-        minimum-scale=1.0"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form
-      action=
-      "https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="post"
-    >
-      <fieldset class="fieldset">
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+      <fieldset class="group">
         <legend>Personal information</legend>
-
-        <label class="modal-field">
-          Surname:
+        <div class="container">
+          <label for="surname">Surname:</label>
           <input
             type="text"
             name="surname"
+            id="surname"
+            required
           >
-        </label>
+        </div>
 
-        <label class="modal-field">
-          Name:
+        <div class="container">
+          <label for="name">Name:</label>
           <input
             type="text"
             name="name"
+            id="name"
+            required
           >
-        </label>
+        </div>
 
-        <label class="modal-field">
-          How old are You?
+        <div class="container">
+          <label for="age">How old are You?</label>
           <input
             type="number"
-            name="years"
-            value="12"
+            name="userAge"
+            id="age"
             min="1"
             max="100"
+            value="12"
+            required
           >
-        </label>
+        </div>
 
-        <label class="modal-field">
-          Full date of birth:
+        <div class="container">
+          <label for="birthday">Full date of birth:</label>
           <input
             type="date"
-            name="birthDate"
+            name="userBirthDay"
+            id="birthday"
           >
-        </label>
+        </div>
 
-        <label class="modal-field">
-          I accept the term of the agreement
+        <div>
+          <label for="agreement">I accept the term of the agreement</label>
           <input
             type="checkbox"
-            name="term"
+            name="terms"
+            id="terms-and-agreement"
           >
-        </label>
+        </div>
       </fieldset>
 
-      <fieldset class="fieldset">
+      <fieldset class="group">
         <legend>Registration</legend>
-
-        <label class="modal-field">
-          E-mail:
+        <div class="container">
+          <label for="email">E-mail:</label>
           <input
             type="email"
+            name="userEmail"
+            id="email"
             placeholder="email@example.com"
             required
-            name="email"
-            maxlength="20"
           >
-        </label>
+        </div>
 
-        <label class="modal-field">
-          Password:
+        <div>
+          <label for="password">Password:</label>
           <input
             type="password"
-            name="password"
-            minlength="6"
+            name="userPassword"
+            id="password"
             required
           >
-        </label>
+        </div>
       </fieldset>
 
-      <fieldset class="fieldset">
+      <fieldset class="group">
         <legend>An interesting fact about you!</legend>
-
-        <div class="modal-field">
+        <div class="container">
+          Do you love cats?
           <label>
-            Do you love cats?
             <input
               type="radio"
-              name="cat"
+              name="preference"
               value="yes"
             >
             Yes
@@ -109,72 +106,73 @@
           <label>
             <input
               type="radio"
-              name="cat"
+              name="preference"
               value="no"
             >
             No
           </label>
         </div>
 
-        <label class="modal-field">
-          What is your favorite color?
+        <div class="container">
+          <label for="color">What is your favorite color?</label>
           <input
             type="color"
-            name="color"
-            value="#000000"
+            name="userFavoriteColor"
+            id="color"
           >
-        </label>
+        </div>
 
-        <label class="modal-field">
-          What time do you go to bed?
+        <div class="container">
+          <label for="sleep">What time do you go to bed?</label>
           <input
             type="time"
-            name="timeToBed"
+            name="userSleepTime"
+            id="sleep"
             step="2"
           >
-        </label>
+        </div>
 
-        <label class="modal-field">
-          What are your favorite brand of cars?
+        <div class="container">
+          <label for="carsBrand">What are your favorite brand of cars?</label>
           <select
-            name="brandOfCars"
+            name="cars"
+            id="carsBrand"
             multiple
           >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
           </select>
-        </label>
+        </div>
 
-        <label class="modal-field">
-          How do you rate our work?
+        <div>
+          <label for="rating">How do you rate our work?</label>
           <input
             type="range"
-            name="mark"
-            min="0"
-            max="10"
-            value="0"
+            name="userRating"
+            id="rating"
           >
-        </label>
+        </div>
       </fieldset>
 
-      <fieldset class="fieldset">
-        <legend>Additional info</legend>
-        <label class="modal-field">
-          Comments:
+      <fieldset class="group">
+        <legend>Additional info:</legend>
+        <div class="container">
+          <label for="comments">Comments:</label>
           <textarea
-            name="Comments"
+            name="userComments"
+            id="comments"
             autocomplete="off"
-          >
-          </textarea>
-        </label>
+         ></textarea>
+        </div>
 
-        <label class="modal-field">
-          Would you recommend us?
-          <select name="recommendation">
+        <div>
+          <label for="feedback">Would you recommend us?</label>
+          <select name="userFeedback" id="feedback">
             <option value="yes">yes</option>
+            <option value="no">no</option>
           </select>
-        </label>
+        </div>
       </fieldset>
 
       <button type="submit">Submit</button>
