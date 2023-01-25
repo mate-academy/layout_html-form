@@ -12,128 +12,163 @@
   </head>
   <body>
     <form
-    action="http://localhost:8080/"
+      action="http://localhost:8080/"
     method="get">
 
       <fieldset class="block">
         <legend> Personal information</legend>
         <div>
+          <label for="surname">
           Surname:
-          <input
-            type="text"
-            required
-            maxlength="20"
-            minlength="3"
-            autocomplete="off"
-          >
+            <input
+              type="text"
+              required
+              maxlength="20"
+              minlength="3"
+              autocomplete="off"
+            >
+          </label>
         </div>
+
         <div class="fieldset">
+          <label for="names">
             Name:
-          <input
-            type="text"
-            required
-            autocomplete="off"
-          >
+            <input
+              type="text"
+              required
+              autocomplete="off"
+            >
+          </label>
         </div>
+
         <div class="fieldset">
-                How old are You?
-          <input
-            type="number"
-            value="12"
-            maxlength="100"
-            minlength="1"
-            id="number"
-          >
+          <label for="howOld">
+            How old are You?
+            <input
+              type="number"
+              value="12"
+              maxlength="100"
+              minlength="1"
+              id="number"
+            >
+          </label>
         </div>
+
         <div class="fieldset">
-                  Full date of birth:
-          <input
-                  type="date"
-          >
+          <label for="dateOfBirth">
+            Full date of birth:
+            <input type="date">
+          </label>
         </div>
+
         <div class="fieldset">
-                  I accept the term of the agreement <input type="checkbox">
+          <label for="term">
+            I accept the term of the agreement
+            <input type="checkbox">
+          </label>
         </div>
       </fieldset>
 
       <fieldset class="block">
         <legend>Registration</legend>
         <div>
-                  E-mail:
-          <input
-                  type="email"
-                  placeholder="email@example.com"
-          >
+          <label for="emails">
+            E-mail:
+            <input
+              type="email"
+              placeholder="email@example.com"
+            >
+          </label>
         </div>
+
         <div class="fieldset">
-                  Password:
-          <input
-            type="password"
-            required
-          >
+          <label for="password">
+            Password:
+            <input
+              type="password"
+              required
+            >
+          </label>
         </div>
       </fieldset>
 
       <fieldset class="block">
         <legend>An interesting fact about you!</legend>
         <div>
-                 Do you love cats?
-          <input
-                  type="radio"
-                  name="Yes"
-          >
-                  Yes
-          <input
-                  type="radio"
-                  name="No"
-          >
-                  No
+          <label for="loveCatsyes">
+            Do you love cats?
+            <input
+              type="radio"
+              name="Yes"
+            >
+              Yes
+          </label>
+
+          <label for="loveCatsno">
+            <input
+              type="radio"
+              name="No"
+            >
+              No
+          </label>
         </div>
+
         <div class="fieldset">
-                  What is your favorite color? <input type="color">
+          <label for="fovoriteColor">
+            What is your favorite color?
+            <input type="color">
+          </label>
         </div>
+
         <div class="fieldset">
-          What time do you go to bed?
-          <input
-            type="time"
-            min="01:00"
-            max="00:00"
-            placeholder="--:--:--"
-            required
-          >
+          <label for="timeGoBed">
+            What time do you go to bed?
+            <input
+              type="time"
+              min="01:00"
+              max="00:00"
+              placeholder="--:--:--"
+              required
+            >
+          </label>
         </div>
+
         <div class="fieldset">
           What are your favorite brand of cars?
           <select
+            class="selector"
             name="Cars"
             multiple="Audi,BMW,Lada"
           >
-            <option value=" " selected>BMW</option>
-            <option value=" " selected>Audi</option>
-            <option value=" " selected>Lada</option>
+            <option value="BMW" selected>BMW</option>
+            <option value="Audi" selected>Audi</option>
+            <option value="Lada" selected>Lada</option>
           </select>
         </div>
+
         <div class="fieldset">
-          How do you rate our work?
-          <input
-            type="range"
-            value="0"
-          >
+          <label for="rateWork">
+            How do you rate our work?
+            <input
+              type="range"
+              value="0"
+            >
+          </label>
         </div>
       </fieldset>
 
       <fieldset class="block">
         <legend>Additional info:</legend>
         <div>
-                Comments:
-          <textarea
-                  name="comments"
-                  autocomplete="off">
-          </textarea>
+          Comments:
+          <textarea name="comments"autocomplete="off"></textarea>
         </div>
+
         <div class="fieldset">
-                  Would you recommend us?
-          <select name="Cars" >
+          Would you recommend us?
+          <select
+            class="selector"
+             name="Cars" >
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
@@ -143,7 +178,6 @@
       <div >
         <button type="submit">Submit</button>
       </div>
-
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>

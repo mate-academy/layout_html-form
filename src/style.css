@@ -16,6 +16,6 @@ button {
   width: 3.3em;
 }
 
-select {
+.selector {
   overflow: hidden;
 }
