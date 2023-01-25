@@ -17,6 +17,6 @@
   display: inline-block;
 }
 
-#cars {
+.cars {
   overflow: hidden;
 }
