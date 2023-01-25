@@ -67,19 +67,20 @@
      
     <fieldset class="fieldset-form">
       <legend>Registration</legend>
-      <div class="inputs">
-        <label for="email">E-mail:</label>
+
+      <label class="inputs">
+      E-mai:
         <input
-        type="email"
-        name="email"
-        id="email"
-        placeholder="email@example.com"
-        required
+      type="email"
+      name="email"
+       data-qa="field-placeholder"
+       placeholder="email@example.com"
         >
-      </div>
+      </label>
+      
 
       <div class="inputs">
-        <label for="password">Password</label>
+        <label for="password">Password:</label>
         <input
         type="password"
         name="password"
@@ -126,7 +127,7 @@
       </div>
 
       <div class="inputs">
-        <label for="time-to-bed">What time to you go to bed?</label>
+        <label for="time-to-bed">What time do you go to bed?</label>
         <input
         type="time"
         name="time"
