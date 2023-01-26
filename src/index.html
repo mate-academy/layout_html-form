@@ -15,11 +15,25 @@
       action="http://localhost:8080/"
       method="get"
     >
-      <fieldset class="infoAboutForm">
-        <legend>Personal information</legend>
-        <div class="infoAbout1Form">
-          <label for="surname">
-          Surname:
+
+      <fieldset class="infoAbout">
+        <legend> Personal information</legend>
+        <div>
+          <label>
+            Surname:
+            <input
+              type="text"
+              required
+              maxlength="20"
+              minlength="3"
+              autocomplete="off"
+            >
+          </label>
+        </div>
+
+        <div class="info">
+          <label>
+            Name:
             <input
               type="text"
               required
@@ -28,52 +42,39 @@
           </label>
         </div>
 
-        <div class="infoAbout1Form">
-          <label for="name">
-          Name:
-            <input
-              type="text"
-              required
-              autocomplete="off"
-            >
-          </label>
-        </div>
-
-        <div class="infoAbout1Form">
-          <label for="howOldAreYou">
-          How old are You?
+        <div class="info">
+          <label>
+            How old are You?
             <input
               type="number"
               value="12"
               maxlength="100"
               minlength="1"
-              id="number"
+              class="number"
             >
           </label>
         </div>
 
-        <div class="interestFact">
-          <label for="fullDate">
-          Full date of birth:
-            <input
-              type="date"
-            >
+        <div class="info">
+          <label>
+            Full date of birth:
+            <input type="date">
           </label>
         </div>
 
-        <div>
-          <label for="fullDate">
-          l accept the term of the agreement
+        <div class="info">
+          <label>
+            I accept the term of the agreement
             <input type="checkbox">
           </label>
         </div>
       </fieldset>
 
-      <fieldset class="infoAboutForm">
+      <fieldset class="infoAbout">
         <legend>Registration</legend>
         <div>
-          <label for="email">
-          E-mail:
+          <label>
+            E-mail:
             <input
               type="email"
               placeholder="email@example.com"
@@ -81,32 +82,31 @@
           </label>
         </div>
 
-        <div class="infoAboutRegistr">
-          <label for="password">
-          Password:
+        <div class="info">
+          <label>
+            Password:
             <input
               type="password"
               required
-              minlength="8"
-              maxlength="34"
             >
           </label>
         </div>
       </fieldset>
 
-      <fieldset class="infoAboutForm">
+      <fieldset class="infoAbout">
         <legend>An interesting fact about you!</legend>
-        <div class="interestFact">
-          <label for="lovecatyes">
-          Do you love cats?
+        <div>
+          <label>
+            Do you love cats?
             <input
               type="radio"
               name="Yes"
+              value="radio"
             >
             Yes
           </label>
 
-          <label for="lovecatno">
+          <label>
             <input
               type="radio"
               name="No"
@@ -115,19 +115,16 @@
           </label>
         </div>
 
-        <div class="interestFact">
-          <label for="interesFact">
-          What is your favorite color?
-            <input
-              type="color"
-              value="black"
-            >
+        <div class="info">
+          <label>
+            What is your favorite color?
+            <input type="color">
           </label>
         </div>
 
-        <div class="interestFact">
-          <label for="rimeGoToBed">
-          What time do you go to bed?
+        <div class="info">
+          <label>
+            What time do you go to bed?
             <input
               type="time"
               min="01:00"
@@ -138,24 +135,22 @@
           </label>
         </div>
 
-        <div class="interestFact">
-          <label for="favoriteBrand">
+        <div class="info">
           What are your favorite brand of cars?
-            <select
-              class="selector"
-              name="Cars"
-              multiple="Audi, BMV, Lada"
-            >
-              <option value="BMV" selected>BMV</option>
-              <option value="Audi" selected>Audi</option>
-              <option value="Lada" selected>Lada</option>
-            </select>
-          </label>
+          <select
+            class="selector"
+            name="Cars"
+            multiple="Audi,BMW,Lada"
+          >
+            <option value="BMW" selected>BMW</option>
+            <option value="Audi" selected>Audi</option>
+            <option value="Lada" selected>Lada</option>
+          </select>
         </div>
 
-        <div>
-          <label for="rateWork">
-          How do you rate our work?
+        <div class="info">
+          <label>
+            How do you rate our work?
             <input
               type="range"
               value="0"
@@ -164,30 +159,30 @@
         </div>
       </fieldset>
 
-      <fieldset class="infoAboutForm">
+      <fieldset class="infoAbout">
         <legend>Additional info:</legend>
         <div>
-          <label for="comments">
           Comments:
-            <textarea name="comments"autocomplete="off"></textarea>
-          </label>
+          <textarea name="comments"autocomplete="off"></textarea>
         </div>
 
-        <div class="infoAboutRegistr">
-          <label for="comments">
+        <div class="info">
           Would you recommend us?
-            <select
-              class="selector"
-              name="radio">
-              <option>yes</option>
-              <option>no</option>
-            </select>
-          </label>
+          <select
+            class="selector"
+            name="Cars"
+          >
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
         </div>
       </fieldset>
 
-      <label for="submit">
-        <input type="submit" value="Submit">
+      <label>
+        <input
+          type="submit"
+          value="Submit"
+        >
       </label>
     </form>
     <script type="text/javascript" src="./main.js"></script>

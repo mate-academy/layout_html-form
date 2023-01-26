@@ -1,25 +1,11 @@
-/* styles go here */
-
-.infoAbout1Form {
-  margin-bottom: 10px;
-}
-
-.infoAboutRegistr {
-  padding-top: 10px;
-}
-
-.interestFact {
-  margin-bottom: 10px;
-}
-
-.selector {
-  overflow: hidden;
-}
-
-.infoAboutForm {
+.infoAbout {
   margin-bottom: 20px;
 }
 
-#number {
+.info {
+  padding-top: 10px;
+}
+
+.number {
   width: 4.9em;
 }
