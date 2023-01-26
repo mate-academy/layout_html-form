@@ -1,1 +1,11 @@
-/* styles go here */
+.infoAbout {
+  margin-bottom: 20px;
+}
+
+.info {
+  padding-top: 10px;
+}
+
+.number {
+  width: 4.9em;
+}

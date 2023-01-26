@@ -11,7 +11,180 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form
+      action="http://localhost:8080/"
+      method="get"
+    >
+
+      <fieldset class="infoAbout">
+        <legend> Personal information</legend>
+        <div>
+          <label>
+            Surname:
+            <input
+              type="text"
+              required
+              maxlength="20"
+              minlength="3"
+              autocomplete="off"
+            >
+          </label>
+        </div>
+
+        <div class="info">
+          <label>
+            Name:
+            <input
+              type="text"
+              required
+              autocomplete="off"
+            >
+          </label>
+        </div>
+
+        <div class="info">
+          <label>
+            How old are You?
+            <input
+              type="number"
+              value="12"
+              maxlength="100"
+              minlength="1"
+              class="number"
+            >
+          </label>
+        </div>
+
+        <div class="info">
+          <label>
+            Full date of birth:
+            <input type="date">
+          </label>
+        </div>
+
+        <div class="info">
+          <label>
+            I accept the term of the agreement
+            <input type="checkbox">
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="infoAbout">
+        <legend>Registration</legend>
+        <div>
+          <label>
+            E-mail:
+            <input
+              type="email"
+              placeholder="email@example.com"
+            >
+          </label>
+        </div>
+
+        <div class="info">
+          <label>
+            Password:
+            <input
+              type="password"
+              required
+            >
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="infoAbout">
+        <legend>An interesting fact about you!</legend>
+        <div>
+          <label>
+            Do you love cats?
+            <input
+              type="radio"
+              name="Yes"
+              value="radio"
+            >
+            Yes
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="No"
+            >
+            No
+          </label>
+        </div>
+
+        <div class="info">
+          <label>
+            What is your favorite color?
+            <input type="color">
+          </label>
+        </div>
+
+        <div class="info">
+          <label>
+            What time do you go to bed?
+            <input
+              type="time"
+              min="01:00"
+              max="00:00"
+              placeholder="--:--:--"
+              required
+            >
+          </label>
+        </div>
+
+        <div class="info">
+          What are your favorite brand of cars?
+          <select
+            class="selector"
+            name="Cars"
+            multiple="Audi,BMW,Lada"
+          >
+            <option value="BMW" selected>BMW</option>
+            <option value="Audi" selected>Audi</option>
+            <option value="Lada" selected>Lada</option>
+          </select>
+        </div>
+
+        <div class="info">
+          <label>
+            How do you rate our work?
+            <input
+              type="range"
+              value="0"
+            >
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="infoAbout">
+        <legend>Additional info:</legend>
+        <div>
+          Comments:
+          <textarea name="comments"autocomplete="off"></textarea>
+        </div>
+
+        <div class="info">
+          Would you recommend us?
+          <select
+            class="selector"
+            name="Cars"
+          >
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <label>
+        <input
+          type="submit"
+          value="Submit"
+        >
+      </label>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
