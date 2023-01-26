@@ -1,14 +1,14 @@
 /* styles go here */
 
-label {
+.label {
   display: block;
   margin-bottom: 10px;
 }
 
-label:last-child {
+.label:last-child {
   margin-bottom: 0;
 }
 
-fieldset {
+.fieldset {
   margin-bottom: 20px;
 }
