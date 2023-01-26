@@ -1,1 +1,16 @@
 /* styles go here */
+.form-field input {
+  margin-top: 10px;
+}
+
+.form-field select {
+  margin-top: 10px;
+}
+
+.fieldset {
+  margin-top: 20px;
+}
+
+.button {
+  margin-top: 20px;
+}
