@@ -1,1 +1,12 @@
-/* styles go here */
+.fieldset-form {
+  margin-bottom: 20px;
+}
+
+.inputs {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.inputs:last-child {
+  margin-bottom: 0;
+}
