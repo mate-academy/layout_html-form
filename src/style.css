@@ -1,12 +1,12 @@
-label {
+.wrapper {
   display: block;
 }
 
-fieldset {
+.field {
   margin-bottom: 20px;
 }
 
-label:not(:last-child) {
+.wrapper:not(:last-child) {
   margin-bottom: 10px;
 }
 

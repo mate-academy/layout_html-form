@@ -16,9 +16,9 @@
       action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
       method="post"
     >
-      <fieldset>
+      <fieldset class="field">
         <legend>Personal information</legend>
-        <label>Surname:
+        <label class="wrapper">Surname:
           <input 
             type="text" 
             name="surname" 
@@ -27,7 +27,7 @@
           >
         </label>
 
-        <label>Name:
+        <label class="wrapper">Name:
           <input 
             type="text" 
             name="name" 
@@ -36,7 +36,7 @@
           >
         </label>
 
-        <label>How old are You?
+        <label class="wrapper">How old are You?
           <input 
             type="number" 
             name="age" 
@@ -47,7 +47,7 @@
           >
         </label>
 
-        <label>Full date of birth:
+        <label class="wrapper">Full date of birth:
           <input 
             type="date" 
             name="birthdate" 
@@ -55,14 +55,14 @@
           >
         </label>
 
-        <label>I accept the term of the agreement
+        <label class="wrapper">I accept the term of the agreement
           <input type="checkbox" name="terms">
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="field">
         <legend>Registration</legend>
-        <label>E-mail:
+        <label class="wrapper">E-mail:
           <input 
             type="email" 
             name="email" 
@@ -70,22 +70,23 @@
           >
         </label>
 
-        <label>Password:
+        <label class="wrapper">Password:
           <input type="password" name="pass">
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="field">
         <legend>An interesting fact about you!</legend>
-        <label class="inline radioWrap">Do you love cats?
+        <label class="inline radioWrap wrapper">Do you love cats?
           <input 
             class="radio" 
             type="radio" 
             name="lovecats" 
             value="love"
-          >Yes
+          >
+          Yes
         </label>
-        <label class="inline radioWrap">
+        <label class="inline radioWrap wrapper">
           <input 
             class="radio" 
             type="radio" 
@@ -94,7 +95,7 @@
           >No
         </label>
 
-        <label>What is your favorite color?
+        <label class="wrapper">What is your favorite color?
           <input 
             type="color" 
             name="choosecolor" 
@@ -102,7 +103,7 @@
           >
         </label>
 
-        <label>What time do you go to bed?
+        <label class="wrapper">What time do you go to bed?
           <input 
             type="time" 
             name="bedtime" 
@@ -110,7 +111,7 @@
           >
         </label>
 
-        <label>What are your favorite brand of cars?
+        <label class="wrapper">What are your favorite brand of cars?
           <select name="carbrand" multiple>
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
@@ -118,7 +119,7 @@
           </select>
         </label>
 
-        <label>How do you rate our work?
+        <label class="wrapper">How do you rate our work?
           <input 
             type="range" 
             name="rate" 
@@ -127,17 +128,16 @@
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="field">
         <legend>Additional info:</legend>
-        <label>Comments:
+        <label class="wrapper">Comments:
           <textarea 
             name="comment" 
             cols="20" rows="2"
-          >
-          </textarea>
+          ></textarea>
         </label>
 
-        <label>Would you recommend us?
+        <label class="wrapper">Would you recommend us?
           <select name="recommend">
             <option value="yes">yes</option>
             <option value="no">no</option>
