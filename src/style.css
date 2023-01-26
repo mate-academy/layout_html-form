@@ -1,1 +1,13 @@
 /* styles go here */
+.input-element {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.block {
+  margin-bottom: 20px;
+}
+
+.last-element {
+  margin-bottom: 0;
+}
