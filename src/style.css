@@ -1,1 +1,26 @@
-/* styles go here */
+.wrapper {
+  display: block;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.wrapper:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.submitBtn {
+  margin-top: 8px;
+}
+
+.inline {
+  display: inline;
+}
+
+.radio {
+  margin-bottom: 14px;
+  margin-right: 7px;
+}
+/* додати margin 10px до обгортки не спрацювало.
+на референсі трохи більші відступи від кружечка radio до слова yes/no */
