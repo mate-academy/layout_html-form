@@ -14,9 +14,9 @@
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
           method="post"
     >
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <label>
+        <label class="label">
           Surname:
           <input
             type="text"
@@ -25,7 +25,8 @@
             autocomplete="off"
           >
         </label>
-        <label>
+
+        <label class="label">
           Name:
           <input
             type="text"
@@ -34,7 +35,8 @@
             autocomplete="off"
           >
         </label>
-        <label>
+
+        <label class="label">
           How old are You?
           <input
             type="number"
@@ -44,15 +46,17 @@
             value="12"
           >
         </label>
-        <label>
+
+        <label class="label">
           Full date of birth:
           <input
             type="date"
-            name="date-of-birth"
+            name="DateOfBirth"
             required
           >
         </label>
-        <label>
+
+        <label class="label">
           I accept the term of the agreement
           <input
             type="checkbox"
@@ -62,9 +66,9 @@
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Registration</legend>
-        <label>
+        <label class="label">
           E-mail:
           <input
             type="email"
@@ -75,44 +79,54 @@
             placeholder="email@example.com"
           >
         </label>
-        <label>
-          Password: <input type="password"
-                          name="password"
-                          required
+
+        <label class="label">
+          Password: <input
+                      type="password"
+                      name="password"
+                      required
                     >
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>An interesting fact about you! </legend>
         Do you love cats?
         <label class="diff">
-          <input type="radio"
-                 name="catlover"
-                 value="yes"
+          <input
+            type="radio"
+            name="catlover"
+            value="yes"
           >
           Yes
         </label>
-        <label class="diff">
-          <input type="radio"
-                 name="catlover"
-                 value="no"
+
+        <label class="label diff">
+          <input
+            type="radio"
+            name="catlover"
+            value="no"
           >
           No
         </label>
-        <label>
+
+        <label class="label">
           What is your favorite color?
-          <input type="color"
-                 name="color"
+          <input
+            type="color"
+            name="color"
           >
         </label>
-        <label>
+
+        <label class="label">
           What time do you go to bed?
-          <input type="time"
-                 name="time-to-bed"
+          <input
+            type="time"
+            name="TimeToBed"
           >
         </label>
-        <label>
+
+        <label class="label">
           What are your favorite brand of cars?
           <select name="brand" multiple>
             <option value="BMW">BMW</option>
@@ -120,24 +134,26 @@
             <option value="Lada">Lada</option>
           </select>
         </label>
-        <label>
+
+        <label class="label">
           How do you rate our work?
-          <input type="range"
-                 name="work-rate"
+          <input
+            type="range"
+            name="WorkRate"
           >
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Additional info: </legend>
-        <label>
+        <label class="label">
           Coments:
-          <textarea name="coments">
-          </textarea>
+          <textarea name="coments"></textarea>
         </label>
-        <label>
+
+        <label class="label">
           Would you recommend us?
-          <select name="recommend-us">
+          <select name="RecommendUs">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
