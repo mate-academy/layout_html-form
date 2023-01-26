@@ -10,9 +10,13 @@ function onSubmit(event) {
 
   const formValue = [...form.elements]
     .filter(({ type }) => !INPUT_BUTTON_TYPES.includes(type))
-    .reduce((acc, { value, name }) => ({
-      ...acc, [name]: value,
-    }), {});
+    .reduce(
+      (acc, { value, name }) => ({
+        ...acc,
+        [name]: value,
+      }),
+      {}
+    );
 
   window.alert(
     `Form name: ${form.name}\nForm value: ${JSON.stringify(formValue, null, 4)}`
