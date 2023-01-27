@@ -1,17 +1,10 @@
 /* styles go here */
 
-fieldset {
+.container {
   margin-bottom: 20px;
-  /* border: 2px solid black; */
 }
 
 .form-field {
   margin-bottom: 10px;
   display: block;
 }
-
-/* legend {
-  background-color: #000;
-  color: #fff;
-  padding: 3px 6px;
-} */
