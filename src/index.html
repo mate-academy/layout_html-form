@@ -16,7 +16,7 @@
         <legend>Personal information</legend>
         
         <div class="per">
-          <label for="name">
+          <label for="surName">
             Surname:
           </label>
           <input 
@@ -30,7 +30,8 @@
           <label for="name">
             Name:
           </label>
-          <input id="name"
+          <input 
+            id="name"
             type="text"
             name="name" 
             required
@@ -41,9 +42,13 @@
           <label for="age">
             How old are You?
           </label>
-          <input id="age" class="age"
-            type="number" name="age" 
-            value="12" min="1"
+          <input 
+            id="age" 
+            class="age"
+            type="number" 
+            name="age" 
+            value="12"
+            min="1"
             max="100"
           >
         </div>
@@ -94,7 +99,8 @@
           <label for="password">
             Password:
           </label>
-          <input id="password" 
+          <input 
+            id="password" 
             type="password" 
             name="password" 
             minlength="10" 
@@ -155,20 +161,16 @@
           </label>
           <select 
             id="cars" 
-            name="cars" 
-            required>
+            name="car-srlect" 
+            required
+            multiple
+          >
 
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
             <option value="lada">Lada</option>
 
           </select>
-          <!-- <textarea 
-            name="cars" 
-            id="cars" 
-            cols="5" 
-            rows="4">BMW Audi Lada
-          </textarea> -->
         </div>
 
         <div class="facting">
