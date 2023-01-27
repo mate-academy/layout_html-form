@@ -1,9 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
+    <meta name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,7 +10,127 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form>
+      <fieldset>
+        <legend>Personal information</legend>
+
+        <div class="form-field">
+          Surname:
+
+          <input type="text">
+        </div>
+
+        <div class="form-field">Name:</div>
+        <input type="text">
+
+        <div class="form-field">
+          How old are You?
+          <input
+            value="12"
+            type="number"
+            min="1"
+            max="100"
+          >
+        </div>
+
+        <div class="form-field">
+          Full date of birth:
+          <input type="month">
+        </div>
+
+        <div class="form-field">
+          I accept the tern of the agreement
+          <input type="checkbox">
+        </div>
+      </fieldset>
+      <br>
+
+      <fieldset>
+        <legend>Registration</legend>
+
+        <div class="form-field">
+          E-mail:
+          <input type="text" placeholder="email@example.com">
+        </div>
+
+        <div class="form-field">
+          Password
+          <input type="password">
+        </div>
+      </fieldset>
+
+      <br>
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+        <div class="form-field">Do you love cats?</div>
+        <div>
+          <input
+            type="radio"
+            name="sex"
+            value="y"
+          >Yes
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            name="sex"
+            value="y"
+          >No
+        </div>
+
+        <div class="form-field">
+          What is you favorite color?
+          <input type="color">
+        </div>
+
+        <div class="form-field">
+          What time do you go to bed?
+          <input type="time">
+        </div>
+
+        <div class="form-field">
+          What are your faborite brand of cars?
+          <select
+          name="cars"
+          required multiple>
+            <option>BMW</option>
+            <option>Audi</option>
+            <option>Lada</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          How do you rate our work?
+          <input type="range">
+        </div>
+      </fieldset>
+
+      <br>
+      <fieldset>
+        Coments:
+        <legend>Additional info:</legend>
+        <textarea
+          name="feedback"
+          cols="30"
+          rows="3"
+        >
+        </textarea>
+        <br><br>
+
+        <div
+          class="form-field"
+        >
+          Would you recomend us?
+          <select name="recomends">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+      </fieldset>
+      <br>
+      <button type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
