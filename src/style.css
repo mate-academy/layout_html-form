@@ -2,10 +2,15 @@ fieldset {
   margin-bottom: 20px;
 }
 
-div {
+label {
+  display: block;
   margin-bottom: 10px;
 }
 
-div:last-child {
+.cats {
+  display: inline-block;
+}
+
+label:last-child {
   margin-bottom: 0;
 }
