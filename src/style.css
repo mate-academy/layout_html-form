@@ -8,13 +8,12 @@
   margin-bottom: 20px;
 }
 
-.field-set:last-child {
-  margin-bottom: 0;
-  background-color: blue;
-  /* padding-bottom: 0;
-  /* таким способом нічого не виконуеться*/
+.form-field:last-child {
+  padding-bottom: 0;
 }
 
-.field-set :nth-child(2) {
+.form-field:nth-child(2) {
   padding-top: 0;
 }
+/* будь ласка, 
+напишіть розгорнуто що мені треба змінити, я не розумію що роблю не так*/
