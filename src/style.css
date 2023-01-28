@@ -1,1 +1,12 @@
-/* styles go here */
+.form-info {
+  margin-bottom: 10px;
+}
+
+.border {
+  margin-bottom: 20px;
+}
+
+.reg {
+  display: block;
+  margin-bottom: 10px;
+}
