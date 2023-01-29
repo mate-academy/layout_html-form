@@ -1,1 +1,79 @@
-/* styles go here */
+.personalFieldset {
+  border: 1px solid #000;
+  display: inline-block;
+}
+
+.personalInfo {
+  margin-bottom: 20px;
+}
+
+.registration {
+  margin-bottom: 20px;
+}
+
+.aboutYou {
+  margin-bottom: 20px;
+}
+
+.addInfo {
+  margin-bottom: 20px;
+}
+
+.submitButton {
+  margin-bottom: 20px;
+}
+
+.personalLegend {
+  color: #123;
+}
+
+.personalDate {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.acceptInformation {
+  display: block;
+}
+
+.loveCat {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.password {
+  display: block;
+}
+
+.email {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.color {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.timeToBad {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.favoriteCar {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.rateWork {
+  display: block;
+}
+
+.comments {
+  display: inline-block;
+}
+
+.remmendUs {
+  display: block;
+  margin-top: 10px;
+}
