@@ -14,157 +14,132 @@
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <fieldset class="form-group">
         <legend>Personal information</legend>
-        <div class="form-fild">
-          <label for="Surname">Surname:</label>
+        <label class="form-filed">
+          Surname:
           <input
             type="text"
             name="Surname"
             autocomplete="off" 
-            id="Surname"
           >
-        </div>
-        <div class="form-fild">
-          <label for="Name">Name:</label>
+        </label>
+        <label class="form-filed">
+          Name:
           <input 
             type="text" 
             name="Name" 
             autocomplete="off" 
-            id="Name"
           >
-        </div>
-        <div class="form-fild">
-          <label for="How old are You?">How old are You?</label>
+        </label>
+        <label class="form-filed">
+          How old are You?
           <input
             type="number" 
-            name="How old are You?" 
+            name="age" 
             min="1" 
             max="100" 
             value="12" 
-            id="How old are You?"
           >
-        </div>
-        <div class="form-fild">
-          <label for="Full date of birth:">
-            Full date of birth:
-          </label>
+        </label>
+        <label class="form-filed">
+          Full date of birth:
           <input
             type="date" 
-            name="Full date of birth:" 
-            id="Full date of birth:"
+            name="date" 
           >
-        </div>
-        <div class="form-fild">
-          <label for="I accept the term of the agreement">
+        </label>
+        <label class="form-filed">
             I accept the term of the agreement
-          </label>
           <input
             type="checkbox" 
-            name="I accept the term of the agreement" 
-            id="I accept the term of the agreement"
+            name="terms" 
             required 
           >
-        </div>
+        </label>
       </fieldset>   
       <fieldset class="form-group">
         <legend>Registration</legend>
-        <div class="form-fild">
-          <label for="E-mail:">E-mail:</label>
+        <label class="form-filed">
+          E-mail:
           <input
             type="email" 
             name="email" 
             multiple  
             placeholder="email@example.com" 
-            id="E-mail:"
           >
-        </div>
-        <div class="form-fild">
-          <label for="Password:">Password: </label>
+        </label>
+        <label class="form-filed">
+          Password:
           <input
             type="password" 
             name="password" 
             autocomplete="off" 
-            id="Password:"
             minlength="6"
             maxlength="15"
           >
-        </div>
+        </label>
       </fieldset>
       <fieldset class="form-group">
         <legend>An interesting fact about you!</legend>
-        <div class="form-fild">
-          <label for="Do you love cats? ">Do you love cats? </label>
+        <label class="form-filed">
+          Do you love cats?
           <input
             type="radio" 
-            name="Do you love cats" 
-            id="Do you love cats? "
+            name="Yes" 
           >
             Yes
-          <label for="Do you love cat"></label>   
           <input
             type="radio" 
-            name="Do you love cats" 
-            id="Do you love cat"
+            name="No" 
           > 
             No
-        </div>
-        <div class="form-fild">
-          <label for="What is your favorite color?">What is your favorite color?</label>
+        </label>
+        <label class="form-filed">
+          What is your favorite color?
           <input
             type="color" 
-            id="What is your favorite color?" 
-            name="What is your favorite color?"
+            name="color?"
           >
-        </div>
-        <div class="form-fild">
-          <label for="What time do you go to bed?">What time do you go to bed?</label>
+        </label>
+        <label class="form-filed">
+          What time do you go to bed?
           <input
             type="time" 
-            name="What time do you go to bed" 
-            id="What time do you go to bed?"
+            name="time"
           >
-        </div>
-        <div class="form-fild">
-          <label for="What ere your favorite brand of cars?">What ere your favorite brand of cars?</label>
-          <select name="What ere your favorite brand of cars" id="What ere your favorite brand of cars?"
-            multiple
-          >
+        </label>
+        <label class="form-filed">
+          What ere your favorite brand of cars?
+          <select name="cars"multiple>
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
           </select>
-        </div> 
-        <div class="form-fild">
-          <label for="How do you rate our work?">How do you rate our work?</label>
+        </label> 
+        <label class="form-filed">
+          How do you rate our work?
           <input
             type="range" 
-            name="How do you rate our work" 
-            id="How do you rate our work?"
+            name="rating" 
             value="0"
           >
-        </div>
+        </label>
       </fieldset>
       <fieldset class="form-group">
         <legend>Additional info:</legend>
-        <div class="additional-info">
-          <label class="comm" for="Comments:">
+        <label class="additional-info">
             Comments:
-          </label>
           <textarea 
-            id="Comments:"
-            name="Comments"
+            name="comments"
           >
           </textarea>
-        </div>
-        <div class="form-fild">
-          <label for="Would you recommend us?">
+        </label>
+        <label class="form-filed">
             Would you recommend us?
-          </label>
-          <select name="Would you recommend us?"
-            id="Would you recommend us?">
+          <select name="recommend">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
-        </div>
+        </label>
       </fieldset>
       <button type="submit">Submit</button>
     </form>

@@ -1,9 +1,13 @@
 
-.form-fild {
+label {
+  display: block;
+}
+
+.form-filed {
   margin-bottom: 10px;
 }
   
-.form-fild:last-child {
+.form-filed:last-child {
   margin-bottom: 0;
 }
 
