@@ -1,1 +1,18 @@
 /* styles go here */
+.labelBlock {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.labelInlineBlock {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.labelBlockWithoutMargin {
+  display: block ;
+}
+
+.fieldSet {
+  margin-bottom: 20px;
+}
