@@ -14,9 +14,9 @@
       
       <fieldset class="form-fieldset">
         <legend>Personal information</legend>
-
         <label 
-          class="form-field">Surname:
+          class="form-field">
+          Surname:
           <input 
             type="text" 
             id="surname"
@@ -25,7 +25,8 @@
             required
           >
         </label>
-        <label class="form-field">Name:
+        <label class="form-field">
+          Name:
           <input 
             type="text" 
             id="name" 
@@ -36,7 +37,8 @@
           >
         </label>
 
-        <label class="form-field">How old are You?
+        <label class="form-field">
+          How old are You?
           <input 
             type="number" 
             id="age" 
@@ -47,7 +49,8 @@
           >
         </label>
 
-        <label class="form-field">Full date of birth:
+        <label class="form-field">
+          Full date of birth:
           <input 
             type="date" 
             id="birth" 
@@ -55,7 +58,8 @@
           >
         </label>
 
-        <label class="form-field">I accept the term of the agreement
+        <label class="form-field">
+          I accept the term of the agreement
           <input 
             type="checkbox" 
             id="agree" 
@@ -65,9 +69,12 @@
       </fieldset>
 
       <fieldset class="form-fieldset">
-        <legend>Registration</legend>
+        <legend> 
+          Registration
+        </legend>
 
-        <label class="form-field">E-mail:
+        <label class="form-field">
+          E-mail:
           <input 
             type="email" 
             id="email" 
@@ -76,7 +83,8 @@
           >
         </label>
 
-        <label class="form-field">Password:
+        <label class="form-field">
+          Password:
           <input 
             type="password" 
             id="password" 
@@ -86,23 +94,32 @@
       </fieldset>
 
       <fieldset class="form-fieldset">
-        <legend>An interesting fact about you!</legend>
-        <label class="form-field">Do you love cats?
-          <input 
-            type="radio" 
-            name="loveCats" 
-            value="yes"
-          >
-          Yes
-          <input 
-            type="radio" 
-            name="loveCats" 
-            value="no"
-          >
-          No
-        </label>
+        <legend>
+          An interesting fact about you!
+        </legend>
+        <div class="form-field">
+          Do you love cats?
+          <label>
+            <input 
+              type="radio" 
+              name="cat" 
+              value="y"
+            >
+            Yes
+          </label>
 
-        <label class="form-field">What is your favorite color?
+          <label>
+            <input 
+              type="radio" 
+              name="cat" 
+              value="n"
+            >
+            No
+          </label>
+        </div>
+      
+        <label class="form-field">
+          What is your favorite color?
           <input 
             type="color" 
             name="color" 
@@ -110,7 +127,8 @@
           >
         </label>
 
-        <label class="form-field">What time do you go to bed?
+        <label class="form-field">
+          What time do you go to bed?
           <input 
             type="time" 
             name="timeToBed" 
@@ -118,19 +136,27 @@
           >
         </label>
 
-        <label class="form-field">What are your favorite brand of cars?
+        <label class="form-field">
+          What are your favorite brand of cars?
           <select 
             name="brand" 
             id="brand" 
             multiple
           >
-            <option value="BMW">BMW</option>
-            <option value="Audi">Audi</option>
-            <option value="Lada">Lada</option>
+            <option value="BMW">
+              BMW
+            </option>
+            <option value="Audi">
+              Audi
+            </option>
+            <option value="Lada">
+              Lada
+            </option>
           </select>
         </label>
 
-        <label class="form-field">How do you rate our work?
+        <label class="form-field">
+          How do you rate our work?
           <input 
             type="range" 
             name="rateWork" 
@@ -140,8 +166,11 @@
       </fieldset>
 
       <fieldset class="form-fieldset">
-        <legend>Additional info:</legend>
-        <label class="form-field">Comments:
+        <legend>
+          Additional info:
+        </legend>
+        <label class="form-field">
+          Comments:
           <textarea 
             name="comments" 
             id="comments" 
@@ -150,20 +179,26 @@
           </textarea>
         </label>
 
-        <label class="form-field">Would you recommend us?
+        <label class="form-field">
+          Would you recommend us?
           <select 
             name="recommend" 
             id="recommend"
           >
-            <option value="yes">yes</option>
-            <option value="no">no</option>
+            <option value="yes">
+              yes
+            </option>
+            <option value="no">
+              no
+            </option>
           </select>
         </label>
       </fieldset>
-      <button type="submit">Submit</button>
+
+      <button type="submit">
+        Submit
+      </button>
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
-
 </html>
-
