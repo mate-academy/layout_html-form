@@ -13,135 +13,142 @@
   <body>
     <h1>HTML Form</h1>
     <form class="form" >
-      <section class="section"> Personal informatiom:
+      <section class="section">
+        <div class="title">Personal informatiom:</div>
         <div class="input">
           <label>Surname
             <input 
-              type="text"   
-              autocomplete="off" 
-              name="surname"
+            type="text"   
+            autocomplete="off" 
+            name="surname"
             >
           </label>   
         </div>
         <div class="input">
           <label>Name 
             <input type="text"
-              autocomplete="off" 
-              name="name" 
-              required 
+            autocomplete="off" 
+            name="name" 
+            required 
             >
           </label>  
         </div>
         <div class="input">
           <label>How old are You
             <input type="number"
-              name="numberOfTelephone"
-              minlength="2"
-              maxlength="3" 
+            name="numberOfTelrphone"
+            minlength="2"
+            maxlength="3" 
             >
           </label> 
         </div>
         <div class="input">
-          <label>Full date of birdthh 
+          <label>Date of birdthh
             <input 
-              type="date" 
-              name="dateOfBirdth"
+            type="date" 
+            name="dateOfBirdth"
             >
           </label> 
         </div>
         <div class="input">
           <label>I accept the term of the agreemet
-            <input   
-              type="checkbox" 
-              name="acept" 
-              required
+            <input 
+            type="checkbox" 
+            name="acept" 
+            required
             >
           </label> 
         </div>
       </section> 
-      <section class=" section registration">Registration
+      <section class=" section registration">
+        <div class="title">Registration</div>
         <div class="input">
           <label>E-mail
             <input 
-              type="email" 
-              name="emale" 
-              placeholder="email@example.com" 
-              required
+            type="email" 
+            name="emale" 
+            placeholder="email@example.com" 
+            required
             >
           </label> 
         </div>
         <div class="input">
           <label>Password 
             <input 
-              type="password" 
-              name="password" 
-              required
+            type="password" 
+            name="password" 
+            required
             >
           </label> 
         </div>
       </section>
-      <section class="section interesting">Add intresting fact about you!
+      <section class="section interesting">
+        <div class="title">Add intresting fact about you!</div>
         <div class="input">Do you love cats
-          <label> Yes:
+          <label> 
             <input 
-              type="radio"
-              name="LoveCats"
-              value="yes"
+            type="radio"
+            name="LoveCats"
+            value="yes"
             >
+            Yes
           </label> 
-          <label>No:
+          <label>
             <input 
-              type="radio" 
-              name="LoveCats" 
-              value="no"
+            type="radio" 
+            name="LoveCats" 
+            value="no"
             >
+            No
           </label> 
         </div>
         <div class="input">
           <label> What is your favorite color?
             <input 
-              type="color" 
-              name="favoriteColor"
+            type="color" 
+            name="favoriteColor"
             >
           </label>
         </div>
         <div class="input">
           <label> What time do you go bad? 
             <input 
-              type="time" 
-              name="timeToBad"
+            type="time" 
+            name="timeToBad"
             >
           </label>
         </div>
         <div class="input">
           <label > What are your favorite brand of cars?
-            <input 
-              type="multiple" 
-              name="favoriteCar"
+            <select 
+            type="multiple" 
+            name="favoriteCar"
+            multiple
             >
             <option value="bmv">BMW</option>
             <option value="audi">Audi</option>
             <option value="lada">Lada</option>
-            </input>
+          </select>
           </label>
         </div> 
         <div class="input">
           <label > How do you rate our work? 
             <input 
-              type="range" 
-              min="0"
-              max="10"
-              value="0"
+            type="range" 
+            min="0"
+            max="10"
+            value="0"
             >
           </label>
         </div>
       </section>
-      <section class="section"> Additional info:
+      <section class="section">
+        <div class="title">Additional info:</div>
         <div class="input">Comments:
           <textarea 
-            name="fitBack" 
-            cols="20" 
-            rows="2"
+          name="fitBack" 
+          cols="20" 
+          rows="2"
           >
           </textarea>
         </div>
@@ -153,9 +160,9 @@
         </div>
       </section>
       <button 
-          class="button" 
-          type="submit" 
-          name="button">submit
+        class="button" 
+        type="submit" 
+        name="button">submit
       </button>
     </form>
 
