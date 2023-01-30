@@ -1,1 +1,20 @@
-/* styles go here */
+.fieldset {
+  margin: 20px 2px;
+}
+
+.fieldset:first-of-type {
+  margin-top: 0;
+}
+
+.label {
+  display: block;
+  margin: 10px 0;
+}
+
+.label:first-of-type {
+  margin-top: 0;
+}
+
+.label:last-child {
+  margin-bottom: 0;
+}
