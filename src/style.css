@@ -1,1 +1,16 @@
-/* styles go here */
+.section {
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+.input {
+  margin-top: 10px;
+}
+
+.title{
+  position: relative;
+  top: -20px;
+  background-color: white;
+  width: fit-content;
+}
