@@ -20,10 +20,10 @@
       id="form"
     >
       <fieldset class="fieldSet">
-        <legend>Personal Information</legend>
+        <legend>Personal information</legend>
 
         <div>
-          <label for="sname">Surname:</label>
+          <label class="form_field" for="sname">Surname:</label>
           <input
             class="form_element"
             type="text"
@@ -33,7 +33,7 @@
         </div>
 
         <div>
-          <label for="name">Name:</label>
+          <label class="form_field" for="name">Name:</label>
           <input
             class="form_element"
             type="text"
@@ -43,7 +43,7 @@
         </div>
 
         <div>
-          <label for="age">How old are You?</label>
+          <label class="form_field" for="age">How old are You?</label>
           <input
             class="form_element"
             type="number"
@@ -55,7 +55,7 @@
         </div>
 
         <div>
-          <label for="dobirth">Full date of birth:</label>
+          <label class="form_field" for="dobirth">Full date of birth:</label>
           <input
             class="form_element"
             type="date"
@@ -67,9 +67,9 @@
         </div>
 
         <div>
-          <label for="termAgreement">I accept the term of the agreement:</label>
+          <label class="form_field" for="termAgreement">I accept the term of the agreement</label>
           <input
-            class="last_element"
+            class="checkbox"
             type="checkbox"
             id="termAgreement"
             name="termAgreement"
@@ -80,7 +80,7 @@
       <fieldset class="fieldSet">
         <legend>Registration</legend>
 
-        <label for="email">E-mail:</label>
+        <label class="form_field" for="email">E-mail:</label>
         <input
           class="form_element"
           type="email"
@@ -93,9 +93,8 @@
           multiple
         ><br>
 
-        <label for="password">Password:</label>
+        <label class="form_field" for="password">Password:</label>
         <input
-          class="last_element"
           type="password"
           name="password"
           id="password"
@@ -110,60 +109,59 @@
         <legend>An interesting fact about you!</legend>
 
         <div>
-          <label for="cats">Do you love cats?</label>
-          <input
-            class="form_element"
-            type="radio"
-            name="cats"
-            id="yes"
-            checked
-          >
-          <label for="yes">Yes</label>
+          <label class="form_field form_element" for="cats">Do you love cats?</label>
+          <label for="yes">
+            <input
+              class="form_element"
+              type="radio"
+              name="cats"
+              id="yes"
+              checked
+            >
+          Yes
+          </label>
+          <label class="form_field" for="no">
+            <input
+              class="form_element"
+              type="radio"
+              name="cats"
+              id="no"
+            >
+            No
+          </label>
 
-          <input
-            class="form_element"
-            type="radio"
-            name="cats"
-            id="no"
-          >
-          <label for="no">No</label><br>
         </div>
 
         <div>
-          <label for="favColor">What is your favourite color?</label>
+          <label class="form_field" for="favColor">What is your favorite color?</label>
           <input
             class="form_element"
             type="color"
             name="favColor"
             id="favColor"
             value="black"
-          ><br>
+          >
+
         </div>
 
         <div>
-          <label for="timeBed">What time do you go to bed?</label>
+          <label class="form_field" for="timeBed">What time do you go to bed?</label>
           <input
             class="form_element"
             type="time"
             name="timeBed"
             id="timeBed"
-            value="--:--"
+            step="2"
           ><br>
         </div>
 
         <div>
-          <label for="favCar">What are your favourite brand of cars?</label>
+          <label class="form_field form_element" for="favCar">What are your favorite brand of cars?</label>
           <select
-            class="select_element"
             name="favCar"
             id="favCar"
+            multiple
           >
-            <option
-              value= "0"
-              disabled
-              selected
-            >
-            </option>
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
@@ -171,9 +169,8 @@
         </div>
 
         <div>
-          <label for="rateWork">How do you rate our work?</label>
+          <label class="form_field" for="rateWork">How do you rate our work?</label>
           <input
-            class="last_element"
             type="range"
             name="rateWork"
             id="rateWork"
@@ -187,8 +184,9 @@
         <legend>Additional info</legend>
 
         <div>
-          <label for="comments">Comments</label>
+          <label class="form_field" for="comments">Comments</label>
           <textarea
+            class="form_element"
             name="comments"
             id="comments"
             autocomplete="off">
@@ -196,16 +194,15 @@
         </div>
 
         <div class="recommend_select">
-          <label for="recommend">Would you recommend us?</label>
+          <label class="form_field" for="recommend">Would you recommend us?</label>
           <select
-            class="select_element"
             name="recommend"
             id="recommend">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
         </div>
-        
+
       </fieldset>
     </form>
     <div class="button_Submit">
