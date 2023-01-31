@@ -1,1 +1,54 @@
 /* styles go here */
+
+.form-field {
+  margin-bottom: 8px;
+}
+
+.form-field-text {
+  padding-top: 3px;
+}
+
+.registr {
+  padding-top: 4px;
+}
+
+.form-field-registr-email {
+  margin-top: -4px;
+}
+
+.form-field-registr-password {
+  margin-top: 9px;
+}
+
+.cats {
+  padding-top: 15px;
+}
+
+.form-field-color {
+  padding-top: 10px;
+}
+
+.form-field-bed {
+  padding-top: 5px;
+}
+
+.text-info {
+  margin-top: -1px;
+}
+
+.legend {
+
+  margin-bottom: -18px;
+}
+
+.info {
+  margin-bottom: -4px;
+}
+
+.form-field-info {
+  margin-top: -6px;
+}
+
+.fieldset {
+  margin-top: -4px;
+}
