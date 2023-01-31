@@ -1,8 +1,8 @@
 /* styles go here */
-.unorderedList > :not(:last-child) {
-  margin-bottom: 10px;
+.formMain > :not(:last-child) {
+  margin-bottom: 20px;
 }
 
-.form > :not(:last-child) {
-  margin-bottom: 20px;
+.form > :not(:last-child):not(:first-child) {
+  margin-bottom: 10px;
 }

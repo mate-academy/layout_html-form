@@ -11,191 +11,172 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <form
-      class="form"
+      class="formMain"
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
     >
-      <fieldset>
-        <legend>Personal information</legend>
-        <ul class="unorderedList">
-          <li class="listItem">
-            <label for="username">Enter username: </label>
-            <input
-              type="text"
-              id="username"
-              name="username"
-              autocomplete="off"
-              minlength="6"
-              maxlength="24"
-              required
-            >
-          </li>
-          <li class="listItem">
-            <label for="age">Enter age: </label>
-            <input
-              type="number"
-              id="age"
-              name="age"
-              min="1"
-              max="100"
-              default="12"
-              autocomplete="off"
-              required
-            >
-          </li>
-          <li class="listItem">
-            <label for="bhour">Enter the time of your birth: </label>
-            <input
-              type="time"
-              id="bhour"
-              name="bhour"
-              value="12:07"
-            >
-          </li>
-          <li class="listItem">
-            <label for="accept">I accept this thing I never read: </label>
-            <input
-              type="checkbox"
-              id="accept"
-              name="accept"
-              required
-            >
-          </li>
-        </ul>
+      <fieldset class="form">
+        <legend class="legend">Personal information</legend>
+        <div class="inputThing">
+          <label for="surname">Surname: </label>
+          <input
+            type="text"
+            id="surname"
+            name="surname"
+            autocomplete="off"
+            required
+          >
+        </div>
+        <div class="inputThing">
+          <label for="name">Name: </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="off"
+            required
+          >
+        </div>
+        <div class="inputThing">
+          <label for="age">How old are You? </label>
+          <input
+            type="number"
+            id="age"
+            name="age"
+            autocomplete="off"
+            min="1"
+            max="100"
+            value="12"
+            required
+          >
+        </div>
+        <div class="inputThing">
+          <label for="dob">Full date of birth: </label>
+          <input
+            type="date"
+            id="dob"
+            name="dob"
+            required
+          >
+        </div>
+        <div class="inputThing">
+          <label for="agreement">I accept the term of the agreement </label>
+          <input
+            type="checkbox"
+            id="agreement"
+            name="agreement"
+            required
+          >
+        </div>
       </fieldset>
-      <fieldset>
-        <legend>Registration</legend>
-        <ul class="unorderedList">
-          <li class="listItem">
-            <label for="email">E-mail: </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="email@example.com"
-              autocomplete="off"
-              required
-            >
-          </li>
-          <li class="listItem">
-            <label for="password">Password: </label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              autocomplete="off"
-              required
-            >
-          </li>
-        </ul>
+      <fieldset class="form">
+        <legend class="legend">Registration</legend>
+        <div class="inputThing">
+          <label for="email">E-mail: </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@example.com"
+            autocomplete="off"
+            required
+          >
+        </div>
+        <div class="inputThing">
+          <label for="password">Password: </label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            autocomplete="off"
+            minlength="8"
+            maxlength="36"
+            required
+          >
+        </div>
       </fieldset>
-      <fieldset>
-        <legend>Some information about you</legend>
-        <ul class="unorderedList">
-          <li class="listItem">
-            <p>What's fundamental: matter or idea?</p>
-            <input
-              type="radio"
-              name="philosophical"
-              id="matter"
-              value="matter"
-              checked
-            >
-            <label for="matter">Matter </label>
-            <input
-              type="radio"
-              name="philosophical"
-              id="idea"
-              value="idea"
-            >
-            <label for="idea">Idea </label>
-          </li>
-          <li class="listItem">
-            <label for="color">
-              Pick a color that you associate with your political views:
-            </label>
-            <input
-              type="color"
-              name="color"
-              id="color"
-              value="#ff0000"
-            >
-          </li>
-          <li class="listItem">
-            <label for="date">
-              Enter the date you find to be the most important in modern history:
-            </label>
-            <input
-              type="date"
-              id="date"
-              name="date"
-              value="2023-01-01"
-              required
-            >
-          </li>
-          <li class="listItem">
-            <label for="world"
-              >Are you happy with the way current events unfold?
-            </label>
-            <select
-              id="world"
-              name="world"
-              multiple
-            >
-              <option disabled>
-                --Choose an option that resonates with you the most--
-              </option>
-              <option value="1">
-                I'm happy with the general direction and would contribute to
-                further progression
-              </option>
-              <option value="2">I'm okay with everything</option>
-              <option value="3">
-                I don't like it, but I can't do anything about it
-              </option>
-              <option value="4">
-                I don't like it and I want a change, but I don't know what to do
-              </option>
-              <option value="5">
-                The change is long overdue and I know exactly what to do about
-                it
-              </option>
-            </select>
-          </li>
-          <li class="listItem">
-            <label for="future"
-              >Rate your expectations about the world's future, with the lowest
-              point being a dystopia and the highest being a utopia:
-            </label>
-            <input
-              type="range"
-              id="future"
-              name="future"
-              min="1"
-              max="10"
-              value="5"
-            >
-          </li>
-        </ul>
+      <fieldset class="form">
+        <legend class="legend">An interesting fact about you!</legend>
+        <div class="inputThing">
+          Do you love cats?
+          <input
+            type="radio"
+            name="cats"
+            id="catsYes"
+            value="catsYes"
+            checked
+          >
+          <label for="catsYes">Yes</label>
+          <input
+            type="radio"
+            name="cats"
+            id="catsNo"
+            value="catsNo"
+          >
+          <label for="catsNo">No</label>
+        </div>
+        <div class="inputThing">
+          <label for="color"> What is your favorite color? </label>
+          <input
+            type="color"
+            name="color"
+            id="color"
+          >
+        </div>
+        <div class="inputThing">
+          <label for="time"> What time do you go to bed? </label>
+          <input
+            type="time"
+            id="time"
+            name="time"
+          >
+        </div>
+        <div class="inputThing">
+          <label for="cars">What are your favorite brand of cars? </label>
+          <select
+            id="cars"
+            name="cars"
+            multiple
+          >
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </div>
+        <div class="inputThing">
+          <label for="work">How do you rate our work? </label>
+          <input
+            type="range"
+            id="work"
+            name="work"
+            min="1"
+            max="10"
+            value="5"
+          >
+        </div>
       </fieldset>
-      <fieldset>
-        <legend>Any thoughts?</legend>
-        <label for="comment"
-          >Lay down a thought that you currently have (if you wish):
-        </label>
-        <textarea
-          id="comment"
-          name="comment"
-          rows="5"
-          cols="50"
-          autocomplete="off"
-          placeholder="Comment..."
-        >
-        </textarea>
+      <fieldset class="form">
+        <legend class="legend">Additional info:</legend>
+        <div class="inputThing">
+          <label for="comment">Comments: </label>
+          <textarea
+            id="comment"
+            name="comment"
+            rows="2"
+            autocomplete="off"
+          >
+          </textarea>
+        </div>
+        <div class="inputThing">
+          <label for="recommend">Would you recommend us? </label>
+          <select name="recommend" id="recommend">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
       </fieldset>
-      <input type="submit">
+      <input type="submit" value="Submit">
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
