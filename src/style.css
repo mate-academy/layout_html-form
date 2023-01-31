@@ -1,1 +1,30 @@
-/* styles go here */
+.form {
+  width: 80%;
+  margin-left: 20px;
+}
+
+.section {
+  position: relative;
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid black;
+  
+
+}
+  
+.input {
+  margin-top: 10px;
+}
+  
+.title {
+  position: absolute;
+  top: -10px;
+  background-color: white;
+  width: fit-content;
+}
+  
+.button {
+  width: 80px;
+  height: 25px;
+  margin-top: 20px;
+}
