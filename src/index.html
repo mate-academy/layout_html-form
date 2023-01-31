@@ -14,7 +14,7 @@
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
     >
-      <fieldset>
+      <fieldset class="field">
         <legend>Personal information</legend>
         <label>
           Surname:
@@ -31,10 +31,11 @@
             type="text"
             name="name"
             autocomplete="off"
-            required>
+            required
+          >
         </label>
         <label>
-          How old are You?:
+          How old are You?
           <input
             type="number"
             name="age"
@@ -53,7 +54,7 @@
           >
         </label>
         <label>
-          I accept the term of the agreement:
+          I accept the term of the agreement
           <input
             type="checkbox"
             name="agreement"
@@ -61,11 +62,7 @@
           >
         </label>
       </fieldset>
-    </form>
-    <form
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-    >
-      <fieldset>
+      <fieldset class="field">
         <legend>Registration</legend>
         <label>
           E-mail:
@@ -87,11 +84,7 @@
           >
         </label>
       </fieldset>
-    </form>
-    <form
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-    >
-      <fieldset>
+      <fieldset class="field">
         <legend>An interesting fact about you!</legend>
         <label>
           Do you love cats?
@@ -127,9 +120,7 @@
           <input type="range" name="rate">
         </label>
       </fieldset>
-    </form>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
-      <fieldset>
+      <fieldset class="field">
         <legend>Additional info:</legend>
         <label>
           Comments:
@@ -140,7 +131,11 @@
           </textarea>
         </label>
         <label>
-          <input type="text" name="recomendation" >
+          Would you recommend us?
+          <select name="recommend">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
         </label>
       </fieldset>
     </form>
