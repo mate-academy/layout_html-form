@@ -1,6 +1,6 @@
 /* styles go here */
 
-.form-field {
+.form-field:not(:last-child) {
   display: block;
   margin-bottom: 10px;
 }
