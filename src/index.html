@@ -24,127 +24,140 @@
 
       <body>
         <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-          <fieldset>
-            <legend>Personal information</legend>
-            <div class="form-field">Surname:
-              <input type="text" autocomplete="off"><br>
-            </div>
-            <div class="form-field">Name:
-              <input type="text" autocomplete="off"><br>
-            </div>
-            <div class="form-field">How old are You?
-              <input
-                value="12"
-                type="number"
-                min="1"
-                max="100"
-                autocomplete="off"
-              >
-            </div>
-
-            <div class="form-field">
-              Full date of birth:
-              <input type="date" autocomplete="off">
-            </div>
-
-            <div class="form-field-text">I accept the tern of the agreement
-              <input type="checkbox" autocomplete="off">
-            </div>
-          </fieldset>
-          <br>
-
-          <fieldset>
-            <legend class="registr">Registration</legend>
-            <div class="form-field-registr-email" name="email">E-mail:
-              <input
-                class="form-field-registr"
-                type="email"
-                placeholder="email@example.com"
-                autocomplete="off"
-              >
-            </div>
-            <div class="form-field-registr-password">Password:
-              <input type="password" autocomplete="off">
-            </div>
-          </fieldset>
-
-          <br>
-          <fieldset>
-            <legend class="legend">An interesting fact about you!</legend>
-            <div class="cats">
-              <label class="form-field-cats">Do you love cats?</label>
-              <label>
+          <div class="personal">
+            <fieldset>
+              <legend>Personal information</legend>
+              <div class="form-field-surname">Surname:
+                <input type="text" autocomplete="off"><br>
+              </div>
+              <div class="form-field-name">Name:
+                <input type="text" autocomplete="off"><br>
+              </div>
+              <div class="form-field-you">How old are You?
                 <input
-                  type="radio"
-                  name="sex"
-                  value="y"
+                  value="12"
+                  type="number"
+                  min="1"
+                  max="100"
                   autocomplete="off"
                 >
-                Yes
-              </label>
+              </div>
 
-              <label>
+              <div class="form-field-date">
+                Full date of birth:
+                <input type="date" autocomplete="off">
+              </div>
+
+              <div class="form-field"> I accept the tern of the agreement
+                <input type="checkbox" autocomplete="off">
+              </div>
+            </fieldset>
+          </div>
+          <br>
+
+          <div class="registration">
+            <fieldset>
+              <legend class="registr">Registration</legend>
+              <div class="form-field-email" name="email">
+                E-mail:
                 <input
-                  type="radio"
-                  name="sex"
-                  value="y"
+                  class="form-field-registr"
+                  type="email"
+                  placeholder="email@example.com"
                   autocomplete="off"
                 >
-                No
-              </label>
-            </div>
-
-            <div class="form-field-color">What is you favorite color?
-              <input type="color" autocomplete="off">
-            </div>
-
-            <div class="form-field-bed">What time do you go to bed?
-              <input
-                type="time"
-                autocomplete="off"
-              >
-            </div>
-
-            <div class="form-field">
-              What are your faborite brand of cars?
-              <select
-                name="cars"
-                required
-                multiple
-              >
-                <option>BMW</option>
-                <option>Audi</option>
-                <option>Lada</option>
-              </select>
-            </div>
-
-            <div class="form-field">
-              How do you rate our work?
-              <input type="range" autocomplete="off">
-            </div>
-          </fieldset>
+              </div>
+              <div class="form-field-registr-password">Password:
+                <input type="password" autocomplete="off">
+              </div>
+            </fieldset>
+          </div>
 
           <br>
-          <fieldset class="fieldset">
-            Coments:
-            <legend class="info">Additional info:</legend>
-            <textarea
-              class="text-info"
-              name="feedback"
-              cols="20"
-              rows="2"
-            >
-            </textarea>
-            <br><br>
+          <div class="interesting">
+            <fieldset>
+              <legend class="legend-interesting">An interesting fact about you!</legend>
+              <div class="cats">
+                <label class="form-field-cats">Do you love cats?</label>
+                <label>
+                  <input
+                    type="radio"
+                    name="sex"
+                    value="y"
+                    autocomplete="off"
+                  >
+                  Yes
+                </label>
 
-            <div class="form-field-info">
-              Would you recomend us?
-              <select name="recomends">
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-              </select>
-            </div>
-          </fieldset>
+                <label>
+                  <input
+                    type="radio"
+                    name="sex"
+                    alue="y"
+                    autocomplete="off"
+                  >
+                  No
+                </label>
+              </div>
+
+              <div class="form-field-color">What is you favorite color?
+                <input type="color" autocomplete="off">
+              </div>
+
+              <div class="form-field-bed">What time do you go to bed?
+                <input
+                  type="time"
+                  autocomplete="off"
+                >
+              </div>
+
+              <div class="form-field-cars">
+                What are your faborite brand of cars?
+                <select
+                  name="cars"
+                  required
+                  multiple
+                >
+                  <option>BMW</option>
+                  <option>Audi</option>
+                  <option>Lada</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                How do you rate our work?
+                <input
+                  type="range"
+                  autocomplete="off"
+                >
+              </div>
+            </fieldset>
+
+          </div>
+          <br>
+
+          <div class="info">
+            <fieldset>
+              Coments:
+              <legend class="additional-info">Additional info:</legend>
+              <textarea
+                class="text-info"
+                name="feedback"
+                cols="20"
+                rows="2"
+              >
+              </textarea>
+              <br><br>
+
+              <div class="form-field-info">
+                Would you recomend us?
+                <select name="recomends">
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+            </fieldset>
+          </div>
           <br>
           <button type="submit">Submit</button>
         </form>
