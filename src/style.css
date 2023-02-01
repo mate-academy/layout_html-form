@@ -1,6 +1,6 @@
 .label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .label:last-child {
@@ -8,5 +8,5 @@
 }
 
 .fieldset {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
