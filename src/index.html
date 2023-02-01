@@ -11,13 +11,16 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <form class="form" >
       <section class="section">
         <div class="title">Personal informatiom:</div>
         <div class="input">
           <label>Surname
-            <input type="text" autocomplete="off" name="sureName">
+            <input 
+              type="text"
+              autocomplete="off" 
+              name="sureName"
+            >
           </label>   
         </div>
         <div class="input">
@@ -67,7 +70,11 @@
         </div>
         <div class="input">
           <label>Password 
-            <input type="password" name="password" required>
+            <input 
+              type="password" 
+              name="password" 
+              required
+            >
           </label> 
         </div>
       </section>
@@ -75,10 +82,20 @@
         <div class="title">Add intresting fact about you!</div>
         <div class="input">Do you love cats
           <label> 
-            <input type="radio"name="LoveCats"value="yes">Yes
+            <input 
+              type="radio"
+              name="LoveCats"
+              value="yes"
+            >
+            Yes
           </label> 
           <label>
-            <input type="radio" name="LoveCats" value="no">No
+            <input 
+              type="radio"
+              "name="LoveCats" 
+              value="no"
+            >
+            No
           </label> 
         </div>
         <div class="input">
@@ -114,7 +131,11 @@
       <section class="section">
         <div class="title">Additional info:</div>
         <div class="input">Comments:
-          <textarea name="fitBack" cols="20" rows="2"></textarea>
+          <textarea 
+            name="fitBack" 
+            cols="20" 
+            rows="2"
+          ></textarea>
         </div>
         <div class="input">Would you recomend us? 
           <select name="recomendUs" >
@@ -123,7 +144,11 @@
           </select>
         </div>
       </section>
-      <button class="button" type="submit" name="button">Submit</button>
+      <button
+        class="button" 
+        type="submit" 
+        name="button"
+      >Submit</button>
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
