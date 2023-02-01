@@ -12,70 +12,81 @@
   </head>
   <body>
     <!-- <h1>HTML Form</h1> -->
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="POST"
+    >
       <fieldset class="fieldset">
         <legend>Personal information</legend>
+
         <label class="form-field">Surname:
           <input
-          name="Surname"
-          type="text"
-          required
+            name="surname"
+            type="text"
+            required
           >
         </label>
+
         <label class="form-field">Name:
           <input
-          name="Name"
-          type="text"
-          required
+            name="name"
+            type="text"
+            required
           >
         </label>
+
         <label class="form-field">How old are You?
           <input
-          name="Age"
-          type="number"
-          min="1"
-          max="100"
-          value="12"
-          required
+            name="age"
+            type="number"
+            min="1"
+            max="100"
+            value="12"
+            required
           >
         </label>
+
         <label class="form-field">Full date of birth:
           <input
-            name="DateOfBitrh"
+            name="dateOfBirth"
             type="date"
           >
         </label>
+
         <label class="form-field">I accept the term of the agreement
           <input
-          name="agreement"
-          type="checkbox"
-          required
+            name="agreement"
+            type="checkbox"
+            required
           >
         </label>
       </fieldset>
 
       <fieldset class="fieldset">
         <legend>Registration</legend>
+
         <label class="form-field">E-mail:
           <input
-          name="email"
-          type="email"
-          placeholder="email@example.com"
-          required
+            name="email"
+            type="email"
+            placeholder="email@example.com"
+            required
           >
         </label>
+
         <label class="form-field">Password:
           <input
-          name="Password"
-          type="password"
-          minlength="8"
-          required
+            name="password"
+            type="password"
+            minlength="8"
+            required
           >
         </label>
       </fieldset>
 
       <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
+
         <div class="form-field">
           <span>Do you love cats?</span>
           <input
@@ -84,24 +95,28 @@
             name="animalPreference"
           >
           <label for="loveCats">Yes</label>
+
           <input type="radio"
             id="noCats"
             name="animalPreference"
           >
           <label for="noCats">No</label>
         </div>
+
         <label class="form-field">What is your favorite color?
           <input
             name="color"
             type="color"
           >
         </label>
+
         <label class="form-field">What time do you go to bed?
           <input
             name="startSleep"
             type="time"
           >
         </label>
+
         <div class="form-field">
           <label for="cars">What are your favorite brand of cars?</label>
           <select
@@ -114,6 +129,7 @@
             <option value="lada">Lada</option>
           </select>
         </div>
+
         <label class="form-field">How do you rate our work?
           <input
             name="rate"
@@ -124,6 +140,7 @@
           >
         </label>
       </fieldset>
+
       <fieldset class="fieldset">
         <legend>Additional info:</legend>
         <div class="form-field">
@@ -131,6 +148,7 @@
             <textarea name="comments" maxlength="80"></textarea>
           </label>
         </div>
+
         <label for="recommend" class="form-field">
           Would you recommend us?
           <select name="recommend" id="recommend">
