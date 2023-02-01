@@ -1,11 +1,15 @@
 /* styles go here */
-.form_field {
+/* label:first-of-type {
+  margin: 0;
+} */
+
+.form_field:not(:last-child) {
   display: block;
-  margin: 10px 0;
-  margin-bottom: 0;
+  /* margin: 10px 0; */
+  margin-bottom: 10px;
 }
 
 .fieldset {
-  margin: 20px 0;
-  margin-top: 0;
+  margin-bottom: 20px;
+  /* margin-top: 0; */
 }
