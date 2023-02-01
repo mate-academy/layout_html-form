@@ -1,1 +1,71 @@
-/* styles go here */
+
+.form-field {
+  padding-top: 5px;
+}
+
+.form-field-surname {
+  margin-top: -1px;
+  margin-bottom: 8px;
+}
+
+.form-field-name {
+  margin-bottom: 8px;
+}
+
+.form-field-you {
+  margin-bottom: 8px;
+}
+
+.form-field-date {
+  margin-bottom: 4px;
+}
+
+.registration {
+  margin-top: 3px;
+}
+
+.registr {
+  margin-bottom: -2px;
+}
+
+.form-field-email {
+  margin-bottom: 7px;
+}
+
+.interesting {
+  margin-top: 2px;
+}
+
+.legend-interesting {
+  display: flex;
+  margin-bottom: -2px;
+}
+
+.form-field-cats {
+  padding-bottom: 8px;
+}
+
+.form-field-color {
+  margin-top: 9px;
+  margin-bottom: 7px;
+}
+
+.form-field-bed {
+  margin-top: 5px;
+}
+
+.form-field-cars {
+  margin-bottom: 3px;
+}
+
+.info {
+  margin-top: 2px;
+}
+
+.additional-info {
+  margin-bottom: -4px;
+}
+
+.form-field-info {
+  margin-top: -8px;
+}
