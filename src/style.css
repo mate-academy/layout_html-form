@@ -1,8 +1,8 @@
-fieldset {
+.fieldset {
   margin-bottom: 20px;
 }
 
-label {
+.input-label {
   display: block;
   margin-bottom: 10px;
 }
@@ -11,6 +11,6 @@ label {
   display: inline-block;
 }
 
-label:last-child {
+.input-label:last-child {
   margin-bottom: 0;
 }
