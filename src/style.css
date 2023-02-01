@@ -10,30 +10,3 @@
 .fieldset {
   margin-bottom: 19px;
 }
-
-.legend {
-  margin-bottom: -10px;
-}
-
-.fieldset-info {
-  margin-top: 6px;
-}
-
-.label-cars {
-  display: block;
-  margin-top: -10px;
-}
-
-.label-work {
-  margin-top: 10px;
-}
-
-/* stylelint-disable-next-line no-duplicate-selectors */
-.legend {
-  margin-bottom: -1px;
-}
-
-/* stylelint-disable-next-line no-duplicate-selectors */
-.fieldset-info {
-  margin-bottom: 20px;
-}
