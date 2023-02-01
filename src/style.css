@@ -1,12 +1,3 @@
-/* styles go here */
-/* form :first-child {
-  margin: 0;
-} */
-
-/* form :last-child {
-  margin: 0;
-} */
-
 .form__fieldset {
   display: block;
   margin-bottom: 20px;
@@ -24,10 +15,6 @@
 .form__fieldset :nth-child(2) {
   margin-top: 0;
 }
-
-/* .applable :last-child {
-  margin-top: 10px;
-} */
 
 #nocats {
   margin-left: 5px;
