@@ -1,1 +1,9 @@
 /* styles go here */
+.label > div {
+  margin-bottom: 10px;
+}
+
+.form > fieldset {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
