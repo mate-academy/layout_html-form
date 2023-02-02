@@ -73,6 +73,7 @@
         <label class="form__element">
           E-mail:
           <input
+            name="email"
             type="email"
             placeholder="email@example.com"
             required
@@ -82,6 +83,7 @@
         <label class="form__element">
           Password:
           <input
+            name="password"
             type="password"
             minlength="5"
             maxlength="20"
@@ -115,12 +117,15 @@
 
         <label class="form__element">
           What is your favorite color
-          <input type="color">
+          <input type="color" name="color">
         </label>
 
         <label class="form__element">
           What time do you go to bed
-          <input type="time">
+          <input
+            type="time"
+            name="time"
+            step="2">
         </label>
 
         <label class="form__element">
@@ -129,12 +134,14 @@
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
             <option value="lada">Lada</option>
+            <option value=" " disabled></option>
           </select>
         </label>
 
         <label class="form__element">
           How do you rate our work
           <input
+            name="work"
             type="range"
             min="0"
             max="100"
