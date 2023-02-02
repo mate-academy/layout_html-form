@@ -11,89 +11,136 @@
     <section>
       <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
         method="post">
-        <fieldset>
+        <fieldset class="fieldset">
           <legend>Personal information</legend>
-          <label for="sorname" class="control-label">Sorname:
-            <input type="text" name="sorname"
-             id="sorname"
+          <label for="sorname" class="control-label">
+           Sorname:
+            <input
+            type="text"
+            name="sorname"
+            id="sorname"
             >
           </label>
-          <label for="name" class="control-label">Name:
-            <input type="text" name="name"
-              id="name"
+          <label for="name" class="control-label">
+            Name:
+            <input
+            type="text"
+            name="name"
+            id="name"
             >
           </label>
-          <label for="age" class="control-label">How old are You?
-            <input type="number" name="age"
-             id="age" min="0"
-            max="100" value="12"
+          <label for="age" class="control-label">
+            How old are You?
+            <input
+            type="number"
+            name="age"
+            id="age"
+            min="0"
+            max="100"
+            value="12"
             >
           </label>
-          <label for="birthDate" class="control-label">Full date of birth:
-            <input type="date" name="birthDate"
-             id="birthDate"
+          <label for="birthDate" class="control-label">
+            Full date of birth:
+            <input
+            type="date"
+            name="birthDate"
+            id="birthDate"
             >
           </label>
-          <label for="acceptAgreement" class="control-label">I accept the term of the agreement
-            <input type="checkbox" name="acceptAgreement"
-              id="acceptAgreement" value="no"
-              required
-            >
-          </label>
-        </fieldset>
-        <fieldset>
-          <legend>Registration</legend>
-          <label for="email" class="control-label">E-mail:
-            <input type="email" name="email"
-             id="email" placeholder="email@example.com"
+          <label for="acceptAgreement" class="control-label">
+            I accept the term of the agreement
+            <input
+            type="checkbox"
+            name="acceptAgreement"
+            id="acceptAgreement"
+            value="no"
             required
             >
           </label>
-          <label for="password" class="control-label">Password:
-            <input type="password" name="password"
-             id="password" minlength="6"
-             maxlength="20" required
+        </fieldset>
+        <fieldset class="fieldset">
+          <legend>Registration</legend>
+          <label for="email" class="control-label">
+            E-mail:
+            <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@example.com"
+            required
+            >
+          </label>
+          <label for="password" class="control-label">
+            Password:
+            <input
+            type="password"
+            name="password"
+            id="password"
+            minlength="6"
+            maxlength="20"
+            required
             >
           </label>
         </fieldset>
-        <fieldset>
+        <fieldset class="fieldset">
           <legend>An interesting fact about you!</legend>
-          <label class="control-label">Do you love cats?
-            <input type="radio" name="cats"
+          <label class="control-label">
+            Do you love cats?
+            <input
+            type="radio"
+            name="cats"
             value="yes"
             > Yes 
-            <input type="radio" name="cats"
-             value="no"
+            <input
+            type="radio"
+            name="cats"
+            value="no"
             > No 
           </label>
-          <label class="control-label">What is your favorite color?
+          <label class="control-label">
+            What is your favorite color?
             <input type="color">
           </label>
-          <label class="control-label">What time do you go to bed?
-            <input type="time" step="1">
+          <label class="control-label">
+            What time do you go to bed?
+            <input
+            type="time"
+            step="1"
+            >
           </label>
-          <label class="control-label">What are your favorite brand of cars?
+          <label class="control-label"
+          >What are your favorite brand of cars?
             <select name="favorite cars" multiple>
               <option value="BMW">BMW</option>
               <option value="Audi">Audi</option>
               <option value="Lada">Lada</option>
             </select>
           </label>
-          <label class="control-label">How do you rate our work?
-            <input type="range" min="0"
-             max="11" value="0"
+          <label class="control-label">
+            How do you rate our work?
+            <input
+            type="range"
+            min="0"
+            max="11"
+            value="0"
             >
           </label>
         </fieldset>
-        <fieldset>
+        <fieldset class="fieldset">
           <legend>Additional info:</legend>
-          <label class="control-label">Comments:
-            <textarea name="comments" cols="20"
-             rows="2" autocomplete="off"
+          <label class="control-label">
+            Comments:
+            <textarea
+            name="comments"
+            cols="20"
+            rows="2"
+            autocomplete="off"
             >
             </textarea>
           </label>
-          <label class="control-label">Would you recommend us?
+          <label class="control-label">
+            Would you recommend us?
             <select name="Would you recommend us">
               <option value="yes">yes</option>
               <option value="no">no</option>
