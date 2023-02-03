@@ -1,11 +1,22 @@
-fieldset {
+.personal__information,
+.registration,
+.facts,
+.additional__information {
   margin-bottom: 20px;
 }
 
-div {
+.information,
+.registration,
+.reg__info,
+.fact__about,
+.add_info {
   margin-bottom: 10px;
 }
 
-div:last-child {
+.information:last-child,
+.registration:last-child,
+.reg__info:last-child,
+.fact__about:last-child,
+.add_info:last-child {
   margin-bottom: 0;
 }
