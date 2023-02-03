@@ -1,1 +1,12 @@
 /* styles go here */
+.form__group {
+  margin-bottom: 20px;
+}
+
+.form__element {
+  margin-bottom: 10px;
+}
+
+.form__element:last-child {
+  margin-bottom: 0;
+}
