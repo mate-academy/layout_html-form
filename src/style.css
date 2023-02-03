@@ -6,7 +6,6 @@
 }
 
 .information,
-.registration,
 .reg__info,
 .fact__about,
 .add_info {
@@ -14,7 +13,6 @@
 }
 
 .information:last-child,
-.registration:last-child,
 .reg__info:last-child,
 .fact__about:last-child,
 .add_info:last-child {
