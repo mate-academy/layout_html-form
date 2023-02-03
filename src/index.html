@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta 
-    name="viewport" 
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      name="viewport" 
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
@@ -12,10 +12,11 @@
   </head>
   <body>
     <script type="text/javascript" src="./main.js"></script>
+    
     <form 
-    action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
-    method="post"
-    autocomplete="off"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
+      method="post"
+      autocomplete="off"
     >
       <fieldset name="Personal" class="fieldset">
         <legend>Personal information</legend>
@@ -26,20 +27,20 @@
         <label class="label">
           Name:
           <input 
-          type="text"
-          name="Name"
-          maxlength="15"
-          required
+            type="text"
+            name="Name"
+            maxlength="15"
+            required
           >
         </label>
         <label class="label">
           How old are You?
           <input 
-          type="number" 
-          name="Age"
-          min="1"
-          max="100"
-          value="12"
+            type="number" 
+            name="Age"
+            min="1"
+            max="100"
+            value="12"
           >
         </label>
         <label class="label">
@@ -49,9 +50,9 @@
         <label class="label">
           I accept the term of the agreement
           <input
-          type="checkbox"
-          name="Agree-with-terms"
-          required
+            type="checkbox"
+            name="Agree-with-terms"
+            required
           >
         </label>
       </fieldset>
@@ -60,19 +61,19 @@
         <label class="label">
           E-mail:
           <input 
-          type="email" 
-          name="E-mail" 
-          placeholder="email@example.com"
-          required
+            type="email" 
+            name="E-mail" 
+            placeholder="email@example.com"
+            required
           >
         </label>
         <label class="label">
           Password:
           <input 
-          type="password" 
-          name="Password"
-          minlength="10"
-          required
+            type="password" 
+            name="Password"
+            minlength="10"
+            required
           >
         </label>
       </fieldset>
@@ -108,9 +109,9 @@
         <label class="label">
           How do you rate our work?
           <input
-          type="range"
-          value="0"
-          max="5"
+            type="range"
+            value="0"
+            max="5"
           >
         </label>
       </fieldset>
@@ -128,9 +129,7 @@
           </select>
         </label>
       </fieldset>
-
       <button type="submit">Submit</button>
-
     </form>
     
   </body>
