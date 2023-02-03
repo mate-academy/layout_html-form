@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="style.css"
+    <link 
+      href="style.css"
       rel="stylesheet"
       type="text/css"
     >
@@ -14,11 +15,12 @@
 
   <body>
     <form action="#" method="post">
-      <fieldset>
+      <fieldset class="form-set">
         <legend>Personal information</legend>
         <div class="form-field">
           <label for="surname">Surname:</label>
-          <input type="text"
+          <input
+            type="text"
             name="surname"
             id="surname"
             required
@@ -30,7 +32,8 @@
           <label for="name">
             Name:
           </label>
-          <input type="text"
+          <input
+            type="text"
             name="name"
             id="name"
             required
@@ -40,7 +43,8 @@
           <label for="howOldAreYou">
             How old are You?
           </label>
-          <input type="number"
+          <input
+            type="number"
             name="howOldAreYou"
             id="howOldAreYou"
             value="12"
@@ -50,63 +54,71 @@
         </div>
         <div class="form-field">
           <label for="dateOfBirth">Full date of birth:</label>
-          <input type="date"
+          <input
+            type="date"
             name="dateOfBirth"
             id="dateOfBirth"
           >
         </div>
         <div class="form-field1">
           <label for="chbx">I accept the term of the agreement</label>
-          <input type="checkbox"
+          <input
+            type="checkbox"
             id="chbx"
             name="accept"
             value="Yes"
           >
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="form-set">
         <legend>Registration</legend>
         <div class="form-field">
           <label for="email">E-mail:</label>
-          <input type="email"
+          <input
+            type="email"
             id="email"
             name="email"
             required
             placeholder="email@example.com"
           >
         </div>
-        <div class="form-field1">
+        <div>
           <label for="password">Password:</label>
-          <input type="password"
+          <input
+            type="password"
             id="password"
             name="password"
             required
           >
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="form-set">
         <legend>An interesting fact about you!</legend>
         <div class="form-field">
           <label for="radio">Do you love cats?</label>
-          <input type="radio"
+          <input
+            type="radio"
             name="radio"
           >
           Yes
-          <input type="radio"
+          <input
+            type="radio"
             name="radio"
           >
           No
         </div>
         <div class="form-field">
           <label for="color">What is your favorite color?</label>
-          <input type="color"
+          <input
+            type="color"
             id="color"
             name="color"
           >
         </div>
         <div class="form-field">
           <label for="goBed">What time do you go to bed?</label>
-          <input type="time"
+          <input
+            type="time"
             id="goBed"
             name="name"
             step="2"
@@ -120,11 +132,12 @@
             <option value="Lada">Lada</option>
           </select>
         </div>
-        <div class="form-field1">
+        <div>
           <label for="rateWork">
             How do you rate our work?
           </label>
-          <input type="range"
+          <input
+            type="range"
             id="rateWork"
             name="rateWork"
             min="0"
@@ -133,7 +146,7 @@
           >
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="form-set">
         <legend>Additional info:</legend>
         <div class="form-field">
           <label for="comments">Comments:</label>
@@ -141,7 +154,7 @@
             autocomplete="off">
           </textarea>
         </div>
-        <div class="form-field1">
+        <div>
           <label for="recom">Would you recommend us?</label>
           <select name="recom">
             <option value="yes">yes</option>
