@@ -1,9 +1,18 @@
 /* styles go here */
-.label > div {
+.label {
+  display: block;
   margin-bottom: 10px;
 }
 
-.form > fieldset {
+.form > .fieldset {
   margin-bottom: 20px;
   padding-bottom: 0;
+}
+
+.animals {
+  display: inline;
+}
+
+.animal {
+  display: inline-block;
 }
