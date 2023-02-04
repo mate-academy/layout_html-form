@@ -1,1 +1,17 @@
 /* styles go here */
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.control-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.control-label:last-child {
+  margin: 0;
+}
+
+.submit__btn {
+  margin-top: 10px;
+}
