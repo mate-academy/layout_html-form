@@ -15,56 +15,44 @@
       >
         <fieldset class="fieldset">
           <legend>Personal information</legend>
-          <label
-            for="sorname"
-            class="control-label"
-          >
-            Sorname:
+          <label class="control-label">
+            Surname:
             <input
               type="text"
-              name="sorname"
-              id="sorname"
+              name="surname"
             >
           </label>
-          <label for="name" class="control-label">
+          <label class="control-label">
             Name:
             <input
               type="text"
               name="name"
-              id="name"
             >
           </label>
-          <label for="age" class="control-label">
+          <label class="control-label">
             How old are You?
             <input
               type="number"
               name="age"
-              id="age"
               min="0"
               max="100"
               value="12"
             >
           </label>
           <label
-            for="birthDate"
             class="control-label"
           >
             Full date of birth:
             <input
               type="date"
               name="birthDate"
-              id="birthDate"
             >
           </label>
-          <label
-            for="acceptAgreement"
-            class="control-label"
-          >
+          <label class="control-label">
             I accept the term of the agreement
             <input
               type="checkbox"
               name="acceptAgreement"
-              id="acceptAgreement"
               value="no"
               required
             >
@@ -72,28 +60,20 @@
         </fieldset>
         <fieldset class="fieldset">
           <legend>Registration</legend>
-          <label
-            for="email"
-            class="control-label"
-          >
+          <label class="control-label">
             E-mail:
             <input
               type="email"
               name="email"
-              id="email"
               placeholder="email@example.com"
               required
             >
           </label>
-          <label
-            for="password"
-            class="control-label"
-          >
+          <label class="control-label">
             Password:
             <input
               type="password"
               name="password"
-              id="password"
               minlength="6"
               maxlength="20"
               required
@@ -102,26 +82,24 @@
         </fieldset>
         <fieldset class="fieldset">
           <legend>An interesting fact about you!</legend>
-          <label class="control-label">
+          <div class="control-label">
             Do you love cats?
-            <label for="yes">
+            <label>
               <input
-                id="yes"
                 type="radio"
                 name="cats"
                 value="yes"
               >
                Yes 
             </label>
-            <label for="no">
+            <label>
               <input
-                id="no"
                 type="radio"
                 name="cats"
                 value="no"
               > No 
             </label>
-          </label>
+          </div>
           <label class="control-label">
             What is your favorite color?
             <input type="color">
