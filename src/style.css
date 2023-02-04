@@ -1,1 +1,7 @@
-/* styles go here */
+.button {
+  margin: 0 auto;
+  display: block;
+  color: blanchedalmond;
+  background-color: purple;
+  border-radius: 5px;
+}
