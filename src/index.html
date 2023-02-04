@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
+      method="post" 
+      autocomplete="off"
+    >
       <fieldset class="fieldset">
         <legend>Personal information</legend>
+
         <label class="form_field">
           Surname:
           <input type="text" name="surname">
@@ -41,6 +45,7 @@
             name="date"
           >
         </label>
+        
         <div class="form_field">
           <label for="terms-and-conditions" >
             I accept the term of the agreement
@@ -56,6 +61,7 @@
 
       <fieldset class="fieldset">
         <legend>Registration</legend>
+
         <label class="form_field">
           E-mail:
           <input 
@@ -80,7 +86,8 @@
 
       <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
-        <label class="form_field">
+        
+        <div class="form_field">
           Do you love cats?
           <label>
             <input 
@@ -99,7 +106,7 @@
             >
             No
           </label>
-        </label>
+        </div>
 
         <label class="form_field">
           What is your favorite color?
@@ -141,11 +148,12 @@
 
       <fieldset class="fieldset">
         <legend>Additional info:</legend>
+
         <label class="form_field">
           Comments:
           <textarea name="comments"></textarea>
         </label>
-        </label>
+
         <label class="form_field">
           Would you recommend us?
           <select name="recommend">
@@ -154,7 +162,9 @@
           </select>
         </label>
       </fieldset>
+
       <button type="submit">Submit</button>
+
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
