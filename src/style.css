@@ -1,1 +1,18 @@
-/* styles go here */
+
+.form-field {
+  padding-top: 20px;
+
+}
+
+.btn {
+  margin-top: 20px;
+
+}
+
+.input-class {
+  margin-top: 10px;
+}
+
+.label-class {
+  margin-top: 10px;
+}
