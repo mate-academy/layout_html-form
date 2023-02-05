@@ -3,19 +3,7 @@
   display: inline-block;
 }
 
-.personalInfo {
-  margin-bottom: 20px;
-}
-
-.registration {
-  margin-bottom: 20px;
-}
-
-.aboutYou {
-  margin-bottom: 20px;
-}
-
-.addInfo {
+.allFieldset {
   margin-bottom: 20px;
 }
 
