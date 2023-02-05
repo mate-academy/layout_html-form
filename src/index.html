@@ -19,6 +19,7 @@
             type="text"
             name="surname"
             autocomplete="off"
+            required
           >
         </label>
 
@@ -28,6 +29,7 @@
             type="text" 
             name="name" 
             autocomplete="off"
+            required
           >
         </label>
 
@@ -40,6 +42,7 @@
             value="12" 
             min="1" 
             max="100"
+            required
           >
         </label>
 
@@ -70,6 +73,7 @@
             type="email" 
             name="email" 
             placeholder="email@example.com"
+            required
           >
         </label>
         <label class="form-field">
@@ -79,6 +83,8 @@
             name="password" 
             minlength="8" 
             maxlength="23"
+            required
+            pattern="/w+"
           >
         </label>
       </fieldset>
