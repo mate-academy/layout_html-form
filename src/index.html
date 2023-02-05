@@ -92,24 +92,30 @@
       <fieldset class="form-groups">
         <legend>An interesting fact about you!</legend>
 
-        <div>
+        <div class="form-field">
           Do you love cats?
-          <input 
-            type="radio" 
-            name="lovePet" 
-            id="lovePet" 
-            value="yes"
-          >
-          Yes
-          <input 
-            type="radio" 
-            name="lovePet" 
-            id="noLovePet" 
-            value="no"
-          >
+          <label>
+            <input 
+              type="radio" 
+              name="lovePet" 
+              id="lovePet" 
+              value="yes"
+            >
+            Yes
+          </label>
+          
+          <label>
+            <input 
+              type="radio" 
+              name="lovePet" 
+              id="noLovePet" 
+              value="no"
+            >
+            No
+          </label>
         </div>
 
-        <label class="form-field">
+        <label>
           What is your favorite color?
           <input 
             type="color" 
