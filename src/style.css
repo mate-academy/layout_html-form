@@ -1,20 +1,15 @@
-.personal__information,
-.registration,
-.facts,
-.additional__information {
+.fieldset {
   margin-bottom: 20px;
 }
 
-.information,
-.reg__info,
-.fact__about,
-.add_info {
+.block {
   margin-bottom: 10px;
 }
 
-.information:last-child,
-.reg__info:last-child,
-.fact__about:last-child,
-.add_info:last-child {
+.block:last-child {
   margin-bottom: 0;
+}
+
+#comments:focus {
+  cursor: none;
 }
