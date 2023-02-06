@@ -21,7 +21,6 @@
                         <input type="text" name="sname" id="sname" required="" autocomplete="off">
                     </label>
                 </div>
-                <div class="line"></div>
                 <div class="simple">
                     <label for="name">
                       Name:
@@ -40,7 +39,6 @@
                         <input type="date" name="birth" required="" id="birth">
                     </label>
                 </div>
-                <div class="line"></div>
                 <div>
                     <label for="accept">
                       I accept the term of the agreement:
@@ -58,7 +56,6 @@
                         <input type="email" name="email" placeholder="email@example.com" required="" id="email">
                     </label>
                 </div>
-                <div class="line"></div>
                 <div>
                     <label for="pass">
                       Password:
@@ -71,29 +68,26 @@
                   An interesting fact about you!
                 </legend>
                 <div class="simple">
-                    <label for="yes">
+                    <div for="yes">
                       Do you love cats?
                         <input type="radio" id="yes" name="cat" value="Yes">
                         <label for="yes">Yes</label>
                         <input type="radio" id="no" name="cat" value="No">
                         <label for="no">No</label>
-                    </label>
+                    </div>
                 </div>
-                <div class="line"></div>
                 <div class="simple">
                     <label for="color">
                       What is your favorite color?
                         <input type="color" id="color" name="color" required="">
                     </label>
                 </div>
-                <div class="line"></div>
                 <div class="simple">
                     <label for="go">
                       What time do you go to bad?
                         <input type="time" name="goToBad" required="" id="go">
                     </label>
                 </div>
-                <div class="line"></div>
                 <div class="simple">
                     <label for="cars">
                       What are your favorite brand of cars?
@@ -104,7 +98,6 @@
                         </select>
                     </label>
                 </div>
-                <div class="line"></div>
                 <div>
                     <label for="rate">
                       How do you rate our work?
@@ -137,7 +130,9 @@
             </fieldset>
             <div class="simple">
                 <label for="sb">
-                    <input type="submit" id="sb" value="Submit">
+                    <button type="submit" id="sb" value="Submit">
+                      Submit
+                    </button>
                 </label>
             </div>
         </form>
