@@ -14,142 +14,140 @@
 
     <script type="text/javascript" src="./main.js"></script>
 
-    <fieldset>
+    <fieldset class="fieldset">
       <legend>
         Personal information
       </legend>
 
-      <label>
+      <label class="field">
         Surname:
         <input 
-          class="Sname" 
-          name="Sname"
-          type="text" 
-          autocomplete="off"
-          required
+        name="Sname"
+        type="text" 
+        required
         >
       </label>
 
-      <label>
+      <label class="field">
         Name:
         <input 
-          class="name" 
-          name="name"
-          type="text"
-          autocomplete="off"
-          required
+        name="name"
+        type="text"
+        required
         >
       </label>
 
-      <label>
+      <label class="field">
         How old are you?
         <input 
-          class="Old" 
-          name="Age"
-          type="number" 
-          min="1"
-          max="100"
-          value="12"
-          autocomplete="off"
+        name="Age"
+        type="number" 
+        id="Age"
+        min="1"
+        max="100"
+        value="12"
         >
       </label>
 
-      <label>
+      <label class="field">
         Full date of birth:
         <input 
-          class="birth" 
-          name="birthday"
-          type="date"
+        name="birthday"
+        type="date"
+        id="birthday"
         >
       </label>
 
-      <label>
+      <label class="field">
         I accept the term of the agreement
         <input 
-          type="checkbox" 
-          name="checkbox"
-          required
+        type="checkbox" 
+        name="checkbox"
+        id="checkbox"
+        required
         >
       </label>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="fieldset">
       <legend>
         Registration
       </legend>
 
-      <label>
+      <label class="field">
         Email:
         <input 
-          class="Mail" 
-          type="email" 
-          name="mail"
-          placeholder="VasiliySharko@email.com" 
-          autocomplete="off"
-          required
+        type="email" 
+        name="mail"
+        placeholder="VasiliySharko@email.com" 
+        required
         >
       </label>
 
-      <label>
+      <label class="field">
         Password:
         <input 
-          class="name" 
-          type="password" 
-          name="pass"
-          minlength="5"
-          maxlength="15"
-          autocomplete="off"
-          pattern="\w+"
-          required
+        type="password" 
+        name="pass"
+        minlength="5"
+        maxlength="15"
+        pattern="\w+"
+        required
         >
       </label>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="fieldset">
       <legend>
         An interesting fact about you!
       </legend>
       
-      <label>
+      <label class="field">
         Do you love cats?
-        <label>
+        <div class="loveCat">
           <input 
-            type="radio" 
-            name="sex" 
-            value="t"
+          type="radio" 
+          name="cats" 
+          id="like"
+          value="yes"
           >
-        Yes
-        </label>
+          Yes
 
-        <label>
           <input 
-            type="radio" 
-            name="sex" 
-            value="f"
+          type="radio" 
+          name="cats" 
+          id="dontLike"
+          value="no"
           >
-        No
-        </label>
+          No
+        </div>
       </label>
       
-      <label>
+      <label class="field">
         What is your favorite color? 
         <input 
-          type="color"
-          name="color"
+        type="color"
+        name="favoriteColor"
+        id="favoriteColor"
         >
       </label>
 
-      <label>
+      <label class="field">
       What time do you go to bed?
         <input 
-          type="time"
-          name="time"
+        type="time"
+        name="tGoToBed"
+        id="tGoToBed"
         >
       </label>
 
-      <label>
+      <label class="field">
         What are your favorite brand of cars?
-        <select name="Cars" id="Brands">
+        <select 
+        name="Cars" 
+        id="Brands" 
+        multiple
+        >
           <option value="." selected>Choose</option>
           <option value="1">Mercedes</option>
           <option value="2">BMW</option>
@@ -157,7 +155,7 @@
         </select>
       </label>
 
-      <label>
+      <label class="field">
         How do you rate our work?
         <input 
           type="range" 
@@ -169,7 +167,7 @@
       </label>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="fieldset">
       <legend>
         Addtional info:
       </legend>
@@ -177,16 +175,19 @@
       <label>
       Comments:
         <textarea 
-          name="Comments" 
-          id="Komentar" 
-          cols="15" 
-          rows="2">
-        </textarea>
+        name="comments" 
+        id="comments" 
+        cols="15" 
+        rows="2"
+        ></textarea>
       </label>
 
-      <label>
+      <label class="field">
         Would you recommend us?
-        <select name="Question" id="YN">
+        <select 
+        name="recommend" 
+        id="recommend"
+        >
           <option value="." selected>Choose</option>
           <option value="1">Yes</option>
           <option value="2">No</option>
@@ -194,6 +195,6 @@
       </label>
     </fieldset>
 
-    <button type="submit">Submit</button>
+    <button class="button" type="submit">Submit</button>
   </body>
 </html>
