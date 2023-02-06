@@ -1,5 +1,10 @@
 .form {
+  display: block;
   margin-bottom: 10px;
+}
+
+.inline {
+  display: block;
 }
 
 .section {
