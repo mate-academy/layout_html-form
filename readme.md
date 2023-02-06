@@ -1,7 +1,7 @@
 # HTML form
-Replace `<1v43k>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://<1v43k>.github.io/layout_html-form/)
-- [TEST REPORT LINK](https://<1v43k>.github.io/layout_html-form/report/html_report/)
+Replace 1v43k with your Github username and copy the links to Pull Request description:
+- [DEMO LINK](https://1v43k.github.io/layout_html-form/)
+- [TEST REPORT LINK](https://1v43k.github.io/layout_html-form/report/html_report/)
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 ___
