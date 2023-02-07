@@ -1,5 +1,5 @@
 /* styles go here */
-label {
+.field__label {
   display: block;
   margin-bottom: 10px;
 }
