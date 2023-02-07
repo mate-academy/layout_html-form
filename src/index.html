@@ -106,7 +106,7 @@
           >
         </div>
       </fieldset>
-      
+
       <fieldset class="field">
         <legend>An intersting fact about you!</legend>
           
@@ -182,10 +182,31 @@
         </div>
       </fieldset>
 
+      <fieldset class="field">
+        <legend>Additional info:</legend>
+        
+        <label class="form-feild">
+            Comments:
 
+          <textarea 
+            autocomplete="off" 
+            name="comments"
+            required
+          >
+          </textarea>
+        </label>
 
-
-
-
-</html>
+        <label class="form-field">
+            Would you recommend us?
+            
+          <select name="recommend" required>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+  </html>
 
