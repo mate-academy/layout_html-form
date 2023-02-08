@@ -1,18 +1,12 @@
 
 .form-field {
-  padding-top: 20px;
-
+  display: block;
 }
 
-.btn {
+.vertical {
+  padding-top: 10px;
+}
+
+.group {
   margin-top: 20px;
-
-}
-
-.input-class {
-  margin-top: 10px;
-}
-
-.label-class {
-  margin-top: 10px;
 }
