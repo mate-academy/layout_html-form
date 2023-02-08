@@ -1,1 +1,15 @@
-/* styles go here */
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.block {
+  margin-bottom: 10px;
+}
+
+.block:last-child {
+  margin-bottom: 0;
+}
+
+#comments:focus {
+  cursor: none;
+}
