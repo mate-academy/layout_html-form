@@ -73,7 +73,30 @@
       </fieldset>
 
       <fieldset class="container">
+        <legend>Registration</legend>
 
+        <label class="form-field">
+          E-mail: 
+          <input 
+            type="email" 
+            name="email" 
+            id="email"
+            placeholder="email@example.com"
+            required
+          >
+        </label>
+
+        <label class="form-field">
+          Password: 
+          <input 
+            type="password" 
+            name="password" 
+            id="password"
+            minlength="5"
+            maxlength="30"
+            required
+          >
+        </label>
       </fieldset>
     </form>
     <script type="text/javascript" src="./main.js"></script>
