@@ -1,1 +1,16 @@
 /* styles go here */
+.form-field:not(:last-child) {
+  display: block;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+/* if we have more than one form we should use more specific selector e.g
+
+form[name=testForm] fieldset {
+
+}
+or use classes or id
+ */
