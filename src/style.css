@@ -1,13 +1,25 @@
 /* styles go here */
 .form-field {
-  display: block;
-  margin: 20px 0;
+  margin-bottom: 20px;
+  padding-bottom: 4px;
 }
 
 input {
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.select {
-  margin-top: 10px;
+#password {
+  margin-bottom: 6px;
+}
+
+#color {
+  margin-top: 4px;
+}
+
+#range {
+  margin-top: 12px;
+}
+
+#recommend {
+  margin: 10px 0 6px;
 }
