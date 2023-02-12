@@ -20,14 +20,14 @@
             type="text" name="Surname"
             required
           >
-        </label> <br>
+        </label>
         <label>
           Name:
           <input
             type="text" name="Name"
             required
           >
-        </label> <br>
+        </label>
         <label>
           How old are You?
           <input
@@ -36,14 +36,14 @@
             min="1" max="100"
             value="12"
           >
-        </label> <br>
+        </label>
         <label>
           Full date of birth:
           <input
             type="date" name="date"
             value="mm/dd/yyyy"
           >
-        </label> <br>
+        </label>
         <label>
           I accept the term of the agreement
           <input
@@ -61,47 +61,45 @@
             placeholder="email@example.com"
             required
           >
-        </label> <br>
+        </label>
         <label>
           Password:
           <input
             type="password" name="Password"
             minlength="6" maxlength="12"
-            id="password" required
+            class="password" required
           >
         </label>
       </fieldset>
       <fieldset class="form-field">
         <legend>An interesting fact about you!</legend>
-        Do you love cats?
         <label>
+          Do you love cats?
           <input
             type="radio" name="cats"
-            value="y"
+            class="radio" value="y"
           >
           Yes
-        </label>
-        <label>
           <input
             type="radio" name="cats"
-            value="n"
+            class="radio" value="n"
           >
           No
-        </label> <br>
+        </label>
         <label>
           What is your favorite color?
           <input
             type="color" name="color"
-            id="color"
+            class="color"
           >
-        </label> <br>
+        </label>
         <label>
           What time do you go to bed?
           <input
             type="time" name="time"
             step="1"
           >
-        </label> <br>
+        </label>
         <label>
           What are your favorite brand of cars?
           <select
@@ -112,12 +110,12 @@
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
           </select>
-        </label> <br>
+        </label>
         <label>
           How do you rate our work?
           <input
             type="range" name="range"
-            id="range"
+            class="range"
             min="1" max="100"
             value="0"
           >
@@ -129,14 +127,14 @@
           Comments:
           <textarea
             name="comments" autocomplete="off"
-            required
+            class="comments" required
           >
           </textarea>
-        </label> <br>
+        </label>
         <label>
           Would you recommend us?
           <select
-            id="recommend" name="recommend"
+            class="recommend" name="recommend"
             required
           >
             <option value="yes">yes</option>

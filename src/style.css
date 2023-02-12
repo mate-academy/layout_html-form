@@ -8,18 +8,22 @@ input {
   margin-bottom: 10px;
 }
 
-#password {
+label {
+  display: block;
+}
+
+.password {
   margin-bottom: 6px;
 }
 
-#color {
+.color {
   margin-top: 4px;
 }
 
-#range {
+.range {
   margin-top: 12px;
 }
 
-#recommend {
+.recommend {
   margin: 10px 0 6px;
 }
