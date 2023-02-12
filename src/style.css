@@ -5,14 +5,14 @@
   display: block;
 }
 
-label {
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.label {
   margin-bottom: 10px;
 }
 
-fieldset label:last-child {
+.fieldset .label:last-child {
   margin-bottom: 0;
-}
-
-fieldset {
-  margin-bottom: 20px;
 }
