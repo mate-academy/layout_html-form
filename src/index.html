@@ -11,7 +11,123 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+          method="post"
+          class="form"
+          name="form"
+    >
+      <fieldset class="fieldset" name="fieldset">
+        <legend class="legend">Personal information</legend>
+        <label class="fieldform">
+          Surname:
+          <input type="text"
+                 name="surnameInput"
+                 autocomplete="off"
+                 required
+          >
+        </label>
+        <label class="fieldform">
+          Name:
+          <input type="text"
+                 name="nameInput"
+                 autocomplete="off"
+                 required
+          >
+        </label>
+        <label class="fieldform">
+          How old are You?
+          <input type="number"
+                 name="ageInput"
+                 value="12"
+                 min="1"
+                 max="100"
+          >
+        </label>
+        <label class="fieldform">
+          Full date of birth:
+          <input type="date"
+                 name="dateInput"
+          >
+        </label>
+        <label class="fieldform">
+          I accept the term of the agreement
+          <input type="checkbox"
+                 name="agreement"
+                 required
+          >
+        </label>
+      </fieldset>
+      <fieldset class="fieldset" name="fieldset">
+        <legend class="legend">Registration</legend>
+        <label class="fieldform">
+          E-mail:
+          <input type="email"
+                 name="emailInput"
+                 placeholder="email@example.com"
+                 required
+          >
+        </label>
+        <label class="fieldform">
+          Password:
+          <input type="password"
+                 name="passwordInput"
+                 required
+          >
+        </label>
+      </fieldset>
+      <fieldset class="fieldset" name="fieldset">
+        <legend class="legend">An isteresting fact about you!</legend>
+        <label class="fieldform">
+          Do you love cats?
+          <input type="radio" name="catsLove">Yes
+          <input type="radio" name="catsLove">No
+        </label>
+        <label class="fieldform">
+          What is your favorite color?
+          <input type="color" name="colorInput">
+        </label>
+        <label class="fieldform">
+          What time do you go to bed?
+          <input type="time" name="timeInput">
+        </label>
+        <label class="fieldform">
+          What are your favorite brand of cars?
+          <select class="select"
+                  name="selectCar"
+                  multiple
+          >
+            <option value="BMW">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </label>
+        <label class="fieldform">
+          How do you rate our work?
+          <input type="range">
+        </label>
+      </fieldset>
+      <fieldset class="fieldset" name="fieldset">
+        <legend class="legend">Additional info</legend>
+        <label class="fieldform">
+          Comments:
+          <textarea name="comments"
+                    cols="20"
+                    rows="2"
+                    minlength="10"
+                    maxlength="50"
+          >
+          </textarea>
+        </label>
+        <label class="fieldform">
+          Would you recommnd us?
+          <select class="select" name="selectCar">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+          </select>
+        </label>
+      </fieldset>
+      <button type="submit" name="submitBtn">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
