@@ -1,1 +1,17 @@
-/* styles go here */
+fieldset {
+  margin-bottom: 20px;
+}
+
+.fieldsetItem {
+  margin-top: 10px;
+  margin-bottom: 0;
+  display: block;
+}
+
+.fieldsetItem:first-of-type {
+  margin-top: 0;
+}
+
+.fieldsetItem:last-of-type {
+  margin-bottom: 0;
+}
