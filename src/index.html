@@ -16,41 +16,41 @@
       src="./main.js">
     </script>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
-      <fieldset class="formfild">
+      <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <div class="form">
+        <div class="formField">
           <label>
             Surname:
             <input
               type="text"
-              name="sname"
+              name="surname"
               autocomplete="off"
             >
           </label>
         </div>
-        <div class="form">
+        <div class="formField">
           <label>
             Name:
             <input
               type="text"
-              name="fname"
+              name="name"
               autocomplete="off"
             >
           </label>
         </div>
-        <div class="form">
+        <div class="formField">
           <label>
             How old are You?
             <input
               type="number"
-              name="old"
+              name="age"
               min="1"
               max="100"
               value="12"
             >
           </label>
         </div>
-        <div class="form">
+        <div class="formField">
           <label>
             Full date of birth:
             <input
@@ -64,14 +64,14 @@
             I accept the term of the agreement
             <input
               type="checkbox"
-              name="accept"
+              name="agreement"
             >
           </label>
         </div>
       </fieldset>
-      <fieldset class="formfild">
+      <fieldset class="fieldset">
         <legend>Registration</legend>
-        <div class="form">
+        <div class="formField">
           <label>
             E-mail:
             <input
@@ -86,16 +86,16 @@
             Password:
             <input
               type="password"
-              name="p_word"
+              name="password"
               minlength="4"
-              maxlength="1"
+              maxlength="10"
             >
           </label>
         </div>
       </fieldset>
-      <fieldset class="formfild">
+      <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
-        <div class="form">
+        <div class="formField">
           Do you love cats?
           <label>
             <input
@@ -112,36 +112,36 @@
             >No
           </label>
         </div>
-        <div class="form">
+        <div class="formField">
           <label>
             What is you favorite cololor
             <input
               type="color"
-              name="fcolor"
+              name="favoritecolor"
             >
           </label>
         </div>
-        <div class="form">
+        <div class="formField">
           <label>
             What time do you go to bed?
             <input
               type="time"
-              name="bed"
+              name="sleeptime"
               step="2"
             >
           </label>
         </div>
-        <div class="form">
+        <div class="formField">
           <label for="cars">What are your favorite brand of cars?</label>
           <select
             id="cars"
-            name="cars"
+            name="favoritecars"
             size="4"
             multiple
           >
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
-            <option value="lad">Lada</option>
+            <option value="lada">Lada</option>
           </select>
         </div>
         <div>
@@ -149,15 +149,15 @@
             How do you rate out woork?
             <input
               type="range"
-              name="rate"
+              name="ratework"
               value="0"
             >
           </label>
         </div>
       </fieldset>
-      <fieldset class="formfild">
+      <fieldset class="fieldset">
         <legend>Additional info:</legend>
-        <div class="form">
+        <div class="formField">
           <label>
             Comments:
             <textarea name="message"></textarea>
@@ -176,7 +176,7 @@
       <div>
         <input
           type="submit"
-          value="Submit"
+          value="submit"
         >
       </div>
     </form>
