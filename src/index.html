@@ -18,11 +18,21 @@
         <legend>Personal information</legend>
         <label class="label" for="surname">
           Surname:
-          <input id="surname" type="surname">
+          <input
+            id="surname"
+            name="surname"
+            type="surname"
+            autocomplete="off"
+          >
         </label>
         <label class="label" for="name">
           Name:
-          <input id="name" type="text">
+          <input
+          id="name"
+          name="name"
+          type="text"
+          autocomplete="off"
+          >
         </label>
         <label class="label"  for="number">
           How old are You?
@@ -30,6 +40,7 @@
             class="form-number"
             type="number"
             id="number"
+            name="number"
             value="12"
             min="0"
             max="100"
@@ -45,7 +56,11 @@
         </label>
         <label class="label" for="accept">
           I accept the term of the agreement
-          <input id="accept" type="checkbox">
+          <input
+           id="accept"
+           type="checkbox"
+           name="checkbox"
+          >
         </label>
       </fieldset>
       <fieldset class="form-field">
@@ -61,7 +76,11 @@
         </label>
         <label class="label" for="password">
           Password:
-          <input id="password" type="password">
+          <input
+            id="password"
+            type="password"
+            name="password"
+          >
         </label>
       </fieldset>
       <fieldset class="form-field">
@@ -73,14 +92,16 @@
               id="cats-yes"
               type="radio"
               name="cats"
+              value="yes"
             >
             Yes
           </label>
           <label for="cats-no">
             <input
-            id="cats-no"
-            type="radio"
-            name="cats"
+              id="cats-no"
+              type="radio"
+              name="cats"
+              value="no"
             >
             No
           </label>
@@ -96,6 +117,7 @@
         <label class="label" for="datelocal">
           What time do you go to bed?
           <input
+            name="date"
             id="datelocal"
             type="datetime-local"
           >
@@ -116,17 +138,18 @@
           How do you rate our work?
           <input
             id="form-work"
+            name="range"
             type="range"
             min="1"
             max="100"
-            value="1"
+            value="12"
           >
         </label>
       </fieldset>
       <fieldset class="form-field">
         <legend>Additional info:</legend>
         <label class="label" for="textarea">
-        Comments:
+          Comments:
           <textarea
             id="textarea"
             cols="20"
