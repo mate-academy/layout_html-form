@@ -11,58 +11,51 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
+
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="get">
-      <fieldset>
+
+      <fieldset class="fieldset-container">
+
         <legend>Personal information</legend>
-        <label 
-          for="surename" 
-          class="fieldsetItem"
-        >
+        
+        <label class="fieldsetItem">
           Surname:
           <input 
             type="text" 
             name="surename" 
             autocomplete="off"
-            id="surename"
           >
         </label>
-        <label 
-          for="name" 
-          class="fieldsetItem"
-        >
+
+        <label class="fieldsetItem">
           Name:
-          <input 
-            type="text" 
-            name="name" 
-            autocomplete="off" 
-            required="" 
-            id="name"
+          <input
+            type="text"
+            name="name"
+            autocomplete="off"
+            required
           >
         </label>
-        <label 
-          for="age" 
-          class="fieldsetItem"
-        >
+
+        <label class="fieldsetItem">
           How old are You?
           <input 
             type="number" 
             name="age" 
             min="1" 
             max="100" 
-            value="12" 
-            id="age"
+            value="12"
           >
         </label>
-        <label 
-          for="dateOfbirth" 
-          class="fieldsetItem"
-        >
+
+        <label class="fieldsetItem">
           Full date of birth:
           <input
             type="date" 
-            name="dateOfbirth" id="dateOfbirth"
+            name="dateOfbirth"
           >
         </label>
+        
         <label 
           for="terms" 
           class="fieldsetItem"
@@ -71,44 +64,46 @@
           <input 
             type="checkbox" 
             name="terms" 
-            required="" 
+            required
             id="terms"
           >
         </label>
+
       </fieldset>
-      <fieldset>
+
+      <fieldset class="fieldset-container">
+
+
         <legend>Registration</legend>
-        <label 
-          for="email" 
-          class="fieldsetItem"
-        >
+
+        <label class="fieldsetItem">
           E-mail:
           <input 
             type="email" 
             name="email" 
             placeholder="email@example.com" 
-            required="" 
-            id="email"
+            required
           >
         </label>
-        <label 
-          for="password" 
-          class="fieldsetItem"
-        >
+
+        <label class="fieldsetItem">
           Password:
           <input 
             type="password" 
             name="password" 
             minlength="8" 
             maxlength="30" 
-            required="" 
-            id="password"
+            required
           >
         </label>
+
       </fieldset>
-      <fieldset>
+
+      <fieldset class="fieldset-container">
+
         <legend>An interesting fact about you!</legend>
-        <label class="fieldsetItem">
+
+        <div class="fieldsetItem loveCats">
           Do you love cats?
           <input
             type="radio" 
@@ -134,46 +129,38 @@
           >
             No
           </label>
-        </label>
-        <label 
-          for="favoriteColor" 
-          class="fieldsetItem firstElement"
-        >
+        </div>
+
+        <label class="fieldsetItem firstElement">
           What is your favorite color?
           <input 
             type="color" 
             name="favoriteColor" 
-            id="favoriteColor"
           >
         </label>
-        <label 
-          for="timeToSleep" 
-          class="fieldsetItem"
-        >
+
+        <label class="fieldsetItem">
           What time do you go to bed?
           <input 
             type="time" 
-            name="timeToSleep" 
-            id="timeToSleep" 
+            name="timeToSleep"
             step="2"
           >
         </label>
-        <label 
-          for="brandOfCar" 
-          class="fieldsetItem"
-        >
+
+        <label class="fieldsetItem">
           What are your favorite brand of cars?
           <select 
             name="brandOfCar" 
-            multiple="" 
-            required="" 
-            id="brandOfCar"
+            multiple
+            required
           >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="PizdaRusni">Lada</option>
           </select>
         </label>
+
         <label 
           for="rate" 
           class="fieldsetItem"
@@ -186,38 +173,38 @@
             value="0"
           >
         </label>
+
       </fieldset>
-      <fieldset>
+
+      <fieldset class="fieldset-container">
+
         <legend>Additional info:</legend>
-        <label 
-          for="comments" 
-          class="fieldsetItem"
-        >
+
+        <label class="fieldsetItem">
           Comments:
           <textarea 
             name="comments" 
             cols="19" 
             rows="2" 
-            id="comments"
           >
           </textarea>
         </label>
-        <label
-          for="recommended"
-          class="fieldsetItem"
-        >
+
+        <label class="fieldsetItem">
           Would you recommend us?
-          <select
-            name="recommended" 
-            id="recommended"
-          >
+          <select name="recommended">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
         </label>
+
       </fieldset>
+
       <button type="submit">Submit</button>
+
     </form>
+
     <script type="text/javascript" src="./main.js"></script>
+
   </body>
 </html>

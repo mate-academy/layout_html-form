@@ -1,17 +1,32 @@
-fieldset {
+.fieldset-container {
   margin-bottom: 20px;
 }
 
 .fieldsetItem {
-  margin-top: 10px;
-  margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
   display: block;
 }
 
-.fieldsetItem:first-of-type {
-  margin-top: 0;
-}
-
-.fieldsetItem:last-of-type {
+.fieldsetItem:last-child {
   margin-bottom: 0;
 }
+
+/* .fieldsetItem input {
+  border: 1px solid #ccc;
+} */
+/* .fieldsetItem:not(: {
+  margin-top: 0;
+} */
+
+/* .fieldsetItem:not(:first-of-type) {
+  margin-bottom: 10px;
+} */
+
+/* .fieldsetItem:first-of-type {
+  margin-top: 0;
+} */
+
+/* .loveCats {
+  margin-bottom: 10px;
+} */
