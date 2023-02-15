@@ -1,1 +1,41 @@
 /* styles go here */
+body {
+  /* box-sizing: content-box; */
+  margin: 0;
+}
+
+/* .body {
+  --header-height: 50px;
+  --footer-height: 50px;
+}
+
+.main {
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
+.header {
+  height: var(--header-height);
+  margin-bottom: 20px;
+}
+
+.footer {
+  height: var(--footer-height);
+} */
+
+.group {
+  margin: 0 20px;
+  margin-bottom: 20px;
+}
+
+.content .section:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.section__content {
+  padding: 3px 12px;
+}
+
+.SubmitButton {
+
+  margin-left: 50%;
+}

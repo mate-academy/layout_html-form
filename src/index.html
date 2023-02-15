@@ -2,16 +2,268 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
-  <body>
-    <h1>HTML Form</h1>
+  <body class="body">
     <script type="text/javascript" src="./main.js"></script>
+    <header class="header"></header>
+
+    <main class="main">
+      <div class="content">
+        <form
+        action="http://localhost:8080/api" method="post"
+        name="taskForm"
+        >
+          <fieldset class="group personalInfo">
+            <legend class="legend personalInfo__legend">
+              Personal information
+            </legend>
+            <div class="content personalInfo__content">
+
+              <section class="section surname__section">
+                <div class="section__content">
+                  <label for="surname">
+                    Surname:
+                  </label>
+                  <input
+                    type="text"
+                    id="surname"
+                    name="surname"
+                  >
+                </div>
+              </section>
+
+              <section class="section name__section">
+                <div class="section__content">
+                  <label for="name">
+                    Name:
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                  >
+                </div>
+              </section>
+
+              <section class="section age__section">
+                <div class="section__content">
+                  <label for="age">
+                    How old are you?
+                  </label>
+                  <input
+                    type="number"
+                    id="age"
+                    name="age"
+                    value="12"
+                    max="100"
+                    min="1"
+                  >
+                </div>
+              </section>
+
+              <section class="section dateOfBirth__section">
+                <div class="section__content">
+                  <label for="dateOfBirth">
+                    Full date of birth
+                  </label>
+                  <input
+                    type="date"
+                    id="dateOfBirth"
+                    name="dateOfBirth"
+                  >
+                </div>
+              </section>
+
+              <section class="section terms__section">
+                <div class="section__content">
+                  <label for="terms">
+                    I accept the term of the agreement
+                  </label>
+                  <input type="checkbox"
+                    id="terms"
+                    name="terms"
+                    required
+                  >
+                </div>
+              </section>
+            </div>
+          </fieldset>
+
+          <fieldset class="group registration">
+            <legend class="legend registration__legend">
+              Personal information
+            </legend>
+            <div class="content registration__content">
+
+              <section class="section email__section">
+                <div class="section__content">
+                  <label for="email">
+                    E-mail:
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="email@example.com"
+                  >
+                </div>
+              </section>
+
+              <section class="section password__section">
+                <div class="section__content">
+                  <label for="password">
+                    Password:
+                  </label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    minlength="8"
+                    maxlength="18"
+                  >
+                </div>
+              </section>
+            </div>
+          </fieldset>
+
+          <fieldset class="group aboutYou">
+            <legend class="legend aboutYou__legend">
+              An interesting fact about you?
+            </legend>
+            <div class="content aboutYou__content">
+
+              <section class="section isLoveCat__section">
+                <div class="section__content">
+                  <label for="isLoveCat">
+                    Do you love cats?
+                    <input
+                      type="radio"
+                      name="isLoveCat"
+                      id="isLovecat--true"
+                    >
+                    <label for="isLovecat--true">
+                      Yes
+                    </label>
+                    <input
+                      type="radio"
+                      name="isLoveCat"
+                      id="isLovecat--false"
+                    >
+                    <label for="isLovecat--false">
+                      No
+                    </label>
+                  </label>
+                </div>
+              </section>
+
+              <section class="section favColor__section">
+                <div class="section__content">
+                  <label for="favColor">
+                    What is your favorite color?
+                  </label>
+                  <input
+                    type="color"
+                    name="favColor"
+                    id="favColor"
+                  >
+                </div>
+              </section>
+
+              <section class="section isTimeGoToBed__section">
+                <div class="section__content">
+                  <label for="isTimeGoToBed">
+                    What time you go to bed?
+                  </label>
+                  <input
+                    type="time"
+                    name="isTimeGoToBed"
+                    id="isTimeGoToBed"
+                  >
+                </div>
+              </section>
+
+              <section class="section isFavBrandOfCars__section">
+                <div class="section__content">
+                  <label for="isFavBrandOfCars">
+                    What are your favorite brand of cars?
+                  </label>
+                  <textarea
+                    autocomplete="off"
+                    name="isFavBrandOfCars"
+                    id="isFavBrandOfCars"
+                    rows="4"
+                    cols="4"
+                  ></textarea>
+                </div>
+              </section>
+
+              <section class="section rateOurWork__section">
+                <div class="section__content">
+                  <label for="rateOurWork">
+                    How do you rate our work?
+                  </label>
+                  <input
+                    type="range"
+                    name="rateOurWork"
+                    id="rateOurWork"
+                  >
+                  </input>
+                </div>
+              </section>
+            </div>
+          </fieldset>
+
+          <fieldset class="group additionalInfo">
+            <legend class="legend additionalInfo__legend">
+              Additional nfo:
+            </legend>
+            <div class="content additionalInfo__content">
+              <section class="section comments__section">
+                <div class="section__content">
+                  <label for="comments">
+                    Comments:
+                  </label>
+                  <textarea
+                    autocomplete="off"
+                    name="comments"
+                    id="comments"
+                  ></textarea>
+                  /* eslint-enable */
+                </div>
+              </section>
+
+              <section class="section isRecommendUs__section">
+                <div class="section__content">
+                  <label for="recommendUs">
+                    Would you recommend us?:
+                  </label>
+                  <select name="recommendUs" multiple>
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                    <option value="true">Yes</option>
+                    <option value="true">Yes</option>
+                  </select>
+                </div>
+              </section>
+            </div>
+          </fieldset>
+          <div class="button__wrapper">
+            <button
+              class="submitButton"
+              id="formSubmit"
+              type="submit"
+            >
+            Submit
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </main>
+    <footer class="footer"></footer>
   </body>
 </html>
