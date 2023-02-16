@@ -1,1 +1,52 @@
-/* styles go here */
+fieldset {
+
+  margin-bottom: 20px;
+}
+
+.personalInformation > .input {
+  padding: 5px 0;
+}
+
+.personalInformation > .input:first-child {
+  padding-top: 0;
+}
+
+.personalInformation > .input:last-child {
+  padding-bottom: 0;
+}
+
+.registration > .input__r {
+  padding: 5px 0;
+}
+
+.registration > .input__r:first-child {
+  padding-top: 0;
+}
+
+.registration > .input__r:last-child {
+  padding-bottom: 0;
+}
+
+.interesting > .input__i {
+  padding: 5px 0;
+}
+
+.interesting > .input__i:first-child {
+  padding-top: 0;
+}
+
+.interesting > .input__i:last-child {
+  padding-bottom: 0;
+}
+
+.additionalInfo > .input__a {
+  padding: 5px 0;
+}
+
+.additionalInfo > .input__a:first-child {
+  padding-top: 0;
+}
+
+.additionalInfo > .input__a:last-child {
+  padding-bottom: 0;
+}
