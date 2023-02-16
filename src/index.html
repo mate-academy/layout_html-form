@@ -3,15 +3,144 @@
   <head>
     <meta charset="UTF-8">
     <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    name="viewport"
+    content="width=device-width, user-scalable=no, 
+    initial-scale=1.0, maximum-scale=1.0, 
+    minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
+    method="post"
+    >
+      <fieldset class="first-form">
+        <legend>Personal information</legend>
+
+        <label class="surname">
+          Surname:
+          <input type="text" 
+            name="surname" autocomplete="off"
+            required
+          >
+        </label>
+  
+        <label class="name">
+          Name:
+          <input type="text" 
+            name="name" autocomplete="off"
+            required
+          >
+        </label>
+  
+        <label class="age">
+          How old are You?
+          <input type="number"
+          name="age" min="1"
+          max="100" value="12"
+          required
+          >
+        </label>
+  
+        <label class="birthday">
+          Full date of birth:
+          <input type="date"
+            name="birthday" required
+          >  
+        </label>
+  
+        <label class="agreement">
+          I accept the term of the agreement
+          <input type="checkbox" name="agreement"
+            required
+          >
+        </label>
+
+      </fieldset>
+
+      <fieldset class="second-form">
+        <legend>Registration</legend>
+
+        <label class="email label-second-form">
+          E-mail:
+          <input type="email" name="email"
+            required placeholder="email@example.com"
+          >
+        </label>
+
+        <label class="password label-second-form">
+          Password:
+          <input type="password" name="password"
+            required
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="third-form">
+        <legend>An interesting fact about you!</legend>
+
+        <label class="cats label-third-form">
+          Do you love cats?
+          <input type="radio" name="cats"
+            required
+          > Yes
+          <input type="radio" name="cats"> No
+        </label>
+
+        <label class="favorite-color label-third-form">
+          What is your favorite color?
+          <input type="color" name="color"
+            required
+          >
+        </label>
+
+        <label class="go-to-bed label-third-form">
+          What time do you go to bed?
+          <input type="time" name="time"
+            required step="2"
+          >
+        </label>
+
+        <label class="brand-of-cars label-third-form">
+          What are your favorite brand of cars?
+          <select class="select-cars" multiple 
+            required
+          >
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </label>
+
+        <label class="rate-our-work label-third-form">
+          How do you rate our work?
+          <input type="range" name="range"
+            autocomplete="off" required
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="last-form">
+        <legend>Additional info</legend>
+
+        <label class="comments label-last-form">
+          Comments:
+          <textarea name="comments" required></textarea>
+        </label>
+
+        <label class="recommend-us label-last-form">
+          Would you recommend us?
+          <select name="recommend" required>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
