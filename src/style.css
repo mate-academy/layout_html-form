@@ -1,1 +1,11 @@
-/* styles go here */
+.form_element {
+  margin-bottom: 10px;
+}
+
+.fieldSet {
+  margin-bottom: 20px;
+}
+
+.form_field {
+  display: inline-block;
+}
