@@ -1,1 +1,20 @@
 /* styles go here */
+
+body {
+  max-width: 600px;
+  padding: 0 px 30px;
+}
+
+.inputWrapper:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.inputGroup:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+/* stylelint-disable-next-line selector-attribute-quotes */
+input[type=submit] {
+  width: 200px;
+  padding: 10px;
+}
