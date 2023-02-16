@@ -5,7 +5,7 @@ body {
 .first-form {
   display: block;
   position: relative;
-  height: 150px;  
+  height: 150px;
   border: 1px black solid;
   padding: 20px 15px;
 }
@@ -38,13 +38,11 @@ body {
   margin-bottom: 12px;
 }
 
-
-
 .second-form {
   display: block;
   position: relative;
   margin-top: 20px;
-  height: 50px;  
+  height: 50px;
   border: 1px black solid;
   padding: 20px 15px;
 }
@@ -59,17 +57,16 @@ body {
 .registration-form {
   display: block;
 }
+
 .password {
   margin-top: 12px;
 }
-
-
 
 .third-form {
   display: block;
   position: relative;
   margin-top: 20px;
-  height: 200px;  
+  height: 200px;
   border: 1px black solid;
   padding: 20px 15px;
 }
@@ -101,13 +98,11 @@ body {
   margin-top: 12px;
 }
 
-
-
 .last-form {
   display: block;
   position: relative;
   margin-top: 20px;
-  height: 65px;  
+  height: 65px;
   border: 1px black solid;
   padding: 20px 15px;
 }
@@ -123,14 +118,14 @@ body {
   height: 30px;
 }
 
-.recommend-us{
+.recommend-us {
   margin-top: 10px;
 }
 
 .yes-no {
   border: 0.1px solid black;
   border-radius: 5px;
-} 
+}
 
 .button {
   margin-top: 20px;
