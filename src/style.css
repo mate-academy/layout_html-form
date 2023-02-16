@@ -1,1 +1,141 @@
-/* styles go here */
+body {
+  margin: 20px;
+}
+
+.first-form {
+  display: block;
+  position: relative;
+  height: 150px;  
+  border: 1px black solid;
+  padding: 20px 15px;
+}
+
+.personal-information {
+  position: absolute;
+  top: -10px;
+  background-color: white;
+  padding: 0 3px;
+}
+
+.personal {
+  display: block;
+}
+
+.name {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.age-width {
+  max-width: 40px;
+}
+
+.age {
+  margin-bottom: 12px;
+}
+
+.date-of-birth {
+  margin-bottom: 12px;
+}
+
+
+
+.second-form {
+  display: block;
+  position: relative;
+  margin-top: 20px;
+  height: 50px;  
+  border: 1px black solid;
+  padding: 20px 15px;
+}
+
+.registration {
+  position: absolute;
+  top: -10px;
+  background-color: white;
+  padding: 0 3px;
+}
+
+.registration-form {
+  display: block;
+}
+.password {
+  margin-top: 12px;
+}
+
+
+
+.third-form {
+  display: block;
+  position: relative;
+  margin-top: 20px;
+  height: 200px;  
+  border: 1px black solid;
+  padding: 20px 15px;
+}
+
+.interesting-facts {
+  position: absolute;
+  top: -10px;
+  background-color: white;
+  padding: 0 3px;
+}
+
+.field-love-cats {
+  margin-bottom: 12px;
+}
+
+.color {
+  margin-bottom: 12px;
+}
+
+.go-to-bed {
+  margin-bottom: 12px;
+}
+
+.select-cars {
+  overflow-y: hidden;
+}
+
+.rate-our-work {
+  margin-top: 12px;
+}
+
+
+
+.last-form {
+  display: block;
+  position: relative;
+  margin-top: 20px;
+  height: 65px;  
+  border: 1px black solid;
+  padding: 20px 15px;
+}
+
+.additional-info {
+  position: absolute;
+  top: -10px;
+  background-color: white;
+  padding: 0 3px;
+}
+
+.textarea {
+  height: 30px;
+}
+
+.recommend-us{
+  margin-top: 10px;
+}
+
+.yes-no {
+  border: 0.1px solid black;
+  border-radius: 5px;
+} 
+
+.button {
+  margin-top: 20px;
+  width: 65px;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+}
