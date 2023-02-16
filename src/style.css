@@ -1,7 +1,6 @@
 /* styles go here */
 body {
   /* box-sizing: content-box; */
-  margin: 0;
 }
 
 /* .body {
@@ -23,19 +22,9 @@ body {
 } */
 
 .group {
-  margin: 0 20px;
   margin-bottom: 20px;
 }
 
 .content .section:not(:last-child) {
   margin-bottom: 10px;
-}
-
-.section__content {
-  padding: 3px 12px;
-}
-
-.SubmitButton {
-
-  margin-left: 50%;
 }

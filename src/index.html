@@ -32,6 +32,7 @@
                     type="text"
                     id="surname"
                     name="surname"
+                    autocomplete="off"
                   >
                 </div>
               </section>
@@ -45,6 +46,7 @@
                     type="text"
                     id="name"
                     name="name"
+                    autocomplete="off"
                   >
                 </div>
               </section>
@@ -98,7 +100,6 @@
               Personal information
             </legend>
             <div class="content registration__content">
-
               <section class="section email__section">
                 <div class="section__content">
                   <label for="email">
@@ -109,6 +110,7 @@
                     id="email"
                     name="email"
                     placeholder="email@example.com"
+                    autocomplete="off"
                   >
                 </div>
               </section>
@@ -124,6 +126,7 @@
                     name="password"
                     minlength="8"
                     maxlength="18"
+                    autocomplete="off"
                   >
                 </div>
               </section>
@@ -185,19 +188,16 @@
                   >
                 </div>
               </section>
-
               <section class="section isFavBrandOfCars__section">
                 <div class="section__content">
                   <label for="isFavBrandOfCars">
                     What are your favorite brand of cars?
                   </label>
-                  <textarea
-                    autocomplete="off"
-                    name="isFavBrandOfCars"
-                    id="isFavBrandOfCars"
-                    rows="4"
-                    cols="4"
-                  ></textarea>
+                  <select name="isFavBrandOfCars" multiple>
+                    <option value="BMW">BMW</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Lada">Lada</option>
+                  </select>
                 </div>
               </section>
 
@@ -231,8 +231,7 @@
                     autocomplete="off"
                     name="comments"
                     id="comments"
-                  ></textarea>
-                  /* eslint-enable */
+                 ></textarea>
                 </div>
               </section>
 
@@ -241,7 +240,7 @@
                   <label for="recommendUs">
                     Would you recommend us?:
                   </label>
-                  <select name="recommendUs" multiple>
+                  <select name="recommendUs">
                     <option value="true">Yes</option>
                     <option value="false">No</option>
                     <option value="true">Yes</option>
