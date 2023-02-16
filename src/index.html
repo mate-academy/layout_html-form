@@ -4,14 +4,185 @@
     <meta charset="UTF-8">
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width,
+      user-scalable=no,
+      initial-scale=1.0,
+      maximum-scale=1.0,
+      minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+    <form
+    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="post"
+    name="test-form"
+    >
+      <fieldset class="inputGroup">
+        <legend>Personal information</legend>
+        <div class="inputWrapper">
+          <label>
+            Surname:
+            <input
+            type="text"
+            name="surname"
+            autocomplete="off"
+            >
+          </label>
+        </div>
+        <div class="inputWrapper">
+          <label>
+            Name:
+            <input
+            type="text"
+            name="name"
+            autocomplete="off"
+            >
+          </label>
+        </div>
+        <div class="inputWrapper">
+          <label>
+            How old are You?
+            <input
+            name="age"
+            type="number"
+            value="12"
+            min="1"
+            max="100"
+            >
+          </label>
+        </div>
+        <div class="inputWrapper">
+          <label>
+            Full date of birth:
+            <input type="date" name="dateOfBirth">
+          </label>
+        </div>
+        <div class="inputWrapper">
+          <label>
+            I accept the term of agreement
+            <input
+            type="checkbox"
+            name="termsAgreement"
+            required
+            >
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="inputGroup">
+        <legend>Registration</legend>
+        <div class="inputWrapper">
+          <label>E-mail:
+            <input
+            type="email"
+            name="mail"
+            placeholder="email@example.com"
+            required
+            autocomplete="off"
+            >
+          </label>
+        </div>
+        <div class="inputWrapper">
+          <label>
+            Password:
+            <input
+            type="password"
+            name="password"
+            minlength="5"
+            maxlength="32"
+            required
+            autocomplete="off"
+            >
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="inputGroup">
+        <legend>An interesting fact about you!</legend>
+        <div class="inputWrapper">
+          <label class="inputLabel">
+            Do you love cats?
+            <span>
+              <input
+              type="radio"
+              name="catLover"
+              value="yes"
+              >
+              Yes
+            </span>
+            <span>
+              <input
+              type="radio"
+              name="catLover"
+              value="no"
+              checked
+              >
+              No
+            </span>
+          </label>
+        </div>
+        <div class="inputWrapper">
+          <label>
+            What is your favorite color?
+            <input type="color" name="favoriteColor">
+          </label>
+        </div>
+        <div class="inputWrapper">
+          <label>
+            What time do you go to bed?
+            <input type="time" name="bedTime">
+          </label>
+        </div>
+        <div class="inputWrapper">
+          <label>
+            What are your favorite brand of cars?
+            <select name="favoriteCarBrand" multiple>
+              <option value="bmw">BMW</option>
+              <option value="audi">Audi</option>
+              <option value="lada">Lada</option>
+            </select>
+          </label>
+        </div>
+        <div class="inputWrapper">
+          <label>
+            How you rate our work?
+            <input
+            type="range"
+            name="rateOfWork"
+            min="1"
+            max="10"
+            >
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="inputGroup">
+        <legend>Additional info:</legend>
+        <div class="inputWrapper">
+          <label>
+            Comments:
+            <textarea
+            name="comments"
+            cols="20"
+            rows="2"
+            autocomplete="off"
+            >&nbsp
+            </textarea>
+          </label>
+        </div>
+        <div class="inputWrapper">
+          <label>
+            Would you recommend us?
+            <select name="recommendation">
+              <option value="yex">yes</option>
+              <option value="no">no</option>
+            </select>
+          </label>
+        </div>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+
   </body>
 </html>
