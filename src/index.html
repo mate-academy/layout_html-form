@@ -10,45 +10,46 @@
   <body>
     <script type="text/javascript" src="./main.js"></script>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <fieldset class="fieldsett">
+      <fieldset class="fieldset">
         <legend>Personal information</legend>
         <label class="form-field">
            Surname:
-          <input type="text"
-           name="Surname"
-           autocomplete="off"
+          <input 
+            type="text"
+            name="Surname"
+            autocomplete="off"
           >
         </label>
 
         <label class="form-field">
           Name:
-          <input type="text"
-           name="Name" 
-           maxlength="20" 
-           autocomplete="off"
+          <input 
+            type="text"
+            name="Name" 
+            maxlength="20" 
+            autocomplete="off"
           >
         </label>
 
         <label class="form-field">
           How old are You?
-          <input type="number" 
-          name="Age" 
-          value="12" 
-          min="10" 
-          max="100"
+          <input 
+            type="number" 
+            name="Age" 
+            value="12" 
+            min="1" 
+            max="100"
           >
         </label>
 
         <label class="form-field">
           Full date of birth:
-          <input type="date" name="dateOfBirth"
-          >
+          <input type="date" name="dateOfBirth">
         </label>
 
         <label class="form-field">
           I accept the term of the agreement
-          <input type="checkbox" name="Terms"
-          >
+          <input type="checkbox" name="Terms">
         </label>
       </fieldset>
 
@@ -56,47 +57,49 @@
         <legend>Registration</legend>
         <label class="form-field">
           E-mail:
-          <input type="email" 
-           name="E-mail" 
-           placeholder="email@example.com"
+          <input 
+            type="email" 
+            name="E-mail" 
+            placeholder="email@example.com"
           >
         </label>
 
         <label class="form-field">
           Password:
-          <input type="password" 
-           name="password" 
-           required
+          <input 
+            type="password" 
+            name="password" 
+            required
           >
         </label>
       </fieldset>
 
-      <fieldset class="fieldset num3">
+      <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
         <label class="form-field">
           Do you love cats?
-          <input type="radio" 
-           name="loveCats" 
-           value="Yes"
+          <input 
+            type="radio" 
+            name="loveCats" 
+            value="Yes"
           >
           Yes
-          <input type="radio"
-           name="loveCats" 
-           value="No"
+          <input 
+            type="radio"
+            name="loveCats" 
+            value="No"
           >
           No
         </label>
 
         <label class="form-field">
           What is your favorite color?
-          <input type="color" name="Color"
-          >
+          <input type="color" name="Color">
         </label>
 
         <label class="form-field">
           What time do you go to bed?
-          <input type="time" name="timeToBed"
-          >
+          <input type="time" name="timeToBed">
         </label>
 
         <label class="form-field">
@@ -110,21 +113,24 @@
 
         <label class="form-field">
           How do you rate our work?
-          <input type="range" 
-          name="rate"
-          value="0"
+          <input 
+            type="range" 
+            name="rate"
+            value="0"
           >
         </label>
       </fieldset>
 
-      <fieldset class="fieldset num4">
+      <fieldset class="fieldset">
         <legend>Additional info:</legend>
         <label class="form-field">
           Comments:
-          <textarea name="Comments" 
-           cols="20" 
-           rows="2" 
-           minlength="5">
+          <textarea 
+            name="Comments" 
+            cols="20" 
+            rows="2" 
+            minlength="5"
+          >
           </textarea>
         </label>
 
