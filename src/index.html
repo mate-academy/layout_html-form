@@ -31,7 +31,6 @@
           <input
             type="text"
             name="name"
-            id="name"
             autocomplete="off"
           >
         </label>
@@ -40,7 +39,6 @@
           <input
             type="number"
             name="old"
-            id="old"
             min="1"
             max="100"
             value="12"
@@ -53,19 +51,18 @@
             name="fullDate"
           >
         </label>
-        <label>
+        <label class="field">
           I accept the term of the agreement
           <input
             type="checkbox"
             name="accept"
-            id="acceptOfAgreement"
           >
         </label>
       </fieldset>
       <fieldset class="group">
         <legend>Registration</legend>
 
-        <label class="email">
+        <label>
             E-mail:
           <input
             type="email"
@@ -73,7 +70,7 @@
             placeholder="email@example.com"
           >
         </label>
-        <label>
+        <label class="field">
             Password:
           <input
             class="pass"
@@ -87,17 +84,17 @@
          Do you love cats?
         <label>
           <input
-              type="radio"
-              name="yes"
-              value="y"
+            type="radio"
+            name="yes"
+            value="yes"
           >
             Yes
         </label>
-        <label for="no">
+        <label>
           <input
             type="radio"
             name="no"
-            value="n"
+            value="no"
           >
           No
         </label>
@@ -127,7 +124,7 @@
             <option value="Lada">Lada</option>
           </select>
         </label>
-        <label >
+        <label class="field">
             How do you rate our work?
           <input
             type="range"
@@ -139,14 +136,14 @@
       </fieldset>
       <fieldset class="group">
         <legend>Additional info:</legend>
-        <label class="comment">
+        <label>
             Comments:
           <textarea
             name="comments"
             autocomplete="off">
           </textarea>
         </label>
-        <label >
+        <label class="field">
           Would you recommend us?
           <select name="recommend">
             <option value="yes">yes</option>

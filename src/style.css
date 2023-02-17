@@ -1,20 +1,10 @@
 /*styles go here*/
 
 .group {
-  margin: 0 auto 20px;
+  margin-bottom: 20px;
 }
 
 .field {
-  margin: 10px auto;
+  margin-top: 10px;
   display: block;
-}
-
-.email {
-  display: block;
-  margin: 0 auto 10px;
-}
-
-.comment {
-  display: block;
-  margin: 0 auto 10px;
 }
