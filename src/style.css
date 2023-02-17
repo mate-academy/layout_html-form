@@ -11,22 +11,3 @@
 .fieldsetItem:last-child {
   margin-bottom: 0;
 }
-
-/* .fieldsetItem input {
-  border: 1px solid #ccc;
-} */
-/* .fieldsetItem:not(: {
-  margin-top: 0;
-} */
-
-/* .fieldsetItem:not(:first-of-type) {
-  margin-bottom: 10px;
-} */
-
-/* .fieldsetItem:first-of-type {
-  margin-top: 0;
-} */
-
-/* .loveCats {
-  margin-bottom: 10px;
-} */
