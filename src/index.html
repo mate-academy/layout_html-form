@@ -1,124 +1,134 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Form</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
 
-<body>
-  <h1>HTML Form</h1>
+  <body>
+    <h1>HTML Form</h1>
 
-  <form action="#" method="post" autocomplete="off">
-    <fieldset>
-      <legend>Personal information</legend>
-      <div class="form-field">
+    <form action="#" method="post" autocomplete="off">
+      <fieldset>
+        <legend>Personal information</legend>
+        <div class="form-field">
 
-        <label for="Surname">Surname:</label>
-        <input type="text" name="Surname" id="Surname" required>
-      </div>
-      <div class="form-field">
-        <label for="Name">Name</label>
-        <input type="text" name="Name" id="Name" required>
-      </div>
-      <div class="form-field">
-        <label for="How old are You?">How old are You?</label>
-        <input type="text" value="12" name="age" id="How old are You?" min="1" max="100">
-      </div>
-      <div class="form-field">
-        <label for="Full date of birth:">Full date of birth:</label>
-        <input type="text" placeholder="mm/dd/yyyy" name="date" id="Full date of birth:">
-      </div>
-      <div>
-        <label for="I-accept-the-term">I accept the term of the agreement</label>
+          <label class="blok">Surname:
+            <input type="text" name="Surname" required>
+          </label>
+        </div>
+        <div class="form-field">
+          <label class="blok">Name
+            <input type="text" name="Name" required>
+          </label>
+        </div>
+        <div class="form-field">
+          <label class="blok">How old are You?
+            <input type="text" value="12" name="age">
+          </label>
 
-        <input type="checkbox" name="agreement" id="I-accept-the-term" required>
-      </div>
-    </fieldset>
+        </div>
+        <div class="form-field">
+          <label class="blok">Full date of birth:
+            <input type="text" placeholder="mm/dd/yyyy" name="date">
+          </label>
+
+        </div>
+        <div>
+          <label class="blok">I accept the term of the agreement
+            <input type="checkbox" name="agreement" required>
+          </label>
 
 
-  </form>
+        </div>
+      </fieldset>
 
-  <form action="#" method="post" autocomplete="off" class="form2">
-    <fieldset>
-      <legend>Registration</legend>
-<div>
-  <label for="E-mail:">E-mail:</label>
-  <input type="email" name="E-mail" id="E-mail:" placeholder="email@example.com" required>
-</div>
-<div>
-  <label for="password:">password:</label>
-  <input type="password" name="password" id="password:" minlength="4" maxlength="8">
-</div>
 
-    </fieldset>
-    
-  </form>
-  <form action="" method="post" autocomplete="off">
-    <fieldset>
-      <legend>An interesting fact about you</legend>
-<label class="blok">
-  Do you love cats?
-  <input type="radio" name="Yes" value="y" checked>-Yes
-  <input type="radio" name="Yes" value="n">-No
-</label>
+    </form>
 
-<label class="color">
-  What is your favorite color?
-  <input type="color" name="color">
-</label>
+    <form action="#" method="post" class="form2">
+      <fieldset>
+        <legend>Registration</legend>
+        <div>
+          <label for="E-mail:">E-mail:
+            <input type="email" name="E-mail" placeholder="email@example.com">
+          </label>
 
-<label class="blok">
-  What time do you go to bad?
-  <input type="time" name="time" id="">
-</label>
+        </div>
+        <div>
+          <label for="password:">password:
+            <input type="password" name="password" minlength="4">
+          </label>
 
-<label>
-  What are your favorite brand of cars?
-  <select name="name-cars" multiple>
-    <option value="">BMW</option>
-    <option value="">Audi</option>
-    <option value="">Lada</option>
-  </select>
-</label>
+        </div>
 
-<label class="blok">
-  How do you rate our work?
-  <input type="range" name="work" min="1" max="10">
-</label>
-    </fieldset>
-    
-  </form>
-  <form action="" method="post" autocomplete="off" class="form4">
-    <fieldset>
-      <legend>Additional</legend>
-<label class="blok">
-  Comments
-  <textarea name="" id=""></textarea>
-</label>
+      </fieldset>
+    </form>
+    <form action="#" method="post" autocomplete="off">
+      <fieldset>
+        <legend>An interesting fact about you</legend>
+        <label class="blok">
+          Do you love cats?
+          <input type="radio" name="Yes" checked>-Yes
+          <input type="radio" name="Yes" value="n">-No
+        </label>
 
-<label class="blok">
-  <!-- <fieldset></fieldset> -->
-  Would you recommend us?
-  <select name="" id="">Would you recommend us?
-    <option value="">yes</option>
-    <option value="">no</option>
-  </select>
+        <label class="color">
+          What is your favorite color?
+          <input type="color" name="color">
+        </label>
 
-</label>
+        <label class="blok">
+          What time do you go to bad?
+          <input type="time" name="time">
+        </label>
 
-<button type="submit">Submit
-</button>
-    </fieldset>
-   
-  </form>
+        <label>
+          What are your favorite brand of cars?
+          <select name="name-cars" multiple>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </label>
 
-  <script type="text/javascript" src="./main.js"></script>
+        <label class="blok">
+          How do you rate our work?
+          <input type="range" name="work" min="1">
+        </label>
+      </fieldset>
 
-</body>
+    </form>
+    <form method="post" autocomplete="off" class="form4">
+      <fieldset>
+        <legend>Additional</legend>
+        <label class="blok">
+          Comments
+          <textarea name="Comments"></textarea>
+        </label>
+
+        <label class="blok">
+          Would you recommend us?
+          <select name="ask">Would you recommend us?
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+
+        </label>
+
+        <button type="submit">Submit
+        </button>
+      </fieldset>
+
+    </form>
+
+    <script type="text/javascript" src="./main.js"></script>
+
+  </body>
 
 </html>
