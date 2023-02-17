@@ -1,1 +1,28 @@
-/* styles go here */
+.personal_information_label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.registration_fieldset_email {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.asking_about_cats_div {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.interesting_facts_about_you {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.additional_info {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.information_fieldset {
+  margin-bottom: 20px;
+}
