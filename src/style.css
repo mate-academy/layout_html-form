@@ -4,6 +4,6 @@
   margin-bottom: 20px;
 }
 
-.content .section:not(:last-child) {
+.main .section:not(:last-child) {
   margin-bottom: 10px;
 }
