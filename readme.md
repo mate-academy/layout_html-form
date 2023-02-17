@@ -36,7 +36,7 @@ Create HTML page with form. On form submit send form data to `https://mate-acade
   - [+] max :57
   - [+] minlength :107
   - [+] maxlength :107
-  - [+] multiple :203
+  - [+] multiple :196
 - Age should be at least `1` and at max `100` with a default value of `12`
 - The email field should have placeholder value: `email@example.com`.
 - Text fields should have `autocomplete="off"`.
