@@ -1,1 +1,30 @@
 /* styles go here */
+body {
+  /* box-sizing: content-box; */
+}
+
+/* .body {
+  --header-height: 50px;
+  --footer-height: 50px;
+}
+
+.main {
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
+.header {
+  height: var(--header-height);
+  margin-bottom: 20px;
+}
+
+.footer {
+  height: var(--footer-height);
+} */
+
+.group {
+  margin-bottom: 20px;
+}
+
+.content .section:not(:last-child) {
+  margin-bottom: 10px;
+}
