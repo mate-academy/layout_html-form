@@ -10,8 +10,214 @@
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+
   <body>
-    <h1>HTML Form</h1>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="POST"
+    >
+      <fieldset class="mb">
+        <legend>Personal information</legend>
+
+        <div class="field-mb">
+          <label>
+            Surname:
+            <input
+              type="text"
+              name="surname"
+              autocomplete="off"
+              required
+            >
+          </label>
+        </div>
+
+        <div class="field-mb">
+          <label>
+            Name:
+            <input
+              type="text"
+              name="name"
+              autocomplete="off"
+              required
+            >
+          </label>
+        </div>
+
+        <div class="field-mb">
+          <label>
+            How old are You?
+            <input
+              type="number"
+              name="age"
+              autocomplete="off"
+              min="1"
+              max="100"
+              value="12"
+              required
+            >
+          </label>
+        </div>
+
+        <div class="field-mb">
+          <label>
+            Full date of birth:
+            <input
+              type="date"
+              name="fullBirthDate"
+              autocomplete="off"
+              required
+            >
+          </label>
+        </div>
+
+        <div class="field-mb">
+          <label>
+            I accept the term of the agreement
+            <input
+              type="checkbox"
+              name="terms"
+              autocomplete="off"
+            >
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="mb">
+        <legend>Registration</legend>
+
+        <div class="field-mb">
+          <label>
+            E-mail:
+            <input
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+              autocomplete="off"
+              required
+            >
+          </label>
+        </div>
+
+        <div class="field-mb">
+          <label>
+            Password:
+            <input
+              type="password"
+              name="password"
+              minlength="6"
+              maxlength="32"
+              autocomplete="off"
+              required
+            >
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="mb">
+        <legend>An interesting fact about you!</legend>
+        <div class="field-mb">
+          <span>Do you love cats?</span>
+          <label>
+            <input
+              type="radio"
+              name="loveCats"
+              autocomplete="off"
+            >
+            Yes
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="loveCats"
+              autocomplete="off"
+            >
+            No
+          </label>
+        </div>
+
+        <div class="field-mb">
+          <label>
+            What is your favorite color?
+            <input
+              type="color"
+              name="color"
+              autocomplete="off"
+            >
+          </label>
+        </div>
+
+        <div class="field-mb">
+          <label>
+            What time do you go to bed?
+            <input
+              type="time"
+              name="time"
+              autocomplete="off"
+              step="1"
+            >
+          </label>
+        </div>
+
+        <div class="field-mb">
+          <label>
+            What are your favorite brand of car?
+            <select
+              name="select"
+              autocomplete="off"
+              multiple
+            >
+              <option value="bmw">BMW</option>
+              <option value="audi">Audi</option>
+              <option value="lada">Lada</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="field-mb">
+          <label>
+            How do you rate our work?
+            <input
+              type="range"
+              name="range"
+              autocomplete="off"
+              value="1"
+              min="1"
+              max="10"
+            >
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="mb">
+        <legend>Additional info</legend>
+
+        <div class="field-mb">
+          <label>
+            Comments:
+            <textarea
+              name="textarea"
+              cols="10"
+              rows="2"
+              autocomplete="off"
+           ></textarea>
+          </label>
+        </div>
+
+        <div class="field-mb">
+          <label>
+            Would you recommendus?
+            <select name="select" autocomplete="off">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </label>
+        </div>
+      </fieldset>
+
+      <input type="submit" value="Submit">
+    </form>
+
     <script type="text/javascript" src="./main.js"></script>
   </body>
+
 </html>
