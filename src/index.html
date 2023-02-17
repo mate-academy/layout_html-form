@@ -11,12 +11,8 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <!-- <h1>HTML Form</h1> -->
-    <form 
-        action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-        method="post"
-      >
-      <fieldset>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+      <fieldset class="fieldset">
         <legend>Personal information</legend>
 
         <label class="form-field">
@@ -30,6 +26,7 @@
             autocomplete="off"
           >
         </label>
+
         <label class="form-field">
           Name:
           <input
@@ -41,6 +38,7 @@
             autocomplete="off"
           >
         </label>
+
         <label class="form-field">
           How old are You?
           <input
@@ -53,6 +51,7 @@
             required
           >
         </label>
+
         <label class="form-field">
           Full date of birth:
           <input
@@ -61,6 +60,7 @@
             required
           >
         </label>
+
         <label class="form-field">
           I accept the term of the agreement
           <input 
@@ -73,8 +73,9 @@
         </label>
       </fieldset>
       
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Registration</legend>
+
         <label class="form-field">
           E-mail:
           <input
@@ -86,6 +87,7 @@
             maxlength="80"
           >
         </label>
+
         <label class="form-field">
           Password:
           <input
@@ -98,8 +100,9 @@
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
+
         <label class="form-field">
           Do you love cats?
           <label>
@@ -122,6 +125,7 @@
             No
           </label>
         </label>
+
         <label class="form-field">
           What is your favorite color?
           <input
@@ -130,6 +134,7 @@
             required
           >
         </label>
+
         <label class="form-field">
           What time do you go to bed?
           <input
@@ -138,6 +143,7 @@
             required
           >
         </label>
+
         <label class="form-field">
           What are your favorite brand of cars?
           <select
@@ -151,6 +157,7 @@
             <option disabled></option>
           </select>
         </label>
+
         <label class="form-field">
           How do you rate our work?
           <input
@@ -162,15 +169,15 @@
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Additional info:</legend>
+
         <label class="form-field">
           Comments:
           <textarea
             name="comments"
             maxlength="1000"
-          >
-          </textarea>
+          ></textarea>
         </label>
     
         <label class="form-field">
