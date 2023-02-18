@@ -19,24 +19,24 @@ Create HTML page with form. On form submit send form data to `https://mate-acade
 - Do not use tabs for indentation. Instead use 2 spaces
 - Most of the time you want each tag in new line
 - Form should have different inputs with such types:
-  - [+] text :34
-  - [+] number :54
-  - [+] email :95
-  - [+] checkbox :76
-  - [+] radio :123
-  - [+] password :105
-  - [+] range :174
-  - [+] time :152
-  - [+] color:142
-  - [+] date :66
+  - [+] text
+  - [+] number
+  - [+] email
+  - [+] checkbox
+  - [+] radio
+  - [+] password
+  - [+] range
+  - [+] time
+  - [+] color
+  - [+] date
 - Form should have textarea and select elements.
 - You should use each of this attribute at least once
-  - [+] required :required
-  - [+] min :57
-  - [+] max :57
-  - [+] minlength :107
-  - [+] maxlength :107
-  - [+] multiple :196
+  - [+] required
+  - [+] min
+  - [+] max
+  - [+] minlength
+  - [+] maxlength
+  - [+] multiple
 - Age should be at least `1` and at max `100` with a default value of `12`
 - The email field should have placeholder value: `email@example.com`.
 - Text fields should have `autocomplete="off"`.
