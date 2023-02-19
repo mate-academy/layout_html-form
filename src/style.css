@@ -4,11 +4,11 @@
   padding-bottom: 4px;
 }
 
-input {
+.input {
   margin-bottom: 10px;
 }
 
-label {
+.label {
   display: block;
 }
 
@@ -20,8 +20,14 @@ label {
   margin-top: 4px;
 }
 
+.time {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .range {
   margin-top: 12px;
+  margin-bottom: 10px;
 }
 
 .recommend {
