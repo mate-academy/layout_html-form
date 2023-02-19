@@ -1,17 +1,159 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" ></meta>
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    > </meta>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" ></meta>
     <title>HTML Form</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css"></link>
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+
+      <!-- ===============/ personal-info /=============== -->
+
+      <fieldset class="personal-info container">
+        <legend>Personal information</legend>
+        <span class="form-item">
+          <label for="Surname:">Surname:
+            <input autocomplete="off" type="text"
+              name="surname"
+            minlength="2" maxlength="20"
+            >
+          </label>
+        </span>
+
+        <span class="form-item">
+          <label for="Name">Name:
+            <input type="text" name="name">
+          </label>
+        </span>
+
+        <span class="form-item">
+          <label for="age">How old are You?
+            <input type="number" name="age"
+            min="1" max="100"
+            value="12" autocomplete="off"
+            >
+          </label>
+        </span>
+
+        <span class="form-item">
+          <label for="birthdate">Full date of birth:
+            <input type="date" name="birthdate"
+            >
+          </label>
+        </span>
+
+        <span>
+          <label for="term">I accept the term of the agreement
+            <input  type="checkbox" name="term"
+            >
+          </label>
+        </span>
+
+      </fieldset>
+
+      <!-- =====================/ registration /============= -->
+
+      <fieldset class="registration container">
+        <legend>Registration</legend>
+
+        <span class="form-item">
+          <label for="email">E-mail:
+            <input  placeholder="email@example.com" type="email"
+            name="email"
+            required autocomplete="off"
+            >
+          </label>
+        </span>
+        <span>
+          <label for="pass">Password:
+            <input  type="password" autocomplete="off"
+            name="password"
+            >
+          </label>
+        </span>
+      </fieldset>
+
+      <!-- ============/ interesting fact /========= -->
+
+      <fieldset class="interesting-fact container">
+        <legend>An interesting fact about you!</legend>
+        <span class="form-item">
+          <label for="cats">Do you love cats?
+            <label>
+              <input type="radio" name="cats"
+              value="yes"
+              >
+              yes
+            </label>
+            <label>
+              <input type="radio" name="cats"
+              value="no"
+              >
+              no
+            </label>
+          </label>
+        </span>
+        <span class="form-item">
+          <label for="color">
+            What is your favorite color?
+            <input type="color" name="color"
+            >
+          </label>
+        </span>
+        <span class="form-item">
+          <label for="go-to-bed">
+            What time do you go to bed?
+            <input type="time" name="go-to-bed">
+          </label>
+        </span>
+        <span class="form-item">
+          <label for="cars">
+            What are your favorite brand of cars?
+            <select name="cars" id="cars"
+            multiple>
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Lada">Lada</option>
+            </select>
+          </label>
+        </span>
+        <label for="rate-work">
+          How do you rate our work?
+          <input type="range" value="0">
+        </label>
+      </fieldset>
+
+      <!-- ========/ additional info /========== -->
+
+      <fieldset class="add-info container">
+        <legend>Additional info</legend>
+
+        <span class="form-item">
+          <label for="comments">Comments:
+            <textarea name="comments" id="commetns"
+            cols="20" rows="2"
+            autocomplete="off">
+            </textarea>
+          </label>
+        </span>
+        <span>
+          <label for="recomend">
+            Would you recomend us?
+            <select name="recomend" id="recomend">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+          </label>
+        </span>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
