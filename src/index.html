@@ -14,67 +14,93 @@
     <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
    
-      <fieldset class="fieldset">
-        <legend>Personal information:
-        </legend>
+    <fieldset   class="fieldset">
+      <legend>Personal information:
+      </legend>
 
+      <div class="form-field">
+        <label>
+            Surname:
+          <input
+              type="text"
+              name="surname"
+              id="surname"
+              autocomplete="off"
+              required
+            >
+        </label>
+      </div>
+
+      <div class="form-field">
+        <label>
+      Name:
+          <input 
+            type="text"
+            name="name"
+            required
+            autocomplete="off"
+          >
+        </label>
+      </div>
+
+      <div class="form-field">
+        <label>
+       How old are You?
+          <input
+            type="number" 
+            name="oldAdreYou"    
+            placeholder="12"
+            min="1" max="100"
+          > 
+        </label>
+      </div>
+
+      <div class="form-field">
+        <label for="birth">
+       Full date of birth:
+          <input
+            type="date"
+            name="dateOfBirth" 
+            id="dateOfBirth"
+            required
+          > 
+        </label>
+      </div>
+
+      <div class="form-field">
+        <label>
+          <input
+            type="checkbox"
+            name="agreement"
+          >
+I accept the term of the agreement
+        </label>
+      </div>
+    </fieldset>
+    
+    <fieldset class="fieldset">
+      <legend>Registration</legend> 
         <div class="form-field">
           <label>
-              Surname:
-           <input
-            type="text"
-            name="surname"
-            id="surname"
+          E-mail:
+          <input
+            type="text" 
+            name="e-mail"
+            placeholder=
+            "email@example.com."
             autocomplete="off"
-            required
             >
-          </label>
+          </label> 
         </div>
 
-  <div class="form-field">
-    <label>
-      Name:
-      <input 
-       type="text"
-       name="name"
-       required
-       autocomplete="off"
-      >
-    </label>
-  </div>
-
-  <div class="form-field">
-    <label>
-      How old are You?
-      <input
-       type="number" 
-       name="oldAdreYou"    
-       placeholder="12"
-       min="1" max="100"
-      > 
-    </label>
-  </div>
-
-  <div class="form-field">
-    <label for="birth">
-    Full date of birth:
-    <input
-      type="date"
-      name="dateOfBirth" 
-      id="dateOfBirth"
-      required
-    > 
-    </label>
-  </div>
-
-  <div class="form-field">
-    <label>
-    <input
-      type="checkbox"
-      I accept the term of the agreement
-      >
-    </label>
-  </div>
- </fieldset>
+     <div class="form-field">
+      <label>
+        Password:
+        <input
+          type="password" 
+          name="password">
+      </label>
+     </div>
+    </fieldset>
   </body>
 </html>
