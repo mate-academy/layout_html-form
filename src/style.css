@@ -1,29 +1,10 @@
 /* styles go here */
 .form-field {
   margin-bottom: 20px;
-}
-
-.input {
-  margin-bottom: 10px;
+  padding-bottom: 0;
 }
 
 .label {
   display: block;
-}
-
-.accept {
-  margin-bottom: 4px;
-}
-
-.color {
-  margin-top: 4px;
   margin-bottom: 10px;
-}
-
-.range {
-  margin-top: 12px;
-}
-
-.recommend {
-  margin-top: 10px;
 }
