@@ -1,7 +1,6 @@
 /* styles go here */
 .form-field {
   margin-bottom: 20px;
-  padding-bottom: 4px;
 }
 
 .input {
@@ -12,24 +11,19 @@
   display: block;
 }
 
-.password {
-  margin-bottom: 6px;
+.accept {
+  margin-bottom: 4px;
 }
 
 .color {
   margin-top: 4px;
-}
-
-.time {
-  margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .range {
   margin-top: 12px;
-  margin-bottom: 10px;
 }
 
 .recommend {
-  margin: 10px 0 6px;
+  margin-top: 10px;
 }
