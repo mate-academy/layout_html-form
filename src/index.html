@@ -20,6 +20,7 @@
           type="text"
           autocomplete="off"
           class="input"
+          name="surname"
           >
         </label> <br>
         <label>
@@ -28,6 +29,7 @@
           type="text"
           autocomplete="off"
           class="input"
+          name="name"
           >
         </label> <br>
         <label>
@@ -38,30 +40,47 @@
           min="1"
           max="100"
           class="input"
+          required
+          name="yearsOld"
           >
         </label> <br>
         <label>
           Full date of birth:
-          <input type="date" class="input">
+          <input
+          type="date"
+          class="input"
+          name="birthday"
+          >
         </label> <br>
         <label>
           I accept the term of the agreement
-          <input type="checkbox" class="input">
+          <input
+          type="checkbox"
+          class="input"
+          name="terms"
+          >
         </label>
       </fieldset>
       <fieldset class="fieldset">
         <legend>Registration</legend>
         <label>
-          Email:
+          E-mail:
           <input
           type="email"
           placeholder="email@example.com"
           class="input"
+          name="email"
           >
         </label> <br>
         <label>
           Password:
-          <input type="password" class="input">
+          <input
+          type="password"
+          class="input"
+          minlength="1"
+          maxlength="20"
+          name="password"
+          >
         </label>
       </fieldset>
       <fieldset class="fieldset">
@@ -82,16 +101,28 @@
         >
         <label for="hateCats">No</label> <br>
         <label>
-          What is your favourite color?
-          <input type="color" class="input">
+          What is your favorite color?
+          <input
+          type="color"
+          class="input"
+          name="favoriteColor"
+          >
         </label> <br>
         <label>
-          What time do tyou go to bed?
-          <input type="time" class="input">
+          What time do you go to bed?
+          <input
+          type="time"
+          class="input"
+          name="bedTime"
+          >
         </label> <br>
         <label>
-          What are your favourite car brand?
-          <select name="brand" class="input">
+          What are your favorite brand of cars?
+          <select
+          name="brand"
+          class="input"
+          multiple
+          >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
@@ -99,20 +130,33 @@
         </label> <br>
         <label>
           How do you rate our work?
-          <input type="range" class="input">
+          <input
+          type="range"
+          class="input"
+          value="0"
+          name="rate"
+          >
         </label>
       </fieldset>
-      <fieldset class="fieldset">
+      <fieldset class="fieldset additionalInfo">
         <legend>Additional info:</legend>
-        <label>
-          Comments:
-          <textarea name="comments" class="input"></textarea>
+        Comments:
+        <label for="comments">
+          <textarea name="comments" id="comments"></textarea>
         </label>
+        <!-- <label for="comments">
+          Comments:
+        </label>
+        <textarea
+          id="comments"
+          name="comments"
+          class="input"
+        ></textarea> -->
         <label> <br>
-          Would you recomend us?
+          Would you recommend us?
           <select name="reccomend" class="input">
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
           </select>
         </label>
       </fieldset>
