@@ -1,1 +1,14 @@
 /* styles go here */
+.personal__info {
+  margin: 20px;
+  padding: 10px;
+  border: solid 2px black;
+}
+
+.personal__input {
+  margin-top: 10px;
+}
+
+.inline__radio {
+  display: inline-block;
+}
