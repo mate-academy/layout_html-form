@@ -16,162 +16,147 @@
     method="post"
     name="personalInfo"
     >
-      <fieldset class="personal__info" name="personal info">
+      <fieldset class="personal__info">
         <legend>Personal information:</legend>
-        <section class="personal__input">
-          <label for="surname">Surname:</label>
+        <label class = "personal__input" for="surname">Surname:
           <input
-            id = "surname"
-            type="text"
-            placeholder="Enter a surname"
-            autocomplete="off"
-            required
+          id = "surname"
+          type="text"
+          autocomplete="off"
+          required
           >
-        </section>
-
-        <section class="personal__input">
-          <label for="name">Name:</label>
+        </label>
+        <label class="personal__input" for="name">Name:
           <input
-            id = "name"
-            type="text"
-            placeholder="Enter a name"
-            autocomplete="off"
-            required
+          id = "name"
+          type="text"
+          autocomplete="off"
+          required
           >
-        </section>
-
-        <section class="personal__input">
-          <label for="age">How old are you?</label>
+        </label>
+        <label class="personal__input" for="age">How old are You?
           <input
-            type="number"
-            value="12"
-            id="age"
-            max="100"
-            min="1"
-            required
+          type="number"
+          value="12"
+          id="age"
+          max="100"
+          min="1"
+          required
           >
-        </section>
-
-        <section class="personal__input">
-          <label for="birthDate">Full date of birth:</label>
+        </label>
+        <label class="personal__input" for="birthDate">Full date of birth:
           <input
           type="date"
           id = "birthDate"
           autocomplete="off"
           required
           >
-        </section>
-        <section class="personal__input">
-          <label for="privacy">I accept the term of the agreement:</label>
+        </label>
+        <label for="privacy">I accept the term of the agreement
           <input
           type="checkbox"
           id = "privacy"
           required
           >
-        </section>
+        </label>
       </fieldset>
       <fieldset class="personal__info">
         <legend>Registration:</legend>
-        <section class="personal__input">
-          <label for="email">Email:</label>
+        <label class="personal__input" for="email">E-mail:
           <input
           type="email"
-          placeholder="email@example.ua"
+          placeholder="email@example.com"
           id="email"
           autocomplete="off"
           required
           >
-        </section>
-        <section class="personal__input">
-          <label for="pass">Password:</label>
+        </label>
+        <label for="pass">Password:
           <input
           type="password"
           id = "pass"
           autocomplete="off"
           required
           >
-        </section>
+        </label>
       </fieldset>
       <fieldset class="personal__info">
         <legend>An interesting fact about you?</legend>
-        <section class="personal__input">
-          <div class="radio__cats">
-            <label>Do you love cats?</label>
-            <div class="inline__radio">
-              <input
-                class="input__cats"
-                type="radio"
-                name="cats"
-                value="yes"
-                id="yes"
-              >
-              <label for="yes">Yes</label>
-            </div>
-            <div class="inline__radio">
-              <input
-                class="input__cats"
-                type="radio"
-                name="cats"
-                value="no"
-                id="no"
-              >
-              <label for="no">No</label>
-            </div>
-          </div>
-        </section>
-        <section class="personal__input">
-          <label for="color">What is your favourite color?</label>
+        <div class="personal__input">
+          <label>Do you love cats?</label>
+          <label for="yes">
+            <input
+            class="input__cats"
+            type="radio"
+            name="cats"
+            value="yes"
+            id="yes"
+            >
+            Yes
+          </label>
+          <label for="no">
+            <input
+            class="input__cats"
+            type="radio"
+            name="cats"
+            value="no"
+            id="no"
+            >
+            No
+          </label>
+        </div>
+        <label class="personal__input" for="color">What is your favorite color?
           <input type="color" id="color">
-        </section>
-        <section class="personal__input">
-          <label for="time">What time do you go to bed?</label>
-          <input type="time" id="time">
-        </section>
-        <section class="personal__input">
-          <label for="car">What are your favourite brands of car</label>
+        </label>
+        <label class="personal__input" for="time">What time do you go to bed?
+          <input
+          type="time"
+          id="time"
+          step="1"
+          >
+        </label>
+        <label class = "personal__input" for="car">What are your favorite brands of car
           <select
-            name="car"
-            id="car"
-            autocomplete="off"
-            multiple
+          name="car"
+          id="car"
+          autocomplete="off"
+          multiple
           >
             <option>BMW</option>
             <option>Audi</option>
             <option>Lada</option>
           </select>
-        </section>
-        <section class="personal__input">
-          <label for="rateOurWork">How do your rate our work?</label>
+        </label>
+        <label for="rateOurWork">How do your rate our work?
           <input
           type="range"
           id="rateOurWork"
           min="1"
-          max="10"
-          step="1">
-        </section>
+          max="5"
+          step="1"
+          value="0"
+          >
+        </label>
       </fieldset>
 
       <fieldset class="personal__info">
         <legend>Additional info:</legend>
-        <section class="personal__input">
-          <label for="comment">Comments</label>
+        <label class="personal__input" for="comment">
+          Comments
           <textarea
-            name="info"
-            rows="3"
-            cols="30"
-            id="comment"
-            autocomplete="off"
-          ></textarea>
-        </section>
-        <section class="personal__input">
-          <label for="recomendUs">Would you recomend us?</label>
+          name="comment"
+          id="comment"
+          >
+          </textarea>
+        </label>
+        <label for="recomendUs">Would you recommend us?
           <select name="recomend" id = "recomendUs">
             <option value="yes">Yes</option>
             <option value="no">No</option>
           </select>
-        </section>
+        </label>
       </fieldset>
-      <button type="submit">submit</button>
+      <button type="submit">Submit</button>
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
