@@ -1,1 +1,18 @@
-/* styles go here */
+.first-form,
+.second-form,
+.third-form,
+.last-form {
+  margin-bottom: 20px;
+}
+
+.label-first-form-bottom,
+.label-second-form-bottom,
+.label-third-form-bottom,
+.label-last-form-bottom {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.select-cars {
+  overflow-y: hidden;
+}
