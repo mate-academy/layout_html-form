@@ -1,1 +1,12 @@
-/* styles go here */
+.form-field {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.asking_about_cats {
+  display: inline-block;
+}
+
+.information_fieldset {
+  margin-bottom: 20px;
+}
