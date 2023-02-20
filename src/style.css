@@ -10,7 +10,3 @@
 .form_group {
   margin-bottom: 20px;
 }
-
-.form_group:last-child {
-  margin-bottom: 20;
-}
