@@ -1,1 +1,12 @@
-/* styles go here */
+.form_line {
+  margin-bottom: 10px;
+}
+
+.form_block {
+  margin-bottom: 20px;
+}
+
+.form_line:last-child,
+.form_block:last-child {
+  margin-bottom: 0;
+}
