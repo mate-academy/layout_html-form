@@ -20,17 +20,32 @@
         <div class="form-field">
           <label class="blok">
             Surname:
-            <input type="text" name="Surname">
+            <input 
+              type="text" 
+              name="Surname"
+              autocomplete="off"
+              required
+            >
           </label>
         </div>
         <div class="form-field">
           <label class="blok">Name
-            <input type="text" name="name">
+            <input 
+              type="text" 
+              name="name"
+              autocomplete="off"
+            >
           </label>
         </div>
         <div class="form-field">
           <label class="blok">How old are You?
-            <input type="text" name="age">
+            <input 
+              type="text" 
+              name="age"
+              value="12"
+              min="1"
+              max="2"
+            >
           </label>
         </div>
         <div class="form-field">
@@ -72,6 +87,7 @@
               type="password" 
               name="password" 
               minlength="4"
+              maxlength="8"
             >
           </label>
         </div>
@@ -81,7 +97,6 @@
     <form 
       action="#" 
       method="post" 
-      autocomplete="off"
     >
       <fieldset>
         <legend>An interesting fact about you</legend>
@@ -124,16 +139,16 @@
         </label>
       </fieldset>
     </form>
+    
     <form 
       method="post" 
-      autocomplete="off" 
       class="form4"
     >
       <fieldset>
         <legend>Additional</legend>
         <label class="blok">
           Comments
-          <textarea name="Comments"></textarea>
+          <textarea name="Comments" autocomplete="off"></textarea>
         </label>
         <label class="blok">
           Would you recommend us?
@@ -146,6 +161,7 @@
       </fieldset>
       <button type="submit">Submit</button>
     </form>
+    
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>

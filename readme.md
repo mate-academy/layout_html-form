@@ -4,6 +4,7 @@ Replace `<your_account>` with your Github username and copy the links to Pull Re
 
 - [DEMO LINK](https://VasylKurtiak.github.io/layout_html-form/)
 - [TEST REPORT LINK](https://VasylKurtiak.github.io/layout_html-form/report/html_report/)
+- https://www.w3schools.com/action_page.php
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 
