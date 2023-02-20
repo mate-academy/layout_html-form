@@ -1,10 +1,9 @@
-.form-field,
-.asking_about_cats_div {
+.form-field {
   display: block;
   margin-bottom: 10px;
 }
 
-.asking_about_cats_div {
+.asking_about_cats {
   display: inline-block;
 }
 
