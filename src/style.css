@@ -1,36 +1,18 @@
-.label-first-form-bottom {
-  display: block;
-  margin-bottom: 10px;
+.first-form,
+.second-form,
+.third-form,
+.last-form {
+  margin-bottom: 20px;
 }
 
-.second-form {
-  margin-top: 20px;
-}
-
-.label-second-form-bottom {
-  display: block;
-  margin-bottom: 10px;
-}
-
-.third-form {
-  margin-top: 20px;
-}
-
-.label-third-form-bottom {
+.label-first-form-bottom,
+.label-second-form-bottom,
+.label-third-form-bottom,
+.label-last-form-bottom {
   display: block;
   margin-bottom: 10px;
 }
 
 .select-cars {
   overflow-y: hidden;
-}
-
-.last-form {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.label-last-form-bottom {
-  display: block;
-  margin-bottom: 10px;
 }
