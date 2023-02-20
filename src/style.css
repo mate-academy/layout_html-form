@@ -1,1 +1,8 @@
-/* styles go here */
+.form:not(:last-child) {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.groups {
+  margin-bottom: 20px;
+}
