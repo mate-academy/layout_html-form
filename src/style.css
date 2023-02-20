@@ -1,1 +1,14 @@
-/* styles go here */
+.body {
+  padding: 0;
+  margin: 0;
+}
+
+.block {
+  margin-bottom: 10px;
+  display: block;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
