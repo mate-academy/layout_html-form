@@ -6,9 +6,12 @@
 
 label {
   display: block;
+}
+
+label:not(:last-child) {
   padding-bottom: 10px;
 }
 
 .radio {
-  display: inline;
+  display: inline-block;
 }
