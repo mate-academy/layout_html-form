@@ -1,7 +1,4 @@
-.personal_information_label,
-.registration_fieldset_email,
-.interesting_facts_about_you,
-.additional_info,
+.form-field,
 .asking_about_cats_div {
   display: block;
   margin-bottom: 10px;
