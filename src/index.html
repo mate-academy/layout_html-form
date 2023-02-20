@@ -45,11 +45,11 @@
         <span class="form-item">
           <label for="birthdate">Full date of birth:
             <input type="date" name="birthdate">
-          </label>
+          </label>z
         </span>
         <span>
           <label for="term">I accept the term of the agreement
-            <input  type="checkbox" name="term">
+            <input type="checkbox" name="term">
           </label>
         </span>
       </fieldset>
@@ -138,7 +138,8 @@
               id="commetns"
               cols="20"
               rows="2"
-              autocomplete="off">
+              autocomplete="off"
+              onclick="this.setSelectionRange(0, 0);">
             </textarea>
           </label>
         </span>
