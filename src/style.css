@@ -1,1 +1,21 @@
-/* styles go here */
+html {
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.personal_info {
+  display: block;
+  margin: 10px 0;
+}
+
+fieldset {
+  margin: 20px 2px;
+}
+
+.first {
+  margin-top: 0;
+}
+
+.last {
+  margin-bottom: 0;
+}
