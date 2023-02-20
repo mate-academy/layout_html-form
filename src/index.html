@@ -11,12 +11,15 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"       method="post">
-      <fieldset class="wrapper" >
+    <form
+    action="https://mate-academy-form-lesson.herokuapp.com/create-application"    method="post"
+    >
+      <fieldset class="wrapper">
         <legend>Personal information</legend>
         <label class="inputs">
           Surname:
-          <input type="text"
+          <input
+            type="text"
             name="surname"
             autocomplete="off"
             maxlength="8"
@@ -24,11 +27,17 @@
         </label>
         <label class="inputs">
           Name:
-          <input type="text"  autocomplete="off">
+          <input
+          type="text"
+          name="userName"
+          autocomplete="off"
+          >
         </label>
         <label class="inputs">
           How old are You?
-          <input type="number" name="old"
+          <input
+            type="number"
+            name="age"
             value="12"
             min="1"
             max="100"
@@ -37,25 +46,39 @@
         </label>
         <label class="inputs">
           Full date of birth:
-          <input type="date"
+          <input
+            type="date"
+            name="date"
             max="1979-12-31"
             min="2000-01-02"
           >
         </label>
         <label class="inputs">
           I accept the term of the agreement
-          <input type="checkbox"  required>
+          <input
+            type="checkbox"
+            name="checkbox"
+            required
+          >
         </label>
       </fieldset>
       <fieldset class="wrapper">
         <legend> Registration</legend>
         <label class="inputs">
           E-mail:
-          <input type="email"  placeholder="email@example.com" >
+          <input
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+          >
         </label>
         <label class="inputs">
           Password:
-          <input type="password"  required>
+          <input
+            type="password"
+            name="password"
+            required
+          >
         </label>
       </fieldset>
       <fieldset class="wrapper">
@@ -85,13 +108,23 @@
         </label>
         <label class="inputs">
           How do you rate our work?
-          <input type="range"  value="0"></input>
+          <input
+            type="range"
+            name="range"
+            value="0"
+          >
+          </input>
         </label>
       </fieldset>
       <fieldset class="wrapper">
         <legend>Additional info:</legend>
-        <label class="inputs">Comments:
-          <textarea   cols="10" rows="2"></textarea>
+        <label class="inputs">
+          Comments:
+          <textarea
+            name="feedBack"
+            cols="10"
+            rows="2">
+          </textarea>
         </label>
         <label class="inputs">
           Would you recommend us?
@@ -101,7 +134,7 @@
           </select>
         </label>
       </fieldset>
-      <button type="submit">Submit </button>
+      <button type="submit">Submit</button>
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
