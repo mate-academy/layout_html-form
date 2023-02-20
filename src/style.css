@@ -1,10 +1,5 @@
-/* styles go here */
 .fieldset {
   margin-bottom: 20px;
-}
-
-.fieldset:last-child {
-  margin-bottom: 0;
 }
 
 .elements {
