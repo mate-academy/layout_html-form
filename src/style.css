@@ -1,20 +1,5 @@
-.first-form label {
+.label-first-form-bottom {
   display: block;
-}
-
-.surname {
-  margin-bottom: 10px;
-}
-
-.name {
-  margin-bottom: 10px;
-}
-
-.age {
-  margin-bottom: 10px;
-}
-
-.birthday {
   margin-bottom: 10px;
 }
 
@@ -22,11 +7,8 @@
   margin-top: 20px;
 }
 
-.label-second-form {
+.label-second-form-bottom {
   display: block;
-}
-
-.email {
   margin-bottom: 10px;
 }
 
@@ -34,23 +16,8 @@
   margin-top: 20px;
 }
 
-.label-third-form {
+.label-third-form-bottom {
   display: block;
-}
-
-.cats {
-  margin-bottom: 10px;
-}
-
-.favorite-color {
-  margin-bottom: 10px;
-}
-
-.go-to-bed {
-  margin-bottom: 10px;
-}
-
-.brand-of-cars {
   margin-bottom: 10px;
 }
 
@@ -63,10 +30,7 @@
   margin-bottom: 20px;
 }
 
-.label-last-form {
+.label-last-form-bottom {
   display: block;
-}
-
-.comments {
   margin-bottom: 10px;
 }
