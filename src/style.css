@@ -1,1 +1,28 @@
-/* styles go here */
+.field {
+  margin: 10px 0;
+}
+
+.fieldset {
+  margin: 20px 0;
+}
+
+.fieldsetTop {
+  margin-top: 0;
+}
+
+.fieldset > :nth-child(2) {
+  margin-top: 0;
+}
+
+.input {
+  margin: 0;
+  padding: 0;
+}
+
+.selectRecommend {
+  margin-top: 10px;
+}
+
+.fieldset > :last-child {
+  margin-bottom: 0;
+}
