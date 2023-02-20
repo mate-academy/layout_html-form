@@ -1,9 +1,16 @@
 /* styles go here */
 .fieldset {
-  margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.input {
+.fieldset:last-child {
+  margin-bottom: 0;
+}
+
+.elements {
   margin-bottom: 10px;
+}
+
+.elements:last-child {
+  margin-bottom: 0;
 }
