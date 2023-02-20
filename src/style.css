@@ -1,8 +1,11 @@
-/* styles go here */
-div {
+.block {
   margin-bottom: 10px;
 }
 
-fieldset {
+.fieldset {
   margin-bottom: 20px;
+}
+
+.block:last-child {
+  margin-bottom: 0;
 }
