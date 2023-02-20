@@ -7,11 +7,157 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML Form</title>
+    <title>Html From</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+
+      <fieldset class="container-info">
+        <legend>Personal information</legend>
+        <div class="container">
+          <label for="surname">Surname:</label>
+          <input type="text"
+          name="surname"
+          id="surname"
+          >
+        </div>
+
+        <div class="container">
+          <label for="name">Name:</label>
+          <input type="text"
+          name="name"
+          id="name"
+          >
+        </div>
+
+        <div class="container">
+          <label for="age">How old are you?</label>
+          <input type="number"
+          name="age"
+          id="age"
+          min="1"
+          max="100"
+          value="12"
+          >
+        </div>
+
+        <div class="container">
+          <label for="birthage">Full date of birth:</label>
+          <input type="date"
+          name="age"
+          id="birthage"
+          >
+        </div>
+
+        <div class="container">
+          <label for="terms">I accept the term of the agreement</label>
+          <input type="checkbox"
+          name="term"
+          id="terms"
+          >
+        </div>
+      </fieldset>
+
+      <fieldset class="container-info">
+        <legend>Registration</legend>
+
+        <div class="container">
+          <label for="email">E-mail:</label>
+          <input type="email"
+          name="e-mail"
+          id="email"
+          >
+        </div>
+
+        <div class="container">
+          <label for="password">Password:</label>
+          <input type="password"
+          name="pass"
+          id="password"
+          >
+        </div>
+
+      </fieldset>
+
+      <fieldset class="container-info">
+        <legend>An interesting fact about you!</legend>
+
+        <div class="container">
+          Do you love cats?
+
+          <label>
+            <input type="radio" name="cat">
+            Yes
+          </label>
+
+          <label>
+            <input type="radio" name="cat">
+            No
+          </label>
+        </div>
+
+        <div class="container">
+          <label for="color">What is your favourite color?</label>
+          <input type="color"
+          name="colors"
+          id="color"
+          >
+        </div>
+
+        <div class="container">
+          <label for="time">What time do you go to bed?</label>
+          <input type="time"
+          name="time"
+          id="time"
+          >
+        </div>
+
+        <div class="container">
+          <label class="car">
+            What are your favourite brand of cars?
+
+            <select name="cars" multiple>
+              <option>Bmw</option>
+              <option>Audi</option>
+              <option>Lada</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="container">
+          <label for="rate">How do you rate our work?</label>
+          <input type="range"
+          name="rate"
+          id="rate"
+          min="1"
+          max="10"
+          value="0"
+          >
+        </div>
+      </fieldset>
+
+      <fieldset class="container-info">
+        <legend>Additional info</legend>
+
+        <div class="container">
+          <label for="comments">Comments:</label>
+          <textarea name="comments"
+          cols="15"
+          rows="2">
+          </textarea>
+        </div>
+
+        <div class="container">
+          <label for="recomend">Whould you recommend us ?</label>
+          <select name="recomend">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+      </fieldset>
+      <button type="submit" class="button">Submit</button>
+    </form>
   </body>
 </html>

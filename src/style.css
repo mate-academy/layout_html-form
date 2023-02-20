@@ -1,1 +1,11 @@
-/* styles go here */
+.container {
+  margin-top: 10px;
+}
+
+.container-info {
+  margin-top: 20px;
+}
+
+.button {
+  margin-top: 20px;
+}
