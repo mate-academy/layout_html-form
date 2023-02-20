@@ -1,1 +1,15 @@
-/* styles go here */
+.case-input.first {
+  margin-bottom: 10px;
+}
+
+.case-input.last {
+  margin-top: 10px;
+}
+
+.case-input:not(.first):not(.last) {
+  margin: 10px 0;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
