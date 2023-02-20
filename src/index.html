@@ -22,12 +22,12 @@
         <label>
             Surname:
           <input
-              type="text"
-              name="surname"
-              id="surname"
-              autocomplete="off"
-              required
-            >
+            type="text"
+            name="surname"
+            id="surname"
+            autocomplete="off"
+            required
+          >
         </label>
       </div>
 
@@ -80,8 +80,8 @@ I accept the term of the agreement
     
     <fieldset class="fieldset">
       <legend>Registration</legend> 
-        <div class="form-field">
-          <label>
+      <div class="form-field">
+        <label>
           E-mail:
           <input
             type="text" 
@@ -89,18 +89,102 @@ I accept the term of the agreement
             placeholder=
             "email@example.com."
             autocomplete="off"
-            >
-          </label> 
-        </div>
+          >
+        </label> 
+      </div>
 
-     <div class="form-field">
-      <label>
+      <div class="form-field">
+        <label>
         Password:
+          <input
+            type="password" 
+            name="password"
+          >
+        </label>
+      </div>
+    </fieldset>
+    
+    <fieldset class="fieldset">
+      <legend>
+        An interesting fact about you   
+      </legend>
+
+      <div class="form-field">
+        <label>
+         Do you love cats?
+         
+          <label>
+            <input 
+             type="radio"
+             name="cats" 
+             value="y"
+            >
+           Yes
+          </label>
+         
+          <label>
+            <input 
+             type="radio" 
+             name="cats" 
+             value="n"
+            >
+          No
+          </label>
+        </label>
+      </div>
+
+      <div class="form-field">
+        <label for="favcolor"> 
+           What is your favorite color?
+        </label>
         <input
-          type="password" 
-          name="password">
-      </label>
-     </div>
+          type="color" 
+          id="favcolor" 
+          name="favcolor"
+          required
+        >
+        </select>
+      </label> 
+      </div>
+
+      <div class= "form-field">
+        <label for="appt">
+        What time do you go to bed?
+        </label>
+        <input 
+          type="time"
+          id="appt" 
+          name="appt"
+        > 
+      </div>
+
+      <div  class="form-field">
+        <label>
+          What are your favorite brand of cars?
+
+          <select name="BrandOfCars"    required
+           multiple
+          >
+            <option value="bmw">Bmw</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </label> 
+      </div>
+     
+
+      <div class="form-field">
+        <label>
+      How do you rate our work?
+          <input
+            type="range"
+            id="rate" 
+            name="rate"
+            min="1"
+            max="10"
+          >
+        </label>
+      </div>
     </fieldset>
   </body>
 </html>
