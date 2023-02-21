@@ -1,1 +1,16 @@
-/* styles go here */
+.personal_info {
+  display: block;
+  margin: 10px 0;
+}
+
+.block {
+  margin: 20px 2px;
+}
+
+.first {
+  margin-top: 0;
+}
+
+.last {
+  margin-bottom: 0;
+}
