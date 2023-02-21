@@ -16,179 +16,155 @@
       
       <fieldset class="fieldset">
         <legend>Personal information</legend>
-        
-        <div class="form-field">
-          <label>
-            Surname:
-            <input
+
+        <label>
+          Surname:
+          <input
             type="text"
             name="surname"
             autocomplete="off"
             minlength="2"
             required
-            >
-          </label>
-        </div>
+          >
+        </label>
 
-        <div class="form-field">
-          <label>
-            Name:
-            <input
+        <label>
+          Name:
+          <input
             type="text"
             name="name"
             autocomplete="off"
             minlength="2"
             required
-            >
-          </label>
-        </div>
+          >
+        </label>
 
-        <div class="form-field">
-          <label>
-            How old are You?
-            <input
+        <label>
+          How old are You?
+          <input
             type="number"
             name="age"
             value="12"
             min="1"
             max="100"
             required
-            >
-          </label>
-        </div>
+          >
+        </label>
 
-        <div class="form-field">
-          <label>
-            Full date of birth:
-            <input
+        <label>
+          Full date of birth:
+          <input
             type="date"
             name="dateOfBirth"
             required
-            >
-          </label>
-        </div>
+          >
+        </label>
 
-        <div class="form-field">
-          <label>
-            I accept the term of the agreement
-            <input
+        <label>
+          I accept the term of the agreement
+          <input
             type="checkbox"
             name="agreedWithTerms"
             required
-            >
-          </label>
-        </div>
+          >
+        </label>
 
       </fieldset>
       <fieldset class="fieldset">
         <legend>Registration</legend>
        
-        <div class="form-field">
-          <label>
-            E-mail:
-            <input
+
+        <label>
+          E-mail:
+          <input
             type="email"
             name="email"
             placeholder="email@example.com"
             required
-            >
-          </label>
-        </div>
+          >
+        </label>
 
-        <div class="form-field">
-          <label>
-            Password:
-            <input
+        <label>
+          Password:
+          <input
             type="password"
             name="password"
             minlength="4"
             maxlength="40"
             required
-            >
-          </label>
-        </div>
+          >
+        </label>
 
       </fieldset>
       <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
 
-        <div class="form-field">
-          <label>
-            Do You love cats?
-            <input
+        <label>
+          Do You love cats?
+          <input
             type="radio"
             name="loveCats"
             value="yes"
-            >
-            Yes
-            <input
+          >
+          Yes
+          <input
             type="radio"
             name="loveCats"
             value="no"
-            >
-            No
-          </label>
-        </div>
+          >
+          No
+        </label>
 
-        <div class="form-field">
-          <label>
-            What is your favorite color?
-            <input
+        <label>
+          What is your favorite color?
+          <input
             type="color"
             name="favoriteColor"
-            >
-          </label>
-        </div>
+          >
+        </label>
 
-        <div class="form-field">
-          <label>
-            What time do you go to bed?
-            <input
+        <label>
+          What time do you go to bed?
+          <input
             type="time"
             name="bedTime"
-            >
-          </label>
-        </div>
+          >
+        </label>
 
-        <div class="form-field">
-          <label>
-            What are your favorite brand of cars?
-            <select name="favoriteCar" multiple>
-              <option value="BMW">BMW</option>
-              <option value="Audi">Audi</option>
-              <option value="Lada">Lada</option>
-            </select>
-          </label>
-        </div>
+        <label>
+          What are your favorite brand of cars?
+          <select name="favoriteCar" multiple>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </label>
 
-        <div class="form-field">
-          <label>
-            How do you rate our work?
-            <input type="range" name="rate">
-          </label>
-        </div>
+        <label>
+          How do you rate our work?
+          <input
+            type="range"
+            name="rate"
+          >
+        </label>
 
       </fieldset>
       <fieldset class="fieldset">
         <legend>
           Additional info:
         </legend>
-        <div class="form-field">
-          <label>
-            Comments:
-            <textarea name="comments"></textarea>
-          </label>
-        </div>
+        <label>
+          Comments:
+          <textarea name="comments"></textarea>
+        </label>
 
-        <div class="form-field">
-          <label>
-            Would you recommend us?
-            <select name="recommend">
-              <option name="wouldRecommend" selected>yes</option>
-              <option name="wouldNotRecommend">no</option>
-            </select>
-          </label>
-        </div>
+        <label>
+          Would you recommend us?
+          <select name="recommend">
+            <option name="wouldRecommend" selected>yes</option>
+            <option name="wouldNotRecommend">no</option>
+          </select>
+        </label>
       </fieldset>
       <button type="submit">Submit</button>
     </form>
