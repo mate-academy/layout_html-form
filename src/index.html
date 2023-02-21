@@ -16,28 +16,26 @@
       <fieldset class="fieldset">
         <legend>Personal information</legend>
 
-        <div class="form-field">
-          <label for="surname">Surname:</label>
+        <label class="form-field">
           <input
             type="text"
             name="surname"
             id="surname"
             autocomplete="off"
           >
-        </div>
+        </label>
 
-        <div class="form-field">
-          <label for="name">Name:</label>
+        <label class="form-field">Name:
           <input
             type="text"
             name="name"
             id="name"
             autocomplete="off"
           >
-        </div>
+        </label>
 
-        <div class="form-field">
-          <label for="age">How old are You?</label>
+        <label class="form-field">
+          How old are You?
           <input
             type="number"
             name="age"
@@ -46,31 +44,32 @@
             max="100"
             value="12"
           >
-        </div>
+        </label>
 
-        <div class="form-field">
-          <label for="date">Full date of birth:</label>
+        <label class="form-field">
+          Full date of birth:
           <input
             type="date"
             name="date"
             id="date"
           >
-        </div>
+        </label>
 
-        <div>
-          <label for="termsAndAgrees">I accept the term of the agreement</label>
+        <label class="form-field">
+          I accept the term of the agreement
           <input
             type="checkbox"
             name="termsAndAgrees"
             id="termsAndAgrees"
           >
-        </div>
+        </label>
       </fieldset>
 
       <fieldset class="fieldset">
         <legend>Registration</legend>
-        <div class="form-field">
-          <label for="email">E-mail:</label>
+
+        <label class="form-field">
+          E-mail:
           <input
             type="email"
             name="email"
@@ -78,10 +77,10 @@
             placeholder="email@example.com"
             required
           >
-        </div>
+        </label>
 
-        <div>
-          <label for="password">Password:</label>
+        <label class="form-field">
+          Password:
           <input
             type="password"
             name="password"
@@ -89,58 +88,55 @@
             minlength="5"
             maxlength="20"
           >
-        </div>
+        </label>
       </fieldset>
 
       <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
-
         <div class="form-field">
-          <label for="yes">Do you love cats?
+          Do you love cats?
+          <label>
             <input
               type="radio"
               name="cat"
               id="yes"
             >
+            Yes
+          </label>
 
-            <label for="yes">Yes</label>
+          <label>
             <input
               type="radio"
               name="cat"
               id="no"
             >
-            <label for="no">No</label>
+            No
           </label>
         </div>
 
-        <div class="form-field">
-          <label for="color">
-            What is your favorite color?
-          </label>
-
+        <label class="form-field">
+          What is your favorite color?
           <input
             type="color"
             name="color"
             id="color"
           >
-        </div>
+        </label>
 
-        <div class="form-field">
-          <label for="time">What time do you go to bed?</label>
 
+        <label class="form-field">
+          What time do you go to bed?
           <input
             type="time"
             name="time"
             id="time"
             step="2"
           >
-        </div>
+        </label>
 
-        <div class="form-field">
-          <label for="cars">
-            What are your favorite brand of cars?
-          </label>
 
+        <label class="form-field">
+          What are your favorite brand of cars?
           <select
           name="cars"
           id="cars"
@@ -150,23 +146,24 @@
             <option value="car">Audi</option>
             <option value="car">Lada</option>
           </select>
-        </div>
+        </label>
 
-        <label for="work">How do you rate our work?</label>
-
-        <input
-          type="range"
-          name="rage"
-          id="work"
-          value="0"
-        >
+        <label class="form-field">
+          How do you rate our work?
+          <input
+            type="range"
+            name="range"
+            id="work"
+            value="0"
+          >
+        </label>
       </fieldset>
 
       <fieldset class="fieldset">
         <legend>Additional info:</legend>
 
-        <div class="form-field">
-          <label for="comment">Comments:</label>
+        <label class="form-field">
+            Comments:
           <textarea
             name="comment"
             id="comment"
@@ -174,26 +171,18 @@
             rows="2"
           >
           </textarea>
-        </div>
+        </label>
 
-        <div>
-          <label for="answer">Would you recommend us?</label>
-
+        <label class="form-field">
+          Would you recommend us?
           <select name="answer" id="answer">
             <option value="answer">yes</option>
             <option value="answer">no</option>
           </select>
-        </div>
+        </label>
       </fieldset>
-
-      <div class="form-field">
-        <button type="submit">
-          Submit
-        </button>
-      </div>
-
+      <button type="submit" id="buttonSubmit">Submit</button>
     </form>
-
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
