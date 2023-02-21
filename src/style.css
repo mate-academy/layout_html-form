@@ -1,7 +1,3 @@
-.field {
-  margin: 10px 0;
-}
-
 .fieldset {
   margin: 20px 0;
 }
@@ -10,19 +6,11 @@
   margin-top: 0;
 }
 
-.fieldset > :nth-child(2) {
-  margin-top: 0;
+.label {
+  display: block;
+  margin-bottom: 10px;
 }
 
-.input {
-  margin: 0;
-  padding: 0;
-}
-
-.selectRecommend {
-  margin-top: 10px;
-}
-
-.fieldset > :last-child {
+.label:last-child {
   margin-bottom: 0;
 }
