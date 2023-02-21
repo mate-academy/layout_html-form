@@ -10,15 +10,23 @@
   </head>
 
   <body>
-    <form action="#">
+    <form action="#" method="post">
       <fieldset class="form-field">
         <legend>Personal information</legend>
        
         <label for="surname">Surname:
-          <input type="text" id="surname">
+          <input 
+            type="text" 
+            id="surname"
+            name="surname"
+          >
         </label>
         <label for="name">Name:
-          <input type="text" id="name"> 
+          <input 
+            type="text"
+            id="name"
+            name="name"
+          > 
         </label>
         <label for="age">How old are You?
           <input 
@@ -26,23 +34,42 @@
             type="number" 
             value="12" 
             id="age"
+            name="age"
           >
         </label>
         <label for="birthDate">Full date of birth:
-          <input type="date" value="mm/dd/yyyy">
+          <input 
+            type="date" 
+            value="mm/dd/yyyy"
+            name="birthDate"
+            id="birthDate"
+          >
         </label>  
         <label for="agree">I accept the term of the agreement
-          <input type="checkbox">
+          <input
+            id="agree"
+            type="checkbox"
+            name="agree"
+          >
         </label>  
       </fieldset>
 
       <fieldset class="form-field">
         <legend>Registration</legend>
         <label for="email">E-mail:   
-          <input type="email" placeholder="email@example.com">
+          <input
+            type="email"
+            placeholder="email@example.com"
+            name="email"
+            id="email"
+          >
         </label>
         <label for="password">Password:
-          <input type="password">
+          <input 
+            id="password"
+            type="password"
+            name="password"
+          >
         </label>
       </fieldset>
 
@@ -65,11 +92,16 @@
         </label>
        
         <label for="color">What is your favorite color?
-          <input type="color" id="color">
+          <input 
+            type="color"
+            id="color"
+            name="color"
+          >
         </label>
       
         <label for="time">What time do you go to bed?
           <input 
+            name="time"
             type="time" 
             id="time" 
             step="2"
@@ -87,6 +119,7 @@
        
         <label for="range">How do you rate our work?
           <input
+            name="range"
             type="range"
             min="1"
             max="100"
@@ -101,7 +134,7 @@
         <legend>Additional info:</legend>
         
         <label>Comments:
-          <textarea name="commentfield"></textarea>
+          <textarea name="commentField"></textarea>
         </label>  
         <label>Would you recommend us?
           <select>
@@ -111,7 +144,11 @@
         </label>
       </fieldset>
       <label>
-        <input type="submit" value="Submit">
+        <input 
+          type="submit" 
+          value="Submit"
+          name="submit"
+        >
       </label>
     </form>
 
