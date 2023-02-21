@@ -1,1 +1,22 @@
-/* styles go here */
+.case-input,
+.first-case-input,
+.last-case-input {
+  display: block;
+}
+
+.case-input {
+  display: block;
+  margin: 10px 0;
+}
+
+.first-case-input {
+  margin-bottom: 10px;
+}
+
+.last-case-input {
+  margin-top: 10px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
