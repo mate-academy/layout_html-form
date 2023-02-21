@@ -2,11 +2,11 @@
   margin-bottom: 20px;
 }
 
-.inputs {
+.fields {
   display: block;
   margin-bottom: 10px;
 }
 
-.inputs:last-child {
+.fields:last-child {
   margin-bottom: 0;
 }
