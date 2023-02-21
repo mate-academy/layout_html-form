@@ -1,11 +1,20 @@
-.container {
-  margin-top: 10px;
+.container-info {
+  margin: 20px;
 }
 
-.container-info {
-  margin-top: 20px;
+.label {
+  display: block;
+  margin: 10px 0;
+}
+
+.label-1 {
+  margin-top: 0;
+}
+
+.label-2 {
+  margin-bottom: 0;
 }
 
 .button {
-  margin-top: 20px;
+  margin: 10px 0;
 }
