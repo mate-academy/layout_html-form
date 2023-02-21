@@ -20,53 +20,53 @@
       <fieldset class="form-field">
         <legend>Personal information</legend>
 
-        <label name="surname">
+        <label name="surname" class="content">
           Surname:
           <input
-          type="text"
-          name="surname"
-          autocomplete="off"
-          required
+            type="text"
+            name="surname"
+            autocomplete="off"
+            required
           >
         </label>
 
-        <label name="name">
+        <label name="name" class="content">
           Name:
           <input
-          type="text"
-          name="name"
-          autocomplete="off"
-          required
+            type="text"
+            name="name"
+            autocomplete="off"
+            required
           >
         </label>
 
-        <label name="age">
+        <label name="age" class="content">
           How old are You?
           <input
-          type="number"
-          name="age"
-          required
-          min="1"
-          max="100"
-          value="12"
+            type="number"
+            name="age"
+            required
+            min="1"
+            max="100"
+            value="12"
           >
         </label>
 
-        <label name="date-of-birth">
+        <label name="dateOfBirth" class="content">
           Full date of birth:
           <input
-          type="date"
-          name="date-of-birth"
-          required
+            type="date"
+            name="dateOfBirth"
+            required
           >
         </label>
 
-        <label name="terms">
+        <label name="terms" class="content">
           I accept the term of the agreement
           <input
-          type="checkbox"
-          name="terms"
-          required
+            type="checkbox"
+            name="terms"
+            required
           >
         </label>
       </fieldset>
@@ -74,30 +74,30 @@
       <fieldset class="form-field">
         <legend>Registration</legend>
 
-        <label name="email">
+        <label name="email" class="content">
           E-mail:
           <input
-          type="email"
-          placeholder="email@example.com"
-          required
+            type="email"
+            placeholder="email@example.com"
+            required
           >
         </label>
         
-        <label name="password">
+        <label name="password" class="content">
           Password:
           <input
-          type="password"
-          required
-          minlength="8"
-          maxlength="32"
+            type="password"
+            required
+            minlength="8"
+            maxlength="32"
           >
         </label>
       </fieldset>
 
-      <fieldset class="form-field" name="cat-love">
+      <fieldset class="form-field" name="catLove">
         <legend>An interesting fact about you!</legend>
           Do you love cats?
-        <label class="question-radio">
+        <label class="question-radio content">
           <input
             type="radio"
             name="question"
@@ -106,7 +106,7 @@
             Yes
         </label>
   
-        <label class="question-radio">
+        <label class="question-radio content">
           <input
             type="radio"
             name="question"
@@ -115,17 +115,17 @@
             No
         </label>
         
-        <label name="favorite-color">
+        <label name="favoriteColor" class="content">
           What is your favorite color?
           <input type="color">
         </label>
 
-        <label name="sleep-time">
+        <label name="sleepTime" class="content">
           What time do you go to bed?
           <input type="time">
         </label>
 
-        <label name="favorite-car">
+        <label name="favoriteCar" class="content">
           What are your favorite brand of cars?
           <select
           name="cars"
@@ -138,7 +138,7 @@
           </select>
         </label>
 
-        <label name="mark">
+        <label name="mark" class="content">
           How do you rate our work?
           <input type="range">
         </label>
@@ -147,19 +147,18 @@
       <fieldset class="form-field">
         <legend>Additional info:</legend>
 
-        <label name="comments">
+        <label name="comments" class="content">
           Comments:
           <textarea name="comments"
-          id="comments"
-          cols="20"
-          rows="2"
-          autocomplete="off"
-          placeholder="Write your feeback here..."
-          >
-          </textarea>
+            placeholder="Write your feeback here..."
+            id="comments"
+            cols="20"
+            rows="2"
+            autocomplete="off"
+         ></textarea>
         </label>
 
-        <label name="recommend">
+        <label name="recommend" class="content">
           Would you recommend us?
           <select name="recommend" id="recommend">
             <option value="yes">Yes</option>
@@ -169,9 +168,9 @@
       </fieldset>
 
       <button
-        class="button-submit"
+        class="button-submit content"
         type="submit"
-        name="button-submit"
+        name="buttonSubmit"
       >
       Submit
       </button>
