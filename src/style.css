@@ -1,1 +1,23 @@
-/* styles go here */
+label {
+  display: block ;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  margin-bottom: 10px;
+}
+
+.form-field label:last-child {
+  margin-bottom: 0;
+}
+
+.form-field .age {
+  width: 65px;
+}
