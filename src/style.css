@@ -1,1 +1,17 @@
-/* styles go here */
+body {
+  font-family: serif;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.form-field {
+  display: block;
+}
+
+.form-field:nth-child(n+3) {
+  padding-top: 10px;
+}
