@@ -12,6 +12,10 @@ body {
   display: block;
 }
 
+.inline {
+  display: inline;
+}
+
 .form-field:nth-child(n+3) {
   padding-top: 10px;
 }
