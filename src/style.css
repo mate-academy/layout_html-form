@@ -1,13 +1,20 @@
-.case-input.first {
+.case-input,
+.first-case-input,
+.last-case-input {
+  display: block;
+}
+
+.case-input {
+  display: block;
+  margin: 10px 0;
+}
+
+.first-case-input {
   margin-bottom: 10px;
 }
 
-.case-input.last {
+.last-case-input {
   margin-top: 10px;
-}
-
-.case-input:not(.first):not(.last) {
-  margin: 10px 0;
 }
 
 fieldset {
