@@ -1,1 +1,12 @@
-/* styles go here */
+.block {
+  border: 2px solid;
+  margin: 20px 10px;
+}
+
+.button1 {
+  margin: 0 10px;
+}
+
+.input {
+  margin: 10px;
+}
