@@ -6,22 +6,7 @@ fieldset {
   margin: 20px 0;
 }
 
-.personalInformation > .input {
-  margin: -10px 0;
-  padding: 10px 0;
-}
-
-.registration > .input__r {
-  margin: -10px 0;
-  padding: 10px 0;
-}
-
-.interesting > .input__i {
-  margin: -10px 0;
-  padding: 10px 0;
-}
-
-.additionalInfo > .input__a {
+.input {
   margin: -10px 0;
   padding: 10px 0;
 }
