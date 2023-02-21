@@ -11,7 +11,138 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+      <div class="block">
+        <div class="Name">
+          Personal information
+        </div>
+        <div class="form-filed">
+          Surname:
+          <input
+            type="text"
+            name="Surname"
+            autocomplete="off"
+          >
+        </div>
+        <div class="form-filed">
+          Name:
+          <input type="text" name="name" >
+        </div>
+        <div class="form-filed">
+          How old are You?
+          <input
+            name="year"
+            type="number"
+            value="12"
+            min="1"
+            max="100"
+          >
+        </div>
+        <div class="form-filed">
+          Full date of birth:
+          <input type="date" name="date">
+        </div>
+        <div class="form-filed">
+          I accept the term of the agreement:
+          <input
+            type="checkbox"
+            name="accept"
+            required
+          >
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="Name">
+          Registratoin
+        </div>
+        <div class="form-filed">
+          E-mail:
+          <input
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+          >
+        </div>
+        <div class="form-filed">
+          Password:
+          <input
+            type="password"
+            name="password"
+            minlength="2"
+            maxlength="10"
+          >
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="Name">
+          An interesting fact about you!
+        </div>
+        <div class="form-filed">
+          Do you love cats?
+          <label>
+            <input type="radio"
+              name="cat"
+              value="yes"
+            >Yes
+          </label>
+
+          <label>
+            <input type="radio"
+              name="cat"
+              value="no"
+            >No
+          </label>
+        </div>
+        <div class="form-filed">
+          What is ypur davorite color?
+          <input type="color" name="color">
+        </div>
+        <div class="form-filed">
+          What time do you go to bed?
+          <input type="time" name="time">
+        </div>
+        <div class="form-filed">
+          What are you favorite of cars?
+          <textarea name="car"
+            cols="2"
+            rows="4"
+            autocomplete="off"
+           >BMW Audi Lada
+          </textarea>
+        </div>
+        <div class="form-filed">
+          How do you rate our work?
+          <input type="range" name="range">
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="Name">
+         Additional ifo:
+        </div>
+        <div lass="form-filed">
+          Comments:
+          <textarea name="text"
+          cols="20"
+          rows="2"
+          autocomplete="off"
+         ></textarea>
+        </div>
+        <div class="form-filed">
+          Would you recommend us?
+          <select name="recommend" >
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </div>
+      </div>
+
+
+      <button type="submit" class="button">Submit</button>
+    </form>
   </body>
 </html>
