@@ -1,1 +1,27 @@
 /* styles go here */
+.form-field {
+  display: block;
+  margin: 10px 0;
+}
+
+fieldset {
+  margin: 0 2px 20px;
+}
+
+.surname1,
+.email1,
+.div,
+.info {
+  margin-top: 0;
+}
+
+.agree1,
+.pass1,
+.rate,
+.rec {
+  margin-bottom: 0;
+}
+
+button {
+  margin: 10px 0;
+}
