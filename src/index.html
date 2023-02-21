@@ -13,9 +13,9 @@
   <body>
     <script type="text/javascript" src="./main.js"></script>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <label class="surname1">
+        <label class="form-field-1">
           Surname:
           <input
             type="text"
@@ -45,14 +45,14 @@
           Full date of birth:
           <input type="date" name="date-of-birth">
         </label>
-        <label class="agree1">
+        <label class="form-field-last">
           I accept the term of the agreement
           <input type="checkbox" name="agreement">
         </label>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Registration</legend>
-        <label class="email1 form-field">
+        <label class="form-field-1 form-field">
           E-mail:
           <input
             type="email"
@@ -60,14 +60,14 @@
             placeholder="email@example.com"
           >
         </label>
-        <label class="pass1 form-field">
+        <label class="form-field-last form-field">
           Password:
           <input type="password">
         </label>
       </fieldset>
-      <fieldset class="fieldset1">
+      <fieldset class="fieldset">
         <legend >An interesting fact about you!</legend>
-        <div class="div form-field">
+        <div class="form-field-1 form-field">
           Do you love cats?
 
           <label>
@@ -108,7 +108,7 @@
             <option value="Lada">Lada</option>
           </select>
         </label>
-        <label class="rate form-field">
+        <label class="form-field-last form-field">
           How do you rate our work?
           <input
             type="range"
@@ -117,14 +117,14 @@
           >
         </label>
       </fieldset>
-      <fieldset class="fieldset1">
+      <fieldset class="fieldset">
         <legend>Additional info:</legend>
-        <label class="info form-field">
+        <label class="form-field-1 form-field">
           Comments:
 
           <textarea name="Comments"></textarea>
         </label>
-        <label class="rec form-field">
+        <label class="form-field-last form-field">
           Would you recommend us?
 
           <select name="select">
@@ -134,7 +134,7 @@
         </label>
       </fieldset>
 
-      <button type="submit">Submit</button>
+      <button class="button" type="submit">Submit</button>
     </form>
   </body>
 </html>
