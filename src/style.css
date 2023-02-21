@@ -1,1 +1,23 @@
 /* styles go here */
+.form-field{
+  padding: 5px 0px;
+}
+legend {
+  font-weight: bold;
+  padding: 0px 10px;
+
+}
+input {
+  border: 1px solid #999;
+  position: relative;
+  margin: 0 ;
+}
+form{
+  margin-bottom: 20px;
+}
+label{
+  position: initial;  
+}
+.rec{
+  padding-top: 10px;
+}
