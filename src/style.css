@@ -1,1 +1,13 @@
 /* styles go here */
+.form-field {
+  display: block;
+  margin-top: 10px;
+}
+
+fieldset:not(:first-child) {
+  margin-top: 20px;
+}
+
+button {
+  margin-top: 20px;
+}
