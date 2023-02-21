@@ -15,21 +15,23 @@
   <body>
 
     <form action="#" method="post">
-      <fieldset>
-        <legend>Personal information</legend>
-        <div class="form-field">
-          <label class="blok">
+      <fieldset class="form-field">
+        <legend>
+          Personal information
+        </legend>
+        <label class="blok">
             Surname:
-            <input 
+          <input 
               type="text" 
               name="Surname"
               autocomplete="off"
               required
-            >
-          </label>
+          >
+        </label>
         </div>
-        <div class="form-field">
-          <label class="blok">Name
+        <div>
+          <label class="blok">
+            Name
             <input 
               type="text" 
               name="name"
@@ -37,8 +39,9 @@
             >
           </label>
         </div>
-        <div class="form-field">
-          <label class="blok">How old are You?
+        <div>
+          <label class="blok">
+            How old are You?
             <input 
               type="text" 
               name="age"
@@ -48,8 +51,9 @@
             >
           </label>
         </div>
-        <div class="form-field">
-          <label class="blok">Full date of birth:
+        <div>
+          <label class="blok">
+            Full date of birth:
             <input 
               type="text" 
               placeholder="mm/dd/yyyy" 
@@ -58,22 +62,17 @@
           </label>
         </div>
         <div>
-          <label class="blok">I accept the term of the agreement
+          <label class="blok">
+            I accept the term of the agreement
             <input type="checkbox" name="agreement">
           </label>
         </div>
       </fieldset>
-    </form>
-
-    <form 
-      action="#" 
-      method="post" 
-      class="form2"
-    >
-      <fieldset>
+      <fieldset class="form-field">
         <legend>Registration</legend>
         <div>
-          <label for="E-mail:">E-mail:
+          <label class="blok">
+            E-mail:
             <input 
               type="email" 
               name="E-mail" 
@@ -82,7 +81,8 @@
           </label>
         </div>
         <div>
-          <label for="password:">password:
+          <label class="blok">
+            password:
             <input 
               type="password" 
               name="password" 
@@ -92,13 +92,7 @@
           </label>
         </div>
       </fieldset>
-    </form>
-
-    <form 
-      action="#" 
-      method="post" 
-    >
-      <fieldset>
+      <fieldset class="form-field">
         <legend>An interesting fact about you</legend>
         <label class="blok">
           Do you love cats?
@@ -113,7 +107,7 @@
             value="n"
           >-No
         </label>
-        <label class="color">
+        <label class="blok">
           What is your favorite color?
           <input type="color" name="color">
         </label>
@@ -121,7 +115,7 @@
           What time do you go to bad?
           <input type="time" name="time">
         </label>
-        <label>
+        <label class="blok">
           What are your favorite brand of cars?
           <select name="name-cars" multiple>
             <option value="BMW">BMW</option>
@@ -138,13 +132,7 @@
           >
         </label>
       </fieldset>
-    </form>
-    
-    <form 
-      method="post" 
-      class="form4"
-    >
-      <fieldset>
+      <fieldset class="form-field ">
         <legend>Additional</legend>
         <label class="blok">
           Comments
