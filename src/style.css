@@ -1,5 +1,10 @@
 .input-field {
   margin-bottom: 10px;
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .input-field:last-child {
