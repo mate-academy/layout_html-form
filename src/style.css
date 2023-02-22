@@ -1,1 +1,17 @@
-/* styles go here */
+.classlabel,
+.last {
+  display: block;
+}
+
+.classlabel {
+  padding-bottom: 10px;
+}
+
+.forms {
+  margin-bottom: 20px;
+}
+
+.cats {
+  display: inline-block;
+  padding-bottom: 10px;
+}
