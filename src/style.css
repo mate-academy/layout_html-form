@@ -1,8 +1,10 @@
 /* styles go here */
 .blok {
-  margin: 10px 0;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .form-field {
-  margin: 20px 0;
+  margin-bottom: 20px;
+  padding-bottom: 0;
 }
