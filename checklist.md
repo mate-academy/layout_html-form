@@ -56,7 +56,15 @@ it only if a certain value is specified from the start, or use placeholders.
 input could be activated by clicking on the corresponding label.
 
 8. [FUNCTIONAL] - Check the textarea behaviour - when you click on the textarea, 
-the coursor should appear on the beginning of the input.
+the cursor should appear in the beginning of the input.
+       <details>
+          <summary>BAD example</summary>
+            <img width="172" alt="image" src="https://user-images.githubusercontent.com/94261494/220734116-a5c8da79-68ca-49ac-b9c6-7303d774f7a1.png">
+        </details>
+        <details>
+          <summary>GOOD example</summary>
+            <img width="185" alt="image" src="https://user-images.githubusercontent.com/94261494/220734026-0ccc7cb9-40c2-4f3d-869d-55db0c713967.png">
+        </details>
 
 9. [TESTS] - Remember, you need to add a certain distance BETWEEN inputs and
 BETWEEN blocks with inputs. It means that, for example, the last input in
