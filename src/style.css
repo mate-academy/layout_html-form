@@ -1,23 +1,26 @@
-/* styles go here */
-.form-field{
-  padding: 5px 0px;
+.form-field {
+  padding: 5px 0;
 }
-legend {
-  font-weight: bold;
-  padding: 0px 10px;
 
+.legend {
+  font-weight: bold;
+  padding: 0 10px;
 }
-input {
+
+.input {
   border: 1px solid #999;
   position: relative;
-  margin: 0 ;
+  margin: 0;
 }
-form{
+
+.form {
   margin-bottom: 20px;
 }
-label{
-  position: initial;  
+
+.label {
+  position: initial;
 }
-.rec{
+
+.rec {
   padding-top: 10px;
 }

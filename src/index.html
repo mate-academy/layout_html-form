@@ -1,157 +1,202 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <h1>HTML Form</h1>
-    <script type="text/javascript" src="./main.js"></script>
-    <form action="http://localhost:5500/api" method="post">
+    <script src="./main.js"></script>
+    <form 
+      class="form" 
+      action="http://localhost:5500/api" 
+      method="post"
+    >
       <fieldset>
-        <legend>Personal information</legend>
-        <div class="form-field">     
-          Surname:   
+        <legend class="legend">Personal Information</legend>
+        <div class="form-field">
+          Surname:
           <input 
-          type="text" 
-          name="username" 
-          required
-          pattern="\w+"
+            class="input"
+            type="text" 
+            name="surname" 
+            required 
+            pattern="\w+"
           >
-         </div>
-         <div class="form-field">   
-          Name:   
+        </div>
+        <div class="form-field">
+          Name:
           <input 
-          type="text" 
-          name="username" 
-          required
-          pattern="\w+"
+            class="input"
+            type="text" 
+            name="name" 
+            required 
+            pattern="\w+"
           >
-         </div>
-         <div class="form-field">   
-          How old are you?   
+        </div>
+        <div class="form-field">
+          How old are you?
           <input 
-          type="number" 
-          name="username" 
-          required
-          placeholder="12"
+            class="input"
+            type="number" 
+            name="age" 
+            required 
+            placeholder="12"
           >
-         </div>
-         <div class="form-field">   
-          Full date of birth:  
+        </div>
+        <div class="form-field">
+          Full date of birth:
           <input 
-          type="date" 
-          name="username" 
-          required
-          pattern="\w+"
+            class="input"
+            type="date" 
+            name="dob" 
+            required 
+            pattern="\w+"
           >
-         </div>
-         <div class="form-field2">  
-          <label for="terms-and-conditions"> I accept the term of the agreement:</label>
-          <input 
-          type="checkbox" 
-          name="terms" 
-          id="terms-and-agreement" 
-          required>
-         </div>
+        </div>
+        <div class="form-field">
+          <label 
+            class="label"
+            for="terms-and-conditions"
+          >I accept the terms of the agreement:</label>
+          <input
+            class="input" 
+            type="checkbox" 
+            name="terms" 
+            id="terms-and-conditions" 
+            required
+          >
+        </div>
       </fieldset>
     </form>
-    <form action="http://localhost:5500/api" method="post">
+    <form 
+      class="form" 
+      action="http://localhost:5500/api" 
+      method="post"
+    >
       <fieldset>
-       <legend>Registration</legend>
-        <div class="form-field">     
-         Email:   
-        <input 
-          type="email"
-          name="email" 
-          placeholder="email@example.com"
-          required>
-         </div>
-         <div class="form-field">  
+        <legend class="legend">Registration</legend>
+        <div class="form-field">
+            Email:
+          <input 
+            class="input"
+            type="email" 
+            name="email" 
+            placeholder="email@example.com" 
+            required
+          >
+        </div>
+        <div class="form-field">
           Password:
           <input 
+            class="input"
             type="password" 
-            name="password"
-            minlength="5"
-            maxlength="30"
+            name="password" 
+            minlength="5" 
+            maxlength="30" 
             pattern="\d+"
-            required>
-         </div>
+            required
+          >
+        </div>
       </fieldset>
-      </form>
-
-     <form action="http://localhost:5500/api" method="post">
-       <fieldset>
-        <legend>An interesting fact about you!</legend>
+    </form>
+      
+    <form 
+      class="form" 
+      action="http://localhost:5500/api" 
+      method="post"
+    >
+      <fieldset>
+        <legend class="legend">An Interesting Fact About You!</legend>
         <div>
           Do you love cats?
-          <input type="radio" id="radioButton1"
-           name="cats" >
-          <label for="radioButton1">Yes</label>
-      
-          <input type="radio" id="radioButton2"
-           name="cats" >
-          <label for="radioButton2">No</label>
-      
+          <input 
+            class="input"
+            type="radio" 
+            id="radioButton1" 
+            name="cats"
+          >
+          <label 
+            class="label" 
+            for="radioButton1"
+          >Yes</label>
+          <input 
+            class="input"
+            type="radio" 
+            id="radioButton2" 
+            name="cats"
+          >
+          <label 
+            class="label" 
+            for="radioButton2"
+          >No</label>
+
         </div>
-        <div class="form-field">   
-          What is your favorite color?   
-          <input 
-          type="color" 
-          name="color" 
-          required
+        <div class="form-field">
+           What is your favorite color?
+          <input
+            class="input" 
+            type="color" 
+            name="color" 
+            required
           >
-         </div>
-        <div class="form-field">   
-          What time do you go to bed?   
+        </div>
+        <div class="form-field">
+          What time do you go to bed?
           <input 
-          type="time" 
-          name="time" 
-          required
+            class="input"
+            type="time" 
+            name="bedtime"
+            required
           >
-         </div>
-        <div class="form-field">   
-             What are your favourite brand of cars?
-             <select name="cars" required multiple>
-              <option value="BMW">BMW</option>
-              <option value="Audi">Audi</option>
-              <option value="Lada">Lada</option>
-            </select>
-         </div>
-        <div class="form-field">   
-             How do you rate our work?
+        </div>
+        <div class="form-field">What are your favorite brands of cars?
+          <select 
+            name="cars" 
+            required
+            multiple
+          >
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </div>
+        <div class="form-field">
+          How do you rate our work?
           <input 
-          type="range"
-          name="range" 
-          min="0"
-          max="10"
-          value="0"
+            class="input"
+            type="range" 
+            name="rating"
+            min="0" 
+            max="10" 
+            value="0"
           >
-         </div>
-       </fieldset>
-       
-      </form>
-      <form action="http://localhost:5500/api" method="post">
-        <fieldset>
-           <legend>Additional info:</legend>
-           <label class="form-field">Comments
-            <textarea name="Comments"></textarea>
-           </label>
-           <div class="rec">Would you recommend us?
-            <select name="recommend">
-              <option value="yes">yes</option>
-              <option value="no">no</option>
-            </select>
-          </div>
+        </div>
+      </fieldset>
+    </form>
+
+    <form 
+      class="form" 
+      action="http://localhost:5500/api" 
+      method="post"
+    >
+      <fieldset>
+        <legend class="legend">Additional info:</legend>
+        <label class="label">Comments
+          <textarea name="Comments"></textarea>
+        </label>
+        <div class="rec">Would you recommend us?
+          <select name="recommend">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </div>
            
-        </fieldset>
-      </form>
-      <button>Submit</button>
+      </fieldset>
+    </form>
+    <button>Submit</button>
   </body>
 </html>
