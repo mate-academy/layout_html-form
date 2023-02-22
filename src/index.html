@@ -12,10 +12,9 @@
   </head>
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-
       <fieldset>
         <legend>Personal information</legend>
-        <label for="surname">
+        <label>
           Surname:
           <input
             type="text"
@@ -26,7 +25,6 @@
           >
         </label>
         <label
-          for="name"
           class="form-field"
         >
           Name:
@@ -39,7 +37,6 @@
           >
         </label>
         <label
-          for="old"
           class="form-field"
         >
           How old are You?
@@ -52,7 +49,7 @@
             id="old"
           >
         </label>
-        <label for="birth" class="form-field">
+        <label class="form-field">
           Full date of birth:
           <input
             type="date"
@@ -62,22 +59,21 @@
           >
         </label>
         <label
-          for="terms"
           class="form-field"
-          required
         >
           I accept the term of the agreement
           <input
             type="checkbox"
             id="terms"
             name="terms"
+            required
           >
         </label>
       </fieldset>
 
       <fieldset>
         <legend>Registration</legend>
-        <label for="email">
+        <label>
           E-mail:
           <input
             type="email"
@@ -88,7 +84,6 @@
           >
         </label>
         <label
-          for="password"
           class="form-field"
           minlength="5"
           maxlength="32"
@@ -106,7 +101,7 @@
       <fieldset>
         <legend>An interesting fact about you!</legend>
         <div>
-          <label for="yes">
+          <label>
             Do you love cats?
             <input
               type="radio"
@@ -115,7 +110,7 @@
               value="Yes"
             > Yes
           </label>
-          <label for="no">
+          <label>
             <input
             type="radio"
             id="no"
@@ -124,7 +119,7 @@
             > No
           </label>
         </div>
-        <label for="color" class="form-field">
+        <label class="form-field">
           What is your favorite color?
           <input
             type="color"
@@ -132,7 +127,7 @@
             name="favoriteColor"
           >
         </label>
-        <label for="time" class="form-field">
+        <label class="form-field">
           What time do you go to bed?
           <input
             type="time"
@@ -141,20 +136,20 @@
             step="2"
           >
         </label>
-        <label for="cars" class="form-field">
+        <label class="form-field">
           What are your favorite brand of cars?
           <select
-          name="favoriteCars"
-          id="cars"
-          size="4"
-          multiple
+            name="favoriteCars"
+            id="cars"
+            size="4"
+            multiple
           >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
           </select>
         </label>
-        <label for="rate" class="form-field">
+        <label class="form-field">
           How do you rate our work?
           <input
             type="range"
@@ -167,7 +162,7 @@
 
       <fieldset>
         <legend>Additional info:</legend>
-        <label for="comments">
+        <label>
           Comments:
           <textarea
             id="comments"
@@ -176,7 +171,7 @@
             cols="20">
           </textarea>
         </label>
-        <label for="recommend-us" class="form-field">
+        <label class="form-field">
           Would you recommend us?
           <select name="recommendUs" id="recommend-us">
             <option value="yes">yes</option>
