@@ -63,7 +63,7 @@ the cursor should appear in the beginning of the input.
         </details>
         <details>
           <summary>GOOD example</summary>
-            <img width="185" alt="image" src="https://user-images.githubusercontent.com/94261494/220734026-0ccc7cb9-40c2-4f3d-869d-55db0c713967.png">
+            <img width="163" alt="image" src="https://user-images.githubusercontent.com/94261494/220747096-076e133e-e5f8-4de4-9fe0-9beaf40c9e53.png">
         </details>
 
 9. [TESTS] - Remember, you need to add a certain distance BETWEEN inputs and
