@@ -12,67 +12,81 @@
   </head>
   <body>
     <form>
-      <fieldset class="persInf"> 
+      <fieldset class="persInf">
 
         <legend>Personal information</legend>
-        Surname: 
-        <input 
-        class="input" type="text" 
-        name = "lastname" autocomplete="off"
+        Surname:
+        <input
+        class="input"
+        type="text"
+        name = "lastname"
+        autocomplete="off"
         required
         >
         <br>
-  
-        Name: 
-        <input 
-        class="input" type="text" 
-        name = "firstname" autocomplete="off"
+
+        Name:
+        <input
+        class="input"
+        type="text"
+        name = "firstname"
+        autocomplete="off"
         required
         >
-        <br> 
-  
-        How old are you? 
-        <input 
-        class="input" type="number" 
-        name="age" id="12" 
-        value="12" min="1" 
+        <br>
+
+        How old are you?
+        <input
+        class="input"
+        type="number"
+        name="age"
+        id="12"
+        value="12"
+        min="1"
         max="100"
         >
-        <br> 
-  
-        Full date of birth: 
-        <input 
-        class="input" type="date" 
-        id="date" name="date"
+        <br>
+
+        Full date of birth:
+        <input
+        class="input"
+        type="date"
+        id="date"
+        name="date"
         >
         <br>
-  
-        I accept the term of the agreement 
-        <input 
-        class="input" type="checkbox" 
+
+        I accept the term of the agreement
+        <input
+        class="input"
+        type="checkbox"
         name="checkbox"
         required
         >
       </fieldset>
-      
+
     </form>
 
     <form>
       <fieldset class="registr">
 
         <legend>Registration</legend>
-        E-mail: 
-        <input 
-      class="input" type="email" 
-      value="email@example.com" name="email"
+        E-mail:
+        <input
+      class="input"
+      type="email"
+      value="email@example.com"
+      name="email"
       required
-        > 
+        >
         <br>
 
-      Password: 
-        <input 
-      class="input" type="password" 
-      name="password" minlength="6"
+      Password:
+        <input
+      class="input"
+      type="password"
+      name="password"
+      minlength="6"
       required
         >
         <br>
@@ -84,48 +98,57 @@
       <fieldset class="facts">
 
         <legend>An interesting facts about you!</legend>
-        Do you love cats? 
-        <input 
-        class="input" type="radio" 
-        name="option" value="yes" 
+        Do you love cats?
+        <input
+        class="input"
+        type="radio"
+        name="option"
+        value="yes"
         id="yes"
-        > Yes 
+        > Yes
 
-        <input class="input" type="radio" 
-        name="option" value="no" 
+        <input class="input"
+        type="radio"
+        name="option"
+        value="no"
         id="no"
         > No
         <br>
-  
+
         What is your favorite color?
-        <input 
-        class="input" type="color"
-         name="color"
+        <input
+        class="input"
+        type="color"
+        name="color"
         >
         <br>
-  
+
         What time do you go to bed?
-        <input 
-        class="input" type="time" 
+        <input
+        class="input"
+        type="time"
         name="time"
         >
         <br>
-  
+
         What are your favorite brand of cars?
         <label for="cars"></label>
-        <select 
-        id="cars" name="cars" 
-        multiple="multiple" size="4">
+        <select
+        id="cars"
+        name="cars"
+        multiple="multiple"
+        size="4">
           <option value="bmw">BMW</option>
           <option value="audi">Audi</option>
           <option value="lada">Lada</option>
           <option value="none"></option>
         </select>
         <br>
-  
-        How do you rate our work? 
-        <input 
-        class="input" type="range" 
+
+        How do you rate our work?
+        <input
+        class="input"
+        type="range"
         name="range"
         >
       </fieldset>
@@ -133,20 +156,24 @@
     </form>
 
     <form>
-      
+
       <fieldset class="addInfo">
         <legend>Additional info</legend>
-        Comments: 
-        <input 
-      class="input" type="text" 
-      autocomplete="off" name="text"
-      minlength="1" maxlength="40"
+        Comments:
+        <input
+      class="input"
+      type="text"
+      autocomplete="off"
+      name="text"
+      minlength="1"
+      maxlength="40"
         >
         <br>
 
       Would you recommend us?
-        <select 
-      id="choose" name="choose">
+        <select
+      id="choose"
+      name="choose">
           <option value="yes">yes</option>
           <option value="no">no</option>
         </select>
@@ -154,11 +181,13 @@
 
     </form>
     <form>
-      <button type="submit" href="https://mate-academy-form-lesson.herokuapp.com/create-application`">
+      <button
+      type="submit"
+      href="https://mate-academy-form-lesson.herokuapp.com/create-application`">
       submit
       </button>
     </form>
-    
+
 
     <script type="text/javascript" src="./main.js"></script>
   </body>
