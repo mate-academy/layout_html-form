@@ -15,10 +15,13 @@
   <body>
 
     <form action="#" method="post">
-      <fieldset class="form-field">
+
+      <fieldset class="form__fieldset">
+
         <legend>
           Personal information
         </legend>
+
         <label class="blok">
           Surname:
           <input 
@@ -58,11 +61,14 @@
           I accept the term of the agreement
           <input type="checkbox" name="agreement">
         </label>
+
       </fieldset>
-      <fieldset class="form-field">
+      <fieldset class="form__fieldset">
+
         <legend>Registration</legend>
+
         <label class="blok">
-            E-mail:
+          E-mail:
           <input 
             type="email" 
             name="email" 
@@ -78,22 +84,29 @@
             maxlength="8"
           >
         </label>
+
       </fieldset>
-      <fieldset class="form-field">
-        <legend>An interesting fact about you</legend>
-        <label class="blok">
-            Do you love cats?
-          <input 
-            type="radio" 
-            name="Yes" 
-            checked
-          >-Yes
-          <input 
-             type="radio" 
-             name="yes" 
-             value="n"
-          >-No
-        </label>
+      <fieldset class="form__fieldset">
+
+        <legend>An interesting fact about you!</legend>
+
+        <div class="blok">
+          Do you love cats?
+          <label>
+            <input 
+              type="radio" 
+              name="yes" 
+              checked
+            >Yes
+          </label>
+          <label>
+            <input 
+               type="radio" 
+               name="yes"
+            >No
+          </label>
+        </div>
+        
         <label class="blok">
             What is your favorite color?
           <input type="color" name="color">
@@ -118,9 +131,12 @@
             min="1"
           >
         </label>
+
       </fieldset>
-      <fieldset class="form-field ">
+      <fieldset class="form__fieldset">
+
         <legend>Additional info:</legend>
+
         <label class="blok">
             Comments:
           <textarea name="comments" autocomplete="off"></textarea>
@@ -133,8 +149,11 @@
             <option value="no">no</option>
           </select>
         </label>
+
       </fieldset>
+
       <button type="submit">Submit</button>
+      
     </form>
     
     <script type="text/javascript" src="./main.js"></script>
