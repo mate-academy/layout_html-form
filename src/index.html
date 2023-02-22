@@ -17,24 +17,32 @@
 
       <fieldset class="per_info">
         <legend>Personal information</legend>
+
         <label for="sname">Surname:</label>
         <input
+          class="outer_mar"
           type="text"
-            name="sname"
-            id="sname"
-            required
-            autocomplete="off"
-        ><br>
+          name="sname"
+          id="sname"
+          required
+          autocomplete="off"
+        >
+        <br>
+
         <label for="fname">Name:</label>
         <input
+          class="outer_mar"
           type="text"
           id="fname"
           name="fname"
           required
           autocomplete="off"
-        ><br>
+        >
+        <br>
+
         <label for="age">How old are You?</label>
         <input
+          class="outer_mar"
           type="number"
           id="age"
           name="age"
@@ -42,15 +50,19 @@
           min="1"
           max="100"
           multiple size="2"
-        ><br>
+        >
+        <br>
+
         <label for="birthd"> Full date of birth:</label>
         <input
+          class="outer_mar"
           type="date"
           id="birthd"
           name="birthd"
           placeholder="mm/dd/yyyy"
 
-        ><br>
+        >
+        <br>
         <label for="temps">I accept the term of the agreement</label>
         <input
           type="checkbox"
@@ -59,16 +71,20 @@
           required
         >
       </fieldset>
+
       <fieldset class="reg_info">
         <legend>Registration</legend>
+
         <label for="email">E-mail:</label>
         <input
+          class="outer_mar"
           type="email"
           id="email"
           name="email"
           placeholder="email@example.com"
           required
         ><br>
+
         <label for="password">Password:</label>
         <input
           type="password"
@@ -79,35 +95,46 @@
           required
         >
       </fieldset>
-      <fieldset class="about_you">
+
+      <fieldset class="about_you_info">
         <legend>An interesting fact about you!</legend>
-        <label for="love">Do you love cats?</label>
+
+        <label for="love" class="outer_mar">Do you love cats?</label>
+
         <input
+          class="outer_mar"
           type="radio"
           id="yes"
           name="love"
           value="yes"
         >
         <label for="yes">Yes</label>
+
         <input
           type="radio"
           id="no"
           name="love"
           value="no"
         >
+
         <label for="no">No</label><br>
+
         <label for="color">What is your favorite color?</label>
         <input
+          class="outer_mar color_mar"
           type="color"
           id="color"
           name="color"
         ><br>
+
         <label for="sleep">What time do you go to bed?</label>
         <input
+          class="outer_mar"
           type="time"
           id="sleep"
           step="2"
         ><br>
+
         <label for="car">What are your favorite brand of cars?</label>
         <select
           name="car"
@@ -115,11 +142,15 @@
           multiple size="4"
         >
           <option value="BMW">BMW</option>
+
           <option value="Mersedes">Audi</option>
+
           <option value="Tesla">Lada</option>
         </select><br>
+
         <label for="rate">How do you rate our work?</label>
         <input
+          class="rate_mar"
           type="range"
           id="rate"
           name="rate"
@@ -128,23 +159,27 @@
           value="0"
         >
       </fieldset>
-      <fieldset>
+
+      <fieldset class="additional_info">
         <legend>Additional info:</legend>
         <label for="comments">Comments:</label>
         <textarea
+
           name="comments"
           id="comments"
           cols="20"
           rows="2"
-        >
-        </textarea><br>
+       ></textarea><br>
+
         <label for="recommend">Would you recommend us?</label>
         <select
+          class="recomd_mar"
           name="recommend"
           id="recommend"
         >
-          <option value="yes">Yes</option>
-          <option value="no">No</option>
+          <option value="yes">yes</option>
+
+          <option value="no">no</option>
         </select>
       </fieldset>
 

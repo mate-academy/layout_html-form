@@ -1,21 +1,37 @@
 /* styles go here */
 
-fieldset {
+.per_info {
   margin-bottom: 20px;
 }
 
-input:not(:last-child) {
+.reg_info {
+  margin-bottom: 20px;
+}
+
+.about_you_info {
+  margin-bottom: 20px;
+}
+
+.additional_info {
+  margin-bottom: 20px;
+}
+
+.outer_mar {
   margin-bottom: 10px;
 }
 
-#color {
+.color_mar {
   margin-top: 4px;
 }
 
-#comments {
+.comments_mar {
   margin-bottom: 10px;
 }
 
-#rate {
+.rate_mar {
   margin-top: 12px;
+}
+
+.recomd_mar {
+  margin-top: 10px;
 }
