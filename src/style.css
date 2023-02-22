@@ -1,1 +1,21 @@
 /* styles go here */
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+input:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+#color {
+  margin-top: 4px;
+}
+
+#comments {
+  margin-bottom: 10px;
+}
+
+#rate {
+  margin-top: 12px;
+}
