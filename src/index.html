@@ -14,6 +14,7 @@
     <!-- <h1>HTML Form</h1> -->
     <script type="text/javascript" src="./main.js"></script>
     <form action="./main.js" method="post">
+
       <fieldset class="form-fieldset">
         <legend>Personal information</legend>
         <label class="form-field">
@@ -24,6 +25,7 @@
             autocomplete="off"
           >
         </label>
+
         <label class="form-field">
           Name:
           <input
@@ -32,6 +34,7 @@
             autocomplete="off"
           >
         </label>
+
         <label class="form-field">
           How old are You?
           <input
@@ -42,6 +45,7 @@
             name="old"
           >
         </label>
+
         <label class="form-field">
           Full date of birth:
           <input
@@ -50,6 +54,7 @@
             placeholder="mm/dd/yyyy"
           >
         </label>
+
         <label class="form-field">
           I accept the term of the agreement <input type="checkbox" name="term">
         </label>
@@ -65,6 +70,7 @@
             name="email"
           >
         </label>
+
         <label class="form-field">
           Password:
           <input
@@ -79,23 +85,30 @@
 
       <fieldset class="form-fieldset">
         <legend>An interesting fact about you!</legend>
-        <label class="form-field">
+        <div class="form-field">
           Do you love cats?
-          <input
-            type="radio"
-            name="loveCat"
-            value="true"
-          > Yes
-          <input
-            type="radio"
-            name="loveCat"
-            value="false"
-          > No
-        </label>
+          <label>
+            <input
+              type="radio"
+              name="loveCat"
+              value="true"
+            > Yes
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="loveCat"
+              value="false"
+            > No
+          </label>
+        </div>
+
         <label class="form-field">
           What is your favorite color?
           <input type="color" name="color">
         </label>
+
         <label class="form-field">
           What time do you go to bed?
           <input
@@ -104,6 +117,7 @@
             step="1"
           >
         </label>
+
         <label class="form-field">
           What are your favorite brand of cars?
           <select
@@ -117,6 +131,7 @@
             <option></option>
           </select>
         </label>
+
         <label class="form-field">
           How do you rate our work?
           <input
@@ -134,9 +149,11 @@
           <textarea
             name="comments"
             cols="20"
-            rows="2">
+            rows="2"
+          >
           </textarea>
         </label>
+
         <label class="form-field">
           Would you recomend us?
           <select name="recomend">
@@ -145,7 +162,9 @@
           </select>
         </label>
       </fieldset>
+
       <button type="submit">Submit</button>
+
     </form>
   </body>
 </html>
