@@ -1,1 +1,19 @@
-/* styles go here */
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.block-style {
+  margin-bottom: 20px;
+  border: 1px solid #444;
+  padding-left: 10px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+.form__facts-cars select:focus {
+  color: #0f0;
+}
