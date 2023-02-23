@@ -1,18 +1,8 @@
 .form-section {
-  border: 1px solid black;
-  position: relative;
-  padding: 10px;
-}
-
-.title-form-section {
-  position: absolute;
-  background-color: #fff;
-  top: -10px;
-  left: 10px;
-  padding: 0 5px;
+  margin-bottom: 20px;
 }
 
 .form-field {
   display: block;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
