@@ -1,31 +1,19 @@
 /* styles go here */
 
-.per_info {
-  margin-bottom: 20px;
-}
-
-.reg_info {
-  margin-bottom: 20px;
-}
-
-.about_you_info {
-  margin-bottom: 20px;
-}
-
+.per_info,
+.reg_info,
+.about_you_info,
 .additional_info {
   margin-bottom: 20px;
 }
 
-.outer_mar {
+.outer_mar,
+.comments_mar {
   margin-bottom: 10px;
 }
 
 .color_mar {
   margin-top: 4px;
-}
-
-.comments_mar {
-  margin-bottom: 10px;
 }
 
 .rate_mar {
