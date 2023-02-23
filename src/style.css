@@ -1,1 +1,16 @@
 /* styles go here */
+fieldset {
+  margin-bottom: 20px;
+}
+
+label {
+  display: inline-block;
+}
+
+fieldset label {
+  margin-bottom: 10px;
+}
+
+fieldset label:last-of-type {
+  margin-bottom: 0;
+}
