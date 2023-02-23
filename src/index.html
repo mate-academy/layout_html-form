@@ -2,16 +2,238 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
+    <meta name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
-  <body>
-    <h1>HTML Form</h1>
+  <body class="body">
     <script type="text/javascript" src="./main.js"></script>
+    <main class="main">
+      <form
+        action="http://localhost:8080/api"
+        method="post"
+        name="taskForm"
+      >
+        <fieldset class="group">
+          <legend>
+            Personal information
+          </legend>
+
+          <section class="section">
+            <label for="surname">
+              Surname:
+            </label>
+
+            <input
+              type="text"
+              id="surname"
+              name="surname"
+              autocomplete="off"
+            >
+          </section>
+
+          <section class="section">
+            <label for="name">
+              Name:
+            </label>
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="off"
+            >
+          </section>
+
+          <section class="section">
+            <label for="age">
+              How old are you?
+            </label>
+
+            <input
+              type="number"
+              id="age"
+              name="age"
+              value="12"
+              max="100"
+              min="1"
+            >
+          </section>
+
+          <section class="section">
+            <label for="dateOfBirth">
+              Full date of birth
+            </label>
+
+            <input
+              type="date"
+              id="dateOfBirth"
+              name="dateOfBirth"
+            >
+          </section>
+
+          <section class="section">
+            <label for="terms">
+              I accept the term of the agreement
+            </label>
+
+            <input
+              type="checkbox"
+              id="terms"
+              name="terms"
+              required
+            >
+          </section>
+        </fieldset>
+
+        <fieldset class="group">
+          <legend class="legend">
+            Registration
+          </legend>
+
+          <section class="section">
+            <label for="email">
+              E-mail:
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@example.com"
+              autocomplete="off"
+            >
+          </section>
+
+          <section class="section">
+            <label for="password">
+              Password:
+            </label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              minlength="8"
+              maxlength="18"
+              autocomplete="off"
+            >
+          </section>
+        </fieldset>
+
+        <fieldset class="group">
+          <legend>
+            An interesting fact about you!
+          </legend>
+
+          <section class="section">
+            Do you love cats?
+            <input
+              type="radio"
+              name="isLoveCat"
+              id="loveCat"
+            >
+            <label for="loveCat">
+              Yes
+            </label>
+
+            <input
+              type="radio"
+              name="isLoveCat"
+              id="notLoveCat"
+            >
+            <label for="notLoveCat">
+              No
+            </label>
+          </section>
+
+          <section class="section">
+            <label for="favColor">
+              What is your favorite color?
+            </label>
+            <input
+              type="color"
+              name="favColor"
+              id="favColor"
+            >
+          </section>
+
+          <section class="section">
+            <label for="isTimeGoToBed">
+              What time you go to bed?
+            </label>
+            <input
+              type="time"
+              name="isTimeGoToBed"
+              id="isTimeGoToBed"
+            >
+          </section>
+
+          <section class="section">
+            <label for="isFavBrandOfCars">
+              What are your favorite brand of cars?
+            </label>
+            <select
+              id="isFavBrandOfCars"
+              name="isFavBrandOfCars"
+              multiple
+            >
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Lada">Lada</option>
+            </select>
+          </section>
+
+          <section class="section">
+            <label for="rateOurWork">
+              How do you rate our work?
+            </label>
+            <input
+              type="range"
+              name="rateOurWork"
+              id="rateOurWork"
+            >
+            </input>
+          </section>
+
+        </fieldset>
+
+        <fieldset class="group">
+          <legend>
+            Additional Info:
+          </legend>
+          <section class="section">
+            <label for="comments">
+              Comments:
+            </label>
+            <textarea
+              autocomplete="off"
+              name="comments"
+              id="comments"
+           ></textarea>
+          </section>
+
+          <section class="section">
+            <label for="recommendUs">
+              Would you recommend us?:
+            </label>
+            <select name="recommendUs">
+              <option value="true">Yes</option>
+              <option value="false">No</option>
+            </select>
+          </section>
+
+        </fieldset>
+
+        <button
+          class="submitButton"
+          id="formSubmit"
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </main>
   </body>
 </html>
