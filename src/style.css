@@ -1,1 +1,9 @@
-/* styles go here */
+.section {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+.input {
+  display: inline-block;
+  margin-bottom: 10px;
+}

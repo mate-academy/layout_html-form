@@ -11,7 +11,161 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form class="form" method="post" action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+      <fieldset class="section">
+        <legend>
+          Personal informatiom:
+        </legend>
+        <label class="input">
+          Surname:
+          <input 
+            type="text" 
+            autocomplete="off" 
+            name="sureName"
+          >
+        </label><br>
+        
+        <label class="input">
+          Name:
+          <input 
+            type="text"
+            autocomplete="off" 
+            name="name" 
+            required 
+          >
+        </label><br>
+        
+        <label class="input">
+          How old are You?
+          <input 
+            type="number"
+            name="howOldAreYou"
+            size="4"
+            value="12"
+            min="1"
+            max="100"
+          >
+        </label><br>
+        
+        <label class="input">
+          Full date of birth:
+          <input type="date" name="dateOfBirdth">
+        </label><br>
+        
+        <label class="input">
+          I accept the term of the agreemet
+          <input 
+            type="checkbox" 
+            name="acept" 
+            required
+          >
+        </label><br>
+      </fieldset>
+      
+      <fieldset class="section">
+        <legend>
+          Registration
+        </legend>
+        <label class="input">E-mail:
+          <input 
+            type="email" 
+            name="emale" 
+            placeholder="email@example.com" 
+            required
+          >
+        </label><br>
+        
+        <label class="input">
+          Password: 
+          <input 
+            type="password" 
+            name="password" 
+            required
+          >
+        </label><br>
+      </fieldset> 
+      
+      <fieldset class="section">
+        <legend>
+          An interesting fact about you!
+        </legend>
+        <label class="input"> 
+          Do you love cats?
+          <input 
+            type="radio"
+            name="LoveCats"
+            value="yes"
+          >Yes
+        </label>
+        
+        <label class="input">
+          <input 
+            type="radio" 
+            name="LoveCats" 
+            value="no"
+          >No
+        </label><br>
+        
+        <label class="input"> 
+          What is your favorite color?
+          <input type="color" name="favoriteColor">
+        </label><br>
+        
+        <label class="input"> 
+          What time do you go bad?
+          <input type="time" name="timeToBad">
+        </label><br>
+        
+        <label class="input"> 
+          What are your favorite brand of cars?
+          <select 
+            type="multiple" 
+            name="favoriteCar" 
+            multiple
+          >
+            <option value="bmv">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </label><br>
+        
+        <label class="input">
+          How do you rate our work? 
+          <input 
+            type="range" 
+            min="0"
+            max="10"
+            value="0"
+          >
+        </label><br>
+      </fieldset>
+      
+      <fieldset class="section">
+        <legend>
+          Additional info:
+        </legend>
+        <label class="input"> 
+          Comments:
+          <textarea 
+            name="fitBack" 
+            cols="20" 
+            rows="2"
+            autocomplete="off"
+          >
+          </textarea> 
+        </label><br>
+        
+        <label class="input">
+          Would you recommend us?
+          <select name="recomendUs" >
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label><br>
+      </fieldset>
+      <button class="button" type="submit" name="button">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
+
