@@ -17,7 +17,7 @@
       class="form"
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
-      name="personalInfo"
+      name="registrationForm"
     >
       <div class="form-section personalInformation">
         <div class="title-form-section">Personal information</div>
@@ -46,6 +46,22 @@
         <label class="form-field">
           I accept the term of the agreement
           <input type="checkbox" name="acceptTheTerm" >
+        </label>
+      </div>
+
+      <div class="form-section registration">
+        <div class="title-form-section">Registration</div>
+        <label class="form-field">
+          E-mail:
+          <input 
+            type="email" 
+            name="mail" 
+            placeholder="email@example.com"
+          >
+        </label>
+        <label class="form-field">
+          Password:
+          <input type="password" name="password">
         </label>
       </div>
     </form>
