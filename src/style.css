@@ -1,1 +1,16 @@
-/* styles go here */
+.fieldset {
+  margin: 20px 0;
+}
+
+.fieldsetTop {
+  margin-top: 0;
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.label:last-child {
+  margin-bottom: 0;
+}
