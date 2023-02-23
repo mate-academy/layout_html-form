@@ -1,1 +1,13 @@
-/* styles go here */
+
+.field {
+  margin-bottom: 20px;
+}
+
+.breakable {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.breakable:last-child {
+  margin-bottom: 0;
+}
