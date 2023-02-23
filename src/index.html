@@ -23,11 +23,11 @@
         <legend class="title-form-section">Personal information</legend>
         <label class="form-field">
           Surname:
-          <input type="text" name="surname" >
+          <input type="text" name="surname" autocomplete="off">
         </label>
         <label class="form-field">
           Name:
-          <input type="text" name="name" >
+          <input type="text" name="name" autocomplete="off">
         </label>
         <label class="form-field">
           How old are You:
@@ -57,11 +57,17 @@
             type="email" 
             name="mail" 
             placeholder="email@example.com"
+            multiple
           >
         </label>
         <label class="form-field">
           Password:
-          <input type="password" name="password">
+          <input 
+            type="password" 
+            name="password"
+            minlength="10"
+            maxlength="30"
+          >
         </label>
       </fieldset>
 
@@ -105,7 +111,13 @@
         </label>
         <label class="form-field">
           How do you rate our work? 
-          <input type="range" name="rate" value="0">
+          <input 
+            type="range" 
+            name="rate" 
+            min="0"
+            max="10"
+            value="0"
+          >
         </label>
       </fieldset>
 
@@ -113,7 +125,7 @@
         <legend class="title-form-section">Additional info</legend>
         <label class="form-field">
           Comments:
-          <textarea name="comments"></textarea>
+          <textarea name="comments" autocomplete="off"></textarea>
         </label>
         <label class="form-field">
           Would you recommend us?
