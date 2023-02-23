@@ -1,11 +1,7 @@
 .form-field {
-  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .set {
-  margin: 20px;
-}
-
-.submit {
-  margin-left: 19px;
+  margin-bottom: 20px;
 }
