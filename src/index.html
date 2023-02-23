@@ -19,8 +19,8 @@
       method="post"
       name="registrationForm"
     >
-      <div class="form-section personalInformation">
-        <div class="title-form-section">Personal information</div>
+      <fieldset class="form-section personalInformation">
+        <legend class="title-form-section">Personal information</legend>
         <label class="form-field">
           Surname:
           <input type="text" name="surname" >
@@ -47,10 +47,10 @@
           I accept the term of the agreement
           <input type="checkbox" name="acceptTheTerm" >
         </label>
-      </div>
+      </fieldset>
 
-      <div class="form-section registration">
-        <div class="title-form-section">Registration</div>
+      <fieldset class="form-section registration">
+        <legend class="title-form-section">Registration</legend>
         <label class="form-field">
           E-mail:
           <input 
@@ -63,10 +63,10 @@
           Password:
           <input type="password" name="password">
         </label>
-      </div>
+      </fieldset>
 
-      <div class="form-section interestingFacts">
-        <div class="title-form-section">An interesting fact about you!</div>
+      <fieldset class="form-section interestingFacts">
+        <legend class="title-form-section">An interesting fact about you!</legend>
         <div class="form-field">
           Do you love cats?
           <label for="loveCats">             
@@ -111,10 +111,10 @@
           How do you rate our work? 
           <input type="range" name="rate" value="0">
         </label>
-      </div>
+      </fieldset>
 
-      <div class="form-section additionalInfo">
-        <div class="title-form-section">Additional info</div>
+      <fieldset class="form-section additionalInfo">
+        <legend class="title-form-section">Additional info</legend>
         <label class="form-field">
           Comments:
           <textarea name="comments"></textarea>
@@ -126,7 +126,7 @@
             <option value="no">no</option>
           </select>
         </label>
-      </div>
+      </fieldset>
 
       <button type="submit" name="submit">Submit</button>
     </form>
