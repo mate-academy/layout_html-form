@@ -1,1 +1,10 @@
-/* styles go here */
+
+.fieldset {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+.field {
+  display: block;
+  margin-bottom: 10px;
+}
