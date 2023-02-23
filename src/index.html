@@ -64,6 +64,55 @@
           <input type="password" name="password">
         </label>
       </div>
+
+      <div class="form-section interestingFacts">
+        <div class="title-form-section">An interesting fact about you!</div>
+        <div class="form-field">
+          Do you love cats?
+          <label for="loveCats">             
+            <input 
+              type="radio" 
+              name="loveCats" 
+              value="Yes"
+            >
+            Yes
+          </label>
+          <label>             
+            <input 
+              type="radio" 
+              name="loveCats" 
+              value="No"
+            >
+            No
+          </label>
+        </div>
+        <label class="form-field">
+          What is your favorite color?:
+          <select name="color">
+            <option value="#000000">Black</option>
+            <option value="#ffff00">Yellow</option>
+            <option value="#ffffff">White</option>
+          </select>          
+        </label>
+        <label class="form-field">
+          What time do you go to bed? 
+          <input type="time" name="time">
+        </label>
+        <label class="form-field">
+          What are your favorite brand of cars?:
+          <select name="cars" required>
+            <option value=" " disabled selected></option>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>          
+        </label>
+        <label class="form-field">
+          How do you rate our work? 
+          <input type="range" name="rate" value="0">
+        </label>
+
+      </div>
     </form>
 
     <script type="text/javascript" src="./main.js"></script>
