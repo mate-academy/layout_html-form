@@ -1,19 +1,45 @@
 .container {
   max-width: 1230px;
-  padding: 0 15px;
   margin: 0 auto;
 }
 
 .block-style {
   margin-bottom: 20px;
-  border: 1px solid #444;
-  padding-left: 10px;
+  padding-left: 12px;
 }
 
 input {
   margin-bottom: 10px;
 }
 
-.form__facts-cars select:focus {
-  color: #0f0;
+.form__personal-agreement input {
+  margin-bottom: 4px;
+}
+
+.form__regiatration-password input {
+  margin-bottom: 0;
+}
+
+.form__info-recommend input {
+  margin-bottom: 5px;
+}
+
+.form__facts-time input {
+  padding-right: 28px;
+}
+
+.form__facts-cats {
+  margin-bottom: 4px;
+}
+
+.form__facts-cars {
+  margin-bottom: 10px;
+}
+
+.form__facts-riter input {
+  margin-bottom: 0;
+}
+
+.form__info-comments {
+  margin-bottom: 10px;
 }

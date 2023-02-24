@@ -16,10 +16,11 @@
       method="post"
       >
         <fieldset class="form__personal block-style">
-          <legend>Personal information:</legend>
+          <legend>Personal information</legend>
           <div class="form__personal-surname">
-            Surname
-            <input name="surname" type="text"
+            Surname:
+            <input name="surname"
+            type="text"
             autocomplete="off"
             >
           </div>
@@ -40,9 +41,11 @@
             >
           </div>
           <div class="form__personal-date">
-            Full date of brith:
-            <input name="surname" type="date"
-            minlength="2019" maxlength="2023"
+            Full date of birth:
+            <input name="surname"
+            type="date"
+            minlength="2019"
+            maxlength="2023"
             >
           </div>
           <div class="form__personal-agreement">
@@ -60,7 +63,12 @@
           </div>
           <div class="form__regiatration-password">
             Password:
-            <input type="password">
+            <input type="password"
+            minlength="6"
+            maxlength="12"
+            size="12"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+            >
           </div>
         </fieldset>
         <fieldset class="form__facts block-style">
@@ -70,7 +78,7 @@
             <label>
               <input value="Yes"
                type="radio"
-               checked name="cat"
+               name="cat"
               >
               Yes
             </label>
@@ -87,20 +95,22 @@
             <input type="color" name="color">
           </div>
           <div class="form__facts-time">
-            What time do you go to bad?
+            What time do you go to bed?
             <input type="time" name="time">
           </div>
           <div class="form__facts-cars">
-            What are you favorite brand of cars?
-            <select name="car" required>
-              <option selected disabled>Choose a car</option>
+            What are your favorite brand of cars?
+            <select name="car" required
+            multiple
+            >
               <option value="bmw">BMW</option>
               <option value="aydi">Audi</option>
               <option value="lada">Lada</option>
+              <option selected disabled></option>
             </select>
           </div>
           <div class="form__facts-riter">
-            How do tou rate our work?
+            How do you rate our work?
             <input type="range" name="range"
             value="0"
             >
@@ -117,11 +127,12 @@
             maxlength="400"
            ></textarea>
           </div>
-          <div class="recommend">
+          <div class="form__info-recommend">
             Would you recommend us?
             <select>
               <option value="yes" checked>Yes</option>
               <option value="no">No</option>
+              <option value="maybe">Maybe</option>
             </select>
           </div>
         </fieldset>
