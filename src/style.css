@@ -1,5 +1,5 @@
-/* styles go here */
-fieldset {
+
+.set {
   margin-bottom: 20px;
 }
 
@@ -7,10 +7,10 @@ label {
   display: inline-block;
 }
 
-fieldset label {
+.set label {
   margin-bottom: 10px;
 }
 
-fieldset label:last-of-type {
+.set label:last-of-type {
   margin-bottom: 0;
 }
