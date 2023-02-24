@@ -1,1 +1,12 @@
 /* styles go here */
+.form {
+  margin-bottom: 20px;
+}
+
+.form__item {
+  margin-bottom: 10px;
+}
+
+.form__item:last-child {
+  margin-bottom: 0;
+}
