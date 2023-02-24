@@ -11,7 +11,117 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form action="http://localhost:3000/api" method="post">
+      <fieldset>
+        <legend>Personal information</legend>
+        <label class="form-field">
+          Surname:
+          <input
+             type="text"
+             name="Surname:"
+             autocomplete="off"
+          >
+        </label>
+        <label class="form-field">
+          Name:
+          <input
+            type="text"
+            name="Name"
+            autocomplete="off"
+          >
+        </label>
+        <label class="form-field">
+          How old are You?
+          <input
+            type="number"
+            name="Age"
+            min="1"
+            max="100"
+            value="12"
+          >
+        </label>
+        <label class="form-field">
+          Full date of birth:
+          <input type="date" name="BirthDate">
+        </label>
+        <label class="form-field">
+          I accept the term of the agreement
+          <input type="checkbox" name="term">
+        </label>
+
+      </fieldset>
+      <fieldset>
+        <legend>Registration</legend>
+        <label class="form-field">
+          E-mail:
+          <input
+             type="email"
+             name="Email"
+             placeholder="email@example.com"
+          >
+        </label>
+        <label class="form-field">
+          Password:
+          <input
+            type="password"
+            name="password"
+            minlength="6"
+            maxlength="32"
+          >
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend> An interesting fact about you!</legend>
+        <label class="form-field">
+          Do you love cats?
+          <input
+            type="radio"
+            name="Cats"
+            value="Yes"
+          > Yes
+          <input
+            type="radio"
+            name="Cats"
+            value="No"
+          > No
+        </label>
+        <label class="form-field">
+          What is your favorite color?
+          <input type="color" name="color">
+        </label>
+        <label class="form-field">
+          What time do you go bed?
+          <input type="time" name="BedTime">
+        </label>
+        <label class="form-field">
+          What are your favorite brand of cars?
+          <select name="BrandCars" multiple>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </label>
+        <label class="form-field">
+          How do you rate aur work?
+          <input type="range" name="rate">
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Additional info:</legend>
+        <label class="form-field">
+          Comments
+          <textarea name="coments"></textarea>
+        </label>
+        <label class="form-field">
+          Would you recomend us?
+          <select name="recomend?">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </label>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
