@@ -1,1 +1,12 @@
 /* styles go here */
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.form-fieldset {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
