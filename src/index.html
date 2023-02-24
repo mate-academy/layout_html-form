@@ -11,7 +11,135 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <div class="container">
+      <form class="form" action="https://github.com/mate-academy/layout_html-form/blob/master/checklist.md"
+      method="post"
+      >
+        <fieldset class="form__personal block-style">
+          <legend>Personal information</legend>
+          <div class="form__personal-surname">
+            Surname:
+            <input name="surname"
+            type="text"
+            autocomplete="off"
+            >
+          </div>
+          <div class="form__personal-name" required>
+            Name:
+            <input name="name" type="text"
+            autocomplete="off"
+            >
+          </div>
+          <div class="form__personal-age" required>
+            How old are You?
+            <input
+            name="surname"
+            type="number"
+            min="1"
+            max="120"
+            value="12"
+            >
+          </div>
+          <div class="form__personal-date">
+            Full date of birth:
+            <input name="surname"
+            type="date"
+            minlength="2019"
+            maxlength="2023"
+            >
+          </div>
+          <div class="form__personal-agreement">
+            I accept the term of the agreement
+            <label>
+              <input name="agreement" type="checkbox">
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form__regiatration block-style">
+          <legend>Registration</legend>
+          <div class="form__regiatration-email" required>
+            E-mail:
+            <input type="email" placeholder="email@example.com">
+          </div>
+          <div class="form__regiatration-password">
+            Password:
+            <input type="password"
+            minlength="6"
+            maxlength="12"
+            size="12"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+            >
+          </div>
+        </fieldset>
+        <fieldset class="form__facts block-style">
+          <legend>An interesting fact about you</legend>
+          <div class="form__facts-cats">
+            Do you love cats?
+            <label>
+              <input value="Yes"
+               type="radio"
+               name="cat"
+              >
+              Yes
+            </label>
+            <label>
+              <input value="No"
+              type="radio"
+              name="cat"
+              >
+              No
+            </label>
+          </div>
+          <div class="form__facts-color">
+            What is your favorite color?
+            <input type="color" name="color">
+          </div>
+          <div class="form__facts-time">
+            What time do you go to bed?
+            <input type="time" name="time">
+          </div>
+          <div class="form__facts-cars">
+            What are your favorite brand of cars?
+            <select name="car" required
+            multiple
+            >
+              <option value="bmw">BMW</option>
+              <option value="aydi">Audi</option>
+              <option value="lada">Lada</option>
+              <option selected disabled></option>
+            </select>
+          </div>
+          <div class="form__facts-riter">
+            How do you rate our work?
+            <input type="range" name="range"
+            value="0"
+            >
+          </div>
+        </fieldset>
+        <fieldset class="form__info block-style">
+          <legend>Additional info:</legend>
+          <div class="form__info-comments">
+            Comments:
+            <textarea
+            autocomplete="off"
+            name="textarea"
+            minlength="20"
+            maxlength="400"
+           ></textarea>
+          </div>
+          <div class="form__info-recommend">
+            Would you recommend us?
+            <select>
+              <option value="yes" checked>Yes</option>
+              <option value="no">No</option>
+              <option value="maybe">Maybe</option>
+            </select>
+          </div>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
