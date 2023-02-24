@@ -12,12 +12,11 @@
   </head>
   <body>
     <form>
-      <fieldset class="persInf">
+      <fieldset class="persInfo">
 
         <legend>Personal information</legend>
         Surname:
         <input
-        class="input"
         type="text"
         name="lastname"
         autocomplete="off"
@@ -35,7 +34,7 @@
         >
         <br>
 
-        How old are you?
+        How old are You?
         <input
         class="input"
         type="number"
@@ -49,8 +48,8 @@
 
         Full date of birth:
         <input
-        class="input"
-        type="dateOfBirth"
+        class="inputBot"
+        type="date"
         id="dateOfBirth"
         name="date"
         >
@@ -58,7 +57,6 @@
 
         I accept the term of the agreement
         <input
-        class="input"
         type="checkbox"
         name="checkbox"
         required
@@ -73,9 +71,8 @@
         <legend>Registration</legend>
         E-mail:
         <input
-      class="input"
       type="email"
-      value="email@example.com"
+      placeholder="email@example.com"
       name="email"
       required
         >
@@ -89,7 +86,6 @@
       minlength="6"
       required
         >
-        <br>
       </fieldset>
 
     </form>
@@ -97,17 +93,16 @@
     <form>
       <fieldset class="facts">
 
-        <legend>An interesting facts about you!</legend>
+        <legend>An interesting fact about you!</legend>
         Do you love cats?
         <input
-        class="input"
         type="radio"
         name="option"
         value="yes"
         id="yes"
         > Yes
 
-        <input class="input"
+        <input
         type="radio"
         name="option"
         value="no"
@@ -128,12 +123,14 @@
         class="input"
         type="time"
         name="time"
+        step="1"
         >
         <br>
 
-        What are your favorite brand of cars?
-        <label for="cars"></label>
+
+        <label>What are your favorite brand of cars?</label>
         <select
+        class="inputBot"
         id="cars"
         name="cars"
         multiple="multiple"
@@ -147,8 +144,8 @@
 
         How do you rate our work?
         <input
-        class="input"
         type="range"
+        value="0"
         name="range"
         >
       </fieldset>
@@ -158,20 +155,21 @@
     <form>
 
       <fieldset class="addInfo">
-        <legend>Additional info</legend>
+        <legend>Additional info:</legend>
         Comments:
-        <input
-      class="input"
-      type="text"
-      autocomplete="off"
-      name="text"
-      minlength="1"
-      maxlength="40"
-        >
+        <textarea
+        type="text"
+        autocomplete="off"
+        name="text"
+        minlength="1"
+        maxlength="40">
+
+        </textarea>
         <br>
 
       Would you recommend us?
         <select
+      class="input"
       id="choose"
       name="choose">
           <option value="yes">yes</option>
@@ -180,12 +178,12 @@
       </fieldset>
 
     </form>
-    <form>
-      <button
+
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+      <input
       type="submit"
-      href="https://mate-academy-form-lesson.herokuapp.com/create-application`">
-      submit
-      </button>
+      value="Submit"
+      >
     </form>
 
 

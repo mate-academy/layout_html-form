@@ -1,6 +1,12 @@
 
 .input {
-  margin: 10px;
+  margin-top: 10px;
+}
+
+.inputBot {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
 }
 
 .persInfo {
