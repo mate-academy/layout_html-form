@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+   
     <script type="text/javascript" src="./main.js"></script>
    
     <fieldset   class="fieldset">
@@ -51,6 +51,7 @@
             name="oldAdreYou"    
             placeholder="12"
             min="1" max="100"
+            value="12"
           > 
         </label>
       </div>
@@ -84,11 +85,11 @@ I accept the term of the agreement
         <label>
           E-mail:
           <input
-            type="text" 
-            name="e-mail"
+            type="email" 
+            name="email"
             placeholder=
-            "email@example.com."
-            autocomplete="off"
+            "email@example.com"
+            required
           >
         </label> 
       </div>
@@ -159,7 +160,7 @@ I accept the term of the agreement
       </div>
 
       <div  class="form-field">
-        <label>
+        <label class="last-of-type">
           What are your favorite brand of cars?
 
           <select name="BrandOfCars"    required
@@ -172,9 +173,10 @@ I accept the term of the agreement
         </label> 
       </div>
      
+      </div>
 
       <div class="form-field">
-        <label>
+        <label >
       How do you rate our work?
           <input
             type="range"
@@ -182,7 +184,35 @@ I accept the term of the agreement
             name="rate"
             min="1"
             max="10"
-          >
+            class="field"
+          > 
+        </label>
+      </div>
+    </fieldset>            
+  
+    <fieldset class="fieldset">
+      <legend>Additional info:</legend>
+      <div class="form-field">
+        <label>
+              Comments:
+          <textarea name="Comments">
+          </textarea>
+        </label>
+      </div>
+  
+      <div class="form-field">
+        <label class="last-of-type">
+           Would you reccommended us?
+          <select name="recommended">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </label>
+      </div>
+    </fieldset>
+  
+    <button type="submit">Submit</button>
+      </fieldset>
         </label>
       </div>
     </fieldset>
