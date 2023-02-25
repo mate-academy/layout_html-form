@@ -2,19 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
+    <title>HTML Form</title>
   </head>
   <body>
-    
     <script type="text/javascript" src="./main.js"></script>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
-      <fieldset class="form-fild">
+      <fieldset class="form-filed">
         <legend>Personal information</legend>
         <div class="form">
           <label>
@@ -28,7 +24,8 @@
         <div class="form">
           <label>
             Name:
-            <input type="text"
+            <input
+              type="text"
               name="fname"
               autocomplete="off"
             >
@@ -37,7 +34,8 @@
         <div class="form">
           <label>
             How old are You?
-            <input type="number"
+            <input
+              type="number"
               name="old"
               min="1"
               max="100"
@@ -48,7 +46,10 @@
         <div class="form">
           <label>
             Full date of birth:
-            <input type="date" name="birth">
+            <input
+              type="date"
+              name="birth"
+            >
           </label>
         </div>
         <div>
@@ -58,21 +59,24 @@
           </label>
         </div>
       </fieldset>
-      <fieldset class="form-fild">
+      <fieldset class="form-filed">
         <legend>Registration</legend>
         <div class="form">
           <label>
             E-mail:
-            <input type="email"
+            <input
+              type="email"
               name="maill"
               placeholder="email@example.com"
+              required
             >
           </label>
         </div>
         <div>
           <label>
             Password:
-            <input type="password"
+            <input
+              type="password"
               name="p_word"
               minlength="4"
               maxlength="1"
@@ -80,18 +84,20 @@
           </label>
         </div>
       </fieldset>
-      <fieldset class="form-fild">
+      <fieldset class="form-filed">
         <legend>An interesting fact about you!</legend>
         <div class="form">
           Do you love cats?
           <label>
-            <input type="radio"
+            <input
+              type="radio"
               name="cats"
               value="Yes"
             >Yes
           </label>
           <label>
-            <input type="radio"
+            <input
+              type="radio"
               name="cats"
               value="No"
             >No
@@ -100,7 +106,10 @@
         <div class="form">
           <label>
             What is you favorite cololor
-            <input type="color" name="fcolor">
+            <input
+              type="color"
+              name="fcolor"
+            >
           </label>
         </div>
         <div class="form">
@@ -127,23 +136,24 @@
         <div>
           <label>
             How do you rate out woork?
-            <input type="range"
+            <input
+              type="range"
               name="rate"
               value="0"
             >
           </label>
         </div>
       </fieldset>
-      <fieldset class="form-fild">
+      <fieldset class="form-filed">
         <legend>Additional info:</legend>
         <div class="form">
           <label>
             Comments:
-            <textarea name="message" ></textarea>
+            <textarea name="message"></textarea>
           </label>
         </div>
         <div>
-          <label >
+          <label>
             Would you recomend us?
             <select id="recomend">
               <option value="Yes">Yes</option>
