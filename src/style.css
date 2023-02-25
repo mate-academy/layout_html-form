@@ -1,1 +1,13 @@
+/* stylelint-disable block-no-empty */
 /* styles go here */
+.form-field {
+  display: block;
+  /* margin-top: 0; */
+  margin-bottom: 10px;
+}
+
+.fieldset {
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
