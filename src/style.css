@@ -1,9 +1,9 @@
 
-.form__field {
+.form__field:not(:last-child) {
   display: block;
   margin-bottom: 10px;
 }
 
-.form__fieldset:not(:first-child) {
-  margin: 20px 0;
+.form__fieldset {
+  margin-bottom: 20px;
 }
