@@ -11,10 +11,9 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
-    <form 
-      action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
     >
       <fieldset class="field">
@@ -49,7 +48,7 @@
         </label>
         <label class="form_field">
           Full date of birth:
-          <input 
+          <input
             type="date"
             name="trip-start"
             min="20-01-1920"
@@ -98,22 +97,22 @@
         <div class="form_field">
           Do you love cats?
           <label>
-            Yes
             <input type="radio"
               name="answer"
               value="yes"
             >
+            Yes
           </label>
           <label>
-            No
             <input type="radio"
               name="answer"
               value="no"
             >
+            No
           </label>
         </div>
         <div class="form_field">
-          What is your favourite color?
+          What is your favorite color?
           <input type="color"
             name="color"
             value="#000"
@@ -130,28 +129,29 @@
           </label>
         </div>
         <div class="form_field">
-          What are your favourite brand of cars?
+          What are your favorite brand of cars?
           <label>
-            <select 
-              name="car" 
-              multiple 
+            <select
+              name="car"
+              multiple
               required
             >
-              <option value="brand"
+              <!--<option value="brand"
               disabled
               selected>
               choose your car
-              </option>
-              <option value="audi">Audi</option>
-              <option value="bmw">BMW</option>
-              <option value="chevrolet">Chevrolet</option>
-              <option value="volkswagen">Volkswagen</option>
+              </option>-->
+              <option value="audi">BMW</option>
+              <option value="bmw">Audi</option>
+              <option value="chevrolet">Lada</option>
+              <option value="0"></option>
+              <!--<option value="volkswagen">Volkswagen</option>
               <option value="mercedes-benz">Mercedes-Benz</option>
               <option value="land-rover">Land Rover</option>
               <option value="renault">Renault</option>
               <option value="opel">Opel</option>
               <option value="toyota">Toyota</option>
-              <option value="peugeot">Peugeot</option>
+              <option value="peugeot">Peugeot</option>-->
             </select>
           </label>
         </div>
@@ -159,36 +159,33 @@
           How do you rate our work?
           <label>
             <input type="range"
-              min="1"
-              max="10"
+              min="0"
+              max="5"
+              step="1"
+              value="0"
             >
           </label>
         </div>
       </fieldset>
       <fieldset class="field">
         <legend>
-            Additional information
+            Additional info:
         </legend>
-        <label>
+        <label class="form_field">
             Comments:
           <textarea
-              name="comment"
-              rows="5"
-              cols="20"
-              autocomplete="off"
-            >
+            name="Comments"
+          >
           </textarea>
         </label>
-        <div>
-            Would you recommend us?
-          <label>
-            <select name="answer">
-              <option value="answer"></option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select>
-          </label>
-        </div>
+        <label class="form_field">
+          Would you recommend us?
+          <select name="answer">
+            <option value="answer"></option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </label>
       </fieldset>
       <button
         type="submit"
