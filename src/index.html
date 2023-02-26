@@ -12,40 +12,42 @@
   </head>
   <body>
     <div class="container">
-      <form class="form" action="https://github.com/mate-academy/layout_html-form/blob/master/checklist.md"
+      <form class="form"
+      action="https://github.com/mate-academy/layout_html-form/blob/master/checklist.md"
       method="post"
       >
         <fieldset class="form__personal blockStyle">
           <legend>Personal information</legend>
-          <div class="form__personal-surname">
+          <div class="form__personal-surname mBottom">
             Surname:
             <input name="surname"
-            type="text"
-            autocomplete="off"
+              type="text"
+              autocomplete="off"
             >
           </div>
-          <div class="form__personal-name" required>
+          <div class="form__personal-name mBottom" required>
             Name:
-            <input name="name" type="text"
-            autocomplete="off"
+            <input name="name"
+              type="text"
+              autocomplete="off"
             >
           </div>
-          <div class="form__personal-age" required>
+          <div class="form__personal-age mBottom" required>
             How old are You?
             <input
-            name="surname"
-            type="number"
-            min="1"
-            max="120"
-            value="12"
+              name="surname"
+              type="number"
+              min="1"
+              max="120"
+              value="12"
             >
           </div>
-          <div class="form__personal-date">
+          <div class="form__personal-date mBottom">
             Full date of birth:
             <input name="surname"
-            type="date"
-            minlength="2019"
-            maxlength="2023"
+              type="date"
+              minlength="2019"
+              maxlength="2023"
             >
           </div>
           <div class="form__personal-agreement">
@@ -57,17 +59,17 @@
         </fieldset>
         <fieldset class="form__regiatration blockStyle">
           <legend>Registration</legend>
-          <div class="form__regiatration-email" required>
+          <div class="form__regiatration-email mBottom" required>
             E-mail:
             <input type="email" placeholder="email@example.com">
           </div>
           <div class="form__regiatration-password">
             Password:
             <input type="password"
-            minlength="6"
-            maxlength="12"
-            size="12"
-            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+              minlength="6"
+              maxlength="12"
+              size="12"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
             >
           </div>
         </fieldset>
@@ -84,24 +86,25 @@
             </label>
             <label>
               <input value="No"
-              type="radio"
-              name="cat"
+                type="radio"
+                name="cat"
               >
               No
             </label>
           </div>
-          <div class="form__facts-color">
+          <div class="form__facts-color mBottom">
             What is your favorite color?
             <input type="color" name="color">
           </div>
-          <div class="form__facts-time">
+          <div class="form__facts-time mBottom">
             What time do you go to bed?
             <input type="time" name="time">
           </div>
           <div class="form__facts-cars">
             What are your favorite brand of cars?
-            <select name="car" required
-            multiple
+            <select name="car"
+              required
+              multiple
             >
               <option value="bmw">BMW</option>
               <option value="aydi">Audi</option>
@@ -111,8 +114,9 @@
           </div>
           <div class="form__facts-riter">
             How do you rate our work?
-            <input type="range" name="range"
-            value="0"
+            <input type="range"
+              name="range"
+              value="0"
             >
           </div>
         </fieldset>
@@ -121,10 +125,10 @@
           <div class="form__info-comments">
             Comments:
             <textarea
-            autocomplete="off"
-            name="textarea"
-            minlength="20"
-            maxlength="400"
+              autocomplete="off"
+              name="textarea"
+              minlength="20"
+              maxlength="400"
            ></textarea>
           </div>
           <div class="form__info-recommend">

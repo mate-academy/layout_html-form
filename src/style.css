@@ -8,7 +8,7 @@
   padding-left: 12px;
 }
 
-input {
+.mBottom {
   margin-bottom: 10px;
 }
 
@@ -29,7 +29,7 @@ input {
 }
 
 .form__facts-cats {
-  margin-bottom: 4px;
+  margin-bottom: 10px;
 }
 
 .form__facts-cars {
