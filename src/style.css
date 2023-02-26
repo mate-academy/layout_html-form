@@ -1,40 +1,9 @@
 /* styles go here */
+
 fieldset {
   margin-bottom: 20px;
 }
 
-input {
+.marginBottom10 {
   margin-bottom: 10px;
-}
-
-.termsAndCond {
-  margin-bottom: 0%;
-}
-
-.passwordReg {
-  margin-bottom: 0%;
-}
-
-.loveCatts {
-  margin-bottom: 0%;
-}
-
-.favColor {
-  margin-top: 10px;
-}
-
-.rateOurWork {
-  margin-top: 12px;
-}
-
-.favBrandCar {
-  margin-bottom: 0%;
-}
-
-.comments {
-  margin-bottom: 10px;
-}
-
-.factsAboutYou {
-  padding-bottom: 4px;
 }
