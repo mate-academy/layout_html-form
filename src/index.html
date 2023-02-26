@@ -12,15 +12,15 @@
   </head>
   <body>
     <form method="POST" action="https://mate-academy-form-lesson.herokuapp.com/create-application">
-      <fieldset>
+      <fieldset class="form-container">
         <legend>Personal information</legend>
         <label for="surname" class="input-label">Surname:
           <input 
-          type="text" 
-          id="surname" 
-          name="surname" 
-          autocomplete="off" 
-          required
+            type="text" 
+            id="surname" 
+            name="surname" 
+            autocomplete="off" 
+            required
           >
         </label>
         <label for="name" class="input-label">Name:
@@ -34,14 +34,14 @@
         </label>
         <label for="age" class="input-label">How old are You?
           <input 
-          type="number" 
-          id="age" 
-          name="age" 
-          min="1" 
-          max="100" 
-          value="12" 
-          autocomplete="off" 
-          required
+            type="number" 
+            id="age" 
+            name="age" 
+            min="1" 
+            max="100" 
+            value="12" 
+            autocomplete="off" 
+            required
           >
         </label>
         <label for="dob" class="input-label">Full date of birth:
@@ -53,17 +53,18 @@
           required
           >
         </label>
-        <label for="terms" class="input-label">I accept the term of the agreement
+        <label for="terms" class="input-label">
+          I accept the term of the agreement
           <input 
-          type="checkbox" 
-          id="terms" 
-          name="terms" 
-          required
+            type="checkbox" 
+            id="terms" 
+            name="terms" 
+            required
           >
         </label>
       </fieldset>
   
-      <fieldset>
+      <fieldset class="form-container">
         <legend>Registration</legend>
         <label for="email" class="input-label">E-mail:
           <input 
@@ -85,17 +86,17 @@
         </label>
       </fieldset>
   
-      <fieldset>
+      <fieldset class="form-container">
         <legend>An interesting fact about you!</legend>
         <div class="input-label">
           <label for="cat-lover">Do you love cats?</label>
           <label for="cat-lover-yes">
             <input 
-            type="radio" 
-            id="cat-lover-yes" 
-            name="cat-lover" 
-            value="yes" 
-            required
+              type="radio" 
+              id="cat-lover-yes" 
+              name="cat-lover" 
+              value="yes" 
+              required
             >
           Yes
           </label>
@@ -129,9 +130,11 @@
           >
         </label>
         <label for="fav-car" class="input-label">What are your favorite brand of cars?
-          <select id="fav-car" 
-          name="fav-car[]" 
-          multiple required>
+          <select 
+            id="fav-car" 
+            name="fav-car[]" 
+            multiple required
+          >
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
             <option value="ford">Lada</option>
@@ -150,7 +153,7 @@
         </label>
       </fieldset>
       
-      <fieldset>
+      <fieldset class="form-container">
         <legend>Additional Info</legend>
         <label for="comments" class="input-label">Comments:
           <textarea 
