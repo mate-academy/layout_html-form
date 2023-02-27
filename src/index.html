@@ -11,17 +11,20 @@
   </head>
   <body>
 
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+    >
 
-      <fieldset>
+      <fieldset class="frame">
         <legend>Personal information</legend>
         <div class="first">
           <label>
             Surname:
             <input
-                   type="text"
-                   autocomplete="off"
-                   name="surname"
+              type="text"
+              autocomplete="off"
+              name="surname"
             >
           </label>
         </div>
@@ -30,8 +33,8 @@
           <label>
             Name:
             <input
-                   type="text"
-                   name="name"
+              type="text"
+              name="name"
             >
           </label>
         </div>
@@ -40,11 +43,11 @@
           <label>
             How old are You?
             <input
-                   type="number"
-                   min="1"
-                   max="100"
-                   name="number"
-                   value="12"
+              type="number"
+              min="1"
+              max="100"
+              name="number"
+              value="12"
             >
           </label>
         </div>
@@ -53,8 +56,8 @@
           <label>
             Full date of birth:
             <input
-                   type="date"
-                   name="date"
+              type="date"
+              name="date"
             >
           </label>
         </div>
@@ -63,24 +66,24 @@
           <label>
             I accept the term of the agreement
             <input
-                   type="checkbox"
-                   required
-                   name="check"
+              type="checkbox"
+              required
+              name="check"
             >
           </label>
         </div>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="frame">
         <legend>Registration</legend>
         <div class="first">
           <label>
             E-mail:
             <input
-                   type="email"
-                   placeholder="email@example.com"
-                   name="email"
-                   multiple
+              type="email"
+              placeholder="email@example.com"
+              name="email"
+              multiple
             >
           </label>
         </div>
@@ -89,29 +92,29 @@
           <label>
             Password:
             <input
-                   type="password"
-                   name="pass"
+              type="password"
+              name="pass"
             >
           </label>
         </div>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="frame">
         <legend>An interesting fact about you!</legend>
         <div class="first"> Do you love cats?
           <label>
             <input
-                   type="radio"
-                   name="cat"
-                   value="Yes"
+              type="radio"
+              name="cat"
+              value="Yes"
             >
             Yes
           </label>
           <label>
             <input
-                   type="radio"
-                   name="cat"
-                   value="No"
+              type="radio"
+              name="cat"
+              value="No"
             >
             No
           </label>
@@ -121,8 +124,8 @@
           <label>
             What is your favorite color?
             <input
-                   type="color"
-                   name="color"
+              type="color"
+              name="color"
             >
           </label>
         </div>
@@ -131,9 +134,9 @@
           <label>
             What time do you go to bed?
             <input
-                   type="time"
-                   name="time"
-                   step="1"
+              type="time"
+              name="time"
+              step="1"
             >
           </label>
         </div>
@@ -142,8 +145,8 @@
           <label>
             What are your favorite brand of cars?
             <select
-                    name="car"
-                    multiple
+              name="car"
+              multiple
             >
               <option name="bmw" value="bmw">BMW</option>
               <option name="audi" value="audi">Audi</option>
@@ -156,25 +159,25 @@
           <label>
             How do you rate our work?
             <input
-                   type="range"
-                   name="range"
+              type="range"
+              name="range"
             >
           </label>
         </div>
 
       </fieldset>
 
-      <fieldset>
+      <fieldset class="frame">
         <legend>Additional info:</legend>
         <div class="first">
           <label>
             Comments:
             <textarea
-                      name="textarea"
-                      cols="16"
-                      rows="2"
-                      minlength="3"
-                      maxlength="30">
+              name="textarea"
+              cols="16"
+              rows="2"
+              minlength="3"
+              maxlength="30">
             </textarea>
           </label>
         </div>
