@@ -16,23 +16,26 @@
       action="https://github.com/mate-academy/layout_html-form/blob/master/checklist.md"
       method="post"
       >
-        <fieldset class="form__personal blockStyle">
+        <fieldset class="form__personal">
           <legend>Personal information</legend>
-          <div class="form__personal-surname mBottom">
+          <div class="form__personal-surname">
             Surname:
-            <input name="surname"
+            <input
+              name="surname"
               type="text"
               autocomplete="off"
             >
           </div>
-          <div class="form__personal-name mBottom" required>
+          <div class="form__personal-name">
             Name:
-            <input name="name"
+            <input
+              name="name"
               type="text"
               autocomplete="off"
+              required
             >
           </div>
-          <div class="form__personal-age mBottom" required>
+          <div class="form__personal-age">
             How old are You?
             <input
               name="surname"
@@ -40,11 +43,13 @@
               min="1"
               max="120"
               value="12"
+              required
             >
           </div>
-          <div class="form__personal-date mBottom">
+          <div class="form__personal-date">
             Full date of birth:
-            <input name="surname"
+            <input
+              name="surname"
               type="date"
               minlength="2019"
               maxlength="2023"
@@ -53,19 +58,27 @@
           <div class="form__personal-agreement">
             I accept the term of the agreement
             <label>
-              <input name="agreement" type="checkbox">
+              <input
+                name="agreement"
+                type="checkbox"
+              >
             </label>
           </div>
         </fieldset>
-        <fieldset class="form__regiatration blockStyle">
+        <fieldset class="form__regiatration">
           <legend>Registration</legend>
-          <div class="form__regiatration-email mBottom" required>
+          <div class="form__regiatration-email">
             E-mail:
-            <input type="email" placeholder="email@example.com">
+            <input
+              type="email"
+              placeholder="email@example.com"
+              required
+            >
           </div>
           <div class="form__regiatration-password">
             Password:
-            <input type="password"
+            <input
+              type="password"
               minlength="6"
               maxlength="12"
               size="12"
@@ -73,36 +86,45 @@
             >
           </div>
         </fieldset>
-        <fieldset class="form__facts blockStyle">
+        <fieldset class="form__facts">
           <legend>An interesting fact about you</legend>
           <div class="form__facts-cats">
             Do you love cats?
             <label>
-              <input value="Yes"
+              <input
+                value="Yes"
                type="radio"
                name="cat"
               >
               Yes
             </label>
             <label>
-              <input value="No"
+              <input
+                value="No"
                 type="radio"
                 name="cat"
               >
               No
             </label>
           </div>
-          <div class="form__facts-color mBottom">
+          <div class="form__facts-color">
             What is your favorite color?
-            <input type="color" name="color">
+            <input
+              type="color"
+              name="color"
+            >
           </div>
-          <div class="form__facts-time mBottom">
+          <div class="form__facts-time">
             What time do you go to bed?
-            <input type="time" name="time">
+            <input
+              type="time"
+              name="time"
+            >
           </div>
           <div class="form__facts-cars">
             What are your favorite brand of cars?
-            <select name="car"
+            <select
+              name="car"
               required
               multiple
             >
@@ -114,13 +136,14 @@
           </div>
           <div class="form__facts-riter">
             How do you rate our work?
-            <input type="range"
+            <input
+              type="range"
               name="range"
               value="0"
             >
           </div>
         </fieldset>
-        <fieldset class="form__info blockStyle">
+        <fieldset class="form__info">
           <legend>Additional info:</legend>
           <div class="form__info-comments">
             Comments:
