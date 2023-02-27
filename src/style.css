@@ -8,6 +8,6 @@
   margin-bottom: 20px;
 }
 
-.input__container > label:last-child {
+.input__container > .input__container-item:last-child {
   margin-bottom: 0;
 }
