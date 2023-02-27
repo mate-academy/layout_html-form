@@ -1,1 +1,9 @@
-/* styles go here */
+/* ALL LABELS EXCEPT EACH LAST ONE IN FIELDSET */
+.form-field:not(:last-child) {
+  display: block;
+  margin-bottom: 10px;
+}
+/* FIELDSET */
+.fieldset {
+  margin: 20px 0;
+}
