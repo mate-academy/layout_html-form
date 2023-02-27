@@ -1,1 +1,27 @@
-/* styles go here */
+.fieldset {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.form-field:first-child {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.form-field:nth-child(n) {
+  margin-bottom: 10px;
+
+}
+
+.form-field:nth-child(5) {
+  margin-bottom: 10px;
+}
+
+.form-field:last-child {
+  margin-top: 10px;
+}
+
+.form-field:last-of-type {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
