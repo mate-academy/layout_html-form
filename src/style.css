@@ -7,3 +7,7 @@
   display: block;
   margin-bottom: 10px;
 }
+
+.form-field:last-child {
+  margin-bottom: 0;
+}
