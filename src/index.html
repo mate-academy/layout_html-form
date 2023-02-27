@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
-    <!-- WHOLE FORM -->
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <!-- PERSONAL INFORMATION -->
       <fieldset class="fieldset">
@@ -90,7 +88,7 @@
         <label class="form-field">What time do you go to bed?
           <input type="time" name="name">
         </label>
-        <label class="form-field">What is your favorite brand of cars?
+        <label class="form-field">What are your favorite brand of cars?
           <select name="cars" multiple>
             <option value="bmw" >BMW</option>
             <option value="audi">Audi</option>
@@ -98,19 +96,18 @@
           </select>
         </label>
         <label class="form-field">How do you rate our work?
-          <input type="range" name="rate">
+          <input
+            type="range"
+            name="rate"
+            value="0"
+          >
         </label>
       </fieldset>
       <!-- ADDITIONAL INFO -->
       <fieldset class="fieldset">
         <legend>Additional info</legend>
         <label class="form-field">Comments:
-          <textarea
-            name="textarea"
-            cols="20"
-            rows="2"
-            autocomplete="off"
-          ></textarea>
+          <textarea  cols="20" rows="2"></textarea>
         </label>
         <label class="form-field">Would you recommend us?
           <select name="recomendation">
