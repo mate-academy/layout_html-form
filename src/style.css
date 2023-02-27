@@ -1,12 +1,13 @@
-body {
-  margin: -12px 10px;
+
+.input__container-item {
+  display: block;
+  margin-bottom: 10px;
 }
 
-fieldset {
-  margin: 20px 0;
+.input__container {
+  margin-bottom: 20px;
 }
 
-.input {
-  margin: -10px 0;
-  padding: 10px 0;
+.input__container > label:last-child {
+  margin-bottom: 0;
 }
