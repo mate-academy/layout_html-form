@@ -1,34 +1,20 @@
 .container {
-  max-width: 1230px;
   margin: 0 auto;
 }
 
-.form__personal,
-.form__regiatration,
-.form__facts,
-.form__info {
+.form__block {
   margin-bottom: 20px;
   padding-left: 12px;
 }
 
-.form__personal-surname,
-.form__personal-name,
-.form__personal-age,
-.form__personal-date,
-.form__regiatration-email,
-.form__facts-cats,
-.form__facts-color,
-.form__facts-time,
-.form__facts-cars,
-.form__info-comments {
+.form__input {
   margin-bottom: 10px;
 }
 
-.form__regiatration-password,
-.form__facts-riter {
+.form__input--margin_bottom {
   margin-bottom: 0;
 }
 
-.form__facts-time {
+.form__input--padding_right {
   padding-right: 28px;
 }

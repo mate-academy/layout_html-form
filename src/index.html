@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width,
+      user-scalable=no,
+      initial-scale=1.0,
+      maximum-scale=1.0,
+      minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
@@ -12,13 +16,14 @@
   </head>
   <body>
     <div class="container">
-      <form class="form"
-      action="https://github.com/mate-academy/layout_html-form/blob/master/checklist.md"
-      method="post"
+      <form
+        class="form"
+        action="https://github.com/mate-academy/layout_html-form/blob/master/checklist.md"
+        method="post"
       >
-        <fieldset class="form__personal">
+        <fieldset class="form__block">
           <legend>Personal information</legend>
-          <div class="form__personal-surname">
+          <div class="form__input">
             <label>
               Surname:
               <input
@@ -28,7 +33,7 @@
               >
             </label>
           </div>
-          <div class="form__personal-name">
+          <div class="form__input">
             <label>
             Name:
               <input
@@ -39,7 +44,7 @@
               >
             </label>
           </div>
-          <div class="form__personal-age">
+          <div class="form__input">
             <label>
               How old are You?
               <input
@@ -52,7 +57,7 @@
               >
             </label>
           </div>
-          <div class="form__personal-date">
+          <div class="form__input">
             <label>
               Full date of birth:
               <input
@@ -63,7 +68,7 @@
               >
             </label>
           </div>
-          <div class="form__personal-agreement">
+          <div class="form__input form__input--margin_bottom">
             <label>
               I accept the term of the agreement
               <input
@@ -73,9 +78,9 @@
             </label>
           </div>
         </fieldset>
-        <fieldset class="form__regiatration">
+        <fieldset class="form__block">
           <legend>Registration</legend>
-          <div class="form__regiatration-email">
+          <div class="form__input">
             <label>
               E-mail:
               <input
@@ -85,7 +90,7 @@
               >
             </label>
           </div>
-          <div class="form__regiatration-password">
+          <div class="form__input form__input--margin_bottom">
             <label>
               Password:
               <input
@@ -98,15 +103,15 @@
             </label>
           </div>
         </fieldset>
-        <fieldset class="form__facts">
+        <fieldset class="form__block">
           <legend>An interesting fact about you</legend>
-          <div class="form__facts-cats">
+          <div class="form__input">
             Do you love cats?
             <label>
               <input
                 value="Yes"
-               type="radio"
-               name="cat"
+                type="radio"
+                name="cat"
               >
               Yes
             </label>
@@ -119,7 +124,7 @@
               No
             </label>
           </div>
-          <div class="form__facts-color">
+          <div class="form__input">
             <label>
               What is your favorite color?
               <input
@@ -128,7 +133,7 @@
               >
             </label>
           </div>
-          <div class="form__facts-time">
+          <div class="form__input">
             <label>
               What time do you go to bed?
               <input
@@ -137,7 +142,7 @@
               >
             </label>
           </div>
-          <div class="form__facts-cars">
+          <div class="form__input">
             <label>
               What are your favorite brand of cars?
               <select
@@ -152,7 +157,7 @@
               </select>
             </label>
           </div>
-          <div class="form__facts-riter">
+          <div class="form__input form__input--margin_bottom">
             <label>
               How do you rate our work?
               <input
@@ -163,9 +168,9 @@
             </label>
           </div>
         </fieldset>
-        <fieldset class="form__info">
+        <fieldset class="form__block">
           <legend>Additional info:</legend>
-          <div class="form__info-comments">
+          <div class="form__input">
             <label>
               Comments:
               <textarea
@@ -176,7 +181,7 @@
              ></textarea>
             </label>
           </div>
-          <div class="form__info-recommend">
+          <div class="form__input form__input--margin_bottom">
             <label>
               Would you recommend us?
               <select>
