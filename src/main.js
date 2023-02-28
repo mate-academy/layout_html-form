@@ -15,6 +15,6 @@ function onSubmit(event) {
     }), {});
 
   window.alert(
-    `Form name: ${form.name}\nForm value: ${JSON.stringify(formValue, null, 4)}`
+    `Form name: ${form.name}\nForm value: ${JSON.stringify(formValue, null, 4)}`,
   );
 }
