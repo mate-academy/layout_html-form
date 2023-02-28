@@ -10,7 +10,7 @@
   </head>
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <fieldset>
+      <fieldset class="formBlock">
         <legend>Personal information</legend>
     
         <label for="surname">
@@ -21,7 +21,7 @@
           name="surname" 
           autocomplete="off" 
           id="surname"
-          class="marginBottom10"
+          class="mb-10"
         > <br>
 
         <label for="name">
@@ -31,7 +31,7 @@
             name="name" 
             autocomplete="off"
             id="name"
-            class="marginBottom10"
+            class="mb-10"
           >
         </label> <br>
 
@@ -44,7 +44,7 @@
             max="100"
             value="12"
             id="Age"
-            class="marginBottom10"
+            class="mb-10"
           >
         </label> <br>
 
@@ -54,7 +54,7 @@
             type="date" 
             name="birth"
             id="dateBirth"
-            class="marginBottom10"
+            class="mb-10"
           >
         </label> <br>
 
@@ -69,7 +69,7 @@
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="formBlock">
         <legend>Registration</legend>
         <label for="email">
           E-mail: 
@@ -78,7 +78,7 @@
             name="email" 
             placeholder="email@example.com" 
             id="email"
-            class="marginBottom10"
+            class="mb-10"
             required
           > 
         </label> <br>
@@ -96,10 +96,10 @@
         </label> 
       </fieldset>
 
-      <fieldset>
+      <fieldset class="formBlock">
         <legend>An interesting fact about you!</legend>
     
-        <div class="divLoveCat marginBottom10">
+        <div class="divLoveCat mb-10">
           Do you love cats? 
           <label for="loveCat">
             <input 
@@ -123,7 +123,7 @@
             type="color" 
             name="favColor"
             id="favColor"
-            class="marginBottom10"
+            class="mb-10"
           > 
         </label> <br>
 
@@ -133,11 +133,11 @@
             type="time" 
             name="goBed"
             id="goBed"
-            class="marginBottom10"
+            class="mb-10"
           >
         </label> <br>
 
-        <div class="marginBottom10">
+        <div class="mb-10">
           <label for="favCar">
             What are your favorite brand of cars? 
             <select 
@@ -163,9 +163,9 @@
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="formBlock">
         <legend>Additional info:</legend>
-        <div class=" marginBottom10">
+        <div class=" mb-10">
           <label for="comm">
             Comments: 
             <textarea name="comments" id="comm"></textarea>

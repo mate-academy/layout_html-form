@@ -1,9 +1,9 @@
 /* styles go here */
 
-fieldset {
+.formBlock {
   margin-bottom: 20px;
 }
 
-.marginBottom10 {
+.mb-10 {
   margin-bottom: 10px;
 }
