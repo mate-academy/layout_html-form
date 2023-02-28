@@ -1,1 +1,13 @@
-/* styles go here */
+legend {
+  color: #000;
+  padding: 3px 6px;
+  margin: 0 20px;
+}
+
+input {
+  margin: 0.4rem;
+}
+
+.form-filed {
+  margin: 0 10px;
+}

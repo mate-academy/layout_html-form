@@ -11,7 +11,156 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+
+    <form>
+      <fieldset>
+        <legend>Personal information</legend>
+        <div class="form-filed">
+              Usarname:
+          <input 
+            type="text" 
+            name="usarname"
+            autocomplete="off"
+          >
+        </div>
+
+        <div class="form-filed">
+          Name
+          <input 
+            type="text" 
+            name="name"
+            autocomplete="off"
+          >
+        </div>
+
+        <div class="form-filed">
+          How old are you?
+          <input 
+            type="number" 
+            name="age" 
+            min="1" 
+            max="100"
+            value="12"
+          >
+        </div>
+
+        <div class="form-filed">
+          Full date of birth:
+          <input 
+            type="date" 
+            name="birth"
+          >
+        </div>
+          
+        <div class="form-filed">
+          I accept the term of the agreement
+          <input 
+            type="checkbox" 
+            name="check"
+          >
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Registretion</legend>
+        <div class="form-filed">
+          E-mail:
+          <input 
+            type="email" 
+            name="mail" 
+            placeholder="email@example.com"
+            required
+          >
+        </div>
+
+        <div class="form-filed">
+          Password:
+          <input 
+            type="password" 
+            name="password" 
+            minlength="5" 
+            maxlength="15"
+            required
+          >
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+        <div class="form-filed">
+          Do you love cats?
+          <label>
+            <input 
+              type="radio" 
+              name="question-cat" 
+            >
+            - yes
+          </label>
+          <label>
+            <input 
+              type="radio" 
+              name="question" 
+            >
+            - no
+          </label>
+        </div>
+
+        <div class="form-filed">
+          What is your faforite color?
+          <input 
+            type="color" 
+            name="color" 
+          >
+        </div>
+          
+        <div class="form-filed">
+          What time do you go to bed?
+          <input 
+            type="time" 
+            name="time"
+          >
+        </div>
+
+        <div class="form-filed">
+          What are your favorite brand of cars?
+          <select 
+            name="question-car" 
+            multiple
+          >
+            <option>AUDI</option>
+            <option>BMW</option>
+            <option>KIA</option>
+          </select>
+        </div>
+
+        <div class="form-filed">
+          How do you rate our work?
+          <input 
+            type="range" 
+            name="rate"
+          >
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional info:</legend>
+        <div class="form-filed">
+          Comments:
+          <textarea name="comments"></textarea>
+        </div>
+
+        <div class="form-filed">
+          Would you recommend us?
+          <select name="question-car">
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </div> 
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+
   </body>
 </html>
