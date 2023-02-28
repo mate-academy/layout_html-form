@@ -19,45 +19,53 @@
         <fieldset class="form__personal">
           <legend>Personal information</legend>
           <div class="form__personal-surname">
-            Surname:
-            <input
-              name="surname"
-              type="text"
-              autocomplete="off"
-            >
+            <label>
+              Surname:
+              <input
+                name="surname"
+                type="text"
+                autocomplete="off"
+              >
+            </label>
           </div>
           <div class="form__personal-name">
+            <label>
             Name:
-            <input
-              name="name"
-              type="text"
-              autocomplete="off"
-              required
-            >
+              <input
+                name="name"
+                type="text"
+                autocomplete="off"
+                required
+              >
+            </label>
           </div>
           <div class="form__personal-age">
-            How old are You?
-            <input
-              name="surname"
-              type="number"
-              min="1"
-              max="120"
-              value="12"
-              required
-            >
+            <label>
+              How old are You?
+              <input
+                name="surname"
+                type="number"
+                min="1"
+                max="120"
+                value="12"
+                required
+              >
+            </label>
           </div>
           <div class="form__personal-date">
-            Full date of birth:
-            <input
-              name="surname"
-              type="date"
-              minlength="2019"
-              maxlength="2023"
-            >
+            <label>
+              Full date of birth:
+              <input
+                name="surname"
+                type="date"
+                minlength="2019"
+                maxlength="2023"
+              >
+            </label>
           </div>
           <div class="form__personal-agreement">
-            I accept the term of the agreement
             <label>
+              I accept the term of the agreement
               <input
                 name="agreement"
                 type="checkbox"
@@ -68,22 +76,26 @@
         <fieldset class="form__regiatration">
           <legend>Registration</legend>
           <div class="form__regiatration-email">
-            E-mail:
-            <input
-              type="email"
-              placeholder="email@example.com"
-              required
-            >
+            <label>
+              E-mail:
+              <input
+                type="email"
+                placeholder="email@example.com"
+                required
+              >
+            </label>
           </div>
           <div class="form__regiatration-password">
-            Password:
-            <input
-              type="password"
-              minlength="6"
-              maxlength="12"
-              size="12"
-              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
-            >
+            <label>
+              Password:
+              <input
+                type="password"
+                minlength="6"
+                maxlength="12"
+                size="12"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+              >
+            </label>
           </div>
         </fieldset>
         <fieldset class="form__facts">
@@ -108,59 +120,71 @@
             </label>
           </div>
           <div class="form__facts-color">
-            What is your favorite color?
-            <input
-              type="color"
-              name="color"
-            >
+            <label>
+              What is your favorite color?
+              <input
+                type="color"
+                name="color"
+              >
+            </label>
           </div>
           <div class="form__facts-time">
-            What time do you go to bed?
-            <input
-              type="time"
-              name="time"
-            >
+            <label>
+              What time do you go to bed?
+              <input
+                type="time"
+                name="time"
+              >
+            </label>
           </div>
           <div class="form__facts-cars">
-            What are your favorite brand of cars?
-            <select
-              name="car"
-              required
-              multiple
-            >
-              <option value="bmw">BMW</option>
-              <option value="aydi">Audi</option>
-              <option value="lada">Lada</option>
-              <option selected disabled></option>
-            </select>
+            <label>
+              What are your favorite brand of cars?
+              <select
+                name="car"
+                required
+                multiple
+              >
+                <option value="bmw">BMW</option>
+                <option value="aydi">Audi</option>
+                <option value="lada">Lada</option>
+                <option selected disabled></option>
+              </select>
+            </label>
           </div>
           <div class="form__facts-riter">
-            How do you rate our work?
-            <input
-              type="range"
-              name="range"
-              value="0"
-            >
+            <label>
+              How do you rate our work?
+              <input
+                type="range"
+                name="range"
+                value="0"
+              >
+            </label>
           </div>
         </fieldset>
         <fieldset class="form__info">
           <legend>Additional info:</legend>
           <div class="form__info-comments">
-            Comments:
-            <textarea
-              autocomplete="off"
-              name="textarea"
-              minlength="20"
-              maxlength="400"
-           ></textarea>
+            <label>
+              Comments:
+              <textarea
+                autocomplete="off"
+                name="textarea"
+                minlength="20"
+                maxlength="400"
+             ></textarea>
+            </label>
           </div>
           <div class="form__info-recommend">
-            Would you recommend us?
-            <select>
-              <option value="yes" checked>Yes</option>
-              <option value="no">No</option>
-              <option value="maybe">Maybe</option>
-            </select>
+            <label>
+              Would you recommend us?
+              <select>
+                <option value="yes" checked>Yes</option>
+                <option value="no">No</option>
+                <option value="maybe">Maybe</option>
+              </select>
+            </label>
           </div>
         </fieldset>
         <button type="submit">Submit</button>
