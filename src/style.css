@@ -3,7 +3,10 @@
   margin: 0 auto;
 }
 
-.form__personal {
+.form__personal,
+.form__regiatration,
+.form__facts,
+.form__info {
   margin-bottom: 20px;
   padding-left: 12px;
 }
@@ -11,7 +14,13 @@
 .form__personal-surname,
 .form__personal-name,
 .form__personal-age,
-.form__personal-date {
+.form__personal-date,
+.form__regiatration-email,
+.form__facts-cats,
+.form__facts-color,
+.form__facts-time,
+.form__facts-cars,
+.form__info-comments {
   margin-bottom: 10px;
 }
 
@@ -19,48 +28,11 @@
   margin-bottom: 4px;
 }
 
-.form__regiatration {
-  margin-bottom: 20px;
-  padding-left: 12px;
-}
-
-.form__regiatration-email {
-  margin-bottom: 10px;
-}
-
-.form__regiatration-password input {
+.form__regiatration-password,
+.form__facts-riter {
   margin-bottom: 0;
 }
 
-.form__facts {
-  margin-bottom: 20px;
-  padding-left: 12px;
-}
-
-.form__facts-time input {
+.form__facts-time {
   padding-right: 28px;
-}
-
-.form__facts-cats,
-.form__facts-color,
-.form__facts-time,
-.form__facts-cars {
-  margin-bottom: 10px;
-}
-
-.form__facts-riter input {
-  margin-bottom: 0;
-}
-
-.form__info {
-  margin-bottom: 20px;
-  padding-left: 12px;
-}
-
-.form__info-comments {
-  margin-bottom: 10px;
-}
-
-.form__info-recommend input {
-  margin-bottom: 5px;
 }
