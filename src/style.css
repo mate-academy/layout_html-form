@@ -16,10 +16,6 @@ body {
   display: flex;
 }
 
-.block1 {
-  display: block;
-}
-
 .inline {
   display: inline-block;
 }
