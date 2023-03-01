@@ -16,12 +16,20 @@
         <legend>Personal information</legend>
         <label class="block">
           Surname:
-          <input type="text" name="surname">
+          <input
+           type="text"
+           name="surname"
+           autocomplete="off"
+          >
         </label>
 
         <label class="block">
           Name:
-          <input type="text" name="name">
+          <input 
+           type="text"
+           name="name" 
+           autocomplete="off"
+          >
         </label>
 
         <label class="block">
@@ -32,6 +40,7 @@
           value="12" 
           min="0" 
           max="100"
+          autocomplete="off"
           >
         </label>
 
@@ -46,7 +55,7 @@
 
         <label>
           I accept the term of the agreement
-          <input type="checkbox">
+          <input type="checkbox" autocomplete="off">
         </label>
       </fieldset>
 
@@ -55,12 +64,16 @@
 
         <label class="block">
           E-mail:
-          <input type="email" placeholder="email@example.com" >
+          <input
+           autocomplete="off"
+           type="email" 
+           placeholder="email@example.com" 
+          >
         </label>
 
         <label>
           Password:
-          <input type="password" name="password">
+          <input type="password" name="password" autocomplete="off">
         </label>
       </fieldset>
 
@@ -79,6 +92,7 @@
           </label>
           <label class="inline" >
             <input 
+            autocomplete="off"
             type="radio" 
             name="sex" 
             value="s" 
@@ -95,7 +109,11 @@
         <label class="block">
           What time do you go to bad?
 
-          <input type="time" name="time" >
+          <input 
+          type="time" 
+          name="time" 
+          autocomplete="off"
+          >
         </label>
 
         <label class="block">
@@ -114,6 +132,7 @@
           step="10" 
           value="0" 
           name="work-rate"
+          autocomplete="off"
           >
         </label>
       </fieldset>

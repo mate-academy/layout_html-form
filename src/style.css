@@ -12,10 +12,6 @@ body {
   margin-bottom: 20px;
 }
 
-.flex {
-  display: flex;
-}
-
 .inline {
   display: inline-block;
 }
