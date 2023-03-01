@@ -1,1 +1,11 @@
-/* styles go here */
+.fieldset {
+  margin-bottom: 20px;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+.last {
+  margin-bottom: 0;
+}
