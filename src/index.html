@@ -15,159 +15,180 @@
         <legend>
           Personal information
         </legend>
+
         <label class="form_field">
           Surname:
           <input 
-        type="text" 
-        name="surname"
-        autocomplete="off"
-        required
+            type="text" 
+            name="surname"
+            autocomplete="off"
+            required
           >
         </label>
+        
         <label class="form_field">
           Name:
           <input 
-        type="text"
-        name="name"
-        autocomplete="off"
-        required
+            type="text"
+            name="name"
+            autocomplete="off"
+            required
           >
         </label>
+        
         <label class="form_field">
           How old are you?
-          <input 
-        autocomplete="off"
-        type="number"
-        name="age"
-        min="1"
-        max="100"
-        value="12"
-        required
+          <input
+            autocomplete="off"
+            type="number"
+            name="age"
+            min="1"
+            max="100"
+            value="12"
+            required
           >
         </label>
+        
         <label class="form_field">
           Full date of birth
           <input 
-        type="date"
-        name="date"
-        required
+            type="date"
+            name="date"
+            required
           >
         </label>
-      </label>
+
         <label class="form_field">
-        I accept the term of the agreement
+          I accept the term of the agreement
           <input 
-      type="checkbox"
-      name="terms"
-      required
+            type="checkbox"
+            name="terms"
+            required
           >
         </label>
       </fieldset>
+
       <fieldset class="fieldset">
         <legend>
-          Registrtion
+          Registration
         </legend>
+
         <label class="form_field">
           E-mail:
           <input 
-          type="email" 
-          name="email"
-          placeholder="email@example.com"
-          required
-          autocomplete="off"
+            type="email" 
+            name="email"
+            placeholder="email@example.com"
+            required
+            autocomplete="off"
           >
         </label>
-        <lable class="form_field">
+
+        <label class="form_field">
           Password:
           <input 
-          type="password" 
-          name="password"
-          required
-          minlength="5"
-          maxlength="20"
-          autocomplete="off"
+            type="password" 
+            name="password"
+            required
+            minlength="5"
+            maxlength="20"
+            autocomplete="off"
           >
-        </lable>
+        </label>
       </fieldset>
+
       <fieldset class="fieldset">
         <legend>
           An interesting fact about you!
         </legend>
-        <label class="form_field">
+
+        <div class="form_field">
           Do you love cats?
-          <input 
-          type="radio" 
-          name="answer" 
-          value="yes"
-          >
+          <label>
+            <input 
+              type="radio" 
+              name="answer" 
+              value="yes"
+            >
           Yes
-          <input 
-          type="radio" 
-          name="answer" 
-          value="no"
-          >
+          </label>
+          
+          <label>
+            <input 
+              type="radio" 
+              name="answer" 
+              value="no"
+            >
           No
-        </label>
+          </label>
+        </div>
+        
         <label class="form_field">
           What is your favorite color?
           <input 
-          type="color" 
-          name="color"
+            type="color" 
+            name="color"
           >
         </label>
+
         <label class="form_field">
           What time do you go to bed?
           <input 
-          type="time" 
-          name="time"
+            type="time" 
+            name="time"
           >
         </label>
-        <lable class="form_field">
+
+        <label class="form_field">
           What are you favorite brand of cars?
           <select 
-          type="text" 
-          name="brands"
-          multiple
-          autocomplete="off"
+            type="text" 
+            name="brands"
+            multiple
+            autocomplete="off"
           >
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
             <option value="lada">Lada</option>
           </select>
-        </lable>
-        <lable class="form_field">
+        </label>
+
+        <label class="form_field">
           How do you rate our work?
           <input type="range" 
-          name="rate"
-          value="0"
+            name="rate"
+            value="0"
           >
-        </lable>
+        </label>
       </fieldset>
+
       <fieldset class="fieldset">
         <legend>
           Additional info:
         </legend>
-        <lable class="form_field">
+
+        <label class="form_field">
           Comments:
           <textarea 
-          name="comment" 
-          cols="30" 
-          rows="2"
-          autocomplete="off"
-          >
-          </textarea>
-        </lable>
+            name="comment" 
+            cols="30" 
+            rows="2"
+            autocomplete="off"
+         ></textarea>
+        </label>
+
         <label class="form_field">
           Would you recommend us?
           <select 
-          type="text" 
-          name="answerrec"
+            type="text" 
+            name="answerrec"
           >
             <option value="y">yes</option>
             <option value="n">no</option>
           </select>
         </label>
       </fieldset>
+
       <button type="submit">
         Submit
       </button>
