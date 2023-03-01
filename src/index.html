@@ -16,7 +16,16 @@
       <fieldset class="form-field block">
         <legend>Personal information</legend>
         <div class="input">
-          Surname:
+          <label for="aaa">Surname:</label>
+          <input 
+          type="text" 
+          name="attribute" 
+          autocomplete="off" 
+          required
+          >
+        </div>
+        <div class="input">
+          <label for="aab">Name:</label>
           <input 
           type="text" 
           name="attribute" 
@@ -26,17 +35,7 @@
         </div>
 
         <div class="input">
-          Name:
-          <input 
-          type="text" 
-          name="attribute" 
-          autocomplete="off" 
-          required
-          >
-        </div>
-
-        <div class="input">
-          How old are you?
+          <label for="aac">How old are You?</label>
           <input 
           type="number" 
           name="attribute" 
@@ -48,7 +47,7 @@
         </div>
 
         <div class="input">
-          Full date of birth:
+          <label for="aad">Full date of birth:</label>
           <input 
           type="date" 
           name="attribute" 
@@ -56,8 +55,8 @@
           >
         </div>
 
-        <div class="input">
-          <label for="terms-condition">I accept the terms of the agreement</label>
+        <div class="lastInput">
+          <label for="terms-condition">I accept the term of the agreement</label>
           <input 
           type="checkbox" 
           name="attribute" 
@@ -70,7 +69,7 @@
       <fieldset class="form-field block">
         <legend>Registration</legend>
         <div class="input">
-          E-mail:
+          <label for="aae">E-mail:</label>
           <input 
           type="email" 
           name="attribute" 
@@ -78,9 +77,8 @@
           required
           >
         </div>
-
-        <div class="input">
-          Password:
+        <div class="lastInput">
+          <label for="aaf">Password:</label>
           <input 
           type="password" 
           name="attribute" 
@@ -93,8 +91,7 @@
       <fieldset class="form-field block">
         <legend>An interesting fact about you!</legend>
         <div class="input">
-          Do you love cats?
-
+          <label for="aag">Do you love cats?</label>
           <label for="yes">
             <input 
             type="radio" 
@@ -115,7 +112,7 @@
         </div>
 
         <div class="input">
-          What is your favorite color?
+          <label for="aah">What is your favorite color?</label>
           <input 
           type="color" 
           name="attribute" 
@@ -124,7 +121,7 @@
         </div>
 
         <div class="input">
-          What time do you go to bed?
+          <label for="aba">What time do you go to bed?</label>
           <input 
           type="time" 
           name="attribute" 
@@ -133,20 +130,19 @@
         </div>
 
         <div class="input">
-          What are your favorite brand of cars?
-
+          <label for="abb">What are your favorite brand of cars?</label>
           <select name="car" 
           multiple 
           required>
             <option value="Audi">Audi</option>
             <option value="BMW">BMW</option>
-            <option value="carExpert">Daewoo Matiz</option>
+            <option value="carExpert">Lada</option>
             <option value="none" disabled></option>
           </select>
         </div>
 
-        <div class="input">
-          How do you rate our work?
+        <div class="lastInput">
+          <label for="abc">How do you rate our work?</label>
           <input 
           type="range" 
           required
@@ -156,7 +152,7 @@
       <fieldset class="form-field block">
         <legend>Additional info:</legend>
         <div class="input">
-          Comments:
+          <label for="abd">Comments:</label>
           <textarea 
           name="comments" 
           maxlength="300" 
@@ -165,9 +161,8 @@
           </textarea>
         </div>
 
-        <div class="input">
-          Would you recomend us?
-
+        <div class="lastInput">
+          <label for="abe">Would you recommend us?</label>
           <select name="recomendOrNo">
             <option 
             value="yesIWould" 
