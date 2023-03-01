@@ -1,1 +1,7 @@
-/* styles go here */
+.input_margin {
+  margin-bottom: 10px;
+}
+
+.field {
+  margin-bottom: 20px;
+}
