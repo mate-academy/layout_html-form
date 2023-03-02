@@ -5,3 +5,11 @@
 .form-filed {
   margin-top: 10px;
 }
+
+.title {
+  display: inline-block;
+}
+
+.input__title {
+  display: inline-block;
+}
