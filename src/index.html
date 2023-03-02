@@ -11,18 +11,14 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-
     <form 
       action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
       method="post"
     >
-
       <fieldset class="form__fieldset">
         <legend>Personal information</legend>
-
         <label class="form__field">
           Surname:
-
           <input 
             type="text" 
             name="surname"
@@ -33,7 +29,6 @@
 
         <label class="form__field">
           Name:
-
           <input 
             type="text"
             name="name"
@@ -44,7 +39,6 @@
 
         <label class="form__field">
           How old are You?
-
           <input
             type="number"
             name="age"
@@ -57,7 +51,6 @@
 
         <label class="form__field">
           Full date of birth:
-
           <input 
             type="date" 
             name="dateOfBirth"
@@ -69,7 +62,6 @@
 
         <label class="form__field">
           I accept the term of the agreement
-
           <input 
             type="checkbox" 
             name="terms"
@@ -80,10 +72,8 @@
 
       <fieldset class="form__fieldset">
         <legend>Registration</legend>
-
         <label class="form__field">
           E-mail:
-
           <input 
             type="email" 
             name="email"
@@ -94,7 +84,6 @@
 
         <label class="form__field">
           Password:
-
           <input 
             type="password" 
             name="password"
@@ -107,12 +96,9 @@
 
       <fieldset class="form__fieldset">
         <legend>An interesting fact about you!</legend>
-
         <div class="form__field">
           Do you love cats?
-
           <label>
-
             <input 
               type="radio" 
               name="loveCats" 
@@ -122,7 +108,6 @@
           </label>
 
           <label>
-
             <input 
               type="radio" 
               name="loveCats" 
@@ -134,7 +119,6 @@
 
         <label class="form__field">
           What is your favorite color?
-
           <input 
             type="color" 
             name="favColor" 
@@ -144,19 +128,16 @@
 
         <label class="form__field">
           What time do you go to bed?
-
           <input type="time" name="goToBed">
         </label>
 
         <label class="form__field">
           What are your favorite brand of cars?
-
           <select 
             name="favCarBrand" 
             required 
             multiple
           >
-
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
@@ -165,7 +146,6 @@
 
         <label class="form__field">
           How do you rate our work?
-
           <input 
             type="range" 
             name="ourRating" 
@@ -179,18 +159,14 @@
 
       <fieldset class="form__fieldset">
         <legend>Additional info:</legend>
-
         <label class="form__field">
           Comments:
-          
           <textarea name="comments"></textarea>
         </label>
 
         <label class="form__field">
           Would you recommend us?
-
           <select name="recommendUs" required>
-
             <option value="Yes">yes</option>
             <option value="No">no</option>
           </select>
@@ -201,6 +177,5 @@
     </form>
 
     <script type="text/javascript" src="./main.js"></script>
-
   </body>
 </html>
