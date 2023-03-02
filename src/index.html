@@ -11,7 +11,154 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+      <fieldset>
+        <legend>Personal information</legend>
+
+        <div class="form">
+          <label for="Sname">Surname:</label>
+          <input type="text"
+            id="Sname"
+            name="Sname"
+            autocomplete="off"
+            required
+          >
+        </div>
+
+        <div class="form">
+          <label for="Nname">Name:</label>
+          <input type="text"
+            id="Nname"
+            name="Nname"
+            autocomplete="off"
+            required
+          >
+        </div>
+
+        <div class="form">
+          <label for="Age">How old are You?</label>
+          <input type="number"
+            id="Age"
+            name="Age"
+            value="12"
+            min="1"
+            max="100"
+          >
+        </div>
+
+        <div class="form">
+          <label for="Date" >Full date of birth:</label>
+          <input type="date"
+            id="Date"
+            name="Date"
+            required
+          >
+        </div>
+
+        <div>
+          <label for="terms">I accept the term of the agreement</label>
+          <input type="checkbox" id ="terms" name="terms">
+        </div>
+      </fieldset>
+
+      <fieldset class="form3">
+        <legend>Registration</legend>
+        <div class="form">
+          <label for="Mail">E-mail:</label>
+          <input type="email"
+            id="Mail"
+            placeholder="email@example.com"
+          >
+        </div>
+
+        <div>
+          <label for="Pass">Password:</label>
+          <input type="password" id="Pass" name="Pass">
+        </div>
+      </fieldset>
+
+      <fieldset class="form3">
+        <legend>An interesting fact about you!</legend>
+
+        <div class="form">
+          Do you love cats?
+          <input type="radio" id="Yes" name="cats?">
+          <label for="Yes">Yes</label>
+          <input type="radio" id="No" name="cats?">
+          <label for="No">No</label>
+        </div>
+
+        <div class="form">
+          <label for="Favorite-colors"> What is your favorite color?</label>
+          <input type="color"
+            id="Favorite-colors"
+            name="Favorite-colors"
+          >
+        </div>
+
+        <div class="form">
+          <label for="TimeToBed">What time do you go to bed?</label>
+          <input type="time"
+            id="TimeToBed"
+            name="TimeToBed"
+            value="-- :-- :-- --"
+            size="10"
+            autocomplete="off"
+          >
+        </div>
+
+        <div class="form">
+          <label for="Cars">What are your favotite brand of cars?</label>
+          <select id="Cars" name="LCars" multiple>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+            <option value="None"></option>
+          </select>
+        </div>
+
+        <div>
+          <label for="RateWork">How do you rate out work?</label>
+          <input type="range"
+            id="RateWork"
+            name="RateWork"
+            value="0"
+          >
+        </div>
+      </fieldset>
+
+      <fieldset class="form3">
+        <legend>Additional info:</legend>
+
+        <div class="form">
+          <label for="Comm">Comments:</label>
+          <textarea name="Comm"
+            id="Comm"
+            rows="2">
+          </textarea>
+        </div>
+
+        <div class="form1">
+          <label for="recommend">Would you recommend us?</label>
+          <select id="recommend" name="LCars" >
+            <option value="Yes">yes</option>
+            <option value="No">no</option>
+          </select>
+        </div>
+
+      </fieldset>
+
+      <div class="form3">
+        <label for="submit"></label>
+        <input type="submit"
+          id="submit"
+          name="submit"
+          value="Submit"
+        >
+      </div>
+
+
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
