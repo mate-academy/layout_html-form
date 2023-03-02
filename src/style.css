@@ -9,3 +9,8 @@ fieldset {
 .lastInput {
   margin: 0;
 }
+
+.label {
+  display: inline-block;
+  width: 100%;
+}
