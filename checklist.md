@@ -65,7 +65,14 @@ the cursor should appear in the beginning of the input.
           <summary>GOOD example</summary>
             <img width="163" alt="image" src="https://user-images.githubusercontent.com/94261494/220747096-076e133e-e5f8-4de4-9fe0-9beaf40c9e53.png">
         </details>
+ATTENTION!!! the closing tag should start on the level as opening tag (this is required to pass the html linter)
 
+Example:
+```
+ <textarea
+   class="textarea"
+></textarea>
+```
 9. [TESTS] - Remember, you need to add a certain distance BETWEEN inputs and
 BETWEEN blocks with inputs. It means that, for example, the last input in
 the group of inputs should not have a set bottom margin.
