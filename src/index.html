@@ -8,113 +8,121 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <!-- <h1>HTML Form</h1> -->
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
-      <fieldset>
+      <fieldset class="form-fieldset">
         <legend>Personal information</legend>
         <div class="form-field">
           <label for="surname-input">Surname:</label>
-          <input  type="text"
-                  name="surname"
-                  id="surname-input"
-                  autocomplete="off"
-                  required
+          <input
+            type="text"
+            name="surname"
+            id="surname-input"
+            autocomplete="off"
+            required
           >
         </div>
         <div class="form-field">
           <label for="name-input">Name:</label>
-          <input  type="text"
-                  name="name"
-                  id="name-input"
-                  autocomplete="off"
-                  required
+          <input
+            type="text"
+            name="name"
+            id="name-input"
+            autocomplete="off"
+            required
           >
         </div>
         <div class="form-field">
           <label for="age-input">How old are You?</label>
-          <input  type="number"
-                  name="age"
-                  id="age-input"
-                  min="1"
-                  max="100"
-                  value="12"
+          <input
+            type="number"
+            name="age"
+            id="age-input"
+            min="1"
+            max="100"
+            value="12"
           >
         </div>
         <div class="form-field">
           <label for="birth-date-input">Full date of birth: </label>
-          <input  type="date"
-                  name="birth-date"
-                  id="birth-date-input"
+          <input
+            type="date"
+            name="birth-date"
+            id="birth-date-input"
           >
         </div>
         <div class="form-field">
           <label for="agreement-input">I accept the term of the agreement</label>
-          <input  type="checkbox"
-                  name="agreement"
-                  id="agreement-input"
-                  required
+          <input
+            type="checkbox"
+            name="agreement"
+            id="agreement-input"
+            required
           >
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="form-fieldset">
         <legend>Registration</legend>
         <div class="form-field">
           <label>E-mail:
-            <input  type="email"
-                    name="email"
-                    placeholder="email@example.com"
-                    required
+            <input
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+              required
             >
           </label>
 
         </div>
         <div class="form-field">
           <label>Password:
-            <input  type="password"
-                    name="name"
-                    minlength="4"
-                    maxlength="20"
-                    required
+            <input
+              type="password"
+              name="name"
+              minlength="4"
+              maxlength="20"
+              required
             >
           </label>
         </div>
-
       </fieldset>
-      <fieldset>
+      <fieldset class="form-fieldset">
         <legend>An interesting fact about you!</legend>
         <div class="form-field">
           Do you love cats?
           <label>
-            <input  type="radio"
-                    name="cat"
-                    value="y"
+            <input
+              type="radio"
+              name="cat"
+              value="y"
             >
             Yes
           </label>
           <label>
-            <input  type="radio"
-                    name="cat"
-                    value="n"
+            <input
+              type="radio"
+              name="cat"
+              value="n"
             >
             No
           </label>
         </div>
         <div class="form-field">
-
           <label>
             What is your favorite color?
-            <input  type="color"
-                    name="color"
-                    value="#000000"
+            <input
+              type="color"
+              name="color"
+              value="#000000"
             >
           </label>
         </div>
         <div class="form-field">
           <label>
             What time do you go to bed?
-            <input  type="time"
-                    name="time-to-bed"
-                    step="1"
+            <input
+              type="time"
+              name="time-to-bed"
+              step="1"
             >
           </label>
         </div>
@@ -131,22 +139,24 @@
         <div class="form-field">
           <label>
             How do you rate our work?
-            <input  type="range"
-                    min="0"
-                    max="10"
-                    value="0"
+            <input
+              type="range"
+              min="0"
+              max="10"
+              value="0"
             >
             </input>
           </label>
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="form-fieldset">
         <legend>Additional info:</legend>
         <div class="form-field">
           <label for="surname-input">Comments:
-            <textarea name="comments"
-                      cols="20"
-                      rows="2"
+            <textarea
+              name="comments"
+              cols="20"
+              rows="2"
             >
             </textarea>
           </label>

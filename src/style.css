@@ -1,6 +1,6 @@
 /* styles go here */
 
-fieldset:not(:last-child) {
+.form-fieldset:not(:last-child) {
   margin-bottom: 20px;
 }
 
