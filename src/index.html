@@ -18,6 +18,7 @@
           <input  type="text"
                   name="surname"
                   id="surname-input"
+                  autocomplete="off"
                   required
           >
         </div>
@@ -26,6 +27,7 @@
           <input  type="text"
                   name="name"
                   id="name-input"
+                  autocomplete="off"
                   required
           >
         </div>
@@ -71,6 +73,8 @@
           <label>Password:
             <input  type="password"
                     name="name"
+                    minlength="4"
+                    maxlength="20"
                     required
             >
           </label>
@@ -117,7 +121,7 @@
         <div class="form-field">
           <label>
             What are your favourite brand of cars?
-            <select name="car">
+            <select name="car" multiple>
               <option disabled
                       selected
               ></option>
@@ -149,7 +153,12 @@
           </label>
         </div>
         <div class="form-field">
-          <label for="name-input">Would you recommend us?
+          <label>
+            Would you recommend us?
+            <select name="recommend">
+              <option value="yes" selected>yes</option>
+              <option value="no">no</option>
+            </select>
           </label>
         </div>
       </fieldset>
