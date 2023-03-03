@@ -1,1 +1,11 @@
-/* styles go here */
+.in_box_style-one {
+  margin-bottom: 10px;
+}
+
+.in_box_style-two {
+  margin-top: 10px;
+}
+
+.in_box_style-three {
+  margin-top: 20px;
+}
