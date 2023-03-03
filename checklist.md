@@ -72,7 +72,6 @@ Example:
  <textarea
    class="textarea"
 ></textarea>
- 
 ```
 9. [TESTS] - Remember, you need to add a certain distance BETWEEN inputs and
 BETWEEN blocks with inputs. It means that, for example, the last input in
