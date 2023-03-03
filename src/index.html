@@ -2,14 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <!-- <h1>HTML Form</h1> -->
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
       <fieldset>
         <legend>Personal information</legend>
@@ -33,7 +32,7 @@
         </div>
         <div class="form-field">
           <label for="age-input">How old are You?</label>
-          <input  type="text"
+          <input  type="number"
                   name="age"
                   id="age-input"
                   min="1"
@@ -82,7 +81,7 @@
 
       </fieldset>
       <fieldset>
-        <legend>An interesting facts about you</legend>
+        <legend>An interesting fact about you!</legend>
         <div class="form-field">
           Do you love cats?
           <label>
@@ -103,7 +102,7 @@
         <div class="form-field">
 
           <label>
-            What is your favourite color?
+            What is your favorite color?
             <input  type="color"
                     name="color"
                     value="#000000"
@@ -115,19 +114,17 @@
             What time do you go to bed?
             <input  type="time"
                     name="time-to-bed"
+                    step="1"
             >
           </label>
         </div>
         <div class="form-field">
           <label>
-            What are your favourite brand of cars?
+            What are your favorite brand of cars?
             <select name="car" multiple>
-              <option disabled
-                      selected
-              ></option>
               <option value="bmw">BMW</option>
               <option value="audi">Audi</option>
-              <option value="lada">BMW</option>
+              <option value="lada">Lada</option>
             </select>
           </label>
         </div>
@@ -137,6 +134,7 @@
             <input  type="range"
                     min="0"
                     max="10"
+                    value="0"
             >
             </input>
           </label>
@@ -149,7 +147,8 @@
             <textarea name="comments"
                       cols="20"
                       rows="2"
-            ></textarea>
+            >
+            </textarea>
           </label>
         </div>
         <div class="form-field">

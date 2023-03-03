@@ -1,8 +1,9 @@
 /* styles go here */
-fieldset {
-  margin: 20px 0;
+
+fieldset:not(:last-child) {
+  margin-bottom: 20px;
 }
 
-.form-field {
-  margin: 10px 0;
+.form-field:not(:last-child) {
+  margin: 0 0 10px;
 }
