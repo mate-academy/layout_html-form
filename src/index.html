@@ -12,9 +12,11 @@
   </head>
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <fieldset class="input__container">
-        <legend>Personal information</legend>
-        <label class="input__container-item">
+      <fieldset class="input">
+        <legend>
+          Personal information
+        </legend>
+        <label class="input--item">
           Surname:
           <input
             type="text"
@@ -23,7 +25,7 @@
             required
           >
         </label>
-        <label class="input__container-item">
+        <label class="input--item">
           Name:
           <input
             type="text"
@@ -32,7 +34,7 @@
             required
           >
         </label>
-        <label class="input__container-item">
+        <label class="input--item">
           How old are You?
           <input
             type="number"
@@ -43,7 +45,7 @@
             value="12"
           >
         </label>
-        <label class="input__container-item">
+        <label class="input--item">
           Full date of birth:
           <input
             type="date"
@@ -51,7 +53,7 @@
             autocomplete="off"
           >
         </label>
-        <label class="input__container-item">
+        <label class="input--item">
           I accept the term of the agreement
           <input
             type="checkbox"
@@ -62,9 +64,12 @@
           >
         </label>
       </fieldset>
-      <fieldset class="input__container">
-        <legend>Registration</legend>
-        <label class="input__container-item">
+
+      <fieldset class="input">
+        <legend>
+          Registration
+        </legend>
+        <label class="input--item">
           E-mail:
           <input
             type="email"
@@ -73,7 +78,7 @@
             required
           >
         </label>
-        <label class="input__container-item">
+        <label class="input--item">
           Password:
           <input
             type="password"
@@ -84,9 +89,12 @@
           >
         </label>
       </fieldset>
-      <fieldset class="input__container">
-        <legend>An intersting fact about you!</legend>
-        <div class="input__container-item">
+
+      <fieldset class="input">
+        <legend>
+          An intersting fact about you!
+        </legend>
+        <div class="input--item">
           Do you love cats?
           <label>
             <input
@@ -105,7 +113,7 @@
             No
           </label>
         </div>
-        <label class="input__container-item">
+        <label class="input--item">
           What is your favorite color?
           <input
             type="color"
@@ -113,11 +121,11 @@
             value="black"
           >
         </label>
-        <label class="input__container-item">
+        <label class="input--item">
           What time do you go to bed?
           <input type="time" name="sleep">
         </label>
-        <label class="input__container-item">
+        <label class="input--item">
           What are your favorite brand of cars?
           <select name="car" multiple>
             <option value="BMW">BMW</option>
@@ -125,7 +133,7 @@
             <option value="Audi">Audi</option>
           </select>
         </label>
-        <label class="input__container-item">
+        <label class="input--item">
           How do you rate our work?
           <input
             type="range"
@@ -137,14 +145,17 @@
           >
         </label>
       </fieldset>
-      <fieldset class="input__container">
-        <legend>Additional info:</legend>
-        <label class="input__container-item">
+
+      <fieldset class="input">
+        <legend>
+          Additional info:
+        </legend>
+        <label class="input--item">
           Comments:
           <textarea name="comments">
           </textarea>
         </label>
-        <label class="input__container-item">
+        <label class="input--item">
           Would you recommend us?
           <select name="car">
             <option value="yes">yes</option>
@@ -152,10 +163,12 @@
           </select>
         </label>
       </fieldset>
+
       <button
         type="submit">
         Submit
       </button>
+
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
