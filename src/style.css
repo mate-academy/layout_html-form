@@ -1,11 +1,8 @@
-fieldset {
+.field__info {
+  display: block;
+  margin-top: 10px;
+}
+
+.field_table {
   margin-bottom: 20px;
-}
-
-.input {
-  margin-bottom: 10px;
-}
-
-.lastInput {
-  margin: 0;
 }
