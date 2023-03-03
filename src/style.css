@@ -7,11 +7,11 @@
   margin-bottom: 10px;
 }
 
-fieldset {
+.field-set {
   margin-bottom: 20px;
 }
 
-.field-set {
+.comments {
   display: block;
   margin-bottom: 10px;
 }
