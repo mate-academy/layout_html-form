@@ -1,1 +1,15 @@
-/* styles go here */
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.form-filed {
+  margin-top: 10px;
+}
+
+.title {
+  display: inline-block;
+}
+
+.input__title {
+  display: inline-block;
+}
