@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script src="./main.js"></script>
     <form 
       class="form" 
@@ -65,7 +64,9 @@
           <label 
             class="label"
             for="terms-and-conditions"
-          >I accept the terms of the agreement:</label>
+          >
+            I accept the terms of the agreement:
+          </label>
           <input
             class="input" 
             type="checkbox" 
@@ -126,7 +127,9 @@
           <label 
             class="label" 
             for="radioButton1"
-          >Yes</label>
+          >
+            Yes
+          </label>
           <input 
             class="input"
             type="radio" 
@@ -136,7 +139,9 @@
           <label 
             class="label" 
             for="radioButton2"
-          >No</label>
+          >
+            No
+          </label>
 
         </label>
         <label class="form-field">
@@ -201,11 +206,18 @@
            
       </fieldset>
     </form>
-    <button 
-      class="button" 
-      type="submit"
+    <form 
+      action=" https://mate-academy-form-lesson.herokuapp.com/create-application"
     >
-      Submit
-    </button>
+      <button 
+        class="button" 
+        type="submit"
+        name="submit_button"
+      >
+        Submit
+      </button>
+    </form>
+     
+    
   </body>
 </html>
