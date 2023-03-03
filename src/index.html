@@ -11,7 +11,262 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+      <fieldset class="form-field block">
+        <legend>Personal information</legend>
+        <div class="input">
+          <label 
+            for="input-data"
+            class="label"  
+          >
+            Surname:
+            <input 
+              id="input-data"
+              type="text" 
+              name="attribute" 
+              autocomplete="off" 
+              required
+            >
+          </label>
+        </div>
+        <div class="input">
+          <label 
+            for="name-att"
+            class="label"
+          >
+            Name:
+            <input 
+              id="name-att"
+              type="text" 
+              name="attribute" 
+              autocomplete="off" 
+              required
+            >
+          </label>
+        </div>
+
+        <div class="input">
+          <label 
+            for="age-att"
+            class="label"  
+          >
+            How old are You?
+            <input 
+              id="age-att"
+              type="number" 
+              name="attribute" 
+              min="1" 
+              max="100" 
+              value="12" 
+              required
+            >
+          </label>
+        </div>
+
+        <div class="input">
+          <label 
+            for="birth-att"
+            class="label"  
+          >
+            Full date of birth:
+            <input 
+              id="birth-att"
+              type="date" 
+              name="attribute" 
+              required
+            >
+          </label>
+        </div>
+
+        <div class="lastInput">
+          <label 
+            for="terms-condition"
+            class="label"  
+          >
+            I accept the term of the agreement
+            <input 
+              type="checkbox" 
+              name="attribute" 
+              id="terms-condition" 
+              required
+            >
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-field block">
+        <legend>Registration</legend>
+        <div class="input">
+          <label 
+            for="email-att"
+            class="label"  
+          >
+            E-mail:
+            <input
+              id="email-att"
+              type="email" 
+              name="attribute" 
+              placeholder="email@example.com" 
+              required
+            >
+          </label>
+        </div>
+        <div class="lastInput">
+          <label 
+            for="password-att"
+            class="label"  
+          >
+            Password:
+            <input
+              id="password-att"
+              type="password" 
+              name="attribute" 
+              autocomplete="off" 
+              required
+            >
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-field block">
+        <legend>An interesting fact about you!</legend>
+        <div class="input">
+          <label for="aag">Do you love cats?</label>
+          <label for="yes">
+            <input 
+              type="radio" 
+              id="yes" 
+              name="radio" 
+              checked
+            >
+            Yes
+          </label>
+          <label for="no">
+            <input 
+              type="radio" 
+              id="no" 
+              name="radio"
+            >
+            No
+          </label>
+        </div>
+
+        <div class="input">
+          <label 
+            for="color-att"
+            class="label"
+          >
+            What is your favorite color?
+            <input
+              id="color-att"
+              type="color" 
+              name="attribute" 
+              required
+            >
+          </label>
+        </div>
+
+        <div class="input">
+          <label 
+            for="sleep-att"
+            class="label"
+          >
+            What time do you go to bed?
+            <input
+              id="sleep-att"
+              type="time" 
+              name="attribute" 
+              required
+            >
+          </label>
+        </div>
+
+        <div class="input">
+          <label 
+            for="car-att"
+            class="label"
+          >
+            What are your favorite brand of cars?
+            <select
+              id="car-att"
+              name="car" 
+              multiple 
+              required
+            >
+              <option value="Audi">Audi</option>
+              <option value="BMW">BMW</option>
+              <option value="carExpert">Lada</option>
+              <option value="none" disabled></option>
+            </select>
+          </label>
+        </div>
+
+        <div class="lastInput">
+          <label 
+            for="rate-att"
+            class="label"
+          >
+            How do you rate our work?
+            <input
+              id="rate-att"
+              type="range" 
+              required
+            >
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="form-field block">
+        <legend>Additional info:</legend>
+        <div class="input">
+          <label 
+            for="comm-att"
+            class="label"
+          >
+            Comments:
+            <textarea
+              id="comm-att"
+              name="comments" 
+              maxlength="300" 
+              autocomplete="off"
+           ></textarea>
+          </label>
+        </div>
+
+        <div class="lastInput">
+          <label 
+            for="recomend-att"
+            class="label"
+          >
+            Would you recommend us?
+            <select
+              id="recomend-att"
+              name="recomendOrNo"
+            >
+              <option 
+                value="yesIWould" 
+                selected
+              >
+              Yes
+              </option>
+              <option value="noIwouldNot">No</option>
+            </select>
+          </label>
+        </div>
+      </fieldset>
+
+      <label 
+        for="button-att"
+        class="label"
+      >
+        <button
+        id="button-att"
+        class="button1" 
+        type="submit"
+        >
+        Submit
+        </button>
+      </label>
+    </form>
   </body>
 </html>
