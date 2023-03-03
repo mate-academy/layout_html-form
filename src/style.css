@@ -10,3 +10,7 @@
 .form-fild:last-child {
   margin: 0;
 }
+
+.form_fild_ex {
+  display: inline;
+}

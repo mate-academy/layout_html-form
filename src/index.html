@@ -11,22 +11,25 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form  class="form" 
-      action="https://www.w3schools.com/action_page.php" 
+    <form
+      class="form" 
+      action="https://www.w3schools.com/action_page.php"
       method="post"
     >
       <fieldset class="container" >
         <legend>Personal information</legend>
         <label class="form-fild">
           Surname:
-          <input type="text" 
+          <input
+            type="text" 
             name="Surname" 
             autocomplete="off"
           >
         </label>
         <label class="form-fild">
             Name:
-          <input type="text" 
+          <input
+            type="text" 
             name="Name" 
             autocomplete="off" 
           >
@@ -35,7 +38,8 @@
           class="form-fild"
         >
             How old are You?
-          <input id="age"
+          <input
+            id="age"
             type="number" 
             name="Age" 
             autocomplete="off" 
@@ -46,13 +50,14 @@
         </label>
         <label class="form-fild" >
           Full date of birth:
-          <input name="Date" 
+          <input
+            name="Date" 
             type="date" 
           >
         </label>
         <label class="form-fild" >
           I accept the term of the agreement
-          <input 
+          <input
             name="conditions of the contract" 
             type="checkbox"    
             id="conditions of 
@@ -64,16 +69,18 @@
         <legend>Registration </legend>
         <label class="form-fild">
           E-mail:
-          <input type="email" 
-          name="E-mail"
-          placeholder="email@example.com" 
-          autocomplete="off" 
-          required
+          <input
+            type="email" 
+            name="E-mail"
+            placeholder="email@example.com" 
+            autocomplete="off" 
+            required
           >
         </label>
         <label class="form-fild" >
           Password:
-          <input type="password" 
+          <input 
+            type="password" 
             name="Password" 
             required
           >
@@ -83,26 +90,42 @@
         <legend>An interesting fact about you!</legend>
         <label class="form-fild" >
           Do you love cats?
-          <input name="Cats" type="radio">
-          Yes
-          <input  name="Cats" type="radio">
-          No
+          <label class="form-fild form_fild_ex">
+            <input 
+              name="Cats" 
+              type="radio"
+            >
+            Yes
+          </label>
+          <label class="form-fild form_fild_ex">
+            <input  
+              name="Cats" 
+              type="radio"
+            >
+            No
+          </label>
         </label>
         <label class="form-fild" >
           What is your favorite color?
-          <input type="color" name="color">
+          <input 
+            type="color" 
+            name="color"
+          >
         </label>
         <label class="form-fild">
           What time do you go to bed 
-          <input class="time" 
+          <input 
+            class="time" 
             type="time" 
             name="What time do you go to bed " 
           >
         </label>
         <label class="form-fild" for="cars" >
           What are your favorite brand of cars?
-          <select name="Cars" 
-            id="cars" multiple
+          <select 
+            name="Cars" 
+            id="cars" 
+            multiple
           >
             <option value="BMV">BMV</option>
             <option value="Audi">Audi</option>
@@ -112,7 +135,8 @@
         </label>
         <label class="form-fild" >
           How do yor rate our work?
-          <input type="range" 
+          <input 
+            type="range" 
             name="work evaluation" 
           >
         </label>
