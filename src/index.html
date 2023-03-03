@@ -8,6 +8,7 @@
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+
   <body>
     <form action="#" method="post">
       <fieldset class="field">
@@ -115,8 +116,9 @@
 
         <label class="form-field">
           What are your favorite brand of cars?
-
-          <select name="brand" multiple>
+          <select
+            name="brand"
+            multiple>
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
@@ -138,15 +140,11 @@
         <legend>Additional info:</legend>
         <label class="form-field">
           Comments:
-          <textarea
-            name="comments"></textarea>
+          <textarea name="comments"></textarea>
         </label>
       </fieldset>
 
-      <button
-        type="submit">
-        Submit
-      </button>
+      <button type="submit">Submit</button>
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
