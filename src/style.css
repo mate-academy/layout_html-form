@@ -1,55 +1,11 @@
-.Sname {
+.in_box_style-one {
   margin-bottom: 10px;
 }
 
-.FirstName {
-  margin-bottom: 10px;
-}
-
-.Age {
-  margin-bottom: 10px;
-}
-
-.Date {
-  margin-bottom: 10px;
-}
-
-.Registration {
-  margin-top: 20px;
-}
-
-.Mail {
-  margin-bottom: 10px;
-}
-
-.Factabout {
-  margin-top: 20px;
-}
-
-.Lovecats {
-  margin-bottom: 10px;
-}
-
-.Colors {
-  margin-bottom: 10px;
-}
-
-.TimeToBed {
-  margin-bottom: 10px;
-}
-
-.Cars {
-  margin-bottom: 10px;
-}
-
-.Info {
-  margin-top: 20px;
-}
-
-.Recommend {
+.in_box_style-two {
   margin-top: 10px;
 }
 
-.Submit {
+.in_box_style-three {
   margin-top: 20px;
 }
