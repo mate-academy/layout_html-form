@@ -1,1 +1,13 @@
-/* styles go here */
+
+.input--item {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.input {
+  margin-bottom: 20px;
+}
+
+.input > .input--item:last-child {
+  margin-bottom: 0;
+}
