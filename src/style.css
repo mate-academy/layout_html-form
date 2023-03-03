@@ -1,1 +1,21 @@
 /* styles go here */
+body {
+  padding: 0;
+}
+
+.block {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.margin {
+  margin-bottom: 10px;
+}
