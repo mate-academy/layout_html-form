@@ -52,12 +52,14 @@ Create HTML page with form. On form submit send form data to `https://mate-acade
 2. The form should have correct `method` and `action`
 3. Follow the [code style guide](https://mate-academy.github.io/style-guides/htmlcss.html)
 4. `<textarea>` is a tricky tag to format:
-    - it requires you to put a closing tag on the same line as `>` of the openning tag, not to have a default content and be able to see the placeholder;
-    - at the same time if it have several attributes you need to put each of them on its own line;
-    - so use the next formatting where `>` is moved 1 position left from normal alignment 
+    - It requires you to put a closing tag on the same line as the `>` of the opening tag, not to have default content, and be able to see the placeholder.
+    - At the same time, if it has several attributes, you need to put each of them on its own line.
+    - So, use the following formatting where `>` is moved 1 position left from the normal alignment:
+
       ```html
         <textarea
           class="..."
           placeholder="..."
        ></textarea>
       ```
+
