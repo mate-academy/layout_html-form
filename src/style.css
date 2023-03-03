@@ -1,1 +1,17 @@
 /* styles go here */
+.form-field {
+  display: block;
+}
+
+.form-field:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.field-set {
+  margin-bottom: 20px;
+}
+
+.comments {
+  display: block;
+  margin-bottom: 10px;
+}
