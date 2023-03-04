@@ -34,6 +34,7 @@
             autocomplete="off"
           >
         </label>
+
         <label class="field__info">
           How old are You?
           <input
@@ -45,18 +46,21 @@
             max="100"
           >
         </label>
+
         <label class="field__info">
           Full date of birth:
           <input type="date" name="birthday"
            step="4"
           >
         </label>
+
         <label class="field__info">
           I accept the term of the agreement
           <input type="checkbox" name="conditions"
            step="5"
           >
         </label>
+
       </fieldset>
       <fieldset class="field_table">
         <legend>Registration</legend>
@@ -70,6 +74,7 @@
             required
           >
         </label>
+
         <label class="field__info">
           Password:
           <input
@@ -80,6 +85,7 @@
             maxlength="10"
           >
         </label>
+
       </fieldset>
       <fieldset class="field_table">
         <legend>An interesting fact about you!</legend>
@@ -89,31 +95,37 @@
             type="radio"
             name="love_cats"
             step="8"
-            value="y"
+            value="yes"
           >
           Yes
         </label>
+
         <label>
           <input
             type="radio"
             name="love_cats"
             step="9"
-            value="n"
+            value="no"
           >
           No
         </label>
+
         <label class="field__info">
           What is your favorite color?
           <input type="color" name="FavoritColor"
            step="10"
           >
         </label>
+
         <label class="field__info">
           What time do you go to bed?
-          <input type="time"  step="11"
+          <input
+            type="time"
+            step="11"
             name="time"
           >
         </label>
+
         <label class="field__info">
           What are your favorite brand of cars?
           <select multiple>
@@ -122,12 +134,17 @@
             <option value="Lada">Lada</option>
           </select>
         </label>
+
         <label class="field__info">
           How do you rate our work?
-          <input type="range" value="0"
-            name="attribute" step="12"
+          <input
+            type="range"
+            value="0"
+            name="attribute"
+            step="12"
           >
         </label>
+
       </fieldset>
       <fieldset class="field_table">
         <legend>Additional info:</legend>
@@ -144,6 +161,7 @@
             maxlength="200"
          ></textarea>
         </label>
+
         <label class="field__info">
           Would you recommend us?
           <select>
@@ -151,6 +169,7 @@
             <option value="No">No</option>
           </select>
         </label>
+
       </fieldset>
       <button type="submit" class="field__info" >Submit</button>
     </form>
