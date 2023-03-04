@@ -3,6 +3,6 @@
   margin-bottom: 10px;
 }
 
-.fieldset1 {
+.fieldset:not(:first-child) {
   margin-top: 20px;
 }
