@@ -11,7 +11,147 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+
+    <form>
+
+      <fieldset class="fieldset">
+
+        <legend>Personal information</legend>
+
+        <label class="Formfield">Surname:
+          <input
+          type="text"
+           name="Surname"
+           autocomplete="off"
+          >
+        </label>
+
+        <label class="Formfield">
+          Name:
+          <input
+          type="text"
+           name="Name"
+           autocomplete="off"
+          >
+        </label>
+
+        <label class="Formfield">
+          How old are You?
+          <input type="number" name="Old"
+          min="1"
+          max="100"
+          value="12"
+          >
+        </label>
+
+        <label class="Formfield">
+          Full date of birth:
+          <input type="date" name="Birht">
+        </label>
+
+        <label class="Formfield">
+          I accept the term of the agreement
+          <input type="checkbox" name="Term">
+        </label>
+
+      </fieldset>
+
+
+      <fieldset class="fieldset1">
+        <legend>Registration</legend>
+
+        <label class="Formfield">
+          E-mail:
+          <input
+          type="email"
+          name="email"
+          placeholder="email@example.com"
+          >
+        </label>
+
+        <label>
+          Password: <input type="password" name="password">
+        </label>
+
+      </fieldset>
+
+      <fieldset class="fieldset1">
+        <legend>An interesting fact about you!</legend>
+        <div class="Formfield">Do you love cats?
+          <label>
+            <input type="radio"
+            name="cats"
+            value="Yes"
+            > Yes
+
+          </label>
+
+          <label>
+            <input type="radio"
+            name="cats"
+            value="No"
+            > No
+          </label>
+
+        </div>
+
+        <label class="Formfield">
+          What is your favorite color?
+          <input
+          type="color"
+          name="favoritecolor"
+          >
+        </label>
+
+        <label class="Formfield">
+          What time do you go to bed?
+          <input
+          type="time"
+          name="timetobed"
+          >
+        </label>
+
+        <label class="Formfield">
+          What are your favorite brand of cars?
+          <select name="favoritecar" multiple>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+
+        </label>
+
+        <div class="Formfield">
+          How do you rate our work?
+          <input type="range"
+          id="rateus"
+          name="rateus"
+          >
+        </div>
+
+      </fieldset>
+
+      <fieldset class="fieldset1">
+        <legend>Additional info</legend>
+        <label class="Formfield">
+          Comments
+          <textarea name="feedback"></textarea>
+        </label>
+
+        <label class="Formfield">
+          Would you recommend us?
+          <select name="recus">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <button class="fieldset1"
+        type="submit">Submit
+      </button>
+
+    </form>
   </body>
 </html>
