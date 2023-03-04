@@ -16,7 +16,6 @@
     <form>
 
       <fieldset class="fieldset">
-
         <legend>Personal information</legend>
 
         <label class="Formfield">Surname:
@@ -24,6 +23,7 @@
           type="text"
            name="Surname"
            autocomplete="off"
+           required
           >
         </label>
 
@@ -33,12 +33,15 @@
           type="text"
            name="Name"
            autocomplete="off"
+           required
           >
         </label>
 
         <label class="Formfield">
           How old are You?
-          <input type="number" name="Old"
+          <input
+          type="number"
+          name="Old"
           min="1"
           max="100"
           value="12"
@@ -71,7 +74,8 @@
         </label>
 
         <label>
-          Password: <input type="password" name="password">
+          Password:
+          <input type="password" name="password">
         </label>
 
       </fieldset>
@@ -148,8 +152,11 @@
         </label>
       </fieldset>
 
-      <button class="fieldset1"
-        type="submit">Submit
+      <button
+        class="fieldset1"
+        type="submit"
+      >
+        Submit
       </button>
 
     </form>
