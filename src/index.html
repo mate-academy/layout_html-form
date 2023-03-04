@@ -18,33 +18,37 @@
       <fieldset class="fieldset">
         <legend>Personal information</legend>
 
-        <label class="formfield">Surname:
+        <label class="formfield">
+          Surname:
           <input
-          type="text"
-           name="Surname"
-           autocomplete="off"
-           required
+            type="text"
+            name="surname"
+            id="surname"
+            autocomplete="off"
+            required
           >
         </label>
 
         <label class="formfield">
           Name:
           <input
-          type="text"
-           name="Name"
-           autocomplete="off"
-           required
+            type="text"
+            name="name"
+            id="name"
+            autocomplete="off"
+            required
           >
         </label>
 
         <label class="formfield">
           How old are You?
           <input
-          type="number"
-          name="Old"
-          min="1"
-          max="100"
-          value="12"
+            type="number"
+            name="old"
+            id="old"
+            min="1"
+            max="100"
+            value="12"
           >
         </label>
 
@@ -67,15 +71,20 @@
         <label class="formfield">
           E-mail:
           <input
-          type="email"
-          name="email"
-          placeholder="email@example.com"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@example.com"
           >
         </label>
 
         <label>
           Password:
-          <input type="password" name="password">
+          <input
+            type="password"
+            name="password"
+            id="password"
+          >
         </label>
 
       </fieldset>
@@ -84,18 +93,22 @@
         <legend>An interesting fact about you!</legend>
         <div class="formfield">Do you love cats?
           <label>
-            <input type="radio"
-            name="cats"
-            value="Yes"
-            > Yes
+            <input
+              type="radio"
+              name="cats"
+              id="cats"
+              value="Yes"
+            >
+            Yes
 
           </label>
 
           <label>
             <input type="radio"
-            name="cats"
-            value="No"
-            > No
+              name="cats"
+              value="No"
+            >
+            No
           </label>
 
         </div>
@@ -103,8 +116,9 @@
         <label class="formfield">
           What is your favorite color?
           <input
-          type="color"
-          name="favoritecolor"
+            type="color"
+            name="favoritecolor"
+            id="favoritecolor"
           >
         </label>
 
@@ -113,6 +127,7 @@
           <input
           type="time"
           name="timetobed"
+          id="timetobed"
           >
         </label>
 
@@ -128,9 +143,10 @@
 
         <div class="formfield">
           How do you rate our work?
-          <input type="range"
-          id="rateus"
-          name="rateus"
+          <input
+            type="range"
+            id="rateus"
+            name="rateus"
           >
         </div>
 
