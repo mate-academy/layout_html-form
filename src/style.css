@@ -1,22 +1,13 @@
-.form__fieldsets,
-.form__button {
+.form__wrapper {
   margin-bottom: 20px;
 }
 
-.form__label-data,
-.form__div-cat,
-.form__label-email,
-.form__label-color,
-.form__label-timeToBad,
-.form__label-favoriteCar {
+.form__label-data {
   display: block;
   margin-bottom: 10px;
 }
 
-.form__label-accept,
-.form__label-password,
-.form__label-rateWork,
-.form__label-remmendUs {
+.form__label-lastElement {
   display: block;
 }
 
