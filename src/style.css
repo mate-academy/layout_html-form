@@ -1,1 +1,9 @@
-/* styles go here */
+.input-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-container {
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
