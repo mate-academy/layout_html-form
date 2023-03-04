@@ -20,14 +20,17 @@
           <input
             type="text"
             name="surname"
+            step="1"
             autocomplete="off"
           >
         </label>
+
         <label class="field__info">
           Name:
           <input
             type="text"
             name="name"
+            step="2"
             autocomplete="off"
           >
         </label>
@@ -37,17 +40,22 @@
             type="number"
             value="12"
             name="old"
+            step="3"
             min="1"
             max="100"
           >
         </label>
         <label class="field__info">
           Full date of birth:
-          <input type="date" name="birthday">
+          <input type="date" name="birthday"
+           step="4"
+          >
         </label>
         <label class="field__info">
           I accept the term of the agreement
-          <input type="checkbox">
+          <input type="checkbox" name="attribute"
+           step="5"
+          >
         </label>
       </fieldset>
       <fieldset class="field_table">
@@ -57,6 +65,7 @@
           <input
             type="email"
             name="email"
+            step="6"
             placeholder="email@example.com"
             required
           >
@@ -66,7 +75,9 @@
           <input
             type="password"
             name="password"
-            minlength="5" maxlength="10"
+            step="7"
+            minlength="5"
+            maxlength="10"
           >
         </label>
       </fieldset>
@@ -77,6 +88,7 @@
           <input
             type="radio"
             name="love_cats"
+            step="8"
             value="y"
           >
           Yes
@@ -85,17 +97,22 @@
           <input
             type="radio"
             name="love_cats"
+            step="9"
             value="n"
           >
           No
         </label>
         <label class="field__info">
           What is your favorite color?
-          <input type="color" name="FavoritColor">
+          <input type="color" name="FavoritColor"
+           step="10"
+          >
         </label>
         <label class="field__info">
           What time do you go to bed?
-          <input type="time"  step="1">
+          <input type="time"  step="11"
+            name="attribute"
+          >
         </label>
         <label class="field__info">
           What are your favorite brand of cars?
@@ -107,7 +124,9 @@
         </label>
         <label class="field__info">
           How do you rate our work?
-          <input type="range" value="0">
+          <input type="range" value="0"
+            name="attribute" step="12"
+          >
         </label>
       </fieldset>
       <fieldset class="field_table">
@@ -117,6 +136,7 @@
           <textarea
             name="comments"
             id="comments"
+            step="13"
             cols="20"
             rows="2"
             autocomplete="off"
