@@ -1,1 +1,20 @@
-/* styles go here */
+.personal{
+    display: block;
+    margin-top: 10px;
+}
+.registration{
+    display: block;
+    margin-top: 10px;
+}
+.facts{
+    display: block;
+    margin-top: 10px;
+     
+}
+.additional{
+    display: block;
+    margin-top: 10px;  
+}
+.wrapper{
+    margin-top: 20px;
+}
