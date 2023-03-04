@@ -1,1 +1,17 @@
-/* styles go here */
+.form__wrapper {
+  margin-bottom: 20px;
+}
+
+.form__label-data {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form__label-lastElement {
+  display: block;
+}
+
+.form__label-comments {
+  display: inline-block;
+  margin-bottom: 10px;
+}
