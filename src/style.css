@@ -1,1 +1,12 @@
-/* styles go here */
+.wrapper {
+  margin-bottom: 20px;
+}
+
+.fields {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.fields:last-child {
+  margin-bottom: 0;
+}
