@@ -1,1 +1,16 @@
 /* styles go here */
+html {
+  margin: 0;
+}
+
+.form-fieldset {
+  margin-bottom: 20px;
+}
+
+.data-record {
+  margin-top: 10px;
+}
+
+legend + .data-record {
+  margin-top: 0;
+}
