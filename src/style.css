@@ -1,6 +1,7 @@
 /* styles go here */
 .form-field {
   margin-top: 10px;
+  display: block;
 }
 
 .field {
