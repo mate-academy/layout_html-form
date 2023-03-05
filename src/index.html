@@ -11,7 +11,192 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form name="form">
+      <fieldset class="perInfo fieldset" name="Personal">
+        <legend>Personal information</legend>
+
+        <label for="surName" class="input-label">
+          Surname:
+          <input 
+            type="text"
+            name="username" 
+            required
+          >
+        </label>
+
+        <label for="name" class="input-label">
+          Name:
+          <input 
+            id="name"
+            type="text"
+            name="name" 
+            required
+          >
+        </label>
+
+        <label for="age" class="input-label">
+          How old are You?
+          <input 
+            id="age" 
+            class="age"
+            type="number" 
+            name="age" 
+            value="12"
+            min="1"
+            max="100"
+          >
+        </label>
+
+        <label for="date" class="input-label">
+          Full date of birth:
+          <input 
+            id="date" 
+            type="date"
+            name="date" 
+            required
+          >
+        </label>
+
+        <label for="checkbox" class="input-label">
+          I accept the term of the agreement
+          <input 
+            id="checkbox" 
+            type="checkbox" 
+            name="agreement" 
+            required
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="regist fieldset">
+        <legend>Registration</legend>
+
+        <label for="email" class="input-label">
+          E-mail:
+          <input 
+            id="email" 
+            type="email" 
+            name="email" 
+            placeholder="email@example.com" 
+            required 
+            multiple
+          >
+        </label>
+
+        <label for="password" class="input-label">
+          Password:
+          <input 
+            id="password" 
+            type="password" 
+            name="password" 
+            minlength="10" 
+            maxlength="20" 
+            required
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="fact fieldset">
+        <legend>An interesting fact about you!</legend>
+
+        <label class="cats">
+          Do you love cats?
+        </label>
+        <label for="radio" class="input-label cats">
+          <input 
+            id="radio"
+            type="radio"
+            name="radio"
+            value="y"
+          > 
+            Yes
+          <input 
+            id="radio1" 
+            type="radio" 
+            name="radio" 
+            value="n"
+          >
+            No
+        </label>
+        </div>
+
+        <label for="color" class="input-label">
+          What is your favorite color?
+          <input 
+            id="color" 
+            type="color"
+            name="color" 
+            required
+          >
+        </label>
+        
+        <label for="time" class="input-label">
+          What time do you go to bed?
+          <input 
+            id="time"
+            type="time" 
+            name="time" 
+            required
+          >
+        </label>
+
+        <label for="cars" class="input-label">
+          What are your favorite brand of cars?
+          <select 
+            id="cars" 
+            name="car-srlect" 
+            required
+            multiple
+          >
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </label>
+
+        <label for="range" class="input-label">
+          How do you rate our work?
+          <input 
+            id="range" 
+            type="range" 
+            name="range"
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="add fieldset">
+        <legend>Additional info:</legend>
+
+        <label for="textarea" class="input-label">
+          Comments:
+          <textarea 
+            id="textarea" 
+            name="textarea"
+         ></textarea>
+          
+        </label>
+
+        <label for="recommend" class="input-label">
+          Would you recommend us?
+          <select 
+            id="recommend" 
+            name="recommend" 
+            required
+          >
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </label>
+      </fieldset>
+      
+      <button
+        class="submit" 
+        type="submit" 
+      >
+        Submit
+      </button>
+    </form>
+
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
