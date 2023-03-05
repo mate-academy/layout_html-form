@@ -8,26 +8,32 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="pi">
-      <p class="title">Personal information</p>
-      <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" autocomplete="off">
-        <p class="user">
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
+      <fieldset class="p-info">
+        <legend>Personal information</legend>
+        <label class="form">
           Surname:
           <input
             title="Surname"
             type="text"
-            required="required"
+            autocomplete="off"
+            minlength="2"
+            maxlength="20"
+            required
           >
-        </p>
-        <p class="user">
+        </label>
+        <label class="form">
           Name:
           <input
             title="name"
             type="text"
-            required="required"
+            autocomplete="off"
+            minlength="2"
+            maxlength="20"
+            required
           >
-        </p>
-        <p class="user age">
+        </label>
+        <label class="form">
           How old are You?
           <input
             title="age"
@@ -36,46 +42,42 @@
             min="1"
             max="100"
           >
-        </p>
-        <p class="user">
+        </label>
+        <label class="form">
           Full date of birth:
           <input
             title="date"
             type="date"
           >
-        </p>
-        <p class="user">
+        </label>
+        <label class="form">
           I accept the term of the agreement
           <input
-            title="cbox"
+            title="accept agreement"
             type="checkbox"
           >
-        </p>
-      </form>
-    </div>
-    <div class="pi">
-      <p class="reg">Registration</p>
-      <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" autocomplete="off">
-        <p class="user">
+        </label>
+      </fieldset>
+      <fieldset class="p-info">
+        <legend>Registration</legend>
+        <label class="form">
           E-mail:
           <input
             type="email"
             placeholder="email@example.com"
           >
-        </p>
-        <p class="user">
+        </label>
+        <label class="form">
           Password:
           <input
-            title="psw"
+            title="password"
             type="password"
           >
-        </p>
-      </form>
-    </div>
-    <div class="pi">
-      <p class="about-you">An interesting fact about you!</p>
-      <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" autocomplete="off">
-        <p class="user">
+        </label>
+      </fieldset>
+      <fieldset class="p-info">
+        <legend>An interesting fact about you!</legend>
+        <label class="form">
           Do you love cats?
           <input
             title="Yes"
@@ -89,63 +91,54 @@
             type="radio"
             value="No"
           >No
-        </p>
-        <p class="user">
-          What is your favorite color?
+        </label>
+        <label class="form">What is your favorite color?
           <input
             title="color"
             type="color"
           >
-        </p>
-        <p class="user">
-          What time do you go to bed?
+        </label>
+        <label class="form">What time do you go to bed?
           <input
             title="time"
             type="time"
             step="2"
           >
-        </p>
-        <p class="user">
-          What are your favorite brand of cars?
-          <select title="choose">
-            <option disabled selected>Choose a car</option>
+        </label>
+        <label class="form">What are your favorite brand of cars?
+          <select title="cars" multiple>
+            <!-- <option disabled selected>Choose a car</option> -->
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
           </select>
-        </p>
-        <p class="user">
-          How do you rate our work?
+        </label>
+        <label class="form">How do you rate our work?
           <input
             title="range"
             type="range"
             value="0"
           >
-        </p>
-      </form>
-    </div>
-    <div class="pi">
-      <p class="about-you">An interesting fact about you!</p>
-      <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" autocomplete="off">
-        <p class="user">
-          How do you rate our work?
-          <input
-            title="range"
-            type="range"
-            value="0"
+        </label>
+      </fieldset>
+      <fieldset class="p-info">
+        <legend>Additional info</legend>
+        <label class="form">Comments:
+          <textarea
+            title="Comments"
           >
-        </p>
-        <p class="user">
-          How do you rate our work?
-          <input
-            title="range"
-            type="range"
-            value="0"
-          >
-        </p>
-      </form>
-    </div>
-    <button title="submit" type="submit">Submit</button>
+          </textarea>
+        </label>
+        <label class="form">
+          Would you recommend us?
+          <select name="Yes-or-No">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </label>
+      </fieldset>
+      <button title="submit" type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>

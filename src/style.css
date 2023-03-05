@@ -1,52 +1,9 @@
-* {
-  font-size: 16px;
+.form {
+  display: block;
+  margin-bottom: 10px;
 }
 
-.pi {
-  border: 1px solid black;
+.p-info {
+  padding-bottom: 0;
   margin-bottom: 20px;
-  /* margin-top: 20px; */
-}
-
-.user {
-  margin: 10px;
-  display: flex;
-  align-items: flex-start;
-  margin-left: 10px;
-  margin-top: 10px;
-}
-
-.user > input {
-  margin-left: 1px;
-}
-
-.age > input {
-  width: 60px;
-}
-
-.title {
-  font-size: 16px;
-  color: #000;
-  background-color: #fff;
-  position: absolute;
-  top: -6px;
-  left: 20px;
-}
-
-.reg {
-  font-size: 16px;
-  color: #000;
-  background-color: #fff;
-  position: absolute;
-  top: 207px;
-  left: 20px;
-}
-
-.about-you {
-  font-size: 16px;
-  color: #000;
-  background-color: #fff;
-  position: absolute;
-  top: 322px;
-  left: 20px;
 }
