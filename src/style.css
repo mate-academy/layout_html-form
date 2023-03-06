@@ -1,16 +1,8 @@
 /* styles go here */
-html {
-  margin: 0;
-}
-
-.form-fieldset {
+.form-field {
   margin-bottom: 20px;
 }
 
-.data-record {
-  margin-top: 10px;
-}
-
-legend + .data-record {
-  margin-top: 0;
+.data-input:not(:last-child) {
+  padding-bottom: 10px;
 }
