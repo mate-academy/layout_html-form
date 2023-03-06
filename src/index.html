@@ -13,11 +13,19 @@
         <legend>Personal information</legend>
         <label class="field">
           Surname:
-          <input type="text" autocomplete="off">
+          <input
+            type="text"
+            autocomplete="off"
+            name="surname"
+          >
         </label>
         <label class="field">
           Name:
-          <input type="text" autocomplete="off">
+          <input
+            type="text"
+            autocomplete="off"
+            name="name"
+          >
         </label>
         <label class="field">
           How old are You?
@@ -26,15 +34,12 @@
             min="1"
             max="100"
             value="12"
+            name="age"
           >
         </label>
         <label class="field">
           Full date of birth:
-          <input
-            type="date"
-            min="1900-01-01"
-            max="2023-03-05"
-          >
+          <input type="date" name="date">
         </label>
         <label class="field">
           I accept the term of the agreement
@@ -94,7 +99,13 @@
         </label>
         <label class="field">
           How do you rate out work?
-          <input type="range" name="rate-of-work">
+          <input
+            type="range"
+            name="rate-of-work"
+            min="0"
+            max="100"
+            value="0"
+          >
         </label>
       </fieldset>
       <fieldset class="group">
@@ -111,8 +122,8 @@
         <label class="field">
           Would you recommend us?
           <select name="select-option" id="select-option">
-            <option value="yes" selected>Yes</option>
-            <option value="No">No</option>
+            <option value="yes" selected>yes</option>
+            <option value="No">no</option>
           </select>
         </label>
       </fieldset>
