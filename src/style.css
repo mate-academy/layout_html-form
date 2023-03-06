@@ -1,1 +1,14 @@
 /* styles go here */
+
+.form-field {
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+.button {
+  margin-top: 10px;
+}
