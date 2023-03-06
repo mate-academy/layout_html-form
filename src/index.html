@@ -4,14 +4,198 @@
     <meta charset="UTF-8">
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width,
+      user-scalable=no,
+      initial-scale=1.0,
+      maximum-scale=1.0,
+      minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <div class="container">
+      <form
+        class="form"
+        action="https://github.com/mate-academy/layout_html-form/blob/master/checklist.md"
+        method="post"
+      >
+        <fieldset class="form__block">
+          <legend>Personal information</legend>
+          <div class="form__input">
+            <label>
+              Surname:
+              <input
+                name="surname"
+                type="text"
+                autocomplete="off"
+              >
+            </label>
+          </div>
+          <div class="form__input">
+            <label>
+            Name:
+              <input
+                name="name"
+                type="text"
+                autocomplete="off"
+                required
+              >
+            </label>
+          </div>
+          <div class="form__input">
+            <label>
+              How old are You?
+              <input
+                name="surname"
+                type="number"
+                min="1"
+                max="120"
+                value="12"
+                required
+              >
+            </label>
+          </div>
+          <div class="form__input">
+            <label>
+              Full date of birth:
+              <input
+                name="surname"
+                type="date"
+                minlength="2019"
+                maxlength="2023"
+              >
+            </label>
+          </div>
+          <div class="form__input form__input--margin_bottom">
+            <label>
+              I accept the term of the agreement
+              <input
+                name="agreement"
+                type="checkbox"
+              >
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form__block">
+          <legend>Registration</legend>
+          <div class="form__input">
+            <label>
+              E-mail:
+              <input
+                type="email"
+                placeholder="email@example.com"
+                required
+              >
+            </label>
+          </div>
+          <div class="form__input form__input--margin_bottom">
+            <label>
+              Password:
+              <input
+                type="password"
+                minlength="6"
+                maxlength="12"
+                size="12"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+              >
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form__block">
+          <legend>An interesting fact about you</legend>
+          <div class="form__input">
+            Do you love cats?
+            <label>
+              <input
+                value="Yes"
+                type="radio"
+                name="cat"
+              >
+              Yes
+            </label>
+            <label>
+              <input
+                value="No"
+                type="radio"
+                name="cat"
+              >
+              No
+            </label>
+          </div>
+          <div class="form__input">
+            <label>
+              What is your favorite color?
+              <input
+                type="color"
+                name="color"
+              >
+            </label>
+          </div>
+          <div class="form__input">
+            <label>
+              What time do you go to bed?
+              <input
+                type="time"
+                name="time"
+              >
+            </label>
+          </div>
+          <div class="form__input">
+            <label>
+              What are your favorite brand of cars?
+              <select
+                name="car"
+                required
+                multiple
+              >
+                <option value="bmw">BMW</option>
+                <option value="aydi">Audi</option>
+                <option value="lada">Lada</option>
+                <option selected disabled></option>
+              </select>
+            </label>
+          </div>
+          <div class="form__input form__input--margin_bottom">
+            <label>
+              How do you rate our work?
+              <input
+                type="range"
+                name="range"
+                value="0"
+              >
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form__block">
+          <legend>Additional info:</legend>
+          <div class="form__input">
+            <label>
+              Comments:
+              <textarea
+                autocomplete="off"
+                name="textarea"
+                minlength="20"
+                maxlength="400"
+             ></textarea>
+            </label>
+          </div>
+          <div class="form__input form__input--margin_bottom">
+            <label>
+              Would you recommend us?
+              <select>
+                <option value="yes" checked>Yes</option>
+                <option value="no">No</option>
+                <option value="maybe">Maybe</option>
+              </select>
+            </label>
+          </div>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>

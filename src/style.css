@@ -1,1 +1,20 @@
-/* styles go here */
+.container {
+  margin: 0 auto;
+}
+
+.form__block {
+  margin-bottom: 20px;
+  padding-left: 12px;
+}
+
+.form__input {
+  margin-bottom: 10px;
+}
+
+.form__input--margin_bottom {
+  margin-bottom: 0;
+}
+
+.form__input--padding_right {
+  padding-right: 28px;
+}
