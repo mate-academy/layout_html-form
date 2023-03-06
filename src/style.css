@@ -1,9 +1,9 @@
-.label {
+.input-row {
   display: block;
   margin-bottom: 10px;
 }
 
-.info {
+.inputs-block {
   padding-bottom: 0;
   margin-bottom: 20px;
 }
