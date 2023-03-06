@@ -1,1 +1,11 @@
-/* styles go here */
+html {
+  margin: 0;
+}
+
+.inside {
+  margin-bottom: 10px;
+}
+
+.fieldset1 {
+  margin-top: 2px;
+}
