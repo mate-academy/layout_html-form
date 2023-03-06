@@ -14,108 +14,106 @@
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <fieldset class="info">
         <legend>Personal information</legend>
-        <label class="form">
+        <label class="form-fieldset">
           Surname:
           <input
-            title="Surname"
             type="text"
+            title="surname"
             autocomplete="off"
             minlength="2"
             maxlength="20"
             required
           >
         </label>
-        <label class="form">
+        <label class="form-fieldset">
           Name:
           <input
-            title="name"
             type="text"
+            title="name"
             autocomplete="off"
             minlength="2"
             maxlength="20"
             required
           >
         </label>
-        <label class="form">
+        <label class="form-fieldset">
           How old are You?
           <input
-            title="age"
             type="number"
+            title="age"
             value="12"
             min="1"
             max="100"
           >
         </label>
-        <label class="form">
+        <label class="form-fieldset">
           Full date of birth:
           <input
-            title="date"
             type="date"
+            title="date"
           >
         </label>
-        <label class="form">
+        <label class="form-fieldset">
           I accept the term of the agreement
           <input
-            title="accept agreement"
             type="checkbox"
+            title="acceptAgreement"
           >
         </label>
       </fieldset>
       <fieldset class="info">
         <legend>Registration</legend>
-        <label class="form">
+        <label class="form-fieldset">
           E-mail:
           <input
             type="email"
             placeholder="email@example.com"
           >
         </label>
-        <label class="form">
+        <label class="form-fieldset">
           Password:
           <input
-            title="password"
             type="password"
+            title="password"
           >
         </label>
       </fieldset>
       <fieldset class="info">
         <legend>An interesting fact about you!</legend>
-        <label class="form">
+        <label class="form-fieldset">
           Do you love cats?
           <input
-            title="Yes"
-            name="Y&N"
             type="radio"
-            value="Yes"
+            name="yes"
+            value="yes"
           >Yes
           <input
-            title="No"
-            name="Y&N"
             type="radio"
-            value="No"
+            name="no"
+            value="no"
           >No
         </label>
-        <label class="form">What is your favorite color?
+        <label class="form-fieldset">What is your favorite color?
           <input
-            title="color"
             type="color"
+            title="color"
           >
         </label>
-        <label class="form">What time do you go to bed?
+        <label class="form-fieldset">What time do you go to bed?
           <input
-            title="time"
             type="time"
+            title="time"
             step="2"
           >
         </label>
-        <label class="form">What are your favorite brand of cars?
+        <label class="form-fieldset">What are your favorite brand of cars?
           <select title="cars" multiple>
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
           </select>
         </label>
-        <label class="form">How do you rate our work?
+        <label class="form-fieldset">How do you rate our work?
           <input
             title="range"
             type="range"
@@ -125,17 +123,17 @@
       </fieldset>
       <fieldset class="info">
         <legend>Additional info</legend>
-        <label class="form">Comments:
+        <label class="form-fieldset">Comments:
           <textarea
             name="coments"
             autocomplete="off"
          ></textarea>
         </label>
-        <label class="form">
+        <label class="form-fieldset">
           Would you recommend us?
           <select>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
           </select>
         </label>
       </fieldset>
