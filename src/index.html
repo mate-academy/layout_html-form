@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <script type="text/javascript" src="./main.js"></script>
 
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="post">
+      method="post"
+    >
       <fieldset>
         <legend>Personal information</legend>
         <div class="form-filed">
-          <label for="surname"></label>Surname:</label>
+          <label for="surname">Surname:</label>
           <input type="text"
                  name="surname"
                  id="surname"
@@ -28,7 +28,7 @@
           >
         </div>
         <div class="form-filed">
-          <label for="name"></label>Name:</label>
+          <label for="name">Name:</label>
           <input type="text"
                  name="name"
                  id="name"
@@ -37,7 +37,7 @@
           >
         </div>
         <div class="form-filed">
-          <label for="age"></label></label>How old are You?</label>
+          <label for="age">How old are You?</label>
           <input type="text"
                  name="age"
                  id="age"
@@ -49,12 +49,12 @@
         </div>
 
         <div class="form-filed">
-          <label for="bday"></label>Full date of birth:</label>
+          <label for="bday">Full date of birth:</label>
           <input type="date"
                  name="bday"
                  id="bday"
           >
-          <!--  placeholder="mm/dd/yyyy"-->
+
         </div>
 
         <div class="form-filed">
@@ -70,7 +70,7 @@
       <fieldset>
         <legend>Registration</legend>
         <div class="form-filed">
-          <label for="email">E-mail: </label>
+          <label for="email">E-mail:</label>
           <input type="email"
                  name="email"
                  id="email"
@@ -99,12 +99,12 @@
                  id="contact-yes"
                  value="yes"
           >
-          <label for="contact-yes"></label>Yes</label>
+          <label for="contact-yes">Yes</label>
           <input type="radio"
                  name="contact" id="contact-no"
                  value="no"
           >
-          <label for="contact-no"></label>No</label>
+          <label for="contact-no">No</label>
         </div>
 
         <div class="form-filed">
@@ -160,7 +160,7 @@
           </textarea>
         </div>
         <div class="form-filed">
-          <label for="recommend"></label>Would you recommend us?</label>
+          <label for="recommend">Would you recommend us?</label>
           <select name="recommend"
                   id="recommend"
           >
@@ -179,6 +179,8 @@
 
 
     </form>
+
+    <script type="text/javascript" src="./main.js"></script>
 
   </body>
 </html>
