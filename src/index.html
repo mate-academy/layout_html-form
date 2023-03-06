@@ -23,7 +23,8 @@
             type="text"
             id="surname"
             name="surname"
-            autocomplete="off">
+            autocomplete="off"
+          >
         </div>
 
         <div>
@@ -32,7 +33,8 @@
             type="text"
             id="name"
             name="name"
-            autocomplete="off">
+            autocomplete="off"
+          >
         </div>
 
         <div>
@@ -80,6 +82,8 @@
             id="email"
             name="email"
             placeholder="email@example.com"
+            autocomplete="off"
+            required
           >
         </div>
 
@@ -105,16 +109,18 @@
           <label for="cats">Do you love cats?</label>
           <input
             type="radio"
-            id="radio"
-            name="radio"
-          ></input>
-          <label for="yes">Yes</label>
+            id="Yes"
+            name="Yes"
+            value="Yes"
+          >
+          <label for="Yes">Yes</label>
           <input
             type="radio"
-            id="radio1"
-            name="radio1"
-          ></input>
-          <label for="yes">Yes</label>
+            id="No"
+            name="No"
+            value="No"
+          >
+          <label for="No">No</label>
         </div>
 
         <div>
@@ -131,12 +137,12 @@
             id="bedtime"
             type="time"
             name="bedtime"
-            step="2"
+            step="1"
           >
         </div>
 
         <div>
-          <label for="carBrand">What are your favorite brand of cars?</label>
+          <label for="cars">What are your favorite brand of cars?</label>
           <select
           name="cars"
           id="cars"
@@ -153,6 +159,9 @@
           <input
             type="range"
             id="workRate"
+            name="workRate"
+            min="1"
+            max="10"
             value="1"
             step="1"
           >
@@ -166,14 +175,18 @@
 
         <div>
           <label for="comments">Comments:</label>
-          <textarea name="comments" id="comments"></textarea>
+          <textarea
+            name="comments"
+            id="comments"
+            autocomplete="off"
+          ></textarea>
         </div>
 
         <div>
           <label for="reccomend">Would you recommend us?</label>
-          <select>
-            <option value="yes" selected>yes</option>
-            <option value="no">no</option>
+          <select name="recommend" id="recommend">
+            <option value="Yes" selected>Yes</option>
+            <option value="No">No</option>
           </select>
         </div>
 
