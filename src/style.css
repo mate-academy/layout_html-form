@@ -1,1 +1,23 @@
-/* styles go here */
+html {
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.form-field {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-label {
+  display: inline-block;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+.myinput {
+  width: 120px;
+}
