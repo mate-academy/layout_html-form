@@ -1,1 +1,17 @@
-/* styles go here */
+html {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+fieldset {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.formula {
+  margin-bottom: 10px;
+}
+
+fieldset :last-child {
+  margin-bottom: 0;
+}
