@@ -1,8 +1,12 @@
 /* styles go here */
-fieldset {
+.fieldsetMargins {
   margin-bottom: 20px;
 }
 
-fieldset > div:not(:last-of-type) {
+.divMargins {
   margin-bottom: 10px;
 }
+
+/* fieldset > div:not(:last-of-type) {
+  margin-bottom: 10px;
+} */
