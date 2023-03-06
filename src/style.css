@@ -1,1 +1,8 @@
 /* styles go here */
+.form-field {
+  margin-bottom: 20px;
+}
+
+.data-input:not(:last-child) {
+  padding-bottom: 10px;
+}
