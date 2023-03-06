@@ -56,9 +56,9 @@
           </label>
         </div>
         <div class="form-field">
-          <label for="birthDate"> Full date of birth: 
+          <label for="birth-date"> Full date of birth: 
             <input
-              id="birthDate"
+              id="birth-date"
               title="birthDate" 
               type="date" 
             > 
@@ -103,9 +103,9 @@
         <legend>An interesting fact about you!</legend>
         <div class="form-field">
           <label> Do you love cats?
-            <label for="loveCatsYes"> 
+            <label for="love-cats-yes"> 
               <input
-                id="loveCatsYes" 
+                id="love-cats-yes" 
                 title="loveCatsYes" 
                 type="radio"
                 name="radio"
@@ -113,9 +113,9 @@
                 checked
               > Yes
             </label>
-            <label for="loveCatsNo"> 
+            <label for="love-cats-no"> 
               <input
-                id="loveCatsNo" 
+                id="love-cats-no" 
                 title="loveCatsNo" 
                 type="radio"
                 name="radio"
@@ -124,41 +124,44 @@
           </label>
         </div>
         <div class="form-field">
-          <label for="favoriteColor"> What is your favorite color?
+          <label for="favorite-color"> What is your favorite color?
             <input
-              id="favoriteColor" 
+              id="favorite-color" 
               title="favoriteColor" 
               type="color"
             > 
           </label>
         </div>
         <div class="form-field">
-          <label for="timeToBed"> What time do you go to bed?
+          <label for="time-to-bed"> What time do you go to bed?
             <input
-              id="timeToBed" 
+              id="time-to-bed" 
               title="timeToBed" 
               type="time"
             > 
           </label>
         </div>
         <div class="form-field">
-          <label for="carsBrands"> What are your favorite brand of cars? 
+          <label for="cars-brands"> What are your favorite brand of cars? 
             <select
-              id="carsBrands" 
+              id="cars-brands" 
               name="carsBrand" 
               title="carsBrand"
               multiple
             >
-              <option value="BMW" selected>BMW</option> 
+              <option 
+                value="BMW" 
+                selected
+              >BMW</option> 
               <option value="Audi">Audi</option> 
               <option value="Lada">Lada</option>
             </select>
           </label>
         </div>
         <div class="form-field">
-          <label for="workRate"> How do you rate our work?
+          <label for="work-rate"> How do you rate our work?
             <input
-              id="workRate" 
+              id="work-rate" 
               title="workRate" 
               type="range"
               value="0"
@@ -170,9 +173,7 @@
         </div>
       </fieldset>
       <fieldset class="form-fieldset">
-        <legend>
-          Additional info
-        </legend>
+        <legend>Additional info</legend>
         <div class="form-field">
           <label for="comments"> Comments : 
             <textarea id="comments" type="textarea"></textarea> 
@@ -180,8 +181,14 @@
         </div>
         <div class="form-field">
           <label for="recommend"> Would you recommend us?
-            <select id="recommend" name="recommend"> 
-              <option value="Yes" selected>Yes</option> 
+            <select 
+              id="recommend" 
+              name="recommend"
+            > 
+              <option 
+                value="Yes" 
+                selected
+              >Yes</option> 
               <option value="No">No</option> 
             </select>
           </label>
