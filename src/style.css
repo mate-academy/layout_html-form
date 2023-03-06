@@ -1,1 +1,9 @@
-/* styles go here */
+.group {
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
+
+.field {
+  display: block;
+  margin-bottom: 10px;
+}
