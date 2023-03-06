@@ -1,1 +1,20 @@
 /* styles go here */
+.fieldset .fieldset-item {
+  margin: 10px 0;
+}
+
+.fieldset .fieldset-item:nth-of-type(1) {
+  margin-top: 0;
+}
+
+.fieldset .fieldset-item:last-child {
+  margin-bottom: 0;
+}
+
+.fieldset {
+  margin: 20px 2px;
+}
+
+.fieldset:first-child {
+  margin-top: 0;
+}
