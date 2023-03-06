@@ -1,11 +1,11 @@
-legend {
+.info {
   font-family: arial, Arial, Helvetica, sans-serif;
   color: #000;
   padding: 3px 6px;
   margin: 0 20px;
 }
 
-input {
+.data {
   margin: 0.4rem;
 }
 

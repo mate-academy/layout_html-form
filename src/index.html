@@ -15,10 +15,11 @@
 
     <form>
       <fieldset>
-        <legend>Personal information</legend>
+        <legend class="info">Personal information</legend>
         <label class="form-filed">
           Usarname:
           <input 
+            class="data"
             type="text" 
             name="usarname"
             autocomplete="off"
@@ -28,6 +29,7 @@
         <label class="form-filed">
           Name
           <input 
+            class="data"
             type="text" 
             name="name"
             autocomplete="off"
@@ -36,7 +38,8 @@
 
         <label class="form-filed">
           How old are you?
-          <input 
+          <input
+            class="data" 
             type="number" 
             name="age" 
             min="1" 
@@ -47,7 +50,8 @@
 
         <label class="form-filed">
           Full date of birth:
-          <input 
+          <input
+            class="data" 
             type="date" 
             name="birth"
           >
@@ -56,6 +60,7 @@
         <label class="form-filed">
           I accept the term of the agreement
           <input 
+            class="data"
             type="checkbox" 
             name="check"
           >
@@ -63,10 +68,11 @@
       </fieldset>
 
       <fieldset>
-        <legend>Registretion</legend>
+        <legend class="info">Registretion</legend>
         <label class="form-filed">
           E-mail:
           <input 
+            class="data"
             type="email" 
             name="mail" 
             placeholder="email@example.com"
@@ -76,7 +82,8 @@
 
         <label class="form-filed">
           Password:
-          <input 
+          <input
+            class="data" 
             type="password" 
             name="password" 
             minlength="5" 
@@ -87,11 +94,12 @@
       </fieldset>
 
       <fieldset>
-        <legend>An interesting fact about you!</legend>
+        <legend class="info">An interesting fact about you!</legend>
         <div class="form-filed">
           Do you love cats?
           <label>
-            <input 
+            <input
+              class="data" 
               type="radio" 
               name="question-cat" 
             >
@@ -99,6 +107,7 @@
           </label>
           <label>
             <input 
+              class="data"
               type="radio" 
               name="question-cat" 
             >
@@ -108,7 +117,8 @@
 
         <label class="form-filed">
           What is your faforite color?
-          <input 
+          <input
+            class="data" 
             type="color" 
             name="color" 
           >
@@ -116,7 +126,8 @@
           
         <div class="form-filed">
           What time do you go to bed?
-          <input 
+          <input
+            class="data"
             type="time" 
             name="time"
           >
@@ -136,7 +147,8 @@
 
         <div class="form-filed">
           How do you rate our work?
-          <input 
+          <input
+            class="data" 
             type="range" 
             name="rate"
           >
@@ -144,7 +156,7 @@
       </fieldset>
 
       <fieldset>
-        <legend>Additional info:</legend>
+        <legend class="info">Additional info:</legend>
         <label class="form-filed">
           Comments:
           <textarea name="comments"></textarea>
