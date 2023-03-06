@@ -1,9 +1,9 @@
 /* styles go here */
-.fields-group {
+.form-fieldset {
   padding-bottom: 0;
   margin-bottom: 20px;
 }
 
-.field {
+.form-field {
   margin-bottom: 10px;
 }
