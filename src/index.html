@@ -59,6 +59,7 @@
             name="birthDate"
             placeholder="mm/dd/yyyy"
             required
+            autocomplete="off"
           >
         </div>
 
@@ -84,6 +85,7 @@
             name="email"
             required
             placeholder="email@example.com"
+            autocomplete="off"
           >
         </div>
 
@@ -96,6 +98,7 @@
             minlength="5"
             maxlength="12"
             required
+            autocomplete="off"
           >
         </div>
 
@@ -138,6 +141,7 @@
             id="time"
             name="time"
             step="1"
+            autocomplete="off"
           >
         </div>
 
@@ -173,7 +177,11 @@
 
         <div>
           <label for="comments">Comments:</label>
-          <textarea id="comments" name="comments"></textarea>
+          <textarea
+          id="comments"
+          name="comments"
+          autocomplete="off"
+          ></textarea>
         </div>
 
         <div>
