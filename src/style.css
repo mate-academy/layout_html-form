@@ -1,1 +1,8 @@
 /* styles go here */
+.form fieldset {
+  margin-bottom: 20px;
+}
+
+.form fieldset div:not(:last-of-type) {
+  margin-bottom: 10px;
+}
