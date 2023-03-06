@@ -1,7 +1,7 @@
 # HTML form
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://<your_account>.github.io/layout_html-form/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_html-form/report/html_report/)
+- [DEMO LINK](https://Vladyslav-Voronkov.github.io/layout_html-form/)
+- [TEST REPORT LINK](https://Vladyslav-Voronkov.github.io/layout_html-form/report/html_report/)
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 ___
@@ -40,7 +40,7 @@ Create HTML page with form. On form submit send form data to `https://mate-acade
 - Age should be at least `1` and at max `100` with a default value of `12`
 - The email field should have placeholder value: `email@example.com`.
 - Text fields should have `autocomplete="off"`.
-- `Submit` button should have a `type="submit"` 
+- `Submit` button should have a `type="submit"`
 - Vertical distance between inputs should be `10px`
 - Vertical distance between groups should be `20px`
 - Any other styles should be browser default

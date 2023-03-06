@@ -1,1 +1,8 @@
 /* styles go here */
+fieldset {
+  margin-bottom: 20px;
+}
+
+.field:not(:first-child):not(:last-child) {
+  margin-bottom: 10px;
+}
