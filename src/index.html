@@ -11,7 +11,155 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <!-- <h1>HTML Form</h1> -->
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
+      <fieldset class="fieldset">
+        <legend>Personal information</legend>
+        <div>
+          <label for="lname">Surname:</label>
+          <input
+          class="input"
+          type="text"
+          id="lname"
+          name="lastName"
+          placeholder="Doe"
+          autocomplete="off"
+          required
+          >
+        </div>
+        <div>
+          <label for="fname">Name:</label>
+          <input
+          class="input"
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="John"
+          autocomplete="off"
+          required
+          >
+        </div>
+        <div>
+          <label for="age">How old are You? </label>
+          <input
+            class="input"
+            type="number"
+            id="age"
+            name="age"
+            placeholder="12"
+            autocomplete="off">
+        </div>
+        <div>
+          <label for="birthDate">Full date of birth: </label>
+          <input
+            class="input"
+            type="date"
+            id="birthDate"
+            name="birthDate"
+            autocomplete="off">
+        </div>
+        <div>
+          <label for="terms">I accept the Terms and Conditions: </label>
+          <input
+            class="input"
+            type="checkbox"
+            id="terms"
+            name="terms"
+            required
+            >
+        </div>
+      </fieldset>
+      <fieldset class="fieldset">
+        <legend>Registration</legend>
+        <div>
+          <label for="mail">Your e-mail</label>
+          <input
+          class="input"
+          type="email"
+          id="mail"
+          name="email"
+          placeholder="email@example.com"
+          autocomplete="off"
+          required
+          >
+        </div>
+        <div>
+          <label for="passwd">Your password </label>
+          <input
+          class="input"
+          type="password"
+          id="passwd"
+          name="password"
+          placeholder="6-18 chars"
+          autocomplete="off"
+          minlength="6"
+          maxlength="18"
+          required
+          >
+        </div>
+      </fieldset>
+      <fieldset class="fieldset">
+        <legend>An interesting fact about you!</legend>
+        <div>
+          <label>Do you love cats?
+            <input
+            class="input"
+            type="radio"
+            name="catRadio"
+            value="Yes"
+            >
+            Yes!
+            <input
+            class="input"
+            type="radio"
+            name="catRadio"
+            value="No"
+            >
+            No!
+          </label>
+        </div>
+        <div>
+          <label for="favColor">What is your favorite color? </label>
+          <input
+            class="input"
+            type="color"
+            id="favColor"
+            name="favColor"
+            >
+        </div>
+        <div>
+          <label for="bedTime">Your password </label>
+          <input
+          class="input"
+          type="time"
+          id="bedTime"
+          name="bedTime"
+          >
+        </div>
+      </fieldset>
+      <fieldset class="fieldset">
+        <legend>Additional info:</legend>
+        <div>
+          <label for="addComments">Additional comments:</label>
+          <textarea
+          class="input"
+          name="addComments"
+          id="addComments"
+          autocomplete="off"
+       ></textarea>
+        </div>
+        <div>
+          <label for="drink">Would you recommend us?</label>
+          <select name="drink">
+            <option value="yesRecommendation">yes</option>
+            <option value="noRecommendation">no</option>
+          </select>
+        </div>
+      </fieldset>
+      <div>
+        <button type="submit">Submit!</button>
+      </div>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
