@@ -11,7 +11,148 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" class="list"
+    method="POST"
+    >
+      <fieldset>
+        <legend>Personal information</legend>
+        
+        <div>
+          <label for="surname">Surname</label>
+          <input
+          type="text" name="surname"
+          id="surname" autocomplete="off"
+          >
+        </div>
+
+        <div>
+          <label for="name">Name</label>
+          <input
+          type="text" name="name"
+          id="name" autocomplete="off"
+          >
+        </div>
+
+        <div>
+          <label for="birth-date">Full date of birth</label>
+          <input
+          type="date" name="birthDate"
+          id="birth-date" placeholder="mm/dd/yyyy"
+          >
+        </div>
+
+        <div>
+          <label for="age">How old are You?</label>
+          <input
+            type="number" name="age"
+            id="age" value="12"
+            min="1" max="100"
+            >
+        </div>
+
+        <div>
+          <label for="agreement">I accept the term of the agreement</label>
+          <input
+          type="checkbox" name="agreement" 
+          id="agreement" value="yes"
+          >
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Registration</legend>
+        <div>
+          <label for="email">E-mail</label>
+          <input
+          type="email" name="email"
+          id="email" placeholder="email@example.com"
+          required
+          >
+        </div>
+
+        <div>
+          <label for="password">Password</label>
+          <input
+          type="password" name="password"
+          id="password" minlength="8"
+          maxlength="20" required
+          >
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+        <div>
+          <span>Do you love cats? </span>
+          <input
+          type="radio" name="loveCats"
+          id="love-cats-yes"
+          value="yes"
+          >
+          <label for="love-cats-yes">Yes</label>
+          <input
+          type="radio" name="loveCats"
+          id="love-cats-no" value="yes"
+          >
+          <label for="love-cats-no">No</label>
+        </div>
+
+        <div>
+          <label for="color">What is your favorite color?</label>
+          <input
+          type="color" name="color"
+          id="color"
+          >
+        </div>
+
+        <div>
+          <label for="bed-time">What time do you go to bed?</label>
+          <input
+          type="time" name="bedTime"
+          id="bed-time"
+          >
+        </div>
+
+        <div>
+          <label for="car-brands">What are your favorite brand of cars?</label>
+          <select
+          name="carBrands" id="car-brands"
+          multiple
+          >
+            <option value="bmw" selected>BMW</option>
+            <option value="audi">Audi</option>
+            <option value="porsche">porsche</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="work-rate">How do you rate our work?</label>
+          <input
+          type="range" name="workRate"
+          id="work-rate" min="1"
+          max="10" value="0"
+          >
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Additional info</legend>
+        <div>
+          <label for="comments">Comments</label>
+          <textarea
+          autocomplete="false" name="comments"
+          id="comments" cols="20"
+          rows="2"
+         ></textarea>
+        </div>
+
+        <div>
+          <label for="recommendation">Would you recommend us?</label>
+          <select name="recommended" id="recommendation">
+            <option value="yes" selected>Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
