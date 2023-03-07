@@ -13,10 +13,14 @@
   <body>
     <script type="text/javascript" src="./main.js"></script>
 
-    <form>
-      <fieldset>
-        <legend class="info">Personal information</legend>
-        <label class="form-filed">
+    <form 
+      name="myform"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
+      method="get"
+    >
+      <fieldset class="form-filed">
+        <legend>Personal information</legend>
+        <label>
           Usarname:
           <input 
             class="data"
@@ -26,7 +30,7 @@
           >
         </label>
 
-        <label class="form-filed">
+        <label>
           Name
           <input 
             class="data"
@@ -36,7 +40,7 @@
           >
         </label>
 
-        <label class="form-filed">
+        <label>
           How old are you?
           <input
             class="data" 
@@ -48,7 +52,7 @@
           >
         </label>
 
-        <label class="form-filed">
+        <label>
           Full date of birth:
           <input
             class="data" 
@@ -57,7 +61,7 @@
           >
         </label>
           
-        <label class="form-filed">
+        <label>
           I accept the term of the agreement
           <input 
             class="data"
@@ -67,9 +71,9 @@
         </label>
       </fieldset>
 
-      <fieldset>
-        <legend class="info">Registretion</legend>
-        <label class="form-filed">
+      <fieldset class="form-filed">
+        <legend>Registretion</legend>
+        <label>
           E-mail:
           <input 
             class="data"
@@ -80,7 +84,7 @@
           >
         </label>
 
-        <label class="form-filed">
+        <label>
           Password:
           <input
             class="data" 
@@ -93,9 +97,9 @@
         </label>
       </fieldset>
 
-      <fieldset>
-        <legend class="info">An interesting fact about you!</legend>
-        <div class="form-filed">
+      <fieldset class="form-filed">
+        <legend>An interesting fact about you!</legend>
+        <div>
           Do you love cats?
           <label>
             <input
@@ -115,7 +119,7 @@
           </label>
         </div>
 
-        <label class="form-filed">
+        <label>
           What is your faforite color?
           <input
             class="data" 
@@ -124,7 +128,7 @@
           >
         </label>
           
-        <div class="form-filed">
+        <div>
           What time do you go to bed?
           <input
             class="data"
@@ -133,7 +137,7 @@
           >
         </div>
 
-        <div class="form-filed">
+        <div>
           What are your favorite brand of cars?
           <select 
             name="question-car" 
@@ -145,7 +149,7 @@
           </select>
         </div>
 
-        <div class="form-filed">
+        <div>
           How do you rate our work?
           <input
             class="data" 
@@ -155,14 +159,14 @@
         </div>
       </fieldset>
 
-      <fieldset>
-        <legend class="info">Additional info:</legend>
-        <label class="form-filed">
+      <fieldset class="form-filed">
+        <legend>Additional info:</legend>
+        <label>
           Comments:
           <textarea name="comments"></textarea>
         </label>
 
-        <div class="form-filed">
+        <div>
           Would you recommend us?
           <select name="question-car">
             <option>Yes</option>
