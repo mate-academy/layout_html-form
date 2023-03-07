@@ -2,8 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
+    <meta name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,7 +10,168 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <!-- <h1>HTML Form</h1> -->
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+      <!-- test setup <form action="" method="get"> -->
+      
+      <!-- Fill in the the group field "Personal information" -->
+      <fieldset class="form-fieldset">
+        <legend>Personal information</legend>
+        <label class="form-field">
+        Surname:
+          <input 
+            type="text" 
+            name="surname" 
+            class="field" 
+            autocomplete="off"
+          >
+        </label>
+        <label class="form-field">
+          Name:
+          <input 
+            type="text" 
+            name="name" 
+            class="field" 
+            autocomplete="off"
+          >
+        </label>
+        <label class="form-field">
+          How old are You?
+          <input 
+            type="number" 
+            name="age" 
+            class="field" 
+            value="12" 
+            min="1" 
+            max="100"
+          >
+        </label>
+        <label class="form-field">
+          Full date of birth:
+          <input 
+            type="date" 
+            name="dateOfBirth" 
+            class="field"
+          >
+        </label>
+        <label class="form-field">
+          I accept the term of the agreement
+          <input 
+            type="checkbox" 
+            name="accept" 
+            required
+          >
+        </label>
+      </fieldset>
+
+      <!-- Fill in the group field "Registration" -->
+      <fieldset class="form-fieldset">
+        <legend>Registration</legend>
+        <label class="form-field">
+          E-mail:
+          <input 
+            type="email" 
+            name="email" 
+            class="field" 
+            placeholder="email@example.com" 
+            required
+          >
+        </label>
+        <label class="form-field">
+          Password:
+          <input 
+            type="password" 
+            name="password" 
+            class="field" 
+            required 
+            minlength="5" 
+            maxlength="24"
+          >
+        </label>
+      </fieldset>
+
+      <!-- Fill in the group field "An interesting fact about you!" -->
+      <fieldset class="form-fieldset">
+        <legend>An interesting fact about you!</legend>
+        <div class="form-field">
+          Do you love cats?
+          <label>
+            <input 
+              type="radio" 
+              name="loveCats" 
+              class="field" 
+              value="y"
+            >
+            Yes
+          </label>
+          <label>
+            <input 
+              type="radio" 
+              name="loveCats" 
+              class="field" 
+              value="n"
+            >
+            No
+          </label>
+        </div>
+        <label class="form-field">
+          What is your favorite color?
+          <input 
+            type="color" 
+            name="color" 
+            class="field"
+          >
+        </label>
+        <label class="form-field">
+          What time do you go to bed?
+          <input 
+            type="time" 
+            name="time" 
+            class="field"
+          >
+        </label>
+        <label class="form-field">
+          What is your favorite brand of cars?
+          <select name="brandCar" multiple>
+            <option value="bmv">BMV</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </label>
+        <label class="form-field">
+          How do you rate our work?
+          <input 
+            type="range" 
+            name="rate" 
+            class="field" 
+            min="0" 
+            max="20" 
+            value="0"
+            step="2"
+          >
+        </label>
+      </fieldset>
+
+      <!-- Fill in the group field "An interesting fact about you!" -->
+      <fieldset class="form-fieldset">
+        <legend>Additional info:</legend>
+        <label class="form-field">
+          Comments:
+          <textarea name="feedback"></textarea>
+        </label>
+        <label class="form-field">
+          Would you recommend us?
+          <select name="recommend">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+          <!-- <input type="text" name="recommend" class="field"> -->
+        </label>
+      </fieldset>
+
+      <!-- Send the data form -->
+      <button type="submit" class="form-button">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
