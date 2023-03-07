@@ -1,1 +1,8 @@
 /* styles go here */
+.div__configuration {
+  margin-bottom: 10px;
+}
+
+.fieldset__configuration {
+  margin-bottom: 20px;
+}
