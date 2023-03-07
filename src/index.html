@@ -18,66 +18,62 @@
     >
       <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <div>
+        <div class="input">
           <label for="lname">Surname:</label>
           <input
-            class="input"
             type="text"
             id="lname"
             name="lastName"
-            placeholder="Doe"
-            autocomplete="off"
-            required
-            >
-        </div>
-        <div>
-          <label for="fname">Name:</label>
-          <input
-            class="input"
-            type="text"
-            id="fname"
-            name="firstname"
-            placeholder="John"
             autocomplete="off"
             required
           >
         </div>
-        <div>
+        <div class="input">
+          <label for="fname">Name:</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            autocomplete="off"
+            required
+          >
+        </div>
+        <div class="input">
           <label for="age">How old are You? </label>
           <input
-            class="input"
             type="number"
             id="age"
             name="age"
-            placeholder="12"
-            autocomplete="off">
+            value="12"
+            autocomplete="off"
+            min="1"
+            max="100"
+          >
         </div>
-        <div>
+        <div class="input">
           <label for="birthDate">Full date of birth: </label>
           <input
-            class="input"
             type="date"
             id="birthDate"
             name="birthDate"
-            autocomplete="off">
+            autocomplete="off"
+          >
         </div>
-        <div>
-          <label for="terms">I accept the Terms and Conditions: </label>
+        <div class="input">
+          <label for="terms">I accept the term of the agreement </label>
           <input
-            class="input"
             type="checkbox"
             id="terms"
             name="terms"
             required
-            >
+          >
         </div>
       </fieldset>
       <fieldset class="fieldset">
         <legend>Registration</legend>
-        <div>
-          <label for="mail">Your e-mail</label>
+        <div class="input">
+          <label for="mail">E-mail:</label>
           <input
-            class="input"
             type="email"
             id="mail"
             name="email"
@@ -86,14 +82,12 @@
             required
           >
         </div>
-        <div>
-          <label for="passwd">Your password </label>
+        <div class="input">
+          <label for="passwd">Password:</label>
           <input
-            class="input"
             type="password"
             id="passwd"
             name="password"
-            placeholder="6-18 chars"
             autocomplete="off"
             minlength="6"
             maxlength="18"
@@ -103,43 +97,39 @@
       </fieldset>
       <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
-        <div>
+        <div class="input">
           <label>Do you love cats?
             <input
-              class="input"
               type="radio"
               name="catRadio"
               value="Yes"
             >
-            Yes!
+            Yes
             <input
-              class="input"
               type="radio"
               name="catRadio"
               value="No"
             >
-            No!
+            No
           </label>
         </div>
-        <div>
+        <div class="input">
           <label for="favColor">What is your favorite color? </label>
           <input
-            class="input"
             type="color"
             id="favColor"
             name="favColor"
-            >
+          >
         </div>
-        <div>
+        <div class="input">
           <label for="bedTime">What time do you go to bed? </label>
           <input
-            class="input"
             type="time"
             id="bedTime"
             name="bedTime"
           >
         </div>
-        <div>
+        <div class="input">
           <label for="carLove">What are you favorite brands of cars?
             <select name="carLove" multiple>
               <option value="bmwFan">BMW</option>
@@ -149,10 +139,9 @@
             </select>
           </label>
         </div>
-        <div>
+        <div class="input">
           <label for="workRate">How do you rate our work? </label>
           <input
-            class="input"
             type="range"
             id="workRate"
             name="workRate"
@@ -163,16 +152,14 @@
       </fieldset>
       <fieldset class="fieldset">
         <legend>Additional info:</legend>
-        <div>
-          <label for="addComments">Additional comments:</label>
-          <textarea
-            class="input"
-            name="addComments"
+        <div class="input">
+          <label for="addComments">Comments:</label>
+          <textarea            name="addComments"
             id="addComments"
             autocomplete="off"
-       ></textarea>
+         ></textarea>
         </div>
-        <div>
+        <div class="input">
           <label for="drink">Would you recommend us?</label>
           <select name="drink">
             <option value="yesRecommendation">yes</option>
@@ -180,8 +167,8 @@
           </select>
         </div>
       </fieldset>
-      <div>
-        <button type="submit">Submit!</button>
+      <div class="input">
+        <button type="submit">Submit</button>
       </div>
     </form>
     <script type="text/javascript" src="./main.js"></script>
