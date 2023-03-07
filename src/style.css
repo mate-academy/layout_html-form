@@ -1,1 +1,7 @@
-/* styles go here */
+.lineSpacing > :not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.fieldset {
+  margin-top: 2px;
+}
