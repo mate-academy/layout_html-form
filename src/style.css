@@ -1,4 +1,4 @@
-.lineSpacing div:not(:last-child) {
+.lineSpacing > :not(:last-child) {
   margin-bottom: 10px;
 }
 
