@@ -24,8 +24,8 @@
       <fieldset class="fieldset">
         <legend>Personal information</legend>
 
-        <label class="formElement" for="surname">
-          Surname:
+        <div class="formElement">
+          <label for="surname">Surname:</label>
           <input
             type="text"
             autocomplete="off"
@@ -33,10 +33,10 @@
             id="surname"
             required
           >
-        </label>
-
-        <label class="formElement" for="name">
-          Name:
+        </div>
+        
+        <div class="formElement">
+          <label for="name">Name:</label>
           <input 
             type="text"
             autocomplete="off"
@@ -44,10 +44,10 @@
             id="name"
             required
           >
-        </label>
+        </div>
         
-        <label class="formElement" for="age">
-          How old are You?
+        <div class="formElement">
+          <label for="age">How old are You?</label>
           <input 
             type="number"
             min="1"
@@ -57,33 +57,36 @@
             id="age"
             required
           >
-        </label>
-
-        <label class="formElement" for="birthsday">
-          Full date of birth:
+        </div>
+        
+        <div class="formElement">
+          <label for="birthsday">Full date of birth:</label>
           <input 
             type="date"
             name="birthsday"
             id="birthsday"
           >
-        </label>
-
-        <label class="formElement" for="agreement">
-          I accept the term of the agreement
+        </div>
+       
+        <div class="formElement">
+          <label for="agreement">
+            I accept the term of the agreement
+          </label>
           <input 
             type="checkbox"
             name="agreement"
             id="agreement"
             required
           >
-        </label>
+        </div>
+        
       </fieldset>
 
       <fieldset class="fieldset">
         <legend>Registration</legend>
 
-        <label class="formElement" for="email">
-          E-mail:
+        <div class="formElement">
+          <label for="email">E-mail:</label>
           <input 
             type="email"
             autocomplete="off"
@@ -91,16 +94,17 @@
             id="email"
             placeholder="email@example.com"
           >
-        </label>
+        </div>
         
-        <label class="formElement" for="password">
-          Password:
+        <div class="formElement">
+          <label for="password">Password:</label>     
           <input 
             type="password"
             name="password"
             id="password"
           >
-        </label>     
+        </div>
+        
       </fieldset>
 
       <fieldset class="fieldset">
@@ -130,27 +134,33 @@
           </label>
         </div>
 
-        <label class="formElement" for="favColor">
-          What is your favorite color?
+        <div class="formElement">
+          <label for="favColor">
+            What is your favorite color?
+          </label>
           <input 
             type="color"
             name="favColor"
             id="favColor"
           >
-        </label>
-
-        <label class="formElement" for="bedTime">
-          What time do you go to bed?
+        </div>
+        
+        <div class="formElement">
+          <label for="bedTime">
+            What time do you go to bed?
+          </label>
           <input 
             type="time"
             name="bedTime"
             id="bedTime"
             step="2"
           >
-        </label>
-
-        <label class="formElement" for="favCar">
-          What are your favorite brand of cars?
+        </div>
+        
+        <div class="formElement">
+          <label for="favCar">
+            What are your favorite brand of cars?
+          </label>
           <select 
             multiple
             name="fav-car"
@@ -160,10 +170,12 @@
             <option value="audi">Audi</option>
             <option value="lada">Lada</option>
           </select>
-        </label>
-
-        <label class="formElement" for="workRating">
-          How do you rate our work?
+        </div>
+        
+        <div class="formElement">
+          <label for="workRating">
+            How do you rate our work?
+          </label>
           <input 
             type="range"
             name="workRating"
@@ -172,13 +184,15 @@
             max="10"
             value="0"
           >
-        </label>
+        </div>
+        
       </fieldset>
       <fieldset class="fieldset">
         <legend>Additional info:</legend>
 
-        <label class="formElement" for="additionalInfo">
-          Comments:
+        <div class="formElement">
+          <label for="additionalInfo">Comments:</label>
+
           <textarea
             autocomplete="off"
             name="additionalInfo"
@@ -186,16 +200,17 @@
             minlength="5"
             maxlength="200"
          ></textarea>
-        </label>
-
-        <label class="formElement" for="recommendUs">
-          Would you recommend us?
+        </div>
+        
+        <div class="formElement">
+          <label for="recommendUs">Would you recommend us?</label>
           <select name="recommendUs" id="recommendUs"
           >
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
-        </label>
+        </div>
+        
 
       </fieldset>
       <button type="submit">Submit</button>
