@@ -1,7 +1,7 @@
-.inside {
+.lineSpacing div:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.fieldset1 {
+.fieldset {
   margin-top: 2px;
 }
