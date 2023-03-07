@@ -1,1 +1,13 @@
-/* styles go here */
+/* stylelint-disable indentation */
+body {
+  padding: 10px;
+}
+
+.line__input {
+  display: block;
+  margin: 10px 0;
+}
+
+.block_input {
+ margin: 25px 0;
+ }
