@@ -1,7 +1,7 @@
 .list fieldset {
-    margin-bottom: 20px;
-  }
-  
-  .list fieldset div:not(:last-of-type) {
-    margin-bottom: 10px;
-  }
+  margin-bottom: 20px;
+}
+
+.list fieldset div:not(:last-of-type) {
+  margin-bottom: 10px;
+}
