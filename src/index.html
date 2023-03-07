@@ -17,11 +17,11 @@
       method="post"
       name="html-form"
     >
-      <fieldset>
+      <fieldset class="fset">
         <legend>
           Personal information
         </legend>
-        <div>
+        <div class="field">
           <label for="surname">Surname:</label>
           <input
             type="text"
@@ -30,7 +30,7 @@
             required
           >
         </div>
-        <div>
+        <div class="field">
           <label for="firstname">Name:</label>
           <input
             type="text"
@@ -39,7 +39,7 @@
             required
           >
         </div>
-        <div>
+        <div class="field">
           <label for="age">How old are You?</label>
           <input
             type="number"
@@ -50,7 +50,7 @@
             required
           >
         </div>
-        <div>
+        <div class="field">
           <label for="bdate">Full date of birth:</label>
           <input
             type="date"
@@ -58,7 +58,7 @@
             required
           >
         </div>
-        <div>
+        <div class="field">
           <label for="agreement">I accept the term of the agreement</label>
           <input
             type="checkbox"
@@ -67,11 +67,11 @@
           >
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="fset">
         <legend>
           Registration
         </legend>
-        <div>
+        <div class="field">
           <label for="email">E-mail:</label>
           <input
             type="email"
@@ -80,7 +80,7 @@
             required
           >
         </div>
-        <div>
+        <div class="field">
           <label for="passw">Password:</label>
           <input
             type="password"
@@ -92,18 +92,18 @@
           >
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="fset">
         <legend>
           An interesting fact about you!
         </legend>
-        <div>
+        <div class="field">
           <label for="cats">Do you love cats?</label>
           <input name="cats" type="radio">
           <label>Yes</label>
           <input name="nocats" type="radio">
           <label>No</label>
         </div>
-        <div>
+        <div class="field">
           <label for="color">What is your favorite color?</label>
           <input
             type="color"
@@ -111,7 +111,7 @@
             required
           >
         </div>
-        <div>
+        <div class="field">
           <label for="bedtime">What time do you go to bed?</label>
           <input
             type="time"
@@ -120,7 +120,7 @@
             required
           >
         </div>
-        <div>
+        <div class="field">
           <label for="cars">What are your favorite brand of cars?</label>
           <select name="cars" multiple>
             <option value="BMW">BMW</option>
@@ -129,7 +129,7 @@
             <option value=" " disabled></option>
           </select>
         </div>
-        <div>
+        <div class="field">
           <label for="rating">How do you rate our work? </label>
           <input
             type="range"
@@ -137,11 +137,11 @@
           >
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="fset">
         <legend>
           Additional info
         </legend>
-        <div>
+        <div class="field">
           <label for="comments">Comments:</label>
           <textarea
             name="comments"
@@ -150,7 +150,7 @@
             cols="20"
          ></textarea>
         </div>
-        <div>
+        <div class="field">
           <label for="recommend">Would you recommend us?</label>
           <select name="recommend">
             <option value="recoyes">yes</option>
@@ -158,7 +158,7 @@
           </select>
         </div>
       </fieldset>
-      <button type="submit">Submit</button>
+      <button type="submit" class="but">Submit</button>
     </form>
   </body>
 </html>
