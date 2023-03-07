@@ -12,18 +12,18 @@
   </head>
   <body>
     <script type="text/javascript" src="./main.js"></script>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+    >
       <fieldset class="fieldset__configuration">
-        <legend>
-          Personal information
-        </legend>
+        <legend>Personal information</legend>
 
         <div class="div__configuration">
           <label for="users-surname">Surname:</label>
           <input 
             type="text" 
-            id="users-surname" 
-            name="users-surname"
+            id="usersSurname" 
+            name="usersSurname"
             required
           >
         </div>
@@ -32,8 +32,8 @@
           <label for="users-name">Name:</label>
           <input 
             type="text" 
-            id="users-name" 
-            name="users-name"
+            id="usersName" 
+            name="usersName"
             required
           >
         </div>
@@ -42,8 +42,8 @@
           <label for="users-age">How old are you?</label>
           <input 
             type="number" 
-            id="users-age" 
-            name="users-age" 
+            id="usersAge" 
+            name="usersAge" 
             value="12"
             min="1" 
             max="100"
@@ -52,11 +52,11 @@
         </div>
 
         <div class="div__configuration">
-          <label for="users-birth-date">Full date of birth:</label>
+          <label for="usersBirthDate">Full date of birth:</label>
           <input 
             type="date" 
-            id="users-birth-date" 
-            name="users-birth-date" 
+            id="usersBirthDate" 
+            name="usersBirthDate" 
             placeholder="mm/dd/yyyy"
             required
           >
@@ -106,14 +106,14 @@
           <input 
             type="radio" 
             id="Yes" 
-            name="cat-lover" 
+            name="catLover" 
             value="Yes"
           >
           <label for="Yes">Yes</label>
           <input 
             type="radio" 
             id="No" 
-            name="cat-lover" 
+            name="catLover" 
             value="No"
           >
           <label for="No">No</label>
@@ -132,8 +132,8 @@
           <label for="bed-time">What time do you go to bed?</label>
           <input 
             type="time" 
-            id="bed-time"
-            name="bed-time" 
+            id="bedtime"
+            name="bedtime" 
             step="1"
           >
         </div>
@@ -152,11 +152,11 @@
         </div>
 
         <div>
-          <label for="work-rate">How do you rate your work?</label>
+          <label for="workRate">How do you rate your work?</label>
           <input 
             type="range" 
-            id="work-rate" 
-            name="work-rate" 
+            id="workRate" 
+            name="workRate" 
             minlength="0" 
             maxlength="10"
           >
