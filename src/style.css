@@ -1,7 +1,7 @@
-.form fieldset {
+.form__section {
   margin-bottom: 20px;
 }
 
-.form fieldset div:not(:last-of-type) {
+.form__section_field:not(:last-child) {
   margin-bottom: 10px;
 }
