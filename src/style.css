@@ -1,15 +1,10 @@
-html {
-  margin: 0;
-  font-family: "Times New Roman", Times, serif;
-}
-
-fieldset {
-  margin-top: 0;
+.fieldset {
   margin-bottom: 20px;
 }
 
-.formula {
+.form {
   margin-bottom: 10px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 fieldset :last-child {

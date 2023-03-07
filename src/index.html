@@ -16,9 +16,9 @@
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="POST"
       >
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <div class="formula">
+        <div class="form">
           <label for="surname">Surname:</label>
           <input
             type="text"
@@ -30,7 +30,7 @@
             id="surname"
           >
         </div>
-        <div class="formula">
+        <div class="form">
           <label for="name">Name:</label>
           <input
             type="text"
@@ -39,7 +39,7 @@
             autocomplete="off"
           >
         </div>
-        <div class="formula">
+        <div class="form">
           <label for="age"> How old are You?</label>
           <input
             type="number"
@@ -52,11 +52,13 @@
           <label name="age">
           </label>
         </div>
-        <div class="formula">
-          Full date of birth:
+        <div class="form">
+          <label for="birth">Full date of birth:</label>
           <input
+            id="birth"
             type="date"
             name="birth"
+            required
           >
         </div>
         <div>
@@ -70,9 +72,9 @@
           </label>
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Registration</legend>
-        <div class="formula">
+        <div class="form">
           <label for="email">E-mail:</label>
           <input
             type="email"
@@ -93,9 +95,9 @@
           >
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
-        <div class="formula">
+        <div class="form">
           <span>Do you love cats?</span>
           <label>
             <input
@@ -114,7 +116,7 @@
           No
           </label>
         </div>
-        <div class="formula">
+        <div class="form">
           <label for="color">What is your favvorite color?</label>
           <input
             type="color"
@@ -123,7 +125,7 @@
             id="color"
           >
         </div>
-        <div class="formula">
+        <div class="form">
           <label for="bed">What time do you go to bed?</label>
           <input
             type="time"
@@ -131,7 +133,7 @@
             id="bed"
           >
         </div>
-        <div class="formula">
+        <div class="form">
           <label for="car">What are your favorite brand of cars?</label>
           <select
             name="auto"
@@ -154,9 +156,9 @@
           >
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Additional info:</legend>
-        <div class="formula">
+        <div class="form">
           <label for="comments">Comments:</label>
           <textarea
             id="comments"
@@ -165,7 +167,7 @@
             rows="2"
          ></textarea>
         </div>
-        <div class="formula">
+        <div class="form">
           <label for="recommend">Would you recommend us?</label>
           <select id="recommend">
             <option
@@ -182,7 +184,7 @@
           </select>
         </div>
       </fieldset>
-      <div class="formula">
+      <div class="form">
         <button
           form ="form-data"
           type="submit"
