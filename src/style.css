@@ -1,40 +1,14 @@
-.box-field {
-  padding: 5px 9px 3px;
-}
-
 .form-field {
-  padding: 2px;
-  margin: 0 1px 5px;
   display: block;
+  margin-bottom: 10px;
 }
 
-.field--fact {
-  margin: 0 1px 5px;
-}
-
-.legend {
-  margin: 0 4px;
-  /* font-weight: bold; */
-  /* padding: 0 10px; */
-}
-
-.input {
-  text-align: justify;
-  border: 1px solid #999;
-  position: relative;
-  margin: 0 auto;
-  padding: 2px;
-}
-
-.form {
+.box-field {
+  padding: 5.6px 12px 0;
   margin-bottom: 20px;
+
 }
 
-.label {
-  position: initial;
-}
-
-.rec {
-  padding-top: 10px;
-  display: block;
+.button {
+  margin: 10px 0;
 }

@@ -41,13 +41,13 @@
         <label class="form-field">
           How old are You?
           <input 
-            class="input"
+            class="input input--age"
             type="number" 
             name="age" 
-            minlength="1"
-            maxlength="100"
+            min="1"
+            max="100"
+            value="12"
             required 
-            placeholder="12"
           >
         </label>
         <label class="form-field">
@@ -65,7 +65,7 @@
             class="label"
             for="terms-and-conditions"
           >
-            I accept the term of the agreement:
+            I accept the term of the agreement
           </label>
           <input
             class="input" 
@@ -76,12 +76,7 @@
           >
         </label>
       </fieldset>
-    </form>
-    <form 
-      class="form" 
-      action="http://localhost:5500/api" 
-      method="post"
-    >
+
       <fieldset class="box-field">
         <legend class="legend">Registration</legend>
         <label class="form-field">
@@ -107,37 +102,31 @@
           >
         </label>
       </fieldset>
-    </form>
-      
-    <form 
-      class="form" 
-      action="http://localhost:5500/api" 
-      method="post"
-    >
+
       <fieldset class="box-field">
         <legend class="legend">An interesting fact about you!</legend>
-        <label>
+        <label class="form-field field--fact">
           Do you love cats?
           <input 
-            class="input"
+            class="radiobt"
             type="radio" 
             id="radioButton1" 
             name="cats"
           >
           <label 
-            class="label" 
+            class="radiobt" 
             for="radioButton1"
           >
             Yes
           </label>
           <input 
-            class="input"
+            class="radiobt"
             type="radio" 
             id="radioButton2" 
             name="cats"
           >
           <label 
-            class="label" 
+            class="radiobt" 
             for="radioButton2"
           >
             No
@@ -159,10 +148,11 @@
             class="input"
             type="time" 
             name="bedtime"
+            step="1"
             required
           >
         </label>
-        <label class="form-field field--fact">What are your favorite brands of cars?
+        <label class="form-field field--fact">What are your favorite brand of cars?
           <select 
             name="cars" 
             required
@@ -185,19 +175,13 @@
           >
         </label>
       </fieldset>
-    </form>
 
-    <form 
-      class="form" 
-      action="http://localhost:5500/api" 
-      method="post"
-    >
       <fieldset class="box-field">
         <legend class="legend">Additional info:</legend>
-        <label class="label">Comments:
+        <label class="form-field field--fact">Comments:
           <textarea name="Comments"></textarea>
         </label>
-        <label class="rec">Would you recommend us?
+        <label class="form-field field--fact">Would you recommend us?
           <select name="recommend">
             <option value="yes">yes</option>
             <option value="no">no</option>
@@ -205,14 +189,12 @@
         </label>
            
       </fieldset>
-    </form>
-    <form 
-      action=" https://mate-academy-form-lesson.herokuapp.com/create-application"
-    >
+      
       <button 
         class="button" 
         type="submit"
         name="submit_button"
+        action=" https://mate-academy-form-lesson.herokuapp.com/create-application"
       >
         Submit
       </button>
