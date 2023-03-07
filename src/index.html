@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width,
+       user-scalable=no,
+       initial-scale=1.0,
+       maximum-scale=1.0,
+       minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
@@ -12,11 +16,13 @@
   </head>
   <body>
     <script type="text/javascript" src="./main.js"></script>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="get">
-      <fieldset class="fieldsetConfig">
+    <form
+    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="get">
+      <fieldset class="fieldset__config">
         <legend>Personal information</legend>
 
-        <div class="divConfig">
+        <div class="div__config">
           <label for="surname">Surname:</label>
           <input
             type="text"
@@ -27,7 +33,7 @@
           >
         </div>
 
-        <div class="divConfig">
+        <div class="div__config">
           <label for="name">Name:</label>
           <input
             type="text"
@@ -38,7 +44,7 @@
           >
         </div>
 
-        <div class="divConfig">
+        <div class="div__config">
           <label for="old">How old are You?</label>
           <input
             type="number"
@@ -51,7 +57,7 @@
           >
         </div>
 
-        <div class="divConfig">
+        <div class="div__config">
           <label for="birthDate">Full date of birth:</label>
           <input
             type="date"
@@ -74,10 +80,10 @@
         </div>
       </fieldset>
 
-      <fieldset class="fieldsetConfig">
+      <fieldset class="fieldset__config">
         <legend>Registration</legend>
 
-        <div  class="divConfig">
+        <div  class="div__config">
           <label for="email">E-mail:</label>
           <input
             type="email"
@@ -104,10 +110,10 @@
 
       </fieldset>
 
-      <fieldset class="fieldsetConfig">
+      <fieldset class="fieldset__config">
         <legend>An interesting fact about you!</legend>
 
-        <div  class="divConfig">
+        <div  class="div__config">
           Do you love cats?
           <input
             type="radio"
@@ -125,7 +131,7 @@
           <label for="catN">No</label>
         </div>
 
-        <div  class="divConfig">
+        <div  class="div__config">
           <label for="color">What is your favorite color?</label>
           <input
             type="color"
@@ -134,7 +140,7 @@
           >
         </div>
 
-        <div  class="divConfig">
+        <div  class="div__config">
           <label for="time">What time do you go to bed?</label>
           <input
             type="time"
@@ -145,7 +151,7 @@
           >
         </div>
 
-        <div  class="divConfig">
+        <div  class="div__config">
           <label for="cars">What are your favourite brand of cars?</label>
           <select
           name="cars"
@@ -173,10 +179,10 @@
 
       </fieldset>
 
-      <fieldset class="fieldsetConfig">
+      <fieldset class="fieldset__config">
         <legend>Additional info:</legend>
 
-        <div  class="divConfig">
+        <div  class="div__config">
           <label for="comments">Comments:</label>
           <textarea
             id="comments"
