@@ -1,1 +1,11 @@
-/* styles go here */
+.group {
+  margin-bottom: 20px;
+}
+
+.entry {
+  margin-bottom: 10px;
+}
+
+.entry:last-child {
+  margin-bottom: 0;
+}
