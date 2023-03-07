@@ -7,3 +7,7 @@
   display: block;
   margin-bottom: 10px  ;
 }
+
+.form-field2 {
+  display: inline-block;
+}
