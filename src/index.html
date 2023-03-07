@@ -70,7 +70,7 @@
 
       <fieldset class="form-field">
         <legend>Registration</legend>
-        <div>
+        <div class="input-field">
           <label for="email">E-mail:
             <input
               type="email"
@@ -97,26 +97,28 @@
       <fieldset class="form-field">
         <legend>An interesting fact about you!</legend>
         <div class="input-field">
-          <label for="cats">Do you love cats?
-            <input type="radio"
-              name="love-cats"
-              value="yes"
-              id="yes"
+          <div class="input-field cats" >
+            <label for="cats">Do you love cats?
+              <input type="radio"
+                name="love-cats"
+                value="yes"
+                id="yes"
+              >
+            </label>
+          </div>
+          <div class="input-field cats">
+            <label for="yes">Yes</label>
+            <input
+            type="radio"
+            name="love-cats"
+            value="no"
+            id="no"
             >
-          </label>
-        </div>
-        <div class="input-field">
-          <label for="yes">Yes</label>
-          <input
-          type="radio"
-          name="love-cats"
-          value="no"
-          id="no"
-          >
-          <label for="no">No</label>
+            <label for="no">No</label>
+          </div>
         </div>
 
-        <div>
+        <div class="input-field">
           <label for="color">What is your favorite color?
             <input
               type="color"
@@ -131,7 +133,7 @@
             <input type="time" name="time">
           </label>
         </div>
-        <div>
+        <div class="input-field">
           <label for="cars">What are your favorite brand of cars?
             <select name="cars"
             id="cars"
@@ -143,7 +145,7 @@
             </select>
           </label>
         </div>
-        <div>
+        <div class="input-field">
           <label for="rate-work">How do you rate our work?
             <input
               type="range"
@@ -158,21 +160,23 @@
 
       <fieldset class="form-field">
         <legend>Additional info:</legend>
-        <div class="form-field">
-          <label for="comments">Comments:</label>
-          <textarea
-            name="comments"
-            id="comments"
-            cols="30"
-            rows="2"
-         ></textarea>
-        </div>
-        <div class="form-field">
-          <label for="recommend">Would you recommend us?</label>
-          <select name="recommend" id="recommend">
-            <option value="Yes" selected="Yes">Yes</option>
-            <option value="No">No</option>
-          </select>
+        <div class="input-field">
+          <div class="input-field">
+            <label for="comments">Comments:</label>
+            <textarea
+              name="comments"
+              id="comments"
+              cols="30"
+              rows="2"
+           ></textarea>
+          </div>
+          <div class="input-field">
+            <label for="recommend">Would you recommend us?</label>
+            <select name="recommend" id="recommend">
+              <option value="Yes" selected="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
         </div>
       </fieldset>
     </form>
