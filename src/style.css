@@ -1,14 +1,12 @@
 .fieldset {
-  box-sizing: border-box;
   margin-bottom: 20px;
 }
 
 .form-field {
-  box-sizing: border-box;
   margin-bottom: 10px;
   display: block;
 }
 
-.form-field:last-child {
+.fieldset > :last-child {
   margin-bottom: 0;
 }
