@@ -15,10 +15,10 @@
     <main>
       <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
 
-        <fieldset class="fielset1">
+        <fieldset class="fieldInput">
           <legend class="title1">Personal information</legend>
 
-          <div>
+          <div class="unit">
             <label for="surname">Surname:
             </label>
             <input type="text"
@@ -28,7 +28,7 @@
             >
           </div>
 
-          <div>
+          <div class="unit">
             <label for="fname">Name:
             </label>
             <input type="text" id="fname"
@@ -37,7 +37,7 @@
             >
           </div>
 
-          <div>
+          <div class="unit">
             <label for="age">How old are you?
             </label>
             <input type="number" id="age"
@@ -46,14 +46,14 @@
             >
           </div>
 
-          <div>
+          <div class="unit">
             <label for="fdata">Full date of birth</label>
             <input type="data" id="fdata"
             name="fdata"
             >
           </div>
 
-          <div>
+          <div class="unit">
             <label for="agreement">I accept the terms of agreement</label>
             <input type="checkbox" id="agreement"
             name="agreement"
@@ -61,17 +61,17 @@
           </div>
         </fieldset>
 
-        <fieldset class="fielset2">
+        <fieldset class="fieldInput">
           <legend>Registration</legend>
 
-          <div>
+          <div class="unit">
             <label for="email">E-mail</label>
             <input type="email" id="email"
             name="email" placeholder="email@example.com"
             >
           </div>
 
-          <div>
+          <div class="unit">
             <label for="password">Password
               <input type="text" id="password"
              name="password"autocomplete="off"
@@ -80,10 +80,10 @@
           </div>
         </fieldset>
 
-        <fieldset class="fielset3">
+        <fieldset class="fieldInput">
           <legend>An interesting fact about you</legend>
 
-          <div>
+          <div class="unit">
             Do you love cats?
             <label >
               Yes
@@ -98,28 +98,28 @@
             </label>
           </div>
 
-          <div>
+          <div class="unit">
             What is your favorit color?
             <input type="color" name="color"
             value="#fff"
             >
           </div>
 
-          <div>
+          <div class="unit">
             What time do you go to bed?
             <input type="time" name="time"
             >
           </div>
 
-          <div>
+          <div class="unit">
             What are your favorite brand of car ?
             <textarea name="brandOfCar"
              id="brandOfCar"
             cols="3" rows="3"
-            ></textarea>
+           ></textarea>
           </div>
 
-          <div>
+          <div class="unit">
             How do you rate our work?
             <input type="range" min="1"
              max="10"
@@ -127,10 +127,10 @@
           </div>
         </fieldset>
 
-        <fieldset class="fielset4">
+        <fieldset class="fieldInput">
           <legend>Additional info</legend>
 
-          <div>
+          <div class="unit">
             <label >
               Comments
               <textarea name="comments"
@@ -138,11 +138,11 @@
                id="comments"
                cols="20"
                 rows="2"
-              ></textarea>
+             ></textarea>
             </label>
           </div>
 
-          <div>
+          <div class="unit">
             <label >
               Would you recomends us?
               <select name="recomend" id="recomend">
