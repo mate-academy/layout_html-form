@@ -19,10 +19,6 @@
   margin-bottom: 0;
 }
 
-.form-field > input + .label {
-  display: inline;
-}
-
 .cats {
   display: inline;
 }
