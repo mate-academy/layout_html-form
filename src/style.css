@@ -1,1 +1,22 @@
 /* styles go here */
+
+.form-field {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-field-last {
+  display: block;
+  margin-bottom: 0;
+}
+
+.form-field-end {
+  display: block;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.form-fieldset {
+  display: block;
+  margin-bottom: 20px;
+}
