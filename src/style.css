@@ -1,1 +1,7 @@
-/* styles go here */
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.input-wrapper {
+  padding-bottom: 10px;
+}
