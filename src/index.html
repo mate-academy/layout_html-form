@@ -18,55 +18,58 @@
     >
       <fieldset>
 
-        <legend>Personal Information</legend>
+        <legend>Personal information</legend>
 
-        <label  for="surname">Surname:</label>
-        <input type="text" 
-          id="surname" 
-          name="surname" 
-          autocomplete="off" 
-          required
-        ><br>
+        <label class="form-field">
+          Surname:
+          <input type="text" 
+            name="surname" 
+            autocomplete="off" 
+            required
+          >
+        </label>
+        
 
-        <label for="name">Name:</label>
-        <input type="text" 
-          class="form-field" 
-          id="name" 
-          name="name" 
-          autocomplete="off" 
-          required
-        ><br>
+        <label class="form-field">
+          Name:
+          <input 
+            type="text"  
+            name="name" 
+            autocomplete="off" 
+            required
+          >
+        </label>
 
-        <label class="form-field" for="age">How old are You?:</label>
-        <input 
-          type="number" 
-          class="form-field"
-          id="age" 
-          name="age" 
-          min="1" 
-          max="100" 
-          value="12"
-          autocomplete="off" 
-          required
-        ><br>
+        <label class="form-field">
+          How old are You?
+          <input 
+            type="number" 
+            name="age" 
+            min="1" 
+            max="100" 
+            value="12"
+            autocomplete="off" 
+            required
+          >
+        </label>
 
-        <label for="date">Full date off birth:</label>
-        <input 
-          type="date" 
-          class="form-field"
-          id="date" 
-          name="date" 
-          required
-        ><br>
+        <label class="form-field">
+          Full date of birth:
+          <input 
+            type="date" 
+            name="date" 
+            required
+          >
+        </label>
 
-        <label for="terms-of-the-agreement">I accept the term of the agreement:</label>
-        <input 
-          type="checkbox" 
-          class="form-field"
-          name="terms" 
-          id="terms-of-the-agreement"
-          required
-        ><br>
+        <label>
+          I accept the term of the agreement
+          <input 
+            type="checkbox" 
+            name="terms" 
+            required
+          >
+        </label>
 
       </fieldset>
 
@@ -74,23 +77,26 @@
 
         <legend>Registration</legend>
 
-        <label  for="mail">E-mail:</label>
-        <input type="email" 
-          id="mail" 
-          name="email" 
-          placeholder="email@example.com"
-          autocomplete="off" 
-          required
-        ><br>
+        <label class="form-field">
+          E-mail:
+          <input 
+            type="email" 
+            name="email" 
+            placeholder="email@example.com"
+            autocomplete="off" 
+            required
+          >
+        </label>
 
-        <label for="pass">Password:</label>
-        <input type="password" 
-          class="form-field" 
-          id="pass" 
-          name="password" 
-          autocomplete="off" 
-          required
-        ><br>
+        <label>
+          Password:
+          <input 
+            type="password" 
+            name="password" 
+            autocomplete="off" 
+            required
+          >
+        </label>
 
       </fieldset>
 
@@ -98,8 +104,8 @@
 
         <legend>An interesting fact about you!</legend>
 
-        <div>
-          Do you love cats:
+        <div class="form-field">
+          Do you love cats?
 
           <label>
             <input 
@@ -120,75 +126,74 @@
           </label>
         </div>  
         
-        <label for="color">What is your favorite color?</label>
-        <input 
+        <label class="form-field">
+          What is your favorite color?
+          <input 
           type="color" 
-          class="form-field"
-          id="color" 
           name="color" 
           required
-        ><br>
+          >
+        </label>
+        
 
-        <label for="time">What time do you go to bed?</label>
-        <input 
+        <label class="form-field">
+          What time do you go to bed?
+          <input 
           type="time" 
-          class="form-field"
-          id="time" 
           name="bed" 
+          min="09:00" 
+          max="18:00"
           required
-        ><br>
-
-        <label>
+          >
+        </label>
+        
+        <label class="form-field" >
           What are your favorite brand of cars?
 
           <select 
             name="brand" 
-            class="form-field" 
             required 
-            multiple
-          >
+            multiple>
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
             <option value="lada">Lada</option>
           </select>
-        </label>
-        <br>
 
-        <label for="rate">How do you rate our work?</label>
-        <input 
-          type="range" 
-          class="form-field"
-          id="rate"
-          name="rate"
-          min="5"
-          max="50"
-        >
+        </label>
+
+        <label>
+          How do you rate our work?
+          <input 
+            type="range" 
+            name="rate"
+            min="5"
+            max="50"
+            value="25"
+          >
+        </label>
 
       </fieldset>
 
       <fieldset class="group">
 
-        <legend>Additional info</legend>
+        <legend>Additional info:</legend>
 
-        <label for="comment">Comments:</label>
-          
-        <textarea 
-          name="Comments" 
-          id="comment" 
-          cols="20" 
-          rows="3"
-       ></textarea>
-        <br>
+        <label class="form-field">
+          Comments:
+          <textarea 
+            name="Comments" 
+         ></textarea>
+        </label>
 
-        <label  for="recommend">Would you recommend us:</label>
-        <select 
-          name="recommend" 
-          class="form-field" 
-          id="recommend" 
-          required>
-          <option value="yes">yes</option>
-          <option value="no">no</option>
-        </select>
+        <label>
+          Would you recommend us?
+          <select 
+            name="recommend" 
+            required>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
 
       </fieldset>
 
