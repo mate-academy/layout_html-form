@@ -3,6 +3,6 @@
   margin-bottom: 20px;
 }
 
-.input {
+.form_field:not(:last-child) {
   margin-bottom: 10px;
 }
