@@ -1,1 +1,55 @@
 /* styles go here */
+
+.label {
+  display: inline-block;
+}
+
+.input {
+  margin-bottom: 10px;
+}
+
+.checkList_label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.additionary_label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* .input:last-child {
+  margin-bottom: 5px;
+} */
+
+.check_label {
+  display: inline-block;
+  margin-bottom: 3px;
+}
+
+.check {
+  display: inline;
+}
+
+.block {
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding-bottom: 3px;
+}
+
+.input.password {
+  margin-bottom: 7px;
+}
+
+.input.select {
+  margin-bottom: 0;
+}
+
+.range {
+  margin-bottom: 11px;
+}
+
+.recommend {
+  display: inline-block;
+  margin-bottom: 3.5px;
+}
