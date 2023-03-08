@@ -3,7 +3,7 @@
   margin-bottom: 20px;
 }
 
-.form-field > label {
+.form-field > .label {
   display: block;
 }
 
@@ -19,7 +19,7 @@
   margin-bottom: 0;
 }
 
-.form-field > input + label {
+.form-field > input + .label {
   display: inline;
 }
 
