@@ -56,8 +56,23 @@ it only if a certain value is specified from the start, or use placeholders.
 input could be activated by clicking on the corresponding label.
 
 8. [FUNCTIONAL] - Check the textarea behaviour - when you click on the textarea, 
-the cursor should appear on the beginning of the input.
+the cursor should appear in the beginning of the input.
+       <details>
+          <summary>BAD example</summary>
+            <img width="172" alt="image" src="https://user-images.githubusercontent.com/94261494/220734116-a5c8da79-68ca-49ac-b9c6-7303d774f7a1.png">
+        </details>
+        <details>
+          <summary>GOOD example</summary>
+            <img width="163" alt="image" src="https://user-images.githubusercontent.com/94261494/220747096-076e133e-e5f8-4de4-9fe0-9beaf40c9e53.png">
+        </details>
+ATTENTION!!! the closing tag should start on the level as opening tag (this is required to pass the html linter)
 
+Example:
+```
+ <textarea
+   class="textarea"
+></textarea>
+```
 9. [TESTS] - Remember, you need to add a certain distance BETWEEN inputs and
 BETWEEN blocks with inputs. It means that, for example, the last input in
 the group of inputs should not have a set bottom margin.
