@@ -11,7 +11,161 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      name="personalInfo"
+    >
+      <fieldset name="personalInfo" class="personal__info">
+        <legend>Personal information:</legend>
+        <label class = "personal__input" for="surname">Surname:
+          <input
+            name="userSurname"
+            id="surname"
+            type="text"
+            autocomplete="off"
+            required
+          >
+        </label>
+        <label class="personal__input" for="name">Name:
+          <input
+            name="userName"
+            id="name"
+            type="text"
+            autocomplete="off"
+            required
+          >
+        </label>
+        <label class="personal__input" for="age">How old are You?
+          <input
+            name="userAge"
+            type="number"
+            value="12"
+            id="age"
+            max="100"
+            min="1"
+            required
+          >
+        </label>
+        <label class="personal__input" for="birthDate">Full date of birth:
+          <input
+            name="userBirthDate"
+            type="date"
+            id="birthDate"
+            autocomplete="off"
+            required
+          >
+        </label>
+        <label for="privacy">I accept the term of the agreement
+          <input
+            name="userTerm"
+            type="checkbox"
+            id="privacy"
+            required
+          >
+        </label>
+      </fieldset>
+      <fieldset name = "register" class="personal__info">
+        <legend>Registration:</legend>
+        <label class="personal__input" for="email">E-mail:
+          <input
+            name="userEmail"
+            type="email"
+            placeholder="email@example.com"
+            id="email"
+            autocomplete="off"
+            required
+          >
+        </label>
+        <label for="pass">Password:
+          <input
+            name="userPass"
+            type="password"
+            id="pass"
+            autocomplete="off"
+            required
+          >
+        </label>
+      </fieldset>
+      <fieldset name="userFact" class="personal__info">
+        <legend>An interesting fact about you?</legend>
+        <div class="personal__input">
+          <label>Do you love cats?</label>
+          <label for="yes">
+            <input
+              class="input__cats"
+              type="radio"
+              name="cats"
+              value="yes"
+              id="yes"
+            >
+            Yes
+          </label>
+          <label for="no">
+            <input
+              class="input__cats"
+              type="radio"
+              name="cats"
+              value="no"
+              id="no"
+            >
+            No
+          </label>
+        </div>
+        <label class="personal__input" for="color">What is your favorite color?
+          <input type="color" id="color">
+        </label>
+        <label class="personal__input" for="time">What time do you go to bed?
+          <input
+            name="userSleep"
+            type="time"
+            id="time"
+            step="1"
+          >
+        </label>
+        <label class="personal__input" for="car">What are your favorite brands of car
+          <select
+            name="car"
+            id="car"
+            autocomplete="off"
+            multiple
+          >
+            <option>BMW</option>
+            <option>Audi</option>
+            <option>Lada</option>
+          </select>
+        </label>
+        <label for="rateOurWork">How do your rate our work?
+          <input
+            name="userRate"
+            type="range"
+            id="rateOurWork"
+            min="1"
+            max="5"
+            step="1"
+            value="0"
+          >
+        </label>
+      </fieldset>
+
+      <fieldset name="additInfo" class="personal__info">
+        <legend>Additional info:</legend>
+        <label class="personal__input" for="comment">
+          Comments
+          <textarea
+            name="comment"
+            id="comment"
+         ></textarea>
+        </label>
+        <label for="recomend">Would you recommend us?
+          <select name="recomend">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </label>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
