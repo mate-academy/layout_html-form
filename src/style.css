@@ -1,1 +1,17 @@
 /* styles go here */
+
+.field {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+}
+
+label:not(:last-child) {
+  padding-bottom: 10px;
+}
+
+.radio {
+  display: inline-block;
+}
