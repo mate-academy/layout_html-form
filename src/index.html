@@ -12,9 +12,10 @@
   </head>
   <body>
     <form>
-      <fieldset class="persInfo">
+      <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <label>
+
+        <label class="form-field">
           Surname:
           <input
             type="text"
@@ -23,9 +24,8 @@
             required
           >
         </label>
-        <br>
 
-        <label>
+        <label class="form-field">
           Name:
           <input
             class="input"
@@ -35,9 +35,8 @@
             required
           >
         </label>
-        <br>
 
-        <label>
+        <label class="form-field">
           How old are You?
           <input
             class="input"
@@ -49,9 +48,8 @@
             max="100"
           >
         </label>
-        <br>
 
-        <label>
+        <label class="form-field">
           Full date of birth:
           <input
             class="inputBot"
@@ -60,9 +58,8 @@
             name="date"
           >
         </label>
-        <br>
 
-        <label>
+        <label class="form-field">
           I accept the term of the agreement
           <input
             type="checkbox"
@@ -71,15 +68,13 @@
           >
         </label>
       </fieldset>
-
     </form>
 
     <form>
-      <fieldset class="registr">
-
+      <fieldset class="fieldset">
         <legend>Registration</legend>
 
-        <label>
+        <label class="form-field">
           E-mail:
           <input
             type="email"
@@ -88,9 +83,8 @@
             required
           >
         </label>
-        <br>
 
-        <label>
+        <label class="form-field">
           Password:
           <input
             class="input"
@@ -101,34 +95,32 @@
           >
         </label>
       </fieldset>
-
     </form>
 
     <form>
-      <fieldset class="facts">
+      <fieldset class="fieldset">
 
         <legend>An interesting fact about you!</legend>
-        Do you love cats?
-        <label>
+        <label class="form-field">
+          Do you love cats?
           <input
             type="radio"
             name="option"
             value="yes"
             id="yes"
-          > Yes
-        </label>
+          >
+          Yes
 
-        <label>
           <input
             type="radio"
             name="option"
             value="no"
             id="no"
-          > No
+          >
+          No
         </label>
-        <br>
 
-        <label>
+        <label class="form-field">
           What is your favorite color?
           <input
             class="input"
@@ -136,9 +128,8 @@
             name="color"
           >
         </label>
-        <br>
 
-        <label>
+        <label class="form-field">
           What time do you go to bed?
           <input
             class="input"
@@ -147,10 +138,9 @@
             step="1"
           >
         </label>
-        <br>
 
 
-        <label>
+        <label class="form-field">
           What are your favorite brand of cars?
           <select
             class="inputBot"
@@ -164,9 +154,8 @@
             <option value="none"></option>
           </select>
         </label>
-        <br>
 
-        <label>
+        <label class="form-field">
           How do you rate our work?
           <input
             type="range"
@@ -180,9 +169,9 @@
 
     <form>
 
-      <fieldset class="addInfo">
+      <fieldset class="fieldset">
         <legend>Additional info:</legend>
-        <label>
+        <label class="form-field">
           Comments:
           <textarea
             type="text"
@@ -193,17 +182,16 @@
           >
           </textarea>
         </label>
-        <br>
 
-        <label>
+        <label class="form-field">
           Would you recommend us?
           <select
             class="input"
             id="choose"
             name="choose"
           >
-            <option value="yes">yes</option>
-            <option value="no">no</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
           </select>
         </label>
       </fieldset>

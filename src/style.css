@@ -1,25 +1,13 @@
-
-.input {
-  margin-top: 10px;
+.fieldset {
+  margin-bottom: 20px;
 }
 
-.inputBot {
-  margin-top: 10px;
+.form-field {
+  display: block;
   margin-bottom: 10px;
 }
 
-.persInfo {
-  margin-bottom: 20px;
-}
-
-.registr {
-  margin-bottom: 20px;
-}
-
-.facts {
-  margin-bottom: 20px;
-}
-
-.addInfo {
-  margin-bottom: 20px;
+.form-field:last-child {
+  margin-top: 10px;
+  margin-bottom: 0;
 }
