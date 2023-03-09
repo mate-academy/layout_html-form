@@ -80,21 +80,25 @@
 
       <fieldset class="block_input">
         <legend>An interesting fact about you!</legend>
-        <label class="line__input">
+        <div class="line__input">
           Do you love cats?
-          <input
-            type="radio"
-            name="cats"
-            value="Yes"
-          >
-          Yes
-          <input
-            type="radio"
-           name="cats"
-            value="No"
-          >
-          No
-        </label>
+          <label>
+            <input
+              type="radio"
+              name="cats"
+              value="Yes"
+            >
+            Yes
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="cats"
+              value="No"
+            >
+            No
+          </label>
+        </div>
         <label class="line__input">
           What is your favorite colour?
           <input
@@ -114,7 +118,8 @@
           <select
             name="cars"
             required
-            multiple>
+            multiple
+          >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
@@ -139,8 +144,7 @@
             autocomplete="off"
             cols="20"
             rows="2"
-          >
-          </textarea>
+         ></textarea>
         </label>
         <label class="line__input__last">
           Would you recommend us?
