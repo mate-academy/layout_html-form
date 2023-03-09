@@ -1,1 +1,14 @@
-/* styles go here */
+.form-field {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.box-field {
+  padding: 5.6px 12px 0;
+  margin-bottom: 20px;
+
+}
+
+.button {
+  margin: 10px 0;
+}
