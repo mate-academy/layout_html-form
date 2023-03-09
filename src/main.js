@@ -2,6 +2,8 @@
 
 const INPUT_BUTTON_TYPES = ['button', 'submit', 'reset'];
 
+document.getElementById('comments').defaultValue = '';
+
 // eslint-disable-next-line no-unused-vars
 function onSubmit(event) {
   event.preventDefault();
