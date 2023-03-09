@@ -1,1 +1,21 @@
-/* styles go here */
+/* stylelint-disable indentation */
+.line__input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.radio-button {
+  margin-bottom: 10px;
+}
+
+.block_input {
+ margin-bottom: 20px;
+ }
+
+.line__input__last {
+  display: block;
+}
+
+.line__cats {
+  margin-bottom: 10px;
+}
