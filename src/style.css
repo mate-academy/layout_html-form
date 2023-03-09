@@ -1,1 +1,13 @@
 /* styles go here */
+
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.labels:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.comments-rec {
+  margin-top: 10px;
+}
