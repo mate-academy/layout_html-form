@@ -18,66 +18,66 @@
         <fieldset class="fieldInput">
           <legend class="title1">Personal information</legend>
 
-          <div class="unit">
-            <label for="surname"> Surname:
-            </label>
+          <label class="unit">
+
+            Surname:
+
             <input type="text"
              id="surname"
              name="surname" required
              autocomplete="off"
             >
-          </div>
+          </label>
 
-          <div class="unit">
-            <label for="fname">Name:
-            </label>
+          <label class="unit">
+              Name:
             <input type="text" id="fname"
             name="fname" required
             autocomplete="off"
             >
-          </div>
+          </label>
 
-          <div class="unit">
-            <label for="age">How old are You?
-            </label>
+          <label class="unit">
+            How old are You?
             <input type="number" id="age"
-            name="age" min="1"
+             name="age" min="1"
              max="100" value="12"
             >
-          </div>
+          </label>
 
-          <div class="unit">
-            <label for="fdata">Full date of birth:</label>
+          <label class="unit">
+            Full date of birth:
             <input type="data" id="fdata"
             name="fdata" placeholder="mm/ dd/ yyyy"
             >
-          </div>
+          </label>
 
-          <div class="unit">
-            <label for="agreement">I accept the terms of agreement</label>
+          <label class="unitLast">
+            I accept the terms of agreement
             <input type="checkbox" id="agreement"
-            name="agreement"
+             name="agreement"
             >
-          </div>
+          </label>
+
         </fieldset>
 
         <fieldset class="fieldInput">
           <legend>Registration</legend>
 
-          <div class="unit">
-            <label for="email">E-mail:</label>
+          <label class="unit">
+             E-mail:
             <input type="email" id="email"
             name="email" placeholder="email@example.com"
             >
-          </div>
+          </label>
 
-          <div class="unit">
-            <label for="password">Password:
-              <input type="text" id="password"
-             name="password"autocomplete="off"
-              >
-            </label>
-          </div>
+          <label class="unitLast">
+            Password:
+            <input type="text" id="password"
+            name="password"autocomplete="off"
+            >
+          </label>
+
         </fieldset>
 
         <fieldset class="fieldInput">
@@ -120,7 +120,7 @@
             </select>
           </div>
 
-          <div class="unit">
+          <div class="unitLast">
             How do you rate our work?
             <input type="range" min="1"
              max="10" value="1"
@@ -142,7 +142,7 @@
             </label>
           </div>
 
-          <div class="unit">
+          <div class="unitLast">
             <label >
               Would you recommend us?
               <select name="recomend" id="recomend">
