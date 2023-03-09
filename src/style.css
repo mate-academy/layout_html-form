@@ -6,3 +6,12 @@
   display: block;
   margin-bottom: 10px;
 }
+
+.unitLast {
+  display: block;
+}
+
+.fdate {
+  padding: 0 ;
+  padding-left: 1px;
+}
