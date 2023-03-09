@@ -1,1 +1,12 @@
 /* styles go here */
+.faction {
+  margin-top: 20px;
+}
+
+.form {
+  margin-top: 10px;
+}
+ 
+.button {
+  margin: 10px;
+}
