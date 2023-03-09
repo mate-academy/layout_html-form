@@ -1,1 +1,7 @@
-/* styles go here */
+.infoField {
+  margin: 10px auto;
+}
+
+.form-fieldset {
+  margin: 20px auto;
+}
