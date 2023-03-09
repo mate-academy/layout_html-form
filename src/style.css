@@ -1,1 +1,19 @@
-/* styles go here */
+body {
+  display: block;
+  margin: 8px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form_field {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form_field:last-child {
+  margin-bottom: 0;
+}
