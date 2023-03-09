@@ -1,1 +1,88 @@
-/* styles go here */
+body {
+  margin: 8px;
+}
+
+.personal-information {
+  width: auto;
+  padding-block-end: 0;
+
+}
+
+.registration {
+  height: auto;
+  width: auto;
+  padding-block-end: 0;
+
+}
+
+.interestig-fact {
+  height: auto;
+  width: auto;
+  padding-block-end: 0;
+
+}
+
+.additional-info {
+  height: auto;
+  width: auto;
+  padding-block-end: 0;
+}
+
+.submit-button {
+  margin-top: 20px;
+}
+
+.personal {
+
+  margin-bottom: 20px;
+  border: 1px solid;
+  padding-block-start: 5px;
+  padding-block-end: 0;
+  margin-inline-start: 2px;
+  margin-inline-end: 2px;
+}
+
+.textarea::placeholder {
+  margin-left: 0;
+}
+
+header {
+  height: auto;
+  width: auto;
+}
+
+input[type="number"] {
+  width: 4.9em;
+}
+
+div {
+  margin-top: 0;
+  padding-bottom: 10px;
+
+}
+
+.Form-accept {
+  padding-bottom: 0;
+}
+
+.registr {
+  margin-top: 20px;
+  padding-block-end: 0;
+}
+
+.interestigFact {
+  margin-top: 20px;
+  padding-block-end: 0;
+}
+
+.addInfo {
+  margin-top: 20px;
+  min-inline-size: min-content;
+  padding-block-end: 0;
+  margin-bottom: 0;
+}
+
+textarea {
+  text-align: start;
+  margin-left: 0;
+}
