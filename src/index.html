@@ -8,7 +8,7 @@
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
@@ -16,7 +16,7 @@
       action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
       method="POST"
     >
-      <fieldset>
+      <fieldset class="group">
 
         <legend>Personal information</legend>
 
@@ -109,18 +109,18 @@
 
           <label>
             <input 
-            type="radio" 
-            name="cats" 
-            value="yes"
+              type="radio" 
+              name="cats" 
+              value="yes"
             >
             Yes
           </label>
 
           <label>
             <input 
-            type="radio" 
-            name="cats" 
-            value="no"
+              type="radio" 
+              name="cats" 
+              value="no"
             >
             No
           </label>
@@ -129,9 +129,9 @@
         <label class="form-field">
           What is your favorite color?
           <input 
-          type="color" 
-          name="color" 
-          required
+            type="color" 
+            name="color" 
+            required
           >
         </label>
         
@@ -139,11 +139,11 @@
         <label class="form-field">
           What time do you go to bed?
           <input 
-          type="time" 
-          name="bed" 
-          min="09:00" 
-          max="18:00"
-          required
+            type="time" 
+            name="bed" 
+            min="09:00" 
+            max="18:00"
+            required
           >
         </label>
         
@@ -197,11 +197,17 @@
 
       </fieldset>
 
-      <button type="submit" class="group">Submit</button>
+      <button 
+        type="submit" 
+        class="group">Submit
+      </button>
     
     </form>
 
-    <script type="text/javascript" src="./main.js"></script>
+    <script 
+      type="text/javascript" 
+      src="./main.js">
+    </script>
 
   </body>
 </html>
