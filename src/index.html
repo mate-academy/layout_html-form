@@ -11,106 +11,120 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-
     <main>
-      <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-
+      <form
+        action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+        method="post">
         <fieldset class="fieldInput">
           <legend class="title1">Personal information</legend>
-
           <label class="unit">
-
             Surname:
-
-            <input type="text"
-             id="surname"
-             name="surname" required
-             autocomplete="off"
+            <input
+              type="text"
+              id="surname"
+              name="surname"
+              required
+              autocomplete="off"
+              minlength="1"
+              maxlength="30"
             >
           </label>
-
           <label class="unit">
               Name:
-            <input type="text" id="fname"
-            name="fname" required
-            autocomplete="off"
+            <input
+             type="text"
+             id="fname"
+             name="fname" required
+             autocomplete="off"
+             minlength="1"
+             maxlength="30"
             >
           </label>
-
           <label class="unit">
             How old are You?
-            <input type="number" id="age"
-             name="age" min="1"
-             max="100" value="12"
+            <input
+              type="number"
+              id="age"
+              name="age" min="1"
+              max="100" value="12"
             >
           </label>
-
           <label class="unit">
             Full date of birth:
-            <input type="date" class="fdate"
-            name="fdate" placeholder="mm/ dd/ yyyy"
+            <input
+             type="date"
+             class="fdate"
+             name="fdate"
+             placeholder="mm/ dd/ yyyy"
             >
           </label>
-
           <label class="unitLast">
             I accept the terms of agreement
-            <input type="checkbox" id="agreement"
-             name="agreement"
+            <input
+              type="checkbox"
+              id="agreement"
+              name="agreement"
             >
           </label>
-
         </fieldset>
-
         <fieldset class="fieldInput">
           <legend>Registration</legend>
-
           <label class="unit">
              E-mail:
-            <input type="email" id="email"
-            name="email" placeholder="email@example.com"
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@example.com"
             >
           </label>
-
           <label class="unitLast">
             Password:
-            <input type="text" id="password"
-            name="password"autocomplete="off"
+            <input
+              type="text"
+              id="password"
+              name="password"
+              autocomplete="off"
+              minlength="1"
+              maxlength="30"
             >
           </label>
-
         </fieldset>
-
         <fieldset class="fieldInput">
           <legend>An interesting fact about you!</legend>
-
           <div class="unit">
             Do you love cats?
             <label >
-              <input type="radio" name="lovecat"
+              <input
+                type="radio"
+                name="lovecat"
               >
               Yes
             </label>
             <label >
-              <input type="radio" name="lovecat"
+              <input
+                type="radio"
+                name="lovecat"
               >
               No
             </label>
           </div>
-
           <div class="unit">
             What is your favorite color?
-            <input type="color" name="color"
-            value="#fff"
+            <input
+              type="color"
+              name="color"
+              value="#fff"
             >
           </div>
-
           <div class="unit">
             What time do you go to bed?
-            <input type="time" name="time"
-            step="2"
+            <input
+              type="time"
+              name="time"
+              step="2"
             >
           </div>
-
           <div class="unit">
             What are your favorite brand of cars?
             <select multiple name="chooceCar" >
@@ -119,41 +133,40 @@
               <option value="lada">Lada</option>
             </select>
           </div>
-
           <div class="unitLast">
             How do you rate our work?
-            <input type="range" min="1"
-             max="10" value="1"
+            <input
+              type="range"
+              min="1"
+              max="10"
+              value="1"
             >
           </div>
         </fieldset>
-
         <fieldset class="fieldInput">
           <legend>Additional info:</legend>
-
           <div class="unit">
             <label >
               Comments:
               <textarea name="comments"
-               id="comments"
-               cols="20"
+                id="comments"
+                cols="20"
                 rows="2"
              ></textarea>
             </label>
           </div>
-
           <div class="unitLast">
             <label >
               Would you recommend us?
-              <select name="recomend" id="recomend">
+              <select
+                name="recomend"
+                id="recomend">
                 <option value="Yes">yes</option>
                 <option value="no">no</option>
               </select>
             </label>
           </div>
-
         </fieldset>
-
         <button type="submit">Submit</button>
       </form>
     </main>
