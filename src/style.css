@@ -1,7 +1,8 @@
-.list fieldset {
+.fieldsetStyle {
   margin-bottom: 20px;
 }
 
-.list fieldset div:not(:last-of-type) {
+.sectionStyle:not(:last-child) {
+  display: block;
   margin-bottom: 10px;
 }
