@@ -1,1 +1,17 @@
-/* styles go here */
+.last_block_submit {
+  display: flex;
+}
+
+.last {
+  margin-bottom: 0;
+}
+
+span {
+  margin-bottom: 10px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
