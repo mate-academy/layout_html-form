@@ -7,8 +7,8 @@
   margin-bottom: 10px;
 }
 
-.unitLast {
-  display: block;
+.unit:last-child {
+  margin-bottom: 0;
 }
 
 .fdate {
