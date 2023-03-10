@@ -7,6 +7,10 @@
   margin-bottom: 10px;
 }
 
+.cats {
+  margin-bottom: 14px;
+}
+
 .form-field:last-child {
   margin-top: 10px;
   margin-bottom: 0;
