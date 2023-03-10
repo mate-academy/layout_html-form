@@ -2,84 +2,35 @@ body {
   margin: 8px;
 }
 
-.personal-information {
-  width: auto;
+fieldset {
+
+  min-inline-size: min-content;
   padding-block-end: 0;
-
-}
-
-.registration {
-  height: auto;
-  width: auto;
-  padding-block-end: 0;
-
-}
-
-.interestig-fact {
-  height: auto;
-  width: auto;
-  padding-block-end: 0;
-
-}
-
-.additional-info {
-  height: auto;
-  width: auto;
-  padding-block-end: 0;
-}
-
-.submit-button {
-  margin-top: 20px;
-}
-
-.personal {
-
   margin-bottom: 20px;
   border: 1px solid;
-  padding-block-start: 5px;
-  padding-block-end: 0;
+  padding-block-start: 5.6px;
+  padding-inline-start: 0.75em;
+  padding-inline-end: 0.75em;
+  border-width: 2px;
+  border-style: groove;
+  border-color: rgb(192, 192, 192);
+  border-image: initial;
   margin-inline-start: 2px;
   margin-inline-end: 2px;
+
+}
+
+div {
+  margin-bottom: 10px;
+
 }
 
 .textarea::placeholder {
   margin-left: 0;
 }
 
-header {
-  height: auto;
-  width: auto;
-}
-
 input[type="number"] {
   width: 4.9em;
-}
-
-div {
-  margin-top: 0;
-  padding-bottom: 10px;
-
-}
-
-.Form-accept {
-  padding-bottom: 0;
-}
-
-.registr {
-  margin-top: 20px;
-  padding-block-end: 0;
-}
-
-.interestigFact {
-  margin-top: 20px;
-  padding-block-end: 0;
-}
-
-.addInfo {
-  margin-top: 20px;
-  min-inline-size: min-content;
-  padding-block-end: 0;
-  margin-bottom: 0;
 }
 
 textarea {
