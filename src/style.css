@@ -1,1 +1,14 @@
-/* styles go here */
+
+.field {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.animal {
+  display: inline-block;
+  margin-bottom: 10px;
+}
