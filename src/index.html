@@ -11,7 +11,180 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="post"
+    class="form">
+      <fieldset class="block">
+        <legend class="title">
+          Personal information
+        </legend>
+        <div class="element">
+          Surname:
+          <input
+            required
+            type="text"
+            autocomplete="off"
+            name="Surname"
+          >
+        </div>
+        <div class="element">
+          Name:
+          <input
+            required
+            type="text"
+            autocomplete="off"
+            name="Name"
+          >
+        </div>
+        <div class="element">
+        How old are You?
+          <input
+            required
+            type="Number"
+            name="Age"
+            max="100"
+            min="1"
+            value="12"
+          >
+        </div>
+        <div class="element">
+        Full date of birth:
+          <input
+            required
+            type="date"
+            name="dateOfBirth"
+          >
+        </div>
+        <label class="element">
+        I accept the term of the agreement
+          <input
+            required
+            type="checkbox"
+          >
+        </label>
+      </fieldset>
+      <fieldset class="block">
+        <legend class="title">
+          Registration
+        </legend>
+        <div class="element">
+          E-mail:
+          <input
+            required
+            type="email"
+            name="Email"
+            placeholder="email@example.com"
+          >
+        </div>
+        <div class="element">
+          Password:
+          <input
+            required
+            type="password"
+            name="password"
+          >
+        </div>
+      </fieldset>
+      <fieldset class="block">
+        <legend class="title">
+          An interesting fact about you!
+        </legend>
+        <div  class="element">
+          Do you love cats?
+          <label>
+            <input
+              required
+              type="radio"
+              name="LoveCats"
+              value="yes"
+            >
+            Yes
+          </label>
+          <label class="element">
+            <input
+              required
+              type="radio"
+              name="LoveCats"
+              value="no"
+            >
+            No
+          </label>
+        </div>
+        <div class="element">
+          What is your favorite color?
+          <input
+            required
+            type="color"
+            name="color"
+          >
+        </div>
+        <div>
+          What time do you go to bed?
+          <input
+            required
+            type="time"
+            class="element"
+          >
+          <div class="element">
+            What are your favorite brand of car?
+            <select
+              required
+              multiple
+              name="car"
+              class="element"
+            >
+              <option value="BMW">
+                BMW
+              </option>
+              <option value="Audi">
+                Audi
+              </option>
+              <option value="Lada">
+                Lada
+              </option>
+            </select>
+          </div>
+          <div class="element">
+            How do you rate our work?
+            <input
+              required
+              type="range"
+              name="rateOurWork"
+            >
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="block">
+        <legend class="title">
+        Additionel info:
+        </legend>
+        <div class="element">
+        Comments:
+          <textarea name="comments" required></textarea>
+        </div>
+        <div class="element">
+          Would you recommend us?
+          <select
+          required
+          name="recommendUs">
+            <option value="yes">
+              yes
+            </option>
+            <option value="no">
+              no
+            </option>
+          </select>
+        </div>
+      </fieldset>
+      <button type="submit">
+      Submit
+      </button>
+    </form>
+
+
+
+
     <script type="text/javascript" src="./main.js"></script>
   </body>
+
 </html>
