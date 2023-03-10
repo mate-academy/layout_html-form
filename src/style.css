@@ -1,1 +1,9 @@
-/* styles go here */
+fieldset {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.field {
+  display: block;
+  margin-top: 10px;
+}
