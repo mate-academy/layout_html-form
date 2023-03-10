@@ -1,1 +1,24 @@
 /* styles go here */
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field > .label {
+  display: block;
+}
+
+:focus {
+  background-color: aqua;
+}
+
+.input-field {
+  margin-bottom: 10px;
+}
+
+.input-field:last-child {
+  margin-bottom: 0;
+}
+
+.cats {
+  display: inline;
+}
