@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="POST"
-      class="form"
       id="out-form"
       >
       <fieldset class="form-field">
@@ -53,7 +53,8 @@
           </label>
         </div>
         <div class="input-field">
-          <label for="date-of-birth" class="label">Full date of birth:
+          <label for="date-of-birth"
+					  class="label">Full date of birth:
             <input
               type="date"
               name="date"
@@ -62,7 +63,8 @@
           </label>
         </div>
         <div class="input-field">
-          <label for="accept" class="label">I accept the term of the agreement
+          <label for="accept"
+					  class="label">I accept the term of the agreement
             <input type="checkbox">
           </label>
         </div>
@@ -71,7 +73,8 @@
       <fieldset class="form-field">
         <legend>Registration</legend>
         <div class="input-field">
-          <label for="email" class="label">E-mail:
+          <label for="email"
+					  class="label">E-mail:
             <input
               type="email"
               name="email"
@@ -82,7 +85,8 @@
           </label>
         </div>
         <div class="input-field">
-          <label for="password" class="label">Password:
+          <label for="password"
+					 class="label">Password:
             <input
               type="password"
               name="password"
@@ -98,7 +102,8 @@
         <legend>An interesting fact about you!</legend>
         <div class="input-field">
           <div class="input-field cats" >
-            <label for="cats" class="label">Do you love cats?
+            <label for="cats"
+						 class="label">Do you love cats?
               <input type="radio"
                 name="love-cats"
                 value="yes"
@@ -109,17 +114,20 @@
           <div class="input-field cats">
             <label for="yes" class="label">Yes</label>
             <input
-            type="radio"
-            name="love-cats"
-            value="no"
-            id="no"
+							type="radio"
+							name="love-cats"
+							value="no"
+							id="no"
             >
-            <label for="no" class="label">No</label>
+            <label for="no"
+						 class="label">No
+            </label>
           </div>
         </div>
 
         <div class="input-field">
-          <label for="color" class="label">What is your favorite color?
+          <label for="color"
+           class="label">What is your favorite color?
             <input
               type="color"
               name="color"
@@ -129,15 +137,17 @@
         </div>
 
         <div class="input-field">
-          <label for="time" class="label">What time do you go to bed?
+          <label for="time"
+          class="label">What time do you go to bed?
             <input type="time" name="time">
           </label>
         </div>
         <div class="input-field">
-          <label for="cars" class="label">What are your favorite brand of cars?
+          <label for="cars"
+           class="label">What are your favorite brand of cars?
             <select name="cars"
-            id="cars"
-            multiple
+              id="cars"
+              multiple
             >
               <option value="BMW">BMW</option>
               <option value="Audi">Audi</option>
@@ -146,7 +156,8 @@
           </label>
         </div>
         <div class="input-field">
-          <label for="rate-work" class="label">How do you rate our work?
+          <label for="rate-work"
+           class="label">How do you rate our work?
             <input
               type="range"
               id="volume"
@@ -161,22 +172,23 @@
       <fieldset class="form-field">
         <legend>Additional info:</legend>
         <div class="input-field">
-          <div class="input-field">
-            <label for="comments" class="label">Comments:</label>
-            <textarea
-              name="comments"
-              id="comments"
-              cols="30"
-              rows="2"
-           ></textarea>
-          </div>
-          <div class="input-field">
-            <label for="recommend" class="label">Would you recommend us?</label>
-            <select name="recommend" id="recommend">
-              <option value="Yes" selected="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
-          </div>
+          <label for="comments"
+           class="label">Comments:</label>
+          <textarea
+            name="comments"
+            id="comments"
+            cols="30"
+            rows="2"
+         ></textarea>
+        </div>
+        <div class="input-field">
+          <label for="recommend"
+           class="label">Would you recommend us?
+          </label>
+          <select name="recommend" id="recommend">
+            <option value="Yes" selected="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
         </div>
       </fieldset>
     </form>
@@ -184,7 +196,6 @@
     class="button"
     type="submit">Submit
     </button>
-
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
