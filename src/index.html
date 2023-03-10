@@ -14,7 +14,12 @@
       <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" name="person's information">
         <fieldset class="section">
           <legend>Personal information</legend>
-          <span class="rows"><label>Surname: <input type="text" name="surname"></label></span>
+          <span class="rows">
+            <label>Surname:
+              <input type="text" name="surname">
+            </label>
+          </span>
+
           <span class="rows">
             <label>
               Name:
@@ -25,6 +30,7 @@
               >
             </label>
           </span>
+
           <span class="rows">
             <label>
               How old are You?
@@ -37,7 +43,13 @@
               >
             </label>
           </span>
-          <span class="rows"><label>Full date of birth: <input type="date" name="date of birth"></label></span>
+
+          <span class="rows">
+            <label>Full date of birth:
+              <input type="date" name="date of birth">
+            </label>
+          </span>
+
           <span class="last">
             <label>
               I accept the term of the agreement
@@ -49,6 +61,7 @@
             </label>
           </span>
         </fieldset>
+
         <fieldset class="section">
           <legend>Registration</legend>
           <span class="rows">
@@ -63,6 +76,7 @@
               >
             </label>
           </span>
+
           <span class="last">
             <label for="password">Password:</label>
             <input
@@ -74,10 +88,12 @@
             >
           </span>
         </fieldset>
+
         <fieldset class="section">
           <legend>An interesting fact about you!</legend>
           <span class="rows">
-            <label for="love_cats">Do you love cats?
+            <div>
+              Do you love cats?
               <input
                 type="radio"
                 name="pets"
@@ -88,12 +104,27 @@
                 name="pets"
                 id="no"
               > <label for="no">No</label>
-            </label>
+            </div>
           </span>
-          <span class="rows"><label for="favorite_color">What is your favorite color?</label> <input type="color" id="favorite_color"></span>
-          <span class="rows"><label for="time to bed">What time do you go to bed?</label> <input type="time" id="time to bed"></span>
+
           <span class="rows">
-            <label for="favorite brand of cars">What are your favorite brand of cars?</label>
+            <label for="favorite_color">
+              What is your favorite color?
+            </label>
+            <input type="color" id="favorite_color">
+          </span>
+
+          <span class="rows">
+            <label for="time to bed">
+              What time do you go to bed?
+            </label>
+            <input type="time" id="time to bed">
+          </span>
+
+          <span class="rows">
+            <label for="favorite brand of cars">
+              What are your favorite brand of cars?
+            </label>
             <select
               name="cars"
               id="favorite brand of cars"
@@ -104,6 +135,7 @@
               <option value="Lada">Lada</option>
             </select>
           </span>
+
           <span class="last">
             <label for="rate our work">How do you rate our work?</label>
             <input
@@ -115,6 +147,7 @@
             >
           </span>
         </fieldset>
+
         <fieldset class="section">
           <legend>Additional info:</legend>
           <span class="rows">
@@ -125,10 +158,10 @@
                 name="Comments"
                 cols="20"
                 rows="2"
-              >
-              </textarea>
+             ></textarea>
             </label>
           </span>
+
           <span class="last">
             <label for="reccomend">Would you recommend us?</label>
             <select name="cars" id="reccomend">
@@ -137,9 +170,13 @@
             </select>
           </span>
         </fieldset>
+
         <div class="last_block_submit">
-          <span class="rows"><input type="submit" value="Submit"></span>
+          <span class="rows">
+            <input type="submit" value="Submit">
+          </span>
         </div>
+
       </form>
     </section>
     <script type="text/javascript" src="./main.js"></script>
