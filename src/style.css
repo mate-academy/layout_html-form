@@ -3,14 +3,14 @@
   margin-bottom: 20px;
 }
 
-label {
+.form__label {
   display: inline-block;
 }
 
-.set label {
+.set .form__label {
   margin-bottom: 10px;
 }
 
-.set label:last-of-type {
+.set .form__label:last-of-type {
   margin-bottom: 0;
 }
