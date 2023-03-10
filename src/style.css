@@ -6,11 +6,11 @@
   margin-bottom: 0;
 }
 
-span {
+.rows {
   margin-bottom: 10px;
 }
 
-fieldset {
+.section {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;

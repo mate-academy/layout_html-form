@@ -12,42 +12,51 @@
   <body>
     <section>
       <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" name="person's information">
-        <fieldset>
+        <fieldset class="section">
           <legend>Personal information</legend>
-          <span>Surname: <input type="text" name="surname"></span>
-          <span>
-            Name:
-            <input
-            type="text"
-            name="name"
-            autocomplete="off"
-            >
+          <span class="rows"><label>Surname: <input type="text" name="surname"></label></span>
+          <span class="rows">
+            <label>
+              Name:
+              <input
+                type="text"
+                name="name"
+                autocomplete="off"
+              >
+            </label>
           </span>
-          <span>How old are You?
-            <input
-              type="number"
-              name="age"
-              min="0"
-              max="100"
-              value="12"
-            >
+          <span class="rows">
+            <label>
+              How old are You?
+              <input
+                type="number"
+                name="age"
+                min="0"
+                max="100"
+                value="12"
+              >
+            </label>
           </span>
-          <span>Full date of birth: <input type="date" name="date of birth"></span>
-          <span class="last">I accept the term of the agreement
-            <input
-            type="checkbox"
-            name="I accept"
-            required
-            >
+          <span class="rows"><label>Full date of birth: <input type="date" name="date of birth"></label></span>
+          <span class="last">
+            <label>
+              I accept the term of the agreement
+              <input
+                type="checkbox"
+                name="I accept"
+                required
+              >
+            </label>
           </span>
         </fieldset>
-        <fieldset>
+        <fieldset class="section">
           <legend>Registration</legend>
-          <span>
+          <span class="rows">
             <label for="E-mail">E-mail:
               <input
                 type="email"
                 name="email"
+                id="E-mail"
                 placeholder="email@example.com"
                 multiple
                 required
@@ -55,27 +64,41 @@
             </label>
           </span>
           <span class="last">
-            <label>Password:</label>
+            <label for="password">Password:</label>
             <input
               type="password"
+              id="password"
               minlength="10"
               maxlength="20"
               required
             >
           </span>
         </fieldset>
-        <fieldset>
+        <fieldset class="section">
           <legend>An interesting fact about you!</legend>
-          <span>
-            <label for="love_cats">Do you love cats?</label>
-            <input type="radio" name="pets"> <label for="yes">Yes</label>
-            <input type="radio" name="pets"> <label for="no">No</label>
+          <span class="rows">
+            <label for="love_cats">Do you love cats?
+              <input
+                type="radio"
+                name="pets"
+                id="yes"
+              > <label for="yes">Yes</label>
+              <input
+                type="radio"
+                name="pets"
+                id="no"
+              > <label for="no">No</label>
+            </label>
           </span>
-          <span><label for="favorite_color">What is your favorite color?</label> <input type="color"></span>
-          <span><label for="time to bed">What time do you go to bed?</label> <input type="time"></span>
-          <span>
+          <span class="rows"><label for="favorite_color">What is your favorite color?</label> <input type="color" id="favorite_color"></span>
+          <span class="rows"><label for="time to bed">What time do you go to bed?</label> <input type="time" id="time to bed"></span>
+          <span class="rows">
             <label for="favorite brand of cars">What are your favorite brand of cars?</label>
-            <select name="cars" multiple>
+            <select
+              name="cars"
+              id="favorite brand of cars"
+              multiple
+            >
               <option value="BMW">BMW</option>
               <option value="Audi">Audi</option>
               <option value="Lada">Lada</option>
@@ -84,34 +107,38 @@
           <span class="last">
             <label for="rate our work">How do you rate our work?</label>
             <input
-            value="0"
-            type="range"
-            min="0"
-            max="10"
+              id="rate our work"
+              value="0"
+              type="range"
+              min="0"
+              max="10"
             >
           </span>
         </fieldset>
-        <fieldset>
+        <fieldset class="section">
           <legend>Additional info:</legend>
-          <span>
-            Comments:
-            <textarea
-              name="Comments"
-              cols="20"
-              rows="2"
-            >
-            </textarea>
+          <span class="rows">
+            <label for="Comments">
+              Comments:
+              <textarea
+                id="Comments"
+                name="Comments"
+                cols="20"
+                rows="2"
+              >
+              </textarea>
+            </label>
           </span>
           <span class="last">
-            Would you recommend us?
-            <select name="cars">
+            <label for="reccomend">Would you recommend us?</label>
+            <select name="cars" id="reccomend">
               <option value="Yes">yes</option>
               <option value="No">no</option>
             </select>
           </span>
         </fieldset>
         <div class="last_block_submit">
-          <span><input type="submit" value="Submit"></span>
+          <span class="rows"><input type="submit" value="Submit"></span>
         </div>
       </form>
     </section>
