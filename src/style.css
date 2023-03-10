@@ -1,1 +1,26 @@
 /* styles go here */
+
+.field_form {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.field_form:nth-child(2) {
+  margin-top: 0;
+}
+
+.field_form:last-child {
+  margin-bottom: 0;
+}
+
+.group_form {
+  margin-bottom: 20px;
+}
+
+.group_form:first-of-type {
+  margin-top: 0;
+}
+
+.group_form:last-of-type {
+  margin-bottom: 0;
+}
