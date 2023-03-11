@@ -11,7 +11,174 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      >
+      <fieldset class="fieldset">
+        <legend>Personal information</legend>
+  
+        <label for="surname">Surname:</label>
+        <input
+          class="input"
+          type="text"
+          id="surname"
+          name="surname"
+          autocomplete="off"
+        >
+        <br>
+  
+        <label for="name">Name:</label>
+        <input
+          class="input"
+          type="text"
+          id="name"
+          name="name"
+          autocomplete="off"
+        >
+        <br>
+  
+        <label for="age">How old are You?</label>
+        <input
+          class="input"
+          type="number"
+          id="age"
+          name="age"
+          value="12"
+          min="1"
+          max="100"
+          autocomplete="off"
+        >
+
+        <br>
+        <label for="birthday">Full date of birth:</label>
+        <input
+          class="input"
+          type="date"
+          id="birthday"
+          name="birthday"
+          autocomplete="off"
+        >
+        <br>
+
+        <label for="accept">I accept the term of the agreement</label>
+        <input
+          class="input"
+          type="checkbox"
+          id="accept"
+          name="accept"
+          required
+        >
+      </fieldset>
+      <fieldset class="fieldset">
+        <legend>Registration</legend>
+
+        <label for="email">E-mail:</label>
+        <input
+          class="input"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="email@example.com"
+          required
+          autocomplete="off"
+        >
+        <br>
+
+        <label for="password">Password:</label>
+        <input
+          class="input"
+          type="password"
+          id="password"
+          name="password"
+          minlength="8"
+          maxlength="32"
+          required
+          autocomplete="off"
+        >
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>An interesting fact about you!</legend>
+        <div class="input choice">
+          Do you love cats?
+          <label>
+            <input
+              type="radio"
+              name="cats"
+              value="yes"
+            >
+            Yes
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="cats"
+              value="no"
+            >
+            No
+          </label>
+        </div>
+
+        <label for="color">What is your favorite color?</label>
+        <input
+          class="input"
+          type="color"
+          id="color"
+          name="color"
+        >
+        <br>
+
+        <label for="bedTime">What time do you go to bed?</label>
+        <input
+          class="input"
+          type="time"
+          id="bedTime"
+          name="bedTime"
+          autocomplete="off"
+          step="1"
+        >
+        <br>
+
+        <label class="input block">What are your favorite brand of cars?
+          <select
+            name="cars"
+            multiple
+          >
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </label>
+
+        <label for="rate">How do you rate our work?</label>
+        <input
+          class="input"
+          type="range"
+          id="rate"
+          name="rate"
+          value="0"
+        >
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>Additional info:</legend>
+        <label class="input block" >Comments:
+          <textarea name="comments"></textarea>
+        </label>
+
+        <label for="reccomend">Would you recommend us?</label>
+        <select
+          class="input"
+          name="reccomend"
+          id="reccomend"
+        >
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
