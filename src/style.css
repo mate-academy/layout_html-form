@@ -1,1 +1,18 @@
 /* styles go here */
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+.form-field {
+  margin-bottom: 20px;
+
+}
+
+.input {
+  display: block;
+}
+
+.input:not(:last-child) {
+  margin-bottom: 10px;
+}
