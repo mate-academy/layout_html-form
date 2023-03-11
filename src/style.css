@@ -1,1 +1,19 @@
-/* styles go here */
+body {
+  margin: 8px;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.form-field {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.form-field:nth-child(n+3) {
+  padding-top: 10px;
+}
