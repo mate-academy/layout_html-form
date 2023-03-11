@@ -14,8 +14,9 @@
     <!-- <h1>HTML Form</h1> -->
     <script type="text/javascript" src="./main.js"></script>
 
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      name="userdatregistration"
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      name="userDataRegistration"
       method="post"
     >
       <fieldset name="personalInformation" class="group_form">
@@ -107,7 +108,7 @@
       <fieldset name="interestingFact" class="group_form">
         <legend>An interesting fact about you!</legend>
 
-        <div name="loveCats" class="field_form">
+        <label name="loveCats" class="field_form">
           Do you love cats?
 
           <label name="yesLoveCats">
@@ -127,7 +128,7 @@
             >
               No
           </label>
-        </div>
+        </label>
 
         <label name="favoriteColor" class="field_form">
           What is your favorite color?
@@ -149,15 +150,12 @@
           What are your favorite brand of cars?
 
           <select name="favoriteBrandOfCars" multiple>
-
             <option value="bmw">
               BMW
             </option>
-
             <option value="audi">
               Audi
             </option>
-
             <option value="renault">
               Lada
             </option>
