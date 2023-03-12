@@ -14,7 +14,8 @@
     <script type="text/javascript" src="./main.js"></script>
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="post">
+      method="post"
+    >
       <fieldset class="field_style">
         <legend>Personal information</legend>
         <label class="label_field">
@@ -91,7 +92,7 @@
 
       <fieldset class="field_style">
         <legend>An interesting fact about you!</legend>
-        <label class="label_field">
+        <label class="radio_label">
           Do you love cats?:
           <input
             type="radio"
@@ -99,6 +100,8 @@
             value="yes"
           >
           Yes
+        </label>
+        <label class="radio_label">
           <input
             type="radio"
             name="cats_love"

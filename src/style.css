@@ -6,3 +6,8 @@
   display: block;
   margin-bottom: 10px;
 }
+
+.radio_label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
