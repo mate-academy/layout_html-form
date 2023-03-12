@@ -1,17 +1,9 @@
 /* styles go here */
-/* label {
-  display:block;
+.box {
+  display: block;
   margin-top: 10px;
-  margin-bottom: 10px;
-} */
-.box
- {
-  display:block;
-  margin-top: 10px;
-  margin-bottom: 10px;
+}
 
- }
-.container{
-  margin: 20px
-
+.container {
+  margin-top: 20px;
 }
