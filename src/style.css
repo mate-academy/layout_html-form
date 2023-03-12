@@ -1,1 +1,10 @@
 /* styles go here */
+
+.field-set {
+  margin-bottom: 20px;
+}
+
+.input-field:not(:last-of-type) {
+  display: block;
+  margin-bottom: 10px;
+}
