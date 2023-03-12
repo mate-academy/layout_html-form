@@ -11,7 +11,188 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      name="form-container"
+      class="contain"
+    >
+      <fieldset>
+        <legend>Personal information</legend>
+        <label class="form-fiedl" for="sur">
+          Surname:
+          <input
+            type="text"
+            name="surname"
+            id="sur"
+          >
+        </label>
+        <label class="form-fiedl" for="name">
+          Name:
+          <input
+            type="text"
+            name="name"
+            id="name"
+          >
+        </label>
+        <label class="form-fiedl" for="age">
+          How old are You?
+          <input
+            type="number"
+            value="12"
+            name="age"
+            min="1"
+            max="100"
+            id="age"
+          >
+        </label>
+        <label class="form-fiedl" for="dateBirth">
+          Full date of birth:
+          <input
+            type="date"
+            name="birthDay"
+            id="dateBirth"
+          >
+        </label>
+        <label class="form-fiedl" for="accept">
+          I accept the term of the agreement
+          <input
+            type="checkbox"
+            name="yes"
+            id="accept"
+          >
+        </label>
+      </fieldset>
+    </form>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      name="form-container"
+      class="contain"
+    >
+      <fieldset>
+        <legend>Registration</legend>
+        <label class="form-fiedl" for="e-mail">
+          E-mail:
+          <input
+            type="email"
+            placeholder="email@example.com"
+            name="email"
+            id="e-mail"
+          >
+        </label>
+        <label class="form-fiedl" for="pass">
+          Password:
+          <input
+            type="password"
+            name="password"
+            minlength="8"
+            maxlength="20"
+            required
+            id="pass"
+          >
+        </label>
+      </fieldset>
+    </form>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      name="form-container"
+      class="contain"
+    >
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+        <label class="form-fiedl" for="yes">
+          Do you love cats?
+          <label for="yes">
+            <input
+            type="radio"
+            name="catsLover"
+            value="y"
+            id="yes"
+            >
+          Yes
+          </label>
+          <label for="no">
+            <input
+            type="radio"
+            name="catsLover"
+            value="n"
+            id="no"
+            >
+            No
+          </label>
+        </label>
+        <label class="form-fiedl" for="color">
+          What is your favorite color?
+          <input
+            type="color"
+            name="color"
+            id="color"
+          >
+        </label>
+        <label class="form-fiedl" for="bedTime">
+          What time do you go to bed?
+          <input
+            type="time"
+            name="timeSleep"
+            id="bedTime"
+          >
+        </label>
+        <label class="form-fiedl" for="cars">
+          What are your favorite brand of cars?
+          <select
+          name="carsBrend"
+          multiple
+          id="cars">
+            <option value="B">BMW</option>
+            <option value="A">Audi</option>
+            <option value="L">Lada</option>
+          </select>
+        </label>
+        <label class="form-fiedl" for="rate">
+          How do you rate our work?
+          <input
+            type="range"
+            name="fitback"
+            id="rate"
+          >
+        </label>
+      </fieldset>
+    </form>
+    <form
+    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="post"
+    name="form-container"
+    class="contain"
+    >
+      <fieldset>
+        <legend>Additional info:</legend>
+        <label class="form-fiedl" for="com">
+          Comments:
+          <textarea
+          name="feedbacke"
+          cols="20git"
+          rows="2"
+          id="com"
+         ></textarea>
+        </label>
+        <label class="form-fiedl" for="yesss">
+          Would you recommend us?
+          <select name="yOrN" id="yesss">
+            <option value="Y">yes</option>
+            <option value="yy">yes,of course</option>
+
+          </select>
+        </label>
+      </fieldset>
+    </form>
+    <label class="form-fiedl" for="buttom">
+      <input
+        type="submit"
+        id="buttom"
+      >
+    </label>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
