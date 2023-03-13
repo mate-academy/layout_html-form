@@ -12,6 +12,129 @@
   </head>
   <body>
     <h1>HTML Form</h1>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+      <fieldset class = "fieldset">
+        <legend>Personal information</legend>
+        <div class = "form-field">
+          <label>
+            Surname:
+            <input
+            type = "text"
+            name = "surname"
+            placeholder = "Enter your last name"
+            autocomplete = "off"
+            required
+            >
+          </label>
+        </div>
+
+        <div class = "form-field">
+          <label>
+            Name:
+            <input
+            type = "text"
+            name = "name"
+            placeholder = "Enter your given name"
+            autocomplete = "off"
+            required
+            >
+          </label>
+        </div>
+
+        <div class = "form-field">
+          <label>
+            How old are you?
+            <input
+            type="number"
+            name="age"
+            min = "1"
+            max = "100"
+            value = "12"
+            autocomplete = "off"
+            required
+            >
+          </label>
+        </div>
+
+        <div class = "form-field">
+          <label>
+            Full date of birth:
+            <input
+            type = "date"
+            name = "date-of-birth"
+            autocomplete = "off"
+            required
+            >
+          </label>
+        </div>
+
+        <div class = "form-field">
+          <label>
+            I accept the term of the agreement
+            <input
+            type = "checkbox"
+            name = "agreement"
+            id = "termsOfAgreemnt"
+            autocomplete = "off"
+            required
+            >
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class = "fieldset">
+        <legend>Registration</legend>
+        <div class = "form-field">
+          <label>
+            E-mail:
+            <input
+            type = "email"
+            name = "email"
+            placeholder = "email@example.com"
+            autocomplete = "off"
+            required
+            >
+          </label>
+        </div>
+
+        <div class = "form-field">
+          <label>
+            Password:
+            <input
+            type = "password"
+            name = "password"
+            minlength = "7"
+            maxlength = "25"
+            autocomplete = "off"
+            required
+            >
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class = "fieldset">
+        <legend>An interesting fact about you!</legend>
+        <div class = "form-field">
+          Do you like cats?
+          <label>
+            <input
+            type = "radio"
+            name = "catsLover"
+            value = "Yes"
+            > Yes
+          </label>
+          <label>
+            <input
+            type = "radio"
+            name = "catsHater"
+            value = "No"
+            > No
+          </label>
+        </div>
+
+      </fieldset>
+
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
