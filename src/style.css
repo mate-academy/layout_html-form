@@ -1,1 +1,16 @@
-/* styles go here */
+.fieldInput {
+  margin-bottom: 20px;
+}
+
+.unit {
+  display: block;
+}
+
+.unit:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.fdate {
+  padding: 0 ;
+  padding-left: 1px;
+}
