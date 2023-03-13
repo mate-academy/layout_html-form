@@ -12,32 +12,35 @@
   </head>
   <body>
     <script type="text/javascript" src="./main.js"></script>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
-      <fieldset>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post"
+    class="form">
+      <fieldset class="user_info">
         <legend>Personal information</legend>
         <div class="form_field">
           <label for="surname">Surname:</label>
-          <input type="text"
+          <input
+          type="text"
           name="surname"
           id="surname"
-          pattern="\d+"
           autocomplete="off"
           required
           >
         </div>
         <div class="form_field">
           <label for="name">Name:</label>
-          <input type="text"
+          <input
+          type="text"
           name="name"
           id="name"
-          pattern="\d+"
           autocomplete="off"
           required
           >
         </div>
         <div class="form_field">
           <label for="age">How old are You?</label>
-          <input type="number" name="age"
+          <input
+          type="number"
+          name="age"
           id="age"
           value="12"
           min="1"
@@ -48,7 +51,8 @@
         </div>
         <div class="form_field">
           <label for="date">Full date of birth:</label>
-          <input type="date"
+          <input
+          type="date"
           name="date"
           id="date"
           autocomplete="off"
@@ -57,7 +61,8 @@
         </div>
         <div class="form_field">
           <label for="acception">I accept the term of the agreement</label>
-          <input type="checkbox"
+          <input
+          type="checkbox"
           name="acception"
           id="acception"
           autocomplete="off"
@@ -65,15 +70,15 @@
           >
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="user_info">
         <legend>Registration</legend>
         <div class="form_field">
           <label for="email">E-mail:</label>
-          <input type="email"
+          <input
+          type="email"
           name="email"
           id="email"
           pattern=".+@globex\.com"
-
           placeholder="email@example.com"
           autocomplete="off"
           required
@@ -81,7 +86,8 @@
         </div>
         <div class="form_field">
           <label for="password">Password:</label>
-          <input type="password"
+          <input
+          type="password"
           name="password"
           id="password"
           minlength="6"
@@ -91,18 +97,20 @@
           >
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="user_info">
         <legend>An interesting fact about you!</legend>
         <div class="form_field">
           <label>Do you love cats?</label>
-          <input type="radio"
+          <input
+          type="radio"
           value="acception"
           name="fav"
           id="yes"
           autocomplete="off"
           >
           <label for="yes">Yes</label>
-          <input type="radio"
+          <input
+          type="radio"
           value="rejection"
           name="fav"
           id="rejection"
@@ -112,7 +120,8 @@
         </div>
         <div class="form_field">
           <label for="color">What is your favorite color?</label>
-          <input type="color"
+          <input
+          type="color"
           value="#000000"
           name="color"
           id="color"
@@ -121,7 +130,8 @@
         </div>
         <div class="form_field">
           <label for="appt-time">What time do you go to bed?</label>
-          <input type="time"
+          <input
+          type="time"
           id="appt-time"
           name="appt-time"
           step="2"
@@ -130,7 +140,8 @@
         </div>
         <div class="form_field">
           <label for="car-picker">What are your favorite brand of cars?</label>
-          <select name="car-picker"
+          <select
+          name="car-picker"
           id="car-picker"
           multiple
           >
@@ -141,7 +152,8 @@
         </div>
         <div class="form_field">
           <label for="rate">How do you rate our work?</label>
-          <input type="range"
+          <input
+          type="range"
           id="rate"name="rate"
           step="2"
           min="0"
@@ -150,11 +162,12 @@
           >
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="user_info">
         <legend>Additional info:</legend>
         <div class="form_field">
           <label for="notes-field">Comments:</label>
-          <textarea name="notes"
+          <textarea
+          name="notes"
           id="notes-field"
           autocomplete="off"
           >
