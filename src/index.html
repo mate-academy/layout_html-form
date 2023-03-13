@@ -16,7 +16,8 @@
         <legend>Personal information</legend>
         <label class="label_field">
           Surname
-          <input type="text"
+          <input
+            type="text"
             name="surname"
             required
             minlength="4"
@@ -24,9 +25,13 @@
             autocomplete="off"
           >
         </label>
-        <label for="name" class="label_field">
+        <label 
+          for="name"
+          class="label_field"
+        >
           Name
-          <input type="text" 
+          <input 
+            type="text" 
             id="name"
             name="name"
             autocomplete="off"
@@ -34,7 +39,8 @@
         </label>
         <label class="label_field">
           How old are you?
-          <input type="number"
+          <input
+            type="number"
             value="12"
             name="age"
             min="1"
@@ -61,14 +67,18 @@
         <legend>Registration</legend>
         <label class="label_field">
         E-mail:
-          <input name="user-email"
+          <input
+            name="user-email"
             type="email"
             placeholder="email@example.com"
           >
         </label>
         <label class="label_field">
           Password:
-          <input name="user-password" type="password">
+          <input
+            name="user-password"
+            type="password"
+          >
         </label>
       </fieldset>
       <fieldset class="fielsed_field">
@@ -76,14 +86,16 @@
         <div class="label_field">
             Do you love cats?
           <label for="cats_yes">
-            <input type="radio" 
+            <input 
+              type="radio" 
               name="pets" 
               id="cats_yes"
             >
             Yes
           </label>
           <label for="cats_no">
-            <input type="radio"
+            <input
+              type="radio"
               name="pets"
               id="cats_no"
             >
@@ -92,11 +104,17 @@
         </div>
         <label class="label_field">
           What is your favorite color?
-          <input name="color" type="color">
+          <input
+            name="color"
+            type="color"
+          >
         </label>
         <label class="label_field">
           What time do yuor go to bed?
-          <input name="time" type="time">
+          <input
+            name="time"
+            type="time"
+          >
         </label>
         <label class="label_field">
           What are yuor favorite brand of cars?
@@ -109,7 +127,8 @@
         </label>
         <label class="label_field">
           How do you rate our work?
-          <input name="work"
+          <input 
+            name="work"
             type="range"
             min="4"
             max="16"
@@ -136,7 +155,8 @@
           </select>
         </label>
       </fieldset>
-      <button type="submit"
+      <button
+        type="submit"
         name="finish"
       >
       Submit
