@@ -1,1 +1,32 @@
-/* styles go here */
+/* body {
+  margin: 8px 10px;
+}
+
+.form-field {
+  display: block;
+}
+
+label:not(:first-of-type) {
+  margin-top: 10px;
+}
+
+.group {
+  margin: 0;
+  padding: 3.5px 12px 10px;
+}
+
+.group:not(:first-of-type) {
+  margin-top: 20px;
+}
+
+/* .group:first-of-type {
+  padding-top: 4px;
+} */ 
+.form-field:not(:last-child) {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.group {
+  margin-bottom: 20px;
+}
