@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <fieldset class = "fieldset">
         <legend>Personal information</legend>
@@ -21,7 +20,6 @@
             <input
             type = "text"
             name = "surname"
-            placeholder = "Enter your last name"
             autocomplete = "off"
             required
             >
@@ -34,7 +32,6 @@
             <input
             type = "text"
             name = "name"
-            placeholder = "Enter your given name"
             autocomplete = "off"
             required
             >
@@ -43,7 +40,7 @@
 
         <div class = "form-field">
           <label>
-            How old are you?
+            How old are You?
             <input
             type="number"
             name="age"
@@ -103,7 +100,6 @@
             <input
             type = "password"
             name = "password"
-            placeholder="***************"
             minlength = "7"
             maxlength = "25"
             autocomplete = "off"
@@ -116,7 +112,7 @@
       <fieldset class = "fieldset">
         <legend>An interesting fact about you!</legend>
         <div class = "form-field">
-          Do you like cats?
+          Do you love cats?
           <label>
             <input
             type = "radio"
@@ -185,7 +181,7 @@
             name = "comments"
             id = "comments"
             cols = "20"
-            rows = "3"
+            rows = "2"
             placeholder = "Leave your mind here, please."
             >
             </textarea>
@@ -196,8 +192,8 @@
           <label>
             Would you recommend us?
             <select name = "selection" id = "selection">
-              <option value = "Yes">Yes</option>
-              <option value = "No">No</option>
+              <option value = "Yes">yes</option>
+              <option value = "No">no</option>
             </select>
           </label>
         </div>

@@ -4,4 +4,6 @@
 
 .fieldset {
   margin-bottom: 20px;
+  padding-left: auto;
+  padding-bottom: 0;
 }
