@@ -4,11 +4,10 @@
 
 .unit {
   display: block;
-  margin-bottom: 10px;
 }
 
-.unit:last-child {
-  margin-bottom: 0;
+.unit:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .fdate {
