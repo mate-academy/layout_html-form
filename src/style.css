@@ -2,26 +2,21 @@ body {
   margin: 8px;
 }
 
-fieldset {
+.registr {
 
   min-inline-size: min-content;
   padding-block-end: 0;
   margin-bottom: 20px;
-  border: 1px solid;
   padding-block-start: 5.6px;
   padding-inline-start: 0.75em;
   padding-inline-end: 0.75em;
-  border-width: 2px;
-  border-style: groove;
-  border-color: rgb(192, 192, 192);
-  border-image: initial;
   margin-inline-start: 2px;
   margin-inline-end: 2px;
-
 }
 
-div {
+.test-field {
   margin-bottom: 10px;
+  display: block;
 
 }
 
