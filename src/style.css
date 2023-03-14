@@ -1,1 +1,7 @@
-/* styles go here */
+.backdownField {
+  margin-bottom: 20px;
+}
+
+.backdownInput {
+  margin-bottom: 10px;
+}
