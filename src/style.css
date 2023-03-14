@@ -3,32 +3,21 @@ body {
 }
 
 .registr {
-
-  min-inline-size: min-content;
   padding-block-end: 0;
   margin-bottom: 20px;
-  padding-block-start: 5.6px;
-  padding-inline-start: 0.75em;
-  padding-inline-end: 0.75em;
-  margin-inline-start: 2px;
-  margin-inline-end: 2px;
 }
 
 .test-field {
   margin-bottom: 10px;
   display: block;
-
 }
 
-.textarea::placeholder {
-  margin-left: 0;
-}
-
-input[type="number"] {
-  width: 4.9em;
-}
-
-textarea {
+.textarea-start:focus {
   text-align: start;
   margin-left: 0;
+  outline: none;
+}
+
+.years-old {
+  width: 4.9em;
 }
