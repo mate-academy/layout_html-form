@@ -1,1 +1,18 @@
 /* styles go here */
+.label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.label-last {
+  display: block;
+  margin-bottom: 0;
+}
+
+.blocks {
+  margin-bottom: 20px;
+}
+
+.blocks:last-child {
+  margin-bottom: 0;
+}
