@@ -16,10 +16,9 @@
         <legend>Personal information</legend>
 
         <div class="form-field">
-          <label for="surname">
-            Surname:
-          </label>
+          <label for="surname">Surname:</label>
           <input
+            type="text"
             name="surname"
             id="surname"
             autocomplete="off"
@@ -28,10 +27,9 @@
         </div>
 
         <div class="form-field">
-          <label for="surname">
-            Name:
-          </label>
+          <label for="name">Name:</label>
           <input
+            type="text"
             name="name"
             id="name"
             autocomplete="off"
@@ -40,9 +38,7 @@
         </div>
 
         <div class="form-field">
-          <label for="age">
-            How old are You?
-          </label>
+          <label for="age">How old are You?</label>
           <input
             type="number"
             name="age"
@@ -54,9 +50,7 @@
         </div>
 
         <div class="form-field">
-          <label for="dateOfBirth">
-            Full date of birth
-          </label>
+          <label for="dateOfBirth">Full date of birth:</label>
           <input
             type="date"
             name="dateOfBirth"
@@ -65,9 +59,7 @@
         </div>
 
         <div class="form-field">
-          <label for="agreement">
-            I accept the term of agreement
-          </label>
+          <label for="agreement">I accept the term of agreement</label>
           <input
             type="checkbox"
             name="agreement"
@@ -81,9 +73,7 @@
         <legend>Registration</legend>
 
         <div class="form-field">
-          <label for="email">
-            E-mail:
-          </label>
+          <label for="email">E-mail:</label>
           <input
             type="email"
             name="email"
@@ -94,13 +84,12 @@
         </div>
 
         <div class="form-field">
-          <label for="password">
-            Password:
-          </label>
+          <label for="password">Password:</label>
           <input
             type="password"
             name="password"
             id="password"
+            minlength="1"
             required
           >
         </div>
@@ -129,9 +118,7 @@
         </div>
 
         <div class="form-field">
-          <label for="color">
-            What is your favorite color?
-          </label>
+          <label for="color">What is your favorite color?</label>
           <input
             type="color"
             name="color"
@@ -140,9 +127,7 @@
         </div>
 
         <div class="form-field">
-          <label for="sleepTime">
-            What time do you go to bed?
-          </label>
+          <label for="sleepTime">What time do you go to bed?</label>
           <input
             type="time"
             name="sleepTime"
@@ -151,9 +136,7 @@
         </div>
 
         <div class="form-field">
-          <label for="favoriteCars">
-            What are your favorite brand of cars?
-          </label>
+          <label for="favoriteCars">What are your favorite brand of cars?</label>
           <select
             name="favoriteCars"
             id="favoriteCars"
@@ -166,14 +149,14 @@
         </div>
 
         <div class="form-field">
-          <label for="rating">
-            How do you rate Our work?
-          </label>
+          <label for="rating">How do you rate Our work?</label>
           <input
             type="range"
             name="rating"
             id="rating"
             value="0"
+            min="1"
+            max="100"
           >
         </div>
 
@@ -183,9 +166,7 @@
         <legend>Additional info</legend>
 
         <div class="form-field">
-          <label for="comments">
-            Comments:
-          </label>
+          <label for="comments">Comments:</label>
           <textarea
             name="comments"
             id="comments"
@@ -194,9 +175,7 @@
         </div>
 
         <div class="form-field">
-          <label for="recommendation">
-            Would you recommend Us?
-          </label>
+          <label for="recommendation">Would you recommend Us?</label>
           <select name="recommendation" id="recommendation">
             <option value="yes" selected>Yes</option>
             <option value="no">No</option>
