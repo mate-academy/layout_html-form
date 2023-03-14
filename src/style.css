@@ -1,9 +1,9 @@
 /* styles go here */
-.box {
-  display: block;
-  margin-top: 10px;
+.container {
+  margin-bottom: 20px;
 }
 
-.container {
-  margin-top: 20px;
+.box {
+  display: block;
+  margin-bottom: 10px;
 }
