@@ -20,6 +20,7 @@
           class="backdownInput"
           type="text"
           name="sname"
+          id="sname"
           autocomplete="off"
         ><br>
 
@@ -28,6 +29,7 @@
           class="backdownInput"
           type="text"
           name="fname"
+          id="fname"
           autocomplete="off"
         ><br>
 
@@ -36,6 +38,7 @@
           class="backdownInput"
           type="number"
           name="age"
+          id="age"
           min="1"
           max="100"
           value="12"
@@ -46,11 +49,13 @@
           class="backdownInput"
           type="date"
           name="bdate"
+          id="bdate"
         ><br>
 
         <label for="agreem">I accept the term of the agreement</label>
         <input
           type="checkbox"
+          id="agreem"
           required
         >
       </fieldset>
@@ -62,6 +67,7 @@
           class="backdownInput"
           type="email"
           name="mail"
+          id="mail"
           placeholder="email@example.com"
         ><br>
 
@@ -69,6 +75,7 @@
         <input
           type="password"
           name="password"
+          id="password"
           minlength="6"
           maxlength="20"
           required
@@ -82,13 +89,15 @@
           <input
             type="radio"
             name="cats"
+            id="catYes"
           >
-          <label for="cats">Yes</label>
+          <label for="catYes">Yes</label>
           <input
             type="radio"
             name="cats"
+            id="catNo"
           >
-          <label for="cats">No</label><br>
+          <label for="catNo">No</label>
         </div>
 
         <label for="color">What is your favorite color?</label>
@@ -96,6 +105,7 @@
           class="backdownInput"
           type="color"
           name="color"
+          id="color"
         ><br>
 
         <label for="sleep">What time do you go to bed?</label>
@@ -103,6 +113,7 @@
           class="backdownInput"
           type="time"
           name="sleep"
+          id="sleep"
           step="2"
         ><br>
 
@@ -117,13 +128,14 @@
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
             <option value="lada">Lada</option>
-          </select><br>
+          </select>
         </div>
 
         <label for="rating">How do you rate our work?</label>
         <input
           type="range"
           name="rating"
+          id="rating"
           min="1"
           max="10"
         >
@@ -138,8 +150,7 @@
             id="comment"
             cols="20"
             rows="2"
-          >
-          </textarea><br>
+         ></textarea>
         </div>
         <label for="recommend">Would you recommend us?</label>
         <select id="recommend" name="recommend">
@@ -148,10 +159,11 @@
         </select>
       </fieldset>
 
-      <input
+      <button
         type="submit"
-        value="Submit"
       >
+        Submit
+      </button>
     </form>
   </body>
 </html>
