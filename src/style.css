@@ -1,1 +1,14 @@
 /* styles go here */
+.form-field {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-fieldset {
+  margin-bottom: 20px;
+}
+
+.radio-catlovers {
+  display: inline-block;
+  margin-bottom: 10px;
+}
