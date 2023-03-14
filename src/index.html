@@ -10,8 +10,130 @@
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
-  <body>
-    <h1>HTML Form</h1>
+  <body autocomplete="off">
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="post"
+    >
+      <fieldset>
+        <legend>
+          Personal information
+        </legend>
+        Surname:
+        <input
+        type="text"
+        name="Surname"
+        id="marga"
+        >
+        <br>
+        Name:
+        <input
+        type="text"
+        name="Name"
+        id="marga1"
+        >
+        <br>
+        How old are You?
+        <input
+        type="number"
+        min="1"
+        max="100"
+        value="12"
+        name="old"
+        id="marga2"
+        >
+        <br>
+        Full date of birth:
+        <input
+        type="date"
+        name="date or birth"
+        id="marga3"
+        >
+        <br>
+        I accept the term of the agreement
+        <input
+        type="checkbox"
+        name="Agree"
+        >
+      </fieldset>
+      <fieldset>
+        <legend>
+          Registration
+        </legend>
+        E-mail:
+        <input
+        type="email"
+        name="Email"
+        placeholder="email@example.com"
+        id="marga4"
+        >
+        <br>
+        Password:
+        <input
+        type="password"
+        name="password"
+        >
+      </fieldset>
+      <fieldset>
+        <legend>
+          An interesting fact about you!
+        </legend>
+        Do you love cats?
+        <input
+        type="radio"
+        name="cats"
+        value="Yes"
+        id="marga5"
+        >
+        Yes
+        <input
+        type="radio"
+        name="cats"
+        value="No"
+        >
+        No
+        <br>
+        What is your favorite color?
+        <input
+        type="color"
+        value="#000000"
+        id="marga6"
+        >
+        <br>
+        What time do you go to bed?
+        <input type="time"
+        step="1"
+        id="marga7"
+        >
+        <br>
+        <div id="cars_text">  What are your favorite brand of cars?</div>
+        <div contenteditable="true" id="cars">
+          <p>BMW</p>
+          <br>
+          <p>Audi</p>
+          <br>
+          <p>Lada</p>
+        </div>
+        <br>
+        How do you rate our work?
+        <input type="range"
+        name="range"
+        value="0"
+        id="range"
+        >
+      </fieldset>
+      <fieldset>
+        <legend>Additional info:</legend>
+        Comments:
+        <textarea name="comment" cols="20"></textarea>
+        <br>
+        Would you recommend us?
+        <select name="select">
+          <option value="Yes">yes</option>
+          <option value="No">no</option>
+        </select>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
