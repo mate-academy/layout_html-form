@@ -13,5 +13,150 @@
   <body>
     <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+    <form action="#">
+      <fieldset >
+        <legend>Personal infotmation</legend>
+        <div>
+          <label for="surname">Surname: </label>
+          <input
+            type="text" 
+            id="surname" 
+            required
+            autocomplete="off"
+          >
+        </div>
+        <div>
+          <label for="name">Name: </label>
+          <input
+            type="text" 
+            id="name" 
+            required
+            autocomplete="off"
+          >
+        </div>
+        <div>
+          <label for="age">How old are You? </label>
+          <input
+            type="number" 
+            id="age" 
+            value="12" 
+            min="1" 
+            max="100" 
+            autocomplete="off"
+          >
+        </div>
+        <div>
+          <label for="dateOfBirth">Full date of birth: </label>
+          <input
+            type="date" 
+            id="dateOfBirth" 
+            value="mm/dd/yyyy" 
+            name="dateOfBirth"
+          >
+        </div>
+        <div>
+          <label for="contactChoice"> I accept the term of the agreemet</label>
+          <input
+            type="checkbox" 
+            id="contactChoice" 
+          >
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Registration</legend>
+        <div>
+          <label for="mail">E-mail: </label>
+          <input 
+            type="email" 
+            id="mail" 
+            value="email@example.com" 
+            autocomplete="off"
+          >
+        </div>
+        <div>
+          <label for="pass">Password: </label>
+          <input 
+            type="password" 
+            id="pass" 
+            name="password" 
+            autocomplete="off"
+          >
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>An interesting fact abuot you!</legend>
+        <div>
+          <label for="loveOfCats">Do you love cats?</label>
+          <label>
+            <input 
+              type="radio"
+              name="text" 
+              id="LoveOfCats"
+            > Yes 
+          </label>
+          <label>
+            <input 
+              type="radio"
+              name="text" 
+              id="radio"
+            > No 
+          </label>
+        </div>
+        <div>
+          <label for="color">What is your favorite color?</label>
+          <input 
+            type="color" 
+            id="color" 
+            value="#000"
+          >
+        </div>
+        <div>
+          <label for="time">What time do you go to bed?</label>
+          <input 
+            type="datetime-local" 
+            id="time"
+          >
+        </div>
+        <div>
+          <label for="brand">What are your favorite brand of car?</label>
+          <select 
+            name="user_cars[]" 
+            multiple="multiple" 
+            id="brand"
+          >
+            <option value="1">BMW</option>
+            <option value="2">Audi</option>
+            <option value="3">Lada</option>
+          </select>
+        </div>
+        <div>
+          <label for="rateOfWork">How do you rate our work? </label>
+          <input 
+            type="range" 
+            id="rateOfWork" 
+            name="rateOfWork"
+          >
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Additional info:</legend>
+        <div>
+          <label for="text">Comments:</label>
+          <textarea name="message" id="text"></textarea>
+        </div>
+        <div>
+          <label for="answer">Would you recommend us?</label>
+          <select name="answer" id="answer">
+            <option value="1">yes</option>
+            <option value="2">no</option>
+          </select>
+        </div>
+      </fieldset>
+      <div class="submit">
+        <input 
+          type="submit"
+        >
+      </div>
+    </form>
   </body>
 </html>
