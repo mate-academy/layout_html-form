@@ -1,6 +1,6 @@
 # HTML form
-Replace `<your_accout>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://github.com/obadyda.github.io/layout_html-form/)
+Replace `<your_accout>` with your Github username and copy the links  to Pull Request description:
+- [DEMO LINK](https://github.com/obadyda.github.io/layout_html-form/) <br>
 - [TEST REPORT LINK](https://github.com/obadyda.github.io/layout_html-form/report/html_report/)
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
