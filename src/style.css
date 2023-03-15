@@ -1,1 +1,23 @@
-/* styles go here */
+body {
+  margin: 8px;
+}
+
+.registr {
+  padding-block-end: 0;
+  margin-bottom: 20px;
+}
+
+.test-field {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.textarea-start:focus {
+  text-align: start;
+  margin-left: 0;
+  outline: none;
+}
+
+.years-old {
+  width: 4.9em;
+}
