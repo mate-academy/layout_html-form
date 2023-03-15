@@ -17,27 +17,51 @@
       <div class="group">
         <fieldset>
           <legend>Personal information</legend>
-          <label for="surname" class="label-margin">Surname:
-            <input type="text" id="surname" name="surname" 
+          <label for="surname" class="label-margin">
+            Surname:
+            <input 
+            type="text" 
+            id="surname" 
+            name="surname" 
+            size="20"
             autocomplete="off"
             >
           </label>
-          <label for="name" class="label-margin">Name:
-            <input type="text" id="name" name="name" 
+          <label for="name" class="label-margin">
+            Name:
+            <input 
+            type="text" 
+            id="name" 
+            name="name" 
             autocomplete="off"
             >
           </label>
-          <label for="age" class="label-margin">How old are You?
-            <input type="number" id="age" name="age" 
-            min="1" max="100" placeholder="12"
+          <label for="age" class="label-margin">
+            How old are you?
+            <input 
+            type="number" 
+            id="age" 
+            name="age" 
+            min="1" 
+            max="100" 
+            placeholder="12"
             >
           </label>
-          <label for="dateOfBirth" class="label-margin">Full date of birth:
-            <input type="date" id="dateOfBirth" name="dateOfBirth">
+          <label for="dateOfBirth" class="label-margin">
+            Full date of birth:
+            <input 
+            type="date" 
+            id="dateOfBirth" 
+            name="dateOfBirth"
+            >
           </label>
-          <label class="no-margin">
-            I accept the terms of the agreement
-            <input type="checkbox" name="acceptTerms" required>
+          <label>
+            I accept the term of the agreement
+            <input 
+            type="checkbox" 
+            name="acceptTerms" 
+            required
+            >
           </label>
         </fieldset>
       </div>
@@ -45,15 +69,23 @@
       <div class="group">
         <fieldset>
           <legend>Registration</legend>
-          <label class="label-inline label-margin" for="email">Email:
-            <input type="email" id="email" name="email" 
-            placeholder="email@example.com" class="input-inline"
+          <label class="label-inline label-margin" for="email">
+            E-mail:
+            <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="email@example.com"
             >
           </label>
-          <label for="pwd" class="label-margin">Password:
-            <input type="password" id="pwd" name="pwd" 
-            required minlength="8" maxlength="16" 
-            class="input-inline"
+          <label>Password:
+            <input 
+            type="password" 
+            id="pwd" 
+            name="pwd" 
+            required 
+            minlength="8" 
+            maxlength="16"
             >
           </label>
         </fieldset>
@@ -62,41 +94,68 @@
       <div class="group">
         <fieldset>
           <legend>An interesting fact about you!</legend>
-          <label class="label-margin">Do you like cats</label>
+          <label class="label-margin">
+            Do you love cats?
+            <label>
+              <input 
+              type="radio" 
+              id="cats-yes" 
+              name="cats" 
+              value="yes" 
+              required
+              >
+              Yes
+            </label>
           
-          <label for="cats-yes">Yes
-            <input type="radio" id="cats-yes" name="cats" 
-            value="yes" required
-            >
+            <label>
+              <input 
+              type="radio" 
+              id="cats-no" 
+              name="cats" 
+              value="no" 
+              required
+              >
+            No
+            </label>
           </label>
-        
           
-          <label for="cats-no">No
-            <input type="radio" id="cats-no" name="cats" 
-            value="no" required
-            >
-          </label>
-          
-          <label for="color" class="label-margin">What is your favorite color?
-            <input type="color" id="color" name="color" 
+          <label for="color" class="label-margin">
+            What is your favorite color?
+            <input 
+            type="color" 
+            id="color" 
+            name="color" 
             required
             >
           </label>
-          <label for="bedTime" class="label-margin">What time do you go to bed?
-            <input type="time" id="bedTime" name="bedTime" 
-            required
+          <label for="bedTime" class="label-margin">
+            What time do you go to bed?
+            <input 
+                type="time" 
+                id="bedTime" 
+                name="bedTime" 
+                required
+                step="1"
             >
           </label>
-          <label class="label-margin">What is your favorite type of car
+          <label class="label-margin">
+            What are your favorite brand of cars?
             <select name="car" multiple>
               <option value="bmw">BMW</option>
               <option value="audi">Audi</option>
-              <option value="ford">Ford</option>
+              <option value="Lada">Lada</option>
             </select>
           </label>
-          <label for="rating" class="label-margin">How do you rate our work?
-            <input type="range" min="0" max="10" 
-            step="1" name="rating" id="rating"
+          <label>
+            How do you rate our work?
+            <input 
+            type="range" 
+            min="0" 
+            max="10" 
+            step="1" 
+            name="rating" 
+            id="rating"
+            value="0"
             >
           </label>
         </fieldset>
@@ -104,24 +163,32 @@
   
       <div class="group">
         <fieldset>
-          <legend>Additional Info:</legend>
-          <label for="comments" class="label-margin">Comments:
-            <textarea id="comments" name="comments" rows="2" 
-          cols="12"
-          >
+          <legend>Additional info:</legend>
+          <label>
+            Comments:
+            <textarea 
+              id="comments" 
+              name="comments" 
+              rows="2" 
+              cols="20"
+            >
             </textarea>
           </label>
-          <label class="label-margin">Would you recommend us?
-            <select id="recommend" name="recommend">
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select>
-          </label>
+          <br>
+          <label for="recommend-yes">Would you recommend us?</label>
+          <select id="recommend" name="recommend">
+            <option id="recommend-yes" value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
         </fieldset>
       </div>
 
       <label for="submitButton"></label>
-      <input type="submit" id="submitButton" value="Submit"> 
+      <input 
+      type="submit" 
+      id="submitButton" 
+      value="Submit"
+      > 
     </form> 
   </body>
 </html>
