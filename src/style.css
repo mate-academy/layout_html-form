@@ -3,14 +3,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-form fieldset {
+.registerForm fieldset {
   margin: 20px 0;
 }
 
-form fieldset legend {
+.registerForm fieldset legend {
   font-weight: bold;
 }
 
-form fieldset div {
+.registerForm fieldset div {
   padding: 5px 0;
 }
