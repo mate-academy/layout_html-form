@@ -1,8 +1,8 @@
 /* styles go here */
-.form ~ .form {
+.form {
   margin-top: 10px;
 }
 
-fieldset ~ fieldset {
+fieldset {
   margin-top: 20px;
 }
