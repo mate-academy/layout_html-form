@@ -15,82 +15,85 @@
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post" >
       <fieldset>
         <legend>Personal Information</legend>
-        <div class="personalInformation">
-          <div class="personalInformationField">
-            <label for="surname">
-              Surname:
-            </label>
-            <input type="text"
+        <div>
+          <label for="surname">
+            Surname:
+            <input
+            type="text"
+            autocomplete="off"
             name="surname"
             id="surname"
             >
-          </div>
-          <div class="personalInformationField">
-            <label for="name">
-              Name:
-            </label>
-            <input type="text"
+          </label>
+        </div>
+        <div>
+          <label for="name">
+            Name:
+            <input
+            type="text"
+            autocomplete="off"
             name="name"
             id="name"
             >
-          </div>
-          <div class="personalInformationField">
-            <label for="old">
-              How old are You?
-            </label>
-            <input type="number"
+          </label>
+        </div>
+        <div>
+          <label for="old">
+            How old are You?
+            <input
+            type="number"
             id="old"
             name="old"
             value="12"
             min="1"
             max="100"
             >
-          </div>
-          <div class="personalInformationField">
-            <label for="date">
-              Full date of birth:
-            </label>
-            <input type="date"
+          </label>
+        </div>
+        <div>
+          <label for="date">
+            Full date of birth:
+            <input
+            type="date"
             id="date"
             name="birth-date"
             placeholder="dd.mm.yyyy"
             min="1900-01-01"
             max="2023-04-30"
             >
-          </div>
-          <div>
-            <label for="accept-term">
-              I accept the term of the agreement
-            </label>
-            <input type="checkbox" id="accept-term">
-          </div>
+          </label>
         </div>
-
+        <div>
+          <label for="accept-term">
+            I accept the term of the agreement
+            <input type="checkbox" id="accept-term">
+          </label>
+        </div>
       </fieldset>
       <fieldset>
         <legend>Registration</legend>
-        <div class="loginForm">
+        <div>
           <label for="user-email">
             E-mail:
+            <input type="email"
+            id="user-email"
+            placeholder="email@example.com"
+            >
           </label>
-          <input type="email"
-          id="user-email"
-          placeholder="example@gmail.com"
-          >
         </div>
-        <div class="loginForm">
+        <div>
           <label for="user-password">
-            Password:
+          Password:
+            <input type="password"
+            id="user-password"
+            minlength="6"
+            >
           </label>
-          <input type="password"
-          id="user-password"
-          minlength="6"
-          >
         </div>
       </fieldset>
       <fieldset>
         <legend>An interesting fact about you!</legend>
-        <div class="factsForm">
+        <div>
           Do you love cats?
           <input type="radio"
           id="yes"
@@ -105,50 +108,51 @@
           >
           <label for="no">No</label>
         </div>
-        <div class="factsForm">
+        <div>
           What is your favourite color?
           <input type="color">
         </div>
-        <div class="factsForm">
+        <div>
           What time do you go to bed
           <input type="time">
         </div>
-        <div class="factsForm">
+        <div>
           <label for="carBrand">
             What are your favourite brend of cars?
+            <select name="carBrand"
+            id="carBrand"
+            required
+            >
+              <option disabled selected>Chose</option>
+              <option value="chevrolet">Chevrolet</option>
+              <option value="bmw">BMW</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </select>
           </label>
-          <select name="carBrand"
-          id="carBrand"
-          required>
-            <option disabled selected>Chose</option>
-            <option value="chevrolet">Chevrolet</option>
-            <option value="bmw">BMW</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
-          </select>
         </div>
-        <div class="factsForm">
+        <div>
             How do you rate our work?
           <input type="range" id="workRate">
         </div>
       </fieldset>
       <fieldset>
         <legend>Additonal info:</legend>
-        <div class="additionalInfo">
+        <div>
         </div>
         <label for="comments">
           Comments:
+          <textarea id="comments"></textarea>
         </label>
-        <textarea id="comments"></textarea>
         </div>
-        <div class="additionalInfo">
+        <div>
           <label>
             Would you recomend us?
+            <select name="recomend" id="recomend">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
           </label>
-          <select name="recomend" id="recomend">
-            <option value="yes">yes</option>
-            <option value="no">no</option>
-          </select>
         </div>
       </fieldset>
       <button type="submit">Submit</button>
