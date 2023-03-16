@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="./style.css" >
   </head>
   <body>
+    <h1>HTML Form</h1>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      autocomplete="off"
+    >
 
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <fieldset class="fieldset person-info">
         <legend>Personal information</legend>
         <label class="form-field surname">
@@ -17,7 +22,7 @@
           <input
             type="text"
             name="surname"
-            autocomplete="off"
+            required
           >
         </label>
 
@@ -26,26 +31,23 @@
           <input
             type="text"
             name="name"
-            autocomplete="off"
+            required
           >
         </label>
 
-        <div>
-          <label class="form-field how-old">
+
+        <label class="form-field how-old">
             How old are you
-
-            <input
-              type="number"
-              id="tentacles"
-              name="tentacles"
-              min="1"
-              max="100"
-              value="12"
-              required
+          <input
+            type="number"
+            id="tentacles"
+            name="tentacles"
+            min="1"
+            max="100"
+            value="12"
+            required
             >
-          </label>
-        </div>
-
+        </label>
 
         <label class="form-field date-birth">
             Full date of birth:
@@ -56,8 +58,6 @@
             >
         </label>
 
-
-
         <label class="form-field">
           <input
             type="checkbox"
@@ -65,21 +65,21 @@
             >
             I accept the term of the agreement
         </label>
-
       </fieldset>
 
       <fieldset class="fieldset registration">
         <legend>Registration</legend>
+
         <label class="form-field email">
           Email:
           <input
             type="email"
             name="email"
             placeholder="email@example.com"
-            autocomplete="off"
             required
           >
         </label>
+
         <label class="form-field password">
           Password:
           <input
@@ -98,7 +98,8 @@
 
         <label class="form-field cats">
               Do you love cats?
-          <input type="radio"
+          <input
+            type="radio"
             id="Yes"
             name="cat"
             value="yes"
@@ -116,12 +117,12 @@
               - No
         </label>
 
-
         <label class="form-field color">
               What is your favorite color?
           <input
             type="color"
             value="#00000"
+            required
           >
         </label>
 
@@ -141,7 +142,9 @@
           <select
             name="cars"
             multiple
-            required>
+            required
+          >
+
             <option value="Lada">Lada</option>
             <option value="no">Audi</option>
             <option value="no">BMW</option>
@@ -163,12 +166,13 @@
 
         <label class="form-field comments">
             Comments:
-          <textarea name="comments"></textarea>
+          <textarea name="comments"
+          ></textarea>
         </label>
 
         <label class="form-field recomended">
             Would you recomended us?
-          <select name="multiplei" required>
+          <select>
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
@@ -177,6 +181,7 @@
 
       <button type="submit">Submit</button>
     </form>
+
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
