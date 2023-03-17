@@ -2,10 +2,10 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.registerForm .fieldset {
+.fieldset {
   margin-top: 20px;
 }
 
-.registerForm .fieldset .field {
+.fieldset .field {
   padding-top: 5px;
 }
