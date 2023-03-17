@@ -1,6 +1,10 @@
 # HTML form
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
+<<<<<<< HEAD
 - [DEMO LINK](https://ANTI-bogdan.github.io/layout_html-form/)
+=======
+- [DEMO LINK](https://ANTI-bogdan_account>.github.io/layout_html-form/)
+>>>>>>> 6532acd540879c2d6e2bc05159586fa91b96ed6a
 - [TEST REPORT LINK](https://ANTI-bogdan.github.io/layout_html-form/report/html_report/)
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
