@@ -19,12 +19,12 @@
           <label for="surname">
             Surname:
             <input
-            type="text"
-            name="surname"
-            id="surname"
-            autocomplete="off"
-            minlength="3"
-            maxlength="15"
+              type="text"
+              name="surname"
+              id="surname"
+              autocomplete="off"
+              minlength="3"
+              maxlength="15"
             >
           </label>
         </div>
@@ -33,10 +33,10 @@
           <label for="name">
             Name:
             <input
-            type="text"
-            name="name"
-            id="name"
-            autocomplete="off"
+              type="text"
+              name="name"
+              id="name"
+              autocomplete="off"
             >
           </label>
         </div>
@@ -45,12 +45,12 @@
           <label for="age">
             How old are you?
             <input
-            type="number"
-            name="age"
-            id="age"
-            min="1"
-            max="100"
-            value="12"
+              type="number"
+              name="age"
+              id="age"
+              min="1"
+              max="100"
+              value="12"
             >
           </label>
         </div>
@@ -59,9 +59,9 @@
           <label for="date">
             Full date of birth
             <input
-            type="date"
-            name="date"
-            id="date"
+              type="date"
+              name="date"
+              id="date"
             >
           </label>
         </div>
@@ -70,9 +70,9 @@
           <label for="check">
             I accept the term of agreement
             <input
-            type="checkbox"
-            name="check"
-            id="check"
+              type="checkbox"
+              name="check"
+              id="check"
             >
           </label>
         </div>
@@ -86,22 +86,22 @@
           <label for="email">
             Email:
             <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="email@example.com"
-            required
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@example.com"
+              required
             >
           </label>
         </div>
 
-        <div class="form-input password">
+        <div class="form-input check">
           <label for="password">
             Password:
             <input
-            type="password"
-            name="password"
-            id="password"
+              type="password"
+              name="password"
+              id="password"
             >
           </label>
         </div>
@@ -113,20 +113,20 @@
         <div class="form-input">
           Do you love cats?
 
-          <label for="cats">
+          <label>
             <input
-            type="radio"
-            name="cats"
-            value="yes"
+              type="radio"
+              name="cats"
+              value="yes"
             >
             Yes
           </label>
 
-          <label for="cats">
+          <label>
             <input
-            type="radio"
-            name="cats"
-            value="no"
+              type="radio"
+              name="cats"
+              value="no"
             >
             No
           </label>
@@ -136,9 +136,9 @@
           <label for="color">
             What is your favorite color?
             <input
-            type="color"
-            name="color"
-            id="color"
+              type="color"
+              name="color"
+              id="color"
             >
           </label>
         </div>
@@ -147,9 +147,9 @@
           <label for="time">
             What time do you go to bed?
             <input
-            type="time"
-            name="time"
-            id="time"
+              type="time"
+              name="time"
+              id="time"
             >
           </label>
         </div>
@@ -157,23 +157,24 @@
         <div class="form-input">
           <label for="cars">
             What are your favorite brand of cars?
-            <textarea
-            name="cars"
-            id="cars"
-            cols="5"
-            rows="4"
-          >BMW Audi Lada
-            </textarea>
+            <select
+              name="cars"
+              id="cars"
+              multiple>
+              <option value="BMW">yes</option>
+              <option value="Audi">no</option>
+              <option value="Lada">no</option>
+            </select>
           </label>
         </div>
 
-        <div class="form-input range">
+        <div class="form-input check">
           <label for="range">
             How do you rate our work?
             <input
-            type="range"
-            name="range"
-            id="range"
+              type="range"
+              name="range"
+              id="range"
             >
           </label>
         </div>
@@ -187,10 +188,10 @@
           <label for="textarea">
             Comments:
             <textarea
-            name="textarea"
-            id="textarea"
-            cols="15"
-            rows="2"
+              name="textarea"
+              id="textarea"
+              cols="15"
+              rows="2"
            ></textarea>
           </label>
         </div>
@@ -199,9 +200,9 @@
           <label for="selection">
             Would you recommend us?
             <select
-            name="selection"
-            id="selection"
-            multiple>
+              name="selection"
+              id="selection"
+            >
               <option value="yes">yes</option>
               <option value="no">no</option>
             </select>
