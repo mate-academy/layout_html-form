@@ -20,47 +20,46 @@
           <label for="surname" class="label-margin">
             Surname:
             <input 
-            type="text" 
-            id="surname" 
-            name="surname" 
-            size="20"
-            autocomplete="off"
+              type="text" 
+              id="surname" 
+              name="surname" 
+              autocomplete="off"
             >
           </label>
           <label for="name" class="label-margin">
             Name:
             <input 
-            type="text" 
-            id="name" 
-            name="name" 
-            autocomplete="off"
+              type="text" 
+              id="name" 
+              name="name" 
+              autocomplete="off"
             >
           </label>
           <label for="age" class="label-margin">
             How old are You?
             <input 
-            type="number" 
-            id="age" 
-            name="age" 
-            min="1" 
-            max="100" 
-            placeholder="12"
+              type="number" 
+              id="age" 
+              name="age" 
+              min="1" 
+              max="100" 
+              placeholder="12"
             >
           </label>
           <label for="dateOfBirth" class="label-margin">
             Full date of birth:
             <input 
-            type="date" 
-            id="dateOfBirth" 
-            name="dateOfBirth"
+              type="date" 
+              id="dateOfBirth" 
+              name="dateOfBirth"
             >
           </label>
           <label>
             I accept the term of the agreement
             <input 
-            type="checkbox" 
-            name="acceptTerms" 
-            required
+              type="checkbox" 
+              name="acceptTerms" 
+              required
             >
           </label>
         </fieldset>
@@ -72,20 +71,21 @@
           <label class="label-inline label-margin" for="email">
             E-mail:
             <input 
-            type="email" 
-            id="email" 
-            name="email" 
-            placeholder="email@example.com"
+              type="email" 
+              id="email" 
+              name="email" 
+              placeholder="email@example.com"
+              size="20"
             >
           </label>
           <label>Password:
             <input 
-            type="password" 
-            id="pwd" 
-            name="pwd" 
-            required 
-            minlength="8" 
-            maxlength="16"
+              type="password" 
+              id="pwd" 
+              name="pwd" 
+              required 
+              minlength="8" 
+              maxlength="16"
             >
           </label>
         </fieldset>
@@ -93,39 +93,35 @@
     
       <div class="group">
         <fieldset>
-          <legend>An interesting fact about you!</legend>
-          <label class="label-margin">
-            Do you love cats?
-            <label>
-              <input 
-              type="radio" 
-              id="cats-yes" 
-              name="cats" 
-              value="yes" 
-              required
-              >
+          <legend>An interesting fact about you!</legend> 
+          Do you like cats 
+          <label>
+            <input 
+                type="radio" 
+                id="cats-yes" 
+                name="cats" 
+                value="yes" 
+            >
               Yes
-            </label>
+          </label>
           
-            <label>
-              <input 
-              type="radio" 
-              id="cats-no" 
-              name="cats" 
-              value="no" 
-              required
-              >
+          <label>
+            <input 
+                type="radio" 
+                id="cats-no" 
+                name="cats" 
+                value="no" 
+            >
             No
-            </label>
           </label>
           
           <label for="color" class="label-margin">
             What is your favorite color?
             <input 
-            type="color" 
-            id="color" 
-            name="color" 
-            required
+              type="color" 
+              id="color" 
+              name="color" 
+              required
             >
           </label>
           <label for="bedTime" class="label-margin">
@@ -149,13 +145,13 @@
           <label>
             How do you rate our work?
             <input 
-            type="range" 
-            min="0" 
-            max="10" 
-            step="1" 
-            name="rating" 
-            id="rating"
-            value="0"
+              type="range" 
+              min="0" 
+              max="10" 
+              step="1" 
+              name="rating" 
+              id="rating"
+              value="0"
             >
           </label>
         </fieldset>
@@ -181,14 +177,7 @@
           </select>
         </fieldset>
       </div>
-
-      <label for="submitButton"></label>
-      <input 
-       type="submit" 
-       id="submitButton" 
-       value="Submit"
-      > 
-
+      <button type="submit">Submit</button>
     </form> 
   </body>
 </html>
