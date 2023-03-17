@@ -1,9 +1,5 @@
 /* styles go here */
-<<<<<<< HEAD
 .form-field:not(:last-child) {
-=======
-.form-fiedl:not(:last-child) {
->>>>>>> 6532acd540879c2d6e2bc05159586fa91b96ed6a
   display: block;
   margin-bottom: 10px;
 }
