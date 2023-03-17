@@ -1,1 +1,23 @@
-/* styles go here */
+.group {
+  margin-bottom: 20px;
+}
+
+.form-input {
+  margin-bottom: 10px;
+}
+
+.check {
+  margin-bottom: 0;
+}
+
+.password {
+  margin-bottom: 0;
+}
+
+.range {
+  margin-bottom: 0;
+}
+
+.selection {
+  margin-bottom: 0;
+}
