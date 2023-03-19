@@ -1,21 +1,8 @@
-.personalInfo{
-	.margin top: 20px;
-	padding: 10px;
-	margin: 20px;
+
+.field:not(:first-child):not(:last-child) {
+  margin-bottom: 10px;
 }
 
-.registration {
-	padding: 10px;
-	margin: 20px;
+fieldset {
+  margin-bottom:20px;
 }
-
-.interestingFact {
-	padding: 10px;
-	margin: 20px;
-}
-
-.additionalInfo {
-	padding: 10px;
-	margin: 20px;
-}
-
