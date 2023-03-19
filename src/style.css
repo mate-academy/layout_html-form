@@ -1,1 +1,7 @@
-/* styles go here */
+.field_group {
+  margin-bottom: 20px;
+}
+
+.div_input:not(:last-child) {
+  margin-bottom: 10px;
+}
