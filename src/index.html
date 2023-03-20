@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <fieldset class="form__group">
         <legend>Personal information</legend>
         <label class="form-field">
@@ -82,15 +82,17 @@
       </fieldset>
     
       <fieldset class="form__group">
-        <legend>An interesting fact about you!</legend>
-        <label class="form-field">
+        <legend>An interesting fact about you!</legend>        
           Do you love cats?
+        <label>
           <input 
             type="radio" 
             name="catLover" 
             value="Yes"
           >
           Yes
+        </label>
+        <label>
           <input 
             type="radio" 
             name="catLover" 
