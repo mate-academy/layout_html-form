@@ -1,0 +1,17 @@
+
+.section {
+  margin-bottom: 10px;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.fieldset:last-child {
+  margin-bottom: 0;
+}
+/* можна було б використати для label display="block" щоб не писати <div> */
