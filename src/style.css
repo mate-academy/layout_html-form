@@ -1,1 +1,13 @@
-/* styles go here */
+.form-field {
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+.rate {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
