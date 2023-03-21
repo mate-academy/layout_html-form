@@ -14,36 +14,60 @@
     <form action="http://mate-academy-form-lesson.herokuapp.com/create-application"
     method="post">
 
-      <fieldset class="groups">
+      <fieldset>
         <legend>Personal information</legend>
 
         <label>
-          <div class="inputs">
-            Surname:  <input name="surname" type="text" autocomplete="off" required>
+          <div>Surname:
+            <input
+              name="surname"
+              type="text"
+              autocomplete="off"
+              required
+            >
           </div>
         </label>
 
         <label>
-          <div class="inputs">
-            Name:  <input name="name" type="text" autocomplete="off" required>
+          <div class="inputs">Name:
+            <input
+              name="name"
+              type="text"
+              autocomplete="off"
+              required
+            >
           </div>
         </label>
 
         <label>
-          <div class="inputs">
-            How old are You?  <input name="How-old" type="number" min="1" max="100" value="12" autocomplete="off">
+          <div class="inputs">How old are You?
+            <input
+              name="How-old"
+              type="number"
+              min="1"
+              max="100"
+              value="12"
+              autocomplete="off"
+            >
           </div>
         </label>
 
         <label>
-          <div class="inputs">
-            Full date of birth:  <input name="birth" type="date">
+          <div class="inputs">Full date of birth:
+            <input
+              name="birth"
+              type="date"
+            >
           </div>
         </label>
 
         <label>
-          <div class="inputs">
-            I accept the term of the agreement  <input name="license" type="checkbox" required>
+          <div class="inputs">I accept the term of the agreement
+            <input
+              name="license"
+              type="checkbox"
+              required
+            >
           </div>
         </label>
       </fieldset>
@@ -52,14 +76,27 @@
         <legend>Registration</legend>
 
         <label>
-          <div class="inputs">
-            E-mail:  <input name="email" type="email" placeholder="email@example.com" autocomplete="off" required>
+          <div>E-mail:
+            <input
+              name="email"
+              type="email"
+              placeholder="email@example.com"
+              autocomplete="off"
+              required
+            >
           </div>
         </label>
 
         <label>
-          <div class="inputs">
-            Password:  <input name="pass" type="password" minlength="8" maxlength="20" autocomplete="off" required>
+          <div class="inputs">Password:
+            <input
+              name="pass"
+              type="password"
+              minlength="8"
+              maxlength="20"
+              autocomplete="off"
+              required
+            >
           </div>
         </label>
       </fieldset>
@@ -68,7 +105,7 @@
         <legend>An interesting fact about you!</legend>
 
         <label>
-          <div class="inputs">
+          <div>
             Do you love cats?
             <input type="radio" name="choise"> Yes
             <input type="radio" name="choise"> No
@@ -103,27 +140,34 @@
         <label>
           <div class="inputs">
             How do you rate our work?
-            <input type="range" name="volume" min="0" max="5" value="0">
+            <input
+              type="range"
+              name="volume"
+              min="0"
+              max="5"
+              value="0"
+            >
           </div>
         </label>
       </fieldset>
 
       <fieldset class="groups">
-        <legend>Personal information</legend>
+        <legend>Additional info:</legend>
 
         <label>
-          <div class="inputs">
+          <div>
             Comments:
             <textarea
               placeholder="Input your text"
               name="textarea"
-            >Мої враження</textarea>
+            >
+            </textarea>
           </div>
         </label>
 
         <label>
           <div class="inputs">
-            Would you recommend us?  
+            Would you recommend us?
             <select name="recom">
               <option value="yes">yes</option>
               <option value="no">no</option>
@@ -134,7 +178,12 @@
 
       </fieldset>
 
-      <button type="submit" class="groups" method="Post">Submit</button>
+      <button
+      type="submit"
+      class="groups"
+      method="Post">
+      Submit
+      </button>
     </form>
 
     <script type="text/javascript" src="./main.js"></script>
