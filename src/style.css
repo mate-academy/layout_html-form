@@ -1,1 +1,11 @@
-/* styles go here */
+
+label,
+input,
+div {
+  margin-bottom: 10px;
+}
+
+fieldset,
+button {
+  margin-bottom: 20px;
+}
