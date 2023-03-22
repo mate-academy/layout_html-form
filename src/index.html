@@ -15,31 +15,45 @@
     <form action="http://localhost:3000/api" method="post">
       <fieldset>
         <legend>Personal information</legend>
+        
         <div class="form-field">
-      Surname:
+          <label for="Surname">
+            Surname:
+          </label>
+      
           <input type="text" name="Surname" 
-          required
-          >
-        </div>
-
-        <div class="form-field">Name:
-          <input type="text" name="Name" 
-          required
+            id="Surname" required
           >
         </div>
 
         <div class="form-field">
-      How old are You?
+          <label for="Name">
+            Name:
+          </label>
+          
+          <input type="text" name="Name" 
+          id="Name" required
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="Years">
+            How old are You?
+          </label>
           <input type="number" name="years" 
           min="1" max="100" 
-          value="12"
+          value="12" id="Years"
           >
 
         </div>
 
         <div class="form-field">
-      Full date of birth:
-          <input type="date" name="dateofbirth">
+          <label for="DateOfBirth">
+            Full date of birth:
+          </label>
+          <input type="date" name="dateofbirth"
+          id="DateOfBirth"
+          >
         </div>
 
         <div class="form-field">
@@ -52,29 +66,30 @@
         </div>
 
       </fieldset>
-    </form>
 
-    <form-1>
       <fieldset>
         <legend>Registration</legend>
 
         <div class="form-field">
-      E-mail:
+          <label for="E-mail">
+            E-mail:
+          </label>
           <input type="email" name="email" 
           placeholder="email@example.com" required
+          id="E-mail"
           >
         </div>
 
         <div class="form-field">
-      Password:
+          <label for="Password">
+            Password:
+          </label>
           <input type="password" name="password" 
-          required
+          id="Password" required
           >
         </div>
       </fieldset>
-    </form-1>
-
-    <form-2>
+    
       <fieldset>
         <legend>An interesting fact about you!</legend>
 
@@ -91,14 +106,20 @@
         </div>
 
         <div class="form-field">
-      What is your favorite color?
-          <input type="color" name="color">
+          <label for="favorite-color">
+            What is your favorite color?
+          </label>
+          <input type="color" name="color"
+          id="favorite-color"
+          >
         </div>
 
         <div class="form-field">
-      What time do you go to bed?
+          <label for="what-time">
+            What time do you go to bed?
+          </label>
           <input type="time" name="time"
-          step="1"
+          step="1" id="what-time"
           >
         </div>
 
@@ -125,34 +146,37 @@
           </p>
         </div>
       </fieldset>
-    </form-2>
-
-    <form-3>
+    
       <fieldset>
         <legend>Additional info:</legend>
 
         <div class="form-field">
-      Comments:
-          <textarea name="Comments:"></textarea>
+          <label for="comments">
+            Comments:
+          </label>
+          <textarea> 
+            name="Comments:" 
+            id="comments"
+          </textarea>
         </div>
 
         <div class="form-field">
-      Would you recommend us?
+          <label for="reccomend us">
+            Would you recommend us?
+          </label>
 
-          <select name="recommend">
+          <select name="recommend" id="reccomend us">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
         </div>
       </fieldset>
 
-    </form-3>
-    <div class="button">
-      <button type="submit">Submit
-      </button>
-    </div>
-    
-
+      <div class="button">
+        <button type="submit">Submit
+        </button>
+      </div>
+    </form>
 
     <script type="text/javascript" src="./main.js"></script>
   </body>
