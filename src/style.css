@@ -1,15 +1,27 @@
 /* styles go here */
-body {
-  display: block;
-  margin: 0;
-}
 
 .form-field {
-  margin: 10px auto;
+  margin: 0 0 10px;
+}
+
+.form-field:first-child {
+  margin-top: 0;
+}
+
+.form-field:last-child {
+  margin-bottom: 0;
 }
 
 .information {
-  margin: 20px auto;
+  margin: 0 0 20px;
+}
+
+.information:first-child {
+  margin-top: 0;
+}
+
+.information:last-child {
+  margin-bottom: 0;
 }
 
 .label {
