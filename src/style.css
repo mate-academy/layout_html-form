@@ -1,7 +1,7 @@
 /* styles go here */
 
 .form-field {
-  margin: 0 0 10px;
+  margin-bottom: 10px;
 }
 
 .form-field:first-child {
@@ -13,7 +13,7 @@
 }
 
 .information {
-  margin: 0 0 20px;
+  margin-bottom: 20px;
 }
 
 .information:first-child {
