@@ -13,8 +13,14 @@
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <fieldset>
-        <legend>Personal Information</legend>
-        <label>Surname: <input name="surname" type="text"></label>
+        <legend>Personal information</legend>
+        <label>Surname:
+          <input
+            autocomplete="off"
+            name="surname"
+            type="text"
+          >
+        </label>
         <label>Name: <input name="name" type="text"></label>
         <label>How old are You?
           <input
@@ -42,21 +48,21 @@
         <label for="pass">Password: <input type="password" name="pass"></label>
       </fieldset>
       <fieldset>
-        <legend>An intresting fact about you!</legend>
+        <legend>An interesting fact about you!</legend>
         Do you love cats?
         <label class="none">
           <input
             type="radio"
             name="cat"
             value="yes"
-          >Yes
+          > Yes
         </label>
         <label class="none">
           <input
             type="radio"
             name="cat"
             value="no"
-          >No
+          > No
         </label>
         <label for="col">What is your favorite color? <input type="color" name="col"></label>
         <label for="time">What time do you go to bed? <input type="time" name="time"></label>
@@ -80,7 +86,7 @@
           <textarea
             name="comment"
             cols="30"
-            rows="3">
+            rows="2">
           </textarea>
         </label>
         <label for="recom">Would you recommend us?
@@ -90,7 +96,7 @@
           </select>
         </label>
       </fieldset>
-      <button>Submit</button>
+      <button type="submit">Submit</button>
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
