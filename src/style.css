@@ -1,4 +1,3 @@
-/* Form information */
 .field_inform {
   margin-top: 10px;
 }
@@ -27,7 +26,6 @@
   margin-top: 10px;
 }
 
-/* Form registration */
 .field_registration {
   margin-top: 20px;
 }
@@ -41,14 +39,12 @@
   margin: 10px 0 0;
 }
 
-/* Form intersting fact */
 .field_interest_fact {
   margin-top: 20px;
 }
 
 .select_cat {
   display: block;
-  margin-top: 10px;
 }
 
 .color_base {
@@ -71,15 +67,9 @@
   margin-top: 10px;
 }
 
-/* block Additional info */
-
 .field_add_ifno {
   margin-top: 20px;
 }
-
-/* .text_add_info {
-  margin-top: 10px;
-} */
 
 .textarea_add_info {
   display: flex;

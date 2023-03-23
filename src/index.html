@@ -13,161 +13,165 @@
   </head>
 
   <body>
-    <form action="http://127.0.0.1:5500/src/index.html"
-    method="post"
-    class="form_basic"
-    autocomplete="off">
-      <fieldset class="field_inform"> <!--Form information-->
+    <form
+      action="http://127.0.0.1:5500/src/index.html"
+      method="post"
+      class="form_basic"
+      autocomplete="off"
+    >
+      <fieldset class="field_inform">
         <legend class="form_title_information">Personal information</legend>
         <label class="surname">
           Surname:
-          <input type="text"
-          name="surname"
-          class="surname_input"
-          required
+          <input
+            type="text"
+            name="surname"
+            class="surname_input"
+            required
           >
         </label>
         <label class="name">
           Name:
-          <input type="text"
-          name="name"
-          class="name_input"
-          required
+          <input
+            type="text"
+            name="name"
+            class="name_input"
+            required
           >
         </label>
         <label class="age">
           How old are You?
           <input
-          class="field_age"
-          name="age"
-          type="number"
-          min="1" max="100"
-          value="12"
+            class="field_age"
+            name="age"
+            type="number"
+            min="1" max="100"
+            value="12"
           >
         </label>
         <label class="date_birth">
           Full date of birth:
-          <input class="date_birth_input"
-          type="date"
-          name="dateOfBirth"
-          placeholder="дд.мм.рррр"
+          <input
+            class="date_birth_input"
+            type="date"
+            name="dateOfBirth"
+            placeholder="дд.мм.рррр"
           >
         </label>
         <label class="agree">
           I accept the term  of the agreement
           <input
-          class="field_agree"
-          name="agree"
-          type="checkbox"
-          required
+            class="field_agree"
+            name="agree"
+            type="checkbox"
+            required
           >
         </label>
       </fieldset>
-      <fieldset class="field_registration"> <!--Form registration-->
+      <fieldset class="field_registration">
         <legend class="form_title_registration">Registration</legend>
         <label class="mail">
           E-mail:
           <input
-          class="field"
-          name="e-mail"
-          type="email"
-          placeholder="email@example.com"
-          required
+            class="field"
+            name="e-mail"
+            type="email"
+            placeholder="email@example.com"
+            required
           >
         </label>
         <label class="password">
           Password:
           <input
-          class="field"
-          name="password"
-          type="password"
-          minlength="8"
-          required
+            class="field"
+            name="password"
+            type="password"
+            minlength="8"
+            required
           >
         </label>
       </fieldset>
-      <fieldset class="field_interest_fact"> <!--Form interesting fact-->
+      <fieldset class="field_interest_fact">
         <legend class="form_title_fact">An interesting fact about you!</legend>
-        <div class="select_cat"> <!--Do you love cats?-->
-          <label>  <!--Do you love cats?-->
+        <div class="select_cat">
+          <label>
             Do you love cats?
             <input
-            name="changeCat"
-            type="radio"
-            value="Yes"
+              name="changeCat"
+              type="radio"
+              value="Yes"
             >
             Yes
           </label>
           <label>
             <input
-            name="changeCat"
-            type="radio"
-            value="No"
+              name="changeCat"
+              type="radio"
+              value="No"
             >
             No
           </label>
         </div>
 
-        <label class="color_base"> <!--Choice color-->
+        <label class="color_base">
           What is your favorite color?
-          <input type="color"
-          name="color"
-          class="choice_color"
+          <input
+            type="color"
+            name="color"
+            class="choice_color"
           >
         </label>
 
-        <label class="block_time"> <!--Time go to bed-->
+        <label class="block_time">
           What time do you go to bed?
           <input
-          type="time"
-          name="time"
-          step="2"
+            type="time"
+            name="time"
+            step="2"
           >
         </label>
 
-
-        <label class="block_car">  <!--select car-->
+        <label class="block_car">
           What are your favorite brands of cars?
-          <select name="car">
-            <option value=" "
-            selected disabled
-            multiple>
-            </option>
+          <select name="car" multiple>
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
             <option value="lada">Lada</option>
+            <option value=" " disabled></option>
           </select>
         </label>
 
-        <label class="block_rate_work"> <!--How do you rate our work?-->
+        <label class="block_rate_work">
           How do you rate our work?
-          <input type="range"
-          name="rateWork"
-          min="0"
-          max="10"
+          <input
+            type="range"
+            name="rateWork"
+            min="0"
+            max="10"
           >
         </label>
       </fieldset>
-      <fieldset class="field_add_ifno"> <!--Form additional info-->
+      <fieldset class="field_add_ifno">
         <legend class="form_title_add_info">Additional info:</legend>
         <div class="textarea_add_info">
           <label>
             <span class="comment">Comments:</span>
-            <textarea name="comments"
+            <textarea
+              name="comments"
               cols="20"
               rows="2"
               class="text_add_info"
               maxlength="50"
-              >
+            >
             </textarea>
           </label>
         </div>
 
-        <label class="recommend"> <!--Would you recommend us?-->
+        <label class="recommend">
           Would you recommend us?
           <select name="recommendUs">
             <option value="Yes">yes</option>
-            <option value="No">No</option>
+            <option value="No">no</option>
           </select>
         </label>
       </fieldset>
