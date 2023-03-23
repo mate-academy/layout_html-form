@@ -1,1 +1,9 @@
-/* styles go here */
+.field > *:not(:first-of-type) {
+  margin-top: 10px;
+  display: block;
+}
+
+.field:not(:first-child) {
+  display: block;
+  margin-top: 20px;
+}
