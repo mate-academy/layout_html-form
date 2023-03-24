@@ -1,1 +1,12 @@
 /* styles go here */
+.input-form:not(:first-of-type) {
+  margin-top: 10px;
+}
+
+.group:not(:first-child) {
+  margin-top: 20px;
+}
+
+.button {
+  margin-top: 20px;
+}
