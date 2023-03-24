@@ -1,1 +1,14 @@
 /* styles go here */
+.input-form {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.field-form {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+/* .field-form :last-child {
+  margin: auto;
+} */
