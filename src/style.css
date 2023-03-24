@@ -1,1 +1,8 @@
-/* styles go here */
+.form-field {
+  padding: 10px;
+  display: block;
+}
+
+fieldset legend {
+  margin-top: 20px;
+}
