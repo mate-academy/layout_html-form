@@ -1,1 +1,18 @@
-/* styles go here */
+
+.fieldset {
+  margin-bottom: 20px;
+
+}
+
+.fieldset:first-child {
+  margin-top: 0;
+}
+
+.labelWithMargin {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.labelWithMargin:last-child {
+  margin-bottom: 0 ;
+}
