@@ -11,7 +11,171 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+    <form
+      action="https://www.w3schools.com/action_page.php"
+      method="POST"
+    >
+      <fieldset class="fieldset_info" name="personalInfo">
+        <legend>Personal information:</legend>
+        <label class="unit" for="surname">
+          Surname:
+          <input
+            type="text"
+            id="surname"
+            name="surname"
+            autocomplete="off"
+            required
+          >
+        </label>
+        <label class="unit" for="name">
+          Name:
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="off"
+            required
+          >
+        </label>
+        <label class="unit" for="age">
+          How old are You?
+          <input
+            type="number"
+            id="age"
+            name="age"
+            value="12"
+            min="1"
+            max="100"
+            required
+          >
+        </label>
+        <label class="unit" for="dateOfBirth">
+          Full date of birth:
+          <input
+            type="date"
+            id="dateOfBirth"
+            name="dateOfBirth"
+            required
+          >
+        </label>
+        <label for="userAgreement">
+          I accept the term of the agreement
+          <input
+            type="checkbox"
+            id="userAgreement"
+            name="userAgreement"
+            required
+          >
+        </label>
+      </fieldset>
+      <fieldset class="fieldset_info" name="registration">
+        <legend>Registration:</legend>
+        <label class="unit" for="email">
+          E-mail:
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@example.com"
+            autocomplete="off"
+            required
+          >
+        </label>
+        <label for="password">
+          Password:
+          <input
+            type="password"
+            id="password"
+            name="password"
+            minlength="1"
+            maxlength="20"
+            autocomplete="off"
+            required
+          >
+        </label>
+      </fieldset>
+      <fieldset class="fieldset_info" name="userFacts">
+        <legend>An interesting fact about you?</legend>
+        <div class="unit">
+          Do you love cats?
+          <label for="yes">
+            <input
+             type="radio"
+             id="yes"
+             name="cats"
+             value="yes"
+            >
+            Yes
+          </label>
+          <label for="no">
+            <input
+              type="radio"
+              id="no"
+              name="cats"
+              value="no"
+            >
+            No
+          </label>
+        </div>
+        <label class="unit" for="favColor">
+          What is your favorite color?
+          <input
+            type="color"
+            id="favColor"
+            name="favColor"
+          >
+        </label>
+
+        <label class="unit" for="bedTime">
+          What time do you go to bed?
+          <input
+            type="time"
+            id="bedTime"
+            name="bedTime"
+          >
+        </label>
+        <label class="unit" for="favCarBrand">
+          What are your favorite brands of car?
+          <select
+            id="favCarBrand"
+            name="favCarBrand"
+            multiple
+          >
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </label>
+        <label for="workRate">
+          How do your rate our work?
+          <input
+            type="range"
+            id="workRate"
+            name="workRate"
+            min="1"
+            max="10"
+            step="1"
+            value="0"
+          >
+        </label>
+      </fieldset>
+      <fieldset class="fieldset_info" name="additionalInfo">
+        <legend>Additional info:</legend>
+        <label class="unit" for="comments">
+          Comments:
+          <textarea name="comments" id="comments"></textarea>
+        </label>
+        <label for="recomendation">
+          Would you recommend us?
+          <select id="recomendation" name="recomendation">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </label>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
+
