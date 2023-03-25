@@ -6,9 +6,8 @@
 
 .field-form {
   margin-bottom: 20px;
-  padding-bottom: 0;
 }
 
-/* .field-form :last-child {
-  margin: auto;
-} */
+.field-form :last-child {
+  margin-bottom: 0;
+}
