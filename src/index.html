@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1></h1>
     <form action="http://localhost:8080/" 
     method="post" 
     autocomplete="off">
@@ -25,15 +24,14 @@
         </label>
         <label class="form-field">
           Name:
-          <input type="text" 
-          name="Name:" required
+          <input type="text" name="Name" 
+          required
           >
         </label>
         <label class="form-field">
           How old are you?
           <input type="number" name="How old are you?" 
-          value="12"
-          min="1"
+          value="12" min="1" 
           max="100"
           >
         </label>
@@ -45,7 +43,7 @@
         </label>
         <label class="form-field">
           <input type="checkbox">
-        I accept the term of the agreement
+            I accept the term of the agreement
         </label>
       </fieldset>
       <fieldset class="form-field">
@@ -69,11 +67,11 @@
         <legend>An interesting fact about you!</legend>
         <label class="form-field">
         Do you love cats?
-          <input type="radio" name="yes" 
+          <input type="radio" name="answer" 
           value="yes"
           >
         Yes
-          <input type="radio" name="No" 
+          <input type="radio" name="answer" 
           value="no"
           >
         No
