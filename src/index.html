@@ -13,16 +13,18 @@
   <body>
     
     <form action="http://localhost:3000/api" method="post">
-      <fieldset>
+      <fieldset class="form-set">
         <legend>Personal information</legend>
         
         <div class="form-field">
           <label for="Surname">
             Surname:
-          </label>
-      
-          <input type="text" name="Surname" 
-            id="Surname" required
+          </label>     
+          <input 
+            type="text" 
+            name="Surname" 
+            id="Surname" 
+            required
           >
         </div>
 
@@ -30,9 +32,11 @@
           <label for="Name">
             Name:
           </label>
-          
-          <input type="text" name="Name" 
-          id="Name" required
+          <input 
+            type="text" 
+            name="Name" 
+            id="Name" 
+            required
           >
         </div>
 
@@ -40,43 +44,53 @@
           <label for="Years">
             How old are You?
           </label>
-          <input type="number" name="years" 
-          min="1" max="100" 
-          value="12" id="Years"
+          <input 
+            type="number" 
+            name="years" 
+            min="1" 
+            max="100" 
+            value="12" 
+            id="Years"
           >
-
         </div>
 
         <div class="form-field">
           <label for="DateOfBirth">
             Full date of birth:
           </label>
-          <input type="date" name="dateofbirth"
-          id="DateOfBirth"
+          <input 
+            type="date" 
+            name="dateofbirth"
+            id="DateOfBirth"
           >
         </div>
 
         <div class="form-field">
           <label for="term-of-the-aggrement">
-        I accept the term of the agreement
+            I accept the term of the agreement
           </label>
-          <input type="checkbox" name="terms" 
-          id="term-of-the-aggrement" required
+          <input 
+            type="checkbox" 
+            name="terms" 
+            id="term-of-the-aggrement" 
+            required
           >
         </div>
-
       </fieldset>
 
-      <fieldset>
+      <fieldset class="form-set">
         <legend>Registration</legend>
 
         <div class="form-field">
           <label for="E-mail">
             E-mail:
           </label>
-          <input type="email" name="email" 
-          placeholder="email@example.com" required
-          id="E-mail"
+          <input 
+            type="email" 
+            name="email" 
+            placeholder="email@example.com" 
+            required
+            id="E-mail"
           >
         </div>
 
@@ -84,17 +98,20 @@
           <label for="Password">
             Password:
           </label>
-          <input type="password" name="password" 
-          id="Password" required
+          <input 
+            type="password" 
+            name="password" 
+            id="Password" 
+            required
           >
         </div>
       </fieldset>
     
-      <fieldset>
+      <fieldset class="form-set">
         <legend>An interesting fact about you!</legend>
 
         <div class="form-field">
-      Do you love cats?
+          Do you love cats?
           <label>
             <input type="radio" name="cats">
         Yes
@@ -109,8 +126,10 @@
           <label for="favorite-color">
             What is your favorite color?
           </label>
-          <input type="color" name="color"
-          id="favorite-color"
+          <input 
+            type="color" 
+            name="color"
+            id="favorite-color"
           >
         </div>
 
@@ -118,16 +137,20 @@
           <label for="what-time">
             What time do you go to bed?
           </label>
-          <input type="time" name="time"
-          step="1" id="what-time"
+          <input 
+            type="time" 
+            name="time"
+            step="1" 
+            id="what-time"
           >
         </div>
 
         <label class="form-field">
-      What are your favorite brand of cars?
-
-          <select name="color" required 
-          multiple
+          What are your favorite brand of cars?
+          <select 
+            name="color" 
+            required 
+            multiple
           >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
@@ -137,27 +160,30 @@
         </label>
 
         <div class="form-field">
-          <p class="rate">How do you rate our work?
-      
-            <input type="range" name="range" 
-            min="1" max="10" 
-            value="1"
+          <p class="rate">
+            How do you rate our work?
+            <input 
+              type="range" 
+              name="range" 
+              min="1" 
+              max="10" 
+              value="1"
             >
           </p>
         </div>
       </fieldset>
     
-      <fieldset>
+      <fieldset class="form-set">
         <legend>Additional info:</legend>
 
         <div class="form-field">
           <label for="comments">
             Comments:
           </label>
-          <textarea> 
+          <textarea 
             name="Comments:" 
             id="comments"
-          </textarea>
+         ></textarea>
         </div>
 
         <div class="form-field">
@@ -165,7 +191,9 @@
             Would you recommend us?
           </label>
 
-          <select name="recommend" id="reccomend us">
+          <select 
+            name="recommend" 
+            id="reccomend us">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
@@ -173,7 +201,8 @@
       </fieldset>
 
       <div class="button">
-        <button type="submit">Submit
+        <button type="submit">
+          Submit
         </button>
       </div>
     </form>
