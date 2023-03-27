@@ -1,12 +1,9 @@
 /* styles go here */
 .form {
   margin-top: 10px;
+  display: block;
 }
 
 .form-field {
   margin-top: 20px;
-}
-
-.password {
-  margin-top: 10px;
 }
