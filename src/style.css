@@ -1,1 +1,8 @@
 /* styles go here */
+div {
+  margin-bottom: 10px;
+}
+
+.submit {
+  margin: 20px;
+}
