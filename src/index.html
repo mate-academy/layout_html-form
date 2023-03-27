@@ -41,7 +41,8 @@
             type="number"
             name="number"
             class="field"
-            min="1" max="100"
+            min="1"
+            max="100"
             value="12"
           >
         </label>
@@ -56,10 +57,10 @@
         </label>
 
         <label>
-            I accept the term of the agreement
+          I accept the term of the agreement
           <input
             type="checkbox"
-            name="I accept the term of the agreement"
+            name="Iacceptthetermoftheagreement"
             class="field"
           >
         </label>
@@ -69,9 +70,10 @@
         <legend>Registration</legend>
 
         <label class="form-field">
-           E-mail:
+          E-mail:
           <input
-            type="email" name="email"
+            type="email"
+            name="email"
             class="field"
             required
             placeholder="email@example.com"
@@ -80,7 +82,8 @@
         <label>
           Password:
           <input
-            type="password" name="password"
+            type="password"
+            name="password"
             class="field"
             autocomplete="off"
           >
@@ -97,7 +100,7 @@
               type="radio"
               name="answer"
               class="field"
-              value="y"
+              value="yes"
             >
             Yes
           </label>
@@ -107,7 +110,7 @@
               type="radio"
               name="answer"
               class="field"
-              value="n"
+              value="no"
             >
             No
           </label>
@@ -136,7 +139,8 @@
           <select
             name="brand"
             multiple
-            class="field">
+            class="field"
+            >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
@@ -172,17 +176,16 @@
             Would you recommend us?
           <select
              name="answer"
-             class="field">
+             class="field"
+          >
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
         </label>
 
       </fieldset>
-      <div
-        class="forma">
-        <button
-        type="submit">
+      <div class="forma">
+        <button type="submit">
         Submit
         </button>
       </div>
