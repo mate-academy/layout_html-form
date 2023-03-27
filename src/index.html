@@ -21,7 +21,7 @@
     >
       <fieldset class="field_inform">
         <legend class="form_title_information">Personal information</legend>
-        <label class="surname">
+        <label class="label_bottom">
           Surname:
           <input
             type="text"
@@ -30,7 +30,7 @@
             required
           >
         </label>
-        <label class="name">
+        <label class="label_bottom">
           Name:
           <input
             type="text"
@@ -39,51 +39,50 @@
             required
           >
         </label>
-        <label class="age">
+        <label class="label_bottom">
           How old are You?
           <input
-            class="field_age"
+            //class="field_age"
             name="age"
             type="number"
             min="1" max="100"
             value="12"
           >
         </label>
-        <label class="date_birth">
+        <label class="label_bottom">
           Full date of birth:
           <input
-            class="date_birth_input"
+           //class="date_birth_input"
             type="date"
             name="dateOfBirth"
             placeholder="дд.мм.рррр"
           >
         </label>
-        <label class="agree">
+        <label class="label_bottom">
           I accept the term  of the agreement
           <input
-            class="field_agree"
             name="agree"
             type="checkbox"
             required
           >
         </label>
       </fieldset>
-      <fieldset class="field_registration">
+      <fieldset class="field_inform">
         <legend class="form_title_registration">Registration</legend>
-        <label class="mail">
+        <label class="label_bottom">
           E-mail:
           <input
-            class="field"
+            //class="field"
             name="e-mail"
             type="email"
             placeholder="email@example.com"
             required
           >
         </label>
-        <label class="password">
+        <label class="label_bottom">
           Password:
           <input
-            class="field"
+            //class="field"
             name="password"
             type="password"
             minlength="8"
@@ -91,9 +90,9 @@
           >
         </label>
       </fieldset>
-      <fieldset class="field_interest_fact">
+      <fieldset class="field_inform">
         <legend class="form_title_fact">An interesting fact about you!</legend>
-        <div class="select_cat">
+        <div class="label_bottom">
           <label>
             Do you love cats?
             <input
@@ -113,7 +112,9 @@
           </label>
         </div>
 
-        <label class="color_base">
+        <label
+          class="label_bottom"
+        >
           What is your favorite color?
           <input
             type="color"
@@ -122,16 +123,15 @@
           >
         </label>
 
-        <label class="block_time">
+        <label class="label_bottom">
           What time do you go to bed?
           <input
             type="time"
             name="time"
-            step="2"
           >
         </label>
 
-        <label class="block_car">
+        <label class="label_bottom">
           What are your favorite brands of cars?
           <select name="car" multiple>
             <option value="bmw">BMW</option>
@@ -141,33 +141,33 @@
           </select>
         </label>
 
-        <label class="block_rate_work">
+        <label class="label_bottom">
           How do you rate our work?
           <input
             type="range"
             name="rateWork"
             min="0"
             max="10"
+            value="0"
           >
         </label>
       </fieldset>
-      <fieldset class="field_add_ifno">
-        <legend class="form_title_add_info">Additional info:</legend>
-        <div class="textarea_add_info">
+      <fieldset class="field_inform">
+        <legend>Additional info:</legend>
+        <div class="label_bottom">
           <label>
             <span class="comment">Comments:</span>
             <textarea
               name="comments"
               cols="20"
               rows="2"
-              class="text_add_info"
               maxlength="50"
             >
             </textarea>
           </label>
         </div>
 
-        <label class="recommend">
+        <label class="label_bottom">
           Would you recommend us?
           <select name="recommendUs">
             <option value="Yes">yes</option>

@@ -1,86 +1,9 @@
+.label_bottom {
+  display: block;
+  margin-bottom: 10px;
+}
+
 .field_inform {
-  margin-top: 10px;
-}
-
-.surname {
-  display: block;
-}
-
-.name {
-  display: block;
-  margin-top: 10px;
-}
-
-.age {
-  display: block;
-  margin-top: 10px;
-}
-
-.date_birth {
-  display: block;
-  margin-top: 10px;
-}
-
-.agree {
-  display: block;
-  margin-top: 10px;
-}
-
-.field_registration {
-  margin-top: 20px;
-}
-
-.mail {
-  display: block;
-}
-
-.password {
-  display: block;
-  margin: 10px 0 0;
-}
-
-.field_interest_fact {
-  margin-top: 20px;
-}
-
-.select_cat {
-  display: block;
-}
-
-.color_base {
-  display: block;
-  margin-top: 10px;
-}
-
-.block_time {
-  display: inline-block;
-  margin-top: 10px;
-}
-
-.block_car {
-  display: block;
-  margin-top: 10px;
-}
-
-.block_rate_work {
-  display: block;
-  margin-top: 10px;
-}
-
-.field_add_ifno {
-  margin-top: 20px;
-}
-
-.textarea_add_info {
-  display: flex;
-  flex-direction: row;
-}
-
-.recommend {
-  display: block;
-  margin-top: 10px;
-}
-
-.btn {
-  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 0;
 }
