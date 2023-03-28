@@ -1,1 +1,23 @@
 /* styles go here */
+
+.form-field {
+  margin-bottom: 10px;
+}
+
+.information {
+  margin-bottom: 20px;
+}
+
+.form-field:first-child,
+.information:first-child {
+  margin-top: 0;
+}
+
+.form-field:last-child,
+.information:last-child {
+  margin-bottom: 0;
+}
+
+.label {
+  cursor: default;
+}
