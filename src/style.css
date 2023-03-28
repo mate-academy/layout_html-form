@@ -4,22 +4,16 @@
   margin-bottom: 10px;
 }
 
-.form-field:first-child {
-  margin-top: 0;
-}
-
-.form-field:last-child {
-  margin-bottom: 0;
-}
-
 .information {
   margin-bottom: 20px;
 }
 
+.form-field:first-child,
 .information:first-child {
   margin-top: 0;
 }
 
+.form-field:last-child,
 .information:last-child {
   margin-bottom: 0;
 }
