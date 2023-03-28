@@ -1,4 +1,8 @@
 /* stylelint-disable block-opening-brace-space-before */
+body {
+  --select-with: 50px;
+  --select-height: 60px;
+}
 
 form > *
 {
@@ -30,13 +34,22 @@ input {
   margin: 0 5px;
 }
 
-#brand {
-  margin-left: 5px;
+.select-brand {
+  padding: 5px;
+  margin: -3px -22px -10px -5px;
 }
 
-#brand option {
-  width: 30px;
+.select-brand option {
+  appearance: none;
   background-color: #fff;
+}
+
+.select-shell {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  border: 1px solid gray;
+  margin-left: 5px;
 }
 
 .label-select {
