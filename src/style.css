@@ -1,15 +1,12 @@
 /* stylelint-disable block-opening-brace-space-before */
-body {
-  --select-with: 50px;
-  --select-height: 60px;
-}
-
-form > *
-{
-  margin-bottom: 20px;
+.container {
+  width: 90vw;
+  margin: 0 auto;
+  padding-top: 50px;
 }
 
 fieldset {
+  margin-bottom: 20px;
   padding: 10px;
 }
 
@@ -30,7 +27,10 @@ label.cats_2 {
   margin-bottom: 0;
 }
 
-input {
+input,
+select,
+textarea,
+.select-shell {
   margin: 0 5px;
 }
 
@@ -39,24 +39,24 @@ input {
   margin: -3px -22px -10px -5px;
 }
 
-.select-brand option {
+/* .select-brand option {
   appearance: none;
   background-color: #fff;
-}
+} */
 
 .select-shell {
   display: inline-block;
   vertical-align: top;
   overflow: hidden;
   border: 1px solid gray;
-  margin-left: 5px;
 }
 
-.label-select {
+.label-select,
+.label-textarea {
   align-items: flex-end;
 }
 
-input[type="range"] {
+/* input[type="range"] {
   appearance: none;
   height: 6px;
   width: 10%;
@@ -77,4 +77,4 @@ input[type="range"]::-webkit-slider-thumb {
   cursor: pointer;
   border: 1px solid  gray;
   border-radius: 50%;
-}
+} */
