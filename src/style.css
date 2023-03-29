@@ -1,4 +1,4 @@
-label {
+.label {
   display: block;
   margin-bottom: 10px;
 }
@@ -11,18 +11,11 @@ label {
   margin-top: 20px;
 }
 
-.what_1 {
-  margin-top: 10px;
-}
-
-.what {
-  margin-bottom: 10px;
-}
-
-.what_2 {
-  margin-top: 10px;
-}
-
 .range {
   margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.color {
+  margin-top: 10px;
 }
