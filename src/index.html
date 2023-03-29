@@ -14,7 +14,9 @@
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <fieldset>
-        <legend>Personal information</legend>
+        <legend>
+          Personal information
+        </legend>
         <label>
           Surname:
           <input
@@ -25,7 +27,8 @@
         </label>
         <label>
           Name:
-          <input type="text"
+          <input
+            type="text"
             name="name"
             required
             autocomplete="off"
@@ -33,7 +36,8 @@
         </label>
         <label>
           How old are You?
-          <input type="number"
+          <input
+            type="number"
             name="age"
             value="12"
             min="1"
@@ -43,24 +47,29 @@
         </label>
         <label>
           Full date of birth:
-          <input type="date"
+          <input
+            type="date"
             name="birth"
             required
           >
         </label>
         <label>
           I accept the term of agreement
-          <input type="checkbox"
+          <input
+            type="checkbox"
             name="agreement"
             required
           >
         </label>
       </fieldset>
       <fieldset>
-        <legend>Registration</legend>
+        <legend>
+          Registration
+        </legend>
         <label>
           E-mail:
-          <input type="email"
+          <input
+            type="email"
             name="email"
             placeholder="email@example.com"
             pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
@@ -69,7 +78,8 @@
         </label>
         <label>
           Password:
-          <input type="password"
+          <input
+            type="password"
             name="password"
             minlength="5"
             maxlength="15"
@@ -78,21 +88,29 @@
         </label>
       </fieldset>
       <fieldset>
-        <legend>An interesting fact about you!</legend>
+        <legend>
+          An interesting fact about you!
+        </legend>
         <div class="label">
-          <span>Do you love cats? </span>
+          <span>
+            Do you love cats?
+          </span>
           <input
             id="cats_1"
             type="radio"
             name="cats"
           >
-          <label for="cats_1" class="cats_1">Yes</label>
+          <label for="cats_1" class="cats_1">
+            Yes
+          </label>
           <input
             id="cats_2"
             type="radio"
             name="cats"
           >
-          <label for="cats_2" class="cats_2">No</label>
+          <label for="cats_2" class="cats_2">
+            No
+          </label>
         </div>
         <label>
           What is your favorite color?
@@ -110,9 +128,15 @@
               class="select-brand"
               multiple
             >
-              <option value="BMV">BMW</option>
-              <option value="Audi">Audi</option>
-              <option value="Lada">Lada</option>
+              <option value="BMV">
+                BMW
+              </option>
+              <option value="Audi">
+                Audi
+              </option>
+              <option value="Lada">
+                Lada
+              </option>
               <option
                 disabled
                 selected
@@ -132,10 +156,11 @@
             max="100"
           >
         </label>
-
       </fieldset>
       <fieldset>
-        <legend>Additional info:</legend>
+        <legend>
+          Additional info:
+        </legend>
         <label class="label-textarea">
           Comments:
           <textarea></textarea>
@@ -147,12 +172,18 @@
             size="1"
             multiple
           >
-            <option value="yes">yes</option>
-            <option value="no">no</option>
+            <option value="yes">
+              yes
+            </option>
+            <option value="no">
+              no
+            </option>
           </select>
         </label>
       </fieldset>
-      <button class="button" type="submit">Submit</button>
+      <button class="button" type="submit">
+        Submit
+      </button>
     </form>
 
     <script type="text/javascript" src="./main.js"></script>
