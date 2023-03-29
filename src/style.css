@@ -1,1 +1,28 @@
-/* styles go here */
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.age input {
+  width: 65px;
+}
+
+.fieldset {
+  margin-top: 20px;
+}
+
+.what_1 {
+  margin-top: 10px;
+}
+
+.what {
+  margin-bottom: 10px;
+}
+
+.what_2 {
+  margin-top: 10px;
+}
+
+.range {
+  margin-bottom: 0;
+}
