@@ -16,170 +16,206 @@
     class="form">
       <fieldset class="user_info">
         <legend>Personal information</legend>
+
         <div class="form_field">
           <label for="surname">Surname:</label>
+
           <input
-          type="text"
-          name="surname"
-          id="surname"
-          autocomplete="off"
-          required
+            type="text"
+            name="surname"
+            id="surname"
+            pattern="\d+"
+            autocomplete="off"
+            required
           >
         </div>
+
         <div class="form_field">
           <label for="name">Name:</label>
+
           <input
-          type="text"
-          name="name"
-          id="name"
-          autocomplete="off"
-          required
+            type="text"
+            name="name"
+            id="name"
+            pattern="\d+"
+            autocomplete="off"
+            required
           >
         </div>
+
         <div class="form_field">
           <label for="age">How old are You?</label>
+
           <input
-          type="number"
-          name="age"
-          id="age"
-          value="12"
-          min="1"
-          max="100"
-          autocomplete="off"
-          required
+            type="number"
+            name="age"
+            id="age"
+            value="12"
+            min="1"
+            max="100"
+            autocomplete="off"
+            required
           >
         </div>
+
         <div class="form_field">
           <label for="date">Full date of birth:</label>
+
           <input
-          type="date"
-          name="date"
-          id="date"
-          autocomplete="off"
-          required
+            type="date"
+            name="date"
+            id="date"
+            autocomplete="off"
+            required
           >
         </div>
+
         <div class="form_field">
           <label for="acception">I accept the term of the agreement</label>
+
           <input
-          type="checkbox"
-          name="acception"
-          id="acception"
-          autocomplete="off"
-          required
+            type="checkbox"
+            name="acception"
+            id="acception"
+            autocomplete="off"
+            required
           >
         </div>
+
       </fieldset>
+
       <fieldset class="user_info">
         <legend>Registration</legend>
+
         <div class="form_field">
           <label for="email">E-mail:</label>
+
           <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="email@example.com"
-          autocomplete="off"
-          required
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@example.com"
+            autocomplete="off"
+            required
           >
         </div>
+
         <div class="form_field">
           <label for="password">Password:</label>
+
           <input
-          type="password"
-          name="password"
-          id="password"
-          minlength="6"
-          maxlength="15"
-          autocomplete="off"
-          required
+            type="password"
+            name="password"
+            id="password"
+            minlength="6"
+            maxlength="15"
+            autocomplete="off"
+            required
           >
         </div>
       </fieldset>
+
       <fieldset class="user_info">
         <legend>An interesting fact about you!</legend>
+
         <div class="form_field">
           <label>Do you love cats?</label>
+
           <input
-          type="radio"
-          value="confirmation"
-          name="fav"
-          id="confirmation"
-          autocomplete="off"
+            type="radio"
+            value="confirmation"
+            name="fav"
+            id="confirmation"
+            autocomplete="off"
           >
+
           <label for="confirmation">Yes</label>
+
           <input
-          type="radio"
-          value="rejection"
-          name="fav"
-          id="rejection"
-          autocomplete="off"
+            type="radio"
+            value="rejection"
+            name="fav"
+            id="rejection"
+            autocomplete="off"
           >
+
           <label for="rejection">No</label>
         </div>
+
         <div class="form_field">
           <label for="color">What is your favorite color?</label>
+
           <input
-          type="color"
-          name="color"
-          id="color"
+            type="color"
+            name="color"
+            id="color"
           >
         </div>
+
         <div class="form_field">
           <label for="appt-time">What time do you go to bed?</label>
+
           <input
-          type="time"
-          id="appt-time"
-          name="appt-time"
-          step="2"
-          autocomplete="off"
+            type="time"
+            id="appt-time"
+            name="appt-time"
+            step="2"
+            autocomplete="off"
           >
         </div>
+
         <div class="form_field">
           <label for="car-picker">What are your favorite brand of cars?</label>
+
           <select
-          name="car-picker"
-          id="car-picker"
-          multiple
+            name="car-picker"
+            id="car-picker"
+            multiple
           >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
           </select>
         </div>
+
         <div class="form_field">
           <label for="rate">How do you rate our work?</label>
+
           <input
-          type="range"
-          id="rate"name="rate"
-          step="2"
-          min="0"
-          max="100"
-          autocomplete="off"
+            type="range"
+            id="rate"
+            name="rate"
+            step="2"
+            min="0"
+            max="100"
+            autocomplete="off"
           >
         </div>
+
       </fieldset>
+
       <fieldset class="user_info">
         <legend>Additional info:</legend>
+
         <div class="form_field">
           <label for="notes-field">Comments:</label>
-          <textarea
-          name="notes"
-          id="notes-field"
-          autocomplete="off"
-         ></textarea>
 
+          <textarea
+            name="notes"
+            id="notes-field"
+            autocomplete="off"
+         ></textarea>
         </div>
+
         <div class="form_field">
           <label for="recommend-picker">Would you recommend us?</label>
-          <select name="recommend-picker"
-          id="recommend-picker"
-          >
+          <select name="recommend-picker" id="recommend-picker">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
         </div>
       </fieldset>
+
       <button type="submit">Submit</button>
     </form>
   </body>
