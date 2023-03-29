@@ -1,1 +1,80 @@
-/* styles go here */
+/* stylelint-disable block-opening-brace-space-before */
+.container {
+  width: 90vw;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+label,
+.label
+{
+  display: flex;
+  align-items: center;
+}
+
+label:not(:last-child),
+.label {
+  margin-bottom: 10px;
+}
+
+label.cats_1,
+label.cats_2 {
+  margin-bottom: 0;
+}
+
+input,
+select,
+textarea,
+.select-shell {
+  margin: 0 5px;
+}
+
+.select-brand {
+  padding: 5px;
+  margin: -3px -22px -10px -5px;
+}
+
+/* .select-brand option {
+  appearance: none;
+  background-color: #fff;
+} */
+
+.select-shell {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  border: 1px solid gray;
+}
+
+.label-select,
+.label-textarea {
+  align-items: flex-end;
+}
+
+/* input[type="range"] {
+  appearance: none;
+  height: 6px;
+  width: 10%;
+  min-width: 150px;
+  background-color: gray;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  cursor: pointer;
+  border: 1px solid  gray;
+  border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  height: 17px;
+  width: 17px;
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid  gray;
+  border-radius: 50%;
+} */
