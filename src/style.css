@@ -1,1 +1,21 @@
 /* styles go here */
+fieldset {
+  display: block;
+  border-style: solid 5px black;
+  margin: 20px 0;
+}
+
+input {
+  display: inline;
+  margin: 10px 0;
+}
+
+select {
+  display: inline;
+  margin: 10px 0;
+}
+
+button {
+  display: inline;
+  margin: 10px 0;
+}

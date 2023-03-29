@@ -1,17 +1,143 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+    <form action="http://localhost:8080/api" method="post"></form>
+    <fieldset>
+      <legend>Information:</legend>
+      <div class="form-field">
+        <label for="name">Name:
+          <input type="text" 
+        name="name" 
+        required 
+        autocomplete="off"
+          >
+        </label>
+      </div>
+      <div class="form-field">
+        <label for="surname">Surname:
+          <input type="text" name="surname" autocomplete="off">
+        </label>
+      </div>
+      <div class="form-field">
+        <label for="age">How old are you?
+          <input type="number" 
+          name="age" 
+          value="12" 
+          min="1" 
+          max="100"
+          >
+        </label>
+      </div>
+      <div class="form-field">
+        <label for="dateOfBirth">Full date of birth:
+          <input type="date" 
+          name="dateOfBirth" 
+          value="mm/dd/yyyy"
+          >
+        </label>
+      </div>
+      <div class="form-field">
+        <label for="terms">I accept the term of the agreement
+          <input type="checkbox" name="terms">
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Registration:</legend>
+      <div class="form-field">
+        <label for="email">E-mail:
+          <input type="email" 
+          name="email" 
+          placeholder="email@example.com" 
+          required
+          >
+        </label>
+      </div>
+      <div class="form-field">
+        <label for="password">Password:
+          <input type="password" name="password" required>
+        </label>
+      </div>
+    </div>
+    </fieldset>
+    <fieldset>
+      <legend>Interesting fact about you!</legend>
+      <div class="form-field">
+      Do you love cats?
+        <label>
+          <input type="radio" name="cat">Yes
+        </label>
+        <label>
+          <input type="radio" name="cat">No
+        </label>
+      </div>
+      <div class="form-field">
+        <label for="color">What is your favorite color?
+          <input type="color" name="color" value="#000000">
+        </label>
+      </div>
+      <div class="form-field">
+        <label for="timeToBed">What time do you go to bed?
+          <input type="time" name="timeToBed">
+        </label>
+      </div>
+      <div class="form-field">
+        <label for="carBrand">What are your favorite brands of cars?
+          <select name="carBrand" multiple>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="lada">lada</option>
+          </select>
+        </label>
+      </div>
+      <div class="form-field">
+        <label for="rate">How do you rate our work?
+          <input type="range" 
+          name="rate" 
+          min="0" 
+          max="100"
+          >
+        </label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Info:</legend>
+      <div class="form-field">
+        <label for="comments">Comments:
+          <textarea class="comment" 
+          name="comments" 
+          minlength="50" 
+          maxlength="300"
+          >
+          </textarea>
+        </label>
+      </div>
+      <div class="form-field">
+        <label for="reccomend">Would you reccomend us?
+          <select name="reccomend">
+            <option value="yes">YES</option>
+            <option value="no">NO</option>
+          </select>
+        </label>
+      </div>
+    </fieldset>
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
   </body>
+
 </html>
