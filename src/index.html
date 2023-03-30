@@ -11,9 +11,12 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <script type="text/javascript"src="./main.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
 
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="POST"
+    >
       <fieldset class="form__field">
         <legend>Personal information</legend>
 
@@ -40,8 +43,9 @@
         </div>
 
         <div class="field__item">
-          How old are You?
+          <label for="age">How old are You?</label>
           <input type="number"
+            id="age"
             min="1"
             max="100"
             value="12"
