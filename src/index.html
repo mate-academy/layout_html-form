@@ -15,7 +15,7 @@
       <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
         <fieldset>
           <legend>Personal information</legend>
-          <label class="label" for="surname">
+          <label class="label">
             Surname:
             <input
               type="text"
@@ -23,7 +23,7 @@
               name="surname"
             >
           </label>
-          <label class="label" for="name">
+          <label class="label">
             Name:
             <input
               type="text"
@@ -32,7 +32,6 @@
             >
           </label>
           <label
-            for="age"
             class="label"
             >
             How old are You?
@@ -43,18 +42,17 @@
               name="age"
             >
           </label>
-          <label class="label" for="datebirth">
+          <label class="label">
             Full date of birth:
             <input
               type="date"
               name="date"
             >
           </label>
-          <label for="accept">
+          <label>
             I accept the term of the agreement
             <input
               type="checkbox"
-              id="accept"
               name="accept"
             >
           </label>
@@ -69,20 +67,32 @@
               name="email"
             >
           </label>
-          <div>
+          <label class="block">
             Password:
             <input
               class="range"
               type="password"
               name="password"
             >
-          </div>
+          </label>
         </fieldset>
         <fieldset class="fieldset">
           <legend>An interesting fact about you!</legend>
-          Do you love cats?
-          <input type="radio" name="yes"> Yes
-          <input type="radio" name="no"> No
+            Do you love cats?
+          <input
+            id="yes"
+            type="radio"
+            name="cat"
+            value="yes"
+          >
+          <label for="yes">Yes</label>
+          <input
+            id="no"
+            type="radio"
+            name="cat"
+            value="no"
+          >
+          <label for="no">No</label>
           <label class="label color">
             What is your favorite color?
             <input
@@ -114,10 +124,10 @@
         </fieldset>
         <fieldset class="fieldset">
           <legend>Additional info:</legend>
-          <lebel>
+          <label>
             Comments:
             <textarea name="text" cols="20"></textarea>
-          </lebel>
+          </label>
           <label class="label range">
             Would you recommend us?
             <select name="recommend">
