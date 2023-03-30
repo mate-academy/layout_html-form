@@ -1,1 +1,37 @@
 /* styles go here */
+.fieldset input {
+  margin-bottom: 10px;
+}
+
+.fieldset label:last-of-type input {
+  margin-bottom: 3px;
+}
+
+.fieldset input[type="color"] {
+  margin-top: 3px;
+}
+
+.fieldset input[type="range"] {
+  margin-top: 12px;
+}
+
+.fieldset select[name="recommend"] {
+  margin-top: 10px;
+}
+
+.fieldset textarea {
+  margin-bottom: 5px;
+  vertical-align: -5px;
+}
+
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.fieldset label:last-of-type input[type="password"] {
+  margin-bottom: 0;
+}
+
+/* .fieldset input:first-child {
+  margin-top: 3px;
+} */
