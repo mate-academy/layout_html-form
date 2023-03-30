@@ -14,13 +14,15 @@
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
-      name="html-form">
-      <fieldset>
+      name="html-form"
+    >
+      <fieldset class="field_group">
         <legend>Personal information</legend>
         <div class="field">
           <label for="surname">Surname:</label>
           <input
-            required id="surname"
+            required
+            id="surname"
             type="text"
             name="surname"
             autocomplete="off"
@@ -68,7 +70,7 @@
           >
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="field_group">
         <legend>Registration</legend>
         <div class="field">
           <label for="email">E-mail:</label>
@@ -92,7 +94,7 @@
           >
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="field_group">
         <legend>An interesting fact about you!</legend>
         <div class="field">
           Do you have cats?:
@@ -151,7 +153,7 @@
           >
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="field_group">
         <legend>Additional info:</legend>
         <div class="field">
           <label for="comment">Comments</label>
