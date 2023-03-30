@@ -8,10 +8,181 @@
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
+
     <link rel="stylesheet" href="./style.css">
   </head>
+
   <body>
-    <h1>HTML Form</h1>
+    <form
+      action="http://127.0.0.1:5500/src/index.html"
+      method="post"
+      class="form_basic"
+      autocomplete="off"
+    >
+      <fieldset class="field_inform">
+        <legend class="form_title_information">
+          Personal information
+        </legend>
+        <label class="label_bottom">
+          Surname:
+          <input
+            type="text"
+            name="surname"
+            class="surname_input"
+            required
+          >
+        </label>
+        <label class="label_bottom">
+          Name:
+          <input
+            type="text"
+            name="name"
+            class="name_input"
+            required
+          >
+        </label>
+        <label class="label_bottom">
+          How old are You?
+          <input
+            name="age"
+            type="number"
+            min="1" max="100"
+            value="12"
+          >
+        </label>
+        <label class="label_bottom">
+          Full date of birth:
+          <input
+            type="date"
+            name="dateOfBirth"
+            placeholder="дд.мм.рррр"
+          >
+        </label>
+        <label class="label_bottom">
+          I accept the term  of the agreement
+          <input
+            name="agree"
+            type="checkbox"
+            required
+          >
+        </label>
+      </fieldset>
+      <fieldset class="field_inform">
+        <legend class="form_title_registration">
+          Registration
+        </legend>
+        <label class="label_bottom">
+          E-mail:
+          <input
+            name="e-mail"
+            type="email"
+            placeholder="email@example.com"
+            required
+          >
+        </label>
+        <label class="label_bottom">
+          Password:
+          <input
+            name="password"
+            type="password"
+            minlength="8"
+            required
+          >
+        </label>
+      </fieldset>
+      <fieldset class="field_inform">
+        <legend class="form_title_fact">
+          An interesting fact about you!
+        </legend>
+        <div class="label_bottom">
+          <label>
+            Do you love cats?
+            <input
+              name="changeCat"
+              type="radio"
+              value="Yes"
+            >
+            Yes
+          </label>
+          <label>
+            <input
+              name="changeCat"
+              type="radio"
+              value="No"
+            >
+            No
+          </label>
+        </div>
+
+        <label
+          class="label_bottom"
+        >
+          What is your favorite color?
+          <input
+            type="color"
+            name="color"
+            class="choice_color"
+          >
+        </label>
+
+        <label class="label_bottom">
+          What time do you go to bed?
+          <input
+            type="time"
+            name="time"
+          >
+        </label>
+
+        <label class="label_bottom">
+          What are your favorite brands of cars?
+          <select name="car" multiple>
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+            <option value=" " disabled></option>
+          </select>
+        </label>
+
+        <label class="label_bottom">
+          How do you rate our work?
+          <input
+            type="range"
+            name="rateWork"
+            min="0"
+            max="10"
+            value="0"
+          >
+        </label>
+      </fieldset>
+      <fieldset class="field_inform">
+        <legend>
+          Additional info:
+        </legend>
+        <div class="label_bottom">
+          <label>
+            <span class="comment">Comments:</span>
+            <textarea
+              name="comments"
+              cols="20"
+              rows="2"
+              maxlength="50"
+            >
+            </textarea>
+          </label>
+        </div>
+
+        <label class="label_bottom">
+          Would you recommend us?
+          <select name="recommendUs">
+            <option value="Yes">yes</option>
+            <option value="No">no</option>
+          </select>
+        </label>
+      </fieldset>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
+

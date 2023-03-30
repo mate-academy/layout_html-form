@@ -1,1 +1,9 @@
-/* styles go here */
+.label_bottom {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.field_inform {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
