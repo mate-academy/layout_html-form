@@ -1,9 +1,12 @@
-/* styles go here */
+.label {
+  display: block;
+}
+
 .fieldset input {
   margin-bottom: 10px;
 }
 
-.fieldset label:last-of-type input {
+.fieldset .label:last-of-type input {
   margin-bottom: 3px;
 }
 
@@ -28,10 +31,6 @@
   margin-bottom: 20px;
 }
 
-.fieldset label:last-of-type input[type="password"] {
+.fieldset .label:last-of-type input[type="password"] {
   margin-bottom: 0;
 }
-
-/* .fieldset input:first-child {
-  margin-top: 3px;
-} */
