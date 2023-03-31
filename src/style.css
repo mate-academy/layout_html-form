@@ -1,1 +1,15 @@
 /* styles go here */
+
+.form__field {
+  display: block;
+  margin: 10px auto;
+}
+
+.fieldset {
+  margin: 20px 0;
+}
+
+.form__fieldShort {
+  margin-bottom: 10px;
+  display: block;
+}
