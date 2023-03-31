@@ -1,1 +1,19 @@
-/* styles go here */
+.label {
+  display: block;
+}
+
+.label:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.fieldset:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.inputColor {
+  margin-top: 10px;
+}
+
+.inputRecommend {
+  margin-top: 10px;
+}
