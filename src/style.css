@@ -2,13 +2,10 @@
 
 .form-field {
   display: block;
-  margin: 5px 0;
+  margin-bottom: 10px;
 }
 
-:first-child {
-  margin-top: 0;
-}
-
-fieldset {
-  margin: 10px 0;
+.fieldset {
+  margin-bottom: 20px;
+  padding-bottom: 0;
 }
