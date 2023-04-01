@@ -25,6 +25,7 @@
             name="surname"
             required
             autocomplete="off"
+            id="surname"
           >
         </div>
 
@@ -34,6 +35,7 @@
             type="text"
             name="name"
             autocomplete="off"
+            id="name"
           >
         </div>
 
@@ -45,17 +47,26 @@
             min="1"
             max="100"
             value="12"
+            id="age"
           >
         </div>
 
         <div class="form-field birthday">
           <label for="birthday">Full date of birth:</label>
-          <input type="date" name="birthday">
+          <input
+            type="date"
+            name="birthday"
+            id="birthday"
+          >
         </div>
 
         <div class="form-field term_and_agreement">
           <label for="term-and-agreement">I accept the term of the agreement</label>
-          <input type="checkbox" name="term-and-agreement">
+          <input
+            type="checkbox"
+            name="term-and-agreement"
+            id="term-and-agreement"
+          >
         </div>
 
       </fieldset>
@@ -70,6 +81,7 @@
             name="email"
             required
             placeholder="email@example.com"
+            id="email"
           >
         </div>
 
@@ -81,6 +93,7 @@
             required
             minlength="6"
             maxlength="30"
+            id="password"
           >
         </div>
       </fieldset>
@@ -111,7 +124,11 @@
 
         <div class="form-field color">
           <label for="color">What is your favorite color?</label>
-          <input type="color" name="color">
+          <input
+            type="color"
+            name="color"
+            id="color"
+          >
         </div>
 
         <div class="form-field time">
@@ -120,16 +137,23 @@
             type="time"
             name="time"
             step="2"
+            id="time"
           >
         </div>
 
         <div class="form-field car">
           <label for="car">What are your favorite brand of cars?</label>
 
-          <select name="car" multiple>
+          <select
+            name="car"
+            multiple
+            id="car"
+          >
+
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
+
           </select>
         </div>
 
@@ -139,6 +163,7 @@
             type="range"
             name="rate-work"
             value="0"
+            id="rate-work"
           >
         </div>
 
@@ -157,6 +182,7 @@
             name="comments"
             cols="20"
             rows="2"
+            id="comments"
          ></textarea>
         </div>
 
@@ -164,7 +190,7 @@
           <label for="recommend">
             Would you recommend us?
           </label>
-          <select name="recommend">
+          <select name="recommend" id="recommend">
             <option value="yes">
               yes
             </option>
