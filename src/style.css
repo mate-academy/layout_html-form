@@ -1,1 +1,36 @@
-/* styles go here */
+body {
+  display: block;
+  margin: 8px;
+}
+/* stylelint-disable-next-line rule-empty-line-before */
+.inputs-block {
+  margin-bottom: 20px;
+}
+/* stylelint-disable-next-line rule-empty-line-before */
+.input-line {
+  display: block;
+  margin-bottom: 10px;
+}
+/* stylelint-disable-next-line rule-empty-line-before */
+.input-line:last-child {
+  margin-bottom: 0;
+}
+/* stylelint-disable-next-line rule-empty-line-before */
+legend {
+  display: block;
+  padding-inline-start: 2px;
+  padding-inline-end: 2px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+}
+/* stylelint-disable-next-line rule-empty-line-before */
+form {
+  display: block;
+  margin-top: 0;
+}
+/* stylelint-disable-next-line rule-empty-line-before */
+label {
+  cursor: default;
+}
