@@ -12,8 +12,8 @@
   </head>
   <body>
     <form
-     action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-     method="post"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
     >
       <fieldset class="form-block">
         <legend>Personal information</legend>
@@ -23,6 +23,7 @@
             type="text"
             name="surname"
             id="surname"
+            autocomplete="off"
             required
           >
         </label>
@@ -32,6 +33,7 @@
             type="text"
             name="name"
             id="name"
+            autocomplete="off"
             required
           >
         </label>
@@ -73,6 +75,7 @@
             name="email"
             id="email"
             placeholder="email@example.com"
+            autocomplete="off"
             required
           >
         </label>
@@ -83,6 +86,7 @@
             type="password"
             name="password"
             id="password"
+            autocomplete="off"
             required
             minlength="5"
             maxlength="20"
@@ -93,14 +97,15 @@
         <legend>An interesting fact about you!</legend>
         <label class="input-block">
           Do you love cats?
-          <input
+          <label>
+            <input
             type="radio"
             name="Yes"
             id="y"
             value="yes"
-          >
-          <label for="yes">Yes</label>
-
+            >
+            <label for="yes">Yes</label>
+          </label>
           <label>
             <input
               type="radio"
