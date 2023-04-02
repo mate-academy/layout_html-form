@@ -1,8 +1,16 @@
 .input {
   display: block;
-  margin: 10px 0;
+  margin-bottom: 10px;
+}
+
+.input:last-child {
+  margin-bottom: 0;
 }
 
 .field-set {
-  margin: 20px 0;
+  margin-bottom: 20px;
+}
+
+.field-set:last-child {
+  margin-bottom: 0;
 }
