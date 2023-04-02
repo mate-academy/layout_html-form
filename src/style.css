@@ -1,1 +1,12 @@
 /* styles go here */
+.wrapper + .wrapper {
+  margin-top: 10px;
+}
+
+.fieldset + .fieldset {
+  margin-top: 20px;
+}
+
+.button {
+  margin-top: 20px;
+}
