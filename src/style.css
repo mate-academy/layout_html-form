@@ -1,21 +1,8 @@
 /* styles go here */
 fieldset {
-  display: block;
-  border-style: solid 5px black;
-  margin: 15px 0;
+  margin-bottom: 20px;
 }
 
-input {
-  display: inline;
-  margin: 10px 0;
-}
-
-select {
-  display: inline;
-  margin: 10px 0;
-}
-
-button {
-  display: inline;
-  margin: 10px 0;
+.form-field {
+  margin-bottom: 10px;
 }

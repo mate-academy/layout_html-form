@@ -15,7 +15,15 @@
     <script type="text/javascript" src="./main.js"></script>
     <form action="http://localhost:8080/api" method="post"></form>
     <fieldset>
-      <legend>Information:</legend>
+      <legend>Personal information:</legend>
+      <div class="form-field">
+        <label for="surname">Surname:
+          <input type="text" 
+          name="surname" 
+          autocomplete="off"
+          >
+        </label>
+      </div>
       <div class="form-field">
         <label for="name">Name:
           <input type="text" 
@@ -26,15 +34,7 @@
         </label>
       </div>
       <div class="form-field">
-        <label for="surname">Surname:
-          <input type="text" 
-          name="surname" 
-          autocomplete="off"
-          >
-        </label>
-      </div>
-      <div class="form-field">
-        <label for="age">How old are you?
+        <label for="age">How old are You?
           <input type="number" 
           name="age" 
           value="12" 
@@ -51,7 +51,7 @@
           >
         </label>
       </div>
-      <div class="form-field">
+      <div class="terms">
         <label for="terms">I accept the term of the agreement
           <input type="checkbox" name="terms">
         </label>
@@ -69,7 +69,7 @@
           >
         </label>
       </div>
-      <div class="form-field">
+      <div class="password">
         <label for="password">Password:
           <input type="password" 
           name="password" 
@@ -80,7 +80,7 @@
     </div>
     </fieldset>
     <fieldset>
-      <legend>Interesting fact about you!</legend>
+      <legend>An interesting fact about you!</legend>
       <div class="form-field">
       Do you love cats?
         <label>
@@ -100,7 +100,7 @@
       </div>
       <div class="form-field">
         <label for="timeToBed">What time do you go to bed?
-          <input type="time" name="timeToBed">
+          <input type="time" name="timeToBed" step="2">
         </label>
       </div>
       <div class="form-field">
@@ -112,18 +112,19 @@
           </select>
         </label>
       </div>
-      <div class="form-field">
+      <div class="work">
         <label for="rate">How do you rate our work?
           <input type="range" 
           name="rate" 
           min="0" 
           max="100"
+          value="0"
           >
         </label>
       </div>
     </fieldset>
     <fieldset>
-      <legend>Info:</legend>
+      <legend>Additional info:</legend>
       <div class="form-field">
         <label for="comments">Comments:
           <textarea class="comment" 
@@ -134,11 +135,11 @@
           </textarea>
         </label>
       </div>
-      <div class="form-field">
+      <div class="reccomend">
         <label for="reccomend">Would you reccomend us?
           <select name="reccomend">
-            <option value="yes">YES</option>
-            <option value="no">NO</option>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
           </select>
         </label>
       </div>
