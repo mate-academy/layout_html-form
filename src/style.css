@@ -1,9 +1,5 @@
 /* styles go here */
-.label {
-  display: block;
-}
-
-.label + .label {
+.wrapper + .wrapper {
   margin-top: 10px;
 }
 
