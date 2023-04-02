@@ -9,7 +9,7 @@ Replace `<your_account>` with your Github username and copy the links to Pull Re
 
 ---
 
-## ❗️❗️❗️ Check your code with the [CHECKLIST](https://github.com/mate-academy/layout_html-form/blob/master/checklist.md) before ❗️❗️❗️
+# ❗️❗️❗️ Check your code with the [CHECKLIST](https://github.com/mate-academy/layout_html-form/blob/master/checklist.md) before ❗️❗️❗️
 
 ## The task:
 
