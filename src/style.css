@@ -8,18 +8,6 @@
   margin-bottom: 20px;
 }
 
-.term_and_agreement {
-  margin-bottom: 0;
-}
-
-.password {
-  margin-bottom: 0;
-}
-
-.rate_work {
-  margin-bottom: 0;
-}
-
-.recommend {
+.form-field:last-child {
   margin-bottom: 0;
 }
