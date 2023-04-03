@@ -1,50 +1,23 @@
 /* styles go here */
-body {
-  margin: 8px 10px;
-}
 
 .form-field {
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
 .fieldset {
-  margin: 20px 0;
-}
-
-.additional-info {
-  /* margin-bottom: 0; */
-}
-
-.personal-information {
-  margin-top: 0;
-}
-
-.surname {
-  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .term_and_agreement {
   margin-bottom: 0;
 }
 
-.email {
-  margin-top: 0;
-}
-
 .password {
   margin-bottom: 0;
 }
 
-.cat {
-  margin-top: 0;
-}
-
 .rate_work {
   margin-bottom: 0;
-}
-
-.comments {
-  margin-top: 0;
 }
 
 .recommend {
