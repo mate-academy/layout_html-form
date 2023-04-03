@@ -1,9 +1,13 @@
 /* styles go here */
 .form__field {
   display: block;
-  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .input__group {
   margin-bottom: 20px;
+}
+
+.form__field:last-child {
+  padding-bottom: 0;
 }
