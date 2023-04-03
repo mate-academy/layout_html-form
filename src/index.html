@@ -20,16 +20,37 @@
           id="Surname"
           name="Surname"
           required
-          >
-        <br><label
-        for="Name">Name: </label>
+        >
+        <br><label for="Name">Name: </label>
+        <input
+          class="input"
+          type="text"
+          name="Name"
+          id="Name"
+          required
+        >
+
+        <br><label for="number">How old are you?</label>
         <input
         class="input"
-        type="text"
-        name="Name"
-        id="Name"
+          type="number"
+          id="number"
+          name="number"
+          value="12"
+          min="1"
+          max="100"
+          required
+        >
+
+        <br><label for="accept">I accept the term of the agreement</label>
+        <input
+        class="input"
+        type="checkbox"
+        id="accept"
+        name="accept"
         required
         >
+
       </fieldset>
       <fieldset class="fieldset">
         <legend>Registration</legend>
@@ -120,7 +141,7 @@
             id="textArea"
             cols="-3"
             rows="-1"
-          ></textarea>
+       ></textarea>
 
         <br><label for="RecomendBloc">Would you recommend us?</label>
         <select
