@@ -51,7 +51,6 @@
         >
         <br><label for="accept">I accept the term of the agreement</label>
         <input
-        class="input"
         type="checkbox"
         id="accept"
         name="accept"
@@ -61,7 +60,7 @@
       </fieldset>
       <fieldset class="fieldset">
         <legend>Registration</legend>
-        <br><label for="E-mail">E-mail: </label>
+        <label for="E-mail">E-mail: </label>
         <input
         class="input"
         type="email"
@@ -83,7 +82,7 @@
         <label for="Yes">Do you love cats?</label>
 
         <input
-          class="input"
+          class="fieldset__input"
           type="radio"
           name="terms"
           id="Yes"
@@ -91,16 +90,16 @@
         >
         <label for="Yes">Yes</label>
         <input
-          class="input"
+          class="fieldset__input"
           type="radio"
           name="terms"
           id="No"
         >
         <label for="No"> No</label>
 
-        <br><label for="color">What is your favorit color?
+        <br><label for="color">What is your favorite color?
           <input
-            class="input"
+            class="label__color"
             type="color"
             name="color"
             id="color"
@@ -113,6 +112,7 @@
         <input
           class="input"
           type="time"
+          step="2"
           id="time"
           name="time"
           min="22:20"
@@ -134,16 +134,20 @@
 
         <br><label for="scrol_volume">How do you rate our work?</label>
         <input
-        class="input"
+        class="scrol_volume"
         type="range"
         id="scrol_volume"
         name="scrol_volume"
+        value="0"
+        minlength="0"
+        maxlength="100"
         >
       </fieldset>
       <fieldset class="fieldset">
         <legend>Additional info:</legend>
         <label for="textArea">Comments:</label>
         <textarea
+            class="input"
             name="textArea"
             id="textArea"
             cols="-3"
