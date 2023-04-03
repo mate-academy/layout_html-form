@@ -1,1 +1,8 @@
-/* styles go here */
+.input {
+  display: block;
+  padding-top: 10px;
+}
+
+.fields {
+  margin-top: 20px;
+}
