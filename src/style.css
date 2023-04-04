@@ -1,1 +1,16 @@
-/* styles go here */
+.fieldset {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+.field {
+  display: block;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.data:focus {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  background-color: blue;
+  border-radius: 5px;
+}
