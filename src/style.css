@@ -1,1 +1,18 @@
-/* styles go here */
+
+.input {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.label__color {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.scrol_volume {
+  margin-top: 12px;
+}
