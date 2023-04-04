@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
+    <meta 
+      name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -17,72 +18,92 @@
     >
       <fieldset class="form-box">
         <legend>Personal information</legend>
+
         <div class="form-filed">
-          <label for="surname">Surname:
-            <input type="text" 
-            name="surname" 
-            id="surname"
-            autocomplete="off" 
-            required
-            >
-          </label> 
-        </div>
-        <div class="form-filed">
-          <label for="name"> Name:</label>
-          <input type="text" 
-          name="name" 
-          id="name"
-          autocomplete="off"
+          <label for="surname">Surname:</label> 
+
+          <input 
+              type="text" 
+              name="surname" 
+              id="surname"
+              autocomplete="off" 
+              required
           >
         </div>
+
+        <div class="form-filed">
+          <label for="name">Name:</label>
+
+          <input 
+              type="text" 
+              name="name" 
+              id="name"
+              autocomplete="off"
+          >
+        </div>
+
         <div class="form-filed">
           <label for="age">How old are You?</label>
-          <input type="number"
-            name="age"
-            id="age"
-            pattern="\d+"
-            value="12"
-            min="1"
-            max="100"
+
+          <input 
+              type="number"
+              name="age"
+              id="age"
+              pattern="\d+"
+              value="12"
+              min="1"
+              max="100"
           >
         </div>
+
         <div class="form-filed">
-          <label for="date-birth">Full date of birth:</label>
-          <input type="date"
-            name="date-birth"
-            id="date-birth"
-            placeholder="date"
+          <label for="dateBirth">Full date of birth:</label>
+
+          <input 
+              type="date"
+              name="dateBirth"
+              id="dateBirth"
+              placeholder="date"
           >
         </div>
+
         <div class="form-filed">
           <label for="accept">I accept the term of the agreement</label>
-          <input type="checkbox"
-            name="accept-agreement"
-            id="accept"
-            value="yes"
+
+          <input 
+              type="checkbox"
+              name="acceptAgreement"
+              id="accept"
+              value="yes"
           >
         </div>
       </fieldset>
 
       <fieldset class="form-box">
         <legend>Registration</legend>
+
         <div class="form-filed">
-          <label for="email">E-mail: </label>
-          <input type="email"
-            placeholder="email@example.com"
-            name="email"
-            id="email"
-            autocomplete="off"
+          <label for="email">E-mail:</label>
+
+          <input 
+              type="email"
+              placeholder="email@example.com"
+              name="email"
+              id="email"
+              autocomplete="off"
           >
         </div>
+
         <div class="form-filed">
           <label for="password">Password: </label>
-          <input type="password"
-            name="password"
-            id="password"
-            minlength="5"
-            maxlength="15"
-            autocomplete="off"
+
+          <input 
+              type="password"
+              name="password"
+              id="password"
+              minlength="5"
+              maxlength="15"
+              autocomplete="off"
           >
         </div>
       </fieldset>
@@ -93,71 +114,97 @@
         <div class="form-filed">
           <label for="cats"
             >Do you love cats?
-            <input type="radio" 
-            name="cats"  
-            value="Yes"
-            > Yes
-            <input type="radio"
-             name="cats" 
-             value="No"
-            > No
+            <input 
+                type="radio" 
+                name="cats"  
+                value="Yes"
+            >
+
+            <label for="cats">Yes</label> 
+
+            <input 
+                type="radio"
+                name="cats" 
+                value="No"
+            >
+
+            <label for="cats">No</label> 
           </label>
         </div>
+
         <div class="form-filed">
           <label for="color">What is your favorite color?</label>
-          <input type="color" 
-          name="color" 
-          id="color"
+
+          <input 
+              type="color" 
+              name="color" 
+              id="color"
           >
         </div>
+
         <div class="form-filed">
-          <label for="bed-time">What time do you go to bed?</label>
-          <input type="time" 
-            name="bed-time" 
-            id="bed-time"
+          <label for="bedTime">What time do you go to bed?</label>
+
+          <input 
+              type="time" 
+              name="bedTime" 
+              id="bedTime"
           >
         </div>
+
         <div class="form-filed">
-          <label for="car-select">What are your favorite brand of cars?</label>
-          <select name="car-select" 
-          id="car"
-          multiple>
+          <label for="carSelect">What are your favorite brand of cars?</label>
+
+          <select 
+              name="carSelect" 
+              id="carSelect"
+              multiple
+          >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
-            <option disabled></option>
           </select>
         </div>
+        
         <div class="form-filed">
           <label for="work"> How do you rate our work?</label>
-          <input type="range"
-            name="work"
-            id="work"
-            min="0"
-            max="10"
-            value="0"
+
+          <input 
+              type="range"
+              name="work"
+              id="work"
+              min="0"
+              max="10"
+              value="0"
           >
         </div>
       </fieldset>
 
       <fieldset class="form-box">
         <legend>Additional info:</legend>
+
         <div class="form-filed">
           <label for="comments">Comments:</label>
-          <textarea name="comments"
-            id="comments"
-            placeholder="Something"
-            autocomplete="off"
+
+          <textarea 
+              name="comments"
+              id="comments"
+              placeholder="Something"
+              autocomplete="off"
          ></textarea>
         </div>
+
         <div class="form-filed">
           <label for="recomend">Would you recommend us?</label>
+
           <select name="recomend" id="recomend">
             <option value="yes" selected>yes</option>
+
             <option value="no">no</option>
           </select>
         </div>
       </fieldset>
+
       <div class="form-actions">
         <button type="submit" form="our-form">Submit</button>
       </div>
