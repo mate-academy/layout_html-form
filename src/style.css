@@ -1,13 +1,11 @@
 .form__field {
   display: block;
-  margin: 10px auto;
 }
 
-.fieldset {
+.fieldset:not(:first-child) {
   margin: 20px 0;
 }
 
-.form__fieldShort {
+.form__field:not(:last-child) {
   margin-bottom: 10px;
-  display: block;
 }

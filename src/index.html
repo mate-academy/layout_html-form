@@ -8,7 +8,7 @@
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <script
@@ -20,12 +20,12 @@
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
     >
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>
           Personal information
         </legend>
 
-        <label>
+        <label class="form__field">
           Surname:
           <input
             type="text"
@@ -62,7 +62,7 @@
           >
         </label>
 
-        <label>
+        <label class="form__field">
           I accept the term of the agreement
           <input
             type="checkbox"
@@ -77,7 +77,7 @@
           Registration
         </legend>
 
-        <label class="form__fieldShort">
+        <label class="form__field">
           E-mail:
           <input
             type="email"
@@ -86,7 +86,7 @@
           >
         </label>
 
-        <label>
+        <label class="form__field">
           Password:
           <input
             type="password"
@@ -102,14 +102,15 @@
           An interesting fact about you!
         </legend>
 
-        <label>
+        <div class="form__field">
           Do you love cats?
           <label>
             <input
               type="radio"
               name="loveCat"
               value="yes"
-            > Yes
+            >
+            Yes
           </label>
 
           <label>
@@ -117,9 +118,10 @@
               type="radio"
               name="loveCat"
               value="no"
-            > No
+            >
+            No
           </label>
-        </label>
+        </div>
 
         <label class="form__field">
           What is your favorite color?
@@ -151,7 +153,7 @@
           </select>
         </label>
 
-        <label>
+        <label class="form__field" >
           How do you rate our work?
           <input
             type="range"
@@ -166,7 +168,7 @@
           Additional info:
         </legend>
 
-        <label class="form__fieldShort">
+        <label class="form__field">
           Comments:
           <textarea
             name="comments"
@@ -174,7 +176,7 @@
          ></textarea>
         </label>
 
-        <label>
+        <label class="form__field">
           Would you recommend us?
           <select name="userRecommend">
             <option value="yes" selected>yes</option>
