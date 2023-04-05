@@ -11,7 +11,168 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+    >
+      <fieldset class="fieldset_info">
+        <legend>
+          Personal information
+        </legend>
+        <label class="Lab1 lab_all">
+          <div>Surname:</div>
+          <input
+            type="text"
+            name="Surname"
+            class="inp_Surname"
+            autocomplete="off"
+          >
+        </label>
+        <label class="Lab1 lab_all">
+          <div>Name:</div>
+          <input
+            type="text"
+            name="Name"
+            class="inp_name"
+            autocomplete="off"
+          >
+        </label>
+        <label class="lab_all">
+          <div>How old are You?</div>
+          <input
+            type="number"
+            min="1"
+            max="100"
+            value="12"
+            name="old"
+            class="inp_years"
+          >
+        </label>
+        <label class="lab_all">
+          <div>Full date of birth:</div>
+          <input
+            type="date"
+            name="date or birth"
+            class="inp_birth"
+          >
+        </label>
+        <label class="lab_all">
+          <div>I accept the term of the agreement</div>
+          <input
+            type="checkbox"
+            name="Agree"
+          >
+        </label>
+      </fieldset>
+      <fieldset class="fieldset_reg">
+        <legend>
+          Registration
+        </legend>
+        <label class="lab_all">
+          <div>E-mail:</div>
+          <input
+            type="email"
+            name="Email"
+            placeholder="email@example.com"
+            class="inp_email"
+          >
+        </label>
+        <label class="lab_all">
+          <div>Password:</div>
+          <input
+            class="Password"
+            type="password"
+            name="password"
+            minlength="6"
+            maxlength="25"
+          >
+        </label>
+      </fieldset>
+      <fieldset class="fieldset_fact">
+        <legend>
+          An interesting fact about you!
+        </legend>
+        <label class="lab_all">
+          <div>Do you love cats?</div>
+          <input
+            type="radio"
+            name="cats"
+            value="Yes"
+            class="inp_cats_yes"
+          >
+          <div class="Yes">Yes</div>
+          <input
+            type="radio"
+            name="cats"
+            value="No"
+            class="inp_cats_no"
+          >
+          <div class="No">No</div>
+        </label>
+        <label class="lab_all">
+          <div class="color_div">What is your favorite color?
+            <input
+              type="color"
+              value="#000000"
+              class="inp_color"
+            >
+          </div>
+        </label>
+        <label class="lab_all">
+          <div>What time do you go to bed?</div>
+          <input
+            type="time"
+            step="1"
+            class="inp_time"
+          >
+        </label>
+        <label class="lab_all">
+          <div class="cars_text">  What are your favorite brand of cars?</div>
+          <div
+            contenteditable="true"
+            class="cars"
+          >
+            <div class="BMW">BMW</div>
+            <div class="Audi">Audi</div>
+            <div class="Lada">Lada</div>
+          </div>
+        </label>
+        <label class="lab_all">
+          <div class="div_work">How do you rate our work?</div>
+          <input
+            type="range"
+            name="range"
+            value="0"
+            class="range"
+          >
+        </label>
+      </fieldset>
+      <fieldset class="fieldset_additional">
+        <legend>Additional info:</legend>
+        <label class="lab_all">
+          <div>
+            Comments:
+            <textarea name="comment" cols="20"></textarea>
+          </div>
+        </label>
+        <label class="lab_all">
+          <div class="recommend">
+            Would you recommend us?
+            <select
+              name="select"
+              class="select_rec"
+            >
+              <option value="Yes">yes</option>
+              <option value="No">no</option>
+            </select>
+          </div>
+        </label>
+      </fieldset>
+      <button
+        type="submit">
+        Submit
+      </button>
+    </form>
   </body>
 </html>
