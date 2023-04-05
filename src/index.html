@@ -13,5 +13,148 @@
   <body>
     <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+
+    <!-- <h1>The input value attribute</h1>
+
+    <p>The value attribute specifies an initial value for an input field:</p>
+Personal information  -->
+    <!-- <form action="/action_page.php">
+      <fieldset>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form> -->
+
+<!--------Personal information  -->
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"  method="post" name="html form">
+
+      <fieldset >
+        <legend>Personal information</legend>
+
+        <label class="form-field">
+          Surname:
+          <input type="text" autocomplete="off" name="surname" required>
+        </label>
+
+        <label class="form-field">
+          Name:
+          <input type="text" autocomplete="off" name="name" required >
+        </label>
+
+        <label class="form-field">
+          How old are You?
+          <input type="number" name="HowOldAreYou" min="1" max=100 value=12 required>
+        </label>
+
+        <label class="form-field">
+          Full date of birth:
+          <input type="date" name="birthday" placeholder="mm / dd / yyyy" required>
+        </label>
+
+        <label class="form-field">
+          I accept the term of the agreement
+          <input type="checkbox" required >
+        </label>
+
+      </fieldset>
+
+<!----------Registration -->
+      <fieldset >
+        <legend>Registration</legend>
+
+        <label class="form-field">
+          E-mail:
+          <input type="email"
+            name="email"
+            placeholder="email@example.com"
+            required
+          >
+        </label>
+
+
+        <label class="form-field">
+          Password:
+          <input type="password" name="password" required>
+        </label>
+
+      </fieldset>
+
+      <!----------An interesting fact about you!-->
+      <fieldset >
+        <legend>An interesting fact about you!</legend>
+
+        <label class="form-field">
+          Do you love cats?
+          <label class="form-field2">
+            Yes
+            <input type="radio" name="love cats">
+          </label>
+
+          <label class="form-field2">
+            No
+            <input type="radio" name="love cats">
+          </label>
+        </label>
+
+        <label class="form-field">
+          What is favorite color?
+          <input type="color" name="color" >
+        </label>
+
+        <label class="form-field">
+          What time do you go to bed?
+          <input type="time" name="time" >
+        </label>
+
+        <label class="form-field">
+          What are your favorite brand of cars?
+
+          <select name="brandOfCars" required multiple>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </label>
+
+        <label class="form-field">
+          How do you rate our work?
+          <input type="range" name="rate" >
+        </label>
+
+      </fieldset>
+
+      <!----------Additional info:-->
+      <fieldset >
+        <legend>Additional info:</legend>
+
+        <label class="form-field">
+          Comments:
+          <textarea name="comments"
+            cols="30"
+            rows="5"
+            maxlength="170"
+            placeholder="comments"
+         ></textarea>
+        </label>
+
+        <label class="form-field">
+          Would you recommend us?
+
+          <select name="answerYesNo" id="">
+            <option value="yes" selected>yes</option>
+            <option value="no">no</option>
+          </select>
+
+        </label>
+      </fieldset>
+
+      <input type="submit" >
+      <input type="reset" >
+
+    </form>
+
   </body>
 </html>
