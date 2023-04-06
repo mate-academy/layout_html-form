@@ -11,10 +11,7 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <!-- <h1>HTML Form</h1> -->
-
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <!-- Personal information -->
       <fieldset class="form__fildset">
         <legend>Personal information</legend>
 
@@ -55,10 +52,8 @@
           I accept the term of the agreement
           <input type="checkbox" name="acceptTerms">
         </label>
-
       </fieldset>
 
-      <!-- Registration -->
       <fieldset class="form__fildset">
         <legend>Registration</legend>
 
@@ -83,25 +78,26 @@
         </label>
       </fieldset>
 
-      <!-- An interesting fact about you! -->
       <fieldset class="form__fildset">
         <legend>An interesting fact about you!</legend>
 
-        <label class="form__element">
+        <div class="form__element">
           Do you love cats?
           <input
             type="radio"
             name="loveCats"
             value="yes"
+            id="loveCatsYes"
           >
-          Yes
+          <label for="loveCatsYes">Yes</label>
           <input
             type="radio"
             name="loveCats"
             value="no"
+            id="loveCatsNo"
           >
-          No
-        </label>
+          <label for="loveCatsNo">No</label>
+        </div>
 
         <label class="form__element">
           What is your favorit color?
@@ -136,10 +132,8 @@
             value="1"
           >
         </label>
-
       </fieldset>
 
-      <!-- Additional info -->
       <fieldset class="form__fildset">
         <legend>Additional info</legend>
 
@@ -160,14 +154,11 @@
             <option value="no">no</option>
           </select>
         </label>
-
       </fieldset>
 
       <button type="submit">Submit</button>
-
     </form>
 
     <script type="text/javascript" src="./main.js"></script>
-
   </body>
 </html>
