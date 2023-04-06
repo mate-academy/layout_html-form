@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta
       name="viewport"
-      content="width=device-width,
-      user-scalable=no,
-      initial-scale=1.0,
-      maximum-scale=1.0,
-      minimum-scale=1.0"
+      content="
+        width=device-width,
+        user-scalable=no,
+        initial-scale=1.0,
+        maximum-scale=1.0,
+        minimum-scale=1.0
+      "
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
@@ -20,21 +22,23 @@
       <fieldset class="inputs-block">
         <legend>Personal information</legend>
         <label class="input-line">
-          Surname:
+        Surname:
           <input
             name="surname"
-            autocomplete="off"
+  autocomplete="off"
           >
         </label>
+
         <label class="input-line">
-          Name:
+        Name:
           <input
             name="name"
-              autocomplete="off"
+  autocomplete="off"
           >
         </label>
+
         <label class="input-line">
-          How old are You?
+        How old are You?
           <input
             type="number"
             name="age"
@@ -43,33 +47,38 @@
             value="12"
           >
         </label>
+
         <label class="input-line">
-          Full date of birth:
+        Full date of birth:
           <input
             type="date"
             name="FullDateOfbirth"
           >
         </label>
+
         <label class="input-line">
-          I accept the term of the agreement
+        I accept the term of the agreement
           <input
             type="checkbox"
             name="agreement"
           >
         </label>
       </fieldset>
+
       <fieldset class="inputs-block">
         <legend>Registration</legend>
+
         <label class="input-line">
-          E-mail:
+        E-mail:
           <input
             type="email"
             name="email"
             placeholder="email@example.com"
           >
         </label>
+
         <label class="input-line">
-          Password:
+        Password:
           <input
             type="password"
             name="password"
@@ -78,50 +87,59 @@
           >
         </label>
       </fieldset>
+
       <fieldset class="inputs-block">
         <legend>An interesting fact about you!</legend>
+
         <div class="input-line">
           <label>
           Do you love cats?
             <input
               type="radio"
-              name="DoYouLoveCats"
+              name="doYouLoveCats"
               value="Yes"
-            >Yes
+            >
+            Yes
           </label>
+
           <label>
             <input
               type="radio"
-              name="DoYouLoveCats"
+              name="doYouLoveCats"
               value="No"
-            >NO
+            >
+            NO
           </label>
+
         </div>
         <label class="input-line">
-          What is your favorite color?
+        What is your favorite color?
           <input
             type="color"
             name="color"
           >
         </label>
+
         <label class="input-line">
-          What time do you go to bed?
+        What time do you go to bed?
           <input
             type="time"
             name="time"
             step="1"
           >
         </label>
+
         <label class="input-line">
-          What are your favorite brand of cars
+        What are your favorite brand of cars
           <select multiple name="cars">
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
           </select>
         </label>
+
         <label class="input-line">
-          How do you rate your work?
+        How do you rate your work?
           <input
             type="range"
             name="rate"
@@ -132,24 +150,36 @@
           >
         </label>
       </fieldset>
+
       <fieldset class="inputs-block">
         <legend>Additional info:</legend>
-        <label class="input-line">Comments:
+        <label class="input-line">
+        Comments:
           <textarea
             name="info"
             autocomplete="off"
          ></textarea>
         </label>
-        <label class="input-line">Would you recommend us?
+
+        <label class="input-line">
+        Would you recommend us?
           <select name="recommend">
-            <option value="Yes">yes</option>
-            <option value="No">no</option>
+            <option value="yes"
+            >
+            yes
+            </option>
+            <option value="no"
+            >
+            no
+            </option>
           </select>
         </label>
       </fieldset>
+
       <label class="submit_button">
         <button type="submit" value="0">Submit</button>
       </label>
+
     </form>
   </body>
 </html>
