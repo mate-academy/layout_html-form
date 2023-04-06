@@ -1,1 +1,22 @@
 /* styles go here */
+.fieldset:not(:first-child) {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form-field {
+  display: block;
+  margin: 10px 0;
+}
+
+.top {
+  margin-top: 0;
+}
+
+.bot {
+  margin-bottom: 0;
+}
+
+.form-select {
+  overflow: hidden;
+}
