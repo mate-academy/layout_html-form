@@ -1,1 +1,14 @@
 /* styles go here */
+body {
+  margin: 0;
+}
+
+.form__fields:not(:last-child) {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.fieldset,
+.button {
+  margin: 20px 10px;
+}
