@@ -1,1 +1,14 @@
 /* styles go here */
+
+.block {
+  display: block;
+}
+
+.block:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.fieldset {
+  /* margin: 8px 3px 20px 2px; */
+  margin-bottom: 20px;
+}
