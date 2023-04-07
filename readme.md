@@ -42,7 +42,7 @@ Create HTML page with form. On form submit send form data to `https://mate-acade
 - Text fields should have `autocomplete="off"`.
 - `Submit` button should have a `type="submit"`
 - Vertical distance between inputs should be `10px`
-- Vertical distance between groups should be `20px`
+- Vertical distance between groups should be `20 px`
 - Any other styles should be browser default
 
 --> Don't forget to proofread your code using [CHECKLIST](https://github.com/mate-academy/layout_html-form/blob/master/checklist.md)

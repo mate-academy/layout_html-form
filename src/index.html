@@ -11,117 +11,116 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="http://localhost:3000/api" method="post"
-    name="testform">
+    <form
+      action="http://localhost:3000/api"
+      method="post"
+      name="testform"
+    >
       <fieldset class="block">
         <legend>Personal information</legend>
         <div class="form-fild">
           <label>
             Surname:
-            <input type="text"
-            name="Surname"
-            autocomplete="off"
+            <input
+              type="text"
+              name="Surname"
+              autocomplete="off"
             >
           </label>
         </div>
-
         <div class="form-fild">
           <label>
             Name:
-            <input type="text"
-            name="Name"
-            autocomplete="off"
+            <input
+              type="text"
+              name="Name"
+              autocomplete="off"
             >
           </label>
         </div>
-
         <div class="form-fild">
           <label>
             How old are You?
-            <input type="number"
-            name="Age"
-            value="12"
-            min="1"
-            max="100"
+            <input
+              type="number"
+              name="Age"
+              value="12"
+              min="1"
+              max="100"
             >
           </label>
         </div>
         <div class="form-fild">
           <label>
             Full date of birth:
-            <input type="date"
-            name="Date-of-birth"
-            >
+            <input type="date" name="Date-of-birth">
           </label>
         </div>
-
         <div>
           <label>
             I accept the term of the agreement
-            <input type="checkbox"
-            name="terms"
-            >
+            <input type="checkbox" name="terms">
           </label>
         </div>
       </fieldset>
-
-
       <fieldset class="block">
         <legend>Registration</legend>
         <div class="form-fild">
           <label>
             E-mail:
-            <input type="email"
-            name="email"
-            placeholder="email@example.com"
+            <input
+              type="email"
+              name="email"
+              placeholder="email@example.com"
             >
           </label>
         </div>
-
         <div>
           <label>
             Password:
-            <input type="password"
-            name="password"
-            required
-            minlength="4"
-            maxlength="8"
+            <input
+              type="password"
+              name="password"
+              required
+              minlength="4"
+              maxlength="8"
             >
           </label>
         </div>
       </fieldset>
-
       <fieldset class="block">
         <legend>An interesting fact about you!</legend>
         <div class="form-fild">
+          Do you love cats?
           <label>
-            Do you love cats?
-            <input type="radio" name="Do-you-love-cats"
-            value="yes"
+            <input
+              type="radio"
+              name="Do-you-love-cats"
+              value="Yes"
             >
             Yes
-            <input type="radio"
-            name="Do-you-love-cats"
-            value="not"
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="Do-you-love-cats"
+              value="not"
             >
             No
           </label>
         </div>
-
         <div class="form-fild">
           <label>
             What is your favorite color?
             <input type="color" name="color">
           </label>
         </div>
-
         <div class="form-fild">
           <label>
             What time do you go to bed?
             <input type="time" name="time">
           </label>
         </div>
-
         <div class="form-fild">
           <label>
             What are your favorite brand of cars?
@@ -132,18 +131,17 @@
             </select>
           </label>
         </div>
-
         <div>
           <label>
             How do you rate our work?
-            <input type="range"
-            name="range"
-            value="0"
+            <input
+              type="range"
+              name="range"
+              value="0"
             >
           </label>
         </div>
       </fieldset>
-
       <fieldset class="block">
         <legend>Additional info:</legend>
         <div class="form-fild">
@@ -152,7 +150,6 @@
             <textarea name="Comments"></textarea>
           </label>
         </div>
-
         <div>
           <label>
             Would you recommend us?
@@ -163,21 +160,9 @@
           </label>
         </div>
       </fieldset>
-
       <div class="block">
         <button type="submit">Submit</button>
       </div>
-
-
-
-
-
-
-
-
-
-
-
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
