@@ -16,13 +16,13 @@
     action="https://mate-academy-form-lesson.herokuapp.com/create-application"
     method="post"
     >
-      <fieldset name="personalInformation">
+      <fieldset class="form_field" name="personalInformation">
         <legend>
           Personal information
         </legend>
 
         <label class="form_label">
-            Surname:
+          Surname:
           <input
             type="text"
             name="surname"
@@ -42,7 +42,8 @@
 
         <label class="form_label">
           How old are You?
-          <input type="number"
+          <input
+            type="number"
             name="age"
             value="12"
             min="1"
@@ -61,7 +62,7 @@
         </label>
       </fieldset>
 
-      <fieldset name="registration">
+      <fieldset class="form_field" name="registration">
         <legend>
           Registration
         </legend>
@@ -76,7 +77,7 @@
         </label>
 
         <label class="form_label">
-        Password:
+          Password:
           <input
             type="password"
             name="userPassword"
@@ -86,7 +87,7 @@
         </label>
       </fieldset>
 
-      <fieldset name="fact">
+      <fieldset class="form_field" name="fact">
         <legend>
             An interesting fact about you!
         </legend>
@@ -114,7 +115,7 @@
 
         <label class="form_label">
           What time do you go to bed?
-          <input type="time" name="app-time">
+          <input class="form_time" type="time" name="app-time">
         </label>
 
         <label class="form_label">
@@ -132,14 +133,15 @@
         </label>
       </fieldset>
 
-      <fieldset name="additionalInfo">
+      <fieldset class="form_field" name="additionalInfo">
         <legend>
           Additional info:
         </legend>
 
         <label class="form_label">
           Comments:
-          <textarea name="comments"
+          <textarea
+            name="comments"
          ></textarea>
         </label>
 
