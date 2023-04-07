@@ -1,1 +1,18 @@
-/* styles go here */
+.form_label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form_field {
+  display: block;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+.form_button {
+  margin: 20px 0;
+}
+
+input[class="form_time"]::-webkit-calendar-picker-indicator {
+  background: none;
+}
