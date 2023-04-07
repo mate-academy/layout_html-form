@@ -37,8 +37,6 @@
           >
         </label>
 
-
-
         <label class="form-field">Full date of birth:
           <input
             type="date"
@@ -80,7 +78,7 @@
           An intersting fact about you!
         </legend>
 
-        <div class="form-field cats">
+        <label class="form-field cats">
           Do you love cats?
           <input
             type="radio"
@@ -89,8 +87,8 @@
             value="yes"
           >
           Yes
-        </div>
-        <div class="form-field cats">
+        </label>
+        <label class="form-field cats">
           <input
             type="radio"
             id="No"
@@ -98,7 +96,7 @@
             value="no"
           >
           No
-        </div>
+        </label>
         <label class="form-field">
           What is your favorite color?
           <input type="color" required>
@@ -121,9 +119,11 @@
 
         <label class="form-field">
           How do you rate our work?
-          <input type="range"
+          <input
+          type="range"
           name="rate"
-          min="1" max="10"
+          min="1"
+          max="10"
           >
         </label>
       </fieldset>
