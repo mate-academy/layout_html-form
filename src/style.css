@@ -1,29 +1,11 @@
 /* styles go here */
 
-div {
+fieldset:not(:last-child) {
   display: block;
-  /* margin-bottom: 10px; */
-}
-
-legend {
-  /* display: block; */
-  /* margin-bottom: 10px; */
-}
-
-label {
-  /* display: block; */
-  /* margin-bottom: 10px; */
-}
-
-fieldset {
   margin-bottom: 20px;
 }
 
-.form-field {
+.form-field:not(:last-child) {
   display: block;
   margin-bottom: 10px;
-}
-
-.form-field-registration {
-  display: block;
 }
