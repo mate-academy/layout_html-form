@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+    >
       <fieldset class="fieldset">
         <legend>Personal information</legend>
 
@@ -91,18 +94,22 @@
 
         <label class="block">
           Do you love cats?
-          <input
-            type="radio"
-            name="cat"
-            value="true"
-            autocomplete="off"
-          > Yes
-          <input
-            type="radio"
-            name="cat"
-            value="false"
-            autocomplete="off"
-          > No
+          <label>
+            <input
+              type="radio"
+              name="cat"
+              value="true"
+              autocomplete="off"
+            > Yes
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="cat"
+              value="false"
+              autocomplete="off"
+            > No
+          </label>
         </label>
         <label class="block">
           What is your favorite color?
