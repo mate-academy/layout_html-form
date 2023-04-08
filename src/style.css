@@ -1,1 +1,20 @@
-/* styles go here */
+.form-field {
+  display: block;
+  padding-bottom: 10px;
+}
+
+.year {
+  width: 65px;
+}
+
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.form-field:last-child {
+  padding-bottom: 0;
+}
+
+.time {
+  width: 98px;
+}
