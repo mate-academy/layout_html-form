@@ -1,1 +1,60 @@
 /* styles go here */
+.form {
+  display: block;
+}
+
+.mail {
+  margin-top: 20px;
+}
+
+.facts {
+  margin-top: 20px;
+}
+
+.info {
+  margin-top: 20px;
+}
+
+.name {
+  margin-top: 10px;
+}
+
+.age {
+  margin-top: 10px;
+}
+
+.birth {
+  margin-top: 10px;
+}
+
+.checkbox {
+  margin-top: 10px;
+}
+
+.password {
+  margin-top: 10px;
+}
+
+.color {
+  margin-top: 10px;
+}
+
+.time {
+  margin-top: 10px;
+}
+
+.cars {
+  margin-top: 10px;
+}
+
+.rate {
+  margin-top: 10px;
+}
+
+.recomendations {
+  margin-top: 10px;
+}
+
+.button {
+  margin-top: 20px;
+}
