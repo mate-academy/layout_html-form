@@ -1,6 +1,7 @@
 /* styles go here */
-.from-field:not(:last-child) {
+.form-field:not(:last-child) {
   margin-bottom: 10px;
+  display: block;
 }
 
 .section {
