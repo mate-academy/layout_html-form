@@ -13,7 +13,7 @@
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <div class="block">
-        <fieldset>
+        <fieldset class="field">
           <legend>Personal information</legend>
           <div class="element">
             <label for="surname">
@@ -29,91 +29,100 @@
           <div class="element">
             <label for="name">Name:</label>
             <input
-            type="text"
-            id="name"
-            name="name"
-            autocomplete="off"
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="off"
             >
           </div>
           <div class="element">
             <label for="age">How old are You?</label>
-            <input type="number"
-            id="age"
-            name="age"
-            min="1" max="100"
-            value="12"
+            <input
+              type="number"
+              id="age"
+              name="age"
+              min="1" max="100"
+              value="12"
             >
           </div>
           <div class="element">
             <label for="birthday">Full date of birth:</label>
-            <input type="date"
-            id="birthday"
-            name="birthday"
+            <input
+              type="date"
+              id="birthday"
+              name="birthday"
             >
           </div>
           <div class="element">
             <label for="termsofagreement">I accept the term of the agreement</label>
-            <input type="checkbox"
-            id="termsofagreement"
-            name="termsofagreement"
+            <input
+              type="checkbox"
+              id="termsofagreement"
+              name="termsofagreement"
             >
           </div>
         </fieldset>
       </div>
       <div class="block">
-        <fieldset>
+        <fieldset class="field">
           <legend>Registration</legend>
           <div class="element">
             <label for="email">E-mail:</label>
-            <input type="email"
-            id="email"
-            name="email"
-            placeholder="email@example.com"
-            required
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@example.com"
+              required
             >
           </div>
           <div class="element">
             <label for="pwd">Password:</label>
-            <input type="password"
-            id="pwd"
-            name="pwd"
-            minlength="5"
-            maxlength="15"
+            <input
+              type="password"
+              id="pwd"
+              name="pwd"
+              minlength="5"
+              maxlength="15"
             >
           </div>
         </fieldset>
       </div>
       <div class="block">
-        <fieldset>
+        <fieldset class="field">
           <legend>An interesting fact about you!</legend>
           <div class="element">
             Do you love cats?
-            <input type="radio"
-            id="yes"
-            name="answer"
-            value="yes"
+            <input
+              type="radio"
+              id="yes"
+              name="answer"
+              value="yes"
             >
             <label for="yes">Yes</label>
-            <input type="radio"
-            id="no"
-            name="answer"
-            value="no"
+            <input
+              type="radio"
+              id="no"
+              name="answer"
+              value="no"
             >
             <label for="no">No</label>
           </div>
           <div class="element">
             <label for="favcolor">What is your favorite color?</label>
-            <input type="color"
-            id="favcolor"
-            name="favcolor"
+            <input
+              type="color"
+              id="favcolor"
+              name="favcolor"
             >
           </div>
           <div class="element">
             <label for="appt">What time do you go to bed?</label>
-            <input type="time"
-            id="appt"
-            name="appt"
-            step="1"
+            <input
+              type="time"
+              id="appt"
+              name="appt"
+              step="1"
             >
           </div>
           <div class="element">
@@ -130,18 +139,19 @@
           </div>
           <div class="element">
             <label for="forest">How do you rate our work?</label>
-            <input type="range"
-            id="vol"
-            name="vol"
-            min="0"
-            max="50"
-            value="0"
+            <input
+              type="range"
+              id="vol"
+              name="vol"
+              min="0"
+              max="50"
+              value="0"
             >
           </div>
         </fieldset>
       </div>
       <div class="block">
-        <fieldset>
+        <fieldset class="field">
           <legend>Additional info:</legend>
           <div class="element">
             <label for="comments">Comments:</label>
