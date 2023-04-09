@@ -3,10 +3,6 @@
   padding-bottom: 10px;
 }
 
-.year {
-  width: 65px;
-}
-
 .fieldset {
   margin-bottom: 20px;
 }
@@ -15,6 +11,6 @@
   padding-bottom: 0;
 }
 
-.time {
-  width: 98px;
+.radio {
+  display: inline-block;
 }
