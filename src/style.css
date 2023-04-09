@@ -1,9 +1,9 @@
 .container {
-  margin: 0 2px 20px;
-  padding: 1px 12px 5px;
+  margin-bottom: 20px;
+  padding-bottom: 0;
 }
 
 .block {
   display: block;
-  padding: 5px 0;
+  padding-bottom: 10px;
 }
