@@ -11,7 +11,183 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+      <fieldset>
+        <legend>Personal information</legend>
+
+        <div class="form-widget">
+          <label for="surname">Surname:</label>
+          <input
+          name="surname"
+          id="surname"
+          type="text"
+          autocomplete="off"
+          required
+          >
+        </div>
+
+        <div class="form-widget">
+          <label for="name">Name:</label>
+          <input
+          name="name"
+          id="name"
+          type="text"
+          autocomplete="off"
+          required
+          >
+        </div>
+
+        <div class="form-widget">
+          <label for="age">How old are You?</label>
+          <input
+          name="age"
+          id="age"
+          type="number"
+          min="1"
+          max="100"
+          value="12"
+          required
+          >
+        </div>
+
+        <div class="form-widget">
+          <label for="full_date_of_birth">Full date of birth:</label>
+          <input
+          name="full_date_of_birth"
+          id="full_date_of_birth"
+          type="date"
+          min="1900-01-01"
+          max="2010-01-01"
+          required
+          >
+        </div>
+
+        <div class="form-widget">
+          <label for="terms">I accept the term of the agreement</label>
+          <input
+          name="terms"
+          id="terms"
+          type="checkbox"
+          required
+          >
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Registration</legend>
+
+        <div class="form-widget">
+          <label for="email">E-mail:</label>
+          <input
+          name="email"
+          id="email"
+          type="email"
+          placeholder="email@example.com"
+          required
+          >
+        </div>
+
+        <div class="form-widget">
+          <label for="passwd">Password:</label>
+          <input
+          name="passwd"
+          id="passwd"
+          type="password"
+          minlength="5"
+          maxlength="32"
+          required
+          >
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+        <div class="form-widget">
+          <label for="catLover">Do you love cats?</label>
+
+          <input
+          name="catLover"
+          type="radio"
+          id="catLover-yes"
+          value="yes"
+          checked
+          >
+          <label for="catLover-yes">Yes</label>
+
+          <input
+          name="catLover"
+          type="radio"
+          id="catLover-no"
+          value="no"
+          >
+          <label for="catLover-no">No</label>
+        </div>
+
+        <div class="form-widget">
+          <label for="fav_color">What is your favorite color?</label>
+          <input
+          type="color"
+          id="fav_color"
+          name="fav_color"
+          >
+        </div>
+
+        <div class="form-widget">
+          <label for="bed_time">What time do you go to bed?</label>
+          <input
+          type="time"
+          id="bed_time"
+          name="bed_time"
+          >
+        </div>
+
+        <div class="form-widget">
+          <label for="fav_car_brand">What are your favorite brand of cars?</label>
+          <select
+          name="fav_car_brand"
+          id="fav_car_brand"
+          multiple
+          >
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </div>
+
+        <div class="form-widget">
+          <label for="work_rate">How do you rate our work?</label>
+          <input
+          type="range"
+          name="work_rate"
+          id="work_rate"
+          min="1"
+          max="100"
+          >
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional info:</legend>
+
+        <div class="form-widget">
+          <label for="comment">Comments:</label>
+          <textarea name="comment" id="comment"></textarea>
+        </div>
+
+        <div class="form-widget">
+          <label for="recommend">Would you recommend us?</label>
+          <select
+          name="recommend"
+          id="recommend"
+          >
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
