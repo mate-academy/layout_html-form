@@ -1,12 +1,7 @@
 # HTML form
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-<<<<<<< HEAD
-- [DEMO LINK](https://<NNeKiTT>.github.io/layout_html-form/)
-- [TEST REPORT LINK](https://<NNeKiTT>.github.io/layout_html-form/report/html_report/)
-=======
 - [DEMO LINK](https://NNeKiTT.github.io/layout_html-form/)
 - [TEST REPORT LINK](https://NNeKiTT.github.io/layout_html-form/report/html_report/)
->>>>>>> d852c62c555bf38cfe1cd4aa35213cfa33dddd9d
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 ___
