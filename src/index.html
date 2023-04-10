@@ -12,59 +12,103 @@
   </head>
   <body>
     <h1>HTML Form</h1>
-      <form action='https://mate-academy-form-lesson.herokuapp.com/create-application' method='post'>
+      <form action='https://mate-academy-form-lesson.herokuapp.com/create-application'
+            method='post'
+      >
+
         <fieldset>
-          <legend> Personal information</legend>
+          <legend>Personal information</legend>
           <label class="form-field">
             Surname:
-            <input type="text" name="Surname" required>
+            <input
+              type="text"
+              name="Surname"
+              autocomplete="off"
+              required
+            >
           </label>
 
           <label class="form-field">
             Name:
-            <input type="text" name="Name" required>
+            <input
+              type="text"
+              name="Name"
+              autocomplete="off"
+              required
+            >
           </label>
 
           <label class="form-field">
             How old are You?
-            <input type="number" name="How old are You?" min="1" max="100">
+            <input
+              type="number"
+              name="How old are You?"
+              min="1"
+              max="100"
+              value="12"
+            >
           </label>
 
           <label class="form-field">
             Full date of birth:
-            <input type="date" name="Full date of birth">
+            <input
+              type="date"
+              name="Full date of birth"
+            >
           </label>
 
           <label class="form-field">
-            <input type="checkbox" name="remember">
+            <input
+              type="checkbox"
+              name="remember"
+            >
             I accept the forn of the agreement
           </label>
         </fieldset>
+
         <fieldset>
           <legend>Registration</legend>
-
           <label class="form-field">
             E-mail:
-            <input type="email" name="E-mail" required placeholder="email@example.com">
-
+            <input
+              type="email"
+              name="E-mail"
+              required
+              placeholder="email@example.com"
+            >
           </label>
 
           <label class="form-field">
             Password:
-            <input type="password" name="Password" required minlength="5" maxlength="32">
+            <input
+              type="password"
+              name="Password"
+              required
+              minlength="5"
+              maxlength="32"
+            >
           </label>
         </fieldset>
+
         <fieldset>
           <legend>An interesting fact about you!</legend>
           <div class="form-field">
             Do you love cats?
             <label>
-              <input type="radio" name="Do you love cats?" value="Yes" checked>
+              <input
+                type="radio"
+                name="Do you love cats?"
+                value="Yes"
+              >
               Yes
             </label>
 
             <label>
-              <input type="radio" name="Do you love cats?" value="No">
+              <input
+                type="radio"
+                name="Do you love cats?"
+                value="No"
+              >
               No
             </label>
           </div>
@@ -92,13 +136,15 @@
 
           <div class="form-field">How do you rate our work
             <label>
-              <input type="range" min="0" max="5" value="0">
+              <input
+                type="range"
+                min="0"
+                max="5"
+                value="0"
+              >
             </label>
           </div>
         </fieldset>
-
-
-
 
         <fieldset>
           <legend>Additional info:</legend>
@@ -113,6 +159,7 @@
             </select>
           </div>
         </fieldset>
+
         <div class="button">
           <button type="submit"> Submit </button>
         </div>
