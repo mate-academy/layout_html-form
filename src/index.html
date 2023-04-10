@@ -15,149 +15,150 @@
      action=" https://mate-academy-form-lesson.herokuapp.com/create-application"
      method="post"
      autocomplete="off">
-      <fieldset class="section pinf">
+      <fieldset class="section one">
         <legend>Personal information</legend>
 
-        <label class="form-field surname">
+        <label class="form-field">
           Surname:
-          <input type="text" name="attribute Surname">
+          <input type="text" name="Surname">
         </label>
 
-        <label class="form-field name">
+        <label class="form-field">
           Name:
-          <input type="text" name="attribute Name">
+          <input type="text" name="Name">
         </label>
 
-        <label class="form-field age">
+        <label class="form-field">
           How old are You?
           <input
-          type="number"
-          name="attribute age"
-          min="1" max="100"
-          value="12"
+            type="number"
+            name="age"
+            min="1"
+            max="100"
+            value="12"
           >
         </label>
 
-        <label class="form-field birth">
+        <label class="form-field">
           Full date of birth:
           <input
-          type="date"
-          name="attribute date"
-          required
+            type="date"
+            name="date"
+            required
           >
         </label>
 
-        <label class="form-field checkbox">
+        <label class="form-field">
           I accept the term of the agreement
           <input
-          type="checkbox"
-          name="attribute checkbox"
-          required
+            type="checkbox"
+            name="checkbox"
+            required
           >
         </label>
       </fieldset>
 
-      <fieldset class="section mail">
+      <fieldset class="section">
         <legend>Registration</legend>
 
-        <label class="form-field email">
+        <label class="form-field">
           E-mail:
           <input
-           type="email"
-           name="attribute E-mail"
-           required
-           placeholder="email@example.com"
+            type="email"
+            name="Email"
+            required
+            placeholder="email@example.com"
           >
         </label>
 
-        <label class="form-field password">
+        <label class="form-field">
           Password:
           <input
-          type="password"
-          name="attribute password"
-          required
-          minlength="5"
-          maxlength="30"
+            type="password"
+            name="password"
+            required
+            minlength="5"
+            maxlength="30"
           >
         </label>
       </fieldset>
 
-      <fieldset class="section facts">
+      <fieldset class="section">
         <legend>An interesting fact about you!</legend>
 
-        <div class="form-field cats">
+        <div class="form-field">
           Do you love cats?
 
           <label>
             <input
-            type="radio"
-            name="attribute Yes"
+              type="radio"
+              name="Yes"
             >
             Yes
           </label>
 
           <label>
             <input
-            type="radio"
-            name="attribute No"
+              type="radio"
+              name="No"
             >
             No
           </label>
         </div>
 
-        <label class="form-field color">
+        <label class="form-field">
           What is your favorite color?
           <input
-          type="color"
-          name="attribute color"
+            type="color"
+            name="color"
           >
         </label>
 
-        <label class="form-field time">
+        <label class="form-field">
           What time do you go to bed?
           <input
-          type="time"
-          name="attribute time"
+            type="time"
+            name="time"
           >
         </label>
 
-        <label class="form-field cars">
+        <label class="form-field">
           What are your favorite brand of cars?
-          <select name="attribute cars" multiple>
+          <select name="choice" multiple>
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
           </select>
         </label>
 
-        <label class="form-field rate">
+        <label class="form-field">
           How do you rate our work?
           <input
-          type="range"
-          name="attribute rate"
-          min="0"
-          max="10"
-          value="0"
+            type="range"
+            name="range"
+            min="0"
+            max="10"
+            value="0"
           >
         </label>
       </fieldset>
 
-      <fieldset class="section info">
+      <fieldset class="section">
         <legend>Additional info:</legend>
 
-        <label class="form-field comments">
+        <label class="form-field">
           Comments:
           <textarea class="textarea"
-          name="attribute comments"
-          cols="20"
-          rows="2"
-          autocomplete="off"
+            name="comments"
+            cols="20"
+            rows="2"
+            autocomplete="off"
          ></textarea>
         </label>
 
-        <label class="form-field recomendations">
+        <label class="form-field">
           Would you recommend us?
-          <select name="attribute recommendation">
+          <select name="question">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
@@ -165,7 +166,7 @@
       </fieldset>
 
       <button class="button"
-       type="submit">
+        type="submit">
         Submit
       </button>
     </form>
