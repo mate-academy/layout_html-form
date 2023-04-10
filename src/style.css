@@ -1,1 +1,20 @@
-/* styles go here */
+legend {
+  color: black;
+}
+
+.imput_margin {
+  margin-bottom: 10px;
+}
+
+.fieldset {
+  margin-bottom: 20px;
+
+}
+
+.form-field2 {
+  display: inline-block;
+}
+
+label {
+  display: block;
+}
