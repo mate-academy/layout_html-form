@@ -19,7 +19,7 @@
       <fieldset class="form-box">
         <legend>Personal information</legend>
 
-        <div class="form-filed">
+        <div class="form-field">
           <label for="surname">Surname:</label> 
 
           <input 
@@ -31,7 +31,7 @@
           >
         </div>
 
-        <div class="form-filed">
+        <div class="form-field">
           <label for="name">Name:</label>
 
           <input 
@@ -42,7 +42,7 @@
           >
         </div>
 
-        <div class="form-filed">
+        <div class="form-field">
           <label for="age">How old are You?</label>
 
           <input 
@@ -56,25 +56,23 @@
           >
         </div>
 
-        <div class="form-filed">
+        <div class="form-field">
           <label for="dateBirth">Full date of birth:</label>
 
           <input 
               type="date"
               name="dateBirth"
               id="dateBirth"
-              placeholder="date"
           >
         </div>
 
-        <div class="form-filed">
+        <div class="form-field">
           <label for="accept">I accept the term of the agreement</label>
 
           <input 
               type="checkbox"
               name="acceptAgreement"
               id="accept"
-              value="yes"
           >
         </div>
       </fieldset>
@@ -82,7 +80,7 @@
       <fieldset class="form-box">
         <legend>Registration</legend>
 
-        <div class="form-filed">
+        <div class="form-field">
           <label for="email">E-mail:</label>
 
           <input 
@@ -94,7 +92,7 @@
           >
         </div>
 
-        <div class="form-filed">
+        <div class="form-field">
           <label for="password">Password: </label>
 
           <input 
@@ -104,6 +102,7 @@
               minlength="5"
               maxlength="15"
               autocomplete="off"
+              required
           >
         </div>
       </fieldset>
@@ -111,7 +110,7 @@
       <fieldset class="form-box">
         <legend>An interesting fact about you!</legend>
 
-        <div class="form-filed">
+        <div class="form-field">
           <label for="cats">Do you love cats?</label>
 
           <input 
@@ -131,7 +130,7 @@
           <label for="cats">No</label> 
         </div>
 
-        <div class="form-filed">
+        <div class="form-field">
           <label for="color">What is your favorite color?</label>
 
           <input 
@@ -141,7 +140,7 @@
           >
         </div>
 
-        <div class="form-filed">
+        <div class="form-field">
           <label for="bedTime">What time do you go to bed?</label>
 
           <input 
@@ -151,7 +150,7 @@
           >
         </div>
 
-        <div class="form-filed">
+        <div class="form-field">
           <label for="carSelect">What are your favorite brand of cars?</label>
 
           <select 
@@ -165,7 +164,7 @@
           </select>
         </div>
 
-        <div class="form-filed">
+        <div class="form-field">
           <label for="work"> How do you rate our work?</label>
 
           <input 
@@ -182,31 +181,33 @@
       <fieldset class="form-box">
         <legend>Additional info:</legend>
 
-        <div class="form-filed">
+        <div class="form-field">
           <label for="comments">Comments:</label>
 
           <textarea 
               name="comments"
               id="comments"
-              placeholder="Something"
               autocomplete="off"
          ></textarea>
         </div>
 
-        <div class="form-filed">
+        <div class="form-field">
           <label for="recomend">Would you recommend us?</label>
 
           <select name="recomend" id="recomend">
-            <option value="yes" selected>yes</option>
+            <option 
+                value="yes" 
+                id="radioYes" 
+                selected>yes
+            </option>
 
-            <option value="no">no</option>
+            <option value="no" id="radioNo">no</option>
           </select>
         </div>
       </fieldset>
 
-      <div class="form-actions">
-        <button type="submit" form="our-form">Submit</button>
-      </div>
+      
+      <button type="submit" form="our-form">Submit</button>
     </form>
     
     <script type="text/javascript" src="./main.js"></script>
