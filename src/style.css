@@ -1,1 +1,12 @@
 /* styles go here */
+.formField {
+  margin-bottom: 10px;
+}
+
+.formField:last-child {
+  margin-bottom: 0;
+}
+
+.group {
+  margin-bottom: 20px;
+}
