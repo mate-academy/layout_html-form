@@ -13,5 +13,89 @@
   <body>
     <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+    <form
+    action="http://localhost:3000/api"
+     method="post"
+     autocomplete="off"
+     >
+      <label class="form-field">
+        <input type="text" name="username">
+      </label>
+      <label class="form-field">
+        Email:
+        <input
+        type="email"
+        name="email"
+        value="email@example.com"
+        >
+      </label>
+      <label class="form-field">
+        Password:
+        <input
+         type="password"
+         name="password"
+         placeholder="x value"
+         required
+         minlength="5"
+         maxlength="32"
+        >
+      </label>
+      <div class="form-field">
+        <input
+        type="checkbox"
+        name="terms"
+        id="terms-and-conditions"
+        required
+        >
+        <label for="terms-and-conditions">
+        I agree terms and conditions
+        </label>
+      </div>
+      <div>
+        <label class="form-field">
+          <input
+          type="checkbox"
+          name="remember"
+          value="123"
+          checked
+          required
+          >
+        Remember me
+        </label>
+      </div>
+      <div class="form-field">
+        Choose your sex:
+        <label>
+          <input
+          type="radio"
+          name="sex"
+          value="f"
+          >
+          - woman
+        </label>
+        <label>
+          <input
+          type="radio"
+          name="sex"
+          value="m"
+          >
+          - man
+        </label>
+      </div>
+      <label class="form-field">
+      Choose your favorite color
+
+        <select name="color">
+          <option value="#f00">Red</option>
+          <option value="#0f0" required>Green</option>
+        </select>
+      </label>
+      <button type="submit">Search</button>
+    </form>
   </body>
 </html>
+
+
+
+
+

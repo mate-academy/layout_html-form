@@ -1,1 +1,21 @@
 /* styles go here */
+.form-field {
+  display: block;
+  margin: 10px 0;
+}
+
+.field::placeholder {
+  color: green;
+}
+
+.field:invalid {
+  border: 1px solid red;
+}
+
+.field:focus {
+  background-color: azure;
+}
+
+.field:checked ~ .form__label {
+  color: grey;
+}
