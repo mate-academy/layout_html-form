@@ -1,1 +1,11 @@
-/* styles go here */
+.fieldset {
+  margin: 20px 0;
+}
+
+.form-field {
+  margin: 10px 0;
+}
+
+.input {
+  margin-bottom: 0;
+}
