@@ -1,4 +1,4 @@
-/* styles go here */
+
 .input_style {
   display: block;
   padding-bottom: 10px;
@@ -12,4 +12,9 @@
 
 .block_style {
   margin-bottom: 20px;
+}
+
+.title {
+  margin: 0;
+  display: inline;
 }
