@@ -14,17 +14,33 @@
         <legend>Personal information</legend>
         <label class="form-field">
           Surname:
-          <input type="text" name="Surname" autocomplete="off" required>
+          <input
+            type="text"
+            name="Surname"
+            autocomplete="off"
+            required
+          >
         </label>
 
         <label class="form-field">
           Name:
-          <input type="text" name="Name" autocomplete="off" required>
+          <input
+            type="text"
+            name="Name"
+            autocomplete="off"
+            required
+          >
         </label>
 
         <label class="form-field">
           How old are You?
-          <input type="number" name="How old are You?" min="1" max="100" value="12">
+          <input
+            type="number"
+            name="How old are You?"
+            min="1"
+            max="100"
+            value="12"
+          >
         </label>
 
         <label class="form-field">
@@ -42,12 +58,23 @@
         <legend>Registration</legend>
         <label class="form-field">
           E-mail:
-          <input type="email" name="E-mail" required placeholder="email@example.com">
+          <input
+            type="email"
+            name="E-mail"
+            required
+            placeholder="email@example.com"
+          >
         </label>
 
         <label class="form-field">
           Password:
-          <input type="password" name="Password" required minlength="5" maxlength="32">
+          <input
+            type="password"
+            name="Password"
+            required
+            minlength="5"
+            maxlength="32"
+          >
         </label>
       </fieldset>
 
@@ -56,12 +83,20 @@
         <div class="form-field">
           Do you love cats?
           <label>
-            <input type="radio" name="Do you love cats?" value="Yes">
+            <input
+              type="radio"
+              name="Do you love cats?"
+              value="Yes"
+            >
             Yes
           </label>
 
           <label>
-            <input type="radio" name="Do you love cats?" value="No">
+            <input
+              type="radio"
+              name="Do you love cats?"
+              value="No"
+            >
             No
           </label>
         </div>
@@ -79,17 +114,26 @@
         </div>
 
         <div class="form-field">What are you favorite brand of cars?
-          <select name="cars" required multiple>
+          <select
+            name="cars"
+            required
+            multiple
+          >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
-            <option value="VW">Lada</option>
-            <option value=""></option>
+            <option value="Lada">Lada</option>
+            <option value=" "></option>
           </select>
         </div>
 
         <div class="form-field">How do you rate our work
           <label>
-            <input type="range" min="0" max="5" value="0">
+            <input
+              type="range"
+              min="0"
+              max="5"
+              value="0"
+            >
           </label>
         </div>
       </fieldset>
@@ -107,12 +151,8 @@
           </select>
         </div>
       </fieldset>
-
-
       <button type="submit"> Submit </button>
-
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
-
 </html>
