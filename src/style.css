@@ -1,10 +1,5 @@
 /* styles go here */
-.pesonal_information-input {
-  display: block;
-  padding-bottom: 10px;
-}
-
-.registration_input {
+.input_style {
   display: block;
   padding-bottom: 10px;
 }
@@ -15,28 +10,6 @@
   display: block;
 }
 
-.fact_input {
-  display: block;
-  padding-bottom: 10px;
-}
-
-.additional_input {
-  display: block;
-  padding-bottom: 10px;
-}
-
-.pesonal_information {
-  margin-bottom: 20px;
-}
-
-.registration {
-  margin-bottom: 20px;
-}
-
-.facts {
-  margin-bottom: 20px;
-}
-
-.additional_info {
+.block_style {
   margin-bottom: 20px;
 }

@@ -15,89 +15,90 @@
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
       >
-      <fieldset class="pesonal_information">
+      <fieldset class="block_style">
         <legend>Personal information</legend>
-        <label class="pesonal_information-input">
+        <label class="input_style">
           Surname:
           <input
-          type="text"
-          name="surname"
-          autocomplete="off"
-          required
+            type="text"
+            name="surname"
+            autocomplete="off"
+            required
           >
         </label>
-        <label class="pesonal_information-input">
+        <label class="input_style">
           Name:
           <input
-          type="text"
-          name="name"
-          autocomplete="off"
-          required
+            type="text"
+            name="name"
+            autocomplete="off"
+            required
           >
         </label>
-        <label class="pesonal_information-input">
+        <label class="input_style">
           How old are You?
           <input type="number"
-          name="age"
-          min="1"
-          max="100"
-          value="12"
-          required
+            name="age"
+            min="1"
+            max="100"
+            value="12"
+            required
           >
         </label>
-        <label class="pesonal_information-input" required>
+        <label class="input_style" required>
           Full date of birth:
           <input type="date" name="date of birth">
         </label>
         <label>
           I accept the term of the agreement
           <input
-          type="checkbox"
-          name="terms"
-          required
+            type="checkbox"
+            name="terms"
+            required
           >
         </label>
       </fieldset>
-      <fieldset class="registration">
+      <fieldset class="block_style">
         <legend>Registration</legend>
-        <label class="registration_input">
+        <label class="input_style">
           E-mail:
           <input
-          type="email"
-          name="email"
-          placeholder="email@example.com"
-          autocomplete="off"
-          required
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+            autocomplete="off"
+            required
           >
         </label>
         <label>
           Password:
           <input
-          type="password"
-          name="password"
-          autocomplete="off"
-          required
-          minlength="5"
-          maxlength="20"
+            type="password"
+            name="password"
+            autocomplete="off"
+            required
+            minlength="5"
+            maxlength="20"
           >
         </label>
       </fieldset>
-      <fieldset class="facts">
+      <fieldset class="block_style">
         <legend>An interesting fact about you!</legend>
-        <label>
+
           Do you love cats?
+        <label>
           <input
-          type="radio"
-          name="cat"
-          value="yes"
+            type="radio"
+            name="cat"
+            value="yes"
           >
           Yes
         </label>
         <label>
           <input
-          type="radio"
-          name="cat"
-          value="no"
+            type="radio"
+            name="cat"
+            value="no"
           >
           No
         </label>
@@ -105,23 +106,23 @@
           What is your favorite color?
           <input type="color" name="favorit color">
         </label>
-        <label class="fact_input">
+        <label class="input_style">
           What time do you go to bad?
           <input type="time" name="time go to bad">
         </label>
-        <label class="fact_input">
+        <label class="input_style">
           What are your favorite brand of cars?
           <select
-          name="cars"
-          autocomplete="off"
-          multiple
+            name="cars"
+            autocomplete="off"
+            multiple
           >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
             <option
-            disabled
-            selected
+              disabled
+              selected
             >
             </option>
           </select>
@@ -129,26 +130,26 @@
         <label>
           How do you rate our work?
           <input
-          type="range"
-          name="rate work"
-          min="1"
-          max="10"
-          step="1"
-          value="1"
+            type="range"
+            name="rate work"
+            min="1"
+            max="10"
+            step="1"
+            value="1"
           >
         </label>
       </fieldset>
-      <fieldset class="additional_info">
+      <fieldset class="block_style">
         <legend>Additional info:</legend>
-        <label class="additional_input">
+        <label class="input_style">
           Comments:
           <textarea name="comments" mautocomplete="off"></textarea>
         </label>
         <label>
           Would you recommend us?
           <select
-          autocomplete="off"
-          name="recommend"
+            autocomplete="off"
+            name="recommend"
           >
             <option value="yes">Yes</option>
             <option value="no">No</option>
