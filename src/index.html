@@ -18,7 +18,7 @@
       <fieldset class="fieldset">
         <legend>Personal information</legend>
         <div class="form-field">
-          <label for="Surename">Surename:
+          <label for="Surename">Surname:
           </label>
           <input type="text"
             id="Surename"
@@ -44,11 +44,12 @@
             id="old"
             value="12"
             atocomplete="off"
+            min="1"
             max="100"
           >
         </div>
         <div class="form-field">
-          <label for="date of birth">Full date of birth
+          <label for="date of birth">Full date of birth:
           </label>
           <input type="date"
             id="date of birth"
@@ -69,7 +70,7 @@
       <fieldset class="fieldset">
         <legend>Registration</legend>
         <div class="form-field">
-          <label for="email">E-mail
+          <label for="email">E-mail:
           </label>
           <input type="email" id="email"
             name="email"
@@ -79,7 +80,7 @@
           >
         </div>
         <div class="form-field">
-          <label for="password">Password
+          <label for="password">Password:
           </label>
           <input class="input" type="password"
             id="password"
@@ -90,7 +91,7 @@
       </fieldset>
 
       <fieldset class="fieldset">
-        <legend>An interesting fact about me
+        <legend>An interesting fact about you!
         </legend>
         <div class="form-field">
              Do you love cats?
@@ -121,7 +122,7 @@
         <div class="form-field">
           <label for="time">What time do you go to bed?
           </label>
-          <input type="time"
+          <input type="time" step="1"
             id="time"
             name="time"
             autocomplete="off"
@@ -130,11 +131,18 @@
         <div class="form-field">
           <label for="cars">
           What are your favorite brand of cars?
-            <input type="number" name="cars"
+            <select name="cars"
               id="cars"
               autocomplete="off"
-              placeholder="BMW"
+              multiple
             >
+              <option value="BMW">BMW
+              </option>
+              <option value="Audi">Audi
+              </option>
+              <option value="Lada">Lada
+              </option>
+            </select>
 
           </label>
         </div>
@@ -152,7 +160,7 @@
         </div>
       </fieldset>
       <fieldset class="fieldset">
-        <legend>Additional info
+        <legend>Additional info:
         </legend>
         <div class="form-field">
           <label for="com">Comments:
@@ -170,7 +178,7 @@
           <select name="text"
             placeholder="yes"
             autocomplete="off">
-            <option value="yes">Yes
+            <option value="yes">yes
             </option>
             <option value="no">No
             </option>

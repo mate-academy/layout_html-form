@@ -1,11 +1,8 @@
 .fieldset {
-  margin: 20px 0;
+  margin-bottom: 20px;
+  padding-bottom: 0;
 }
 
 .form-field {
-  margin: 10px 0;
-}
-
-.input {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
