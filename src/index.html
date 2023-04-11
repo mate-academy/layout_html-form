@@ -7,10 +7,9 @@
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
-
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <fieldset>
+      <fieldset class="fields">
         <legend>Personal information</legend>
         <label class="form-field">
           Surname:
@@ -36,7 +35,7 @@
           How old are You?
           <input
             type="number"
-            name="How old are You?"
+            name="age"
             min="1"
             max="100"
             value="12"
@@ -54,7 +53,7 @@
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fields">
         <legend>Registration</legend>
         <label class="form-field">
           E-mail:
@@ -78,7 +77,7 @@
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fields">
         <legend>An interesting fact about you!</legend>
         <div class="form-field">
           Do you love cats?
@@ -138,10 +137,10 @@
         </div>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fields">
         <legend>Additional info:</legend>
         <div class="form-field">Comments:
-          <textarea></textarea>
+          <textarea name="сomments"></textarea>
         </div>
 
         <div class="form-field">Would you recommend us?
