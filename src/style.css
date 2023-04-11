@@ -1,1 +1,13 @@
-/* styles go here */
+.fieldset {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+.form-field {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-field2 {
+  display: inline-block;
+}
