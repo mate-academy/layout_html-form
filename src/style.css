@@ -1,1 +1,9 @@
-/* styles go here */
+.container {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+.block {
+  display: block;
+  padding-bottom: 10px;
+}
