@@ -1,8 +1,8 @@
-.fieldset {
+.fieldset:not(:last-child) {
   margin-bottom: 20px;
-  padding-bottom: 0;
+
 }
 
-.form-field {
+.form-field:not(:last-child) {
   margin-bottom: 10px;
 }
