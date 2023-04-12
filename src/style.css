@@ -1,1 +1,24 @@
 /* styles go here */
+form {
+  margin-top: 8px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+}
+
+.cars:invalid {
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+}
