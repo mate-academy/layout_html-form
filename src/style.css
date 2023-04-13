@@ -1,16 +1,8 @@
 /* styles go here */
-fieldset {
+.data-block {
   margin-bottom: 20px;
 }
 
-input:not(:last-child) {
+.input-block:not(:last-child) {
   margin-bottom: 10px;
-}
-
-.input-block {
-  margin-bottom: 10px;
-}
-
-.add-cats-margin {
-  margin-bottom: 3px;
 }
