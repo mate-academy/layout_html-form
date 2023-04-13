@@ -1,1 +1,13 @@
 /* styles go here */
+.persInform {
+  display: block;
+  margin-top: 10px;
+}
+
+.fieldSets {
+  margin-top: 20px;
+}
+
+.block {
+  display: block;
+}
