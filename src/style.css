@@ -1,12 +1,9 @@
 /* styles go here */
 .form-item {
   display: block;
-}
-
-fieldset {
-  margin: 20px 0;
-}
-
-label {
   margin: 10px 0;
+}
+
+.form-items {
+  margin: 20px 0;
 }
