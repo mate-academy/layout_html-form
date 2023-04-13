@@ -1,1 +1,9 @@
 /* styles go here */
+
+.form-filed + .form-filed {
+  margin-top: 10px;
+}
+
+.form-group + .form-group {
+  margin-top: 20px;
+}
