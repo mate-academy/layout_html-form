@@ -14,6 +14,7 @@
     <script type="text/javascript" src="./main.js"></script>
 
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+
       <fieldset>
         <legend>Personal information</legend>
 
@@ -22,7 +23,8 @@
           <input
            type="text"
            id="sname"
-           name="sname">
+           name="sname"
+          >
         </div>
 
         <div class="form-field">
@@ -30,7 +32,8 @@
           <input
            type="text"
            id="fname"
-           name="fname">
+           name="fname"
+          >
         </div>
 
         <div class="form-field">
@@ -41,7 +44,8 @@
            name="age"
            value="12"
            min="1"
-           max="100">
+           max="100"
+          >
         </div>
 
         <div class="form-field">
@@ -49,7 +53,8 @@
           <input
            type="date"
            id="date"
-           name="date">
+           name="date"
+          >
         </div>
 
         <div class="form-field">
@@ -58,11 +63,34 @@
            type="checkbox"
            id="terms"
            name="terms"
-           required>
+           required
+          >
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Registration</legend>
+
+        <div class="form-field">
+          <label for="email">E-mail:</label>
+          <input
+           type="email"
+           id="email"
+           name="email"
+           required
+          >
         </div>
 
-
-
+        <div class="form-field">
+          <label for="pass">Password:</label>
+          <input
+           type="password"
+           id="pass"
+           name="password"
+           required
+           minlength="8"
+          >
+        </div>
       </fieldset>
 
     </form>
