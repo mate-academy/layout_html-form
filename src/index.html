@@ -22,8 +22,8 @@
           <label for="sname">Surname:</label>
           <input
            type="text"
-           id="sname"
            name="sname"
+           id="sname"
           >
         </div>
 
@@ -40,8 +40,8 @@
           <label for="age">How old are You?</label>
           <input
            type="number"
-           id="age"
            name="age"
+           id="age"
            value="12"
            min="1"
            max="100"
@@ -52,8 +52,8 @@
           <label for="date">Full date of birth:</label>
           <input
            type="date"
+           name="birthDate"
            id="date"
-           name="date"
           >
         </div>
 
@@ -61,8 +61,8 @@
           <label for="terms">I accept the term of the agreement</label>
           <input
            type="checkbox"
-           id="terms"
            name="terms"
+           id="terms"
            required
           >
         </div>
@@ -75,8 +75,9 @@
           <label for="email">E-mail:</label>
           <input
            type="email"
-           id="email"
            name="email"
+           id="email"
+           placeholder="email@example.com"
            required
           >
         </div>
@@ -85,13 +86,101 @@
           <label for="pass">Password:</label>
           <input
            type="password"
-           id="pass"
            name="password"
+           id="pass"
            required
            minlength="8"
           >
         </div>
       </fieldset>
+
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+
+        <div class="form-field">
+          Do you love cats?
+          <input
+           type="radio"
+           name="cats"
+           id="yes"
+          >
+          <label for="yes">Yes</label>
+
+          <input
+           type="radio"
+           name="cats"
+           id="no"
+          >
+          <label for="no">No</label>
+        </div>
+
+        <div class="form-field">
+          <label for="color">What is your favorite color?</label>
+          <input
+           type="color"
+           name="favoriteColor"
+           id="color"
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="bedTime">What time do you go to bed?</label>
+          <input
+           type="time"
+           name="bedTime"
+           id="bedTime"
+          >
+        </div>
+
+        <label class="form-field">
+         What are your favorite brand of cars?
+          <select name="cars" multiple>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+            <option value=" "
+             disabled
+             selected
+            ></option>
+          </select>
+        </label>
+
+        <div class="form-field">
+          <label for="rate">How do you rate our work?</label>
+          <input
+           type="range"
+           name="rate"
+           id="rate"
+           min="0"
+           max="10"
+          value="0"
+          >
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional info:</legend>
+
+        <label class="form-field">
+        Comments:
+          <textarea
+           name="addComments"
+           maxlength="500"
+         ></textarea>
+        </label>
+
+        <label class="form-field">
+         Would you recommend us?
+          <select name="recommend">
+            <option value="yes" selected>yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <div class="form-field">
+        <button type="submit">Submit</button>
+      </div>
 
     </form>
   </body>
