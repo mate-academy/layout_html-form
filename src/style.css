@@ -1,1 +1,7 @@
-/* styles go here */
+.block {
+  margin-bottom: 20px;
+}
+
+.input-block:not(:last-child) {
+  margin-bottom: 10px;
+}
