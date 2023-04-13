@@ -15,27 +15,26 @@
 
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
 
-      <fieldset>
-        <legend>Personal information</legend>
-
+      <fieldset class="set">
+        <legend class="legend">Personal information</legend>
         <div class="form-field">
           <label for="sname">Surname:</label>
           <input
            type="text"
            name="sname"
            id="sname"
+           autocomplete="off"
           >
         </div>
-
         <div class="form-field">
           <label for="fname">Name:</label>
           <input
            type="text"
            id="fname"
            name="fname"
+           autocomplete="off"
           >
         </div>
-
         <div class="form-field">
           <label for="age">How old are You?</label>
           <input
@@ -47,16 +46,14 @@
            max="100"
           >
         </div>
-
         <div class="form-field">
-          <label for="date">Full date of birth:</label>
+          <label for="dateOfBirth">Full date of birth:</label>
           <input
            type="date"
-           name="birthDate"
-           id="date"
+           name="dateOfBirth"
+           id="dateOfBirth"
           >
         </div>
-
         <div class="form-field">
           <label for="terms">I accept the term of the agreement</label>
           <input
@@ -67,10 +64,8 @@
           >
         </div>
       </fieldset>
-
-      <fieldset>
+      <fieldset class="set">
         <legend>Registration</legend>
-
         <div class="form-field">
           <label for="email">E-mail:</label>
           <input
@@ -81,7 +76,6 @@
            required
           >
         </div>
-
         <div class="form-field">
           <label for="pass">Password:</label>
           <input
@@ -93,10 +87,8 @@
           >
         </div>
       </fieldset>
-
-      <fieldset>
+      <fieldset class="set">
         <legend>An interesting fact about you!</legend>
-
         <div class="form-field">
           Do you love cats?
           <input
@@ -105,7 +97,6 @@
            id="yes"
           >
           <label for="yes">Yes</label>
-
           <input
            type="radio"
            name="cats"
@@ -113,7 +104,6 @@
           >
           <label for="no">No</label>
         </div>
-
         <div class="form-field">
           <label for="color">What is your favorite color?</label>
           <input
@@ -122,7 +112,6 @@
            id="color"
           >
         </div>
-
         <div class="form-field">
           <label for="bedTime">What time do you go to bed?</label>
           <input
@@ -131,20 +120,19 @@
            id="bedTime"
           >
         </div>
-
         <label class="form-field">
          What are your favorite brand of cars?
-          <select name="cars" multiple>
+          <select name="favoriteCars" multiple>
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
             <option value=" "
              disabled
              selected
-            ></option>
+            >
+            </option>
           </select>
         </label>
-
         <div class="form-field">
           <label for="rate">How do you rate our work?</label>
           <input
@@ -153,12 +141,11 @@
            id="rate"
            min="0"
            max="10"
-          value="0"
+           value="0"
           >
         </div>
       </fieldset>
-
-      <fieldset>
+      <fieldset class="set">
         <legend>Additional info:</legend>
 
         <label class="form-field">
@@ -166,6 +153,7 @@
           <textarea
            name="addComments"
            maxlength="500"
+           autocomplete="off"
          ></textarea>
         </label>
 
@@ -177,11 +165,9 @@
           </select>
         </label>
       </fieldset>
-
       <div class="form-field">
         <button type="submit">Submit</button>
       </div>
-
     </form>
   </body>
 </html>
