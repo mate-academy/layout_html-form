@@ -3,11 +3,7 @@
   margin-bottom: 20px;
 }
 
-.form {
+.form:not(:last-child) {
   display: block;
-  padding-bottom: 10px;
-}
-
-label:last-child {
-  padding-bottom: 0;
+  margin-bottom: 10px;
 }
