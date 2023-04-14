@@ -1,9 +1,9 @@
 /* styles go here */
 .form-item {
   display: block;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
 .form-items {
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
