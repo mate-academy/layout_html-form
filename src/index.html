@@ -11,7 +11,88 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form
+      class="form"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+    >
+      <fieldset class="form__group">
+        <legend>Personal information</legend>
+        <label class="form__label">
+          Surname:
+          <input type="text" name="surname">
+        </label>
+        <label class="form__label">
+          Name:
+          <input type="text" name="name">
+        </label>
+        <label class="form__label">
+          How old are You?
+          <input type="text" name="age">
+        </label>
+        <label class="form__label">
+          Full date of birth:
+          <input type="text" name="dateOfBirth">
+        </label>
+        <label class="form__label">
+          I accept the terms of the agreement
+          <input type="checkbox" name="acceptTerms">
+        </label>
+      </fieldset>
+      <fieldset class="form__group">
+        <legend>Registration</legend>
+        <label class="form__label">
+          E-mail:
+          <input type="text" name="email">
+        </label>
+        <label class="form__label">
+          Password:
+          <input type="text" name="password">
+        </label>
+      </fieldset>
+      <fieldset class="form__group">
+        <legend>An interesting fact about You!</legend>
+        <div class="form__label">
+          Do you love cats?
+          <label>
+            <input type="radio" name="loveCats" value="yes">
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="loveCats" value="no">
+            No
+          </label>
+        </div>
+        <label class="form__label">
+          What is your favorite color?
+          <input type="text" name="favoriteColor">
+        </label>
+        <label class="form__label">
+          What time do you go to bed?
+          <input type="text" name="goToBedTime">
+        </label>
+        <label class="form__label">
+          What are you favorite brand of cars?
+          <input type="text" name="favoriteCarBrand">
+        </label>
+        <label class="form__label">
+          How do you rate our work?
+          <input type="text" name="workRate">
+        </label>
+      </fieldset>
+      <fieldset class="form__group">
+        <legend>Additional info:</legend>
+        <label class="form__label">
+          Comments:
+          <input type="text" name="comments">
+        </label>
+        <label  class="form__label">
+          Would you recommend us?
+          <input type="text" name="isRecommend">
+        </label>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
