@@ -12,7 +12,6 @@
   </head>
   <body>
     <form
-      class="form"
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
     >
@@ -113,7 +112,11 @@
         </label>
         <label class="form__label">
           How do you rate our work?
-          <input type="range" name="workRate">
+          <input
+            type="range"
+            name="workRate"
+            value="0"
+          >
         </label>
       </fieldset>
       <fieldset class="form__group">
