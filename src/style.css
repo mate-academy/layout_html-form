@@ -1,1 +1,10 @@
 /* styles go here */
+
+.block {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.data_block {
+  margin-bottom: 20px;
+}
