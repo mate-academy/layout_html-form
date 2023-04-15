@@ -1,8 +1,12 @@
+.form-items {
+  margin-bottom: 20px;
+}
+
 .form-item {
   display: block;
   margin-bottom: 10px;
 }
 
-.form-items {
-  margin-bottom: 20px;
+.form-item:last-child {
+  margin-bottom: 0;
 }
