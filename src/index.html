@@ -11,7 +11,182 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <div>
+          <label>
+            Surname:
+            <input
+              type="text"
+              name="surname"
+              autocomplete="off"
+              minlength="3"
+              maxlength="32"
+              required
+            >
+          </label>
+        </div>
+
+        <div>
+          <label>
+            Name:
+            <input
+              type="text"
+              name="name"
+              autocomplete="off"
+              minlength="3"
+              maxlength="32"
+              required
+            >
+          </label>
+        </div>
+
+        <div>
+          <label>
+            How old are You?
+            <input
+              type="number"
+              name="year"
+              min="1"
+              max="100"
+              value="12"
+              required
+            >
+          </label>
+        </div>
+
+        <div>
+          <label>
+            Full date of birth:
+            <input
+              type="date"
+              name="date"
+              placeholder="mm/dd/yyyy"
+              required
+            >
+          </label>
+        </div>
+
+        <div>
+          <label>
+            I accept the term of the agreement
+            <input
+              type="checkbox"
+              name="agreement"
+              required
+            >
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Registration</legend>
+
+        <div>
+          <label>
+            E-mail:
+            <input
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+              required
+            >
+          </label>
+        </div>
+
+        <div>
+          <label>
+            Password:
+            <input
+              type="password"
+              name="password"
+              minlength="6"
+              maxlength="32"
+              required
+            >
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+
+        <div>
+          Do you love cats?
+
+          <label>
+            <input type="radio" name="love">
+            Yes
+          </label>
+
+          <label>
+            <input type="radio" name="love">
+            No
+          </label>
+        </div>
+
+        <div>
+          <label>
+            What is your favorite color?
+            <input type="color" name="color">
+          </label>
+        </div>
+
+        <div>
+          <label>
+            What time do you go to bed?
+            <input type="time" name="time">
+          </label>
+        </div>
+
+        <div>
+          <label>
+            What are you favorite brand of cars?
+            <select multiple>
+              <option value="bmw">BMW</option>
+              <option value="audi">Audi</option>
+              <option value="lada">Lada</option>
+            </select>
+          </label>
+        </div>
+
+        <div>
+          <label>
+            How do you rate our work?
+            <input
+              type="range"
+              name="rate"
+              value="0"
+            >
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional info:</legend>
+
+        <div>
+          <label>
+            Comments:
+            <textarea name="comments"></textarea>
+          </label>
+        </div>
+
+        <div>
+          <label>
+            Would you recommend us?
+            <select>
+              <option value="yes" selected>yes</option>
+              <option value="yes">no</option>
+            </select>
+          </label>
+        </div>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
