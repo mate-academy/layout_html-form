@@ -1,1 +1,7 @@
-/* styles go here */
+.blockname {
+  padding: 20px;
+}
+
+.form_field {
+  margin: 10px;
+}
