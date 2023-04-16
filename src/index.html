@@ -13,5 +13,153 @@
   <body>
     <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+    <fieldset>
+      <legend class="blockname">Personal info</legend>
+      <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post">
+        <div class="form_field">
+          <label>
+            Surename:
+            <input type="text"
+                   name="UserLastName"
+                   required>
+          </label>
+        </div>
+        <div class="form_field">
+          <label>
+            Name:
+            <input type="text"
+                   name="UserName"
+                   required>
+          </label>
+        </div>
+        <div class="form_field">
+          <label>
+            How old are you?
+            <input type="text"
+                   name="UserAge"
+                   value="12"
+                   min="1"
+                   max="100">
+          </label>
+        </div>
+        <div class="form_field">
+          <label>
+            Full date of birth:
+            <input type="date"
+                  name="UserDateOfBirth"
+                  required>
+          </label>
+        </div>
+        <div class="form_field">
+          <label for="TermsAndConditions">
+          I accept the term of the agreement
+          </label>
+          <input type="checkbox"
+                   name="UserAccept"
+                   id="TermsAndConditions">
+        </div>
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend class="blockname">Registration</legend>
+      <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post">
+        <div class="form_field">
+          <label>
+            E-mail:
+            <input type="email"
+                   name="UserEmail">
+          </label>
+        </div>
+        <div class="form_field">
+          <label>
+            Password:
+            <input type="password"
+                    name="UserPassword">
+          </label>
+        </div>
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend class="blockname">An interesting facts about you!</legend>
+      <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post">
+        <div class="form_field">
+          <label>
+            Do you love cats?
+          </label>
+          <label>Yes!
+            <input type="radio"
+                   name="LoveCats"
+                   value="yes">
+          </label>
+          <label class="form-field">No!
+            <input type="radio"
+                   name="LoveCats"
+                   value="no">
+          </label>
+        </div>
+        <div class="form_field">
+          <label>
+            What is your favorite color?
+            <input type="color">
+          </label>
+        </div>
+        <div class="form_field">
+          <label>
+            What time do you go to bed?
+            <input type="time">
+          </label>
+        </div>
+        <div class="form_field">
+          <label>
+            What are your favorite brand of cars?
+          </label>
+          <select name="brand"
+                  multiple>
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </div>
+        <div class="form_field">
+          <label>
+            How do you rate our work?
+            <input type="range"
+                   min="0"
+                   max="10">
+          </label>
+        </div>
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend class="blockname">Additional info</legend>
+      <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post">
+        <div class="form_field">
+          <label>
+            Comments:
+            <textarea name="comments"
+                       id="comments"
+           ></textarea>
+          </label>
+        </div>
+        <div class="form_field">
+          <label>
+            Would you recommend us?
+            <select name="recommend">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+              <option value="maybe">Maybe</option>
+            </select>
+          </label>
+        </div>
+      </form>
+    </fieldset>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post">
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
