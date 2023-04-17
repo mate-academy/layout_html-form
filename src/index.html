@@ -13,5 +13,107 @@
   <body>
     <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+      <fieldset class="fieldset">
+        <div class="title">Personal Informations</div>
+
+        <label for="fullName">Full name:</label> 
+        <input 
+          type="text" 
+          name="fullName" 
+          autocomplete="off"
+          id="fullName"
+          minlength="2"
+          maxlength="30"
+        >
+
+        <label for="age">How old are you?</label> 
+        <input 
+          type="number" 
+          name="age" 
+          min="1" 
+          max="100" 
+          value="12" 
+          required
+          id="age"
+        >
+
+        <label for="@address">Email address:</label> 
+        <input 
+          type="email" 
+          name="@address" 
+          placeholder="email@example.com"
+          id="@address"
+        >
+
+        <label for="password">Password:</label> 
+        <input 
+          type="password" 
+          name="password" 
+          required
+          id="password"
+        >
+
+        <label for="diet">Are you a vegetarian?</label> 
+        <input 
+          type="radio" 
+          name="diet"
+          id="diet"
+        >
+
+        <label for="color">What's your favorite color?</label> 
+        <input 
+          type="color" 
+          name="color" 
+          multiple
+          id="color"
+        >
+
+        <div class="title">Other Informations:</div>
+
+        <label for="audio">Audio Volume:</label> 
+        <input 
+          type="range" 
+          autocomplete="off"
+          name="audio" 
+          id="audio"
+        >
+
+        <label for="arrivalTime">Time of arrival:</label> 
+        <input 
+          type="time" 
+          name="arrivalTime"
+          id="arrivalTime"
+        >
+
+        <label for="bookingDate">Date of your booking:</label> 
+        <input 
+          type="date" 
+          name="bookingDate"
+          id="bookingDate"
+        >
+
+        <label for="consent">I consent to the terms of agreement:</label> 
+        <input 
+          type="checkbox" 
+          name="consent"
+          id="consent"
+        >
+
+        <label for="notes">Is there anything you would like to add?</label>
+        <textarea 
+          name="notes" 
+          id="notes" 
+          cols="30" 
+          rows="3">
+        </textarea>
+
+        <button 
+          type="submit">
+          Submit!
+        </button>
+      </fieldset>
+    </form>
   </body>
+
 </html>
