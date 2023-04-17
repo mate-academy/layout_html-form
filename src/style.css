@@ -7,28 +7,6 @@ input {
   display: inline-block;
 }
 
-/* select {
-  margin-top: 10px;
-} */
-
 fieldset {
   margin-bottom: 20px;
 }
-
-/* input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-} 
-
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-#age {
-  width: 3em;
-}  */
