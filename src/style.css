@@ -1,23 +1,29 @@
-/* styles go here */
-input {
-  margin-top: 10px;
+.mainLabels:not(:last-of-type) {
+  display: block;
+  margin-bottom: 10px;
 }
 
-select {
-  margin-top: 10px;
+input {
+  display: inline-block;
 }
+
+/* select {
+  margin-top: 10px;
+} */
 
 fieldset {
   margin-bottom: 20px;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  /* display: none; <- Crashes Chrome on hover */
+/* input::-webkit-inner-spin-button {
   -webkit-appearance: none;
-  margin: 0; /* <-- Apparently some margin are still
-   there even though it's hidden */
+  margin: 0;
 }
+
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} 
 
 input[type="number"] {
   -moz-appearance: textfield;
@@ -25,4 +31,4 @@ input[type="number"] {
 
 #age {
   width: 3em;
-}
+}  */
