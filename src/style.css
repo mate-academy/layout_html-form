@@ -1,1 +1,18 @@
 /* styles go here */
+
+.form-field {
+  display: block;
+  margin-bottom: 10px;
+}
+
+textarea {
+  margin-bottom: 10px;
+}
+
+.personal-information,
+.registration,
+.interesting-facts,
+.additional-info {
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
