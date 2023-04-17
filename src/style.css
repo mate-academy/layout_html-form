@@ -4,6 +4,6 @@ fieldset:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.input {
+.input:not(:last-child) {
   margin-bottom: 10px;
 }
