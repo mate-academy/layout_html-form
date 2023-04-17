@@ -1,1 +1,9 @@
 /* styles go here */
+
+fieldset:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.input:not(:last-child) {
+  margin-bottom: 10px;
+}
