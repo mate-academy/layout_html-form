@@ -1,7 +1,7 @@
 /* styles go here */
 
-.group {
-  margin: 20px 0;
+fieldset:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .input {
