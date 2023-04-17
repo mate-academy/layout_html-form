@@ -1,1 +1,55 @@
-/* styles go here */
+* {
+  box-sizing: border-box;
+}
+
+.personal_info,
+.registration,
+.about_info,
+.additional_info {
+  margin: 0;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: initial;
+  font-weight: initial;
+  font-family: initial;
+}
+
+.surname,
+.name,
+.age,
+.date_of_birth,
+.agreement,
+.email,
+.password,
+.cats,
+.color,
+.time_to_bed,
+.cars,
+.comments {
+  padding: 5px 0;
+}
+
+.agreement,
+.password,
+.rate,
+.recommend {
+  padding-bottom: 10px;
+}
+
+.rate {
+  margin-top: 5px;
+}
+
+.recommend {
+  margin-top: 5px;
+}
+
+/* fieldset {
+  margin-bottom: 20px;
+  padding: 0 10px;
+  font-size: initial;
+} */
+
+/* fieldset div {
+  padding-bottom: 10px;
+} */
