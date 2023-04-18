@@ -1,1 +1,13 @@
 /* styles go here */
+.fieldset-wrapper {
+  margin-bottom: 20px;
+}
+
+.label-wrapper {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.label-wrapper:last-child {
+  margin: 0;
+}
