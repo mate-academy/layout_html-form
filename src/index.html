@@ -12,7 +12,7 @@
   </head>
   <body>
     <form action="#" method="post">
-      <fieldset class="group group-pesonal">
+      <fieldset class="group-fieldset group-pesonal">
         <legend>Personal information</legend>
         <label
           class="label"
@@ -31,7 +31,7 @@
           class="label"
           for="name"
         >
-            Name:
+          Name:
           <input
             class="input"
             type="text"
@@ -44,7 +44,7 @@
           class="label"
           for="age"
         >
-            How old are You?
+          How old are You?
           <input
             class="input"
             type="number"
@@ -59,13 +59,13 @@
           class="label"
           for="birth"
         >
-            Full date of birth:
+          Full date of birth:
           <input
             class="input"
             type="date"
             id="birth"
             placeholder="mm/dd/yyyy"
-            name="birth"
+            name="birthDate"
           >
         </label>
         <label
@@ -76,12 +76,12 @@
           <input
             class="input"
             type="checkbox"
-            id="accept"
-            name="accept"
+            id="accept-agreement"
+            name="accept-agreement"
           >
         </label>
       </fieldset>
-      <fieldset class="group group-reg">
+      <fieldset class="group-fieldset group-reg">
         <legend>Registration</legend>
         <label
           class="label"
@@ -113,31 +113,31 @@
           >
         </label>
       </fieldset>
-      <fieldset class="group group-fact">
+      <fieldset class="group-fieldset group-fact">
         <legend>
           An interesting fact about you!
         </legend>
         <label class="label">
             Do you love cats?
           <label
-            for="y"
+            for="catsLike"
           >
             <input
               class="input"
               type="radio"
-              id="y"
-              name="cats"
+              id="catsLike"
+              name="catsLove"
             >
               Yes
           </label>
           <label
-            for="n"
+            for="catsDislike"
           >
             <input
               class="input"
               type="radio"
-              name="cats"
-              id="n"
+              name="catsLove"
+              id="catsDislike"
             >
               No
           </label>
@@ -156,7 +156,7 @@
         </label>
         <label
           class="label"
-          for="bed-time"
+          for="bedtime"
         >
             What time do you go to bed?
           <input
@@ -170,8 +170,8 @@
         <label class="label">
           What are your favorite brand of cars?
           <select
-          name="choose-brand-of-cars"
-          multiple
+            name="choose-brand-of-cars"
+            multiple
           >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
@@ -189,7 +189,7 @@
           >
         </label>
       </fieldset>
-      <fieldset class="group group-add">
+      <fieldset class="group-fieldset group-add">
         <legend>Additional info:</legend>
         <label
           class="label"
@@ -197,12 +197,11 @@
         >
             Comments:
           <textarea
-          name="comment"
-          id="comment"
-          cols="20"
-          rows="2"
-          autocomplete="off"
-          >
+            name="comment"
+            id="comment"
+            cols="20"
+            rows="2"
+            autocomplete="off">
           </textarea>
         </label>
         <label class="label">
