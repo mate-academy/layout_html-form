@@ -7,3 +7,7 @@
 .form-field {
   margin-bottom: 20px;
 }
+
+.label:last-of-type {
+  margin-bottom: 0;
+}
