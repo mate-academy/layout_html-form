@@ -1,1 +1,10 @@
 /* styles go here */
+
+.block {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.dataBlock {
+  margin-bottom: 20px;
+}
