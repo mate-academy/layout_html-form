@@ -1,1 +1,29 @@
 /* styles go here */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.fieldset {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.input {
+  display: block;
+}
+
+.input:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.inputColor {
+  padding-top: 6px;
+}
+
+.inputColor input {
+  height: 25px;
+  width: 50px;
+  vertical-align: middle;
+}
