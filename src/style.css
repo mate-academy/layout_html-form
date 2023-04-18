@@ -1,1 +1,13 @@
-/* styles go here */
+.formField {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.textarea {
+  margin-bottom: 10px;
+}
+
+fieldset {
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
