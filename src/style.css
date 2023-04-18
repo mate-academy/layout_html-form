@@ -1,1 +1,15 @@
-/* styles go here */
+.labeles {
+  display: block;
+  margin-top: 10px;
+}
+
+.blocks {
+  margin-bottom: 20px;
+}
+
+.surname,
+.email,
+.loveCats,
+.comments {
+  margin-top: 0;
+}
