@@ -7,7 +7,10 @@
   margin-bottom: 10px;
 }
 
-fieldset {
+.personalInformation,
+.registration,
+.interestingFacts,
+.additionalInfo {
   padding-bottom: 0;
   margin-bottom: 20px;
 }
