@@ -13,7 +13,7 @@
   <body>
     <script type="text/javascript" src="./main.js"></script>
     <form
-      action="#"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
     >
       <fieldset class="fieldset">
@@ -71,11 +71,11 @@
         <div class="form-field">
           I accept the term of the agreement
 
-          </label>
-          <input
-            type="checkbox"
-            name="iAccept"
-          >
+          <label>
+            <input
+              type="checkbox"
+              name="iAccept"
+            >
           </label>
         </div>
       </fieldset>
@@ -84,12 +84,12 @@
         <div class="form-field">
           E-mail:
 
-          </label>
-          <input
-            type="email"
-            placeholder="email@example.com"
-            name="email"
-          >
+          <label>
+            <input
+              type="email"
+              placeholder="email@example.com"
+              name="email"
+            >
           </label>
         </div>
         <div class="form-field">
@@ -127,13 +127,13 @@
           </label>
         </div>
         <div class="form-field">
-          <label class="form-field">
-            What is your favorite color?
+          What is your favorite color?
 
+          <label class="form__field">
             <input
               type="color"
               name="color"
-             required
+              required
             >
           </label>
         </div>
@@ -151,9 +151,11 @@
           <label class="form__field">
           What are your favorite brand?
 
-            <select name="brand"
-            required
-            multiple>
+            <select
+              name="brand"
+              required
+              multiple
+            >
               <option value="BMW">BMW</option>
               <option value="Audi">Audi</option>
               <option value="Lada">Lada</option>
@@ -190,7 +192,9 @@
           <label class="form-field">
           Would you recommend us?
 
-            <select name="recommendUs">
+            <select
+              name="recommendUs"
+            >
               <option value="Yes">Yes</option>
               <option value="No">No</option>
             </select>
