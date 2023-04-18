@@ -12,141 +12,141 @@
   </head>
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <fieldset>
+      <fieldset class="form-section">
         <legend>Personal information</legend>
 
         <div class="form-widget">
           <label for="surname">Surname:</label>
           <input
-          name="surname"
-          id="surname"
-          type="text"
-          autocomplete="off"
-          required
+            name="surname"
+            id="surname"
+            type="text"
+            autocomplete="off"
+            required
           >
         </div>
 
         <div class="form-widget">
           <label for="name">Name:</label>
           <input
-          name="name"
-          id="name"
-          type="text"
-          autocomplete="off"
-          required
+            name="name"
+            id="name"
+            type="text"
+            autocomplete="off"
+            required
           >
         </div>
 
         <div class="form-widget">
           <label for="age">How old are You?</label>
           <input
-          name="age"
-          id="age"
-          type="number"
-          min="1"
-          max="100"
-          value="12"
-          required
+            name="age"
+            id="age"
+            type="number"
+            min="1"
+            max="100"
+            value="12"
+            required
           >
         </div>
 
         <div class="form-widget">
-          <label for="full_date_of_birth">Full date of birth:</label>
+          <label for="fullDateOfBirth">Full date of birth:</label>
           <input
-          name="full_date_of_birth"
-          id="full_date_of_birth"
-          type="date"
-          min="1900-01-01"
-          max="2010-01-01"
-          required
+            name="fullDateOfBirth"
+            id="fullDateOfBirth"
+            type="date"
+            min="1900-01-01"
+            max="2010-01-01"
+            required
           >
         </div>
 
         <div class="form-widget">
           <label for="terms">I accept the term of the agreement</label>
           <input
-          name="terms"
-          id="terms"
-          type="checkbox"
-          required
+            name="terms"
+            id="terms"
+            type="checkbox"
+            required
           >
         </div>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="form-section">
         <legend>Registration</legend>
 
         <div class="form-widget">
           <label for="email">E-mail:</label>
           <input
-          name="email"
-          id="email"
-          type="email"
-          placeholder="email@example.com"
-          required
+            name="email"
+            id="email"
+            type="email"
+            placeholder="email@example.com"
+            required
           >
         </div>
 
         <div class="form-widget">
-          <label for="passwd">Password:</label>
+          <label for="password">Password:</label>
           <input
-          name="passwd"
-          id="passwd"
-          type="password"
-          minlength="5"
-          maxlength="32"
-          required
+            name="password"
+            id="password"
+            type="password"
+            minlength="5"
+            maxlength="32"
+            required
           >
         </div>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="form-section">
         <legend>An interesting fact about you!</legend>
         <div class="form-widget">
           <label for="catLover">Do you love cats?</label>
 
           <input
-          name="catLover"
-          type="radio"
-          id="catLover-yes"
-          value="yes"
-          checked
+            name="catLover"
+            type="radio"
+            id="catLoverYes"
+            value="yes"
+            checked
           >
-          <label for="catLover-yes">Yes</label>
+          <label for="catLoverYes">Yes</label>
 
           <input
-          name="catLover"
-          type="radio"
-          id="catLover-no"
-          value="no"
+            name="catLover"
+            type="radio"
+            id="catLoverNo"
+            value="no"
           >
-          <label for="catLover-no">No</label>
+          <label for="catLoverNo">No</label>
         </div>
 
         <div class="form-widget">
-          <label for="fav_color">What is your favorite color?</label>
+          <label for="favColor">What is your favorite color?</label>
           <input
-          type="color"
-          id="fav_color"
-          name="fav_color"
-          >
-        </div>
-
-        <div class="form-widget">
-          <label for="bed_time">What time do you go to bed?</label>
-          <input
-          type="time"
-          id="bed_time"
-          name="bed_time"
+            type="color"
+            id="favColor"
+            name="favColor"
           >
         </div>
 
         <div class="form-widget">
-          <label for="fav_car_brand">What are your favorite brand of cars?</label>
+          <label for="bedTime">What time do you go to bed?</label>
+          <input
+            type="time"
+            id="bedTime"
+            name="bedTime"
+          >
+        </div>
+
+        <div class="form-widget">
+          <label for="favCarBrand">What are your favorite brand of cars?</label>
           <select
-          name="fav_car_brand"
-          id="fav_car_brand"
-          multiple
+            name="favCarBrand"
+            id="favCarBrand"
+            multiple
           >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
@@ -155,18 +155,18 @@
         </div>
 
         <div class="form-widget">
-          <label for="work_rate">How do you rate our work?</label>
+          <label for="workRate">How do you rate our work?</label>
           <input
-          type="range"
-          name="work_rate"
-          id="work_rate"
-          min="1"
-          max="100"
+            type="range"
+            name="workRate"
+            id="workRate"
+            min="1"
+            max="100"
           >
         </div>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="form-section">
         <legend>Additional info:</legend>
 
         <div class="form-widget">
@@ -177,8 +177,8 @@
         <div class="form-widget">
           <label for="recommend">Would you recommend us?</label>
           <select
-          name="recommend"
-          id="recommend"
+            name="recommend"
+            id="recommend"
           >
             <option value="yes">yes</option>
             <option value="no">no</option>
