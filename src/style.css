@@ -1,1 +1,22 @@
-/* styles go here */
+.form {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.form:last-child {
+  margin: 0;
+}
+
+.form:nth-child(2) {
+  margin-top: 0;
+}
+
+.field {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.field:first-child {
+  margin-top: 0;
+}
