@@ -1,18 +1,9 @@
-/* styles go here */
 .fields {
-  margin: 20px 2px;
-}
-
-.fields:first-of-type {
-  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .personal_info {
-  margin: 10px 0;
-}
-
-.personal_info:nth-child(2) {
-  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .personal_info:last-child {
