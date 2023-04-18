@@ -1,1 +1,19 @@
 /* styles go here */
+* {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2 {
+  margin: 0;
+}
+
+.form-field {
+  display: block;
+  padding: 10px 0;
+}
+
+.formBlocks {
+  margin-bottom: 20px;
+}
