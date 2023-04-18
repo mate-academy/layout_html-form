@@ -1,1 +1,16 @@
-/* styles go here */
+.formField {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.textarea {
+  margin-bottom: 10px;
+}
+
+.personalInformation,
+.registration,
+.interestingFacts,
+.additionalInfo {
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
