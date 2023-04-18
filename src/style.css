@@ -1,16 +1,22 @@
 /* styles go here */
-label {
+.form-input {
   display: block;
-}
-
-.inline {
-  display: inline-block;
-}
-
-input {
   margin-bottom: 10px;
 }
 
-fieldset {
+.form-input:last-child {
+  margin-bottom: 0;
+}
+
+.form-input div {
+  display: inline;
+}
+
+.form-fieldset {
+  display: block;
   margin-bottom: 20px;
+}
+
+.form-fieldset:last-child {
+  margin-bottom: 0;
 }
