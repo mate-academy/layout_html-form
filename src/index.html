@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -12,31 +11,31 @@
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
-
   <body>
-    <!-- <h1>HTML Form</h1> -->
     <form
     action="https://mate-academy-form-lesson.herokuapp.com/create-application"
     method="post"
     >
-
       <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <label class="field">Surname:
+        <label class="field">
+          Surname:
           <input
           type="text"
           autocomplete="off"
           name="Surname"
           >
         </label>
-        <label class="field">Name:
+        <label class="field">
+          Name:
           <input
           type="text"
           autocomplete="off"
           name="Name"
           >
         </label>
-        <label class="field">How old are You?
+        <label class="field">
+          How old are You?
           <input
           name="age"
           type="number"
@@ -48,7 +47,8 @@
         <label class="field">Full date of birth:
           <input type="date" name="birth_date">
         </label>
-        <label class="field">I accept the term of the agreement
+        <label class="field">
+          I accept the term of the agreement
           <input type="checkbox" name="agreement">
         </label>
       </fieldset>
@@ -56,7 +56,8 @@
       <fieldset class="fieldset">
 
         <legend>Registration</legend>
-        <label class="field">E-mail:
+        <label class="field">
+          E-mail:
           <input
           type="email"
           placeholder="email@example.com"
@@ -74,28 +75,32 @@
 
       <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
-        <label class="field">Do you love cats?
+        <label class="field">
+          Do you love cats?
           <label>
             <input
             type="radio"
-            name="Yes"
+            name="DoYouLove"
             > Yes
           </label>
           <label>
             <input
             type="radio"
-            name="No"
+            name="DoYouLove"
             > No
           </label>
         </label>
-        <label class="field">What is your favorite color?
+        <label class="field">
+          What is your favorite color?
           <input type="color" name="color">
         </label>
 
-        <label class="field">What time do you go to bed?
+        <label class="field">
+          What time do you go to bed?
           <input type="time" name="time">
         </label>
-        <label class="field"> What are your favorite brand of cars?
+        <label class="field">
+          What are your favorite brand of cars?
           <select multiple name="car">
             <option>BMW</option>
             <option>Audi</option>
@@ -103,7 +108,8 @@
           </select>
         </label>
 
-        <label class="field"> How do you rate our work?
+        <label class="field">
+          How do you rate our work?
           <input type="range" value="0">
         </label>
       </fieldset>
@@ -117,7 +123,8 @@
           <textarea name="Comments"></textarea>
         </label>
 
-        <label class="field">Would you recommend us?
+        <label class="field">
+          Would you recommend us?
           <select name="recommendation">
             <option value="Yes">Yes</option>
           </select>
@@ -127,8 +134,6 @@
       <button type="submit">Submit</button>
 
     </form>
-
     <script type="text/javascript" src="./main.js"></script>
   </body>
-
 </html>

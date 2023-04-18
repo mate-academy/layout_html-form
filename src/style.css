@@ -1,8 +1,9 @@
 .fieldset {
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .field:not(:last-child) {
-  display: block;
   margin-bottom: 10px;
 }
