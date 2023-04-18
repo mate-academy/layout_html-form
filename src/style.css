@@ -1,22 +1,13 @@
 /* styles go here */
-.fieldset:not(:first-child) {
-  margin-top: 20px;
+.fieldset {
   margin-bottom: 20px;
 }
 
 .form-field {
   display: block;
-  margin: 10px 0;
+  /* margin: 10px 0; */
 }
 
-.form-field-top {
-  margin-top: 0;
-}
-
-.form-field-bot {
-  margin-bottom: 0;
-}
-
-.form-select {
-  overflow: hidden;
+.form-field:not(:last-child) {
+  margin-bottom: 10px;
 }
