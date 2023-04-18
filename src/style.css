@@ -1,16 +1,9 @@
 /* styles go here */
-.form-input {
+.form-field:not(:last-child) {
   display: block;
-}
-
-.form__input:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.form__input div {
-  display: inline;
-}
-
-.form__group:not(:last-child) {
+.field-group {
   margin-bottom: 20px;
 }
