@@ -3,18 +3,18 @@
   display: block;
 }
 
-input {
-  margin-top: 10px;
-}
-
-.inp {
-  margin-top: 0;
+.form-field:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 fieldset {
   margin-bottom: 20px;
 }
 
-select {
+.brand {
   margin-top: 10px;
+}
+
+.filedset:not(:last-child) {
+  margin-bottom: 20px;
 }
