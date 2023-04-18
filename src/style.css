@@ -1,1 +1,22 @@
-/* styles go here */
+* {
+  box-sizing: border-box;
+}
+
+.formfield {
+  margin-bottom: 10px;
+
+}
+
+.fs {
+
+  margin-bottom: 20px;
+}
+
+button {
+
+  margin-bottom: 20px;
+}
+
+.formfield:last-child {
+  margin: 0;
+}
