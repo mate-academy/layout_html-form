@@ -1,6 +1,5 @@
-/* stylelint-disable block-no-empty */
 /* styles go here */
-fieldset {
+.fieldBlock {
   margin-bottom: 20px;
 }
 
