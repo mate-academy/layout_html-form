@@ -1,7 +1,7 @@
 # HTML form
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://<your_account>.github.io/layout_html-form/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_html-form/report/html_report/)
+- [DEMO LINK](https://cephy77.github.io/layout_html-form/)
+- [TEST REPORT LINK](https://cephy77.github.io/layout_html-form/report/html_report/)
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 ___
@@ -61,4 +61,3 @@ Create HTML page with form. On form submit send form data to `https://mate-acade
           placeholder="..."
        ></textarea>
       ```
-
