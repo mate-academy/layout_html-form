@@ -11,7 +11,160 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form
+    action="http://localhost:8080/"
+    method="post"
+    >
+      <div class="box">
+        <fieldset>
+          <legend>Personal information</legend>
+          <div class="form-field">
+            <label for="surname">Surname:</label>
+            <input
+            type="text"
+            name="surname"
+            id="surname"
+            >
+          </div>
+          <div class="form-field">
+            <label for="name">Name:</label>
+            <input
+            type="text"
+            name="name"
+            id="name"
+            >
+          </div>
+          <div class="form-field">
+            <label for="age">How old are You?</label>
+            <input
+            type="number"
+            name="age"
+            id="age"
+            min="1"
+            max="100"
+            value="12"
+            >
+          </div>
+          <div class="form-field">
+            <label for="dateOfBirth">
+              Full date of birth:
+            </label>
+            <input
+            type="date"
+            name="dateOfBirth"
+            id="dateOfBirth"
+            >
+          </div>
+          <div class="form-field form-field_last">
+            <label for="terms">I accept the term of the agreement</label>
+            <input
+            type="checkbox"
+            name="termsOfAgreement"
+            id="terms"
+            >
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="box">
+        <fieldset>
+          <legend>Registration</legend>
+          <div class="form-field">
+            <label for="email">E-mail:</label>
+            <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@example.com"
+            >
+          </div>
+          <div class="form-field form-field_last">
+            <label for="pass">Password:</label>
+            <input
+            type="password"
+            name="password"
+            id="pass"
+            >
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="box">
+        <fieldset>
+          <legend>An interesting fact about you!</legend>
+          <div class="form-field">
+            Do you love cats?
+
+            <label>
+              <input
+              type="radio"
+              name="cat"
+              value="y"
+              >
+              Yes
+            </label>
+
+            <label>
+              <input
+              type="radio"
+              name="cat"
+              value="n"
+              >
+              No
+            </label>
+          </div>
+          <div class="form-field">
+            <label for="color">What is your favorite color?</label>
+            <input type="color"
+            name="favColor"
+            id="color"
+            >
+          </div>
+          <div class="form-field">
+            <label for="bedTime">What time do you go to bed?</label>
+            <input
+            type="time"
+            id="bedTime"
+            >
+          </div>
+          <label class="form-field">
+            What are your favorite brand of cars?
+            <select name="car" multiple>
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Lada">Lada</option>
+            </select>
+          </label>
+          <div class="form-field form-field_last">
+            <label for="workRate">How do you rate our work?</label>
+            <input
+            type="range"
+            name="workRate"
+            id="workRate"
+            value="0"
+            >
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="box">
+        <fieldset>
+          <legend>Additional info:</legend>
+          <label class="form-field">
+            Comments:
+            <textarea name="comments"></textarea>
+          </label>
+          <label class="form-field form-field_last">
+            Would you recommend us?
+            <select name="recommendation">
+              <option value="y">yes</option>
+              <option value="n">no</option>
+            </select>
+          </label>
+        </fieldset>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
