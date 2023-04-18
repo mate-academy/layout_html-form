@@ -1,4 +1,4 @@
-div:not(:last-child) {
+.fieldspace:not(:last-child) {
   margin-bottom: 10px;
 }
 

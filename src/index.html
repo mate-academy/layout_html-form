@@ -9,113 +9,114 @@
   </head>
   <body>
     <form
-    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-    method="post"
-    name="test-form"
-    autocomplete="off">
-      <fieldset>
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      name="test-form"
+      autocomplete="off"
+    >
+      <fieldset class="fieldsetspace">
         <legend> Personal information</legend>
-        <div>
+        <div class="fieldspace">
           <label>
             Surname:
             <input type="text" name="surname">
           </label>
         </div>
-        <div>
+        <div class="fieldspace" >
           <label>
             Name:
             <input type="text" name="name">
           </label>
         </div>
-        <div>
+        <div class="fieldspace">
           <label>
             How old are You?
             <input
-            type="number"
-            name="age"
-            min="1"
-            max="100"
-            value="12"
+              type="number"
+              name="age"
+              min="1"
+              max="100"
+              value="12"
             >
           </label>
         </div>
-        <div>
+        <div class="fieldspace">
           <label>
             Full date of birth:
             <input type="date" name="birthday">
           </label>
         </div>
-        <div>
+        <div class="fieldspace">
           <label>
             I accept the term of the agreement
             <input type="checkbox" name="agreement">
           </label>
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldsetspace">
         <legend>Registration</legend>
-        <div>
+        <div class="fieldspace">
           <label>
             E-mail:
             <input
-            type="email"
-            name="email"
-            placeholder="email@example.com"
-            required
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+              required
             >
           </label>
         </div>
-        <div>
+        <div class="fieldspace">
           <label>
             Password:
             <input
-            type="password"
-            name="password"
-            required
-            minlength="6"
-            maxlength="20"
+              type="password"
+              name="password"
+              required
+              minlength="6"
+              maxlength="20"
             >
           </label>
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldsetspace">
         <legend>An interesting fact about you!</legend>
-        <div>
+        <div class="fieldspace">
           Do you love cats?
           <label>
             <input
-            type="radio"
-            value="yes"
-            name="cats"
+              type="radio"
+              value="yes"
+              name="cats"
             >
             Yes
           </label>
           <label>
             <input
-            type="radio"
-            value="no"
-            name="cats"
+              type="radio"
+              value="no"
+              name="cats"
             >
             No
           </label>
         </div>
-        <div>
+        <div class="fieldspace">
           <label>
             What is your favorite color?
             <input type="color" name="fav-color">
           </label>
         </div>
-        <div>
+        <div class="fieldspace">
           <label>
             What time do you go to bed?
             <input
-            type="time"
-            name="bedtime"
-            step="5"
+              type="time"
+              name="bedtime"
+              step="5"
             >
           </label>
         </div>
-        <div>
+        <div class="fieldspace">
           <label>
             What are your favorite brand of cars?
             <select name="favcar" size="4">
@@ -125,30 +126,30 @@
             </select>
           </label>
         </div>
-        <div>
+        <div class="fieldspace">
           <label>
             How do you rate our work?
             <input
-            type="range"
-            name="rate"
-            value="0"
+              type="range"
+              name="rate"
+              value="0"
             >
           </label>
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldsetspace">
         <legend>Additional info:</legend>
-        <div>
+        <div class="fieldspace">
           <label>
             Comments:
             <textarea
-            name="Comments"
-            cols="20"
-            rows="2"
+              name="Comments"
+              cols="20"
+              rows="2"
            ></textarea>
           </label>
         </div>
-        <div>
+        <div class="fieldspace">
           <label>
             Would you recommend us?
             <select name="recommend">
