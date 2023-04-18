@@ -1,1 +1,12 @@
 /* styles go here */
+.info {
+  margin: 20px 0;
+}
+
+.info__data {
+  margin: 10px 0;
+}
+
+.info__data:last-child {
+  margin-bottom: 0;
+}
