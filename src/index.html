@@ -20,42 +20,57 @@
         <legend>Presonal information</legend>
         <div>
           <label for="surname">Surname:</label>
-          <input type="text" id="surname" autocomplete="off"
-          required
-           pattern="\w+">
+          <input 
+            type="text" 
+            id="surname" 
+            autocomplete="off"
+            required
+            pattern="\w+"
+          >
         </div>
         <div>
           <label for="name">Name:</label>
           <input type="text" id="name" autocomplete="off"
           required
-          pattern="\w+">
+          pattern="\w+"
+          >
         </div>
         <div>
           <label for="age">How old are you?</label>
           <input type="number" id="age"
           required value="12"
           min="1"
-          max="100">
+          max="100"
+          >
         </div>
         <div>
           <label for="dob">Full date of birth:</label>
-          <input type="date" id="dob" 
-          placeholder="dd/mm/yyyy"
-          required>
+          <input 
+            type="date" 
+            id="dob" 
+            placeholder="dd/mm/yyyy"
+            required
+          >
         </div>
         <div>
           <label for="terms">I accept the term of agreement</label>
-          <input type="checkbox" id="terms" 
-          required>
+          <input 
+            type="checkbox" 
+            id="terms" 
+            required
+          >
         </div>
       </fieldset>
-      
       <fieldset>
         <legend>Registration</legend>
         <div>
           <label for="email">E-mail:</label>
-          <input type="email" id="email" placeholder="email@example.com" 
-          required autocomplete="off">
+          <input 
+            type="email" 
+            id="email" 
+            placeholder="email@example.com" 
+            required autocomplete="off"
+          >
         </div>
         <div>
           <label for="password">Password:</label>
@@ -66,7 +81,6 @@
           >
         </div>
       </fieldset>
-      
       <fieldset>
         <legend>An interesting fact about you!</legend>
         <div>
@@ -100,15 +114,19 @@
               <option value="2">Audi</option>
               <option value="3">Lada</option>
             </select>
-            
+
           </label>
         </div>
         <div>
           <label>
             How do you rate our work?
-            <input type="range" id="range" name="range"
-            min="0"
-            max="10">
+            <input 
+              type="range" 
+              id="range" 
+              name="range"
+              min="0"
+              max="10"
+            >
           </label>
         </div>
       </fieldset>
@@ -120,13 +138,13 @@
         </legend>
         <div>
           <label>
-
           Comments:
             <texterea 
-          name="feedback"
-          rows="5"
-          cols="30"
-          ></texterea>
+              name="feedback"
+              rows="5"
+              cols="30"
+            >
+            </texterea>
           </label>
         </div>
         <div>
