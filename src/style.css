@@ -1,10 +1,10 @@
 /* styles go here */
 .info {
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
 .info__data {
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
 .info__data:last-child {
