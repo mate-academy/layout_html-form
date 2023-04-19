@@ -12,66 +12,65 @@
   </head>
   <body>
     <form>
-      <fieldset>
+      <fieldset class="blocks">
         <legend>Personal information</legend>
         <label class = "form-field">
-          Surname:
+           Surname:
 
           <input
-          type = "text"
-          utocomplete="off"
-          name = "surname"
+            type = "text"
+            utocomplete="off"
+            name = "surname"
           >
         </label>
 
         <label class="form-field">
-          Name:
+           Name:
 
           <input
-          type="text"
-          autocomplete="off"
-          name="username"
+            type="text"
+            autocomplete="off"
+            name="name"
           >
         </label>
 
         <label class="form-field">
-           How old are You?
+            How old are You?
 
           <input
-          type="number"
-          name="age"
-          min="0"
-          max="100"
-          value="12"
+            type="number"
+            name="age"
+            min="0"
+            max="100"
+            value="12"
           >
         </label>
 
         <label class="form-field">
-          Full date of birth:
+           Full date of birth:
 
           <input
-          type="date"
-          name="birth_date"
+            type="date"
+            name="birthDate"
           >
         </label>
 
         <label required>
-          I accept the term of the agreement
+           I accept the term of the agreement
 
           <input type="checkbox" name="agreement">
         </label>
-
       </fieldset>
 
-      <fieldset>
+      <fieldset class="blocks">
         <legend>Registration</legend>
         <label class = "form-field">
-          E-mail:
+           E-mail:
 
           <input
-          type = "email"
-          placeholder="email@example.com"
-          name = "registration_email"
+            type = "email"
+            placeholder="email@example.com"
+            name = "registrationEmail"
           >
         </label>
 
@@ -79,52 +78,55 @@
           Password:
 
           <input
-          type="password"
-          name="account_password"
-          minlength="5"
-          maxlength="20"
+            type="password"
+            name="accountPassword"
+            minlength="5"
+            maxlength="20"
           >
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="blocks">
         <legend>An interesting fact about you!</legend>
         <div class="form-field">
-          Do you love cats?
+           Do you love cats?
+
           <label>
             <input
-            type="radio"
-            name="do_love_cats"
-            value="y"
-            > Yes
+              type="radio"
+              name="doLoveCats"
+              value="y"
+            >
+            Yes
 
             <input
-            type="radio"
-            name="do_love_cats"
-            value="n"
-            > No
+              type="radio"
+              name="doLoveCats"
+              value="n"
+            >
+            No
           </label>
         </div>
 
         <label class="form-field">
-          What is your favorite color?
+           What is your favorite color?
 
-          <input type="color" name="favorite_color">
+          <input type="color" name="favoriteColor">
         </label>
 
         <label class="form-field">
-          What time do you go to bed?
+           What time do you go to bed?
 
           <input
-          id="appt-time"
-          type="time"
-          name="bedtime"
-          step="2"
+            id="appt-time"
+            type="time"
+            name="bedtime"
+            step="2"
           >
         </label>
 
         <label class="form-field">
-          What are your favourite brand of cars?
+           What are your favourite brand of cars?
 
           <select name="brand" multiple>
             <option value="BMW">BMW</option>
@@ -135,22 +137,22 @@
         </label>
 
         <label>
-          How do you rate our work?
+           How do you rate our work?
 
           <input
-          type="range"
-          name="rate_work"
-          value="0"
+            type="range"
+            name="rateWork"
+            value="0"
           >
         </label>
       </fieldset>
 
 
 
-      <fieldset>
+      <fieldset class="blocks">
         <legend>Additional info:</legend>
         <label class = "form-field">
-          Comments:
+           Comments:
 
           <textarea name="comment"></textarea>
         </label>
