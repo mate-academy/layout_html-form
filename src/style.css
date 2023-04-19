@@ -1,1 +1,23 @@
-/* styles go here */
+p,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.field_section {
+  margin-bottom: 20px;
+}
+
+.field_line {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.field_line:last-child {
+  margin-bottom: 0;
+}
+
+.range {
+  margin-bottom: 0;
+}
