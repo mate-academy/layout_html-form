@@ -15,8 +15,10 @@
   <main>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
     method="post">
-      <fieldset class="form-field">
-        <legend>Personal information</legend>
+      <fieldset class="group-wrap">
+        <legend>
+          Personal information
+        </legend>
         <label class="form-wrap">
           Surname:
           <input
@@ -37,7 +39,7 @@
           How old are You?
           <input
             type="number"
-            name="howOldAreYou"
+            name="age"
             value="12"
             max="100"
             min="1"
@@ -58,8 +60,9 @@
         </label>
       </fieldset>
 
-      <fieldset class="form-field">
-        <legend>Registration
+      <fieldset class="group-wrap">
+        <legend>
+          Registration
         </legend>
         <label class="form-wrap">
           E-mail:
@@ -80,8 +83,10 @@
         </label>
       </fieldset>
 
-      <fieldset class="form-field">
-        <legend>An interesting fact about you!</legend>
+      <fieldset class="group-wrap">
+        <legend>
+          An interesting fact about you!
+        </legend>
         <div class="form-wrap">
           Do you love cats?
           <label>
@@ -89,14 +94,16 @@
               type="radio"
               name="cats"
               value="yes"
-            > Yes
+            >
+            Yes
           </label>
           <label>
             <input
               type="radio"
               name="cats"
               value="no"
-            > No
+            >
+            No
           </label>
         </div>
         <div class="form-wrap">
@@ -126,8 +133,10 @@
         </label>
       </fieldset>
 
-      <fieldset class="form-field">
-        <legend>Additional info:</legend>
+      <fieldset class="group-wrap">
+        <legend>
+          Additional info:
+        </legend>
         <label class="form-wrap">
           Comments:
           <textarea name="comments">
