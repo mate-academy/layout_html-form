@@ -1,9 +1,19 @@
-
-fieldset {
-  line-height: 10px;
-  margin-top: 20px;
+.input_style {
+  display: block;
+  padding-bottom: 10px;
 }
-
-button{
-    margin-top: 20px;
+  
+.fact_input-color {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+}
+  
+.block_style {
+  margin-bottom: 20px;
+}
+  
+.title {
+  margin: 0;
+  display: inline;
 }
