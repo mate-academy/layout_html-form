@@ -3,8 +3,7 @@ label {
   display: block;
 }
 
-.personal_information_label {
-  display: block;
+.form-label {
   margin-bottom: 10px;
 }
 
@@ -22,4 +21,8 @@ label {
 
 .fieldset {
   margin-bottom: 20px;
+}
+
+.radio-label {
+  display: inline-block;
 }
