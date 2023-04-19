@@ -1,1 +1,27 @@
 /* styles go here */
+.personal,
+.register,
+.aboutYou,
+.additInfo {
+  display: block;
+}
+
+.group:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.personal:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.register:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.aboutYou:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.additInfo:not(:last-child) {
+  margin-bottom: 10px;
+}
