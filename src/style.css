@@ -1,9 +1,9 @@
 /* styles go here */
 .form-field {
-  padding-bottom: 20px ;
+  margin-bottom: 20px ;
 }
 
 .form-wrap {
   display: block;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
