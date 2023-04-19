@@ -12,15 +12,18 @@
   </head>
   <body>
     <script type="text/javascript" src="./main.js"></script>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-    method="post">
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+    >
       <fieldset name="Personal information" class="fieldsets">
         <legend class="legends">
           Personal information
         </legend>
         <label for="surname" class="field">
           Surname:
-          <input type="text"
+          <input
+            type="text"
             name="surname"
             required
           >
@@ -31,24 +34,21 @@
         </label>
         <label for="age" class="field">
           How old are You?
-          <input type="number"
-          name="age"
-          min="1"
-          max="100"
-          value="12"
+          <input
+            type="number"
+            name="age"
+            min="1"
+            max="100"
+            value="12"
           >
         </label>
         <label for="birthDate" class="field">
           Full date of birth:
-          <input type="date"
-          name="birthDate"
-          >
+          <input type="date" name="birthDate">
         </label>
         <label for="terms" class="field">
           I accept the term of the agreement
-          <input type="checkbox"
-          name="terms"
-          >
+          <input type="checkbox" name="terms">
         </label>
       </fieldset>
       <fieldset class="fieldset">
@@ -57,16 +57,18 @@
         </legend>
         <label for="eMail" class="field">
           E-mail:
-          <input type="email"
-          placeholder="email@example.com"
-          multiple
+          <input
+            type="email"
+            placeholder="email@example.com"
+            multiple
           >
         </label>
         <label for="password" class="field">
           Password:
-          <input type="password"
-          minlength="5"
-          maxlength="12"
+          <input
+            type="password"
+            minlength="5"
+            maxlength="12"
           >
         </label>
       </fieldset>
@@ -83,40 +85,45 @@
         </label>
         <label for="favColor" class="field">
           What is your favorite color?
-          <input type="color"
-          name="favColor"
-          id="favColor"
+          <input
+            type="color"
+            name="favColor"
+            id="favColor"
           >
         </label>
         <label for="timeToBed" class="field">
             What time do you go to bed?
-          <input type="time"
-          name="timeToBed"
-          step="1"
+          <input
+            type="time"
+            name="timeToBed"
+            step="1"
           >
         </label>
         <label for="favCar" class="field">
           What are your favorite brand of car?
-          <select name="favCar"
-          id="favCar"
-          multiple="multiple"
-          size="4"
+          <select
+            name="favCar"
+            id="favCar"
+            multiple="multiple"
+            size="4"
           >
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
             <option value="lada">Lada</option>
-            <option value=" "
-            disabled
-            selected
+            <option
+              value=" "
+              disabled
+              selected
             >
             </option>
           </select>
         </label>
         <label for="workRate" class="field">
           How do you rate our work?
-          <input type="range"
-          name="workRate"
-          value="0"
+          <input
+            type="range"
+            name="workRate"
+            value="0"
           >
         </label>
       </fieldset>
@@ -126,11 +133,12 @@
         </legend>
         <label for="comments" class="field">
           Comments:
-          <textarea name="comments"
-          id="comments"
-          cols="20"
-          rows="2"
-          autocomplete="off"
+          <textarea
+            name="comments"
+            id="comments"
+            cols="20"
+            rows="2"
+            autocomplete="off"
          ></textarea>
         </label>
         <label for="recommends" class="field">
