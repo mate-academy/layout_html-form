@@ -3,11 +3,11 @@
   padding-bottom: 10px;
 }
 
-.fieldsets {
+.fieldset {
   margin-bottom: 20px;
 }
 
-.fieldsets:last-child {
+.fieldset:last-child {
   margin-bottom: 0;
 }
 
