@@ -7,14 +7,6 @@
   margin-bottom: 10px;
 }
 
-fieldset {
-  margin-bottom: 20px;
-}
-
-.brand {
-  margin-top: 10px;
-}
-
-.filedset:not(:last-child) {
+.block:not(:last-child) {
   margin-bottom: 20px;
 }

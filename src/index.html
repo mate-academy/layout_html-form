@@ -15,12 +15,11 @@
     <script type="text/javascript" src="./main.js"></script>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post"
       autocomplete="off">
-      <fieldset>
+      <fieldset class="block">
         <legend>Personal information</legend>
         <label class="form-field ">
           Surname:
           <input
-            class="inp"
             type="text"
             name="surname"
             required
@@ -67,12 +66,11 @@
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="block">
         <legend>Registration</legend>
         <label class="form-field">
           E-mail:
           <input
-            class="inp"
             type="email"
             name="email"
             placeholder="email@example.com"
@@ -92,7 +90,7 @@
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="block">
         <legend>An interesting fact about you!</legend>
         <div class="form-field inp">
           <label>
@@ -132,7 +130,7 @@
           >
         </label>
 
-        <label class="form-field brand">
+        <label class="form-field">
           What are your favorite brand of cars?
           <select name="brand" multiple>
             <option value="BMW">BMW</option>
@@ -150,7 +148,7 @@
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="block">
         <legend>Additional info:</legend>
         <label class="form-field">
           Comments:
