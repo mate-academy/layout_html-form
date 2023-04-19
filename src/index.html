@@ -1,17 +1,164 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML Form</title>
+    <title>Hello</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+
   <body>
-    <h1>HTML Form</h1>
-    <script type="text/javascript" src="./main.js"></script>
   </body>
+  <main>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="post" class="form-field">
+      <fieldset>
+        <legend>Personal information</legend>
+        <label class="form-wrap">
+          Surname:
+          <input
+            type="text"
+            name="surname"
+            autocomplete="off"
+          >
+        </label>
+        <label class="form-wrap">
+          Name:
+          <input
+            type="text"
+            name="name"
+            autocomplete="off"
+          >
+        </label>
+        <label class="form-wrap">
+          How old are You?
+          <input
+            type="number"
+            name="howOldAreYou"
+            value="12"
+            max="100"
+            min="1"
+          >
+        </label>
+        <label class="form-wrap">
+          Full date of birth:
+          <input type="date" name="date">
+        </label>
+        <label>
+          I accept the term of the agreement
+          <input
+            type="checkbox"
+            name="accept_agreement"
+            value="accept"
+            required
+          >
+        </label>
+      </fieldset>
+    </form>
+
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="post" class="form-field">
+      <fieldset>
+        <legend>Registration
+        </legend>
+        <label class="form-wrap">
+          E-mail:
+          <input
+            type="email"
+            placeholder="email@example.com"
+            required
+          >
+        </label>
+        <label>
+          Password:
+          <input
+            type="password"
+            minlength="7"
+            maxlength="20"
+            required
+          >
+        </label>
+      </fieldset>
+    </form>
+
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="post" class="form-field">
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+        <div class="form-wrap">
+          Do you love cats?
+          <label>
+            <input
+              type="radio"
+              name="cats"
+              value="yes"
+            > Yes
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="cats"
+              value="no"
+            > No
+          </label>
+        </div>
+        <div class="form-wrap">
+          What is your favorite color?
+          <label>
+            <input type="color">
+          </label>
+        </div>
+        <div class="form-wrap">
+          What time do you go to bad?
+          <label>
+            <input type="time">
+          </label>
+        </div>
+        <label class="form-wrap">
+          What are your favorite brend of car?
+          <select name="car" multiple>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+            <option value="noAnyCar"></option>
+          </select>
+        </label>
+        <label>
+          How do you rate our work?
+          <input type="range" value="0">
+        </label>
+      </fieldset>
+    </form>
+
+
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="post" class="form-field">
+      <fieldset>
+        <legend>Additional info:</legend>
+        <label class="form-wrap">
+          Comments:
+          <textarea
+            name="comments" cols="20"
+            rows="2">
+          </textarea>
+        </label>
+        <label>
+          Would you recommend us?
+          <select name="recommend">
+            <option value="recommendYes">yes</option>
+            <option value="recommendNo">no</option>
+          </select>
+        </label>
+      </fieldset>
+    </form>
+
+    <button type="submit" name="submit">Submit</button>
+
+    <script type="text/javascript" src="./main.js"></script>
+
+  </main>
+
 </html>
