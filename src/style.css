@@ -1,1 +1,22 @@
-/* styles go here */
+fieldset {
+  margin-bottom: 20px;
+}
+
+.meaning {
+  padding-bottom: 10px;
+  display: block;
+}
+
+.mean {
+  padding-bottom: 20px;
+      
+}
+
+.agree-forms {
+  padding-bottom: 10px;
+
+}
+
+.agree-forms01 {
+  padding-bottom: 10px;
+}
