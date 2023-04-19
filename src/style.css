@@ -1,1 +1,9 @@
 /* styles go here */
+.group-wrap {
+  margin-bottom: 20px ;
+}
+
+.form-wrap {
+  display: block;
+  padding-bottom: 10px;
+}
