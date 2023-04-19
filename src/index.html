@@ -11,7 +11,194 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <header></header>
+    <main>
+      <form
+        class="form"
+        action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+        method="post"
+      >
+        <fieldset class="form__fieldset form-fieldset">
+          <legend class="form-fieldset__title">Personal information</legend>
+          <div class="form-fieldset__field">
+            <label>
+              Surname:
+              <input
+                type="text"
+                name="lastname"
+                autocomplete="off"
+                required
+              >
+            </label>
+          </div>
+          <div class="form-fieldset__field">
+            <label>
+              Name:
+              <input
+                type="text"
+                name="firstname"
+                autocomplete="off"
+                required
+              >
+            </label>
+          </div>
+          <div class="form-fieldset__field">
+            <label>
+              How old are You?
+              <input
+                type="number"
+                name="age"
+                min="1"
+                max="100"
+                value="12"
+                required
+              >
+            </label>
+          </div>
+          <div class="form-fieldset__field">
+            <label>
+              Full date of birth:
+              <input
+                type="date"
+                name="birthDate"
+                required
+              >
+            </label>
+          </div>
+          <div class="form-fieldset__field">
+            <label>
+              I accept the term of the agreement
+              <input
+                type="checkbox"
+                name="term"
+                required
+              >
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form__fieldset form-fieldset">
+          <legend class="form-fieldset__title">Registration</legend>
+          <div class="form-fieldset__field">
+            <label>
+              E-mail:
+              <input
+                type="email"
+                autocomplete="off"
+                placeholder="email@example.com"
+                name="email"
+                required
+              >
+            </label>
+          </div>
+          <div class="form-fieldset__field">
+            <label>
+              Password:
+              <input
+                type="password"
+                autocomplete="off"
+                name="password"
+                required
+              >
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form__fieldset form-fieldset">
+          <legend class="form-fieldset__title">An interesting fact about you!</legend>
+          <div class="form-fieldset__field">
+            Do you love cats?
+            <label>
+              <input
+                type="radio"
+                name="isLoveCats"
+                value="true"
+                required
+              >
+              Yes
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="isLoveCats"
+                value="false"
+                required
+              >
+              No
+            </label>
+          </div>
+          <div class="form-fieldset__field">
+            <label>
+              What is your favorite color?
+              <input
+                type="color"
+                name="color"
+                required
+              >
+            </label>
+          </div>
+          <div class="form-fieldset__field">
+            <label>
+              What time do you go to bed?
+              <input
+                type="time"
+                name="sleepTime"
+                step="1"
+                required
+              >
+            </label>
+          </div>
+          <div class="form-fieldset__field">
+            <label>
+              What are you favorite brand of cars?
+              <select name="favoriteCarBrand" multiple>
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+                <option value="lada">Lada</option>
+              </select>
+            </label>
+          </div>
+          <div class="form-fieldset__field">
+            <label>
+              How do you rate our work?
+              <input
+                type="range"
+                name="workRate"
+                min="1"
+                max="10"
+                step="1"
+                value="1"
+              >
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form__fieldset form-fieldset">
+          <legend class="form-fieldset__title">Additional info</legend>
+          <div class="form-fieldset__field">
+            <label>
+              Comments:
+              <textarea
+                name="comments"
+                minlength="1"
+                autocomplete="off"
+                maxlength="100"
+              >
+              </textarea>
+            </label>
+          </div>
+          <div class="form-fieldset__field">
+            <label>
+              Would you recommend us?
+              <select name="isRecommend">
+                <option value="true">yes</option>
+                <option value="false">no</option>
+              </select>
+            </label>
+          </div>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer></footer>
+
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
