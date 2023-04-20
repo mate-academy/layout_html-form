@@ -7,11 +7,166 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML Form</title>
+    <title>
+    </title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+    >
+      <fieldset class="block_style">
+        <legend>Personal information</legend>
+        <label class="input_style">
+          Surname:
+          <input
+            type="text"
+            name="surname"
+            autocomplete="off"
+            required
+          >
+        </label>
+
+        <label class="input_style">
+          Name:
+          <input
+            type="text"
+            name="name"
+            autocomplete="off"
+            required
+          >
+        </label>
+
+        <label class="input_style">
+          How old are You?
+          <input type="number"
+            name="age"
+            min="1"
+            max="100"
+            value="12"
+            required
+          >
+        </label>
+
+        <label class="input_style" required>
+          Full date of birth:
+          <input type="date" name="date of birth">
+        </label>
+        <label>
+          I accept the term of the agreement
+          <input
+            type="checkbox"
+            name="terms"
+            required
+          >
+        </label>
+      </fieldset>
+      <fieldset class="block_style">
+        <legend>Registration</legend>
+        <label class="input_style">
+          E-mail:
+          <input
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+            autocomplete="off"
+            required
+          >
+        </label>
+
+        <label>
+          Password:
+          <input
+            type="password"
+            name="password"
+            autocomplete="off"
+            required
+            minlength="5"
+            maxlength="20"
+          >
+        </label>
+      </fieldset>
+      <fieldset class="block_style">
+        <legend>An interesting fact about you!</legend>
+        <label>
+          Do you love cats? 
+          <input
+            type="radio"
+            name="cat"
+            value="yes"
+          >
+          Yes
+        </label>
+        
+        <label>
+          <input
+            type="radio"
+            name="cat"
+            value="no"
+          >
+          No
+        </label>
+
+        <label class="padding">
+          What is your favorite color?
+          <input type="color" name="favorit color">
+        </label>
+
+        <label class="padding">
+          What time do you go to bed?
+          <input type="time" name="time go to bed">
+        </label>
+        
+        <label class="padding">
+          What are your favorite brand of cars?
+          <select
+            name="cars"
+            autocomplete="off"
+            multiple
+          >
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+            <option
+              disabled
+              selected
+            >
+            </option>
+          </select>
+        </label>
+
+        <label class="padding">
+          How do you rate our work?
+          <input
+            type="range"
+            name="rate work"
+            min="1"
+            max="10"
+            step="1"
+            value="1"
+          >
+        </label>
+      </fieldset>
+      <fieldset class="padding">
+        <legend>Additional info:</legend>
+        <label >
+          Comments:
+          <textarea name="comments" mautocomplete="off"></textarea>
+        </label>
+        <label class="padding_footer">
+          Would you recommend us?
+          <select
+            autocomplete="off"
+            name="recommend"
+          >
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </label>
+      </fieldset>
+      <button class="padding" type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
