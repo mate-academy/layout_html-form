@@ -1,1 +1,19 @@
-/* styles go here */
+* {
+  box-sizing: border-box;
+}
+
+.formfield {
+  margin-bottom: 10px;
+}
+
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.button {
+  margin-bottom: 20px;
+}
+
+.formfield:last-child {
+  margin: 0;
+}
