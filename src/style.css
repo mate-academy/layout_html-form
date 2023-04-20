@@ -1,1 +1,25 @@
 /* styles go here */
+input,
+textarea {
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  margin-bottom: 14px;
+}
+
+input[type="range"] {
+  margin-top: 12px;
+}
+
+input:last-child {
+  margin-bottom: 0;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+fieldset:last-child {
+  margin-bottom: 0;
+}
