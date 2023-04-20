@@ -1,1 +1,46 @@
 /* styles go here */
+
+.Info {
+  display: block;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.Registration {
+  display: block;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.Form {
+  margin-top: 20px;
+}
+
+.Facts {
+  display: block;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.Additional {
+  display: block;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.Additional.task {
+  margin-bottom: 0 ;
+}
+
+.Registration.task {
+  margin-bottom: 0 ;
+}
+
+.Facts.task {
+  margin-bottom: 0 ;
+}
+
+.Info.task {
+  margin-bottom: 0 ;
+}
