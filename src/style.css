@@ -1,8 +1,19 @@
 .input_style {
   display: block;
   margin-bottom: 10px;
+  
 }
   
+.padding {
+  display: block;
+  margin-top: 10px;
+}
+
+.padding_footer {
+  display: block;
+  margin-top: 10px;
+}
+
 .block_style {
   margin-bottom: 20px;
 }

@@ -27,6 +27,7 @@
             required
           >
         </label>
+
         <label class="input_style">
           Name:
           <input
@@ -36,6 +37,7 @@
             required
           >
         </label>
+
         <label class="input_style">
           How old are You?
           <input type="number"
@@ -46,6 +48,7 @@
             required
           >
         </label>
+
         <label class="input_style" required>
           Full date of birth:
           <input type="date" name="date of birth">
@@ -71,6 +74,7 @@
             required
           >
         </label>
+
         <label>
           Password:
           <input
@@ -86,7 +90,7 @@
       <fieldset class="block_style">
         <legend>An interesting fact about you!</legend>
         <label>
-         Do you love cats? 
+          Do you love cats? 
           <input
             type="radio"
             name="cat"
@@ -94,6 +98,7 @@
           >
           Yes
         </label>
+        
         <label>
           <input
             type="radio"
@@ -102,15 +107,18 @@
           >
           No
         </label>
-        <label class="input_style">
+
+        <label class="padding">
           What is your favorite color?
           <input type="color" name="favorit color">
         </label>
-        <label class="input_style">
-          What time do you go to bad?
-          <input type="time" name="time go to bad">
+
+        <label class="padding">
+          What time do you go to bed?
+          <input type="time" name="time go to bed">
         </label>
-        <label class="input_style">
+        
+        <label class="padding">
           What are your favorite brand of cars?
           <select
             name="cars"
@@ -127,7 +135,8 @@
             </option>
           </select>
         </label>
-        <label>
+
+        <label class="padding">
           How do you rate our work?
           <input
             type="range"
@@ -139,24 +148,24 @@
           >
         </label>
       </fieldset>
-      <fieldset class="block_style">
+      <fieldset class="padding">
         <legend>Additional info:</legend>
-        <label class="input_style">
+        <label >
           Comments:
           <textarea name="comments" mautocomplete="off"></textarea>
         </label>
-        <label>
+        <label class="padding_footer">
           Would you recommend us?
           <select
             autocomplete="off"
             name="recommend"
           >
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
           </select>
         </label>
       </fieldset>
-      <button type="submit">Submit</button>
+      <button class="padding" type="submit">Submit</button>
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
