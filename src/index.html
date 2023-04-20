@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
-
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <fieldset class="field__form">
         <legend>Personal information</legend>
@@ -94,10 +92,22 @@
 
         <label class="field">
           Do you love cats?
-          <input
-            type="radio"
-            name="loveCats"
-          >
+          <label>
+            <input
+              type="radio"
+              value="yes"
+              name="loveCats"
+            >
+            Yes
+          </label>
+          <label>
+            <input
+              type="radio"
+              value="no"
+              name="loveCats"
+            >
+            No
+          </label>
         </label>
 
         <label class="field">
