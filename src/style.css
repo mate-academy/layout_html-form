@@ -3,10 +3,6 @@
   margin-bottom: 20px;
 }
 
-.info__data {
+.info__data:not(:last-child) {
   margin-bottom: 10px;
-}
-
-.info__data:last-child {
-  margin-bottom: 0;
 }
