@@ -42,32 +42,32 @@
         <div class="form">
           <label for="age">How old are you?</label>
           <input
-          id="age"
-          type="number"
-          name="age"
-          min="1"
-          max="100"
-          value="12"
+            id="age"
+            type="number"
+            name="age"
+            min="1"
+            max="100"
+            value="12"
           >
         </div>
         <div class="form">
           <label for="birth">Full date of birth:</label>
           <input
-          type="date"
-          id="birth"
-          name="date_of_birth"
-          value="2023-01-01"
-          min="1940-01-01"
-          max="2100-01-01"
+            type="date"
+            id="birth"
+            name="date_of_birth"
+            value="2023-01-01"
+            min="1940-01-01"
+            max="2100-01-01"
           >
         </div>
         <div class="form">
           <label for="terms">I accept the term of the agreement</label>
           <input
-          id="terms"
-          type="checkbox"
-          name="terms"
-          required
+            id="terms"
+            type="checkbox"
+            name="terms"
+            required
           >
         </div>
       </fieldset>
@@ -98,20 +98,19 @@
       <fieldset class="form_fields">
         <legend>An interesting facts about you</legend>
         <div class="form">
-          <label for="birds">Do you love birds?</label>
+          Do you love birds?
           <input
-            id="birds"
+            id="yes"
             type="radio"
-            name="birds"
-            value="yes"
+            name="question"
           >
-          Yes
+          <label for="yes">Да</label>
           <input
+            id="no"
             type="radio"
-            name="birds"
-            value="no"
+            name="question"
           >
-          No
+          <label for="no">Нет</label>
         </div>
         <div class="form">
           <label for="choose_color">What is your favorite color?</label>
@@ -178,7 +177,7 @@
       </fieldset>
       <div class="form">
         <button
-        type="submit"
+          type="submit"
         >
         Submit
         </button>
