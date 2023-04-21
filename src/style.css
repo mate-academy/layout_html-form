@@ -1,1 +1,12 @@
-/* styles go here */
+.form-field {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.bottom-distsnce {
+  margin-bottom: 0;
+}
+
+.distsnce {
+  margin-bottom: 20px;
+}
