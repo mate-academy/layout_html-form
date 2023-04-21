@@ -16,7 +16,6 @@
       method="post"
       name="personal_information"
     >
-
       <fieldset class="fieldset">
         <legend>Personal information</legend>
 
@@ -24,7 +23,7 @@
           Surname:
           <input
             type="text"
-            name="Surname"
+            name="surname"
             autocomplete="off"
           >
         </label>
@@ -33,7 +32,7 @@
           Name:
           <input
             type="text"
-            name="Name"
+            name="name"
             autocomplete="off"
           >
         </label>
@@ -62,7 +61,6 @@
             required
           >
         </label>
-
       </fieldset>
 
       <fieldset class="fieldset">
@@ -94,9 +92,15 @@
 
         <label class="form-field">
           Do you love cats?
-          <input type="radio" name="loveCats">
+          <input type="radio"
+            name="loveCats"
+            value="yes"
+          >
           Yes
-          <input type="radio" name="loveCats">
+          <input type="radio"
+            name="loveCats"
+            value="no"
+          >
           No
         </label>
 
@@ -151,7 +155,7 @@
           Would you recommend us?
           <select name="recommend">
             <option value="Yes" selected>yes</option>
-            <option value="Yes">no</option>
+            <option value="No">no</option>
           </select>
         </label>
       </fieldset>
