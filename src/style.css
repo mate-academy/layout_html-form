@@ -1,46 +1,13 @@
-/* styles go here */
-
-.Info {
+.form-field {
   display: block;
-  padding: 0;
-  margin-top: 0;
   margin-bottom: 10px;
 }
 
-.Registration {
+.h {
   display: block;
-  padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-.Form {
-  margin-top: 20px;
-}
-
-.Facts {
-  display: block;
-  padding: 0;
-  margin-bottom: 10px;
-}
-
-.Additional {
-  display: block;
-  padding: 0;
-  margin-bottom: 10px;
-}
-
-.Additional.task {
-  margin-bottom: 0 ;
-}
-
-.Registration.task {
-  margin-bottom: 0 ;
-}
-
-.Facts.task {
-  margin-bottom: 0 ;
-}
-
-.Info.task {
-  margin-bottom: 0 ;
+.form-field:last-child {
+  margin-bottom: 0;
 }
