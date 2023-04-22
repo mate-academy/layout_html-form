@@ -4,10 +4,6 @@
   margin: 10px 0;
 }
 
-.field::placeholder {
-  color: green;
-}
-
 .field:invalid {
   border: 1px solid red;
 }
