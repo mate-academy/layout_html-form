@@ -1,10 +1,4 @@
-/* styles go here */
-/* html {
-  --h2-font-size: 18px;
-} */
-
 .form_container {
-  /* position: relative; */
   margin-bottom: 20px;
 }
 
@@ -16,12 +10,3 @@
 .last_container {
   margin-bottom: 0;
 }
-
-/* .field_header {
-  position: absolute;
-  margin: 0;
-  font-size: var(--h2-font-size);
-  top: calc(var(--h2-font-size) * -0.75);
-  background-color: white;
-  padding: 2px;
-} */
