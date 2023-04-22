@@ -1,16 +1,9 @@
 /* styles go here */
-.form-field {
-  display: block;
-}
-
-.field {
-  margin-top: 10px;
-}
-
 .fieldset {
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.button {
-  margin-top: 20px;
+.field:not(:last-child) {
+  display: block;
+  margin-bottom: 10px;
 }
