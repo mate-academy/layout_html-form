@@ -6,7 +6,6 @@
   margin-bottom: 10px;
 }
 
-.last_input,
-.last_container {
+.form_field:last-child {
   margin-bottom: 0;
 }
