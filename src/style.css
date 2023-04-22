@@ -1,8 +1,8 @@
-.field {
+.field:not(:last-child) {
   display: block;
-  padding: 10px;
+  padding-bottom: 10px;
 }
 
-.field__form {
-  margin: 20px;
+.field__form:not(:last-child) {
+  margin-bottom: 20px;
 }
