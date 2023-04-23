@@ -1,1 +1,16 @@
 /* styles go here */
+.label {
+  display: block;
+}
+
+.form-label {
+  margin-bottom: 10px;
+}
+
+.fieldset {
+  margin-bottom: 20px;
+}
+
+.radio-label {
+  display: inline-block;
+}
