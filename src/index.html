@@ -11,7 +11,165 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+      <fieldset class="fieldset-form">
+        <legend>Personal information</legend>
+
+        <label class="form">
+          Surname:
+          <input
+            type="text"
+            id="surname"
+            name="surname"
+            autocomplete="off"
+            required
+          >
+        </label>
+
+        <label class="form">
+          Name:
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="off"
+            required
+          >
+        </label>
+
+        <label class="form">
+          How old are You?
+          <input
+            type="number"
+            id="age"
+            name="age"
+            value="12"
+            min="1"
+            max="100"
+            required
+          >
+        </label>
+
+        <label class="form">
+          Full date of birth:
+          <input
+            type="date"
+            id="birth"
+            name="birth"
+            required
+          >
+        </label>
+
+        <label class="form">
+          I accept the term of the agreement
+          <input
+            type="checkbox"
+            id="agreement"
+            name="agreement"
+            required
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="fieldset-form">
+        <legend>Registration</legend>
+
+        <label class="form">
+          E-mail:
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="off"
+            placeholder="email@example.com"
+            required
+          >
+        </label>
+
+        <label class="form">
+          Password:
+          <input
+            type="password"
+            id="pwd"
+            name="pwd"
+            minlength="8"
+            maxlength="16"
+            required
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="fieldset-form">
+        <legend>An interesting fact about you!</legend>
+
+        <label class="form">
+          Do you love cats?
+          <input type="radio"
+            name="loveCats"
+            value="Yes"
+          >
+          Yes
+          <input type="radio"
+            name="loveCats"
+            value="No"
+          >
+          No
+        </label>
+
+        <label class="form">
+          What is your favorite color?
+          <input type="color" name="color">
+        </label>
+
+        <label class="form">
+          What time do you go to bed?
+          <input type="time" name="bedTime">
+        </label>
+
+        <label class="form">
+          What are your favorite brand of cars?
+          <select name="cars" multiple>
+            <option value="BMW" name="name">BMW</option>
+            <option value="Audi" name="cars">Audi</option>
+            <option value="Lada" name="cars">Lada</option>
+          </select>
+        </label>
+
+        <label class="form">
+          How do you rate our work?
+          <input
+            type="range"
+            name="rate"
+            value="0"
+            min="1"
+            max="10"
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="fieldset-form">
+        <legend>Additional info:</legend>
+
+        <label class="form">
+          Comments:
+          <textarea
+            name="Comments"
+            rows="2"
+            cols="20"
+            maxlength="1000"
+         ></textarea>
+        </label>
+
+        <label class="form">
+          Would you reccomend us?
+          <select name="recomendation" id="recomendation">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </label>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
