@@ -1,1 +1,36 @@
-/* styles go here */
+/* head {
+  display: none;
+} */
+
+/* body {
+  display: block;
+  margin: 8px;
+} */
+
+/* form {
+  display: block;
+  margin-top: 0 em;
+} */
+
+.inputs-block {
+  margin-bottom: 20px;
+}
+
+.input-row {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.input-row:last-child {
+  margin-bottom: 0;
+}
+
+/* input[type="checkbox" i] {
+  background-color: initial;
+  cursor: default;
+  appearance: auto;
+  box-sizing: border-box;
+  margin: 3px 3px 3px 4px;
+  padding: initial;
+  border: initial;
+} */
