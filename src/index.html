@@ -10,7 +10,10 @@
   </head>
   <body>
 
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="post"
+    autocomplete="off"
+    >
 
       <fieldset class="form-set">
         <legend>Personal information</legend>
@@ -66,7 +69,7 @@
           <input
            type="checkbox"
            name="terms"
-           >
+          >
         </label>
 
       </fieldset>
@@ -81,7 +84,7 @@
           name="email"
           placeholder="email@example.com"
           tabindex="5"
-          autocomplete="off"
+          
           required
           >
         </label>
@@ -143,8 +146,12 @@
 
         <div class="form-field">
           How do you rate our work?
-          <input type="range" id="volume" name="volume"
-              min="0" max="11">
+          <input type="range"
+          id="volume"
+          name="volume"
+          min="0"
+          max="11"
+          >
           <label for="volume"></label>
         </div>
 
