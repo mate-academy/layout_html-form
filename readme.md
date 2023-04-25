@@ -1,8 +1,7 @@
 # HTML form
 Replace `<https://github.com/Dmytro-Kulyk-cpu>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://github.com/Dmytro-Kulyk-cpu/layout_html-form)
-- [TEST REPORT LINK](https://github.com/mate-academy/layout_html-form/compare/master...Dmytro-Kulyk-cpu:layout_html-form:develop?expand=1)
-
+- [DEMO LINK](https://Dmytro-Kulyk-cpu.github.io/layout_html-form/)
+- [TEST REPORT LINK](https://Dmytro-Kulyk-cpu.github.io/layout_html-form/report/html_report/)
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 ___
 
@@ -62,3 +61,8 @@ Create HTML page with form. On form submit send form data to `https://mate-acade
        ></textarea>
       ```
 
+LINK](https://misha-hrynko.github.io/layout_hello-world/) <br>
+4
+[TEST REPORT
+LINK](https://misha-hrynko.github.io/layout_hello-world/report/html_report/)
+2. Follow [this instructions](https://mate
