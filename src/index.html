@@ -1,20 +1,22 @@
 <!doctype html>
 <html lang="en">
   <head>
+
     <meta charset="UTF-8">
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML Form</title>
+    <title> </title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
 
-    <form action="https://mate-academy-se-lesson.herokuapp.com/create-application" method="post">
-
+    <script type="text/javascript" src="./main.js"></script>
+    <form
+    action="https://mate-academy-se-lesson.herokuapp.com/create-application"
+    method="post">
       <fieldset class="fieldset">
         <legend> Personal information </legend>
         <label class="section">
@@ -72,7 +74,6 @@
           type="email"
           name="email"
           placeholder="email@example.com"
-          required
           >
         </label>
 
@@ -81,7 +82,7 @@
           <input
           type="password"
           name="password"
-          required minlength="8"
+          minlength="8"
           maxlength="12"
           >
         </label>
@@ -95,7 +96,6 @@
           <input
             type="radio"
             name="yes"
-            multiple
           > Yes
 
           <input
@@ -136,6 +136,7 @@
 
         <label class="section">
             How do you rate our work?
+
           <input
             type="range"
             name="range"
@@ -148,13 +149,8 @@
         <label class="section">
               Comments:
 
-          <textarea
-              name="comends"
-              id="textarea"
-              cols="14"
-              rows="2"
-          >
-          </textarea>
+          <textarea name="comends"
+         ></textarea>
         </label>
 
         <label class="section">
@@ -168,7 +164,7 @@
       </fieldset>
 
       <button class="buttom" type="submit"> Submit</button>
-      <script type="text/javascript" src="./main.js"></script>
+
     </form>
   </body>
 </html>
