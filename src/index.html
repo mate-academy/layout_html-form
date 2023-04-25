@@ -93,21 +93,25 @@
       <fieldset class="single-fieldset">
         <legend>An interesting fact about you!</legend>
 
-        <label class="single-label inline">Do you love cats?
+        <div class="single-label">Do you love cats?
+          <label>
+            <input
+              type="radio"
+              name="love_cats"
+              value="yes"
+            >
+            Yes
+          </label>
 
-          <input
-            type="radio"
-            name="love_cats"
-            value="yes"
-          > Yes
-
-          <input
-            type="radio"
-            name="love_cats"
-            value="no"
-          > No
-
-        </label>
+          <label>
+            <input
+              type="radio"
+              name="love_cats"
+              value="no"
+            >
+            No
+          </label>
+        </div>
 
         <label class="single-label">
           What is your favorite color?
