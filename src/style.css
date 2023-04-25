@@ -1,8 +1,11 @@
-.form-field {
+.fieldset:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.form-input-gap {
-  margin-bottom: 10px;
+.form-field {
   display: block;
+}
+
+.form-field:not(:last-child) {
+  margin-bottom: 10px;
 }
