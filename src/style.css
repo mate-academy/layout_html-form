@@ -1,1 +1,14 @@
 /* styles go here */
+
+.single-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.single-fieldset {
+  margin-bottom: 20px;
+}
+
+.single-fieldset label:last-child {
+  margin-bottom: 0;
+}
