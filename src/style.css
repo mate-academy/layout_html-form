@@ -1,11 +1,17 @@
-html {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .fieldset {
-  margin-top: 20px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
 }
 
-.fieldset .field {
-  padding-top: 5px;
+.field {
+  display: block;
+  padding-bottom: 10px;
+}
+
+#date {
+  width: 148px;
+}
+
+#time {
+  width: 98px;
 }

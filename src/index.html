@@ -18,7 +18,7 @@
       method="post"
     >
       <fieldset class="fieldset">
-        <legend>Personal Information</legend>
+        <legend>Personal information</legend>
         <div class="field">
           <label for="surname">
             Surname:
@@ -125,32 +125,35 @@
 
         <div class="field">
           <label for="color">
-            What is your favourite color?
+            What is your favorite color?
             <input type="color" id="color">
           </label>
         </div>
 
         <div class="field">
           <label for="time">
-            What time do you go to bed
-            <input type="time" id="time">
+            What time do you go to bed?
+            <input
+              type="time"
+              id="time"
+              step="1"
+            >
           </label>
         </div>
 
         <div class="field">
           <label for="carBrand">
-            What are your favourite brend of cars?
+            What are your favorite brand of cars?
             <select
               name="carBrand"
               id="carBrand"
               required
               multiple
             >
-              <option disabled selected>Chose</option>
-              <option value="chevrolet">Chevrolet</option>
               <option value="bmw">BMW</option>
-              <option value="mercedes">Mercedes</option>
               <option value="audi">Audi</option>
+              <option value="lada">Lada</option>
+              <option disabled></option>
             </select>
           </label>
         </div>
@@ -158,22 +161,24 @@
         <div class="field">
           <label for="workRate">
             How do you rate our work?
-            <input type="range" id="workRate">
+            <input
+              type="range"
+              id="workRate"
+            >
           </label>
         </div>
       </fieldset>
       <fieldset class="fieldset">
-        <legend>Additonal info:</legend>
-        <label for="comments">
+        <legend>Additional info:</legend>
+        <label class="field" for="comments">
           Comments:
           <textarea id="comments"></textarea>
         </label>
-        </div>
 
         <div class="field">
           <label>
-            Would you recomend us?
-            <select name="recomend" id="recomend">
+            Would you recommend us?
+            <select name="recommend" id="recommend">
               <option value="yes">yes</option>
               <option value="no">no</option>
             </select>
