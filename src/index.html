@@ -86,6 +86,7 @@
             <input
               type="email"
               id="user-email"
+              name="user-email"
               placeholder="email@example.com"
             >
           </label>
@@ -97,6 +98,7 @@
             <input
               type="password"
               id="user-password"
+              name="user-password"
               minlength="6"
             >
           </label>
@@ -124,7 +126,11 @@
         <div class="field">
           <label for="color">
             What is your favorite color?
-            <input type="color" id="color">
+            <input
+              type="color"
+              id="color"
+              name="favorite-color"
+            >
           </label>
         </div>
 
@@ -134,6 +140,7 @@
             <input
               type="time"
               id="time"
+              name="bed-time"
               step="1"
             >
           </label>
@@ -162,6 +169,7 @@
             <input
               type="range"
               id="workRate"
+              name="workRate"
             >
           </label>
         </div>
@@ -170,7 +178,7 @@
         <legend>Additional info:</legend>
         <label class="field" for="comments">
           Comments:
-          <textarea id="comments"></textarea>
+          <textarea id="comments" name="comments"></textarea>
         </label>
 
         <div class="field">
