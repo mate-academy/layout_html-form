@@ -4,10 +4,10 @@
   margin-bottom: 10px;
 }
 
-.label:last-child {
-  margin-bottom: 0;
+fieldset {
+  margin-bottom: 20px;
 }
 
-.fs1 {
-  margin-bottom: 20px;
+.label:last-child {
+  margin-bottom: 0;
 }
