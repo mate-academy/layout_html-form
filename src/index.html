@@ -75,14 +75,18 @@
             id="email"
             name="email"
             placeholder="email@example.com"
+            required
           >
         </label>
         <label for="password" class="form">
           Password:
           <input
+            minlength="5"
+            maxlength="12"
             type="password"
             id="password"
             name="password"
+            required
           >
         </label>
       </fieldset>
