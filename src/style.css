@@ -1,8 +1,12 @@
 /* styles go here */
-.distance {
+.form-field {
   margin-bottom: 10px;
 }
 
-fieldset {
+.form {
+  display: block;
+}
+
+.fieldset {
   margin-bottom: 20px;
 }

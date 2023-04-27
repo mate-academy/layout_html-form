@@ -12,137 +12,154 @@
   </head>
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <label for="surname">Surname:</label>
-        <input
-          cletype="text"
-          class="distance"
-          id="surname"
-          name="surname"
-          autocomplete="off"
-        ><br>
-
-        <label for="name">Name:</label>
-        <input
-          type="text"
-          class="distance"
-          id="name"
-          name="name"
-          autocomplete="off"
-        ><br>
-
-        <label for="age">How old are You?</label>
-        <input
-          type="number"
-          class="distance"
-          id="age"
-          name="age"
-          min="1"
-          max="100"
-          value="12"
-        ><br>
-
-        <label for="birth">Full date of birth:</label>
-        <input
-          type="date"
-          class="distance"
-          id="birth"
-          name="birth"
-        ><br>
-
-        <label for="checkbox">I accept the term of the agreement</label>
-        <input
-          type="checkbox"
-          id="checkbox"
-          name="checkbox"
-        >
-
+        <label for="surname" class="form">
+          Surname:
+          <input
+            cletype="text"
+            class="form-field"
+            id="surname"
+            name="surname"
+            autocomplete="off"
+          >
+        </label>
+        <label for="name" class="form">
+          Name:
+          <input
+            type="text"
+            class="form-field"
+            id="name"
+            name="name"
+            autocomplete="off"
+          >
+        </label>
+        <label for="age" class="form">
+          How old are You?
+          <input
+            type="number"
+            class="form-field"
+            id="age"
+            name="age"
+            min="1"
+            max="100"
+            value="12"
+          >
+        </label>
+        <label for="birth" class="form">
+          Full date of birth:
+          <input
+            type="date"
+            class="form-field"
+            id="birth"
+            name="birth"
+          >
+        </label>
+        <label for="checkbox" class="form">
+          I accept the term of the agreement
+          <input
+            type="checkbox"
+            id="checkbox"
+            name="checkbox"
+          >
+        </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Registration</legend>
-        <label for="email">E-mail:</label>
-        <input
-          type="email"
-          class="distance"
-          id="email"
-          name="email"
-          placeholder="email@example.com"
-        ><br>
-
-        <label for="password">Password:</label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-        >
-
+        <label for="email" class="form">
+          E-mail:
+          <input
+            type="email"
+            class="form-field"
+            id="email"
+            name="email"
+            placeholder="email@example.com"
+          >
+        </label>
+        <label for="password" class="form">
+          Password:
+          <input
+            type="password"
+            id="password"
+            name="password"
+          >
+        </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
-        <div class="distance">
-          <label for="cat">
+        <div class="form-field">
+          <label for="cat" class="form">
             Do you love cats?
-            <input type="radio" name="Yes">
+            <input type="radio" name="answer">
             Yes
-            <input type="radio" name="No">
+            <input type="radio" name="answer">
             No
           </label>
         </div>
-        <label for="color">What is your favorite color?</label>
-        <input
-          type="color"
-          class="distance"
-          id="color"
-          name="color"
-        ><br>
-
-        <label for="time">What time do you go to bed?</label>
-        <input
-          type="time"
-          step="1"
-          class="distance"
-          id="time"
-          name="time"
-        ><br>
-
-        <div class="distance">
-          <label for="car">What are your favorite brand of cars?</label>
-          <select
-            name="car"
-            id="car"
-            multiple
+        <label for="color" class="form">
+          What is your favorite color?
+          <input
+            type="color"
+            class="form-field"
+            id="color"
+            name="color"
           >
-            <option value="BMW">BMW</option>
-            <option value="Audi">Audi</option>
-            <option value="Lada">Lada</option>
-          </select>
+        </label>
+        <label for="time" class="form">
+          What time do you go to bed?
+          <input
+            type="time"
+            step="1"
+            class="form-field"
+            id="time"
+            name="time"
+          >
+        </label>
+
+        <div class="form-field">
+          <label for="car" class="form">
+            What are your favorite brand of cars?
+            <select
+              name="car"
+              id="car"
+              multiple
+            >
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Lada">Lada</option>
+            </select>
+          </label>
         </div>
 
-        <label for="rate">How do you rate our work?</label>
-        <input
-          type="range"
-          value="0"
-          name="rate"
-          id="rate"
-        >
+        <label for="rate">How do you rate our work?
+          <input
+            type="range"
+            value="0"
+            name="rate"
+            id="rate"
+          >
+        </label>
       </fieldset>
 
       <fieldset>
         <legend>Additional info:</legend>
-        <div class="distance">
-          <label for="cm">Comments:</label>
-          <textarea autocomplete="off"></textarea>
+        <div class="form-field">
+          <label for="cm" class="form">
+            Comments:
+            <textarea autocomplete="off"></textarea>
+          </label>
         </div>
 
         <div>
-          <label for="rec">Would you recommend us?</label>
-          <select name="rec" id="rec">
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-          </select>
+          <label for="rec" class="form">
+            Would you recommend us?
+            <select name="rec" id="rec">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </label>
         </div>
 
       </fieldset>
