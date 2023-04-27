@@ -3,11 +3,10 @@
   margin-bottom: 10px;
 }
 
-fieldset {
+.form-fieldset {
   margin-bottom: 20px;
 }
 
-/* Usuń margines dolny dla ostatniego .form-field wewnątrz fieldset */
 fieldset .form-field:last-child {
   margin-bottom: 0;
 }

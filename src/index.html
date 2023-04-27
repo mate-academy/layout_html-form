@@ -11,18 +11,17 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
 
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post">
 
-      <fieldset>
+      <fieldset class="form-fieldset">
         <legend>Personal information</legend>
 
         <div class="form-field">
-          <label for="surname">Surname</label>
+          <label for="surname">Surname:</label>
           <input
             type="text"
             id="surname"
@@ -33,7 +32,7 @@
         </div>
   
         <div class="form-field">
-          <label for="name">Name</label>
+          <label for="name">Name:</label>
           <input
             type="text"
             id="name"
@@ -57,7 +56,7 @@
         </div>
   
         <div class="form-field">
-          <label for="birthday">Full date of birth</label>
+          <label for="birthday">Full date of birth:</label>
           <input
             type="date"
             id="birthday"
@@ -78,11 +77,11 @@
       </fieldset>
       
 
-      <fieldset>
+      <fieldset class="form-fieldset">
         <legend>Registration</legend>
 
         <div class="form-field">
-          <label for="email">E-mail</label>
+          <label for="email">E-mail:</label>
           <input
             type="email"
             id="email"
@@ -92,16 +91,18 @@
         </div>
   
         <div class="form-field">
-          <label for="password">Password</label>
+          <label for="password">Password:</label>
           <input
             type="password"
             id="password"
             name="password"
+            max="20"
+            min="8"
           >
         </div>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="form-fieldset">
         <legend>An interesting fact about you!</legend>
 
         <div class="form-field">
@@ -129,7 +130,7 @@
           <input
             type="color"
             id="color"
-            name="fav-color"
+            name="favColor"
           >
         </div>
   
@@ -138,20 +139,22 @@
           <input
             type="time"
             id="bedTime"
-            name="bedtime"
+            name="bedTime"
+            step="2"
           >
         </div>
   
         <div class="form-field">
           <label for="cars">What are your favorite brand of cars?</label>
           <select
-            name="favcars"
+            name="favCars"
             id="cars"
             multiple
           >
-            <option value="audi">Audi</option>
-            <option value="mercedes">Mercedes</option>
             <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+            
           </select>
         </div>
   
@@ -167,15 +170,15 @@
         </div>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="form-fieldset">
         <legend>Additional info:</legend>
         <div class="form-field">
           <label for="comments">Comments:</label>
           <textarea
           name="comments"
           id="comments"
-          cols="30"
-          rows="10"
+          cols="25"
+          rows="2"
          ></textarea>
         </div>
 
