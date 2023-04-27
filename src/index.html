@@ -94,21 +94,23 @@
       <fieldset class="rows">
         <legend>An interesting fact about you!</legend>
 
-        <label class="form-field distance">
+        <div class="form-field distance">
          Do you love cats?
-          <input
-            type="radio"
-            id="Yes"
-            name="loveCat"
-          >
-          <label for="Yes">Yes</label>
-          <input
-            type="radio"
-            id="No"
-            name="loveCat"
-          >
-          <label for="No">No</label>
-        </label>
+          <label>
+            Yes
+            <input
+             type="radio"
+             name="loveCat"
+            >
+          </label>
+          <label>
+            No
+            <input
+              type="radio"
+              name="loveCat"
+            >
+          </label>
+        </div>
 
         <label class="form-field distance">
           What is your favorite color?
@@ -155,7 +157,9 @@
 
         <label class="form-field distance">
           Comments:
-          <textarea></textarea>
+          <textarea
+            name="Comments"
+         ></textarea>
         </label>
 
         <div class="form-field">
