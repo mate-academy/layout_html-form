@@ -1,1 +1,11 @@
-/* styles go here */
+.info {
+  margin-bottom: 10px;
+}
+
+.info:last-child {
+  margin-bottom: 0;
+}
+  
+.fields {
+  margin-bottom: 20px;
+}
