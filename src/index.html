@@ -19,7 +19,7 @@
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
     >
 
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Personal information</legend>
 
         <label for="surname">Surname:</label>
@@ -65,12 +65,11 @@
             id="checkbox"
             type="checkbox"
             name="terms"
-            class="input"
         >
       </fieldset>
 
-      <fieldset>
-        <legend>Regitration</legend>
+      <fieldset class="fieldset">
+        <legend>Registration</legend>
 
         <label for="email">E-mail:</label>
         <input
@@ -87,22 +86,24 @@
           id="password"
           type="password"
           name="password"
-          class="input"
+          minlength="8"
+          maxlength="30"
           required
         >
       </fieldset>
 
-      <fieldset>
-        <legend>An interesting fact about You!</legend>
+      <fieldset class="fieldset">
+        <legend>An interesting fact about you!</legend>
 
-        <label>Do You love cats?</label>
+        <label>Do you love cats?</label>
         <input
           id="yes"
           type="radio"
           name="catYes"
           value="yes"
+          class="input"
         >
-        <label for="no">Yes</label>
+        <label for="yes" class="input">Yes</label>
 
         <input
           id="no"
@@ -111,19 +112,20 @@
           value="No"
           class="input"
         >
-        <label for="yes">No</label>
+        <label for="no" class="input">No</label>
 
         <br>
 
-        <label for="color">What is Your favorite color?</label>
-        <input
-          id="color"
-          type="color"
-          name="color"
-          class="input"
-        ><br>
+        <label for="color">What is your favorite color?
+          <input
+            id="color"
+            type="color"
+            name="color"
+            class="input"
+          >
+        </label><br>
 
-        <label for="time">What time do You go to bed?</label>
+        <label for="time">What time do you go to bed?</label>
         <input
           id="time"
           type="time"
@@ -132,19 +134,20 @@
           class="input"
         ><br>
 
-        <label for="car">What is Your favorite brand of cars?</label>
-        <select
+        <label for="car" class="input">
+          What are your favorite brand of cars?
+          <select
           id="car"
           name="carBrand"
           multiple
-          class="input"
         >
-          <option value="Lada">Lada</option>
-          <option value="Audi">Audi</option>
-          <option value="BMW">BMW</option>
-        </select><br>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </label><br>
 
-        <label for="rate">How do You rate our work?</label>
+        <label for="rate">How do you rate our work?</label>
         <input
           id="rate"
           type="range"
@@ -153,32 +156,26 @@
           max="100"
           value="0"
         >
-
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fieldset">
 
         <legend>Additional info:</legend>
 
         <label for="comments" class="input">
           Comments:
-          <textarea
-            id="comments"
-            name="txt"
-            minlength="50"
-            maxlength="300"
-          ></textarea>
+          <textarea id="comments" name="txt"></textarea>
         </label>
 
         <br>
 
-        <label for="recommend" class="input">Would You recommend us?</label>
+        <label for="recommend" >Would you recommend us?</label>
         <select
           id="recommend"
           name="recommend"
         >
-          <option value="Yes">Yes</option>
-          <option value="No">No</option>
+          <option value="Yes">yes</option>
+          <option value="No">no</option>
         </select>
       </fieldset>
 
