@@ -1,1 +1,8 @@
-/* styles go here */
+.input {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.form {
+  margin-bottom: 20px;
+}

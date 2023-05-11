@@ -11,7 +11,180 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+
+    <form
+      class="form"
+      method="post"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    >
+
+      <fieldset>
+        <legend>Personal information</legend>
+
+        <label for="surname">Surname:</label>
+        <input
+          id="surname"
+          type="text"
+          name="surname"
+          autocomplete="off"
+          class="input"
+        ><br>
+
+        <label for="name">Name:</label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          autocomplete="off"
+          class="input"
+        ><br>
+
+        <label for="age">How old are You?</label>
+        <input
+          id="age"
+          type="number"
+          name="age"
+          value="12"
+          class="input"
+          min="1"
+          max="100"
+        ><br>
+
+        <label for="date">Full date of birth:</label>
+        <input
+            id="date"
+            type="date"
+            name="dateOfBirth"
+            value="mm/dd/yyyy"
+            class="input"
+        ><br>
+
+        <label for="checkbox">I accept the term of the agreement</label>
+        <input
+            id="checkbox"
+            type="checkbox"
+            name="terms"
+            class="input"
+        >
+      </fieldset>
+
+      <fieldset>
+        <legend>Regitration</legend>
+
+        <label for="email">E-mail:</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="email@example.com"
+          class="input"
+          required
+        ><br>
+
+        <label for="password">Password:</label>
+        <input
+          id="password"
+          type="password"
+          name="password"
+          class="input"
+          required
+        >
+      </fieldset>
+
+      <fieldset>
+        <legend>An interesting fact about You!</legend>
+
+        <label>Do You love cats?</label>
+        <input
+          id="yes"
+          type="radio"
+          name="catYes"
+          value="yes"
+        >
+        <label for="no">Yes</label>
+
+        <input
+          id="no"
+          type="radio"
+          name="catNo"
+          value="No"
+          class="input"
+        >
+        <label for="yes">No</label>
+
+        <br>
+
+        <label for="color">What is Your favorite color?</label>
+        <input
+          id="color"
+          type="color"
+          name="color"
+          class="input"
+        ><br>
+
+        <label for="time">What time do You go to bed?</label>
+        <input
+          id="time"
+          type="time"
+          name="timeToBed"
+          step="2"
+          class="input"
+        ><br>
+
+        <label for="car">What is Your favorite brand of cars?</label>
+        <select
+          id="car"
+          name="carBrand"
+          multiple
+          class="input"
+        >
+          <option value="Lada">Lada</option>
+          <option value="Audi">Audi</option>
+          <option value="BMW">BMW</option>
+        </select><br>
+
+        <label for="rate">How do You rate our work?</label>
+        <input
+          id="rate"
+          type="range"
+          name="rate"
+          min="0"
+          max="100"
+          value="0"
+        >
+
+      </fieldset>
+
+      <fieldset>
+
+        <legend>Additional info:</legend>
+
+        <label for="comments" class="input">
+          Comments:
+          <textarea
+            id="comments"
+            name="txt"
+            minlength="50"
+            maxlength="300"
+          ></textarea>
+        </label>
+
+        <br>
+
+        <label for="recommend" class="input">Would You recommend us?</label>
+        <select
+          id="recommend"
+          name="recommend"
+        >
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+
+
   </body>
 </html>
