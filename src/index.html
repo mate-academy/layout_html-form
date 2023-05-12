@@ -11,36 +11,40 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <script type="text/javascript" src="./main.js"></script>
-
     <form
       class="form"
       method="post"
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
     >
-
       <fieldset class="fieldset">
         <legend>Personal information</legend>
 
         <label for="surname">Surname:</label>
+        
         <input
           id="surname"
           type="text"
           name="surname"
           autocomplete="off"
           class="input"
-        ><br>
+        >
+
+        <br>
 
         <label for="name">Name:</label>
+
         <input
           id="name"
           type="text"
           name="name"
           autocomplete="off"
           class="input"
-        ><br>
+        >
+
+        <br>
 
         <label for="age">How old are You?</label>
+
         <input
           id="age"
           type="number"
@@ -49,22 +53,28 @@
           class="input"
           min="1"
           max="100"
-        ><br>
+        >
+
+        <br>
 
         <label for="date">Full date of birth:</label>
+
         <input
-            id="date"
-            type="date"
-            name="dateOfBirth"
-            value="mm/dd/yyyy"
-            class="input"
-        ><br>
+          id="date"
+          type="date"
+          name="dateOfBirth"
+          value="mm/dd/yyyy"
+          class="input"
+        >
+
+        <br>
 
         <label for="checkbox">I accept the term of the agreement</label>
+
         <input
-            id="checkbox"
-            type="checkbox"
-            name="terms"
+          id="checkbox"
+          type="checkbox"
+          name="terms"
         >
       </fieldset>
 
@@ -72,6 +82,7 @@
         <legend>Registration</legend>
 
         <label for="email">E-mail:</label>
+
         <input
           id="email"
           type="email"
@@ -79,9 +90,12 @@
           placeholder="email@example.com"
           class="input"
           required
-        ><br>
+        >
+
+        <br>
 
         <label for="password">Password:</label>
+
         <input
           id="password"
           type="password"
@@ -96,6 +110,7 @@
         <legend>An interesting fact about you!</legend>
 
         <label>Do you love cats?</label>
+
         <input
           id="yes"
           type="radio"
@@ -103,6 +118,7 @@
           value="yes"
           class="input"
         >
+
         <label for="yes" class="input">Yes</label>
 
         <input
@@ -112,6 +128,7 @@
           value="No"
           class="input"
         >
+
         <label for="no" class="input">No</label>
 
         <br>
@@ -123,16 +140,21 @@
             name="color"
             class="input"
           >
-        </label><br>
+        </label>
+
+        <br>
 
         <label for="time">What time do you go to bed?</label>
+
         <input
           id="time"
           type="time"
           name="timeToBed"
           step="2"
           class="input"
-        ><br>
+        >
+
+        <br>
 
         <label for="car" class="input">
           What are your favorite brand of cars?
@@ -145,9 +167,12 @@
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
           </select>
-        </label><br>
+        </label>
+
+        <br>
 
         <label for="rate">How do you rate our work?</label>
+
         <input
           id="rate"
           type="range"
@@ -159,12 +184,14 @@
       </fieldset>
 
       <fieldset class="fieldset">
-
         <legend>Additional info:</legend>
 
         <label for="comments" class="input">
           Comments:
-          <textarea id="comments" name="txt"></textarea>
+          <textarea
+            id="comments"
+            name="txt"
+          ></textarea>
         </label>
 
         <br>
@@ -182,6 +209,6 @@
       <button type="submit">Submit</button>
     </form>
 
-
+    <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
