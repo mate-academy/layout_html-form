@@ -1,1 +1,12 @@
-/* styles go here */
+.input-row {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .input-row:last-child {
+    margin-bottom: 0;
+  }
+  
+  .inputs-block {
+    margin-bottom: 20px;
+  }

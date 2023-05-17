@@ -1,17 +1,156 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML Form</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>The form</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
-    <script type="text/javascript" src="./main.js"></script>
+    <form
+      method="POST"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    >
+      <fieldset class="inputs-block">
+        <legend>Personal information</legend>
+
+        <label class="input-row">
+          Surname:
+          <input name="surname" autocomplete="off" required>
+        </label>
+
+        <label class="input-row">
+          Name:
+          <input name="name" autocomplete="off">
+        </label>
+
+        <label class="input-row">
+          How old are You?
+
+          <input
+            type="number"
+            name="age"
+            min="1"
+            max="100"
+            value="12"
+          >
+        </label>
+
+        <label class="input-row">
+          Full date of birth:
+          <input type="date" name="birthday">
+        </label>
+
+        <label class="input-row">
+          I accept the term of the agreement
+          <input type="checkbox" name="agreement">
+        </label>
+      </fieldset>
+
+      <fieldset class="inputs-block">
+        <legend>Registration</legend>
+
+        <label class="input-row">
+          E-mail:
+          <input
+            type="email"
+            name="email"
+            data-qa="field-placeholder"
+            placeholder="email@example.com"
+          >
+        </label>
+
+        <label class="input-row">
+          Password:
+          <input
+            type="password"
+            name="password"
+            minlength="1"
+            maxlength="30"
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="inputs-block">
+        <legend>An interesting fact about you!</legend>
+
+        <div class="input-row">
+          Do you love cats?
+
+          <label>
+            <input
+              type="radio"
+              name="cats"
+              value="yes"
+            >
+            Yes
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="cats"
+              value="no"
+            > No
+          </label>
+        </div>
+
+        <label class="input-row">
+          What is your favorite color?
+          <input type="color" name="color">
+        </label>
+
+        <label class="input-row">
+          What time do you go to bed?
+          <input type="time" name="time" step="1">
+        </label>
+
+        <label class="input-row">
+          What are your favorite brand of cars?
+
+          <select multiple name="cars">
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </label>
+
+        <label class="input-row">
+          How do you rate our work?
+
+          <input
+            type="range"
+            name="rate"
+            min="0"
+            max="5"
+            step="1"
+            value="0"
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="inputs-block">
+        <legend>Additional info:</legend>
+
+        <label class="input-row">
+          Comments:
+          <textarea name="comments"></textarea>
+        </label>
+
+        <label class="input-row">
+          Would you recommend us?
+
+          <select name="recommend">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <button type="submit">
+        Submit
+      </button>
+    </form>
   </body>
 </html>
