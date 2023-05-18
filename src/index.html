@@ -93,22 +93,27 @@
         <div class="form_group">
           <label for="cat">Do you love cats?</label>
 
-          <label for="yes">Yes</label>
-          <input
-            id="yes"
-            type="radio"
-            name="pet"
-            value="yes"
-          >
-          <label for="no">No</label>
-          <input
-            id="no"
-            type="radio"
-            name="pet"
-            value="No"
-          >
+          <label>
+            <input
+              id="yes"
+              type="radio"
+              name="pet"
+              value="yes"
+            >
+            Yes
+          </label>
+
+          <label>
+            <input
+              id="no"
+              type="radio"
+              name="pet"
+              value="No"
+            >
+            No
+          </label>
         </div>
-        
+
         <div class="form_group">
           <label for="color">What is your favorite color?</label>
           <input
@@ -143,7 +148,8 @@
 
         <div>
           <label for="review">How do you rate our work?</label>
-          <input type="range"
+          <input
+            type="range"
             id="review"
             name="rating"
             step="1"
@@ -160,7 +166,8 @@
         <div class="form-block">
           <label for="comments">Comments:</label>
 
-          <textarea name="write"
+          <textarea
+            name="write"
             id="comments"
             autocomplete="off"
             required
@@ -173,8 +180,8 @@
           id="approve"
           required
         >
-          <option value="answer">Yes</option>
-          <option value="answer">No</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
         </select>
       </fieldset>
 
