@@ -1,1 +1,17 @@
 /* styles go here */
+body {
+  margin: 15px;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+}
+
+fieldset {
+  margin: 20px 0;
+}
+
+#Age {
+  width: 5%;
+}
