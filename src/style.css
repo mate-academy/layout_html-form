@@ -1,12 +1,12 @@
-.duo {
+.form_group {
   margin-bottom: 10px;
 }
 
-fieldset {
+.container {
   margin-bottom: 20px;
 }
 
-.quads {
+.form-block {
   display: block;
   margin-bottom: 10px;
 }
