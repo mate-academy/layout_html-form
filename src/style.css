@@ -1,1 +1,18 @@
-/* styles go here */
+.fieldset {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.form_field {
+  display: block;
+  margin: 0 0 10px;
+}
+
+.form_field:last-child {
+  margin: 0;
+}
+
+.comments {
+  padding: 0;
+  text-align: start;
+}
