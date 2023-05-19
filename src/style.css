@@ -6,3 +6,7 @@ html {
   padding: 10px;
   border: 1px solid black;
 }
+
+.form-field {
+  margin-bottom: 10px;
+}
