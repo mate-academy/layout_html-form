@@ -1,1 +1,8 @@
-/* styles go here */
+html {
+  font-family: sans-serif;
+}
+
+.form {
+  padding: 10px;
+  border: 1px solid black;
+}
