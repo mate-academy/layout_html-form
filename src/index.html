@@ -12,28 +12,58 @@
   </head>
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" class="form">
-      <div class="form-field">
+      <fieldset>
+        <legend>Personal information</legend>
+        <div class="form-field">
         Surname:<input type="text" name="Surname:">
-      </div>
+        </div>
 
-      <div class="form-field">
+        <div class="form-field">
         Name:<input type="text" name="Name:">
-      </div>
+        </div>
 
-      <div class="form-field">
-        How old are You?<input type="number" value="12">
-      </div>
+        <div class="form-field">
+        How old are You?<input type="number" value="12"
+        min="1" max="100"
+        required>
 
-      <div class="form-field">
+        </div>
+
+        <div class="form-field">
         Full date of birth:<input type="date">
-      </div>
+        </div>
 
-      <div class="form-field">
+        <div class="form-field">
         I accept the term of the agreement<input type="checkbox" required>
-      </div>
+        </div>
+      </fieldset>
 
-      <button>Submit</button>
+      <fieldset class="fieldset">
+        <legend>Registration</legend>
+        <div class="form-field">
+          E-mail:<input type="email"placeholder="email@example.com">
+        </div>
+        <div class="form-field">
+          Password:<input type="password" required
+          minlength="5" maxlength="10">
+        </div>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>An interesting fact about you!</legend>
+        <div>
+          Do you love cats?<input type="radio" name="choice"
+          id="yes" value="Yes">
+          <label for="yes">Yes</label>
+          <input type="radio" name="choice"
+          id="no" value="No">
+          <label for="no">No</label>
+        </div>
+
+      </fieldset>
     </form>
+
+    <button class="button">Submit</button>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>

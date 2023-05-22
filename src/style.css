@@ -3,10 +3,17 @@ html {
 }
 
 .form {
-  padding: 10px;
-  border: 1px solid black;
+  margin-top: 20px;
 }
 
 .form-field {
   margin-bottom: 10px;
+}
+
+.fieldset {
+  margin-top: 20px;
+}
+
+.button {
+  margin-top: 20px;
 }
