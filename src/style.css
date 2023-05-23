@@ -1,1 +1,20 @@
-/* styles go here */
+
+label {
+  display: block;
+}
+
+.form-filed {
+  margin-bottom: 10px;
+}
+  
+.form-filed:last-child {
+  margin-bottom: 0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.additional-info {
+  padding-bottom: 10px;
+}
