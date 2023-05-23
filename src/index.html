@@ -12,9 +12,10 @@
   </head>
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" class="form">
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <div>
+
+        <div class="form-field">
           <label for="surname">Surnmae: </label>
 
           <input
@@ -56,13 +57,13 @@
 
           <input
             type="date"
-            name="date-birth"
+            name="dateBirth"
             id="date-birth"
             autocomplete="off"
           >
         </div>
 
-        <div class="form-field">
+        <div>
           <label for="agreement">I accept the term of the agreement </label>
 
           <input
@@ -75,11 +76,10 @@
         </div>
       </fieldset>
 
-
-
       <fieldset class="fieldset">
         <legend>Registration</legend>
-        <div>
+
+        <div class="form-field">
           <label for="email">E-mail: </label>
 
           <input
@@ -92,7 +92,7 @@
           >
         </div>
 
-        <div class="form-field">
+        <div>
           <label for="password">Password: </label>
 
           <input
@@ -107,16 +107,15 @@
         </div>
       </fieldset>
 
-
-
       <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
-        <div>
+
+        <div class="form-field">
           <label for="yes">Do you love cats?</label>
 
           <input
             type="radio"
-            name="choice"
+            name="lovesCats"
             id="yes"
             autocomplete="off"
             value="Yes"
@@ -125,7 +124,7 @@
           <label for="yes">Yes</label>
 
           <input type="radio"
-            name="choice"
+            name="lovesCats"
             id="no"
             autocomplete="off"
             value="No"
@@ -172,7 +171,7 @@
           </select>
         </div>
 
-        <div class="form-field">
+        <div>
           <label for="rating">How do you rate our work?</label>
 
           <input
@@ -185,12 +184,10 @@
         </div>
       </fieldset>
 
-
-
       <fieldset class="fieldset">
         <legend>Additional info:</legend>
 
-        <div>
+        <div class="form-field">
           <label for="comment">Comments: </label>
 
           <textarea
@@ -198,17 +195,18 @@
             id="comment"
             cols="20"
             rows="2"
-            autocomplete="off">
-          </textarea>
+            autocomplete="off"
+         ></textarea>
         </div>
 
-        <div class="form-field">
+        <div>
           <label for="recommend">Would you recommend us?</label>
 
           <select
             name="recommend"
             id="recommend"
-            autocomplete="off">
+            autocomplete="off"
+          >
 
             <option value="Yes">yes</option>
             <option value="no">no</option>
@@ -216,8 +214,7 @@
         </div>
       </fieldset>
 
-
-      <button type="submit"class="button">Submit</button>
+      <button type="submit">Submit</button>
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>

@@ -1,12 +1,8 @@
 
 .form-field {
-  margin: 10px 0 0;
+  margin-bottom: 10px;
 }
 
 .fieldset {
-  margin-top: 20px;
-}
-
-.button {
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
