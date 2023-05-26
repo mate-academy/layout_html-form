@@ -16,7 +16,7 @@
       <fieldset>
         <legend>Personal Information</legend>
         <label class="form_field">
-          Surname :
+          Surname:
           <input
             name="Surname"
             type="text"
@@ -26,8 +26,9 @@
             maxlength="35"
           >
         </label>
+
         <label class="form_field">
-          Name :
+          Name:
           <input
             name="Name"
             type="text"
@@ -38,14 +39,14 @@
           >
         </label>
         <label class="form_field">
-          How old are you?:
+          How old are you?
           <input
-          name="Age"
-          id="Age"
+            name="Age"
+            id="Age"
             type="number"
             required
-            minlength="1"
-            maxlength="100"
+            min="1"
+            max="100"
             value="12"
           >
         </label>
@@ -58,7 +59,7 @@
           >
         </label>
         <label class="form_field">
-          I accept the terms of agreement
+          I accept the term of agreement
           <input
             type="checkbox"
             name="Terms"
@@ -71,7 +72,7 @@
       <fieldset>
         <legend>Registration</legend>
         <label class="form_field">
-          Email:
+          E-mail:
           <input
             name="Email"
             type="email"
@@ -82,7 +83,7 @@
           >
         </label>
         <label class="form_field">
-          Password :
+          Password:
           <input
             name="Password"
             type="password"
@@ -97,19 +98,19 @@
         <legend>An intersting fact about you!</legend>
         <label class="form_field" >
           Dou you love Cats?
+
+          <input
+            name="Answer"
+            type="radio"
+          >
           Yes
           <input
-            name="title"
+            name="Answer"
             type="radio"
-            required
           >
           No
-          <input
-            name="title"
-            type="radio"
-            required
-          >
         </label>
+
         <label class="form_field">
           What is your favourite Colour?
           <input
@@ -126,25 +127,27 @@
             required
           >
         </label>
+
         <label class="form_field">
           What are your favourite brand of cars?
-          <select>
+          <select multiple name="selection">
             <option value="1" disabled>Choose</option>
-            <option value="2">Bmw</option>
-            <option value="3">Audi</option>
-            <option value="4">Lada</option>
+            <option value="2" multiple>Bmw</option>
+            <option value="3" multiple>Audi</option>
+            <option value="4" multiple>Lada</option>
           </select>
         </label>
+
         <label class="form_field">
           How do you rate our work?
-          <input type="range">
+          <input type="range" name="rating">
         </label>
       </fieldset>
 
       <fieldset>
         <legend>Additional info:</legend>
         <label class="form_field">
-          Comment:
+          Comments:
           <textarea
             name="comment"
             rows="1"
@@ -162,10 +165,13 @@
         </label>
       </fieldset>
 
-      <button class="button" type="submit">
+      <button
+        class="button"
+        type="submit"
+        name="submit"
+      >
         Submit
       </button>
-
     </form>
   </body>
 </html>

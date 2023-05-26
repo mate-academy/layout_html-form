@@ -1,11 +1,11 @@
 /* styles go here */
 body {
-  margin: 15px;
+  margin: 10px;
 }
 
-label {
+.form_field {
   display: block;
-  margin: 5px 0;
+  margin: 6px;
 }
 
 fieldset {
@@ -13,5 +13,5 @@ fieldset {
 }
 
 #Age {
-  width: 5%;
+  width: 7%;
 }
