@@ -1,1 +1,12 @@
 /* styles go here */
+.field {
+  display: block;
+}
+
+.field:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.frame:not(:last-child) {
+  margin-bottom: 20px;
+}
