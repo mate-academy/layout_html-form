@@ -8,6 +8,10 @@
   margin: 10px;
 }
 
+.age textarea {
+  width: 40px;
+}
+
 .personal-information p {
   margin-top: -0.5em;
   margin-left: 10px;
