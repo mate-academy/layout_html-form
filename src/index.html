@@ -4,7 +4,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
@@ -12,21 +13,19 @@
 
   <body>
 
-    <h1>HTML Form</h1>
-
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
     method="post" name="personal-information">
 
-      <div class="field personal-information">
+      <fieldset class="personal-information">
         <p>Personal information</p>
-
         <div class="input surname">
           <label for="surname">Surname:
             <input
             type="text"
             autocomplete="off"
             id="surname"
-            name="surname">
+            name="surname"
+            >
           </label>
         </div>
 
@@ -36,7 +35,8 @@
             type="text"
             autocomplete="off"
             id="name"
-            name="name">
+            name="name"
+            >
           </label>
         </div>
 
@@ -48,7 +48,8 @@
             min="1"
             max="100"
             value="12"
-            name="age">
+            name="age"
+            >
           </label>
         </div>
 
@@ -57,7 +58,8 @@
             <input
             type="date"
             id="date"
-            name="date">
+            name="date"
+            >
           </label>
         </div>
 
@@ -67,21 +69,22 @@
             type="checkbox"
             name="agreement"
             id="agreement"
-            required>
+            required
+            >
           </label>
         </div>
-      </div>
+      </fieldset>
 
-      <div class="field registration">
+      <fieldset class="registration">
         <p>Registration</p>
-
         <div class="input email">
           <label for="email">E-mail:
             <input
             type="email"
             name="email"
             id="email"
-            placeholder="email@example.com">
+            placeholder="email@example.com"
+            >
           </label>
         </div>
 
@@ -91,26 +94,29 @@
             type="password"
             name="password"
             id="password"
-            minlength="6">
+            minlength="6"
+            maxlength="15"
+            >
           </label>
         </div>
 
-      </div>
+      </fieldset>
 
-      <div class="field hobbies">
+      <fieldset class="hobby">
         <p>An interesting fact about you!</p>
-
         <div class="input cats">
           <label for="cats">Do you love cats?
             <input
             type="radio"
             name="cats"
-            id="cats yes">Yes
+            id="cats yes"
+            >Yes
 
             <input
             type="radio"
             name="cats"
-            id="cats no">No
+            id="cats no"
+            >No
           </label>
         </div>
 
@@ -119,7 +125,8 @@
             <input
             type="color"
             name="color"
-            id="color">
+            id="color"
+            >
           </label>
         </div>
 
@@ -128,7 +135,8 @@
             <input
             type="time"
             name="sleep"
-            id="sleep">
+            id="sleep"
+            >
           </label>
         </div>
 
@@ -150,15 +158,15 @@
             <input
             type="range"
             name="rating"
-            id="rating">
+            id="rating"
+            >
           </label>
         </div>
 
-      </div>
+      </fieldset>
 
-      <div class="field info">
+      <fieldset class="info">
         <p>Additional info:</p>
-
         <div class="input comments">
           <label for="comments">Comments:
             <textarea
@@ -181,12 +189,17 @@
             </select>
           </label>
         </div>
-      </div>
+      </fieldset>
 
       <div class="input submit">
-        <input
-        type="submit"
-        value="Submit">
+        <label for="submit">
+          <input
+          id="submit"
+          type="submit"
+          value="Submit"
+          >
+        </label>
+
       </div>
 
     </form>
