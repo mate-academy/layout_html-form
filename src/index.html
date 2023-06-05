@@ -1,20 +1,53 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+
   <body>
     <h1>HTML Form</h1>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
     method="post" name="test-form">
-      <div class="personal-information">Personal information</div>
+      <div class="personal-information">Personal information
+        <div>Surname:
+          <label for="Surname">
+            <input type="text">
+          </label>
+        </div>
+
+        <div>Name:
+          <label for="Name">
+            <input type="text">
+          </label>
+        </div>
+
+        <div>How old are You?
+          <label for="Age">
+            <input type="age">
+          </label>
+        </div>
+
+        <div>Full date of birth:
+          <label for="Date">
+            <input type="date">
+          </label>
+        </div>
+
+        <div>
+          <label for="Agreement">
+            <input type="checkbox"
+            name="Agreement"
+            id="Agreement">
+          </label>
+        </div>
+      </div>
+
       <div class="registration">Registration</div>
       <div class="hobbies">An interesting fact about you!</div>
       <div class="info">Additional info:</div>
@@ -22,4 +55,5 @@
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
+
 </html>
