@@ -1,41 +1,8 @@
 /* styles go here */
-.field {
-  border: 2px solid black;
-  margin: 20px;
+fieldset {
+  margin-bottom: 20px;
 }
 
-.input {
-  margin: 10px;
-}
-
-.age textarea {
-  width: 40px;
-}
-
-.personal-information p {
-  margin-top: -0.5em;
-  margin-left: 10px;
-  background-color: white;
-  width: 140px;
-}
-
-.registration p {
-  margin-top: -0.5em;
-  margin-left: 10px;
-  background-color: white;
-  width: 80px;
-}
-
-.hobbies p {
-  margin-top: -0.5em;
-  margin-left: 10px;
-  background-color: white;
-  width: 200px;
-}
-
-.info p {
-  margin-top: -0.5em;
-  margin-left: 10px;
-  background-color: white;
-  width: 110px;
+input {
+  margin-bottom: 10px;
 }
