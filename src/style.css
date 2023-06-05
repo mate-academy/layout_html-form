@@ -1,5 +1,5 @@
 /* styles go here */
-.field {
+fieldset {
   border: 2px solid black;
   margin: 20px;
 }
@@ -7,3 +7,10 @@
 .input {
   margin: 10px;
 }
+
+/* fieldset p {
+  margin-top: -0.8em;
+  margin-left: 10px;
+  background-color: white;
+  width: 150px;
+} */
