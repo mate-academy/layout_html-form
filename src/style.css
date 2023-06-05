@@ -1,1 +1,8 @@
 /* styles go here */
+.personal-information {
+  border: 2px solid black;
+}
+
+.input {
+  margin: 5px;
+}

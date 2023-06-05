@@ -11,39 +11,49 @@
   </head>
 
   <body>
+
     <h1>HTML Form</h1>
+
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-    method="post" name="test-form">
+    method="post" name="personal-information">
+
       <div class="personal-information">Personal information
-        <div>Surname:
-          <label for="Surname">
-            <input type="text">
+        <div class="input surname">
+          <label for="Surname">Surname:
+            <input type="text"
+            id="Surname">
           </label>
         </div>
 
-        <div>Name:
-          <label for="Name">
-            <input type="text">
+        <div class="input name">
+          <label for="Name">Name:
+            <input type="text"
+            id="Name">
           </label>
         </div>
 
-        <div>How old are You?
-          <label for="Age">
-            <input type="age">
+        <div class="input age">
+          <label for="Age">How old are You?
+            <input type="age"
+            id="Age"
+            maxlength="2"
+            value="12">
           </label>
         </div>
 
-        <div>Full date of birth:
-          <label for="Date">
-            <input type="date">
+        <div class="input date">
+          <label for="Date">Full date of birth:
+            <input type="date"
+            id="Date">
           </label>
         </div>
 
-        <div>
-          <label for="Agreement">
+        <div class="input agreement">
+          <label for="Agreement">I accept the term of agreement:
             <input type="checkbox"
             name="Agreement"
-            id="Agreement">
+            id="Agreement"
+            required>
           </label>
         </div>
       </div>
