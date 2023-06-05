@@ -17,50 +17,76 @@
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
     method="post" name="personal-information">
 
-      <div class="personal-information">Personal information
+      <div class="field personal-information">Personal information
         <div class="input surname">
-          <label for="Surname">Surname:
+          <label for="surname">Surname:
             <input type="text"
-            id="Surname">
+            id="surname"
+            name="surname">
           </label>
         </div>
 
         <div class="input name">
-          <label for="Name">Name:
+          <label for="name">Name:
             <input type="text"
-            id="Name">
+            id="name"
+            name="name">
           </label>
         </div>
 
         <div class="input age">
-          <label for="Age">How old are You?
-            <input type="age"
-            id="Age"
+          <label for="age">How old are You?
+            <input type="number"
+            id="age"
             maxlength="2"
-            value="12">
+            value="12"
+            name="age">
           </label>
         </div>
 
         <div class="input date">
-          <label for="Date">Full date of birth:
+          <label for="date">Full date of birth:
             <input type="date"
-            id="Date">
+            id="date"
+            name="date">
           </label>
         </div>
 
         <div class="input agreement">
-          <label for="Agreement">I accept the term of agreement:
+          <label for="agreement">I accept the term of agreement:
             <input type="checkbox"
-            name="Agreement"
-            id="Agreement"
+            name="agreement"
+            id="agreement"
             required>
           </label>
         </div>
       </div>
 
-      <div class="registration">Registration</div>
-      <div class="hobbies">An interesting fact about you!</div>
-      <div class="info">Additional info:</div>
+      <div class="field registration">Registration
+
+        <div class="input email">
+          <label for="email">E-mail:
+            <input type="email"
+            name="email"
+            id="email"
+            placeholder="email@example.com">
+          </label>
+        </div>
+
+        <div class="input password">
+          <label for="password">Password:
+            <input type="password"
+            name="password"
+            id="password">
+          </label>
+        </div>
+
+      </div>
+
+      <div class="field hobbies">An interesting fact about you!
+
+      </div>
+      <div class="field info">Additional info:</div>
 
     </form>
     <script type="text/javascript" src="./main.js"></script>
