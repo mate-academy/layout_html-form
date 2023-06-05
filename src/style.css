@@ -1,6 +1,6 @@
 /* styles go here */
 fieldset {
-  border: 2px solid black;
+  border: 1px solid black;
   margin: 20px;
 }
 
@@ -8,9 +8,30 @@ fieldset {
   margin: 10px;
 }
 
-/* fieldset p {
+.personal-information p {
   margin-top: -0.8em;
   margin-left: 10px;
   background-color: white;
   width: 150px;
-} */
+}
+
+.registration p {
+  margin-top: -0.8em;
+  margin-left: 10px;
+  background-color: white;
+  width: 80px;
+}
+
+.hobby p {
+  margin-top: -0.8em;
+  margin-left: 10px;
+  background-color: white;
+  width: 200px;
+}
+
+.info p {
+  margin-top: -0.8em;
+  margin-left: 10px;
+  background-color: white;
+  width: 110px;
+}
