@@ -1,11 +1,13 @@
 /* styles go here */
 fieldset {
   border: 1px solid black;
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .input {
-  margin: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .personal-information p {
