@@ -22,6 +22,7 @@
         <div class="form__field">
           <label>
             Surname:
+
             <input
               type="text"
               autocomplete="off"
@@ -32,9 +33,11 @@
         <div class="form__field">
           <label>
             Name:
+
             <input
               type="text"
               autocomplete="off"
+              required
             >
           </label>
         </div>
@@ -42,10 +45,12 @@
         <div class="form__field">
           <label>
             How old are You?
+
             <input
               type="number"
               name="number"
-              min="1" max="100"
+              min="1"
+              max="100"
               value="12"
             >
           </label>
@@ -54,6 +59,7 @@
         <div class="form__field">
           <label>
             Full date of birth:
+
             <input
               type="date"
               name="date"
@@ -64,6 +70,7 @@
         <div>
           <label>
             I accept the term of the agreement
+
             <input
               type="checkbox"
               name="agreement"
@@ -78,7 +85,8 @@
 
         <div class="form__field">
           <label>
-            E-mail:
+            <span>E-mail:</span>
+
             <input
               type="email"
               name="email"
@@ -89,12 +97,14 @@
 
         <div>
           <label>
-            Password:
+            <span>Password:</span>
+
             <input
               type="password"
               name="password"
               autocomplete="off"
-              required minlength="5"
+              required
+              minlength="5"
               maxlength="15"
             >
           </label>
@@ -105,13 +115,15 @@
         <legend>An interesting fact about you!</legend>
 
         <div class="form__field">
-          Do you love cats?
+          <span>Do you love cats?</span>
+
           <input
             type="radio"
             id="love"
             name="cats"
             value="yes"
           >
+
           <label for="love">Yes</label>
 
           <input
@@ -120,12 +132,14 @@
             name="cats"
             value="no"
           >
+
           <label for="hate">No</label>
         </div>
 
         <div class="form__field">
           <label>
             What is your favorite color?
+
             <input
               type="color"
               name="color"
@@ -136,6 +150,7 @@
         <div class="form__field">
           <label>
             What time do you go to bed?
+
             <input
               type="time"
               name="time"
@@ -144,28 +159,29 @@
         </div>
 
         <div class="form__field">
-          <label for="brandPicker">What are your favorite brand of cars?</label>
+          <label>
+            What are your favorite brand of cars?
 
-          <select id="brandPicker" name="cars"
-          required multiple>
-            <option value="bmw">BMW</option>
-
-            <option value="audi">Audi</option>
-
-            <option value="lada">Lada</option>
-
-            <option value=" " disabled> </option>
-          </select>
+            <select id="brandPicker" name="cars"
+            required multiple>
+              <option value="bmw">BMW</option>
+              <option value="audi">Audi</option>
+              <option value="lada">Lada</option>
+            </select>
+          </label>
         </div>
 
         <div>
-          How do you rate our work?
-          <input
-            type="range"
-            name="range"
-            min="1"
-            max="100"
-          >
+          <label>
+            How do you rate our work?
+
+            <input
+              type="range"
+              name="range"
+              min="1"
+              max="100"
+            >
+          </label>
         </div>
       </fieldset>
 
@@ -175,29 +191,23 @@
         <div class="form__field">
           <label>
             Comments:
+
             <textarea id="comments" name="comments"></textarea>
           </label>
         </div>
 
         <div>
-          Would you recommend us?
+          <span>Would you recommend us?</span>
+
           <select name="recommend">
-            <option value="recommend"
-              disabled>
-            </option>
-
-            <option value="yes"
-            selected>yes
-            </option>
-
+            <option value="yes" selected>yes</option>
             <option value="no">no</option>
           </select>
         </div>
       </fieldset>
 
-      <div class="form-submit">
-        <button type="submit">Submit</button>
-      </div>
+      <button type="submit">Submit</button>
+
     </form>
   </body>
 </html>
