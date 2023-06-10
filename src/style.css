@@ -1,17 +1,74 @@
 /* styles go here */
-body {
-  margin: 10px;
-}
-
 .form_field {
   display: block;
-  margin: 6px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-fieldset {
-  margin: 20px 0;
+.fieldset-1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-#Age {
+.fieldset-2 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.fieldset-3 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.fieldset-4 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+#F1 {
+  margin-top: 0;
+}
+
+#F4 {
+  margin-bottom: 0;
+}
+
+#L1 {
+  margin-top: 0;
+}
+
+#L2 {
+  margin-bottom: 0;
+}
+
+#L3 {
+  margin-top: 0;
+}
+
+#L4 {
+  margin-bottom: 0;
+}
+
+#L5 {
+  margin-top: 0;
+}
+
+#L6 {
+  margin-bottom: 0;
+}
+
+#L7 {
+  margin-top: 0;
+}
+
+#L8 {
+  margin-bottom: 0;
+}
+
+/* #Age {
   width: 7%;
-}
+} */
+
+/* #top {
+  margin-top: 5px;
+} */
