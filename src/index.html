@@ -19,53 +19,47 @@
       <fieldset class="form__group">
         <legend>Personal information</legend>
 
-        <div class="form__field">
-          <label>
-            Surname:
+        <label class="form__field">
+          Surname:
 
-            <input
-              type="text"
-              autocomplete="off"
-            >
-          </label>
-        </div>
+          <input
+            type="text"
+            name="surname"
+            autocomplete="off"
+          >
+        </label>
 
-        <div class="form__field">
-          <label>
-            Name:
+        <label class="form__field">
+          Name:
 
-            <input
-              type="text"
-              autocomplete="off"
-              required
-            >
-          </label>
-        </div>
+          <input
+            type="text"
+            name="name"
+            autocomplete="off"
+            required
+          >
+        </label>
 
-        <div class="form__field">
-          <label>
-            How old are You?
+        <label class="form__field">
+          How old are You?
 
-            <input
-              type="number"
-              name="number"
-              min="1"
-              max="100"
-              value="12"
-            >
-          </label>
-        </div>
+          <input
+            type="number"
+            name="age"
+            min="1"
+            max="100"
+            value="12"
+          >
+        </label>
 
-        <div class="form__field">
-          <label>
-            Full date of birth:
+        <label class="form__field">
+          Full date of birth:
 
-            <input
-              type="date"
-              name="date"
-            >
-          </label>
-        </div>
+          <input
+            type="date"
+            name="birthdate"
+          >
+        </label>
 
         <div>
           <label>
@@ -83,17 +77,15 @@
       <fieldset class="form__group">
         <legend>Registration</legend>
 
-        <div class="form__field">
-          <label>
-            <span>E-mail:</span>
+        <label class="form__field">
+          <span>E-mail:</span>
 
-            <input
-              type="email"
-              name="email"
-              placeholder="email@example.com"
-            >
-          </label>
-        </div>
+          <input
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+          >
+        </label>
 
         <div>
           <label>
@@ -136,40 +128,34 @@
           <label for="hate">No</label>
         </div>
 
-        <div class="form__field">
-          <label>
-            What is your favorite color?
+        <label class="form__field">
+          What is your favorite color?
 
-            <input
-              type="color"
-              name="color"
-            >
-          </label>
-        </div>
+          <input
+            type="color"
+            name="color"
+          >
+        </label>
 
-        <div class="form__field">
-          <label>
-            What time do you go to bed?
+        <label class="form__field">
+          What time do you go to bed?
 
-            <input
-              type="time"
-              name="time"
-            >
-          </label>
-        </div>
+          <input
+            type="time"
+            name="time"
+          >
+        </label>
 
-        <div class="form__field">
-          <label>
-            What are your favorite brand of cars?
+        <label class="form__field">
+          What are your favorite brand of cars?
 
-            <select id="brandPicker" name="cars"
-            required multiple>
-              <option value="bmw">BMW</option>
-              <option value="audi">Audi</option>
-              <option value="lada">Lada</option>
-            </select>
-          </label>
-        </div>
+          <select id="brandPicker" name="cars"
+          required multiple>
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </label>
 
         <div>
           <label>
@@ -188,13 +174,11 @@
       <fieldset class="form__group">
         <legend>Additional info:</legend>
 
-        <div class="form__field">
-          <label>
-            Comments:
+        <label class="form__field">
+          Comments:
 
-            <textarea id="comments" name="comments"></textarea>
-          </label>
-        </div>
+          <textarea id="comments" name="comments"></textarea>
+        </label>
 
         <div>
           <span>Would you recommend us?</span>
