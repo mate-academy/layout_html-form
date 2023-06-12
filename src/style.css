@@ -1,1 +1,22 @@
 /* styles go here */
+.title {
+  padding: 10px 0 ;
+}
+
+.button {
+  margin: 20px 0 ;
+  background-color: #fff ;
+  border-radius: 5px ;
+}
+
+fieldset {
+  margin: 20px 0 ;
+}
+
+.color {
+  background-color: #fff ;
+}
+
+.form1 {
+  margin: 0 10px ;
+} 
