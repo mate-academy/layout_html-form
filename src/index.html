@@ -10,8 +10,185 @@
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post"
+    class="form">
+      <fieldset class="form__group">
+        <legend>Personal information</legend>
+
+        <label class="form__field">
+          Surname:
+
+          <input
+            type="text"
+            name="surname"
+            autocomplete="off"
+          >
+        </label>
+
+        <label class="form__field">
+          Name:
+
+          <input
+            type="text"
+            name="name"
+            autocomplete="off"
+            required
+          >
+        </label>
+
+        <label class="form__field">
+          How old are You?
+
+          <input
+            type="number"
+            name="age"
+            min="1"
+            max="100"
+            value="12"
+          >
+        </label>
+
+        <label class="form__field">
+          Full date of birth:
+
+          <input
+            type="date"
+            name="birthdate"
+          >
+        </label>
+
+        <label>
+          I accept the term of the agreement
+
+          <input
+            type="checkbox"
+            name="agreement"
+            required
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="form__group">
+        <legend>Registration</legend>
+
+        <label class="form__field">
+          <span>E-mail:</span>
+
+          <input
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+          >
+        </label>
+
+        <label>
+          <span>Password:</span>
+
+          <input
+            type="password"
+            name="password"
+            autocomplete="off"
+            required
+            minlength="5"
+            maxlength="15"
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="form__group">
+        <legend>An interesting fact about you!</legend>
+
+        <div class="form__field">
+          <span>Do you love cats?</span>
+
+          <input
+            type="radio"
+            id="love"
+            name="cats"
+            value="yes"
+          >
+
+          <label for="love">Yes</label>
+
+          <input
+            type="radio"
+            id="hate"
+            name="cats"
+            value="no"
+          >
+
+          <label for="hate">No</label>
+        </div>
+
+        <label class="form__field">
+          What is your favorite color?
+
+          <input
+            type="color"
+            name="color"
+          >
+        </label>
+
+        <label class="form__field">
+          What time do you go to bed?
+
+          <input
+            type="time"
+            name="time"
+          >
+        </label>
+
+        <label class="form__field">
+          What are your favorite brand of cars?
+
+          <select
+            id="brandPicker"
+            name="cars"
+            required
+            multiple
+          >
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </label>
+
+        <label>
+          How do you rate our work?
+
+          <input
+            type="range"
+            name="range"
+            min="1"
+            max="100"
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="form__group">
+        <legend>Additional info:</legend>
+
+        <label class="form__field">
+          Comments:
+
+          <textarea id="comments" name="comments"></textarea>
+        </label>
+
+        <label>
+          <span>Would you recommend us?</span>
+
+          <select name="recommend">
+            <option value="yes" selected>yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>

@@ -1,1 +1,10 @@
-/* styles go here */
+
+.form__group {
+  margin-bottom: 20px;
+}
+
+.form__field {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
