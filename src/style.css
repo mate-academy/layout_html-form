@@ -1,1 +1,15 @@
-/* styles go here */
+fieldset {
+  margin-bottom: 20px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+textarea {
+  margin-bottom: 10px;
+}
+
+label {
+  margin-top: 10px;
+}
