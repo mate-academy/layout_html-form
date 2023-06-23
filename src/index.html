@@ -2,18 +2,13 @@
 <html lang="en">
 
   <head>
-    <meta
-      charset="UTF-8"
-    >
+    <meta charset="UTF-8">
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0,
-      maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta
-      http-equiv="X-UA-Compatible"
-      content="ie=edge"
-    >
+      http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
@@ -126,20 +121,23 @@
       <fieldset class="form-fieldset">
         <legend>An interesting fact about you!</legend>
         <div class="form-field">
-          <label for="cats">
             Do you love cats?
+          <label for="cats-yes">
 
             <input
               type="radio"
-              name="cats"
-              id="catsYes"
+              name="cats-yes"
+              id="cats-yes"
             >
             Yes
 
+          </label>
+
+          <label for="cats-no">
             <input
               type="radio"
-              name="cats"
-              id="catsNo"
+              name="cats-no"
+              id="cats-no"
             >
             No
 
@@ -176,7 +174,8 @@
             <select
               name="cars"
               id="cars"
-              multiple>
+              multiple
+            >
               <option value="bmw">BMW</option>
               <option value="audi">Audi</option>
               <option value="lada">Lada</option>
@@ -236,7 +235,6 @@
             type="submit"
             value="Submit"
           >
-
         </label>
       </div>
     </form>
