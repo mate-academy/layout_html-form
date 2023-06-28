@@ -1,15 +1,8 @@
-fieldset {
+.field_wrapper {
+  margin-bottom: 10px;
+}
+
+.box_style {
+  display: block;
   margin-bottom: 20px;
-}
-
-input {
-  margin-bottom: 10px;
-}
-
-textarea {
-  margin-bottom: 10px;
-}
-
-label {
-  margin-top: 10px;
 }

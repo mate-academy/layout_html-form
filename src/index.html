@@ -13,80 +13,177 @@
       method="get"
       name="form"
     >
-      <fieldset>
+      <fieldset class="box_style">
         <legend>Personal information</legend>
-        Surname:
-        <input type="text" name="surname"
-        value=" " minlength="3"
-        maxlength="100" autocomplete="off"
-        ><br>
-        Name:
-        <input type="text" name="name"
-        value=" " minlength="3"
-        maxlength="100" autocomplete="off"
-        ><br>
-        How old are You?
-        <input type="number" name="age"
-        value="12"
-        min="1" max="100"
-        ><br>
-        Full date of birth:
-        <input type="date" name="date"
-        value=" "
-        ><br>
-        I accept the term of the agreement
-        <input type="checkbox"
-        value="check" name="check"
+
+        <div class="field_wrapper">
+          <label for="surname">Surname: </label>
+
+          <input
+            type="text"
+            name="surname"
+            id="surname"
+            value=" "
+            minlength="3"
+            maxlength="100"
+            autocomplete="off"
+          >
+        </div>
+
+        <div class="field_wrapper">
+          <label for="name">Name: </label>
+
+          <input
+            type="text"
+            name="name"
+            id="name"
+            value=" "
+            minlength="3"
+            maxlength="100"
+            autocomplete="off"
+          >
+        </div>
+
+        <div class="field_wrapper">
+          <label for="age">How old are You? </label>
+
+          <input
+            type="number"
+            name="age"
+            id="age"
+            value="12"
+            min="1"
+            max="100"
+          >
+        </div>
+
+        <div class="field_wrapper">
+          <label for="date">Full date of birth: </label>
+
+          <input
+            type="date"
+            name="date"
+            id="date"
+            value=" "
+          >
+        </div>
+
+        <label for="check">I accept the term of the agreement </label>
+
+        <input
+          type="checkbox"
+          value="check"
+          name="check"
+          id="check"
         >
       </fieldset>
-      <fieldset>
+
+      <fieldset class="box_style">
         <legend>Registration</legend>
-        E-mail:
-        <input type="email" name="email"
-        value=" " placeholder="email@example.com"
-        multiple
-        ><br>
-        Password:
-        <input name="user-password" type="password"
-        required autocomplete="off"
+
+        <div class="field_wrapper">
+          <label for="email">E-mail: </label>
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            value=" "
+            placeholder="email@example.com"
+            multiple
+          >
+        </div>
+
+        <label for="user-password">Password: </label>
+
+        <input
+          name="user-password"
+          id="user-password"
+          type="password"
+          required autocomplete="off"
         >
       </fieldset>
-      <fieldset>
+
+      <fieldset class="box_style">
         <legend>An interesting fact about you!</legend>
-        Do you love cats?
-        <input type="radio" id="yes"
-        name="cat" value="Y"
+
+        <div class="field_wrapper">
+          <label for="cat">Do you love cats? </label>
+
+          <input
+            type="radio"
+            id="yes"
+            name="cat"
+            value="Y"
+          >
+          <label for="yes">Yes</label>
+
+          <input
+            type="radio"
+            id="no"
+            name="cat"
+            value="N"
+          >
+          <label for="no">No</label>
+        </div>
+
+        <div class="field_wrapper">
+          <label for="color">What is your favorite color? </label>
+
+          <input
+            type="color"
+            name="color"
+            value=" "
+          >
+        </div>
+
+        <div class="field_wrapper">
+          <label for="time">What time do you go to bed? </label>
+
+          <input
+            type="time"
+            name="time"
+            id="time"
+            step="2"
+            value=" "
+          >
+        </div>
+
+        <div class="field_wrapper">
+          <label for="cars">What are your favorite brand of cars? </label>
+
+          <textarea
+            name="cars"
+            id="cars"
+            rows="4"
+            cols="2"
+          >BMW Audi Lada
+          </textarea>
+        </div>
+
+        <label for="range">How do you rate our work? </label>
+
+        <input
+          type="range"
+          name="range"
+          value="0"
         >
-        <label for="yes">Yes</label>
-        <input type="radio" id="no"
-        name="cat" value="N"
-        >
-        <label for="no">No</label><br>
-        What is your favourite color?
-        <input type="color" name="color"
-        value=" "
-        ><br>
-        What time do you go to bed?
-        <input type="time" name="time"
-        value=" "
-        ><br>
-        What are your favorite brand of cars?
-        <textarea name="cars" rows="4"
-        cols="3"
-        >BMW Audi Lada
-        </textarea><br>
-        How do you rate our work?
-        <input type="range" name="range"
-        value=" "
-        ><br>
       </fieldset>
-      <fieldset>
+
+      <fieldset class="box_style">
         <legend>Additional info:</legend>
-        Comments:
-        <textarea name="comment" rows="2"
-        cols="20"
-        >
-        </textarea><br>
+
+        <div class="field_wrapper">
+          <label for="comment">Comments: </label>
+
+          <textarea
+            name="comment"
+            rows="2"
+            cols="20"
+          >
+          </textarea>
+        </div>
+
         <label for="reco">Would you recommend us?</label>
         <select id="reco" name="reco">
           <option value="yes" selected>yes</option>
