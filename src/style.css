@@ -1,1 +1,20 @@
 /* styles go here */
+.field {
+  margin: 10px 0;
+}
+
+.field:first-of-type {
+  margin-top: 0;
+}
+
+.field:last-child {
+  margin-bottom: 0;
+}
+
+.fset {
+  margin-bottom: 20px;
+}
+
+.but {
+  margin-bottom: 20px;
+}
