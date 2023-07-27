@@ -13,194 +13,180 @@
   <body>
     <script type="text/javascript" src="./main.js"></script>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <fieldset class="PersonalInformation" id="PersonalInformation">
+      <fieldset class="personalInformation" id="firstSection">
         <legend>Personal information</legend>
-        <label class="form_field" id="L1">
-          <div>
-            Surname:
-            <input
-              name="Surname"
-              type="text"
-              autocomplete="off"
-              required
-              minlength="5"
-              maxlength="35"
-            >
-          </div>
+        <label class="form_field" id="fristInput">
+        Surname:
+          <input
+            name="Surname"
+            type="text"
+            autocomplete="off"
+            required
+            minlength="5"
+            maxlength="35"
+          >
         </label>
 
         <label class="form_field">
-          <div>
-            Name:
-            <input
-              name="Name"
-              type="text"
-              autocomplete="off"
-              required
-              minlength="5"
-              maxlength="25"
-            >
-          </div>
+          Name:
+          <input
+          name="Name"
+          type="text"
+          autocomplete="off"
+          required
+          minlength="5"
+          maxlength="25"
+          >
         </label>
 
         <label class="form_field">
-          <div>
             How old are You?
-            <input
-              name="Age"
-              id="Age"
-              type="number"
-              required
-              min="1"
-              max="100"
-              value="12"
-            >
-          </div>
+          <input
+            name="Age"
+            id="Age"
+            type="number"
+            required
+            min="1"
+            max="100"
+            value="12"
+          >
         </label>
 
         <label class="form_field">
-          <div>
             Full date of birth:
-            <input
-              name="submissionDate"
-              type="date"
-              required
-            >
-          </div>
+          <input
+          name="submissionDate"
+          type="date"
+          required
+          >
         </label>
 
-        <label class="form_field" id="L2">
-          <div>
+        <label class="form_field" id="fifthInput">
             I accept the term of the agreement
-            <input
-              type="checkbox"
-              name="Terms"
-              id="terms"
-              required
-            >
-          </div>
+          <input
+            type="checkbox"
+            name="Terms"
+            id="terms"
+            required
+          >
         </label>
       </fieldset>
 
 
-      <fieldset class="Registration" id="Registration">
+      <fieldset class="registration" id="secondSection">
         <legend>Registration</legend>
-        <label class="form_field" id="L3">
-          <div>
-            E-mail:
-            <input
-              name="Email"
-              type="email"
-              required
-              minlength="10"
-              maxlength="35"
-              placeholder="email@example.com"
-            >
-          </div>
+        <label class="form_field" id="sixthInput">
+          E-mail:
+          <input
+           name="Email"
+           type="email"
+           required
+           minlength="10"
+           maxlength="35"
+           placeholder="email@example.com"
+          >
         </label>
 
-        <label class="form_field" id="L4">
-          <div>
-            Password:
-            <input
-              name="Password"
-              type="password"
-              required
-              minlength="5"
-              maxlength="25"
-            >
-          </div>
+        <label class="form_field" id="seventhInput">
+          Password:
+          <input
+          name="Password"
+          type="password"
+          required
+          minlength="5"
+          maxlength="25"
+          >
         </label>
       </fieldset>
 
-      <fieldset class="AIFAY" id="AIFAY">
+      <fieldset class="aifay" id="thirdSection">
         <legend>An interesting fact about you!</legend>
-        <label class="form_field" id="L5">
-          <div>
-            Do you love Cats?
-            <input
-              name="Answer"
-              type="radio"
-            >
-            Yes
-            <input
-              name="Answer"
-              type="radio"
-            >
-            No
-          </div>
+        Do you love cats?
+        <label
+        for="Yes"
+        class="form_field"
+        id="eighthInput-1"
+        >
+          Yes
+          <input
+            name="Answer"
+            type="radio"
+            value="Answer"
+            id="Yes"
+          >
+        </label>
+
+        <label
+        for="No"
+        class="form_field"
+        id="eighthInput-2"
+        >
+          No
+          <input
+            name="Answer"
+            type="radio"
+            value="Answer"
+            id="No"
+          >
         </label>
 
         <label class="form_field">
-          <div>
-            What is your favorite Colour?
-            <input
-              name="color"
-              type="color"
-              required
-            >
-          </div>
-
+          What is your favorite color?
+          <input
+            name="color"
+            type="color"
+            required
+          >
         </label>
 
         <label class="form_field">
-          <div>
             What time do you go to bed?
-            <input
-              name="time"
-              type="time"
-              required
-            >
-          </div>
+          <input
+            name="time"
+            type="time"
+            required
+            step="1"
+          >
         </label>
 
         <label class="form_field">
-          <div>
-            What are your favorite brand of cars?
-            <select multiple name="selection">
-              <!-- <option value="Choose" disabled>Choose</option> -->
-              <option value="Bmw" multiple>Bmw</option>
-              <option value="Audi" multiple>Audi</option>
-              <option value="Lada" multiple>Lada</option>
-            </select>
-          </div>
+          What are your favorite brand of cars?
+          <select multiple name="selection">
+            <option value="Bmw" multiple>BMW</option>
+            <option value="Audi" multiple>Audi</option>
+            <option value="Lada" multiple>Lada</option>
+          </select>
         </label>
 
-        <label class="form_field" id="L6">
-          <div>
+        <label class="form_field" id="twelfthInput">
             How do you rate our work?
-            <input
-              type="range"
-              name="rating"
-              value="0"
-            >
-          </div>
+          <input
+            type="range"
+            name="rating"
+            value="0"
+          >
         </label>
       </fieldset>
 
-      <fieldset class="AdditionalInformation" id="AdditionalInformation">
+      <fieldset class="additionalInformation" id="fourthSection">
         <legend>Additional info:</legend>
-        <label class="form_field" id="L7">
-          <div>
-            Comments:
-            <textarea
-              name="comment"
-              rows="2"
-              cols="20"
-              autocomplete="off"
-           ></textarea>
-          </div>
+        <label class="form_field" id="thirteenthInput">
+          Comments:
+          <textarea
+            name="comment"
+            rows="2"
+            cols="20"
+            autocomplete="off"
+         ></textarea>
         </label>
 
-        <label class="form_field" id="L8">
-          <div>
-            Would you reccomend us?
-            <select name="select">
-              <option value="select" disabled>Please select an option</option>
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
-          </div>
+        <label class="form_field" id="fourteenthInput">
+          Would you reccomend us?
+          <select name="select">
+            <option value="select" disabled>Please select an option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
         </label>
       </fieldset>
 

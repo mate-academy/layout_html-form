@@ -1,7 +1,6 @@
 /* styles go here */
 .form_field {
   display: block;
-  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -10,57 +9,63 @@
   margin-bottom: 15px;
 }
 
-.Registration {
+.registration {
   margin-top: 20px;
   margin-bottom: 15px;
 }
 
-.AIFAY {
+.aifay {
   margin-top: 20px;
   margin-bottom: 15px;
 }
 
-.AdditionalInformation {
+.additionalInformation {
   margin-top: 20px;
   margin-bottom: 15px;
 }
 
-#F1 {
+#firstSection {
   margin-top: 0;
 }
 
-#F4 {
+#fourthSection {
   margin-bottom: 0;
 }
 
-#L1 {
+#firstInput {
   margin-top: 0;
 }
 
-#L2 {
+#fifthInput {
   margin-bottom: 0;
 }
 
-#L3 {
+#sixthInput {
   margin-top: 0;
 }
 
-#L4 {
+#seventhInput {
   margin-bottom: 0;
 }
 
-#L5 {
+#eighthInput-1 {
   margin-top: 0;
+  display: inline;
 }
 
-#L6 {
+#eighthInput-2 {
+  margin-top: 0;
+  display: inline;
+}
+
+#twelfthInput {
   margin-bottom: 0;
 }
 
-#L7 {
+#thirteenthInput {
   margin-top: 0;
 }
 
-#L8 {
+#fourteenthInput {
   margin-bottom: 0;
 }
