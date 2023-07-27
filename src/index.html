@@ -13,9 +13,9 @@
   <body>
     <script type="text/javascript" src="./main.js"></script>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <fieldset class="personalInformation" id="firstSection">
+      <fieldset class="personalInformation firstSection">
         <legend>Personal information</legend>
-        <label class="form_field" id="fristInput">
+        <label class="form_field firstInput">
         Surname:
           <input
             name="Surname"
@@ -61,7 +61,7 @@
           >
         </label>
 
-        <label class="form_field" id="fifthInput">
+        <label class="form_field lastInput">
             I accept the term of the agreement
           <input
             type="checkbox"
@@ -73,9 +73,9 @@
       </fieldset>
 
 
-      <fieldset class="registration" id="secondSection">
+      <fieldset class="registration">
         <legend>Registration</legend>
-        <label class="form_field" id="sixthInput">
+        <label class="form_field firstInput">
           E-mail:
           <input
            name="Email"
@@ -87,7 +87,7 @@
           >
         </label>
 
-        <label class="form_field" id="seventhInput">
+        <label class="form_field lastInput">
           Password:
           <input
           name="Password"
@@ -99,35 +99,33 @@
         </label>
       </fieldset>
 
-      <fieldset class="aifay" id="thirdSection">
+      <fieldset class="aifay">
         <legend>An interesting fact about you!</legend>
         Do you love cats?
         <label
         for="Yes"
-        class="form_field"
-        id="eighthInput-1"
+        class="form_field firstInput eighthInput-1"
         >
-          Yes
           <input
             name="Answer"
             type="radio"
             value="Answer"
             id="Yes"
           >
+          Yes
         </label>
 
         <label
         for="No"
-        class="form_field"
-        id="eighthInput-2"
+        class="form_field firstInput eighthInput-2"
         >
-          No
           <input
             name="Answer"
             type="radio"
             value="Answer"
             id="No"
           >
+          No
         </label>
 
         <label class="form_field">
@@ -158,7 +156,7 @@
           </select>
         </label>
 
-        <label class="form_field" id="twelfthInput">
+        <label class="form_field lastInput">
             How do you rate our work?
           <input
             type="range"
@@ -168,9 +166,9 @@
         </label>
       </fieldset>
 
-      <fieldset class="additionalInformation" id="fourthSection">
+      <fieldset class="additionalInformation fourthSection">
         <legend>Additional info:</legend>
-        <label class="form_field" id="thirteenthInput">
+        <label class="form_field firstInput">
           Comments:
           <textarea
             name="comment"
@@ -180,7 +178,7 @@
          ></textarea>
         </label>
 
-        <label class="form_field" id="fourteenthInput">
+        <label class="form_field lastInput">
           Would you reccomend us?
           <select name="select">
             <option value="select" disabled>Please select an option</option>

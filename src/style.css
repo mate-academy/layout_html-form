@@ -24,48 +24,26 @@
   margin-bottom: 15px;
 }
 
-#firstSection {
+.firstSection {
   margin-top: 0;
 }
 
-#fourthSection {
+.fourthSection {
   margin-bottom: 0;
 }
 
-#firstInput {
+.firstInput {
   margin-top: 0;
 }
 
-#fifthInput {
+.lastInput {
   margin-bottom: 0;
 }
 
-#sixthInput {
-  margin-top: 0;
+.eighthInput-1 {
+  display: inline-block;
 }
 
-#seventhInput {
-  margin-bottom: 0;
-}
-
-#eighthInput-1 {
-  margin-top: 0;
-  display: inline;
-}
-
-#eighthInput-2 {
-  margin-top: 0;
-  display: inline;
-}
-
-#twelfthInput {
-  margin-bottom: 0;
-}
-
-#thirteenthInput {
-  margin-top: 0;
-}
-
-#fourteenthInput {
-  margin-bottom: 0;
+.eighthInput-2 {
+  display: inline-block;
 }
