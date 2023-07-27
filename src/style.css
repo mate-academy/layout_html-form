@@ -1,1 +1,49 @@
 /* styles go here */
+.form_field {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.personalInformation {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.registration {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.aifay {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.additionalInformation {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.firstSection {
+  margin-top: 0;
+}
+
+.fourthSection {
+  margin-bottom: 0;
+}
+
+.firstInput {
+  margin-top: 0;
+}
+
+.lastInput {
+  margin-bottom: 0;
+}
+
+.eighthInput-1 {
+  display: inline-block;
+}
+
+.eighthInput-2 {
+  display: inline-block;
+}
