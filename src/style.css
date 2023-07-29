@@ -1,1 +1,12 @@
-/* styles go here */
+.field {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.fieldset .field:last-child {
+  margin-bottom: 0;
+}
+
+.fieldset {
+  margin-bottom: 20px;
+}
