@@ -1,1 +1,12 @@
-/* styles go here */
+.form {
+  margin-bottom: 20px;
+
+}
+
+label {
+  display: block;
+}
+
+.form__item:not(:last-child) {
+  margin-bottom: 10px;
+}
