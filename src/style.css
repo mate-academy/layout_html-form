@@ -1,1 +1,13 @@
-/* styles go here */
+.form-filde {
+  display: block;
+  margin-bottom: 10px;
+}
+
+legend {
+  background-color: #fff;
+  color: #000;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
