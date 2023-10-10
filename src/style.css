@@ -1,1 +1,11 @@
-/* styles go here */
+.form__fieldset {
+  margin-bottom: 20px;
+}
+
+.form__container:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.end {
+  margin-top: 10px;
+}
